@@ -1,0 +1,95 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playse,/download/sound/se/se_029.mp3
+wait,0.7
+playbgm,/download/sound/bgm/bgm005.mp3,0,,
+endwait
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……什麼啊，這種時間說這種話做什麼。\n抱歉，今天我沒心情照顧你」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別管我」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_02.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「我不能不管」,選項2　「我覺得說出來就輕鬆了」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……真是，不管我如何拒絕，你都不會氣餒。\n不管我再怎麼不領情，你都會靠近……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你不可能感覺不到這種拒絕的話語裏的尖刺吧。\n即便如此……你還真是個、笨蛋」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_04.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你就是這種生物，我這麼想比較好吧。\n……等等，你為什麼一臉高興的表情啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你沒看出我剛才的挖苦嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……真是的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_07.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……如果那樣能變得輕鬆就好了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_08.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我離開芭德薇家後一直懷揣的這份心情\n就算告訴你，也不會有什麼改變」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_09.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……凡事總要嘗試一下、麼」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_10.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼……真無聊。不過……\n就今天而已，被你的花言巧語欺騙也沒什麼不好……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_11.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你可曾想像過？\n自慚形穢之人的心情」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「芭德薇家下任家主……吉澤爾・芭德薇。\n我的妹妹是真正的天才」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然現在還不成熟，\n但遲早有一天會成為鐘樓十二針的一員」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那是我絕對無法達到的高度……畢竟是自己的事情，所以我知道。\n我的極限，我的未來……只能在那孩子的影子裏」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一直以來在世界各地旅行，我嘔心瀝血」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「儘管如此，當聽到她達成我尚未能觸及的成就……\n恍如晴天霹靂」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且這種不甘心有時會難以自製。\n……啊，真是討厭啊。有你在我總忍不住傾訴」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「莫非我是想讓你瞭解我這個人……\n不，不會吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那是不可能的……應該不可能……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_12_20.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

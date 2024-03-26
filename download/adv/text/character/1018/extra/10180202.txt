@@ -1,0 +1,129 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:sad,rin,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呃～～嗯。我的長處……我的優點……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈啊，果然怎麼想都想不到……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_02.mp3
+clickwait,,,,,,,,,,,
+shake,0.1,3,4,4
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:surprise,rin,25,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,120,180,0.65,0.8,0.5
+endwait,
+msg,1,<size=30><outline width=2 color=black>「哎呀，抱，抱歉，剛才想事情了……！\n啊，哥哥！　沒，沒事嗎！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_03.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:sad,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「呼，太好了……啊哈哈，對不起。之前哥哥不是讓我\n尋找自己的優點嗎，但是我根本想不出來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這個力氣，雷……的用處啊，到底是……呃」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:surprise,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊，哥哥，你想到什麼了！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_06.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「拉萊耶停電的時候」,選項2　「電器的電池沒電的時候」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「的、的確到那時我的雷魔術用得上！\n……但是，這種設施會有停電的時候嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我至今都沒聽說它停過電呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「的確！　健身器，還有冷藏箱什麼的，\n用電的東西很多呢！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊，不過，我的雷擊能用到電器上面嗎？\n沒幹過這種事呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:sad,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「感覺搞不好反而會弄壞了什麼的……對吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_11.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，雖然感覺可以了……\n不過這樣，我不就像電池一樣了嗎……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，跟電池一樣總比一無是處好。\n電池……電池……呃，電池不行嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:sad,rin,25,-120,0.5,0,,,,
+spine,download/adv/spine/Mark13,em2,default,animation,0,110,180,0.65,0.8,0.5
+endwait,
+msg,1,<size=30><outline width=2 color=black>「呃，好像連電池都做不到嗎，我……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_14.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,0,
+msg,1,<size=30><outline width=2 color=black>「如果不是這樣的話，是什麼意思……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:surprise,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「…你是說，電池怎麼比得上我呢，是嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:sad,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你這麼說我很高興，\n但是，除此之外的價值是什麼呢……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我的價值……那一定只能把什麼東西搞壞，\n這雙手……這份力氣…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也只有搬搬重東西了吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:surprise,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……哎，哥哥，還想到什麼了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「運用我的閃電和力量――按摩……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:sad,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我倒是曾經揉過自己的肩膀……那個\n，我真的……能做那種事嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……不。不對，如果我總是懷疑這懷疑那，絕對不會改變任何事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「明白了！　哥哥如果這麼說的話，我會試試按摩的！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這麼決定的話……先去資料室\n調查下按摩的知識！　謝謝你，哥哥！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101802/adv/sound/fav101802_06_25.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

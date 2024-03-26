@@ -1,0 +1,101 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「冒昧打擾了。\n有件事想和你說……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我回顧了自己至今為止說的和做的，稍微思考了一下。\n我一直以來都只是在空談理想」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「前幾天的事也是這樣……本來是擔心你的身體，\n卻忽略了大家想逃出拉萊耶的心情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……如果把重點放在那方面的話，這次該讓你為難了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……想必，現在也是這樣的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我說了很多我認為聽起來不錯的漂亮話。\n應該也有其他人難以接受的話才對」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:anger,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我好想……改變啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「然後……我決定了。首先，我要變強」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我討厭戰鬥……不願傷害別人，\n更不想看到有人受傷……但是」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——如果不戰鬥的話，如果不變強的話，\n我就永遠只是一個只會說漂亮話的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當然，雖說如此，我也不希望突然變得好戰，\n不願傷害誰……也不會去想」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，\n我想先從定位自己的戰鬥方法和能力開始……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_12.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「我覺得挺好的」,選項2　「我來幫你吧」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯！　你能這樣說真是太好了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_13.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「可是這……是我自己必須努力的事情——」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——嗯，也是。我一個人的話，總會迷茫的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「如果可以的話……你願意助我一臂之力嗎？\n只要有你在我身邊的話……我一定不會迷茫的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_16.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「既然決定了的話，首先要從鍛煉身體開始。\n我在體力上依然遠遠比不過大家」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「今後不能總拿不擅長當藉口」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……你也要一起嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，請務必兩個人一起加油吧！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_10_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

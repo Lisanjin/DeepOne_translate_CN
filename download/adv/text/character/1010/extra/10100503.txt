@@ -1,0 +1,118 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_01.mp3
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「終於……終於完成了啊！\n獻給卡蒂婭大人的至高甜品……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_02.mp3
+msg,0,<size=30><outline width=2 color=black>「真是太漫長了……試製和試吃了幾百次。\n可算找到合適的味道了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_03.mp3
+msg,0,<size=30><outline width=2 color=black>「這一切都是多虧了您的幫助……\n非常感謝。其實，很辛苦吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「其實還蠻開心的」,選項2　「暫時不敢碰甜品了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_04.mp3
+msg,0,<size=30><outline width=2 color=black>「是嘛……其實我也一樣」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_05.mp3
+msg,0,<size=30><outline width=2 color=black>「這樣不行那樣也不行，不斷試錯，\n合作完成一件事……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_06.mp3
+msg,0,<size=30><outline width=2 color=black>「這種事我從未經歷過，\n感覺是非常新鮮且寶貴的體驗」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_07.mp3
+msg,0,<size=30><outline width=2 color=black>「不過，可不會止步於此呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_08.mp3
+msg,0,<size=30><outline width=2 color=black>「確實……從餡餅、糕點、曲奇餅到霜淇淋……\n兩個人一起試吃了各種各樣的甜味」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_09.mp3
+msg,0,<size=30><outline width=2 color=black>「拜此所賜，衣服變得有點緊——不，沒什麼」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:unique,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_10.mp3
+msg,0,<size=30><outline width=2 color=black>「…………真煩人耶，都說沒什麼了吧？\n小心好奇心害死貓哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_11.mp3
+msg,0,<size=30><outline width=2 color=black>「呵呵……您識趣就好。\n這樣我就不用擔心失去您了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,jamila1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila2,0,0,0,0,,,,
+imgconf,jamila2,jamila1,0,-638,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_12.mp3
+msg,0,<size=30><outline width=2 color=black>「——接下來得尋找配對的茶」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0..2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:surprise,jamila,0,-180,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101005/adv/sound/fav101005_03_13.mp3
+msg,0,<size=30><outline width=2 color=black>「……咦，您怎麼一副驚呆的表情？\n不會以為這樣就結束了吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_14.mp3
+msg,0,<size=30><outline width=2 color=black>「呵呵……怎麼可能。\n甜品配飲料，懂？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_15.mp3
+msg,0,<size=30><outline width=2 color=black>「那麼，就先去之前提到的咖啡廳所在的領域，\n看看有沒有合適的茶葉吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_16.mp3
+msg,0,<size=30><outline width=2 color=black>「說不定有比拉萊耶保存的，\n成色和味道上乘的茶葉」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_17.mp3
+msg,0,<size=30><outline width=2 color=black>「對了，還得選擇好相應的場景。\n畢竟周圍的景色也會刺激到味覺」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_18.mp3
+msg,0,<size=30><outline width=2 color=black>「如此一來……拉萊耶的自然庭園，還是那個茶館的領域。\n在幻夢境或許還有更加景色怡人的領域」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_19.mp3
+msg,0,<size=30><outline width=2 color=black>「要考慮的事情很多，接下來會很忙碌……但是，\n這一切都是為了給卡蒂婭大人極致的享受」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_20.mp3
+msg,0,<size=30><outline width=2 color=black>「那麼，不管有多費力，\n都在所不惜」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_03_21.mp3
+msg,0,<size=30><outline width=2 color=black>「一切為了卡蒂婭大人著想。\n絕對不可能覺得辛苦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

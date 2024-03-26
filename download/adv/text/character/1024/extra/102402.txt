@@ -1,0 +1,107 @@
+name,,,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「抱歉，是我多管閒事了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，不用招待我。事情做完我會快點走的。\n我只是想問問你們潛入幻夢境的日程安排而已」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_02.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:anger,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「理由只有一個不是嗎。\n你忘了我在監視你們了嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不知道你們想索者要作什麼……你們的行動刺激到納克特原書，\n讓幻夢境的居民遭受滅頂之災這種事也是有可能發生的吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_04.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「你太多心了吧」,選項2　「我還不知道行程安排」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:anger,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你也太沒有危機感了吧……你明明有聯通納克特的能力，\n卻什麼都沒有察覺到？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「幻夢境內部經常發生變動。根本不能確保同一空間能存在到明天。\n根據納克特的意識，這個可疑的世界甚至有可能瞬間回歸虛無」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你能對在生活在那種地方的失想者們說出同樣的話嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_07.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:surprise,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我雖然不推薦你進行幻夢境的想索，\n但你還是小心一點為妙吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_08.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:anger,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你不在的話，大家根本不能進行安全的想索吧？\n那麼，你就是想索者們的主心骨」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_09.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果你不振作一點的話，周圍的人就有可能會出現傷亡」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，你一不小心造成的後果，也有可能會對幻夢境或者生活在其中的人帶來滅頂之災」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_11.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你已經處於左右著很多人性命的立場之上了。請自覺一點」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_12.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……抱歉。我沒有想要給你施壓的意思，但是好像不小心表現在臉上了。\n但是，正如你為同伴著想一樣，我也有要保護的人」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_13.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「正因為身上背負著他人的性命，所以才不可以輕易說不用擔心這種話。\n就算我相信你沒有惡意，其他想索者也不一定和你一樣」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我是想在想索中盡自己所能來保護你的……沒有要背叛你的打算。\n要是你信任我的話，可以告訴我想索的行程安排嗎」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:surprise,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我的身體情況？什麼，你竟然擔心我？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「原來如此……你這個男人真是讓人無語，連這種事都注意到了嗎」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你沒必要擔心……失想者作為幻夢境的居民\n是不會感到負擔的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「應該說，留在自己本不該存在的現實世界更加消耗體力。\n不過，借助你的力量就不成問題」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……儘管如此，還是擔心我不斷戰鬥會吃不消嗎？\n哎，希望你能相信我的能力……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是拿你這個男人沒辦法……既然如此，我們就偶爾休息一下吧。\n不過休息的時候，請你提交想索的詳細報告」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:unique,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我明明這麼擔心你，都向你妥協讓步了，別這麼一臉不樂意。\n為了不辜負我的信賴，你可得好好寫哦……沒問題吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_02_22.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

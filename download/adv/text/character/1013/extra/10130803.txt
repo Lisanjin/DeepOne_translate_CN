@@ -1,0 +1,180 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11040300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哈啾……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,2,7,7,milva
+endwait
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:surprise,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_02.mp3
+msg,1,<outline width=2 color=black>「咦……？真奇怪。我竟然打噴嚏，是不是身體有點著涼了啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_03.mp3
+msg,1,<outline width=2 color=black>「不要露出那麼擔心的表情啦。\n我不是說了嗎？我沒有柔弱到會得感冒，呃……我就說──哈啾。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,2,7,7,milva
+endwait
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_04.mp3
+msg,1,<outline width=2 color=black>「……不要用懷疑的眼光看我。真的不用擔心我的身體啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選項1　「無法信任。」,選項2　「事不過三。」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_05.mp3
+msg,1,<outline width=2 color=black>「哎唷……你真是愛操心耶。既然這樣──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-160,0.65,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_06.mp3
+msg,1,<outline width=2 color=black>「來，這樣貼住額頭，也不會感覺燙吧？\n我真的只是覺得有點冷而已喔。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:smile,milva,0,-160,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_07.mp3
+msg,1,<outline width=2 color=black>「咦……？感覺你的臉還比較紅耶，\n該不會你才真的得了感冒吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_08.mp3
+msg,1,<outline width=2 color=black>「討厭。才不會打那麼多次噴嚏──哈啾。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,2,7,7,milva
+endwait
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:shy,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_09.mp3
+msg,1,<outline width=2 color=black>「…………咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+anm,scale,milva,0.55_0.55,0.4,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:shy,milva,0,-120,0.55,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_10.mp3
+msg,1,<outline width=2 color=black>「呀！等、等等，幹嘛突然把臉靠過來……！？\n量溫度……？嗯！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva,0.65_0.65,0.4,0
+anm,move,milva,0_-160,0.4,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:shy,milva,0,-160,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_11.mp3
+msg,1,<outline width=2 color=black>「……除了把額頭貼在一起以外，\n應該還有其他量溫度的方法吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-160,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_12.mp3
+msg,1,<outline width=2 color=black>「不過，這下明白了吧？我就說沒有發燒吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:sad,milva,0,-160,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_13.mp3
+msg,1,<outline width=2 color=black>「──為什麼又要露出懷疑的眼神啊？\n我就這麼沒辦法信任嗎？感覺有點傷心呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+shake,0.2,1,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.65,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_14.mp3
+msg,1,<outline width=2 color=black>「既然這樣，來……像這樣手挽手，身體貼在一起的話，\n身體就會暖和起來，不用擔心感冒了，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:smile,milva,0,-120,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_15.mp3
+msg,1,<outline width=2 color=black>「啊，不過對你來說可能是反效果呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:smile,milva,0,-120,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_16.mp3
+msg,1,<outline width=2 color=black>「因為，像這樣感覺得到彼此的話，\n說不定身體反而會發燙發熱，不是嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:smile,milva,0,-120,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_17.mp3
+msg,1,<outline width=2 color=black>「然後，任由熱流在身體流竄……衣服也全部脫光，\n就這樣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_18.mp3
+msg,1,<outline width=2 color=black>「……咦？不過真的變成那樣，\n因為運動會讓身體暖和起來，結果來說也不錯吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_19.mp3
+msg,1,<outline width=2 color=black>「還是說，因為流汗之類的會弄濕身體，\n結果反而會更冷嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:sad,milva,0,-120,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_20.mp3
+msg,1,<outline width=2 color=black>「嗯──到底哪邊才是對的呢……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:smile,milva,0,-120,0.65,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_03_21.mp3
+msg,1,<outline width=2 color=black>「到底會不會感冒呢……？既然這樣，我們要不要真的來嘗試看看呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

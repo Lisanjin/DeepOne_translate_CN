@@ -1,0 +1,100 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0.5,,,,
+spine,download/adv/spine/Mark5,em1,default,animation,0,120,220,0.65,0.6,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……該怎麼做呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_01.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要是突然打招呼被無視的話……\n說起來，可能根本就不在乎我」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我明明做了，那麼多事情……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，明明離這麼近……唔」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你在幹什麼？」,選項2　「……」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒，啊……對，對不起。如果站在這種地方的話會很礙事吧！\n對不起，我完全沒有注意到……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「稍微思考了一下，沒有時間去在意周圍的事……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「果然還是不打招呼，離開比較好……但是，像這樣，\n一直逃避下去什麼的……啊啊，但是被拒絕了的話心……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不會的，這樣的我現在，才更害怕受傷什麼的，\n那樣的話……不想傷害別人，也不想傷害自己……啊，唔」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizeru,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em2,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「誒，有點在意後背——你，什麼時候在那……！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_09.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我，那個……我看見姐姐要進資料室，\n所以，在猶豫要不要打一聲招呼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……是，這樣啊。普通的姐妹的話，直接輕鬆打招呼就好了。\n但是因為我……那個，被姐姐討厭著呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那是當然了。因為我把這些事情，都當成了姐姐做的。\n所以……事到如今我要讓步的行為，肯定是任性的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「即使這樣我對姐姐……\n但是，習慣了打招呼，害怕被更討厭」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我已經……不知道該怎麼做才好了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……果然，還是別打招呼了。\n我不想再讓，姐姐感到不愉快了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:shy,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，那個……雖說是替代……\n能和我，交往一段時間嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「突然說這樣的話，對不起。\n我知道我是在依賴你的溫柔，說些任性的話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是現在……我太寂寞了……\n不管怎樣都不想一個人待著……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以……一點就好。\n把你的時間，留給我一點好嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_08_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

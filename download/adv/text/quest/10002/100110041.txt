@@ -1,0 +1,312 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,1.0,
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,jizel1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,jizel,0,0,0,0,,,,
+imgconf,jizel,jizel1,0,-400,,,0,1.5,1.5,0.5
+wait,0.1
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「哈啊……哈啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,silvy,-300,-80,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「唔嗯……心律不齊，發燒，意識等級低下……\n完全沒有好轉的跡象呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holy,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……嗯。看上去非常痛苦。\n吉澤爾大人都這樣了，我卻只能幹看著……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「如果可以的話……\n我真想代替她啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「這個狀態已經持續了一周……\n究竟是什麼原因呢？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,silvy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,silvy,-300,-80,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「只看症狀的話，很像是中毒。\n會不會是因為好奇心而吃了什麼奇怪的東西呢？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,bligit,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……吉澤爾又不是你，\n她才不會那樣呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,silvy,0
+endwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「是啊。應該有其他理由才對\n……你能想到些什麼嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,bligit,0
+spriteoff,irina,0
+endwait,,,,,,,,,,,
+select,選項1　「難道說……」,選項2　「想不到」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holy,-300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「想到什麼了嗎？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,bligit,300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「別賣關子了，趕緊說出來啦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,bligit,300,-190,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……啥，蟲子？那是什麼啊。此話怎講？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,bligit,0
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「呃，也對……如果能想到，應該早就說出來了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不過，這樣的症狀不可能是突然發作的。\n再仔細想想，她最近有哪些行為舉止很反常嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,irina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「啊……等一下。我好像想起了什麼……啊，對了！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,irina,0
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「說起來，上次吉澤爾與我一起想索幻夢境的時候，\n她好像說過她被奇怪的蟲子咬了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:surprise,holy,-300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「是這樣嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「嗯。據她所說，那只蟲子有拇指大小，外形類似巨大的蚊子」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「無論是被咬了之後，還是剛回到拉萊耶的時候，\n她的身體都沒出現什麼異常，所以就沒在意這件事……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,silvy,-300,-80,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「呼呣……原因很可能就在於此。那蟲子大概擁有延遲性毒素，\n能夠令她的身體逐漸遭到侵蝕」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:surprise,holy,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「怎麼這樣……就沒有治療的方法嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「這個嘛……如果能將那條蟲子的抗毒血清精煉出來，\n大概就沒問題了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:anger,asaka,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「既然如此，趕緊製作那什麼抗毒血清吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,silvy,-300,-80,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「現在的狀況下是做不到的。我必須把弱毒化的抗原注入其他生物，\n然後取出其產生的抗體才能得到抗毒血清」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「——也就是說，必須要去捕獲咬了吉澤爾的那種蟲子對吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,irina,150_150_150,0.0001,0
+anm,tint,silvy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,silvy,-300,-80,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「沒錯。所幸那蟲子的外觀非常獨特，\n應該不會錯抓成其他蟲子」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「所以，我想拜託你們去捕捉那種蟲子。\n雖然我也想同行……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,silvy,-300,-80,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「但吉澤爾君的病情有可能會急轉直下。為了以防萬一，\n我不能離開這個地方」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,irina,0
+endwait,,,,,,,,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holy,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「明白了。既然如此，那就交給我們吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holy,300,-180,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不能再讓吉澤爾大人痛苦下去了……\n一定要把那個蟲子帶回來」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,silvy,0
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+name, 
+msg,0, 
+bg,download/adv/image/black.jpg,0.5,255
+endwait,,,,,,,,,,,
+mask,bligit1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,bligit,0,0,0,0,,,,
+imgconf,bligit,bligit1,0,-675,,,0,1.5,1.5,0.5
+wait,0.1
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……真是個讓人操心的妹妹呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm.0.5
+spriteoff,bligit,0
+endwait,,,,,,,,,,,
+name, 
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0, 
+bg,download/bg/bg_10030100.jpg,0.5,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0.5,
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:normal,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「這裏就是上次吉澤爾來的地方………接下來要怎麼做？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holy,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「這個嘛……總之先到吉澤爾大人被蟲子咬的地方去看看吧，如何」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「我同意。蟲子的行動範圍不會太大，\n被叮咬的地方周圍很可能存在同種類的個體」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+anm,tint,irina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「看來全員的意見一致呢。那我們走吧——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+spriteoff,irina,0
+spriteoff,bligit,0
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,
+endwait
+sprite,download/monster/20020101/adv/image/20020101.png,enemy3,-400,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy2,400,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,enemy1,0
+spriteoff,enemy2,0
+spriteoff,enemy3,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……一上來就是熱烈的歡迎啊。不好意思，我們現在很忙，\n沒有閒工夫陪你們」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holy,-300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「即便是現在，吉澤爾大人也在飽受痛苦……\n迅速解決掉它們，然後繼續前進！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,100 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……果然，只要和你一起潛入幻夢境，\n力量就會湧上來呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就好像自己的力量被強行推上了一個臺階……或者，\n像是不屬於自己的某種東西流入了身體裏……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，負擔也驚人地減輕了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這一點……對於第一次潛入就是和你在一起的亞紗花她們來說\n或許感受不到」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「負擔簡直天差地別。正因為如此，你是否在這裏\n直接關係到了我們命運的走向……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就比如說……嗯……就像是一口氣灌入一瓶伏特加，\n和舔一口啤酒……這麼大的差別」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊？　啊……對，對不起。舉了個難懂的例子呢。\n我這個人一不注意就……請忘了剛才我說的話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「總之，你和納克特原書之間的聯繫……雖然不知道\n它的真面目為何物，但不依靠它的力量的話，就無法攻克幻夢境」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「今後也拜託你了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你剛才打的那個比方到底是……」,選項2　「之前的潛入不辛苦嗎？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，那個……那件事請不要再提起……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在回過頭來想想……就連我自己都很驚訝\n舉的什麼鬼例子啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_11.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說不辛苦……那是假的哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「每次深潛，負荷都會讓身心受到侵蝕，就連吐血\n都算是輕的了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在想索者當中有人逐漸被納克特原書的力量所侵蝕，\n就連肉體都產生了變異……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……請不用這麼擔心我。\n現在托你的福，還沒到那種要為負擔煩惱的地步」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真的啊……要是能早點遇見你就好了……\n我是這麼想的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那個時候……如果有你的力量的話，也許……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_17.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……繼續說這樣的話也沒什麼用。現在是想索幻夢境的時候」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「先行的各位應該沒有遇到什麼問題吧……有點擔心\n我們還是快點吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那個」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「剛才我說的話，如果可以的話請忘掉吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_05_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

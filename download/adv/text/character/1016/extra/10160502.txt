@@ -1,0 +1,95 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm049.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_01.mp3
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,1,<outline width=2 color=black>「沒想到這麼快\n就能來溫泉了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_02.mp3
+msg,1,<outline width=2 color=black>「當然，這只是在幻夢境中……這只是納克特原書的魔力\n創造出來的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_03.mp3
+msg,1,<outline width=2 color=black>「但是，這個地方就是我在資料庫裏看到的日本溫泉街，\n一定也再現了露天溫泉……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_04.mp3
+msg,1,<outline width=2 color=black>「其實，前幾天和你談到在溫泉喝酒的事後，\n我對溫泉產生了興趣，對溫泉有關的事情進行了各種各樣的調查」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_05.mp3
+msg,1,<outline width=2 color=black>「雖然在我出生的國家也有溫泉，但總覺得\n像溫水游泳池一樣，穿著泳衣進去是很普通的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_06.mp3
+msg,1,<outline width=2 color=black>「不過……日本的溫泉就是坦誠相見……\n規定什麼都不穿，是這樣吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_07.mp3
+msg,1,<outline width=2 color=black>「然後在那邊的招牌上寫著露天浴池是混浴……那也就是說，\n要和你……坦誠相見，對吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「真棒啊」,選項2　「潘多莉西亞不喜歡嗎？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_08.mp3
+msg,1,<outline width=2 color=black>「怎麼突然擺出勝利的手勢……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_09.mp3
+msg,1,<outline width=2 color=black>「沒，是你的話，我倒是不討厭……不，不過\n果然很羞恥……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_10.mp3
+msg,1,<outline width=2 color=black>「這裏只有我們，穿上泳衣之類的東西\n也沒關係吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_11.mp3
+msg,1,<outline width=2 color=black>「……可能會破壞氣氛，正如你所說的那樣，\n但是在泡溫泉的時候，心可能會一直跳個不停……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_12.mp3
+msg,1,<outline width=2 color=black>「不，那個……我並不是討厭」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_13.mp3
+msg,1,<outline width=2 color=black>「但是，無論如何都覺得不好意思，被你看到皮膚的話\n絕對，我會心跳加速……好像已經無法考慮溫泉和酒的事情了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_14.mp3
+msg,1,<outline width=2 color=black>「……對不起，能不能在一個人去露天浴池時\n另一個人去別的浴池呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_15.mp3
+msg,1,<outline width=2 color=black>「啊，請不要那麼地低落……\n知道了，我知道了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_16.mp3
+msg,1,<outline width=2 color=black>「好。我和你一起泡溫泉……這樣就可以了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_17.mp3
+msg,1,<outline width=2 color=black>「比起那個……別只看我，好好欣賞風景吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_02_18.mp3
+msg,1,<outline width=2 color=black>「不然我……肯定，不知道會變得怎麼樣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

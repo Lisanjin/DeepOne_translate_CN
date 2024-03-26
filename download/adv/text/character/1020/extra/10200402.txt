@@ -1,0 +1,162 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,
+endwait,,,,,,,,,,,
+mask,bg1,0,110,1280,200,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,asaka1,0,110,1280,200,0,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,0,0,0,0,,,,
+imgconf,asaka,asaka1,0,-500,,,0,1.5,1.5,0.5
+mask,bg3,0,-110,1280,200,0,,,,
+sprite,download/adv/image/black.jpg,bg2,0,0,0,0
+imgconf,bg2,bg3,0,0,,,0,1,1,0.5
+mask,bri1,0,-110,1280,200,0,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,bri,0,0,0,0,,,,
+imgconf,bri,bri1,0,-670,,,0,1.5,1.5,0.5,
+endwait
+wait,1
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0.5,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「……嗯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_02.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+endwait,,,,,,,,,
+slideinblack,1.0,right
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,1.0,right
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,1,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0.5,,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我不是……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,-10,-100,0.5,0,,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,120,110,0.65,0.8,0
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――呀！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_04.mp3
+shake,0.1,5,10,10
+endwait
+clickwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「什麼……！？　你……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+spine,download/adv/spine/Mark6,em1,default,animation,0,80,100,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不要突然拍我的肩膀，嚇了我一跳！\n真是的……有事嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_06.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「是不是想加入大家的談話？」,選項2　「想和塔芭莎說話」
+if,select_===_1,,,,,,,,,,
+spineoff,em1,0
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你看見剛才的那個了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「並沒有想加入……\n我並不是因為那樣的想法才看著她們的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，要是我也加進去，對她們來說不是很麻煩嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「能說出“沒那回事”的人，肯定只有你了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spineoff,em1,0
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼突然這麼說……難道、剛才我觀察她們的舉動\n被發現了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你是說，你覺得我很寂寞，所以才同情我？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……開玩笑啊。我知道你不是那樣的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_13.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為是你，所以我才這麼說……我在想，這是一種怎樣的心情呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為我，那個，並沒有……人類的朋友。\n如果有像她們這樣互相交談的朋友，會是什麼感覺呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……感覺好奇怪啊。我怎麼會想到這種事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「一直以來，我都覺得自己不需要其他人。\n對於我來說重要的人只有哥哥……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為有玩偶在，所以我也不會感到寂寞——可是\n一直以來都不關心其他人的我現在才，居然……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……現在開始也不晚，嗎。真像你說的話啊。\n但是，那是因為你太溫柔了……其他人不會像你那樣想我的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「額，啊，我說，你等下！ 為什麼突然握住我的手……那裏……唔」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好，好了啦！ 大家，都在很開心的聊天，\n像這樣，我插話進去冷場什麼的……你有在聽嗎！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你，你個……變態！ 你再不放手，一會有你好受的！\n唔……不要無視我啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:shy,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，真是的！ 為什麼光這種時候這麼強硬啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你啊，真是個傻瓜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_12_24.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

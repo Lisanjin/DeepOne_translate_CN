@@ -1,0 +1,130 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喲……你有空嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，沒什麼……一點小事……你在進行深潛的準備嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你又不是眾矢之的，不用準備到這個程度吧……\n醫療用品？嗯……你還帶了那種東西啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼說呢，值得表揚吧……倒也不能說一點用也沒有，\n但是，大概有誰會使用醫療系的魔術吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……以防萬一，嗎……嗯，如果你想帶著的話，那就帶著吧。\n但是，既然說到這個了，那我也有件事情想說哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:anger,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「如果考慮到萬一的話，戰力不是越多越好嗎？\n那為什麼，接下來的深潛要將我排除在外呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_06.mp3
+clickwait,,,,,,,,,,,
+stopbgm,0
+endawait
+msg,1,<size=30><outline width=2 color=black>「我是為了戰鬥才來到這裏的……如果這個理由被剝奪的話\n我實在無法接受」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_07.mp3
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「我聽達納說了……是你提議深潛時不帶上我的。\n你打的什麼算盤？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「根據你的回答……你覺得會發生什麼呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「逃跑」,選項2　「呼救」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，你想往哪逃啊……？在這麼狹窄的空間裏\n想躲過我從門口逃出去，你覺得你能做到嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:unique,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「就這點反抗手段的話就只好抓住你了哦。\n到那時，可能不小心一用力，就讓你斷一兩根骨頭呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……開玩笑啦。啊啊，你要是老實待著的話就當作是玩笑啦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:unique,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「叫也沒用。這附近誰都不在，\n而且這個房間的隔音效果也還是不錯的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「小小的騷動的話，誰都不會注意到的哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:unique,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼樣。都這種情況了，你願意說實話了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:surprise,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——啊啊？想讓我休息……難道你，就是因為這種理由\n才把我排除在外的嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:anger,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那個啊……我最近，確實連續深潛很多次了，但那又怎麼樣啊。\n疲勞啊負荷什麼的，那些對我來說都沒什麼大不了的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「聽好了，你去和其他人說要帶上我一起深潛。\n你說的話其他人不會置之不理吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……什麼嘛，你那副表情。是想堅持自己的想法嗎？\n看來，你是打算吃點苦頭啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——……切。你倒是稍微動搖一下啊。明明連戰鬥力都沒有，只有膽子倒是挺大的？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:sad,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「可惡……我受不了這個眼神」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlasoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,ouka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:sad,ouka,0,0,0,0,,,,
+imgconf,ouka,ouka1,-10,-450,,,0,1.5,1.5,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「讓我想起了那傢伙……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_22.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:anger,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「…………啊。知道了，啊啊我知道了！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就這次，我接受你那所謂的關心。\n但也只有這一次。下次一定要把我帶上！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:sad,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不然的話……我就不知道，自己應該在哪里了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101501/adv/sound/fav101501_04_25.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

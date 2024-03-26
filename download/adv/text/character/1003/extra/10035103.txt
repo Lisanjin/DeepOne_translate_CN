@@ -1,0 +1,107 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_01.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「──我聽說您身體不適，來探病了，\n但您看起來精神不錯，沒有希爾薇說的那麼嚴重，這讓我安心多了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_02.mp3
+msg,1,<outline width=2 color=black>「聽說主因是過勞……所以現在就請您\n先讓身體好好休息吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_03.mp3
+msg,1,<outline width=2 color=black>「啊……您說我這身衣服嗎？畢竟您之前蠻喜歡的，\n所以我想，這種時候就應該穿上它。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_04.mp3
+msg,1,<outline width=2 color=black>「我本來沒想到自己最後真的會在探病時穿上它，\n但難得都穿了護士服，我自然會誠心誠意好好照看您的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_05.mp3
+msg,1,<outline width=2 color=black>「對了，您吃過飯了嗎？或許您沒有食慾，\n但要是什麼都不吃，治得好的病都要治不好了──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_06.mp3
+msg,1,<outline width=2 color=black>「啊、您吃過了啊……那、那麼不如我來為您擦澡……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_07.mp3
+msg,1,<outline width=2 color=black>「……您也擦過澡了啊……這樣啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_08.mp3
+msg,1,<outline width=2 color=black>「說起來，希爾薇有說伊莉娜應該\n在照顧你……莫非這些事，伊莉娜都做完了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「沒錯。」,選項2　「是一位美麗的女醫師做的。」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_09.mp3
+msg,1,<outline width=2 color=black>「果然沒錯。那麼，她有沒有\n煮羅宋湯給您喝呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_10.mp3
+msg,1,<outline width=2 color=black>「我小時候也曾在感冒時吃過伊莉娜\n煮的羅宋湯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_11.mp3
+msg,1,<outline width=2 color=black>「咦？女醫師？拉萊耶目前有這樣的人嗎……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_12.mp3
+msg,1,<outline width=2 color=black>「伊莉娜打扮成醫生的模樣……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_13.mp3
+msg,1,<outline width=2 color=black>「呵、呵呵……這樣啊。沒想到伊莉娜竟然會打扮成那樣\n來照顧您。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_14.mp3
+msg,1,<outline width=2 color=black>「沒能看到她那副模樣，實在是有點可惜呢。畢竟按照伊莉娜的個性，\n她是不會穿給我看的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_15.mp3
+msg,1,<outline width=2 color=black>「不過……伊莉娜果然一點也沒變，還是和那時一樣溫柔。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_16.mp3
+msg,1,<outline width=2 color=black>「回想起來……伊莉娜以前還在當我的侍從時，\n每次我生病，她都會一直陪在我身邊照顧我。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_17.mp3
+msg,1,<outline width=2 color=black>「她會時時幫我替換濕毛巾，幫我擦澡……\n而且我到現在還記得她為我做的羅宋湯有多美味。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_18.mp3
+msg,1,<outline width=2 color=black>「我明明因為發燒而沒食慾，但不知道為什麼，伊莉娜做的羅宋湯\n我就能喝很多……那份溫暖令我相當安心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_19.mp3
+msg,1,<outline width=2 color=black>「伊莉娜總是用溫柔的表情看著生病的我。我甚至\n曾經想過……假如我有一個姊姊，應該就像她這樣吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_20.mp3
+msg,1,<outline width=2 color=black>「啊，我說的這些事，請千萬幫我保密，不要告訴\n伊莉娜哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100351/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100351/adv/sound/fav100351_03_21.mp3
+msg,1,<outline width=2 color=black>「假如被她知道了，她肯定會很生氣地說\n她不記得自己有這麼麻煩的妹妹。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

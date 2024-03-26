@@ -1,0 +1,101 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「今天也是，沒人受傷安全回來了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不，這並非是我一個人的力量……正因為你在我身邊啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我心裏想著，得保護你，得幫助你……\n於是力量便會不斷湧上來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是，其實我是不想帶你進入幻夢境裏，這是我的心裏話……\n即便我知道這是不可避免的事……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我會很擔心的啊……因為你不會拋棄任何人，想要去拯救每一個人 。\n而我卻無法阻止，為此踏出危險之路的你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為，那是你的願望啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_06.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「這是我的職責」,選項2　「並不危險」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果你的職責是為了他人而不斷地奉獻自己……\n那我絕對不會原諒，給你定義那種職責的存在」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為，那……就是在犧牲自己啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「即使你可以接受自己的職責所在\n我……是絕對無法接受的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_09.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:surprise,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……相當樂觀的話啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻……還是說，這些話的意味著\n你信任著我們呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果是這樣子的話……那我們的責任可真是重大啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……在成為我之前的那個人類，也是如此。\n她也是一個不是為了自己，而去相信他人，為了他人行動的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「然後沒有注意到自己正面臨著，來自人類惡意\n於是便被推入了幻夢境……是一個可悲的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「她的犧牲，有拯救到誰嗎……\n事到如今，誰也不清楚」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……如果讓我能在這裏為你做一些事……\n那“她”的犧牲是不是就會有意義了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……不對。這，可不是什麼溫柔。\n這大概，是為了給她的犧牲……強行加上意義吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「失想者，無論外表多麼接近人類，內心深處都有一個大洞……\n只是為了給那份缺陷嵌上一個冠冕堂皇的理由，讓自己看起來更像人類而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣子，是不是就能和懂得何為真愛的你，走得更近一些了呢……\n至少我，是有這樣子的想法」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……人和非人之物。和你一起時，這種差異感讓我感到越發地明顯……\n只有這一點，讓我有點難受」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「抱歉。對你說了奇怪的話。\n……請忘掉，剛才的話吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_12_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

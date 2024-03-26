@@ -1,0 +1,192 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+playse,/download/sound/se/se_029.mp3
+wait,0.5
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唐突打擾你一下，有時間嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「其實剛才空閒的功夫我烤了一個蛋糕。\n本來是想著，給吉澤爾小姐準備的，結果不小心做多了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「可以的話，讓你分擔一些可以嗎？\n當然，在味道上我是很自信的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「作為完美的從者，\n就連做點心也都要理所當然地能與一流的西點師傅相媲美」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_04.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，你覺得味道怎麼樣……？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_05.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣嗎。那我現在馬上就為你準備，請稍等一下」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_06.mp3
+clickwait,,,,,,,,,,,,
+slideinblack,1.0,right
+name,
+endwait
+spriteoff,all,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,color_0_0_0_0,0.0
+endwait
+msg,0,
+slideoutblack,1.0,right
+endwait
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0.5,,,,,,,,,,
+endwait
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0.5,,,,,
+endwait
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「讓您久等了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_07.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我做了芝士和黃油兩種蛋糕呢，\n挑一個喜歡的吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_08.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「芝士蛋糕」,選項2　「奶油蛋糕」
+if,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，你能選這個我很開心呢。\n這個奶油蛋糕，可是我的得意之作」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這在我最近做的東西中，毫無疑問是做的最好的了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_11.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「原來如此……你覺得奶油蛋糕更好吃哦？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_09.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「芝士蛋糕」,選項2　「奶油蛋糕」
+if,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，你能選這個我很開心呢。\n這個奶油蛋糕，可是我的得意之作」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這在我最近做的東西中，毫無疑問是做的最好的了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_11.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「原來如此……你覺得奶油蛋糕更好吃哦？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_09.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「芝士蛋糕」,選項2　「奶油蛋糕」
+if,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，你能選這個我很開心呢。\n這個奶油蛋糕，可是我的得意之作」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這在我最近做的東西中，毫無疑問是做的最好的了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_11.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「原來如此……你覺得奶油蛋糕更好吃哦？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_09.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「奶油蛋糕」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，你能選這個我很開心呢。\n這個奶油蛋糕，可是我的得意之作」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這在我最近做的東西中，毫無疑問是做的最好的了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_11.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，請品嘗吧……覺得怎麼樣？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_12.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這可是放入大量辣椒的特製奶油蛋糕呢，\n還合你口味嗎」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_13.mp3
+clickwait,,,,,,,,,,,,
+shake,0.1,1,60,60
+endwait
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀，怎麼看著臉都扭曲了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「好啦，這裏就該拿出氣勢和毅力一口氣咽下去」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「——雖然很想這麼說，果然難以下咽吧。\n坦率點吐出來吧……誒？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:surprise,holly,0,-160,0.5,0,,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,140,270,0.65,0.6,0.2
+endwait
+msg,1,<size=30><outline width=2 color=black>「你吃下去了，真的嗎？不會吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_17.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em1,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「就因為不能浪費，就這個理由……明明是個惡作劇。\n不用做到這個份上的……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0,,,,,
+spine,download/adv/spine/Mark2,em2,default,animation,0,80,230,0.65,0.4,0.7
+endwait
+msg,1,<size=30><outline width=2 color=black>「……是我膚淺了。你這個爛好人行為，真是超出我想像」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_19.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「真是對不起，好像，惡作劇有些做過頭了。\n本來一開始是想給你普通的蛋糕的，不小心……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_20.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為你總是給我意想不到的反應，所以我就想著如果\n我做了這樣的事情，你又會給我什麼樣的表情呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_21.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在冷靜了，覺得我自己，幹了件蠢事……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_22.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「請您批評我吧……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_23.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………在那裏一笑了之這一點，也許就是\n你的優點吧，這要比起被訓斥更能打動我」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100802/adv/sound/fav100802_07_24.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

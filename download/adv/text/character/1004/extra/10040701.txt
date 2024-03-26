@@ -1,0 +1,122 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_01.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「好香的味道……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11200300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,dana1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:sad,dana2,0,0,0,0,,,,
+imgconf,dana2,dana1,0,-730,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_02.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「這裏是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_03.mp3
+msg,1,<outline width=2 color=black>「……看來，我們又跑來一個清幽的領域了。\n竟然開了這麼多櫻花……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_04.mp3
+msg,1,<outline width=2 color=black>「對了，日本現在也差不多是櫻花季了吧。\n會不會就是因為這樣呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_05.mp3
+msg,1,<outline width=2 color=black>「……我說，你從剛才就一直擺著一張嚇呆的蠢臉，\n是怎麼了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_06.mp3
+msg,1,<outline width=2 color=black>「還有你的眼神簡直有如見到了珍禽異獸……令人很不舒服啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「妳的個性完全變了個人。」,選項2　「妳是誰？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_07.mp3
+msg,1,<outline width=2 color=black>「個性變了……？你說什麼傻話啊？有沒有搞錯？\n我才不會變。無論何時，達納・達蕾露・道明寺都不會改變的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_08.mp3
+msg,1,<outline width=2 color=black>「……你幹嘛拿出行動裝置？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_09.mp3
+msg,1,<outline width=2 color=black>「等一下，你拍什麼照……？誰准你拍照的？\n就算你我熟識，這樣也太過失禮了。快把照片刪掉……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_10.mp3
+msg,1,<outline width=2 color=black>「什麼？這是什麼問題？我不懂為何你要這麼問。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_11.mp3
+msg,1,<outline width=2 color=black>「還是說，在你眼裡看來，我並不是達納・達蕾露・道明寺？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_12.mp3
+msg,1,<outline width=2 color=black>「這樣的話，八成是你太過散漫，終於導致腦袋跟著渙散，\n影響到視力了吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:anger,dana,0,-180,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_13.mp3
+msg,1,<outline width=2 color=black>「──……喂，別突然把手放上別人額頭好嗎？\n你想做什麼？我才沒有發燒……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_14.mp3
+msg,1,<outline width=2 color=black>「我知道你這男人平時就愛搞怪，\n但今天特別嚴重啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_15.mp3
+msg,1,<outline width=2 color=black>「該不會是進入這領域時\n中了什麼奇怪的法術吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_16.mp3
+msg,1,<outline width=2 color=black>「比方說……對了，可能是精神受到干涉……像是被灌輸了不同以往的認知，\n或是人格遭到竄改之類的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_17.mp3
+msg,1,<outline width=2 color=black>「也有可能是記憶受到了干涉。\n既然與奈克特原書有關，發生什麼現象都不足為奇……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_18.mp3
+msg,1,<outline width=2 color=black>「……我說你啊，為什麼一臉恍然大悟的樣子？\n出事的人就是你自己啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_19.mp3
+msg,1,<outline width=2 color=black>「無論如何，看來並不會致命，也沒什麼負面影響，\n應該可以再觀察一下……不過還是先回拉萊耶一趟比較好吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_20.mp3
+msg,1,<outline width=2 color=black>「喂……你、你搞什麼？怎麼突然有了幹勁？要開始想索是很好，\n但不要拉我的手……真是的，還不快點放開……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100407/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100407/adv/sound/fav100407_01_21.mp3
+msg,1,<outline width=2 color=black>「幹嘛啦……？竊笑個什麼勁……？你真的沒問題嗎？\n真受不了……你這男人就是這樣，才叫人放心不下。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

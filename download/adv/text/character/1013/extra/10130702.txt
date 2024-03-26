@@ -1,0 +1,110 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11170300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:surprise,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哎呀……這個領域還真奇特呢。長了好多不知道是什麼的果實，\n到底是什麼果實呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_02.mp3
+msg,1,<outline width=2 color=black>「還有我這副打扮……我是早就習慣身上的服裝因為你的力量而改變了啦，\n不過這還真可愛呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_03.mp3
+msg,1,<outline width=2 color=black>「你是不是也喜歡這套服裝啊？\n你從剛才到現在都一直盯著我看，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1「……妳在說什麼？」,選項2「因為很可愛」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_04.mp3
+msg,1,<outline width=2 color=black>「呵呵……想裝傻也沒用喔！你的眼睛到現在\n還死死釘在我這裡呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva2,0,0,0,0,,,,
+imgconf,milva2,milva1,0,-60,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_05.mp3
+msg,1,<outline width=2 color=black>「你看，胸部這裡……可以從這個心型的洞裡\n看到我的肌膚，你很喜歡吧？你真的很好色耶。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_09.mp3
+msg,1,<outline width=2 color=black>「我也很喜歡這套服裝喔。\n因為很可愛，而且你好像也看得很著迷。呵呵。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_06.mp3
+msg,1,<outline width=2 color=black>「呵呵，是啊，你只是覺得我這副打扮很可愛所以才喜歡的，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_07.mp3
+msg,1,<outline width=2 color=black>「你覺得這套服裝哪裡可愛？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_08.mp3
+msg,1,<outline width=2 color=black>「我是覺得這件輕飄飄的裙子很棒。\n還有這邊，你看，只有這邊露出了一點大腿……你也喜歡這裡吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_09.mp3
+msg,1,<outline width=2 color=black>「我也很喜歡這套服裝喔。\n因為很可愛，而且你好像也看得很著迷。呵呵。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_10.mp3
+msg,1,<outline width=2 color=black>「對了，你讓我穿了這麼漂亮的衣服，\n我得想點辦法來答謝你才對。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:shy,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_11.mp3
+msg,1,<outline width=2 color=black>「──欸，你有沒有什麼想要的東西？就算不是東西也沒關係。\n比如說，如果你有希望我為你做什麼事也可以……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:surprise,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_12.mp3
+msg,1,<outline width=2 color=black>「……巧克力？你是說我們之前聊過的情人節巧克力？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_13.mp3
+msg,1,<outline width=2 color=black>「你真的這麼想要我的巧克力啊？\n其實我可以為你做一些『更棒的事』……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_14.mp3
+msg,1,<outline width=2 color=black>「看來跟我比起來，你更想要巧克力啊……這樣啊──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_15.mp3
+msg,1,<outline width=2 color=black>「……那我也來做做看巧克力吧。\n反正我去拜託亞紗花就行了，她應該會願意教我做法。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_16.mp3
+msg,1,<outline width=2 color=black>「我會做很甜的巧克力送你，我們一起吃吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_17.mp3
+msg,1,<outline width=2 color=black>「對啊，一起吃！因為明明是我做的，要是只有你能吃，\n不就太不公平了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_02_18.mp3
+msg,1,<outline width=2 color=black>「我會幫你準備很多甜到讓人陶醉的巧克力，請好好期待\n情人節吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

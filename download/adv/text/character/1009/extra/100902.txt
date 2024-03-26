@@ -1,0 +1,104 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……什麼事啊。這麼急把我叫住。\n今天的想索已經讓我很累了，想早點回房間啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:anger,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……和卡蒂婭的關係？為什麼你會關心這種事？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_02.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「感覺你討厭她」,選項2　「感覺你在躲著她」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:anger,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這不是當然的嘛。那孩子是聖奠教的聖女……是它的象徵啊。\n對那樣的人我不可能抱有好感的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「抱歉啊，沒人教我要“愛汝之敵”。\n對敵人我不會手下留情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:anger,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但在這種情況下她是不能忽視的戰鬥力，\n本來的話，她是第一個就要殺掉的對象」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_05.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不是“感覺”，而是我的確在躲著她啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我和聖奠教是敵對關係……儘管如此，\n你還要讓我和擔任聖女的人搞好關係嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_07.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我啊，在盡可能的不和那孩子扯上關係啊。因為，這可不是什麼愉快的事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……沒有什麼其他的理由啊。為什麼你會這麼想？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「感覺，嗎……這還真是，隨便的發言呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……看來，你的感覺沒有錯。\n還以為你一直都是心不在焉的呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_11.mp3
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,,
+endwait
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我的父母曾經是聖奠教的教徒。\n我在小時候也遵從教義，信仰著它……絲毫沒有疑惑過」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對我來說相信聖奠教的教義是理所當然的事，\n向納克特原書祈禱，也成為了日常的一部分」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以當我被選為聖奠教的聖女……卡蒂婭的近侍的時候，\n我真的覺得是很光榮的事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……最讓我高興的是，\n我的父母也很高興，覺得我是他們的驕傲」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「可是……這樣的父母，被聖奠教殺了。\n那幫人啊，用信徒的性命來完成某個魔術的儀式」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:anger,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「父母被殺，讓我終於意識到了。\n聖奠教的教義事騙人的……只會，讓人變得不幸」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:unique,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「真是愚蠢啊……以前的我啊，真是愚蠢。然後，作為聖奠教的聖女\n而存在的那孩子也……讓人想吐」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以……現在已經不可能，回到像以前那樣的關係了。\n我和她已經破鏡難圓覆水難收了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你之後，一定也會知道的。\n這個世界……是多麼的醜陋，無知就是原罪」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100900/adv/sound/fav100900_02_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

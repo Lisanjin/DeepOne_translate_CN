@@ -1,0 +1,110 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,patrisia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,-860,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_01.mp3
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,1,<outline width=2 color=black>「嗯……為什麼要特地做那種事情呢。\n我不認為這是一種很好的喝酒方式…………呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0.5,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_02.mp3
+msg,1,<outline width=2 color=black>「對不起，突然被叫了一聲，我嚇了一跳。\n我有點心事，沒注意到你走了過來。……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_03.mp3
+msg,1,<outline width=2 color=black>「沒事，沒什麼大事……利用拉萊耶的資料庫，\n我調集了世界上很多的酒和喝酒方式的資料」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_04.mp3
+msg,1,<outline width=2 color=black>「因為這裏聚集了來自不同國家和地區的人\n我想如果能做出適合各自口味的雞尾酒就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_05.mp3
+msg,1,<outline width=2 color=black>「然後我發現，有書上寫著在日本有一邊\n泡澡一邊喝酒的文化」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_06.mp3
+msg,1,<outline width=2 color=black>「但是，泡在熱水裏的話，受血液迴圈加快的影響，\n醉的會更快，所以這種方式應該不合適吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_07.mp3
+msg,1,<outline width=2 color=black>「所以，我想知道為什麼要特意用那種喝法，\n我一直在思考……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「是不是為了喝醉呢」,選項2　「是要慢慢地品味氣氛」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_08.mp3
+msg,1,<outline width=2 color=black>「確實會比平時更容易醉\n，反而以此為目標……也許有這個因素」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_09.mp3
+msg,1,<outline width=2 color=black>「對於酒力強，不能喝醉的人來說\n也許是有效的吧？……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_10.mp3
+msg,1,<outline width=2 color=black>「話雖如此，在我親自嘗試之前什麼也不好說……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_11.mp3
+msg,1,<outline width=2 color=black>「說起來，也有在溫泉喝酒的圖像\n大部分都是在名為露天溫泉的在野外的溫泉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_12.mp3
+msg,1,<outline width=2 color=black>「在喝酒的時候，味道自不必說\n，場景也是很重要的，這一點也是毫無疑問的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_13.mp3
+msg,1,<outline width=2 color=black>「沐浴在浴池裏眺望美麗的景色……這麼說來，\n日本人借此感受到了能滿足內心的價值吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_14.mp3
+msg,1,<outline width=2 color=black>「如果是這樣的話，作為嗜酒者，我也想試一次啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_15.mp3
+msg,1,<outline width=2 color=black>「酒的話馬上就能準備好，不過就算是拉萊耶\n也沒有露天溫泉……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_16.mp3
+msg,1,<outline width=2 color=black>「總之，雖然有室內浴池\n但是在大浴場試試看可能比較好……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_17.mp3
+msg,1,<outline width=2 color=black>「……啊不，不過，還是還是算了比較好吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_18.mp3
+msg,1,<outline width=2 color=black>「在拉萊耶做這種事情，如果達納被酒吸引過來，\n喝醉後可能會變得很糟糕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_19.mp3
+msg,1,<outline width=2 color=black>「雖然有點可惜，但還是放棄，老老實實地在房間裏享受吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101605/adv/sound/fav101605_01_20.mp3
+msg,1,<outline width=2 color=black>「是啊。如果可以的話，今晚你也一起喝吧？\n我會拿出我的看家本領給你搖個好酒的，哼哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,111 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:surprise,edelgard,0,-120,0.6,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你想來我的房間？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_01.mp3
+endwait
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:normal,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，幹嘛又這麼突然啊……為什麼想來我房間？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_02.mp3
+endwait
+clickwait,,,,,,,,,,,,
+select,選項1　「我對你的日常生活很感興趣」,選項2　「想知道你對傢俱等東西的喜好」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:sad,edelgard,0,-120,0.6,0,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這個嘛，雖說只要看看房間，大概就知道\n別人的生活怎麼樣了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:unique,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我說你啊，不會以為你這麼一說我就同意了吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_04.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:sad,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「居然想瞭解我的生活，\n真是個奇怪的人」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_05.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:surprise,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼要做那種……禮物？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_06.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:normal,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「一直戰鬥很辛苦？　喂喂，不要……我才不需要呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_07.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我是為了自己而戰。\n哪有讓人犒勞和送禮的道理」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_08.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:normal,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我怎麼可能因為這種事就讓你進房間啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_09.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，我的房間又髒……啊，並不是說不乾淨，\n只是說東西太多了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「讓別人看自己的房間……還是要\n做一下心理準備的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_11.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就算不是這樣，我也不打算讓別人進我的房間」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就像我平常不出拉萊耶一樣。\n是因為某種……理由哦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_13.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:smile,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈，你一副想知道的樣子」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:normal,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「很可惜，唯獨這個我可不能告訴你」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對於現在的我來說可是最重要的秘密。\n如果你無論如何都想知道的話，對了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只要你成為那種，能讓我有什麼事情都能向你傾訴心聲的男人\n的話……就行」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈，希望渺茫哦。愛上男人這種事我不太懂，\n況且你對我這樣的女人也沒有太大的興趣吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:surprise,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……沒這回事嗎？　你，難道說……誒？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:shy,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，哈哈……原來是作為同伴啊。啊哈哈，嗯，也是呢。\n哈哈，不要說這種令人誤會的話啊，你這個混蛋」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100504/adv/atlas/stand_a,normal:normal,edelgard,0,-120,0.6,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，我是說如果，如果你有一個是戰鬥狂\n又很不正經的對象呢？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_21.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……即便如此你還想知道我的秘密的話，\n行，我不會阻止你的。隨你喜歡好了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_22.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過我也不認為這樣就能改變我的想法」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_05_23.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

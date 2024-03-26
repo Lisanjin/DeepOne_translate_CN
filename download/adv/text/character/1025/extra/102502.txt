@@ -1,0 +1,110 @@
+name,
+msg,0,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+mask,bg1,0,0,1280,250,1,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,1
+mask,yoshino1,0,0,1280,250,1,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:normal,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1000,,,0,1.5,1.5,1
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼了，看你一副稀奇的樣子。\n是第一次看到修刀嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,
+endwait
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:normal,yoshino,-10,-200,0.47,0.5,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「不用站得那麼遠看吧……\n還是說，你是在意我麼？確實，修繕武器需要專心」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:smile,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「話雖如此，透過餘光，你在旁邊偷看的的事實已經暴露得一覽無餘了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「已經修好了，來我這邊怎麼樣？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我用刀的理由？的確，你對此抱有疑問也不奇怪。\n以刀作為騎士的武器，確實有點奇怪呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「開始作為騎士修行的時候，我接觸到了各種各樣的武器，\n我被要求選擇可以託付自己生命的東西」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個時候，我覺得用起來最順手的就是這個。\n或許，我身體裏面說不定流淌著日本人的血呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，是啊。我母親是日本人。\n好像是以留學為契機，移民到了我出生的國家」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「母親還活著的時候，教了我日本的語言和文化」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我的母親在我很小的時候，就因戰禍而去世了。\n她是一個嚴肅、又溫柔的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……如果沒有出現發病者的話。或者，來打倒那些發病者的\n不是防疫修道會的話，也許我就不會失去家人了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_11.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「發病者？」,選項2　「防疫修道會？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……那是生物被高濃度的魔素感染後，變異成為的怪物」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「本來，這種存在是不為人知的。\n在小鎮上，也不可能會有對抗發病者群的策略……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……可是現在的世界上，這種悲劇有很多」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_14.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:sad,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是羅馬天主教的實戰部隊哦。為了殲滅發病者\n防疫修道會，放火燒了我所在的小鎮，明明我還活著」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:anger,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我之所以得救，是因為巴爾蒂克姆騎士團趕來了。\n如果不是那樣的話，我現在已經不在這裏了吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我很感謝，同時也憧憬著……憧憬著成為一個，為他人而戰的騎士」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_17.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以我想加入巴爾蒂克姆騎士團」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……好像，說的有點多了。\n明天也必須要出去想索，我們回房間吧……嗯？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:smile,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，晚安……注意明天不要睡懶覺哦，知道了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102500/adv/sound/fav102500_02_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

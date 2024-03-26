@@ -1,0 +1,93 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010400.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊呀、竟然在這種地方見面……今天不想索了嗎？\n怎麼啦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「只是散步……？　哼哼、什麼啊。在這種全是金屬的建築物裏轉悠會很開心嗎？　真是奇怪的人呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我啊、在這裏想幻夢境的事情。在那個世界\n充滿了甜蜜的感情、光是想像就覺得很快樂了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以啊……呐、希望你能快點帶我去下一個想索？\n當然、也邀請姐姐」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你一直和莉迪亞在一起嗎？」,選項2　「你喜歡莉迪亞啊」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒、是的。因為是雙胞胎。從出生開始就一直在一起」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「從來沒有分開過、今後也絕對不會分開。\n這種事、我和姐姐都不希望發生」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果被強行拆散的話、\n可能會把那個人搞得亂七八糟……呼呼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_07.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是的、是世界上最喜歡的人。一直一直、從出生時就是這樣。\n因為是雙胞胎。姐姐就是我、我就是姐姐」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯、這種喜歡，已經無法用言語表達了……這種心情、\n到底應該怎麼表達呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_09.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「姐姐一定也和我有一樣的想法」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「姐姐總是把我放在第一位。\n她從以前開始就非常珍惜我哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,100,200,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼哼、當然。是好姐妹！　只要有姐姐在、\n我就充滿了幸福感哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_12.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「姐姐給我帶來的全部都是寶物。\n有有趣的事，也有開心的事……當然也有難過和痛苦的事情！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊、真是讓人著急……一定是、我對姐姐的感覺\n喜歡她的那種感情、沒有完全傳達出來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「語言、為什麼這麼不方便呢。總有一天、\n我對姐姐的那種喜歡、會好好地傳達給你的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「總有一天、如果全世界都充滿了甜蜜的心情……最後、\n我想感受姐姐的甜蜜……就那樣、我……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是……是啊、這一定是在說“我愛你”。\n我真的好愛姐姐啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101300/adv/sound/fav101300_02_17.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

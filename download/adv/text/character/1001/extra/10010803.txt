@@ -1,0 +1,119 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11190300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_01.mp3
+name,<outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline>,
+msg,1,<outline width=2 color=black>「我唸書時的事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_02.mp3
+msg,1,<outline width=2 color=black>「就算要講……我也沒什麼有趣的事好講哦。\n真的就是很普通的學校啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_03.mp3
+msg,1,<outline width=2 color=black>「那你舉例說說吧，你想聽怎麼樣的事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1「成績的話題。」,選項2「學校活動的話題。」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_04.mp3
+msg,1,<outline width=2 color=black>「咦？你要問這個？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_05.mp3
+msg,1,<outline width=2 color=black>「呵呵，別看我這樣，其實我以前很會唸書的。\n每次考試都名列前茅哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_06.mp3
+msg,1,<outline width=2 color=black>「所以當我告訴老師說我不打算唸大學的時候，\n老師還覺得非常可惜呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_07.mp3
+msg,1,<outline width=2 color=black>「話雖如此，就算上了大學，我也沒有什麼事情想做，\n所以就照著洛夫克拉夫財團的指示來到拉萊耶了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_08.mp3
+msg,1,<outline width=2 color=black>「如果是因為那樣的決定，才讓我有了今天的話，\n那我覺得當初的選擇並沒有錯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_09.mp3
+msg,1,<outline width=2 color=black>「學校的活動……校慶之類的嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_10.mp3
+msg,1,<outline width=2 color=black>「有是有，但很普通哦！一年級時做章魚燒，二年級時\n做可麗餅，三年級時是簡易的咖啡館……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_11.mp3
+msg,1,<outline width=2 color=black>「啊，不過我記得我蠻努力在想材料和菜單的哦。\n也很努力要壓低食材成本……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_12.mp3
+msg,1,<outline width=2 color=black>「每年我們班的營業額都是全校數一數二的哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_13.mp3
+msg,1,<outline width=2 color=black>「啊，對了。今晚你要不要來我房間？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_14.mp3
+msg,1,<outline width=2 color=black>「畢業紀念冊那些我也是沒帶來啦，\n但行動裝置裡有存一些照片檔。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_15.mp3
+msg,1,<outline width=2 color=black>「如果你想看的話可以給你看……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_16.mp3
+msg,1,<outline width=2 color=black>「──喂，你不需要那樣猛點頭吧。看你這麼有興趣，\n反而讓我不太想給你看了耶……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_17.mp3
+msg,1,<outline width=2 color=black>「開玩笑的啦……我會給你看啦，你稍微冷靜一下。\n……不過，真的不值得你這麼期待啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_18.mp3
+msg,1,<outline width=2 color=black>「畢竟那也不是小時候的照片，和現在的樣子比起來\n應該沒多大變化，你看了也許會失望。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_19.mp3
+msg,1,<outline width=2 color=black>「啊……不過，畢業旅行時的…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_20.mp3
+msg,1,<outline width=2 color=black>「──！？等、等一下！\n看照片的事還是取消吧，好嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_21.mp3
+msg,1,<outline width=2 color=black>「要不然的話，給我一點時間，讓我整理照片檔……\n仔細想想，那裡面也有我和朋友一時嗨過頭亂拍的照片……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_22.mp3
+msg,1,<outline width=2 color=black>「……做怪表情什麼的……這、這麼說還，\n那時的照片我好像也放進去了……還有幹了那件事的……嗚嗚！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_23.mp3
+msg,1,<outline width=2 color=black>「不、不行！其他的照片也就算了，唯獨那些絕對不能給你看！\n反正女生就是有些時候的樣子絕對不能讓男生看到就對了啦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100108/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100108/adv/sound/fav100108_03_24.mp3
+msg,1,<outline width=2 color=black>「討厭……以前的我到底在搞什麼嘛……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

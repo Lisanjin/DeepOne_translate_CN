@@ -1,0 +1,99 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「哇—……快看啊，艾蒂爾加爾德的新衣服。\n帥呆了吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真的，在幻夢鏡不會膩呢……好有意思的地方。\n稍微有點影響就發生變化了」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不，這麼說的話有趣正是因為我的存在，嘛？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「幻夢境把我強化了，守護我的是你的力量。\n所以這個衣服什麼的也是那個力量轉化為肉眼能看到的具象吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯？這麼說……難不成這個衣服的設計什麼的\n也多少有你的參與嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……胸和肚臍，你喜歡哪個？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_06.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「都喜歡」,選項2　「大腿」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂想太美了吧……色迷迷的。\n穿上這種設計的衣服你還挺開心嘛」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你啊，意外的這種事也是遵從欲望呢……\n嘛，我倒是保守也好開放也好，乾乾淨淨就蠻喜歡」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……喜歡？不，冷靜地思考的話，只是覺得不錯\n並不是喜歡啦」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_09.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那個啊—……啊—，那個—……這樣啊」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛男生這種生物吧。我懂，\n但是在我這麼漂亮的胸面前竟然堂堂正正地宣佈喜歡大腿真的是」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:sad,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「勉勉強強吧……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:smile,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——什麼嘛，不要一副受了打擊樣子哦。\n嘛，受你的興趣影響真是說了一堆廢話啊」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「分析你給予我的術式的感覺，這次的變化理由像是\n充滿幻夢境的納克特原書的魔力品質發生了變化</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖說通過你，已經轉化為了保護我們的術式，\n果然根源的影響力很大吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「據說在這附近已經確認了異常的魔力狀態，\n所以將其視為原因比較妥當」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「從這一點來說，你好像是最受影響的……身體狀況什麼的，\n有心情不好嗎？沒事最好，但有什麼要說出來哦」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我也會儘量注意的……稍微無聊地\n期待了下以至於動搖了。可能會漏掉也不一定」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……期待什麼，就是你，隨著魔力的增大\n會發生什麼也不一定吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「正是因為不知道會發生什麼，所以才期待啊。\n對未知的戰鬥充滿了期待呢？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「想像著邁出下一步的瞬間，時而懷揣期待，時而懷揣不安。\n我覺得，人生的樂趣就在於此了哦」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀，走吧。磨磨蹭蹭就留在這兒了哦。\n我的步伐，跟得上嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_01_22.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

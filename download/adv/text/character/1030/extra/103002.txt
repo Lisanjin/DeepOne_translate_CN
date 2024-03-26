@@ -1,0 +1,112 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,anna1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:smile,anna2,0,0,0,0,,,,
+imgconf,anna2,anna1,0,-400.0,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_01.mp3
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「嘿、嘿嘿……呼呼呼呼……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_02.mp3
+msg,1,<size=30><outline width=2 color=black>「啊啊……小喵喵們太可愛了喵。\n好想摸貓貓們軟乎乎的毛摸個痛快呀——哈！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0.5,,,,
+endwait,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_03.mp3
+msg,1,<size=30><outline width=2 color=black>「你什麼時候過來的！？不、不是的、剛剛！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_04.mp3
+msg,1,<size=30><outline width=2 color=black>「就是，我一推開圖書館的門，正好看見喵喵的畫像……\n然後就，稍微的盯著看了一下下而已……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_05.mp3
+msg,1,<size=30><outline width=2 color=black>「你想想，我可是為搖滾而生的女性……怎麼可能像這樣\n喜歡喵喵呢對吧——！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「是嗎」,選項2　「真的嗎？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_06.mp3
+msg,1,<size=30><outline width=2 color=black>「是、是真的啦……唔……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_07.mp3
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_08.mp3
+msg,1,<size=30><outline width=2 color=black>「你、你這傢伙，那眼神是什麼意思！你絕對——沒有相信對吧！？\n真的不是你想的那樣！我對於喵咪什麼的，一點也不……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_09.mp3
+msg,1,<size=30><outline width=2 color=black>「你這麼問是什麼意思啊？我真的對喵咪什麼的\n一點興趣都沒有！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_10.mp3
+msg,1,<size=30><outline width=2 color=black>「因為，喵咪不都是很反復無常的麼？首先這一點就讓我討厭了。\n總是自以為是，絲毫沒想到會給人添麻煩……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:smile,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_11.mp3
+msg,1,<size=30><outline width=2 color=black>「而且，還會突然喵喵叫得人頭疼，\n天冷的時候還會若無其事的鑽進人的被窩裏」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_12.mp3
+msg,1,<size=30><outline width=2 color=black>「這太讓人受不了了，簡直讓人內心一陣悸動……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_13.mp3
+msg,1,<size=30><outline width=2 color=black>「……嗚、嗚嗚」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_14.mp3
+msg,1,<size=30><outline width=2 color=black>「嗚……啊啊，真是的！這不是沒辦法麼！\n還不是因為，喵咪實在是太太太——可愛了嘛！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_15.mp3
+msg,1,<size=30><outline width=2 color=black>「不管是圓嘟嘟的嘴還是粉撲撲的爪子和鼻子還有觸感……\n總之、貓咪的全部都最棒了！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_16.mp3
+msg,1,<size=30><outline width=2 color=black>「說到底，這又怎麼樣嘛！我喜歡喵咪很奇怪麼？\n還是說有哪條法律規定搖滾手不能夠喜歡喵咪了？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_17.mp3
+msg,1,<size=30><outline width=2 color=black>「沒有對吧，沒有的、對——吧！\n那就一點問題都沒有了對——吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_18.mp3
+msg,1,<size=30><outline width=2 color=black>「……你、你在笑什麼啊？\n哈、哈啊？可愛什麼的，你在說什麼啊！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_19.mp3
+msg,1,<size=30><outline width=2 color=black>「我才不是什麼可愛的類型呢……可愛的\n是喵咪們，我才不可愛呢……那個、可是、就是……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_02_20.mp3
+msg,1,<size=30><outline width=2 color=black>「~~~~！總、總之不對啦——！\n不要說這些奇怪的話啊。笨——蛋！笨蛋笨蛋！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

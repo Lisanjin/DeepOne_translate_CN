@@ -1,0 +1,123 @@
+name,,,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+playse,/download/sound/se/se_048.mp3
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼了……你還要去其他地方吧？\n那麼就別停下，繼續前進吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我只是看著你而已，沒打算妨礙你……別在意」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔呣……難道說，你正要去女人的房間嗎？\n那麼我更加不能不盯著你了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你的力量和納克特原書有關聯，有多種利用方法。\n就算你沒有利用的意思……不，正因為如此才要小心」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「肯定會有企圖利用那種力量的人出現。\n不，說不定已經潛伏在你身邊了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你對自己力量缺乏意識。\n所以我認為，我需要小心地監護你一段時間」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_07.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「沒有這個必要」,選項2　「你在擔心我嗎？」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……看起來你很信任你的同伴啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_08.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:anger,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，對方可不一定會回報你同等的信賴」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_09.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為了得到納克特原書，可以輕易地背叛他人的感情。\n你要記住，世界上肯定有這種人」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這應該對你有幫助」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_11.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，我很擔心。按你的性格，因該會輕易地接受他人的請求。\n但是，人的好心，有時候會引發悲劇」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，我才要守在你的身邊。這樣一來，那些心懷鬼胎的人\n也無法為所欲為」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_13.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我希望你自己也能意識到你那份力量的危險性\n謹慎行動」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來，與其採用這種拐彎抹角的辦法，還是直接奪走你的能力n\更加有效率。但是，我並不想做這種不講道理的事情」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你是個善良的好人，只是想保護他人而已。\n我沒有道理去傷害你這樣的人」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話說回來，我優先保護的是那些生活在幻夢境裏的人。要是你幫助那些\n無腦渴求納克特的自殺志願者，引起動亂的話——」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_17.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,xeno,0
+endwait
+mask,bg1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,xeno1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,0,0,0,,,,
+imgconf,xeno,xeno1,0,-400,,,0,1.5,1.5,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「我就不得不與你為敵了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_18.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:anger,xeno,0,-120,0.5,0.5,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「失想者是在納克特原書裏失去心神後，被重組的生命。\n你們也許也覺得失想者是虛假的生命吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，我和你們一樣活著……就算心靈和記憶的大部分\n都丟失在了幻夢境之中，也能像這樣和你說話」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_20.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你之所以能把我帶回現實世界，也是因為\n我們心靈產生了羈絆……你的能力應該就是這樣的吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_21.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「和我一模一樣的生命，還生活在幻夢境裏……我想守護他們」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_22.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「同時，你承認了我和你的對等性並與我結合，\n如果可以，哪怕到最後一刻我也想和你保持良好的關係」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_23.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你理解我了啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_24.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，就沒必要解除監視了。\n來吧，你要是能在我的眼前和女人求愛的話就去吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102400/adv/sound/fav102400_01_25.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

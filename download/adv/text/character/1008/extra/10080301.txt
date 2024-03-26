@@ -1,0 +1,125 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這是黑白棋……對嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「好懷念啊。以前，我經常玩呢。\n在拉萊耶，也有這種類似的東西啊……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_02.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣吧……現在時間還有點充裕，我就陪陪你吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:unique,holly,0,-160,0.5,0,,,,,
+spine,download/adv/spine/Mark7,em4,default,animation,0,80,180,0.4,0.8,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「但是……作為完美的從者，哪怕只是黑白棋的勝負也不會手下留情。\n很抱歉，恐怕我會讓你嘗到失敗的辛酸」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，失敗絕不是應該感到羞恥的一件事。\n重要在挑戰……這才是最有意義的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_05.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，現在開始吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_06.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0
+msg,0,
+name,
+endwait
+bg,color_0_0_0,1
+endwait
+msg,0,<size=30><outline width=2 color=black>……</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,1,,,,,,,,,,
+endwait
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0.5,,,,,
+endwait
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我，我又輸了……居然十次全敗……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_07.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+spine,download/adv/spine/Mark8,em1,default,animation,0,160,220,0.65,0.3,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「不可能吧……這也太奇怪了……為什麼這麼多次了\n就是贏不了呢……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_08.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「這絕對有什麼問題……再來一次！\n我們再來一局！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_09.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「不論來多少次結局都是一樣的」,選項2　「我已經膩了……」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「才沒有那樣的事！\n我已經掌握了訣竅。下次一定會贏的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_10.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「確，確實我每次輸都重複同樣的臺詞……\n但是這次是真的！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_11.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……！那副漫不經心的態度……我一定要把你擊潰！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_12.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「膩，膩了嗎……！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_13.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「說這種話無非是想逃吧，那怎麼能行……！\n快點，下一局！這回一定要把勝利掌握在這只手上……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_14.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「身為哈穀李維斯家族的人，身為一個完美的從者……\n怎麼能在黑白棋上被絆倒」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:unique,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣的話，不管接下來受到多少恥辱，我都會戰鬥到勝利為止」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「計算總成績？嘻嘻，我對過程沒有興趣。\n只要我最後獲勝了，那就是獲勝了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「來吧，快點準備！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「還有一件事，我事先說一下，不要對我手下留情。\n否則即便是贏了假賽對我也毫無意義」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在可不是歎氣的時候！\n來吧，覺悟吧……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_08_20.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

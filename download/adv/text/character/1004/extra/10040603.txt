@@ -1,0 +1,168 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,-350,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy2,350,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy3,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_b,body:anger,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_01.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「哈啊啊啊啊啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+name,
+msg,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,-350,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy2,350,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy3,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+name,
+msg,0,
+stopbgm,0.5,,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_02.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「呼……這次的想索，和虛像接觸得比較多呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_03.mp3
+msg,1,<outline width=2 color=black>「為了接近幻夢境的深處——納克特原書，\n現在可不是放鬆的時候……向前進吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「稍微休息下吧」,選項2　「最好回去一下」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_04.mp3
+msg,1,<outline width=2 color=black>「我知道你在擔心我，但多虧了你的力量，負荷\n也減輕了不少，沒問題——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,dana,-50_-200,0.4,1
+endwait,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,-50,-200,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_05.mp3
+msg,1,<outline width=2 color=black>「嗚……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,dana,0_-180,0.5,1
+endwait,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_06.mp3
+msg,1,<outline width=2 color=black>「啊，沒……沒關係的。只是有點站不穩而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_07.mp3
+msg,1,<outline width=2 color=black>「不能就這樣停下腳步……就算我這麼說，\n你也不會再同意我繼續前進了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_08.mp3
+msg,1,<outline width=2 color=black>「但是，對我來說除了前進……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_09.mp3
+msg,1,<outline width=2 color=black>「不……我也能理解，\n你說的都是對的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_10.mp3
+msg,1,<outline width=2 color=black>「不行啊，正是因為有你的幫助，想索進展得很順利，\n所以我才產生了必須快點前進的焦慮感……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_11.mp3
+msg,1,<outline width=2 color=black>「我明明也知道再逞強下去也不會有好結果……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_12.mp3
+msg,1,<outline width=2 color=black>「我會這麼想大概是因為穿著輝夜姬的服裝吧。\n我感覺到總有一天，我的道路會跟別人不一樣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_13.mp3
+msg,1,<outline width=2 color=black>「所以，也許只是一步，我都想趁現在盡可能地前進」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_14.mp3
+msg,1,<outline width=2 color=black>「——一直……在一起嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_15.mp3
+msg,1,<outline width=2 color=black>「如果我能老實地相信你說的話就好了。\n但我無論如何……也無法消除內心的不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_16.mp3
+msg,1,<outline width=2 color=black>「不，也許是因為我在心裏確信，\n我所期望的，總有一天會和你們的道路……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_17.mp3
+msg,1,<outline width=2 color=black>「……我說，這只是舉個例子而已哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_18.mp3
+msg,1,<outline width=2 color=black>「面對要回到月亮上的輝夜姬，如果是你會怎麼做呢？\n是挽留呢，還是目送呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_19.mp3
+msg,1,<outline width=2 color=black>「誒？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_20.mp3
+msg,1,<outline width=2 color=black>「一起實現輝夜姬所希望的未來……嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_21.mp3
+msg,1,<outline width=2 color=black>「不管那個願望是什麼，始終都是為了輝夜姬……\n原來如此。不愧是你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_22.mp3
+msg,1,<outline width=2 color=black>「但是，說不定……輝夜姬……也對自己的願望感到迷茫呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_23.mp3
+msg,1,<outline width=2 color=black>「迷茫……如果不強行拉一把的話，\n她就無法下定決心改變自己的道路……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_24.mp3
+msg,1,<outline width=2 color=black>「……當然，說到底只是在假設而已啦。\n所以，你不用露出這麼苦惱的表情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100406/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100406/adv/sound/fav100406_03_25.mp3
+msg,1,<outline width=2 color=black>「說得太多了……今天到這裏就回去吧。\n我也不想再讓你擔心了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

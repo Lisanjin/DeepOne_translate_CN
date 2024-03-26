@@ -1,0 +1,342 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11070300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20120201/adv/image/20120201.png,enemy1,-350,-50,1.35,0.5,,,,
+sprite,download/monster/20120201/adv/image/20120201.png,enemy2,350,-50,1.35,0.5,,,,
+sprite,download/monster/20120201/adv/image/20120201.png,enemy3,0,-50,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_b,body:unique,ouka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「哼，燃燒殆盡吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20120201/adv/image/20120201.png,enemy1,-350,-50,1.35,0.5,,,,
+sprite,download/monster/20120201/adv/image/20120201.png,enemy2,350,-50,1.35,0.5,,,,
+sprite,download/monster/20120201/adv/image/20120201.png,enemy3,0,-50,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash2_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spine,download/adv/spine/Fire1,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_038.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+anm,tint,enemy2,0_0_0,0.5,0
+anm,tint,enemy3,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_b,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「兔子……整個被燒熟了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_b,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「唔……感覺這肉有股臭味，\n不過，沾上烤肉醬，應該能吃吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:sad,ouka,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「你……真噁心。這兔子怎麼能吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「等、等下、我說笑的！只是想讓現場的氣氛變得輕鬆一些而已。\n沒說真的想要吃它……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:sad,ouka,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「真的嗎……你這個人，無論是毛蟲還是什麼蟲，只要能夠吃的話，\n都會塞進嘴裏吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,yoshino,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:normal,ouka,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「怎麼了，芙勞。剛才一直盯著這兔子看……\n難道連你也覺得這個兔子很好吃嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「不……你看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:surprise,ouka,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「什麼？發現什麼東西嗎……啊，這沾在杵上的白粉是？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「小麥粉……好像不是。質地太細膩了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,0,<outline width=2 color=black>「毒品？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,yoshino,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:sad,ouka,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「就白色的粉而已，你怎麼什麼都能聯想到啊……\n芳乃。你去舔舔確認下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:anger,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「才不要」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:sad,ouka,300,-120,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「為什麼啊？沒准好吃呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:anger,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「才不是這個問題。這白色粉末可是粘在虛像木槌上的粉末。\n吃了之後，誰知道會有什麼後果啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:sad,ouka,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「你還好意思說？剛才你不是說著要拿這個燒熟的虛像來下酒嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「都說剛才的話只是玩笑而已……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「話說回來，這粉末……我小時候好像見過……\n母親好像經常用這樣的粉來……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……難道是米粉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「米粉……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「就是用於製作團子的米粉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,0,<outline width=2 color=black>「團子……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,yoshino,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:normal,ouka,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「噢？怎麼了，埃爾塔。突然就兩眼冒光。你喜歡團子嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,0,<outline width=2 color=black>「嗯……亞紗花之前做過這種點心給我吃。\n圓圓的，又軟又甜……很好吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「光是想想……肚子就要叫起來了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:smile,ouka,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「你那麼喜歡嗎……啊，那我有一個好主意！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「……你一般說出這種話的時候，\n肯定不是什麼好主意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,yoshino,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:normal,ouka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「你就別潑我的冷水啊。\n埃爾塔不想吃團子吃到飽嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,0,<outline width=2 color=black>「想」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:smile,ouka,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「那我們就偷這些兔子的團子吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「……冷不丁地說什麼呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「你想想，說到滿月，就是賞月，說到賞月，就是兔子。\n然後說到兔子，就是製作團子，不是嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「沾在這個杵上的粉末是製作團子的材料的話，\n那麼它們肯定是在製作團子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「月兔不是做餅的嗎？怎麼可能會做團子呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「餅跟團子都差不多吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「樣子和味道都不同啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「那大概就是滿月時製作供奉用的團子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「好牽強啊……就算兔子們真是在做團子，\n而我們去偷它們的團子就是缺德」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「別慫恿別人去做這些壞事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:surprise,ouka,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「喂喂，你說話真難聽啊。賞月時供奉的團子，\n是可以偷的。之前你可是對我說過哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102506/adv/atlas/stand_a,body:surprise,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「什麼？我說過……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101506/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline>,
+msg,0,<outline width=2 color=black>「挺久以前的事情了。\n好像是……我想起來了。我們在南美戰場的基地待機時發生的事情——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

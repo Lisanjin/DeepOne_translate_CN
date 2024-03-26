@@ -1,0 +1,210 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:anger,bea,-10,-200,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼……哈……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……你還好嗎？　沒想到，敵人的數量居然有這麼多……\n也不小心和大家走散了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「放心吧。即便是拼上的我性命，我一定會保護好你的。\n――畢竟我，已經死過一次了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「別用這種眼神看著我……我――」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_04.mp3
+clickwait,,,,,,,,,,,
+flash,255,255,255,4,0.2,0.5
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:anger,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「――！，這個聲音是……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_05.mp3
+clickwait,,,,,,,,,,,
+spriteoff,bea,0
+endwait
+sprite,download/monster/20020301/adv/image/20020301.png,monster,0,-200,1.25,0.5,,,,
+flash,255,255,255,4,0.2,0.5
+shake,0.1,4,20,20
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,
+spriteoff,monster,0
+endwait
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0.5,,,
+endwait,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「該死……！　什麼時候，身後……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_06.mp3
+clickwait,,,,,,,,,,,
+spriteoff,bea,0
+endwait
+sprite,download/monster/20020301/adv/image/20020301.png,monster,0,-200,1.25,0.5,,,,
+endwait,,,,,,,,,,,
+anm,scale,monster,1.5_1.5,0.5,0
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――！」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+flash,255,255,255,4,0.2,0.5
+shake,0.1,4,20,20
+clickwait,,,,,,,,,,,
+spriteoff,monster,0
+endwait
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0.5,,,
+endwait
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「按倒貝托麗薩」,選項2　「牽貝托麗薩的手」
+if,select_===_1,,,,,,,,,,
+spriteoff,monster,0
+endwait
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,bea,-10,-400,0.8,0,,,,
+shake,0.2,4,20,20
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什……！？　別管我，快走……\n難道，你打算掩護我嗎……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:anger,bea,-10,-400,0.8,0,,,,
+msg,1,<size=30><outline width=2 color=black>「別管我了――！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_09.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteoff,monster,0
+endwait
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:surprise,bea,-10,-400,0.8,0,,,,
+shake,0.2,4,20,20
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:anger,dana,-10,-400,0.8,0,,,,
+msg,1,<size=30><outline width=2 color=black>「好險，才怪呢！\n為什麼要救我啊……比起這種事你更應該保護好自己啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當時根本不是管我的時――！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+mask,bg1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,bea1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,0,0,0,0,,,,
+imgconf,bea,bea1,0,-930,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――嗯唔、啊……滋溜、唔啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_13.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:shy,bea,-10,-400,0.8,0.5,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「……竟然在這種時候吻我……你，你……！\n沒有，我不是生氣……反而，是――」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_14.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020301/adv/image/20020301.png,monster,0,-200,1.25,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――！」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,
+spriteoff,monster,0
+endwait
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:unique,bea,-10,-200,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……別吵了。你沒看出來，我現在正忙著嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_c,body:anger,bea,-10,-200,0.5,1,,,,
+playse,/download/sound/se/se_046.mp3
+endwait
+msg,1,<size=30><outline width=2 color=black>「礙事鬼，還請快快離開……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_16.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+name,
+msg,0,
+bg,color_0_0_0,1,255
+stopbgm,0.5
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait
+bg,download/bg/bg_10030300.jpg,1,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――終於結束了。已經，沒事了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……多虧了你的吻，讓我的力量暫時提高了。\n真不虧是你啊……多虧了你，我才能贏了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:shy,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……那個，我能問你一件事嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「剛才……只是為了強化我的力量才吻我的嗎……\n――啊，算了，還是沒事了。問了一件蠢事！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:surprise,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？　因為我在輕視自己？\n那是……什麼意思……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為我很重要，所以用吻……來證明……嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻、嘻嘻……嘻嘻嘻……說……說這種能讓我這麼開心的話\n我都不知道該怎麼辦了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_23.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「如果，我又輕視自己的話，你還會用同樣的方式向我證明嗎……\n對你來說，我到底有多重要呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_24.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那……我再也不會輕視自己了……\n也不會忘記你說的這些話，那你可以再向我證明我的重要性嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_13_25.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

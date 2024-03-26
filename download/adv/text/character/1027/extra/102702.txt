@@ -1,0 +1,99 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,1.0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_01.mp3
+name,<size=27><outline width=2 color=black>埃爾塔・塔拉絲庫</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「噢噢——……有新的入手了……接下來——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_02.mp3
+msg,0,<size=30><outline width=2 color=black>「嗯……你問這個？這是贈送的巧克力點心。\n雞蛋形狀的，中間有個膠囊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_03.mp3
+msg,0,<size=30><outline width=2 color=black>「膠囊裏有贈送的手辦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_04.mp3
+msg,0,<size=30><outline width=2 color=black>「這是之前米露瓦送給我的，又好吃又好玩，\n所以我收集了很多，也吃了很多……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_05.mp3
+msg,0,<size=30><outline width=2 color=black>「我現在正在收集『被各種交通工具撞上的士兵系列』……\n剛剛又新出了戰鬥用飛機撞擊版本」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_06.mp3
+msg,0,<size=30><outline width=2 color=black>「它展現出以馬赫速度衝擊的樣子，身體呈現飄逸般的絕妙曲線。\n滿分一百的話，可以打八十九分」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_07.mp3
+msg,0,<size=30><outline width=2 color=black>「然後，另一種……\n神秘版本如果出了的話，我就能集齊所有系列了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_08.mp3
+msg,0,<size=30><outline width=2 color=black>「莉迪亞和米露瓦都說沒集齊了，我太厲害了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「其實……」,選項2　「艾蒂爾加爾德也在收集」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_09.mp3
+msg,0,<size=30><outline width=2 color=black>「……？你口袋裏放了什麼東西？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_10.mp3
+msg,0,<size=30><outline width=2 color=black>「誒……那，難道是……神秘版本……？\n你也在收集嗎……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_11.mp3
+msg,0,<size=30><outline width=2 color=black>「霸王龍衝突版本……咦，這也是交通工具麼？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_12.mp3
+msg,0,<size=30><outline width=2 color=black>「嗯……先不說細節，這個好厲害啊，在被\n霸王龍吃掉的那一瞬間，士兵們臨死前的絕望感都被淋漓盡致地表現出來了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_13.mp3
+msg,0,<size=30><outline width=2 color=black>「這個，滿分……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_14.mp3
+msg,0,<size=30><outline width=2 color=black>「說起來，我聽說莉迪亞和米露瓦也是得知艾蒂爾加爾德在收集這個，\n才開始收集的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_15.mp3
+msg,0,<size=30><outline width=2 color=black>「我不太瞭解艾蒂爾加爾德……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_16.mp3
+msg,0,<size=30><outline width=2 color=black>「……！艾蒂爾加爾德已經把這個版本都集齊了？\n其他的系列也差不多了，全部……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_17.mp3
+msg,0,<size=30><outline width=2 color=black>「好厲害……值得尊敬」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_18.mp3
+msg,0,<size=30><outline width=2 color=black>「我也不能輸給她……得快點集齊，\n去收集下一個系列」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_19.mp3
+msg,0,<size=30><outline width=2 color=black>「之前我計畫的是一天三個……以後得一天五個了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_20.mp3
+msg,0,<size=30><outline width=2 color=black>「……吃膩？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_21.mp3
+msg,0,<size=30><outline width=2 color=black>「不懂你在說什麼。\n吃巧克力怎麼會膩呢。吃多少都不會」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102700/adv/sound/fav102703_02_22.mp3
+msg,0,<size=30><outline width=2 color=black>「只是吃太多會有蛀牙……這一點需要注意，\n……沒關係，我會好好刷牙的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,101 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀，正好。你現在有空嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那我們一起打牌怎麼樣？\n剛才我打掃實驗室的時候發現的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「以前經常和父母，弟弟一起玩。\n還會賭上糖果什麼的，氣氛相當熱烈哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那時，身為研究員的父母在這裏工作，\n還是這個專案的核心人物呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「從這一角度上來說父母本來也應該十分忙碌……\n但每天也會抽出時間陪伴家人度過，一起玩耍……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「――不，抱歉。\n這應該和你沒有關係吧。所以不要在意」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別管這些了，不如玩遊戲吧。雖然是我邀請你的，\n但你可以選擇遊戲種類哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「有什麼想玩的遊戲嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_08.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「21點」,選項2　「5張牌」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……你選擇了一個簡單但有深度的遊戲。\n不僅要靠運氣的因素，還要考慮計算」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「如果根據統計學來行動，勝率也會有飛躍性的提高\n，真有趣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呃……你想用心理戰嗎?\n可以啊，我接受你的挑戰」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「玩牌有很強的運氣成分，\n但最重要的是和對方較量的策略，這才是決定勝負的關鍵」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為是某項研究的一環，也多少會涉及一些心理學哦。\n不可粗心大意哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_13.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「趕快開始試一下吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「可是，就這麼漫無目的地打牌也沒什麼意思啊。\n搞得稍微刺激一些不覺得更讓人興奮嗎?」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:unique,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那……如果我贏了，\n讓我把你身體的每一個角落都查看一番吧……呵呵呵」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「好啦好啦，不要露出那種厭惡的表情……你不覺得有些緊張感，\n才會讓人更看重勝負嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是反過來如果你贏了的話……我也可以任由你處置。\n我保證會答應你的任何要求」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:unique,siruvi,25,-120,0.5,0,,,,
+spine,download/adv/spine/Mark9,em1,default,animation,0,120,160,0.65,0.8,0.5
+endwait,,,
+msg,1,<size=30><outline width=2 color=black>「無論怎樣的行為，我都會欣然接受的，\n放心吧……呵呵呵……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_09_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+spineoff,em1,0,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

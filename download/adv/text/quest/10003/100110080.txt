@@ -1,0 +1,349 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020300.jpg,0,,,,,,,,
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:anger,jya,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:anger,catia,300,-100,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈啊、哈啊……追兵的情況如何，卡蒂婭大人？」</outline></size>,,,,,,,,,,
+clickwait
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「稍微等等…………感覺不到追兵的氣息和魔力。\n看來已經完全擺脫了」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jya,-300,-120,0.5,0,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣啊……那就總算可以喘口氣了吧」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯。伊蓮娜，你身體狀況沒問題吧？」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,jya,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:sad,ily,-300,-220,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然不能說狀態絕佳……\n不過嘛，比剛才要好多了」</outline></size>,,,,,,,,,,
+clickwait
+select,選項1　「太好了」,選項2　「你可以多依靠我的」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:smile,catia,300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，我也放心了。臉色也比剛才要好了……\n我是不想看到伊蓮娜痛苦的樣子的」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:shy,ily,-300,-220,0.5,0,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯」</outline></size>,,,,,,,,,,
+clickwait
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:unique,ily,-300,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……說什麼蠢話啊。就算我變得再弱，\n也不至於淪落到需要依靠你這個一點戰鬥能力都沒有的人」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「算、算了算了，伊蓮娜。他也是因為安了心，\n說話才會這樣隨意的，對吧？」</outline></size>,,,,,,,,,,
+clickwait
+endif,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，這次真是遭罪了啊。\n全員平安脫險，真是太好了……」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:sad,ily,-300,-220,0.5,0,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊……被大量的虛像包圍，捲入火災……\n這樣的遭遇真讓人夠受的了」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,catia,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jya,300,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你後面的頭髮有點燒焦了哦。\n太難堪了，最好處理一下吧？」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ily,-300,-220,0.5,0,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你不也滿身是灰嗎？沒有比這更髒的了吧」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:unique,jya,300,-120,0.5,0,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:unique,ily,-300,-220,0.5,0,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「氣、氣氛又變糟了……你們兩位，不要再吵架——」</outline></size>,,,,,,,,,,
+clickwait
+stopbgm,0.5
+endwait,,,,,,,,,,,
+spriteoff,catia,0
+endwait
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:smile,jya,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:smile,ily,300,-220,0.5,0.5,,,,
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……呵呵」</outline></size>,,,,,,,,,,
+clickwait
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……呵」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,ily,0
+endwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,300,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……咦、咦？」</outline></size>,,,,,,,,,,
+clickwait
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jya,-300,-120,0.5,0,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……？您怎麼了，卡蒂婭大人？」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不、不……你們兩人之間的氣氛，怎麼說呢，\n感覺距離感變了……」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,jya,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,-300,-100,0.5,0.5,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……伊蓮娜和潔美拉……內心都很溫暖」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,-300,-100,0.5,0,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「兩人，關係變好了……嗎？」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是這樣嗎，芙勞？」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,frau,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:surprise,ily,-300,-220,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈、哈啊？你說什麼呢。我和這個女人關係變好？\n請不要胡說這種就算天翻地覆也不可能發生的事」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,catia,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,anger,300,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊，芙勞。開玩笑也要有個限度。\n這個女人是可惡的敵人，我遲早要將其處決」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:smile,catia,300,-100,0.5,0.5,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,-300,-100,0.5,0.5,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，你們兩人的反應一樣啊」</outline></size>,,,,,,,,,,
+clickwait
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「果然是……關係好」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,frau,0
+endwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:shy,ily,-300,-220,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……！究竟什麼意思嘛……」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ily,-300,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,//01
+msg,1,<size=30><outline width=2 color=black>「別說了，快！趕緊啟動脫出術式吧。\n快回拉萊耶，好好休息」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，是啊。對不起，我真是太遲鈍了……」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,catia,0
+endwait
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:surprise,jya,300,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼這樣……卡蒂婭大人不必道歉的！\n全部的責任都在於這個女人太過虛弱了！」</outline></size>,,,,,,,,,,
+clickwait
+sttopbgm,0.5
+endwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:unique,ily,-300,-220,0.5,0,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你說誰虛弱？」</outline></size>,,,,,,,,,,
+clickwait
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jya,300,-120,0.5,0,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「聽不見嗎？是你啊。\n對於連站都站不起來的人，還有其他詞語能形容嗎？」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:anger,ily,-300,-220,0.5,0,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真敢說啊……被虛弱的人救了的，究竟是誰呢？」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:anger,jya,300,-120,0.5,0,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也許你是想讓我欠你人情，\n但我已經幫過你了，我們兩不欠了」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ily,-300,-220,0.5,0,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說出兩不欠這種話的人，心眼得有多小啊」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:unique,jya,300,-120,0.5,0,,,,
+playse,/download/sound/se/se_032.mp3
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我果然是永遠都無法與你相互理解」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,ily,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,-300,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「潔、潔美拉？！不能隨便拔劍的！\n拜託你控制自己的情緒」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，真是的……明明以為你們之間的距離已經縮短了，\n轉眼間就又吵架了……為什麼會變成這樣啊……！」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,jya,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「結果好……就是一切都好？」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:anger,catia,-300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「完全不好啊，芙勞！\n根本就沒收場」</outline></size>,,,,,,,,,,
+clickwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「還有你也是！不要笑了，一起阻止她們」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,all,0
+endwait
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:unique,jya,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:unique,ily,-300,-220,0.5,0.5,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「切碎、捏碎、亂砍……用你期望的方法將你剁了吧。選一個喜歡的」</outline></size>,,,,,,,,,,
+clickwait
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「都是些沒品味的方法，算了吧。\n還是我來把你喂給佛爾卡洛吃吧？」</outline></size>,,,,,,,,,,
+clickwait
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，真是的！本以為這兩人關係終於好轉了的，\n為什麼又變成這樣了啊！」</outline></size>,,,,,,,,,,
+clickwait
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,353 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10030100.jpg,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:smile,holy,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「雖然不能陪在你們身邊……但我會衷心祈禱你們恢復到以往的關係……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+name, 
+msg,0, 
+spriteoff,all,0
+wait,0.3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,0.5,0
+playse,/download/sound/se/se_041.mp3
+wait,1.0
+endwait,,,,,,,,,,,
+bg,download/adv/image/black.jpg,0.5,255
+spineoff,em1,0
+endwait,,,,,,,,,,,
+mask,holy1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:normal,holy,0,0,0,0,,,,
+imgconf,holy,holy1,0,-750,,,0,1.5,1.5,0.5
+wait,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+mask,holy1,0,0,1280,200,0,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:sad,holy,0,0,0,0,,,,
+imgconf,holy,holy1,0,-750,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「…………？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0, 
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_10030100.jpg,bg2,1536,0,1.2,0.5,,,,
+sprite,download/bg/bg_10030100.jpg,bg1,0,0,1.2,0.5,,,,
+endwait,,,,,,,,,,,
+stopbgm,,,,,,,,,,,
+spine,download/adv/spine/Slash1_Blue,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+playbgm,/download/sound/bgm/bgm010.mp3,0.5,
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+mask,black1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,bligit1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,300,-190,0,0,,,,
+imgconf,bligit,bligit1,0,-675,,,0,1.5,1.5,0.5
+wait,0.3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「呼——！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0, 
+spriteoff,bligit,0
+spriteoff,bligit1,0
+spriteoff,black,0
+spriteoff,black1,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+spineoff,em1,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,enemy1,1.0
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「喂，你要躺到什麼時候？\n差不多該起來了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:anger,holy,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「布、布麗吉特大小姐？還有你也……\n為什麼你們會在這裏……不是讓你們逃走了嗎！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「大小姐和吉澤爾大人……還有你也是，你們對於今後的想索來說，\n都是不可或缺的人。明明是這樣，為什麼要回來啊？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,bligit,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bligit,-300,-190,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「哼……為什麼我非得聽從你的指揮不可。\n又不是小孩子了，做什麼事由我自己決定」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+anm,tint,holy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不是這個問題！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,bligit,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,-300,-190,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「好煩啊……其實，我原本並不想回來」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:shy,bligit,-300,-190,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「都怪這個男人，突然說什麼果然還是不能拋下你不管……\n所以，那個……我是沒辦法才陪他來的……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「說白了，這並非出於我自身的意志。明白了嗎？\n我可一點都沒在擔心你」 </outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+anm,tint,holy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「怎麼這樣……為什麼，布麗吉特大小姐。\n像我這種人，就算放著不管也沒關係……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「這樣一來……無論過去多久，我也無法對你們贖罪了……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,bligit,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,-300,-190,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「你沒必要贖罪，我也從未指望過這個」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「而且，你有想過吉澤爾會怎樣嗎。\n如果你犧牲了，她究竟會多麼悲傷……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+spriteoff,bligit,0
+endwait
+mask,black1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,bligit1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bligit,0,0,0,0,,,,
+imgconf,bligit,bligit1,0,-675,,,0,1.5,1.5,0.5
+wait,0.3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……你啊，不能做出那種會弄哭她的行為哦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,bligit,0
+spriteoff,bligit1,0
+spriteoff,black,0
+spriteoff,black1,0
+endwait
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:normal,holy,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「布麗吉特大小姐……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,bligit,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:shy,bligit,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「幹、幹嘛啊，老是盯著人家的臉看……\n……喂，你怎麼也在偷笑啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……什、什麼？！你瞎說啥呢。\n我才沒有害羞……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,-300,-190,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「話說，現在可不是閒聊的時候。\n倒是看一下周圍的情況啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+spriteoff,bligit,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy3,-400,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy2,400,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,enemy3,0.5
+spriteoff,enemy1,0.5
+spriteoff,enemy2,0.5
+endwait,,,,,,,,,,,
+anm,move,bg1,-1536_0,0.5,0
+anm,move,bg2,0_0,0.5,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy3,-400,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy2,400,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,enemy1,0
+spriteoff,enemy2,0
+spriteoff,enemy3,0
+endwait,,,,,,,,,,,
+anm,move,bg1,0_0,0.5,0
+anm,move,bg2,1536_0,0.5,0
+endwait
+bg,download/bg/bg_10030100.jpg,0,255
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,bligit,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「放眼望去，全是敵人……看到這樣的光景後，\n我真是打心眼裏後悔回來」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+anm,tint,holy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:anger,holy,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「請等一等……我也要戰鬥」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,bligit,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bligit,-300,-190,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「遍體鱗傷的人就閉嘴吧\n……你把肩膀借給霍莉」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「就算沒有戰鬥的力量，撐起一個女性還是能做到的吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+anm,tint,holy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不必了，我真的沒事……\n不能把敵人全都交給布麗吉特大小姐來獨自應付」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:anger,holy,300,-180,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「請讓我共同戰鬥吧。我……不想再後悔了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,bligit,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……是嗎。那就隨你便了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+anm,tint,holy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「非常抱歉，布麗吉特大小姐」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,bligit,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,-300,-190,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「我早已聽膩了你的道歉」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+anm,tint,holy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:smile,holy,300,-180,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……說的也是。\n那麼……謝謝您，布麗吉特大小姐」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「請務必活著回到拉萊耶，與吉澤爾大人再會」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,bligit,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……嗯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+spriteoff,bligit,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy3,-400,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy2,400,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,
+spriteoff,enemy1,0
+spriteoff,enemy2,0
+spriteoff,enemy3,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,bligit1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,0,0,0,0,,,,
+imgconf,bligit,bligit1,0,-675,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「閒聊先放到一邊……聽好了，我們一定要活著逃出去！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,holy1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:anger,holy,0,0,0,0,,,,
+imgconf,holy,holy1,0,-750,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「嗯……布麗吉特大小姐的背後，由我來保護！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

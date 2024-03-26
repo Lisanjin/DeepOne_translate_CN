@@ -1,0 +1,147 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_01.mp3
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,1,<outline width=2 color=black>「我接受<ruby>『鐘樓』|</ruby>的工作的理由？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_02.mp3
+msg,1,<outline width=2 color=black>「你想知道這個嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_03.mp3
+msg,1,<outline width=2 color=black>「可以，我和你也相處了有一段時間了，\n而且也沒什麼好隱瞞的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_04.mp3
+msg,1,<outline width=2 color=black>「可是，不喝點的話實在不太好說啊……\n一邊隨便喝幾杯一邊說吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「喝酒？」,選項2　「喝什麼？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_05.mp3
+msg,1,<outline width=2 color=black>「雖然我不討厭酒，但並不是。\n我一旦喝酒就會醉得七葷八素的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_06.mp3
+msg,1,<outline width=2 color=black>「喂，你聽我說話了嗎？為什麼還要勸我喝酒啊……\n你把人家灌醉是想幹什麼？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_07.mp3
+msg,1,<outline width=2 color=black>「我知道你肯定是想做什麼不正經的事情，\n可是我也有自尊心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_08.mp3
+msg,1,<outline width=2 color=black>「我的純情可沒便宜到能借酒勢奉獻給你的地步」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_09.mp3
+msg,1,<outline width=2 color=black>「……不過如果有一百萬鎊的話就不好說了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_10.mp3
+msg,1,<outline width=2 color=black>「不不不，你都讓我說了什麼啊！我不是在說錢！\n話說，為什麼我們在談這種話題啊！越聊越偏了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_11.mp3
+msg,1,<outline width=2 color=black>「是我自己……你、你好煩啊！\n都怪你亂說些奇怪的話……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_12.mp3
+msg,1,<outline width=2 color=black>「我說要喝的……是這個」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_13.mp3
+msg,1,<outline width=2 color=black>「你問要喝什麼……我說要喝的當然就是那個了嘛。\n看來你還不能理解我說的話呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_14.mp3
+msg,1,<outline width=2 color=black>「沒辦法。我可以請你喝一瓶。\n我可是很少請客的，你要感激我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_15.mp3
+msg,1,<outline width=2 color=black>「給你，營養飲料。這東西可是非常管用的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-390,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_16.mp3
+msg,1,<outline width=2 color=black>「嗯……咕嚕，咕嚕……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_17.mp3
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,1,<outline width=2 color=black>「噗哈……！真帶勁！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_18.mp3
+msg,1,<outline width=2 color=black>「嗯嗯……活力湧上身體……心裡越來越平靜……呼……哈啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_19.mp3
+msg,1,<outline width=2 color=black>「所以就是我接受<ruby>『鐘樓』|</ruby>的工作的理由對吧。\n這其實是有非常深刻的理由的……簡直是聞者落淚，聽者傷心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_20.mp3
+msg,1,<outline width=2 color=black>「——因為我的父母鬧出醜聞，不僅落得家破人亡，\n而且父母還人間蒸發，所以我揹負了鉅額欠債」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_21.mp3
+msg,1,<outline width=2 color=black>「那兩個臭〇〇和婊〇，\n若是被我找到，我肯定會讓他們後悔十輩子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_22.mp3
+msg,1,<outline width=2 color=black>「所以為了還債，我就不得不去工作。\n現在想起來都讓人一肚子火……再來一瓶吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_23.mp3
+msg,1,<outline width=2 color=black>「你也來喝啊。\n聽好，喝營養飲料時，要一邊手叉腰，一邊這樣……一口喝乾！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-390,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_24.mp3
+msg,1,<outline width=2 color=black>「嗯、咕……咕嚕、咕嚕……噗哈！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103400/adv/sound/fav103403_02_25.mp3
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,1,<outline width=2 color=black>「啊啊啊啊啊啊……壓力無影無蹤……實在太棒了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

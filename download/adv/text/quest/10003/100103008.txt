@@ -1,0 +1,463 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,,,
+endwait
+msg,0,<size=30><outline width=2 color=black>因為我的存在。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>想要變得和那個人一樣，想要待在那個人身邊——\n因為我懷有了這種與自己身份不相符的憧憬。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>因為我拖了那個人的後腿。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>所以，那個人——</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+msg,0,
+endwait
+bg,download/bg/bg_10040400.jpg,1,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm003.mp3,0.5,
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,robo,0,-100,1.35,0.5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+shake,0.2,2,15,15
+endwait
+clickwait
+spriteoff,robo,0
+endwait
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bri,0,-190,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的，一個接一個地出現……就沒有個限度嗎？！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_3_08_01.mp3
+clickwait
+spriteoff,bri,0
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,robo,-30,-100,1.35,0.5
+endwait
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.2,0
+shake,0.1,3,20,20
+playse,/download/sound/se/se_037.mp3
+endwait
+spineoff,em1,0.5
+endwait
+spriteoff,robo,1
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:anger,xeno,-300,-120,0.5,0.5
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,365,-120,0.5,0.5,,,,
+anm,tint,xeno,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「消滅多少雜魚都沒有意義……必須要對產生這些東西的根源進行打擊才行」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_024_3_08_01.mp3
+clickwait
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,xeno,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就算你說要攻擊根源……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_3_08_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100503/adv/atlas/stand_a,body:anger,edel,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不可原諒……不可、原諒……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_01.mp3
+clickwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,robo,-1000,-100,1.35,0
+anm,move,robo,-400_-100,0.5,0
+playse,/download/sound/se/se_022.mp3
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,robo2,1000,-100,1.35,0
+anm,move,robo2,400_-100,0.5,0
+playse,/download/sound/se/se_022.mp3
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,robo3,0,-1000,1.35,0
+anm,move,robo3,0_-100,0.5,0
+playse,/download/sound/se/se_022.mp3
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――――――！」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:sad,dana,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-235,-120,0.5,0.5,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,dana,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……敵人太多了，無法到達艾蒂爾那裏啊」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_3_08_02.mp3
+clickwait,,,,,,,,,,,
+anm,tint,dana,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣下去會一直被消耗的……有沒有什麼突破口……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_3_08_01.mp3
+clickwait,,,,,,,,,,
+spriteoff,dana,0
+endwait
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:sad,mil,300,-180,0.5,0.5,,,,
+anm,tint,mil,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……唔嗯。感覺有點奇怪」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_013_3_08_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,-235,-120,0.5,0,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,mil,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「奇怪？什麼奇怪？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_3_08_03.mp3
+clickwait,,,,,,,,,,,
+anm,tint,mil,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然依舊很甜……但有點不一樣。\n和那時的甜美，有些不同……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_013_3_08_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「應該怎麼描述呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_013_3_08_03.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:normal,lid,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,bri,-300,-190,0.5,0.5,,,,
+anm,tint,bri,255_255_255,0.0001,0
+anm,tint,lid,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別問我們啊，我們怎麼可能知道」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_3_08_02.mp3
+clickwait,,,,,,,,,,,
+anm,tint,lid,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「米露瓦說的沒錯，的確有點異常」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「儘管當時是“那種慘狀”，但那只兔子不是會使用這種戰鬥方式的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「感覺像是通過生死攸關的戰鬥有了活著的實感……\n與我們是同類型的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不是那個偷偷躲在某個人的後面……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_04.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100503/adv/atlas/stand_a,body:anger,edel,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「吵死了……！從我這裏奪走了戰鬥的人是你們，\n居然還如此大放闕詞！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你們懂我什麼……！\n就算是在那時候，我也是不會輸給你們的……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只要沒有“那傢伙”……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_04.mp3
+clickwait,,,,,,,,,,,
+spriteoff,edel,0
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:normal,lid,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-235,-120,0.5,0.5,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,lid,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那傢伙是……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_3_08_04.mp3
+clickwait,,,,,,,,,,,
+anm,tint,lid,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大概是之前戰鬥的時候待在她身邊的部下吧。\n為了保護部下，她的行動受到了很大的影響」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:smile,lid,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「必須要保護弱小的人，真是辛苦啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_06.mp3
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:smile,mil,-300,-180,0.5,0.5,,,,
+anm,tint,mil,255_255_255,0.0001,0
+anm,tint,lid,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，非常非常帥氣就是了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_013_3_08_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，她每次受傷，被保護的那個人也會不斷怪罪自己，\n在心中哭泣……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_013_3_08_05.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+mask,bg1,400,0,300,720,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,lid1,400,0,300,720,0.5,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:surprise,lid,0,0,0,0,,,,
+imgconf,lid,lid1,0,-340,,,0,1.5,1.5,0.5
+mask,bg3,-400,0,300,720,0.5,,,,
+sprite,download/adv/image/black.jpg,bg2,0,0,0,0
+imgconf,bg2,bg3,0,0,,,0,1,1,0.5
+mask,mil1,-400,0,300,720,0.5,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:surprise,mil,0,0,0,0,,,,
+imgconf,mil,mil1,0,-380,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>莉迪亞＆米露瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_07.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:normal,lid,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:normal,mil,-300,-180,0.5,0.5,,,,
+anm,tint,mil,255_255_255,0.0001,0
+anm,tint,lid,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣啊……從她身上感受到的絕望甘甜，硬要說的話，\n很接近那只小兔子……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_013_3_08_07.mp3
+clickwait,,,,,,,,,,,
+anm,tint,lid,255_255_255,0.0001,0
+anm,tint,mil,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「違和感是出在這裏的啊……\n你保護弱小時的樣子雖然滑稽……但卻並不難看」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:smile,lid,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是現在的你——真是遜啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_09.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100503/adv/atlas/stand_a,body:surprise,edel,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……什麼」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100503/adv/atlas/stand_a,body:anger,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你這傢伙……要嘲笑我艾蒂爾加爾德・愛因斯坦到什麼地步……才肯甘休……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來……沒有那傢伙的話，我已經贏了……！\n就像以往那樣理所當然……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「肯定，就應該是那樣的……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_08.mp3
+clickwait,,,,,,,,,,,
+spriteoff,edel,0
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:normal,lid,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:normal,mil,-300,-180,0.5,0.5,,,,
+anm,tint,lid,255_255_255,0.0001,0
+anm,tint,mil,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「“本來”……“肯定”……“本應如此”……\n說出這種話就很遜啊，聽不懂我的意思嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_10.mp3
+clickwait,,,,,,,,,,,
+anm,tint,mil,255_255_255,0.0001,0
+anm,tint,lid,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且每次說出這種話的時候，為什麼你會因為否定自己而感到心痛呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_013_3_08_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「心口不一……我充分感受到了你內心的哭泣，\n不過也非常開心就是了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_013_3_08_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:anger,mil,-300,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，果然很奇怪…我說，你是“誰”？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_013_3_08_10.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100503/adv/atlas/stand_a,body:surprise,edel,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什、麼……？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_09.mp3
+clickwait,,,,,,,,,,,
+spriteoff,edel,0
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:anger,lid,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:anger,mil,-300,-180,0.5,0.5,,,,
+anm,tint,lid,255_255_255,0.0001,0
+anm,tint,mil,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你這再怎麼說也演得太爛了吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_012_3_08_11.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100503/adv/atlas/stand_a,body:surprise,edel,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我、我……我、是……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_10.mp3
+clickwait,,,,,,,,,,,
+spriteoff,edel,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-235,-120,0.5,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,bri,300,-190,0.5,0.5,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼？這是什麼情況……？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_3_08_05.mp3
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「艾蒂爾加爾德不是艾蒂爾加爾德？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_3_08_03.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:sad,dana,-300,-120,0.5,0.5,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,dana,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……憧憬」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_3_08_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:surprise,dana,-300,-120,0.5,0,,,
+anm,tint,dana,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「芙勞？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_3_08_02.mp3
+clickwait
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,dana,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「尊敬……目標……信賴……最開始本來是非常爽朗的心情……\n然而冰冷卻將其隱藏了……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_3_08_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真正的艾蒂爾加爾德……是更加的……那個，\n該怎麼說好呢……？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_3_08_03.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「帥氣」,選項2　「瀟灑」
+if,select_===_1,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+endif,,,,,,,,,,
+stopbgm,0.5
+spriteoff,all,0.2
+name,
+msg,0,
+bg,color_0_0_0,0.2,255
+endwait
+mask,edel1,0,0,1280,300,0,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edel,0,0,0,0,,,,
+imgconf,edel,edel1,0,-290,,,0,1.5,1.5,0.2
+endwait
+wait,0.2
+endwait
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，誇獎得太過了，會讓人難為情的。\n不過嘛，我的確是非常帥氣就是了」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_11.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10040400.jpg,0.5,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm013.mp3,0.5,
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,robo,-430,-100,1.35,0.5
+sprite,download/monster/20030101/adv/image/20030101.png,robo2,370,-100,1.35,0.5
+sprite,download/monster/20030101/adv/image/20030101.png,robo3,-30,-100,1.35,0.5
+endwait
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,0.8,1
+wait,0.4
+playse,/download/sound/se/se_024.mp3
+shake,0.3,5,20,20
+endwait
+name,<size=27><outline size=8 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline size=8 color=black>「――――――――――――、……、…………！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,1
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100503/adv/atlas/stand_a,body:surprise,edel2,300,-120,0.5,0.5,,,,
+anm,tint,edel,255_255_255,0.0001,0
+anm,tint,edel2,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喲，你們好像非常開心嘛。\n熟悉的面孔聚在一起演話劇嗎？也加我一個嘛」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「畢竟我就是本人嘛。這個角色我來演了，可以吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100503/adv/atlas/stand_a,body:sad,edel2,300,-120,0.5,0,,,,
+anm,tint,edel2,255_255_255,0.0001,0
+anm,tint,edel,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>？？？</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊…………」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_011_3_08_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,65,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼，這是怎麼回事……為什麼有兩個艾蒂爾？！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_3_08_06.mp3
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:anger,edel,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100503/adv/atlas/stand_a,body:sad,edel2,300,-120,0.5,0.5,,,,
+anm,tint,edel,255_255_255,0.0001,0
+anm,tint,edel2,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈……這傢伙只是外表很像而已，別看錯了哦。\n完全無法表現出我一絲一毫的魅力啊。就是個三流演員吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「呐，你也是這麼想的吧——姬莉葉」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_005_3_08_15.mp3
+clickwait,,,,,,,,,,,
+anm,tint,edel2,255_255_255,0.0001,0
+anm,tint,edel,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>？？？</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_011_3_08_02.mp3
+clickwait,,,,,,,,,,,
+endwait
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

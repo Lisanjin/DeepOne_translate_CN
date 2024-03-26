@@ -1,0 +1,131 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11140300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/103204/adv/sound/fav103204_01_01.mp3
+name,<outline width=2 color=black>艾爾瑪・莉絲菲爾特</outline>,
+msg,1,<outline width=2 color=black>「嗚嗚，這裡是什麼地方啊……又冷又全是雪，真不舒服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_02.mp3
+msg,1,<outline width=2 color=black>「今天去別的地方想索吧。\n讓明天來參加想索的人去想索這個地方就行了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「明天負責想索的人是莉迪亞」,選項2　「明天負責想索的人是希爾薇」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_03.mp3
+msg,1,<outline width=2 color=black>「好了，趕緊開始想索吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_04.mp3
+msg,1,<outline width=2 color=black>「你那欲言又止的眼神是怎麼回事？\n可別因為覺得冷就說不去了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_05.mp3
+msg,1,<outline width=2 color=black>「讓莉迪亞姐姐大人想索這麼冷的地方，\n若是她感冒了該怎麼辦啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_06.mp3
+msg,1,<outline width=2 color=black>「當然我不認為強大的姐姐大人會感冒，\n不過還是要以防萬一」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_07.mp3
+msg,1,<outline width=2 color=black>「不管在多麼惡劣的環境下，若是為了姐姐大人……嗚嗚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_08.mp3
+msg,1,<outline width=2 color=black>「那不是正好嗎？\n把她的衣服剝光綁在附近的樹上，她應該會很高興的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_09.mp3
+msg,1,<outline width=2 color=black>「……就連我自己都能產生鮮明的想象了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_10.mp3
+msg,1,<outline width=2 color=black>「雖然說綁在樹上是開玩笑……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_11.mp3
+msg,1,<outline width=2 color=black>「什麼……為什麼要向姐姐大人她們告狀啊！\n我又沒有亂說什麼吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_12.mp3
+msg,1,<outline width=2 color=black>「……啊，好好好，知道了，乖乖想索就行了對吧？\n真是的……為什麼我非得在這麼冷的地方到處走不可啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_13.mp3
+msg,1,<outline width=2 color=black>「我非常討厭冷的地方。說是不喜歡冰冷的空氣從衣服的縫隙跑進來觸碰肌膚的感覺好吧……會讓我想起以前呆的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_14.mp3
+msg,1,<outline width=2 color=black>「我們長大的研究所裡有非常多的孤兒。\n為了製造殺人工具，孩子們都被當成實驗動物來對待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_15.mp3
+msg,1,<outline width=2 color=black>「所以，住所的環境非常差」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_16.mp3
+msg,1,<outline width=2 color=black>「僅有數十立方米的房間被塞了十多個人，\n沒有空調，而且到處都是破洞，根本不能防風」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_17.mp3
+msg,1,<outline width=2 color=black>「穿的衣服也跟破布一樣……你能想象如此惡劣的環境嗎？\n病死的孩子也不是一個兩個了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_18.mp3
+msg,1,<outline width=2 color=black>「但是多虧了姐姐大人她們，我逃離了那個地獄般的地方。\n所以，我想為她們派上用場」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_19.mp3
+msg,1,<outline width=2 color=black>「我會幫助你想索，\n也是因為這是姐姐大人她們的希望」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_20.mp3
+msg,1,<outline width=2 color=black>「你也是，千萬不要著涼感冒，拖姐姐大人和我的後腿——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alma1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:surprise,alma2,0,0,0,0,,,,
+imgconf,alma2,alma1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_21.mp3
+msg,1,<outline width=2 color=black>「——哈嚏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_22.mp3
+name,<outline width=2 color=black>艾爾瑪・莉絲菲爾特</outline>,
+msg,1,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_23.mp3
+msg,1,<outline width=2 color=black>「……此時我第一次覺得，在這裡的人不是姐姐大人而是我，真的太好了，\n如果被她看見我這麼丟人的樣子，肯定會感到幻滅的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_01_24.mp3
+msg,1,<outline width=2 color=black>「你笑什麼笑啊，真噁心。少廢話，趕緊開始想索了。\n老是磨磨蹭蹭的話你會被埋在雪裡的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

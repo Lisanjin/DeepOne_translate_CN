@@ -1,0 +1,94 @@
+name,
+msg,0,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10040200.jpg,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,
+endwait
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這裏，不是一個讓人心情愉快的景象。\n看著荒蕪的街道，就會想起以前在前線戰鬥時的記憶」</outline></size>,,,,,,,,,,.
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在騎士團中還沒有取得任何地位的時候，\n任務中所面臨的紛爭地帶，總是非常殘酷」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「少年士兵冷靜地被帶到前線，以自爆來攻擊……也是理所當然的。\n在這個世界上，這樣的戰禍還有很多」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這麼說來……在拉萊耶和弟橘旺華重逢時，我還很吃驚來著」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我只聽說過她脫離了瑪麗・沃倫魔術傭兵團，\n沒想到她竟然來了拉萊耶……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不，沒有朋友那麼深的關係。\n但是，我和她一起戰鬥過幾次」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「巴爾蒂克姆騎士團和瑪麗·沃倫魔術傭兵團之間\n關係還不錯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，自從傭兵團的代表者變更開始，交流就很少了。\n……聽說她退團也是在那個時期吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然不知道詳細情況……不過她是個堅強的女性。\n就算失去了她的音訊，我也相信她一定還活著」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一定，只有像她那樣擁有強大力量的人才適合戰場吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_10.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「或許確實……」,選項2　「不一定」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「曖昧不清的回答啊……啊啊，這麼說來，你連戰鬥的力量都沒有，\n還真是有點亂來啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你這樣吞吞吐吐地，你到底，有自覺了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你的能力並不是用武力和敵人戰鬥。\n你的力量是輔助別人，所以希望你不要逞強」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_13.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不想讓他人陷入危險嗎。\n但是，逞能只會招致死亡」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「被別人保護，絕對不是一件可恥的事情。\n向有戰鬥能力的人尋求合作，是生存下去的智慧和技巧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_15.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「戰鬥，不僅僅是在前線面對敵人。\n作為後衛、給同伴提供支援也是一個很好的戰術」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不要為了追求半吊子的武力，就將自己置於危險之下」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……抱歉，有點說教的感覺。\n但是，剛剛的話我是真心的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「請你，一定要放在心上」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102501/adv/sound/fav102501_04_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
+

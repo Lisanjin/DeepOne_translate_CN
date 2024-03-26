@@ -1,0 +1,378 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020400.jpg,0,255
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,300,-100,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真正變強……？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，沒錯……你想知道嗎？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:smile,norn,-300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「畢竟，瞧你的努力得不到回報，就此消失在時間洪流中，\n我也於心不忍」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「比起那樣的結局，我更想看看兄妹間的感情引發奇跡的劇本呢」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……怎麼，你能幫助我們？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:smile,norn,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當然。我向你保證，我會給你巨大的力量」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「好了……過來我這邊吧，塔芭莎」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait
+stopbgm,0.5
+endwait
+spriteoff,all,0.5
+endwait
+mask,bg1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,tabasa1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:anger,tabasa,0,0,0,0,,,,
+imgconf,tabasa,tabasa1,0,-250,,,0,1.5,1.5,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——真當我傻麼」</outline></size>,,,,,,,,,
+clickwait
+name,
+msg,0,
+spriteoff,all,0.5
+endwait
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——噢喲」</outline></size>,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0.5,,,,
+endwait
+spriteoff,norn,0
+endwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:surprise,norn3,0,-120,0.5,0,,,,
+anm,fade,norn3,155,0.0001,0
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:surprise,norn4,0,-120,0.5,0,,,,
+anm,fade,norn4,155,0.0001,0
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:surprise,norn1,0,-120,0.5,0,,,,
+anm,fade,norn1,155,0.0001,0
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:surprise,norn2,0,-120,0.5,0,,,,
+anm,fade,norn2,155,0.0001,0
+endwait
+anm,move,norn1,-150_-120,0.4,3
+anm,fade,norn1,0,0.4,0
+anm,tint,norn1,255_0_0,0.4,3
+anm,move,norn4,-300_-120,0.4,3
+anm,fade,norn4,0,0.4,0
+anm,tint,norn4,255_255_0,0.4,3
+anm,move,norn2,150_-120,0.4,0
+anm,fade,norn2,0,0.4,0
+anm,tint,norn2,0_0_255,0.4,3
+anm,move,norn3,300_-120,0.4,3
+anm,fade,norn3,0,0.4,0
+anm,tint,norn3,0_255_0,0.4,3
+spine,download/adv/spine/Dark,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_039.mp3
+shake,0.1,6,100,100
+wait,0.5
+flash,255,255,255,2,0.2,0
+endwait
+spineoff,em1,0.1
+anm,move,norn1,-450_-120,0.0001,0
+anm,move,norn2,-600_-120,0.0001,0
+anm,move,norn3,-150_-120,0.0001,0
+anm,move,norn4,0_-120,0.0001,0
+endwait
+anm,move,norn1,-300_-120,0.25,3
+anm,fade,norn1,255,0.25,3
+anm,tint,norn1,255_255_255,0.25,3
+anm,move,norn2,-300_-120,0.25,3
+anm,fade,norn2,255,0.25,3
+anm,tint,norn2,255_255_255,0.25,3
+anm,move,norn3,-300_-120,0.25,3
+anm,fade,norn3,255,0.25,3
+anm,tint,norn3,255_255_255,0.25,3
+anm,move,norn4,-300_-120,0.25,3
+anm,fade,norn4,255,0.25,3
+anm,tint,norn4,255_255_255,0.25,3
+endwait
+spriteoff,all,0
+endwait
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:surprise,norn,-300,-120,0.5,0,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:smile,norn,-300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈……你們兄妹都喜歡搞突然襲擊嗎？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「少廢話。\n面對行徑卑鄙的對象，我沒理由堂堂正正地戰鬥」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀呀……我給的條件都那麼誘人了，\n你也不願意接受邀請嗎」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……當然了。我看你有個大誤會」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「謔……是什麼？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我只要有兄長就足夠了，\n不需要你給予什麼」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我不需要其他任何人，也不會給人可乘之機！\n少用你刺耳的聲音來煩我了！」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣……看來對哥哥的愛，已經蒙蔽了你的雙眼」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「這是讓人最擔心的一點——\n算了，這話不是我該說的」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,all,0.5
+endwait
+flash,255,255,255,4,0.2,0
+sprite,download/monster/20010102/adv/image/20010102.png,enemy3,-380,-250,1.35,0.5,,,,
+sprite,download/monster/20010103/adv/image/20010103.png,enemy2,320,-250,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-250,1.35,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait
+spriteoff,all,0.5
+endwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真可惜，只能打倒你了……\n反正看你這樣子，將來也成不了事」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「比起落得一個可悲結局……還是在這裏結束要好得多吧？」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,norn,0.5
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——少給我自說自話了！\n你有什麼權利擅斷我們的結局！」</outline></size>,,,,,,,,,
+clickwait
+stopbgm,0.5
+endwait
+name,
+msg,0,
+spriteoff,tabasa,0.5
+endwait
+sprite,download/monster/20010102/adv/image/20010102.png,enemy3,-380,-250,1.35,0.5,,,,
+sprite,download/monster/20010103/adv/image/20010103.png,enemy2,320,-250,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-250,1.35,0.5,,,,
+endwait
+spine,download/adv/spine/Fire1,em1,default,animation,0,0,0,0.65,0.8,0
+playse,/download/sound/se/se_038.mp3
+shake,0.1,6,100,100
+wait,0.5
+flash,255,255,255,2,0.2,0
+endwait
+spineoff,em1,1
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………！」</outline></size>,,,,,,,,,
+clickwait
+anm,fade,enemy3,0,1,1
+anm,fade,enemy2,0,1,1
+anm,fade,enemy1,0,1,1
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？」</outline></size>,,,,,,,,,
+clickwait
+select,選項1　「太好了、趕上了」
+endif,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm008.mp3,0,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,300,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你……你是？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「諾恩……！你想對這個孩子做什麼？！\n不會是又打算操縱人心吧……！」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……討厭啦，亞紗花。我沒想那麼做呀。\n只是和她討論一下人生的發展道路而已」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「胡說八道……！」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀呀，我覺得我說得挺真誠的啊？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「淨說些敷衍了事的話……再啰嗦，我就把你舌頭給拔了！」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,norn,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那、那個……氛圍真是劍拔弩張啊……\n這樣看來，是不用擔心你會被操縱了……？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當然了，我怎麼可能被這種女人的花言巧語所騙」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,300,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「說到底……你們到底是什麼人啊？真可疑」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我、我們可疑……我們本來，是想幫你的……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我又沒說想要人幫忙」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別、別這麼說嘛……你應該也受到了負荷的影響……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼，那算不了什麼……我自己一個人也——」</outline></size>,,,,,,,,,
+clickwait
+select,選項1　「我們一起戰鬥吧」
+endif,,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,300,-100,0.5,0,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………我並不需要」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,300,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……咦？兄長？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,300,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你說沒事？可是，兄長……這些人說到底也和那個女人一樣，\n想要利用我們吧……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個，你在和誰說話……？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要你管……！」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,300,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊啊啊，真是的。兄長都這樣說了，我怎麼可能不聽」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,300,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「行吧，既然你們那麼想一起戰鬥，\n那我就幫你們一把。別給我拖後腿啊」</outline></size>,,,,,,,,,
+clickwait
+flash,255,255,255,3,0.4,0,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,300,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……？！這束光是什麼……？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「他的力量，在共鳴……也就是說——」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,all,0.5
+endwait
+flash,255,255,255,3,0.3,1,,,,,,,,,,
+wait,0.8
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:sad,tabasa,0,-100,0.5,0.5,,,,
+playse,/download/sound/se/se_015.mp3
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……咦。剛才還被負荷壓得難受，現在身體卻變得很輕……？\n這是怎麼回事……？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:shy,tabasa,0,-100,0.5,0,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「呃……這身羞恥的打扮是怎麼回事！\n是你搞的鬼嗎……？！」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,tabasa,0.5
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「等、等一下……現在不是管那些的時候……！\n敵人都來到眼前了……！」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,asaka,0.5
+endwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你給我記住了。\n一會兒教訓完那個女人，可要給我好好解釋一下……！」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,tabasa,0.5
+endwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎……教訓嗎。完全被當成壞人對待了……算了，也無所謂」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,norn,0.5
+endwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別廢話了……我會讓你後悔，\n剛才對我和兄長的肆意妄為……！」</outline></size>,,,,,,,,,
+clickwait
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

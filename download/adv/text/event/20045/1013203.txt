@@ -1,0 +1,458 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>物心ついた頃から、この身は道具だった。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>己の意思はなく、意味もなく、ただ役割を果たすだけの道具。\nそれが、ロゼット・サヴィニー。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>しかし、ロゼットめを道具として鍛えた方は、防疫修道会を追放された。\nそれはきっと幸福なことであったのだと思う。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>だが、幸福の裏には、不幸があった。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>ロゼットめという道具を――作品を奪われたかの魔術師は、\n防疫修道会の追跡を逃れ、異国の地で新しい道具を作り始めた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>それは、ロゼットめのように、一人に時間を使うようなやり方ではなかった\nらしい……あるいはロゼットめを失ったことで、焦りがあったのだろうか。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>多くの子どもたちを集め、無理な投薬と無理な訓練による促成。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>その子どもたちは、ロゼットめが数年かけて行われた鍛錬を、\n目を覆いたくなるような密度で強いられた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>その唯一の生き残りこそが、リン様であるらしいと知った時、\nロゼットめは思ったのだ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>リン様の――リン様たちの不幸の全ては、ロゼットめが押し付けてしまった\nものに他ならない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>お優しいリン様は、ロゼットめを責める言葉を口にはしない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>けれど、その優しさに甘えてはならないと思う。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>もし、ロゼットめがリン様にお返しできるものを、なにかを見つけられた時は、\nたとえそれが、この身の全てを捧げなければならないことだとしても――。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:anger,rin2,0,0,0,0,,,,
+imgconf,rin2,rin1,0,-380,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「っ、こ、のぉおおおおおお！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/20010102/adv/image/20010102.png,enemy2,0,0,0,0,,,,
+imgconf,enemy2,enemy1,0,-500,,,0,2.35,2.35,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+shake,0.2,3,15,15
+flash,255,255,255,2,0.3,1.0
+endwait
+wait,1.0
+endwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-100,-900,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,rin,0_-120,0.4,1
+wait,0.1
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_050.mp3
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「ぷはぁっ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「はぁ……はぁ……あ、あぶなかった。\nあのまま虚像に掴まれていたら、溺れるところでした……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「それにしても、ここは……随分と流されちゃったみたいですが、\nおにーさんたちは……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rozet1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet2,0,0,0,0,,,,
+imgconf,rozet2,rozet1,0,-200,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「こほっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:anger,rin,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「誰！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet,300,-900,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+anm,move,rozet,300_-100,0.8,1
+wait,0.4
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_050.mp3
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「ロゼットめに、ございます……驚かせてしまい申し訳ございません」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:surprise,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「え、ロゼットさん……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「ロゼットさんも川に流されてたんですか！？\nというか、なんだかすごい消耗しているような……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「それは、その……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:surprise,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「も、もしかして、ボクの電撃で……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「……そ、そのようなことは」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「わー！　すみません、すみません！　近くにロゼットさんがいるなんて\n知らなくて、思いっきりやっちゃいましたー！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「心臓とか止まってないですよね！？　実はオバケだったりしません！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「いえ、その……なんとか、自分の胸を叩いて事なきを得ましたので」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「それ一瞬心臓止まったってことですよね！？　ごめんなさいー！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「そ、それよりもリン様。今は皆様との合流を急ぎましょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「……はい。すみません」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「あまり謝らないでくださいませ。リン様にそのような暗い顔をされては、\nロゼットめは困ってしまいます……どうか、いつも通りのリン様で」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「そ、それは……う、うぅ……ぅー……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:anger,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「っ！　ロゼットさんが言うなら、いつも通りのボクで！\nおにーさんと合流するためにも、頑張りますよっ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:smile,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「はい……心強く思います」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「でも、おにーさんたちとはどれくらい離れちゃったんでしょう。\nそんなに流されたつもりはなかったんですが……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「ロゼットの体感としても、百メートルは流されていなかったかと」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「うーん……でも、おにーさんたちの姿が見えませんよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「つまり、流された以上の距離を離された、ということでございましょう。\n幻夢境の中ならば、そういった不条理もありえるのではないかと」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「川の流れとは逆に泳いだら元の場所に戻れたりしないでしょうか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「また、川の中から虚像に襲われないとも限りません。\n一旦は、川沿いに歩いていくのが無難ではないかと」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「もちろん、リン様が泳がれるというのであれば\nロゼットめもお供いたしますが……その……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「大変恐縮ながら、敵が現れた場合の”出力”は、少々抑えて頂けますと」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「歩きましょう！　もうロゼットさんの心臓を止めるわけにはいきません！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「お気遣い、誠にありがとうございます」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「とんでもありません。こっちこそ、ありがとうございます」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:surprise,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「え……ロゼットめは、なにも感謝されることなど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:smile,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「そんなことないですよ。だって、ロゼットさんが一緒で、\nボクはとっても心強いですもん！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:smile,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「だから、ありがとう、なんですっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「リン様……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101808/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「さあ、行きましょうロゼットさん。\n早く合流しないと、おにーさんたちを心配させちゃいますからね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:smile,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

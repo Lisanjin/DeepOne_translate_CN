@@ -1,0 +1,491 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+sprite,download/bg/bg_11050300.jpg,bg,500,-200,2,0,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>――。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,bg,000_-200,1.5,0
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>――――。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,bg,500_-200,1.5,0
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>――――――。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,bg,100_100,0.1,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,bg,0.1
+bg,color_0_0_0,0.2,255
+stopbgm,0
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+bg,download/bg/bg_11050300.jpg,1,255
+endwait
+shake,0.2,4,15,15
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+playse,/download/sound/se/se_039.mp3
+endwait
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:anger,ridia,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:anger,xeno,-300,-120,0.5,0.5,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「咕啊啊啊啊啊啊——？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,xeno,-1000_-120,0.2,0
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:anger,ridia,300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎、怎麼可能……我竟然無法抗下這衝擊——！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,ridia,1000_-120,0.2,0
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,xeno1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:sad,xeno2,0,0,0,0,,,,
+imgconf,xeno2,xeno1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「咕……只剩下你而已了……！讓她見識你的男兒本色吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ridia1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia2,0,0,0,0,,,,
+imgconf,ridia2,ridia1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「絕對要接下那球……一定要接下！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+select,選項1　避開飛過來的排球,選項2　接下飛過來的排球
+if,select_===_1,,,,,,,,,
+sprite,download/bg/bg_11050300.jpg,bg,0,0,1.2,0,,,,
+endwait
+anm,scale,bg,2_2,0.5,0
+anm,move,bg,-300_200,0.5,0
+endwait
+shake,0.2,4,15,15,bg
+playse,/download/sound/se/se_020.mp3
+endwait
+bg,color_0_0_0,0,255
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,xeno1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:sad,xeno2,0,0,0,0,,,,
+imgconf,xeno2,xeno1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「什麼……竟然避開了……？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,black,0
+spriteoff,xeno2,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ridia1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia2,0,0,0,0,,,,
+imgconf,ridia2,ridia1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「真是沒出息……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,black,0
+spriteoff,ridia2,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+spriteoff,all,0.5,,,
+endwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+shake,0.2,4,50,50
+playse,/download/sound/se/se_011.mp3
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,xeno1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:anger,xeno2,0,0,0,0,,,,
+imgconf,xeno2,xeno1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「很好……咬牙堅持住！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ridia1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:surprise,ridia2,0,0,0,0,,,,
+imgconf,ridia2,ridia1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這，難不成……真的能接下來嗎…？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+flash,255,255,255,2,0.3,1.0
+endwait
+sprite,download/bg/bg_11050300.jpg,bg,0,0,1.2,0,,,,
+endwait
+anm,scale,bg,3.0_3.0,0.3,0
+anm,move,bg,0_-400,0.3,0
+endwait
+anm,move,bg,0_600,0.3,0
+endwait
+bg,color_0_0_0,0,255
+shake,0.2,3,35,35,bg
+playse,/download/sound/se/se_043.mp3
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,xeno1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:sad,xeno2,0,0,0,0,,,,
+imgconf,xeno2,xeno1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……果然勉強他了啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ridia1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia2,0,0,0,0,,,,
+imgconf,ridia2,ridia1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「他的臉埋進沙子裏面了，脖子應該不會骨折吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0.5,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,-300,-120,0.5,0.5,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……沒事吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……芙勞。不需要同情敗者，作為勝者，昂首挺胸就行了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,-300,-120,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這樣啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:anger,frau,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「唔……哼（得意）」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「在這場比試裏，你們沒有什麼貢獻吧。\n還好意思得意？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ridia,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:normal,xeno,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「說得沒錯……決定這場比試的人是——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,vi,0
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:smile,blizit,300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「本以為你們能陪我玩玩的，沒想到弱得不行啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101351/adv/atlas/stand_a,body:normal,milva,300,-480,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「剛才的那一球已經讓比賽結束了……布麗吉特的隊伍完勝」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:anger,xeno,-300,-120,0.5,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「咕……沒想到我竟然會被耍得那麼慘……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,xeno,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:anger,ridia,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「明明只是個吊車尾，卻那麼狂妄……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,milva,0
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「話說回來，你……在比試之前，你好像說了什麼呢？\n哎呀，究竟說了什麼呢？我忘記了，能不能再說一次？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:anger,ridia,-300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「咕……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,blizit,0
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101351/adv/atlas/stand_a,body:shy,milva,300,-480,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊啊……姐姐竟然露出那麼不甘心的表情……唔唔」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,milva,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:smile,blizit,300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不甘心的話，我可以再跟你比一次哦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:anger,ridia,-300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哼，我才不會上你的當……我才不會因為一時的衝動，\n再讓自己丟臉」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:anger,ridia,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「好吧，我承認你的沙灘排球是很厲害。\n不過……這份屈辱我遲早會在其他地方還給你的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,300,-190,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那我就儘量去記住你這句話吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20100202/adv/image/20100202.png,enemy1,1000,-250,1.35,0,,,,
+anm,move,enemy1,-1000_-250,1,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「唔……不過，說到這用球來玩耍的運動，妾身只想到蹋鞠。\n不過這沙灘排球真是很有趣啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:smile,vi,300,-240,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「既然在妾身的常識中和知識中都沒有這概念，那也就是說，\n在妾身還是人類的時候，就沒接觸過這種娛樂……咯咯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,-300,-120,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「為什麼你那麼開心……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「失想者的原型是曾經腐朽的人類。\n天生伴隨著失去、敗北、失望」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「前人類的知識、常識化為不明的即視感和衝動深深地刻在了我這個身體裏」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「可是……現在的我經歷了新的事物，而這份經驗是不會受到前人類的影響」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「我現在玩過了沙灘排球，這份經驗毫無疑問是僅屬於失想者唯的東西……\n這是非常寶貴的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,-300,-120,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是啊……不過，唯就是唯哦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「咯咯，是啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20100202/adv/image/20100202.png,enemy1,-1000,-250,1.35,0,,,,
+anm,move,enemy1,1000_-250,1,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:normal,xeno,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,300,-190,0.5,0.5,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……天生的失敗者啊。再聽一次這話，感覺你真不容易啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:normal,xeno,-300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不需要你那廉價的同情」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,300,-190,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我並不是在同情你」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,xeno,0,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:normal,ridia,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是嗎？\n你不是也一直被別人蔑視為你妹妹的低配版嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:normal,ridia,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「這跟天生的失敗者不是挺像嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:anger,blizit,300,-190,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「要你管」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ridia,0
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:normal,xeno,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「看來你的同伴對你不好啊。你也過得挺辛苦啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:anger,blizit,300,-190,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哼，我也不需要你廉價的同情」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20100202/adv/image/20100202.png,enemy1,1000,-250,1.35,0,,,,
+anm,move,enemy1,-1000_-250,1,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101351/adv/atlas/stand_a,body:sad,milva2,0,0,0,0,,,,
+imgconf,milva2,milva1,0,-350,,,0,1.5,1.5,0.5,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那個，我覺得友好相處是很棒的關係。\n雖然你們的那種感情讓我覺得非常甜美……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101351/adv/atlas/stand_a,body:sad,milva,0,-480,0.5,0.5,,,,
+endwait,,
+msg,0,<size=30><outline width=2 color=black>「從剛才開始我就一直被戳，好痛啊，救救我可以嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20100202/adv/image/20100202.png,enemy1,350,-250,1.35,0.5,,,,
+sprite,download/monster/20100202/adv/image/20100202.png,enemy2,-350,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「―――――――――――――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:surprise,ridia,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0.5,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:surprise,ridia,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「米、米露瓦……？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

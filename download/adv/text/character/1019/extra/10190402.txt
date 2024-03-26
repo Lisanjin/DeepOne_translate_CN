@@ -1,0 +1,129 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:unique,siruvi,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵呵……為了減輕負荷並強化能力，我會反復和你合力行動的\n來了，啊……今天可夠激烈的啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「最近的你好像有點粗暴啊……\n一下子用力抓住我的胸，有點淤青了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_02.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark9,em1,default,animation,0,120,160,0.65,0.8,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「呃……嗯，倒也並不討厭」</outline></size>,,,,,,,,,,
+endwait
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_03.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,
+spriteoff,siruvi,0.5,
+endwait,
+stopbgm,0
+endwait
+mask,bg1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,siruvi1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:anger,siruvi,0,0,0,0,,,,
+imgconf,siruvi,siruvi1,-10,-330,,,0,1.5,1.5,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_04.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,
+endwait
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0.5,,,,
+endwait,
+msg,1,<size=30><outline width=2 color=black>「……嗯？　怎麼了，你怎麼盯著我看。\n難道是想再來一次?」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:surprise,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「咦，不是嗎。那是為什麼――呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「看起來很痛苦……你嘴裏的話很奇怪啊。\n我今天也很滿足，為什麼會這麼覺得呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「氣氛和平時不同」,選項2　「直覺」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「回答得很含糊……但是，有一點是可以確定的，\n你很在意我吧……?」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那樣的話，可是非常開心哦……呵呵呵」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼回事呢，這種感情。開心得有點難為情，\n想要把你的一切都據為己有……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵呵……你的回答像個野孩子。\n不過，這種直覺也不能忽視不是嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這些東西往往會帶來新的發現，\n……事實上，現在也算是正中靶心了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看來對你是隱瞞不了的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我想了一下。\n被納克特原書奪走的家人……以及自己的情感」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「和你在一起的話……有時候會突然變得不了解自己呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「對你的感情漸漸膨脹，想要去瞭解你的程度，\n因此總覺得自己對納克特原書和家人的感覺漸漸淡薄了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這不僅僅是因為你……我一直是這樣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來應該優先拯救被納克特原書奪走的家人，\n可是對真理的好奇心，有時會讓我忘記家人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「會優先考慮自己的感情……\n現在，對你的思念無法控制，越來越強……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「簡直是一只既缺乏理性又缺乏智慧，無法抵抗欲望的醜陋野獸」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而最糟糕的是，\n自身卻想要肯定如此醜陋的自己」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我繼承了父母的血統，他們是優秀的研究者。\n這種對研究的欲望就是證明……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼啊……是什麼樣的理論導致了這樣的思考?\n破綻百出啊……呵呵，呵呵……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………這樣的我……你覺得怎麼樣呢?」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101904/adv/sound/fav101904_12_24.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

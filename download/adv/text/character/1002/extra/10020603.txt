@@ -1,0 +1,134 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_01.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「唉……你又來了。我以為游泳練習已經夠你受了……\n你為什麼不能不管別人呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_02.mp3
+msg,1,<outline width=2 color=black>「游泳之後是什麼？\n……沙灘排球？　難道你是想和我一決勝負嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_03.mp3
+msg,1,<outline width=2 color=black>「為什麼我必須要陪你呢——就算這樣拒絕，\n反正你還是會糾纏不休吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_04.mp3
+msg,1,<outline width=2 color=black>「那樣的話，省去多餘的對話也省下了不少麻煩……\n真拿你沒辦法……我就陪著你吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,1,255
+playbgm,/download/sound/bgm/bgm040.mp3,1,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:anger,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-861,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_05.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「唉——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_043.mp3
+endwait
+shake,0.2,4,30,30
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0.5,,,,
+endwait,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_06.mp3
+msg,1,<outline width=2 color=black>「好了，這就是第十分。是我的完勝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_07.mp3
+msg,1,<outline width=2 color=black>「你在發什麼呆啊？　\n我好歹也是魔術士……基礎體力和普通人本身就不一樣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_08.mp3
+msg,1,<outline width=2 color=black>「你確實有著特殊的能力，但是體質和普通人一樣，\n這個結果也是理所當然的。懂嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「我還以為有可能呢」,選項2　「要是你再放水一點……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_09.mp3
+msg,1,<outline width=2 color=black>「……你最近好像也在鍛煉身體呢。\n難免有點膨脹……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_10.mp3
+msg,1,<outline width=2 color=black>「我這些年也不是白鍛煉的，\n不可能那麼容易就被追上的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_11.mp3
+msg,1,<outline width=2 color=black>「才不要嘞」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:smile,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_12.mp3
+msg,1,<outline width=2 color=black>「你看獅子就算是在打兔子的時候也會竭盡全力的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_13.mp3
+msg,1,<outline width=2 color=black>「話說回來，你這樣就滿足了嗎？\n對我來說，偷工減料的勝利是沒有什麼價值的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_14.mp3
+msg,1,<outline width=2 color=black>「不要做讓自己覺得討厭的事情……是常識吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_15.mp3
+msg,1,<outline width=2 color=black>「但是……像這樣和誰在海邊玩，的確是挺難得的。\n就只有小時候和吉澤爾和霍莉一起玩過一段時間」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_16.mp3
+msg,1,<outline width=2 color=black>「……應該可以說是多虧了你。\n現在這樣比一直無所事事地度過要好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_17.mp3
+msg,1,<outline width=2 color=black>「關於這點，也許可以稍微感謝一下你……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:surprise,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_18.mp3
+msg,1,<size=24><outline width=2 color=black>「那個…………謝謝你」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100206/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100206/adv/sound/fav100206_03_19.mp3
+msg,1,<outline width=2 color=black>「――沒什麼，如果沒聽見的話就算了吧。\n也不是什麼重要的話」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

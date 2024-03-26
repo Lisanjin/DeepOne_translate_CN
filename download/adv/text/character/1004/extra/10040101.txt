@@ -1,0 +1,83 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說起來，亞紗花和我都是來自同一所孤兒院的哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「表面看上去只是個普通的孤兒院，實際上卻是洛夫克拉夫特財團，\n用來集中培養具有魔術天賦的孩子們的地方……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖說來自同一所孤兒院，但我和亞紗花並沒有多熟悉，\n只是偶爾會碰碰面而已……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，亞紗花說不定也不記得我了\n唔……畢竟，年齡也有些差距」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，我還挺想瞭解一下孤兒院的情況呢\n下次試著問問她吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「那是個什麼樣的地方呢？」,選項2　「達娜的孩童的時代……」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼樣……嗎？除了要培養魔術才能以外，\n就和普通的孤兒院沒有什麼兩樣了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯。因此，所以孤兒院才要建立在避人耳目的地方吧\n山裏面交通不太方便……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我記得小的時候還好，稍微長大了一點，到了不愛在山裏玩的年紀，\n就連上街都是件辛苦的事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+name,<size=30><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……我是個不討人愛的孩子哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然自己這麼說不太合適，但我是那種什麼都做得來的類型，\n所以我不太和跟別人打交道……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，我的態度可能不太好……那個……因為和\n其他孩子相處得不好……孤兒院的人也勸我跟其他孩子搞好關係……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，但也不是因為其他孩子找我的麻煩，我就說他們不好\n這一點希望你不要誤會」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然也不全是美好的回憶，但是\n畢竟在那裏生活了這麼久，果然還是會有點讓人難以忘懷」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「趁被關進拉萊耶之前，去孤兒院露露臉\n也未嘗不可……但是事到如今後悔也遲了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果有一天能從這裏離開，或許和亞紗花一起\n回孤兒院看看也是一件不錯的事情吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:smile,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯，為了讓那一天能夠到來，我們盡全力搜索幻夢境吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100401/adv/sound/fav100401_03_16.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

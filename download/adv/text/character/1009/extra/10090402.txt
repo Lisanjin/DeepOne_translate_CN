@@ -1,0 +1,106 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10030100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,,
+endwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:anger,irina,-20,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「幹什麼啊，剛剛就在那偷偷看著我」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是啊，我正煩著呢。你知道就好。\n所以別隨隨便便和我搭話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你有管我的閒工夫的話，不如去找在熱心祈禱的\n卡蒂婭怎麼樣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……真是，在這種地方，還在做著那無用功啊，那孩子。\n到底是在對著誰，祈禱什麼啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「就算再怎麼祈禱，納克特原書也不會祝福人類的。\n真的，有夠無聊的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「卡蒂婭有很強烈的信仰之心」,選項2　「你還是很關心卡蒂婭的啊」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「的確是這樣。但對我來說，\n那種信仰，只是為了逃避真相而作的欺騙罷了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「世界是更加醜陋的，殘酷的……不是靠信仰\n這種曖昧的東西就能有所改變的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那孩子，只是在逃避現實而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:anger,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你給我等等啊。\n你聽了剛剛的話，為什麼會得出那種想法啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「氣氛和表情什麼的，不要靠這種曖昧的東西\n去推測一個人的內心啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「從我叛逃出聖奠教之後，\n用這雙眼睛親眼看到了他們在全世界做所的惡行……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_11.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:unique,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「結果，聖奠教是以信仰為名給人們洗腦的狂信徒集團，\n教義什麼的完全沒有意義……就算祈禱了也沒有用」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我的父母也……對那種腦子有問題的教義堅信不疑，\n然後瘋了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你能相信嗎？ 父母作為使徒而從現實世界中消失的時候……\n臉上露出了微笑啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「說向納克特原書獻上祈禱，是很榮耀的任務」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對於我挽留他們的話，完全不放在心上……\n對父母來說聖奠教的教義，是比我這個親生女兒還要重要的事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……你不覺得那是錯誤的嗎？\n比起女兒優先教義什麼的……我不認為這是對的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我感到最悲傷的，不是父母不在了。\n而是他們在最後的一瞬間，也不肯回頭看我一眼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「卡蒂婭的話，肯定不會理解這份感情的吧。\n我也並不想讓她知道就是了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……沒錯。對現在的我來說，那孩子只是可憎的聖奠教聖女而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不管那孩子是怎麼想的，只要事實沒有改變，\n我就不會原諒那孩子……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……沒錯，那種事是絕對……不可能發生的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100904/adv/sound/fav100904_12_22.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

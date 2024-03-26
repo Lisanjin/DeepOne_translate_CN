@@ -1,0 +1,138 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――早上好。很抱歉這麼早來打擾你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「實際上，我今天是為幫大家忙，想著可以幫你們洗洗衣服。\n才來你們的房間」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「除了戰鬥以外，我所能做的事也就只有這種雜物活了。\n嘻嘻，不用介意。我本來就喜歡為大家服務的嘛」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那，如果有要洗的衣服，那就交給我吧，有些什麼呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「外衣」,選項2　「內褲」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:surprise,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，外衣嗎……是你現在穿的這件嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,100,300,0.65,0.8,0.5
+endwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻，那就讓我幫你脫了吧。請轉過去背對著我」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_06.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，那開始要脫脫咯？\n……沒有沒有，我沒把你當成小孩子哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:shy,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哎，臉紅了啊\n嘻嘻……真像個孩子，太可愛了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:surprise,bea,-10,-200,0.5,0,,,,
+spine,download/adv/spine/Mark3,em2,default,animation,0,100,270,0.65,0.8,0.5
+endwait
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒，內褲嗎！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_09.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:shy,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……這，這可真是一份大禮啊……\n該怎麼辦呢……我真的可以洗嗎……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不……既然你拜託了我，我一定會洗乾淨的。\n但是，在開始洗之前，我需要先研究一下男性內褲是什麼樣的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……還有，味道、之類的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「――嘻嘻，開玩笑的啦？　你當真了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_13.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那，我就去洗衣服了。\n洗完之後，我再來房間找你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_14.mp3
+clickwait,,,,,,,,,,,
+spriteoff,bea,0.5
+endwait,,,,,,,,,,,
+name,
+msg,0,
+bg,color_0_0_0,0.5,255
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,1,,,,,,,,,
+endwait
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,1,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「――我來給你送洗好的衣服了。怎麼樣？　\n洗得很乾淨吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:surprise,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒、啊……是啊。我很認真地洗了哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，我不知道怎麼使用洗衣機\n所以我借了一個放在倉庫裏的洗衣板來洗衣服」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊，還有，洗衣液的種類實在是太多了\n所以，我就用了離我最近的洗衣液」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「沒想到能變得這麼潔白，真不愧是拉萊耶的洗衣液」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？　花紋……掉色、嗎……？　嗯唔，抱歉我沒聽懂。\n你是說，有哪里沒洗乾淨嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「――是嘛，是你的錯覺的話，那我就放心了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻，果然能給大家幫忙，會讓我感覺很開心呢。\n光是想到大家那高興的樣子，便感覺無論有多少工作，我都可以做下去」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:surprise,bea,-10,-200,0.5,0,,,,
+spine,download/adv/spine/Mark10,em3,default,animation,0,130,250,0.65,1,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「哎呀，你臉怎麼在抽搐啊，發生了什麼事情呢……\n還是說我的錯覺嗎？　哈啊……是嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102302/adv/sound/fav102302_05_23.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

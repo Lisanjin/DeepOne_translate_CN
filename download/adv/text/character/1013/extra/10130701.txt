@@ -1,0 +1,111 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「欸，你知道嗎？\n最近拉萊耶的廚房經常飄出甜甜的香味。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_02.mp3
+msg,1,<outline width=2 color=black>「好像是因為情人節快到了，亞紗花在做巧克力，\n然後其他人聽說之後也都一起去做了。肯定都是要做來送你的吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1「來自米露瓦？」,選項2「很期待」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_03.mp3
+msg,1,<outline width=2 color=black>「哎呀，我想你應該會收到很多女生送的巧克力才對，\n竟然還想要我送你嗎？真是貪心啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_04.mp3
+msg,1,<outline width=2 color=black>「我要先說，只有日本的情人節\n是由女生來送巧克力的。在其他國家，情人節都是男生送禮物的日子哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_05.mp3
+msg,1,<outline width=2 color=black>「當然，他們會送的東西就不只侷限在巧克力了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_06.mp3
+msg,1,<outline width=2 color=black>「多虧了亞紗花，你才能過一個日本風格的情人節，\n很慶幸吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:surprise,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_07.mp3
+msg,1,<outline width=2 color=black>「……哎呀，怎麼一臉莫名其妙？難道你不知道嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_08.mp3
+msg,1,<outline width=2 color=black>「女生在情人節送巧克力這個習俗是發源自日本的。\n不然一般來說，情人節都是男生送禮物給女生的日子。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_09.mp3
+msg,1,<outline width=2 color=black>「假如我們過的是一般的情人節，你就得準備很多禮物了，\n想必會很辛苦吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_10.mp3
+msg,1,<outline width=2 color=black>「真羨慕你啊。你看，竟然只有你一個人可以收到\n拉萊耶的這麼多女生送的巧克力。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_11.mp3
+msg,1,<outline width=2 color=black>「我也很喜歡吃甜食啊，但是卻只有你能收到，\n真的好不公平哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_12.mp3
+msg,1,<outline width=2 color=black>「所以，就算我不送你巧克力，你應該也很夠吃了吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:shy,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_13.mp3
+msg,1,<outline width=2 color=black>「──欸，就算是這樣，你還是想要我做的巧克力嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_14.mp3
+msg,1,<outline width=2 color=black>「呵呵，這麼拚命點頭，真的這麼想要啊？你用這麼可愛的方式\n拜託我，要是我還拒絕，好像會顯得你有點可憐耶。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_15.mp3
+msg,1,<outline width=2 color=black>「但是不行♪　我不是說了嗎？我也很喜歡甜食。\n所以就算我做了巧克力，也會通通自己吃掉。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:shy,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_16.mp3
+msg,1,<outline width=2 color=black>「呵呵，你那一臉失望的表情……實在是很──哎呀？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_17.mp3
+msg,1,<outline width=2 color=black>「這是為什麼呢……好像不太甜……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_18.mp3
+msg,1,<outline width=2 color=black>「啊，沒事，沒什麼啦。那我先去廚房啦。」\n</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_19.mp3
+msg,1,<outline width=2 color=black>「我最近都在請大家把她們試做的巧克力給我吃。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_20.mp3
+msg,1,<outline width=2 color=black>「希望今天亞紗花也在……畢竟說起做甜點，\n還是亞紗花最厲害。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_21.mp3
+msg,1,<outline width=2 color=black>「啊，但是你就算想吃巧克力，也不能過來喔！\n因為跑去看女生努力的樣子，可是不合乎禮儀的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_01_22.mp3
+msg,1,<outline width=2 color=black>「而且，要是你害我能吃的分量變少，我也會很困擾。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

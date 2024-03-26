@@ -1,0 +1,127 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11080300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_01.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「……這周邊好像也沒什麼特別的問題。\n差不多可以告一段落，在這附近休息一下吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:shy,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_02.mp3
+msg,1,<outline width=2 color=black>「然後，那個……這個是給你的便當」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:shy,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_03.mp3
+msg,1,<outline width=2 color=black>「你看，今天一整天我們都在這個領域想索吧？\n所以嘛……我覺得偶爾這樣也不錯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:shy,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_04.mp3
+msg,1,<outline width=2 color=black>「吃飯也是恢復體力所不可缺少的……然後……那個，\n做一人份也好兩人份也好花的時間都是一樣的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_05.mp3
+msg,1,<outline width=2 color=black>「……等等，你那不安的表情是什麼意思。\n我想你應該不會是覺得難吃吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_06.mp3
+msg,1,<outline width=2 color=black>「外觀是差了點，但完全能吃的啦。\n我有好好試過味道，這一點我保證」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_07.mp3
+msg,1,<outline width=2 color=black>「……你在磨蹭什麼啊，不會是在找理由不吃吧?\n好了別廢話了趕緊吃吧。我好不容易做出來的可別浪費！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「吃」,選項2　「不吃」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_08.mp3
+msg,1,<outline width=2 color=black>「哼……總算聽明白了。一開始那樣做不就好了，\n扭扭捏捏像什麼話」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:surprise,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_09.mp3
+msg,1,<outline width=2 color=black>「——你給我等一下。\n為什麼你的表情像要從懸崖跳下去了那樣決然？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_10.mp3
+msg,1,<outline width=2 color=black>「難道吃我做的菜一定要有必死的決心嗎？\n你真是個失禮的男人啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_11.mp3
+msg,1,<outline width=2 color=black>「不行，快點吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_12.mp3
+msg,1,<outline width=2 color=black>「……就算你用那種楚楚可憐的表情看著我，我的想法也不會變。\n不管怎樣你就是要把這個便當吃掉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_13.mp3
+msg,1,<outline width=2 color=black>「好了啦，趕緊像個男人一樣把它吃完」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_14.mp3
+msg,1,<outline width=2 color=black>「…………很好，吃完了就行。然後……味道怎麼樣？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:smile,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_15.mp3
+msg,1,<outline width=2 color=black>「味道應該還是相當不錯的吧――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:surprise,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_16.mp3
+msg,1,<outline width=2 color=black>「——呀！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_17.mp3
+msg,1,<outline width=2 color=black>「喂，多髒啊！　怎麼能把吃進嘴裏的東西噴出來！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_18.mp3
+msg,1,<outline width=2 color=black>「哈？　現在不是說這些的時候，你是什麼意思。\n完全搞不懂你想表達什麼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_19.mp3
+msg,1,<outline width=2 color=black>「好了，給你喝的。\n先喝口茶喘口氣吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_20.mp3
+msg,1,<outline width=2 color=black>「怎麼樣？　很好喝吧。那個是吉澤爾喜歡的特製茶——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_21.mp3
+msg,1,<outline width=2 color=black>「――為什麼連茶也噴出來了啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:surprise,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_22.mp3
+msg,1,<outline width=2 color=black>「哎、哎呀？　怎麼了，筋疲力盡……了嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:surprise,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_23.mp3
+msg,1,<outline width=2 color=black>「翻了白眼……而且口中有奇怪的泡沫……難道是暈死過去了嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_24.mp3
+msg,1,<outline width=2 color=black>「怎麼會這樣……難道在我們沒意識到的時候中了幻夢境的陷阱……\n糟糕了，要趕緊帶著他回到拉萊耶才行……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100207/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100207/adv/sound/fav100207_03_25.mp3
+msg,1,<outline width=2 color=black>「真是有夠麻煩的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,130 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+roombg,1007,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zizel1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:sad,zizel2,0,0,0,0,,,,
+imgconf,zizel2,zizel1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_01.mp3
+name,<outline width=2 color=black>吉澤爾・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「呃……嗯嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+mask,zizel1,0,0,1280,250,0,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:sad,zizel2,0,0,0,0,,,,
+imgconf,zizel2,zizel1,0,-375,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_02.mp3
+msg,1,<outline width=2 color=black>「霍、霍莉……?　嗯嗯……早餐時間到了嗎……？\n我還想再睡一下……至少再讓我睡五分──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:surprise,zizel,0,-700,0.5,0.5,,,,
+anm,move,zizel,0_-120,0.3,0
+endwait
+playvoice,1,download/character/100752/adv/sound/fav100752_02_03.mp3
+name,<outline width=2 color=black>吉澤爾・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「咦？咦咦咦──！？你、你怎麼會、在我房間裡！？\n難道……你是偷偷溜進來的嗎……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:shy,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_04.mp3
+msg,1,<outline width=2 color=black>「然、然後……趁我睡覺的時候，對我做了什麼\n壞壞的惡作劇，好好享受了一番……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「才不是」,選項2　「如果是的話呢？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_05.mp3
+msg,1,<outline width=2 color=black>「咦？啊……這、這樣啊……這樣喔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:shy,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_06.mp3
+msg,1,<outline width=2 color=black>「沒有，我才沒有覺得很可惜！！\n那是你的錯覺！沒錯！就是！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_07.mp3
+msg,1,<outline width=2 color=black>「咦咦！？所、所以，我真的\n被你吃乾抹淨了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:shy,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_08.mp3
+msg,1,<outline width=2 color=black>「不是，我並沒有說我不願意喔！\n如果是被你吃乾抹淨，那……我也會很高興的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_09.mp3
+msg,1,<outline width=2 color=black>「但是，怎麼說呢？可以的話，我會希望\n你在我醒著的時候吃……呃、咦？你為什麼要笑？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_10.mp3
+msg,1,<outline width=2 color=black>「莫、莫非你剛才是在開玩笑！？真是的，請不要\n開這種玩笑啦。會害我期待……不是，我是說這對我的心臟不好。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_11.mp3
+msg,1,<outline width=2 color=black>「可是，如果你不是趁我睡覺的時候偷溜進來的，又怎麼會在我房間裡？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_12.mp3
+msg,1,<outline width=2 color=black>「咦？你說昨天發生的事情嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_13.mp3
+msg,1,<outline width=2 color=black>「我想想……我記得達納和希爾薇跑來我的房間，\n突然開起了酒會，然後我、也……啊、啊啊啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:shy,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_14.mp3
+msg,1,<outline width=2 color=black>「我、我想起來了……！我對你耍任性，\n要你陪我一起睡……對不起！我給你添了好大的麻煩！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_15.mp3
+msg,1,<outline width=2 color=black>「我該如何向你道歉才好呢……請讓我做些什麼來謝罪好嗎？\n只要是我能做的，你要我做什麼都可以。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_16.mp3
+msg,1,<outline width=2 color=black>「……是的，做什麼都可以。身為芭德薇家的接班人，\n給別人添了麻煩就應該要好好補償，以示負責──咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:shy,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_17.mp3
+msg,1,<outline width=2 color=black>「要我今天一整天都穿這樣和你待在一起……！？這、這實在有點\n太難為情了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:shy,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_18.mp3
+msg,1,<outline width=2 color=black>「啊、啊嗚……我感覺到你看著我的眼裡充滿了強烈的期待。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_19.mp3
+msg,1,<outline width=2 color=black>「畢竟一開始給你添麻煩的人是我，跟你說想要我做什麼都可以的人\n也是我……既然如此，我就應該要好好負起責任來，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100752/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_20.mp3
+msg,1,<outline width=2 color=black>「我、我明白了。如果這樣就能讓你滿足，\n那今天我就穿這樣和你待在一起一整天……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100752/adv/sound/fav100752_02_21.mp3
+name,<outline width=2 color=black>吉澤爾・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「唔唔，不過穿這樣和你獨處……我實在……\n不知道忍不忍得住……有點擔心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

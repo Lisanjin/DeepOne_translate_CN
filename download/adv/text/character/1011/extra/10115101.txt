@@ -1,0 +1,141 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,kirie1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie2,0,0,0,0,,,,
+imgconf,kirie2,kirie1,0,-500,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_01.mp3
+name,<outline width=2 color=black>姬莉葉・桐原</outline>,
+msg,1,<outline width=2 color=black>「難得的萬聖節，我也知道她們會慫恿我化裝，\n這件事本身沒什麼問題……但，這是什麼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+mask,kirie1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie2,0,0,0,0,,,,
+imgconf,kirie2,kirie1,0,-500,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_02.mp3
+msg,1,<outline width=2 color=black>「很明顯布料面積太少了吧……艾蒂爾加爾德小姐到底在哪\n找的這件衣服啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+mask,kirie1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie2,0,0,0,0,,,,
+imgconf,kirie2,kirie1,0,-500,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_03.mp3
+msg,1,<outline width=2 color=black>「……只是，他也勸我萬聖節要化裝。\n到時候總不能還穿著制服……唉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+mask,kirie1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie2,0,0,0,0,,,,
+imgconf,kirie2,kirie1,0,-500,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_04.mp3
+msg,1,<outline width=2 color=black>「事態發展到這個份上，只能下決心了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10010300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101151/adv/sound/fav101151_01_05.mp3
+name,<outline width=2 color=black>姬莉葉・桐原</outline>,
+msg,1,<outline width=2 color=black>「那、那個……我試著在萬聖節上化裝，\n有什麼奇怪的嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_06.mp3
+msg,1,<outline width=2 color=black>「這件衣服，是艾蒂爾加爾德小姐給我的。以名為僵屍的\n中國妖怪為主題……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_07.mp3
+msg,1,<outline width=2 color=black>「該怎麼說……這和我瞭解到的僵屍相比，露出的部分\n太多了……果然，穿著這件衣服去見人太害羞了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_08.mp3
+msg,1,<outline width=2 color=black>「話又說回來，為什麼會推薦我去扮僵屍啊。\n難道更主流一點的主題不是更好嗎……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「是不是就因為露出很多才？」,選項2　「是不是因為很適合你？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_09.mp3
+msg,1,<outline width=2 color=black>「你這話是什麼意思……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_10.mp3
+msg,1,<outline width=2 color=black>「確實，潛入幻夢境時，\n我有不知為何，就穿上了大膽的衣服的自覺……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_11.mp3
+msg,1,<outline width=2 color=black>「但那又不是我自己想這麼做的，\n我絕對沒有喜歡露出的嗜好！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_12.mp3
+msg,1,<outline width=2 color=black>「所以，能不能別說得\n我有露出興趣似的啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_13.mp3
+msg,1,<outline width=2 color=black>「謝、謝謝你……我可以因為這句話高興起來嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_14.mp3
+msg,1,<outline width=2 color=black>「當然，被你誇獎，我怎麼會不開心呢？\n只是，該怎麼說，被說適合穿這種衣服，心情實在是有點複雜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_15.mp3
+msg,1,<outline width=2 color=black>「……話說回來，莫非，我是因為露出很多，才被\n誇獎的吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_16.mp3
+msg,1,<outline width=2 color=black>「誒，你為什麼要挪開視線啊？　誒，難、難道說真的\n是這樣嗎……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:unique,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_17.mp3
+msg,1,<outline width=2 color=black>「你還真是一如既往，忠實於色欲啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_18.mp3
+msg,1,<outline width=2 color=black>「真是的……都是因為你的反應很奇怪，\n我更覺得這個打扮讓我太害羞了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_19.mp3
+msg,1,<outline width=2 color=black>「果然還是放棄換裝，重新換上制服……誒，\n你不要這麼露骨的失望啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_20.mp3
+msg,1,<outline width=2 color=black>「唉……我明白了，就這樣吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101151/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101151/adv/sound/fav101151_01_21.mp3
+msg,1,<outline width=2 color=black>「這之後，不光是你，這副模樣也會被其他人看到啊。\n沒想到我會體味到這麼害羞的心情……我會記恨你的，艾蒂爾加爾德小姐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

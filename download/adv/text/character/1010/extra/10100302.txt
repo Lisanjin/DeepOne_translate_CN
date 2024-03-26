@@ -1,0 +1,108 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,,
+endwait
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:anger,jamira,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——噓！安靜……小心被發現」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_02.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你在做什麼？」,選項2　「……幹嘛提著劍？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:anger,jamira,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「您看那邊，是伊蓮娜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我在監視那個可惡的女人。\n她很危險，完全讓人猜不透」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_04.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:anger,jamira,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就是在監視伊蓮娜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那女的就是個好戰的神經病。\n要是被發現在監視她，指不定被襲擊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:sad,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……您怎麼一臉疑惑？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_07.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:normal,jamira,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯，那女的雖說背叛了，原來也是聖奠教教徒。\n什麼秉性我還是曉得的。當然指的是惡名」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「卡蒂婭大人慈悲為懷，對叛徒也展現出\n寬容的態度……尤其，她和伊蓮娜原本關係非常親密」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:anger,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……那種傢伙能夠得到卡蒂婭大人青睞，\n想想就令人氣憤」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:normal,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「話雖如此，我目前沒打算對伊蓮娜採取措施。\n不能枉顧卡蒂婭大人一片好心」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:unique,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過……姑且保留意見。\n一旦發現她有不軌舉動——」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_12.mp3
+clickwait,,,,,,,,,,,
+spriteoff,jamira,0.5,
+endwait,,,,,,,,,,,
+mask,bg1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,jamira1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:unique,jamira,0,0,0,0,,,,
+imgconf,jamira,jamira1,-10,-680,,,0,1.5,1.5,0
+msg,1,<size=30><outline width=2 color=black>「——就滅了她」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_13.mp3
+clickwait
+spineoff,all,0.5
+endwait
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:surprise,jamira,25,-120,0.5,0.5,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「……咦？那女的……進了娛樂室呢。\n真意外……像她這種四肢發達頭腦簡單的傢伙也懂享受啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:normal,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不了……我沒打算跟進去。\n畢竟，抬頭不見低頭見」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我已經預見，暴露之後和伊蓮娜起衝突的樣子了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就在這裏等她出來吧。\n您要不要一起來監視？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也是……窩在這裏，\n對您沒有任何好處」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:smile,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，飯點再見」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_09_19.mp3
+clickwait,,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

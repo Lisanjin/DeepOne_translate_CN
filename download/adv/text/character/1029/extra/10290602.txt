@@ -1,0 +1,173 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11220300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_01.mp3
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,1,<outline width=2 color=black>「光是這樣走在路上，小女子都能感受到您的視線，\n請問您真的對這套服裝如此感興趣嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_02.mp3
+msg,1,<outline width=2 color=black>「這應該是舞孃的服裝……像這種裝飾繁多、樣式華麗的服裝，\n小女子羅澤特想必是配不上的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_03.mp3
+msg,1,<outline width=2 color=black>「而且小女子羅澤特過去一直只作為一個工具而活，因此\n並沒有跳舞的經驗……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:surprise,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_04.mp3
+msg,1,<outline width=2 color=black>「咦？……您想要，看小女子羅澤特跳舞嗎？\n可是小女子羅澤特剛才說了，小女子從來沒跳過舞……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_05.mp3
+msg,1,<outline width=2 color=black>「如果這就是您所希望的，小女子當然很樂意跳給您看……\n不過、呃、請容小女子先向您致歉，接下來可能要在您面前獻醜了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:anger,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_06.mp3
+msg,1,<outline width=2 color=black>「那、那麼……小女子開始了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,rozet,200_-100,0.8,0
+endwait,,,,,,,,,,,
+wait,0.7
+endwait,,,,,,,,,,,
+anm,move,rozet,-200_-100,2,0
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_07.mp3
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,1,<outline width=2 color=black>「您、您覺得還可以嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選項1　「很可愛。」,選項2　「再性感一點。」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_08.mp3
+msg,1,<outline width=2 color=black>「是、是這樣嗎……只要能讓您開心\n小女子羅澤特也開心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_09.mp3
+msg,1,<outline width=2 color=black>「不過，您說小女子跳舞可愛……意思應該是指小女子羅澤特的\n跳舞技巧很笨拙吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_10.mp3
+msg,1,<outline width=2 color=black>「非常感謝您的體貼……為了讓您能夠更加滿足，\n等回到拉萊耶之後，小女子會開始練習跳舞的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_11.mp3
+msg,1,<outline width=2 color=black>「您說……性、性感是嗎……？\n這對於小女子羅澤特來說……稍微有點難以達成……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_12.mp3
+msg,1,<outline width=2 color=black>「如您所見，小女子羅澤特的身材十分扁平……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_13.mp3
+msg,1,<outline width=2 color=black>「相較於其他人，呃……小女子可能比較難以\n達成您的期望……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_14.mp3
+msg,1,<outline width=2 color=black>「不過，既然您對小女子羅澤特有這樣的期望，小女子羅澤特也想\n回應您的期待……請問、您願意給小女子一點時間嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_15.mp3
+msg,1,<outline width=2 color=black>「小女子會去學跳一支能夠滿足您的舞蹈，\n在小女子學會之前……希望您願意等待一段時間。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_16.mp3
+msg,1,<outline width=2 color=black>「……不過，小女子有一種奇妙的感覺……又或許應該說有點不太習慣。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_17.mp3
+msg,1,<outline width=2 color=black>「過去小女子羅澤特一直只作為一個工具而活。即便祭司大人\n要小女子學習如何作為一個人活下去，小女子也不解其意。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_18.mp3
+msg,1,<outline width=2 color=black>「但是，每次和您待在一起……每次您對小女子有所期望，\n小女子心底都會湧上一種奇妙的、彷彿喜悅一般的情緒……而且那並非作為工具的喜悅。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_19.mp3
+msg,1,<outline width=2 color=black>「就連像這樣為您跳舞時所抱持的想法也是……如果是不久前的\n小女子羅澤特，在為您跳舞時抱持的應該會是另一種不同的想法。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_20.mp3
+msg,1,<outline width=2 color=black>「小女子可能會為了達到您對一個工具的期望而努力，\n但應該不會因為產生想跳舞給您看的想法而做出行動。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_21.mp3
+msg,1,<outline width=2 color=black>「……只要一直待在您身邊，今後小女子羅澤特是不是\n還會再產生這樣的想法呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_02_22.mp3
+msg,1,<outline width=2 color=black>「現在小女子羅澤特……開始對此產生了一種類似期待的感覺。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,124 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:anger,ouka,-10,-120,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_01.mp3
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_037.mp3
+shake,0.1,1,50,50
+endwait
+msg,1,<size=30><outline width=2 color=black>「哈啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_02.mp3
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_037.mp3
+shake,0.1,2,50,50
+endwait
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:surprise,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，是你啊……問我在做什麼，在練習揮劍啊\n看了就知道了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「訓練場有別人在用啊……\n反正，揮劍的話在這裏也能練習」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不每天鍛煉的話，身體會出岔子，心裏也會不平靜。\n那個，你每天早上起床後要洗臉吧？和那個是一樣的感覺哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「第一次握劍的時候，光是揮劍一百下，全身都在慘叫。\n但到了現在，這已經成為我生活中的一部分了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這有什麼可佩服的啊。這些只是基礎而已，基礎。就算是你，只要鍛煉的話\n也馬上就能做到的哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對了，你要不要試試？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「試試」,選項2　「還是算了」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,80,190,0.65,0.8,0.5
+endwait
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不錯嘛。那麼，把我的劍借給你吧。拿著」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_10.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，你的握劍方式真是……右手這樣，左手要這樣。\n對對。然後，保持這個姿勢腰部用力，試著向上舉起來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:sad,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你……有在認真做嗎？連一釐米都沒舉起來啊。\n看來，是你肌肉本身的力量不夠啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不應該先進行揮劍訓練，而應該從更基本的訓練\n開始比較好……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_13.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:sad,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼啊，不想試試嗎？真是沒勁……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:surprise,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……？你說重要的武器不能借給別人？\n什麼啊，你在意的是這個嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「就你這種程度，對我的劍可是一點影響都沒有的哦。\n不過，你要是介意的話，我也不會勉強你……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，做點其他的訓練怎麼樣？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_17.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那……你舉起這個啞鈴試試」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:surprise,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「從哪里拿出來的……啞鈴這種東西為了以防萬一\n一般都會隨身攜帶的吧，沒什麼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好啦，別管那個了，你試著舉起來看看。\n不錯，這種程度的話，你也能舉起來的吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:smile,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哦，不錯嘛。保持這個勁頭——」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:sad,ouka,-10,-120,0.47,0,,,,
+spine,download/adv/spine/Mark2,em3,default,animation,0,80,190,0.65,0.8,,0.5
+msg,1,<size=30><outline width=2 color=black>「喂喂，你還舉不到十下哦？\n真是的……看來要舉得動我的劍還得再花上幾年啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_22.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你的幹勁還不夠。只要拼命努力的話，大部分的事都能做成。\n我把這個啞鈴送給你，你也稍微鍛煉一下吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_23.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「最重要的是……你有體力的話做事情會比較方便吧？\n哈哈！不要問我是什麼意思啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101500/adv/sound/fav101500_02_24.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

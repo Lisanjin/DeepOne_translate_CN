@@ -1,0 +1,490 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040200.jpg,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,1.0,
+endwait,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:surprise,gizel,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那個，記得是在這附近——啊，找到了！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:smile,gizel,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「終於……終於到手了！為了得到這本書，\n我受了多少苦啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不過，這一切都有了回報……\n接下來只要仔細藏好，偷偷將其帶回——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5,
+endwait,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:anger,catia,1000,-100,0.5,0,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0,
+anm,tint,gizel,150_150_150,0.0001,0
+anm,move,catia,300_-100,0.2,0
+playse,/download/sound/se/se_016.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「大事不好了，吉澤爾！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:surprise,gizel,-300,-120,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+anm,jump,gizel,-300_-120_50_2,0.5,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哇？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「你背後藏著什麼？」,選項2　「你吃驚過頭了吧？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:sad,gizel,-300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不不不，什麼都沒有哦？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:sad,gizel,-300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這、這是因為，那個……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊……原來如此。抱歉，明明知道吉澤爾正感到煩惱，\n我卻還是一驚一乍的，讓你嚇了一跳。但是，現在事態緊急……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:normal,gizel,-300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎、怎麼了？你們兩位看起來非常慌張……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:anger,catia,300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「其實，又有虛像出現了，而且數量很多……\n光靠我們已經無法應付了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「雖然布麗吉特正在全力奮戰著，但是……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0, 
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1.0,255
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+name, 
+msg,0, 
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10040100.jpg,1,255
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-120,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy2,400,-120,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy3,-400,-120,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0, 
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,0.5,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「唔——？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「哈啊、哈啊……這些傢伙到底怎麼回事。\n比剛才對付的那些虛像難纏多了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,bligit,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「偏偏吉澤爾還不在……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「呃，我為什麼要說出如此不爭氣的話啊。\n居然以那孩子不在為藉口，真是太丟臉了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「你們上吧——我是不會被輕易打倒的！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-120,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy2,400,-120,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy3,-400,-120,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「―――――――――――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,gizel1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,gizel,0,0,0,0,,,,
+imgconf,gizel,gizel1,0,-580,,,0,1.5,1.5,0.5
+wait,0.3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「克勞索拉斯——用你的光輝，掃除敵人吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy2,400,-120,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy3,-400,-120,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-120,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Shine,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+anm,tint,enemy2,0_0_0,0.5,0
+anm,tint,enemy3,0_0_0,0.5,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,1.0
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:anger,gizel,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「沒事吧，布麗吉特姐姐？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bligit,-300,-120,0.5,0.5,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……哈啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+bgmstop,0.5
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,bligit,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「真是的。都是因為你，弄得我變成這副慘樣。\n這下我又認識到了彼此之間的差距呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:surprise,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「咦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「算了，沒事了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:smile,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是嗎……？不過，沒事就好。\n這個人和卡蒂婭告訴了我情況，擔心之下，我就……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「要你管啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:sad,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「對、對不起……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0.5,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「布麗吉特，請不要這麼說。\n吉澤爾真的是非常著急，她可是全力奔赴過來的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我只是追著她過來就已經竭盡全力了……咦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「吉澤爾，有東西掉在了你的腳邊——誒？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5,
+endwait
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:surprise,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm015.mp3,0,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:shy,gizel,300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「糟糟糟糟糟了……？！\n難道是剛才戰鬥的時候甩掉的……？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誒，那個……吉、吉澤爾，這本書究竟是……？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:sad,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誒，啊，呃……這、這是……那個……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,gizel,300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是保健體育的教科書！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:anger,catia,0,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+anm,jump,catia,0_-100_50_2,0.5,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎麼可能存在這種滿是肉色的保健教科書啊！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「喂，你們兩個。怎麼突然就吵起來了。\n肉色啊保健啊都是什麼鬼，這本書究竟……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:surprise,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊啊，姐姐……！不、不能看……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:surprise,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:surprise,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不、不對哦，布麗吉特姐姐？\n這本書並不是下流的東西，確切的說是社會學習的一環……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……我從前就一直在懷疑……現在終於確信了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:unique,bligit,-300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「吉澤爾……你表面看上去很純情，\n但其實非常悶騷呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:surprise,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「―――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:sad,gizel,300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不、不是的……沒、沒沒、沒那回事……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎麼可能沒有。從一開始你就很可疑了。\n詢問你潛入目的的時候，你的回答就很含糊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:unique,bligit,-300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你找藉口要我們回去，其實不是為了找胸針，\n而是為了回收這本書吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這、這個，再怎麼說也想太多了。\n是吧，吉澤爾？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:sad,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:unique,catia,0,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「請問，吉澤爾……你為什麼不說話了？\n難不成真是這樣嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗚、嗚嗚……因、因為……沒辦法啊！\n畢竟我也是人類！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「眼前可是出現了一本小黃書哦？\n當然會很想讀，當然會想撿起來！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:anger,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你在說什麼莫名其妙的話——嗯？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,-300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「喂，你怎麼一臉慌張的表情。\n……看看周圍？幹嘛啊，到底是什麼意——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+spriteoff,all,0
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,
+endwait,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-120,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy2,400,-120,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy3,-400,-120,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0, 
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_10040100.jpg,bg2,1536,0,1.2,0,
+sprite,download/bg/bg_10040100.jpg,bg1,0,0,1.2,0,
+endwait,,,,,,,,,,,
+anm,move,bg1,-1536_0,0.5,0
+anm,move,bg2,0_0,0.5,0
+endwait,,,,,,,,,,,
+spriteoff,bg1,0
+spriteoff,bg2,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-120,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy2,400,-120,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy3,-400,-120,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_10040100.jpg,bg2,-1536,0,1.2,0,
+sprite,download/bg/bg_10040100.jpg,bg1,0,0,1.2,0,
+endwait,,,,,,,,,,,
+anm,move,bg1,1536_0,0.5,0
+anm,move,bg2,0_0,0.5,0
+endwait,,,,,,,,,,,
+spriteoff,bg1,0
+spriteoff,bg2,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「什、什麼時候出現了這麼多虛像……？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:anger,bligit,-300,-120,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……我們好像閒聊得有點久呢。\n總之，現在必須解決眼前的狀況」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:normal,gizel,300,-120,0.5,0.5,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「對了，在此之前能不能讓我先把書撿起來」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:unique,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:unique,catia,0,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:unique,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「對、對不起……我放棄這本書了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

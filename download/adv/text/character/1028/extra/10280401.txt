@@ -1,0 +1,112 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,miliam1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:sad,miliam2,0,0,0,0,,,,
+imgconf,miliam2,miliam1,0,-870,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_01.mp3
+name,<outline width=2 color=black>米婭姆・莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「幻夢境是人們未知的領域，\n只要探索到其最深處，便可以得到納克特原書」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_02.mp3
+msg,1,<outline width=2 color=black>「但這是一條充滿危險的道路，在這個空間裏一不留神\n就有可能喪失性命」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+name,
+msg,0,
+stopbgm,0.5,,,,,,,,,,
+endwait
+bg,download/bg/bg_11080300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102804/adv/sound/fav102804_01_03.mp3
+name,<outline width=2 color=black>米婭姆・莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「至少據我所知是這樣的……但是\n這個領域也未免過於平和」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_04.mp3
+msg,1,<outline width=2 color=black>「話說回來，說不定幻夢境就是想用這樣的和平光景\n讓我們大意，所以我們絕不可以掉以輕心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_05.mp3
+msg,1,<outline width=2 color=black>「在幻夢境裏發生什麼樣的事情都不足為奇。\n就這一點來說你的經驗應該要比我豐富」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_06.mp3
+msg,1,<outline width=2 color=black>「——等等！你就這樣不做防備的走出去嗎！\n這片區域到處都開滿了花，有陷阱該怎麼辦啊……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「沒關係」,選項2　「米婭姆也一起來吧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_07.mp3
+msg,1,<outline width=2 color=black>「你憑什麼說沒關係！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_08.mp3
+msg,1,<outline width=2 color=black>「你行動的時候多少要有點，自己很重要的\n自知之明吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_09.mp3
+msg,1,<outline width=2 color=black>「就算你讓我跟你一起……你是讓我和你一起在花田裏天真浪漫的玩耍嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_10.mp3
+msg,1,<outline width=2 color=black>「不能排除虛像突然出現的可能性……所以，\n我當然不能陪你在花田裏悠哉的玩啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_11.mp3
+msg,1,<outline width=2 color=black>「既然你這麼神經大條。\n那我就，更要小心謹慎……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_12.mp3
+msg,1,<outline width=2 color=black>「我絕對不會做出任何可能失去你的舉動」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_13.mp3
+msg,1,<outline width=2 color=black>「因為你的力量是與生俱來的，你對減輕我們的負擔/n或是強化我們的力量這種事已經習以為常，可能沒什麼特別的感覺」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_14.mp3
+msg,1,<outline width=2 color=black>「但是，這是只有你才擁有的特殊能力……我認為像你這種\n被“特別”恩賜的人，絕不可任意浪費自己的能力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_15.mp3
+msg,1,<outline width=2 color=black>「我希望你不要誤會，我並沒有讓你像奴隸或是機械一樣\n工作的意思哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_16.mp3
+msg,1,<outline width=2 color=black>「只是……不想失去你而已。僅此而已……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_17.mp3
+msg,1,<outline width=2 color=black>「啊……！不對，我剛才說的不對！？\n你的力量對於我們來說有利用價值，所以不想失去你……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102804/adv/sound/fav102804_01_18.mp3
+msg,1,<outline width=2 color=black>「嗚嗚……！我，我去周圍巡邏一下，你就\n一個人在這欣賞花田美景吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

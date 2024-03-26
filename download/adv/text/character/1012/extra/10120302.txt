@@ -1,0 +1,88 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，是你啊……我現在剛洗完澡。清爽了不少」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「泡澡也是不錯的呢。\n真沒想到能這麼舒服」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，拉萊耶有很多種類的浴池，\n能根據當天的心情進行不同的選擇，還真是奢侈」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_03.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你喜歡洗澡嗎？」,選項2　「你喜歡在這裏的生活嗎？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我自己都沒能想到自己會這麼中意洗澡，\n看來是這樣的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來我也沒有泡澡的習慣，在戰場的時候，\n偶爾沖個澡都覺得我運氣不錯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「將身體泡到熱水中，居然這麼舒服，\n我還真是驚到了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然，我有著數不清的不滿，\n但至少，洗澡很開心，我不否定」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「就算是無聊到死的每一天，能有這點慰藉真是太好了。\n泡澡時，會忘記憂鬱的心情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_08.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，泡在那麼大的浴池裏……總感覺，\n沁染在我內心的『奇怪部分』會變淡一些」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來不會有這種事發生的，像是溫暖全身的熱水\n把一切都融化掉了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只有泡澡的時候，我身體裏的『奇怪部分』會消失，\n變為普通人……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:sad,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「――開玩笑的，當我是胡言亂語吧。\n我也不需要變成普通人……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣一來，說得好像我想要改變似的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一直以來……我和米露瓦相依為命，\n活在草菅人命的世界……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我究竟在說什麼蠢事啊。\n都到這個份上了……還想著回頭不成」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的，因為你太沒戒心了，害我也被感染。\n哎呀呀……你還真是讓人困擾的寵物」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101203/adv/sound/fav101203_09_17.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

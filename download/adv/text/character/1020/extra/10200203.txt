@@ -1,0 +1,115 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――那個，今天索性把話全部說清楚」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「戰鬥的時候能不能不要到前面來？\n就算你站出來，也只能是肉盾而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「即使你能保護我們免受敵人的攻擊，\n但如果缺少了你，今後在幻夢境中的行動就會面臨絕望」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然很不想承認，但你比起我們每個人的\n價值都更高哦。請明白這一點！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不要每一次都來掩護我啊……真是的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒，什麼，謝禮？　那倒不用。我只是為了自己而行動，\n並不是為了你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對哥哥也……你是怎麼回事啊，突然間這樣……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你們兩個人一直在幫助我」,選項2　「因為我從來沒有對你哥哥表示過謝意」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「既然有了這種自覺，首先就要插手不相干的事情\n，真希望你能改掉這個壞習慣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只要你老老實實，就不會浪費不必要的時間。\n……不過，你感謝的話我就先收下了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_09.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………是嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊……我一直是和哥哥一起戰鬥的。\n所以，你說得沒錯……也要好好感謝哥哥」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:smile,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這不是很令人欽佩嗎。哥哥也會很開心的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那我就回房間休息吧。\n因為有你這個護身符，產生了不少不必要的勞累呢……真是的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話說回來，負荷什麼的倒沒有很多。\n你別再瞎操心了，可別跑來房間找我啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_14.mp3
+clickwait,,,,,,,,,,,
+spriteoff,tabasa,0.5
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait
+msg,1,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,
+roombg,1020,1
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,tabasa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:shy,tabasa,0,0,0,0,,,,
+imgconf,tabasa,tabasa1,0,-200,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那傢伙到底是怎麼回事……什麼感謝，我也沒問他要啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……甚至連哥哥也鄭重其事得感謝了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「感覺不只是嘴上說說而已……真的相信了我和哥哥的事情，\n之前明明沒人相信的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……喂，哥哥，你覺得呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個男人……那個人……我可以\n稍微相信他一點嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_07_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

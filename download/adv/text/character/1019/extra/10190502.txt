@@ -1,0 +1,110 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,silvy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:smile,silvy2,0,0,0,0,,,,
+imgconf,silvy2,silvy1,0,-298.0,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_01.mp3
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「呵呵，呵呵……呵呵呵……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:unique,silvy,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101905/adv/sound/fav101905_02_02.mp3
+msg,1,<size=30><outline width=2 color=black>「好期待啊……快點出現吧……\n啊……光是想像一下，我的心就跳了起來呢……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「怎麼了？」,選項2　「……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:smile,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_03.mp3
+msg,1,<size=30><outline width=2 color=black>「呵呵呵，你很在意嗎？　看來還是在意的吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:smile,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_04.mp3
+msg,1,<size=30><outline width=2 color=black>「哎呀……對於好奇心旺盛的你來說，我想你一定會上鉤的。\n真是太高興了，呵，呵呵呵……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_05.mp3
+msg,1,<size=30><outline width=2 color=black>「呵呵呵……喂，假裝不感興趣也沒用的哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_06.mp3
+msg,1,<size=30><outline width=2 color=black>「我早就發現你從剛才起就在偷瞄。\n其實是想問得不得了吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_07.mp3
+msg,1,<size=30><outline width=2 color=black>「好吧，就算你不想聽，\n我想說的還是要說哦……呵，呵呵……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_08.mp3
+msg,1,<size=30><outline width=2 color=black>「實際上，我開發了一種新的武器」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:unique,silvy,0,-120,0.5,1,,,,
+endwait
+playvoice,1,download/character/101905/adv/sound/fav101905_02_09.mp3
+msg,1,<size=30><outline width=2 color=black>「嘿嘿…你看，這個。\n經過自己的研究和探索，特製的手榴彈終於完成了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_10.mp3
+msg,1,<size=30><outline width=2 color=black>「話雖如此，基本結構和傳統手榴彈還是一樣的。\n拔下銷子，計時引爆裝置就會啟動……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_11.mp3
+msg,1,<size=30><outline width=2 color=black>「但是這裏面含有一種特製的毒藥哦。\n一旦爆炸，液體就會四處飛濺」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:smile,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_12.mp3
+msg,1,<size=30><outline width=2 color=black>「被毒藥碰到的人會感到灼燒般的疼痛，並一點點的\n融化……嘿嘿，嘿嘿嘿，能否得到預想的結果，我非常期待」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:surprise,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_13.mp3
+msg,1,<size=30><outline width=2 color=black>「……哎呀，怎麼了，怎麼這幅表情？　你是不是覺得那很殘酷？\n不過，我也沒說要對人類使用啊?」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_14.mp3
+msg,1,<size=30><outline width=2 color=black>「說到底對象也只是假想的……是為了幻夢境攻略而形成的障礙。\n反正都是必須打倒的敵人，索性把它當作實驗品吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_15.mp3
+msg,1,<size=30><outline width=2 color=black>「就當是為了科學和技術的發展，\n我覺得也應該活用他們的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_16.mp3
+msg,1,<size=30><outline width=2 color=black>「而且啊……說不定“這種興趣”的持有者\n也是存在的，對吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:smile,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_17.mp3
+msg,1,<size=30><outline width=2 color=black>「能做到一邊痛苦一邊消失，這或許反倒\n是一種褒獎對吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:surprise,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_18.mp3
+msg,1,<size=30><outline width=2 color=black>「不相信？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_02_19.mp3
+msg,1,<size=30><outline width=2 color=black>「呵呵呵……妄下結論是對可能性的扼殺哦？\n在研究，驗證，觀測之前，一切都是不確定的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

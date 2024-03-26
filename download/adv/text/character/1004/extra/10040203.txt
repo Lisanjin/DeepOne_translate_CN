@@ -1,0 +1,129 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0_0,1,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……是誰呀？這個時候……請進來吧ー」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_01.mp3
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10010300.jpg,1,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:shy,dana,-0,-180,0.5,1.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊呀……是你啊……怎麼了嗎？這麼晚了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:shy,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「難道說……是要幽會嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_03.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,100,240,0.65,0.8,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「我開玩笑的。嘿嘿，不用這麼驚訝吧\n不過，你想要跟我幽會的話我也不會拒絕哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_04.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+select,選項1　「你好像有點奇怪……」,選項2　「滿身酒氣……！？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:shy,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？　我和平常沒有什麼兩樣吧？\n竟然說我奇怪……好傷心。我受傷了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「相應的道歉是必不可少的……快來溫柔地安慰我吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:shy,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，真是沒有禮貌啊。竟然說姐姐滿身酒氣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別看我這樣，我也有好好使用香水什麼的來打扮的哦。\n這是以前，對我很好的人教我的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔，連胸部也噴有香水哦。　要不要聞聞看？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_09.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+endwait
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……為什麼往後退？真是毫無禮貌呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，在這個時候來女性房間的理由\n是什麼呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0,,,,
+spine,download/adv/spine/Mark3,em2,default,animation,0,100,240,0.65,0.8,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「――――！　那，那是……那個是，難道說……！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_12.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「飯團……昆布……還有鰹魚乾……！？\n這是亞紗花小姐親手做的夜宵……！？」
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什……你說那個可以當做茶泡飯吃嗎……！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是，是要給我嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:smile,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那我開動咯！　這肯定要吃的嘛！\n啊啊，真是來得太巧了！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不是那種魚乾之類的下酒菜，能吃到這種溫暖的食物，\n是何等的奢侈啊……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「以後一定要好好的向亞紗花道謝……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼……說到適合茶泡飯的酒……唔，\n既不是這個，也不是那個……嗯，是這個吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？　你問茶泡飯和酒能配嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:smile,dana,0,-180,0.5,0,,,,
+spine,download/adv/spine/Mark1,em3,default,animation,0,100,240,0.65,0.8,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「啊哈哈，你在說什麼啊。酒可是有無限可能的哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_21.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，對了。你也來喝一點吧？\n我準備了各種各樣的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……這樣嗎？　不需要這麼見外的……不過，\n我也不會勉強你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_23.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:smile,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「謝謝你的飯團。那麼晚安咯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100402/adv/sound/fav100402_07_24.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,107 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11170300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_01.mp3
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,1,<outline width=2 color=black>「雖然已經決定要親手做巧克力了，\n但我以前從來沒做過巧克力呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:anger,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_02.mp3
+msg,1,<outline width=2 color=black>「可是可是，為了向拉萊耶的大家傳達我的感謝，\n我說什麼都想親手做東西，在裡面傾注我的心意！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_03.mp3
+msg,1,<outline width=2 color=black>「比如像前天，我明明耍笨給霍莉添了麻煩，\n她卻完全沒露出嫌棄的表情，還幫了我好多忙。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_04.mp3
+msg,1,<outline width=2 color=black>「昨天也是，卡蒂婭在倉庫救了我……\n我真的老是給大家添麻煩。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1「前天犯錯了？」,選項2「倉庫發生了什麼？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_05.mp3
+msg,1,<outline width=2 color=black>「呃、這個嘛～～……霍莉在洗碗，\n所以我想幫她的忙……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_06.mp3
+msg,1,<outline width=2 color=black>「但結果我在把洗好的盤子拿去櫥櫃裡放的途中跌倒了，\n我抱在懷裡的盤子全都……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_07.mp3
+msg,1,<outline width=2 color=black>「而且，在我慌慌張張想收拾善後的時候，我的手指還被碎片割傷，\n最後還得麻煩霍莉幫我包紮……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_08.mp3
+msg,1,<outline width=2 color=black>「呃……昨天我想換個床單，\n就去了一趟倉庫。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_09.mp3
+msg,1,<outline width=2 color=black>「結果我一個不注意就跌倒了……然後撞進\n擺了很多鐵盆的櫥櫃裡。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_10.mp3
+msg,1,<outline width=2 color=black>「看到大量的鐵盆掉下來，我實在是一點辦法也沒有……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_11.mp3
+msg,1,<outline width=2 color=black>「在我頭被敲到、痛到打滾、整個人被埋在鐵盆裡的時候，\n卡蒂婭剛好路過，聽到聲響就跑來救我了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:shy,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_12.mp3
+msg,1,<outline width=2 color=black>「啊，這種時候幹嘛要聊我的耍笨事蹟啊，根本一點也不重要……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_13.mp3
+msg,1,<outline width=2 color=black>「總之，我也想向哥哥和大家\n好好傳達我的感謝。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_14.mp3
+msg,1,<outline width=2 color=black>「所以，我做巧克力時，想把自己對大家的心意\n直接化為具體的形狀。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_15.mp3
+msg,1,<outline width=2 color=black>「比如說，把巧克力做得又大、又豪華、又香濃……啊！\n我想到了！做個城堡怎麼樣？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_16.mp3
+msg,1,<outline width=2 color=black>「只要用巧克力做個城堡，肯定能在裡面\n傾注很多我對大家的感謝！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_17.mp3
+msg,1,<outline width=2 color=black>「還有，再加些鮮奶油跟水果來增添色彩，\n肯定能做出又好吃又豪華的巧克力。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:anger,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_18.mp3
+msg,1,<outline width=2 color=black>「……或許真的不容易。但是凡事都要先挑戰看看才行，\n不然怎麼知道呢行不行？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:anger,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_19.mp3
+msg,1,<outline width=2 color=black>「我之前有在漫畫裡看過一句話，這世道，幾乎所有的難關\n都能靠幹勁和毅力來解決！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_20.mp3
+msg,1,<outline width=2 color=black>「所以我會靠我的幹勁和毅力，完美做出華麗又香濃的\n巧克力城堡！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101807/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101807/adv/sound/fav101807_02_21.mp3
+msg,1,<outline width=2 color=black>「我一定會做出能讓哥哥和拉萊耶的大家都喜歡的巧克力，\n請好好期待吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

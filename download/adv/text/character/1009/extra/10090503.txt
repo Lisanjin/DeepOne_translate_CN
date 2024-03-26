@@ -1,0 +1,141 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_01.mp3
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊啊……你在這地方啊，總算找到了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「有什麼事嗎？」,選項2　「我現在很忙」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_02.mp3
+msg,0,<size=30><outline width=2 color=black>「是啊，那個……是的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_03.mp3
+msg,0,<size=30><outline width=2 color=black>「但話說回來，不是什麼急事，\n也不是什麼要緊事」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_04.mp3
+msg,0,<size=30><outline width=2 color=black>「看你只是坐在沙發上，兩眼發呆\n什麼事都沒幹啊？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_05.mp3
+msg,0,<size=30><outline width=2 color=black>「我暫且，先問一聲……你在忙什麼呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_06.mp3
+msg,0,<size=30><outline width=2 color=black>「啊，是嘛……在數天花板的斑點啊。\n你知道嗎？ 這一般就叫做沒事幹」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_07.mp3
+msg,0,<size=30><outline width=2 color=black>「啊，這種事怎麼都行啦……\n比起這個，我有東西要給你」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_08.mp3
+msg,0,<size=30><outline width=2 color=black>「今天沒有想索的計畫，時間就空下來了，\於是久違地烤了些點心」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:shy,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_09.mp3
+msg,0,<size=30><outline width=2 color=black>「可以的話，那個……想讓你也吃一點」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_10.mp3
+msg,0,<size=30><outline width=2 color=black>「哼……你幹嘛一臉高興的樣子啊。\n只是點心而已，不是什麼了不起的東西啦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_11.mp3
+msg,0,<size=30><outline width=2 color=black>「嗯，好啊，你吃吧……味道，怎麼樣？\n我自己是覺得我做的還不錯……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_12.mp3
+msg,0,<size=30><outline width=2 color=black>「哼嗯，是嘛……和你口味就好」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ilyna1,0,0,1280,250,0,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:smile,ilyna2,0,0,0,0,,,,
+imgconf,ilyna2,ilyna1,0,-770,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_13.mp3
+msg,0,<size=30><outline width=2 color=black>「…………哼哼」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/100905/adv/sound/fav100905_03_14.mp3
+msg,0,<size=30><outline width=2 color=black>「嗯？ 幹嘛啊，盯著人家的臉看……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:surprise,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_15.mp3
+msg,0,<size=30><outline width=2 color=black>「什，什麼……？ 你在說什麼呢。\n我才沒，覺得很高興呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_16.mp3
+msg,0,<size=30><outline width=2 color=black>「不是你看錯了嗎？　因為我一直都是很冷靜的，\n完全不會高興的……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:shy,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_17.mp3
+msg,0,<size=30><outline width=2 color=black>「所以，那個……我想要說的就是……\n總是，全都是你的誤會！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:anger,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_18.mp3
+msg,0,<size=30><outline width=2 color=black>「知道的話，就好，那我就走了——再見」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name, 
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ilyna1,0,0,1280,250,0,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,ilyna2,0,0,0,0,,,,
+imgconf,ilyna2,ilyna1,0,-770,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_19.mp3
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「真是的……在高興個什麼勁啊，我……\n只是被他稱讚我親手做的點心而已……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_20.mp3
+msg,0,<size=30><outline width=2 color=black>「我有必須要完成的使命。\n為此，對誰都不能鬆懈，本來應該是這樣的……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:shy,ilyna2,0,0,0,0,,,,
+imgconf,ilyna2,ilyna1,0,-770,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_03_21.mp3
+msg,0,<size=30><outline width=2 color=black>「但是……為什麼我會，心跳這麼快啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

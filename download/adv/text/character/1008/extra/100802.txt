@@ -1,0 +1,94 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……邋遢……真是邋遢不堪」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果全部都交給我負責的話，\n就不會變成現在這樣了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「再怎麼著設施被關閉缺少職員，也不能……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_03.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「發生什麼事了？」,選項2　「你在生什麼氣？」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒有什麼好問的……！\n你來看這裏。走廊的角落是不是有灰塵？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_04.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:unique,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然一定程度上，可以通過掃地機器來打掃衛生，\n但是怎麼都會有不行的地方……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_05.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「要做到無懈可擊，徹底不留一點塵土……但對機器來說，\n並不會對清掃工作存在講究，所以就會變成那樣的結果」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_06.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「生氣？不，這已經可以說是失望了吧。\n請看這裏，這個地方積滿了灰塵……！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_07.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:unique,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「拉萊耶的衛生管理到底是怎麼回事……！\n等到從這裏出去後，有必要找這裏的負責人問個清楚」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_08.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「骯髒就是敵人。允許敵人存在是愚蠢的想法……而愚蠢會危及性命！\n關於這一點我一定要讓你弄清楚」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_09.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「最最重要的是，這裏是我的主人吉澤爾生活的地方。\n那種地方居然存在污垢，這是決不能原諒的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「灰塵會對人體產生惡劣影響」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_11.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「比如說過敏性鼻炎和哮喘這類症都是因為灰塵\n而發病的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果吉澤爾小姐因此身體垮掉的話……啊啊，光是想想就……！\n不行了這已經到了我忍耐的極限！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在，要是再不完美的清掃掉走廊的話我是不會甘休的！\n我馬上就去準備清掃的工具……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「骯髒是敵人。如果現在不馬上清除那個塵埃——什麼？\n如我所見，接下來會變得忙起來」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:surprise,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……一起嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哦，原來如此……有這個勁頭兒很好。\n但是在接下來是一個不能有絲毫疏忽的領域」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果說有勇氣踏入那裏的話……讓我從零開始\n徹底地教你打掃的入門吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:unique,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，一旦踩進去就不能回頭。\n即使那樣……你也真的，做好覺悟了嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100800/adv/sound/fav100800_02_19.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

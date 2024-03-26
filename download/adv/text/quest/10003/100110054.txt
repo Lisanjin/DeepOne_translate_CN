@@ -1,0 +1,481 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040100.jpg,0,255
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,200,-100,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy2,-200,-100,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哈，你們這些傢伙很礙事啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,200,-100,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy2,-200,-100,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+flash,255,255,255,4,0.3,1.0
+wait,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+wait,2.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,enemy1,0.5
+spriteoff,enemy2,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgald,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:surprise,kirie,300,-120,0.5,0.5,,,,
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不愧是她……這麼多敵人竟然全都被她打倒了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0
+endwait
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那當然！敢惹我，就是這個下場」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,kirie,0
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0.5,,,,
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「呃，也不是什麼值得驕傲的強大對手吧。\n打敗了本應打敗的對手就洋洋自得的，級別也太低了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「而且這些傢伙本來是我的獵物，你竟然敢搶」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:unique,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「真是的……老大不小的人了，居然還說這麼小孩子氣的話。\n你就不能禮貌地說一句“謝謝”嗎」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「切，我知道了。我說總行了吧，我說——謝謝了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:surprise,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哈……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:smile,ouka,300,-120,0.5,0,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「雖然我還是將信將疑，但多虧了你的力量支援，我感覺很不錯。\n現在我覺得自己不會輸給任何人……要給你點謝禮才行呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「你也是個男人，總之就先給你揉個胸吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:unique,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「喂喂，竟然無視我和姬莉葉嗎……而且你說什麼蠢話呢，\n你這個色老太婆」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……啊。嗯，哈哈」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:anger,ouka,300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「看來你是想挨揍了啊，臭小鬼」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哈，口氣這麼大，\n待會兒要是被打倒可是很丟人的哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:sad,kirie,300,-120,0.5,0.5,,,,
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「別吵了！好不容易才再次見到，\n你們就不能表現得開心一點嗎……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「反正我早在拉萊耶的圖書館調查的時候，\n就已經在想索者名單裏看到旺華了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:surprise,kirie,300,-120,0.5,0,,,,
+anm,tint,kirie,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誒」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,kirie,0
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:anger,ouka,300,-120,0.5,0.5,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「喔，什麼嘛……你早就知道我在這裏了嗎。\n那你為什麼不來和我打個招呼啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哈啊？為什麼我非要特地去和你打招呼啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:surprise,kirie,300,-120,0.5,0.5,,,,
+anm,tint,kirie,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「等、等一下！艾蒂爾加爾德？！\n你說你早知道了……那，那為什麼不告訴我啊？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:unique,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「因為你沒問」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:sad,kirie,300,-120,0.5,0,,,,
+anm,tint,kirie,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不是，這麼重要的事，你要和我說啊？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「雖然旺華也有問題，但艾蒂爾加爾德也太過秘密主義了……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我可不是秘密主義者啊。\n只是不感興趣而已」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,kirie,0
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0.5,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哈，連養育之恩都忘了嗎……\n你就不能再表現得更可愛一點嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「虧我辛辛苦苦為了把你帶進拉萊耶而四處奔波，\n這樣豈不全都白費了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stobgm,0.5
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:surprise,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……啊？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哈，表情變得有趣了啊。\n終歸是沒有察覺到這一點啊。你還是太嫩了，艾蒂爾」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……姑且問一下。為什麼非要把我帶到拉萊耶來？\n根本沒必要這樣做吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我聽說你腿的事情了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你和我一樣是個無藥可救的廢物。\n離了戰場，就連正常生活都做不到」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,edelgald,0
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:anger,kirie,-370,-120,0.5,0.5,,,,
+anm,tint,kirie,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那、那種事……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:anger,ouka,300,-120,0.5,0,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,kirie,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你敢說沒有嗎？我問你，你在這幻夢境裏，感覺如何？\n看上去，好像是這個男人的力量給了你雙腿……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,kirie,0
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,-300,-120,0.5,0.5,,,,
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「這不就是你所期望的嗎？\n想再次馳騁戰場」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「所以嘛，這大概就是父母心吧。\n我當時就是覺得，你在這裏是有機會的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「而實際上確實如此。我的直覺很厲害吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,-300,-120,0.5,0,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「父母心，是吧……真的僅此而已嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:sad,ouka,300,-120,0.5,0,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「我養大的那些孩子都和我一樣，除了破壞什麼都不會」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「離開傭兵團後，我四處遊走期間，\n也遇到了好幾個曾經養大的人」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「還記得嗎？除了你們之外……有些並沒有加入傭兵團，\n而是選擇了其他道路」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,edelgald,0
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:normal,kirie,-370,-120,0.5,0.5,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯……我們是被一起養大的，大家我也都還記得」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「那他們現在究竟——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「一個個的，有的仗著自己有點實力，變成了只會給社會添堵的犯罪者，\n有的則變成了戰場上不分敵我只會殺人的狂人」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「簡直無可救藥到了極點」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:surprise,kirie,-370,-120,0.5,0,,,,
+anm,tint,kirie,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誒？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,kirie,0
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,-300,-120,0.5,0.5,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……那，你是怎麼處理他們的？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那是我自己埋下的種子。本就該由我親自根除……這也是我的責任不是嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,edelgald,0
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:surprise,kirie,-370,-120,0.5,0.5,,,,
+anm,tint,kirie,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「什麼……這、這，難道說……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,300,-120,0.5,0.5,,,,
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……呃，只要因此而高興的人比悲傷的人多，\n那樣處理也不是不行」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:sad,kirie,-370,-120,0.5,0,,,,
+anm,tint,kirie,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「艾蒂爾加爾德怎麼能這麼說……按照旺華的意思，\n也就是說……她把大家給……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不會吧……這就是你離開團隊的理由嗎？\n為了親手處理掉他們……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,edelgald,0
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:normal,ouka,300,-120,0.5,0.5,,,,
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不，處理那些傢伙只是順便而已，順便。\n我是有另外的理由……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不過，從這個意義上來說，離開團隊也是一個好機會吧。\n如果不離開，我還什麼都不知道呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「自己做的事還是要自己負責才行」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「但這麼一來，就有個危險的傢伙必須要我去負責處理了……你懂我意思吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:surprise,kirie,-370,-120,0.5,0,,,,
+anm,tint,kirie,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誒？旺華……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,kirie,0
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgald,-300,-120,0.5,0.5,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,kirie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……哈」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:anger,ouka,300,-120,0.5,0,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哈哈」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+wait,0.4
+endwait
+spine,download/adv/spine/Slash2_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Thunder1_yellow,em2,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+wait,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Fire1,em3,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_038.mp3
+endwait,,,,,,,,,,,
+wait,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em4,default,animation,0,0,0,1,1.0,0
+endwait,,,,,,,,,,,
+wait,2.0
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm013.mp3,0
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:anger,ouka,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgald,-300,-120,0.5,0.5,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「什麼啊，既然如此早說不就好了。既然是這麼回事，\n這樣我不就有理由光明正大得揍你了嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:anger,ouka,300,-120,0.5,0,,,,
+anm,tint,ouka,255_255_255,0.0001,0
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你應該不是那種需要給戰鬥找理由的人吧，\n說這話是給誰看啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「為、為什麼……不要這樣，旺華！還有艾蒂爾加爾德也是！\n這種事……為什麼你們兩個非要這樣……？！」」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,kirie,0
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:anger,ouka,300,-120,0.5,0.5,,,,
+anm,tint,edelgald,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「反正你也會走上讓他人不幸的道路。在此之前阻止你，\n呃，算是我做的了結吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,edelgald,255_255_255,0.0001,0
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,-300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「開什麼玩笑……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不要擅自決定別人的未來啊，旺華！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:anger,ouka,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgald,-300,-120,0.5,0.5,,,,
+anm,tint,ouka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你才是這話說給誰聽呢！\n要為了自己的責任做個了結？你根本就不是那麼正經的人吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

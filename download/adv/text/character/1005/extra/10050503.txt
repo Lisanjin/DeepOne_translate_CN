@@ -1,0 +1,110 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait
+spriteatlas,download/character/100505/adv/atlas/stand_b,body:normal,edel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「啊，哎」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+endwait
+spine,download/adv/spine/Slash2_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「―――――――……、……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:sad,edel,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「這傢伙就是最後一個了吧……哈」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「無聊……怎麼說呢，明明想和強敵進行\n更熱血沸騰的對戰的，有點兒太沒意思了吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不，並不是說想陷入危機什麼之類的話\n如果進行著調查的話，倒不如說是值得慶倖的？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只是……單純的，把這些小卒打倒也不帥吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「反正是這樣的話，難道不是想給你看艾蒂爾加爾德\n帥氣的地方嘛—，、想看吧—？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「出現的強敵，一個接一個的被打倒，即使成為最後一個人也不放棄的\n艾蒂爾加爾德——這種感覺？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「果然還是喜歡危機局面不是嗎？」,選項2　「珍惜夥伴」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我知道了啦」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「危機後的大反轉，不是很爽嘛。\n有一種，把忍耐很久不喝的碳酸飲料一口氣喝完的感覺啊」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_09.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「沒關係的。即使受了重傷倒下了在我打倒敵人之後，\n也能立馬恢復到可以和大家正常對話的程度」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:smile,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，和情報上講的一樣的傢伙……真是的」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_11.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼嘛，那個無法釋然的臉。真掃興—。\n即使那地方暫時不明白，也要先點頭再說」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，這種玩笑暫且不談……但是，\n想讓同伴們看到帥氣的樣子，也是理所當然的吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:surprise,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——嗯」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……別那麼勉強，呐，你覺得，看起來我像是\n勉強打扮的樣子嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果是這樣的話……我還差得遠呢。\n還是說，你的眼光異常銳利呢」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別，別那麼直擊要害。\n說什麼打扮得太過了，之類的話……沒有比這更讓人害羞的了」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100505/adv/atlas/stand_a,body:smile,edel,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誇獎在意外表的女人也是男人的本領噢，色男？\n這是來自艾蒂爾加爾德的感激之言，好好琢磨一下吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100505/adv/sound/fav100505_03_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

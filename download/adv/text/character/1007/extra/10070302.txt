@@ -1,0 +1,117 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0_0,1,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個，我是吉澤爾。可以打擾一下嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_01.mp3
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+playse,/download/sound/se/se_029.mp3
+bg,download/bg/bg_10010300.jpg,1.5,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,1,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「抱歉。突然，不請自來了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「有事情嗎……我想稍微提個建議。\n那個……現在能抽出時間嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_03.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「是想做了嗎？」,選項2　「難道霍莉也一起……？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:shy,zizeru,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……誒誒誒！？也，也並不是那樣……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_04.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「也，也不是討厭那種行為，\n現在還是白天……時間還早……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_05.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark4,em2,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「我也是一個人類，偶爾確實，那個……\n也會有奇怪的心情……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是那也是生物本能似的東西……\n啊啊，真是的……在說些什麼呢啊，我……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_07.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:anger,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「或者說……我不會做出自己主動邀請這種不禮貌的行為」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:shy,zizeru,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em3,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？一起——……說，說說說什麼呢！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_09.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「那樣，三個人——什麼的……不行，絕對不可以！\n什麼啊那個，三個人怎麼做……會，會怎麼樣啊！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「確，確實……要說完全沒興趣是騙人的……但是！\n興趣什麼的，真的只有一點點而已！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，誒？為什麼笑了……難道是開玩笑嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，真是的，請不要亂開玩笑啊。\n心臟不好啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我只是，因為接下來要進行魔術的鍛煉\n所以只是想邀請你要不要一起來而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「因為從以前開始，你好像就對魔術挺感興趣的樣子……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也有適應性的問題，也許可能不能自己使用，\n但是我覺得，有什麼可以作為知識傳達的東西」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以才打了招呼。怎麼樣？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——好的。即使這樣我對魔術的能力還是有自信的。\n所以我會儘量努力使之有用的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻，請別在意，是為了感謝你一直照顧我而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼我們走吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100703/adv/sound/fav100703_09_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

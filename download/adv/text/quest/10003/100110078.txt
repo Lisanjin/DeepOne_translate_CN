@@ -1,0 +1,264 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>處決叛徒——。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>作為卡蒂婭大人近侍的我，擔任了聖奠教暗部的職務，\n某一天接到了這樣的命令。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>據說那個叛徒用在逃走時偷走的魔導書，\n不斷襲擊分佈在世界各地的聖奠教支部。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>而且，這個女人還是卡蒂婭大人原來的近侍。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>遭到了離自己最近、最親近的人的背叛，\n卡蒂婭大人該有多傷心啊……</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>只要想到這種事，我就感到無比的憤怒。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>伊蓮娜・伊麗莎洛瓦——我一定要親手除掉這個女人。\n我的這個想法，至今也沒改變。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>然而……為什麼我現在還要讓這個女人繼續活著啊——。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+name,
+msg,0,
+endwait
+sprite,download/bg/bg_10030400.jpg,bg,0,0,1.2,2
+anm,tint,bg,255_150_150,0.0001,0
+endwait
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,-380,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,320,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-170,1.35,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,
+spriteoff,enemy1,0
+spriteoff,enemy2,0
+spriteoff,enemy3,0
+endwait
+sprite,download/bg/bg_10030400.jpg,bg2,1536,0,1.2,0,
+anm,tint,bg2,255_150_150,0.0001,0
+endwait,,,,,,,,,,,
+anm,move,bg,-1536_0,1,0
+anm,move,bg2,0_0,1,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,-380,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,320,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-170,1.35,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,
+spriteoff,enemy1,0
+spriteoff,enemy2,0
+spriteoff,enemy3,0
+endwait
+anm,move,bg,0_0,1,0
+anm,move,bg2,1536_0,1,0
+endwait
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:normal,jya,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:normal,ily,-300,-220,0.5,0.5,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「旺盛的火焰裏潛伏著大量虛像。而且由於他不在旁邊，\n負荷越來越強……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如同故事中描繪般的絕境」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:anger,jya,300,-120,0.5,0,,,,
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你怎麼一副滿不在乎的樣子……而且本來就是因為你的磨蹭和愚蠢，\n事態才發展成了這樣啊！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:anger,ily,-300,-220,0.5,0,,,,
+anm,tint,jya,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你幹嘛推卸責任。非要追根溯源的話，\n是你不經思考就沖向敵人，才引發了後面的災難吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「剛才我就說過了吧，奇襲重要的是時機。\n我的判斷沒有錯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……我幾分鐘前說過的話就已經忘記了嗎？\n你的記憶力還不如老鼠？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈啊？智商不如雞的你，\n沒資格這麼教訓我」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:anger,jya,300,-120,0.5,0,,,,
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼，你說誰是走三步就會忘事的蠢女人啊……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我可沒說到那個地步——！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,move,ily,-1300_-220,0.5,1
+anm,move,jya,1300_-120,0.5,1
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_039.mp3
+shake,0.2,4,10,10
+endwait
+anm,move,bg,-1536_0,1,0
+anm,move,bg2,0_0,1,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,-380,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,320,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-170,1.35,0.5,,,,
+endwait
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,
+spriteoff,enemy1,0
+spriteoff,enemy2,0
+spriteoff,enemy3,0
+spineoff,em1,0
+endwait
+anm,move,bg,0_0,1,0
+anm,move,bg2,1536_0,1,0
+endwait,,,,,,,,,,,
+anm,move,ily,-300_-220,0.5,1
+anm,move,jya,300_-120,0.5,1
+endwait
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:sad,jya,300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——呃！看來這事得等會兒再聊了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:sad,ily,-300,-220,0.5,0,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「算了……也確實，要是因為與你的口角導致被打敗了，\n我會死不瞑目的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:unique,ily,-300,-220,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「我的復仇還沒結束。在搞垮聖奠教之前，\n我必須要活下去」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:normal,ily,-300,-220,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「為此……即便是把背後交給令人討厭的狂犬也無所謂了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:normal,jya,300,-120,0.5,0,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你這意思是說……要與我協力戰鬥嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:sad,ily,-300,-220,0.5,0,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然情非得已，但也只能如此，\n不奢望別的了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:anger,jya,300,-120,0.5,0,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我才是……不得不與你協力戰鬥，\n實在是悲傷啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:anger,ily,-300,-220,0.5,0,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你把我要說的話搶先說了！\n你可別拖我的後腿！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:anger,jya,300,-120,0.5,0,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當然的。只要是為了回到卡蒂婭大人身邊，\n無論怎樣的試煉，我都有決心跨過去……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jya,0
+spriteoff,ily,0
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg2,0,0,0,0
+imgconf,bg2,bg1,0,0,,,0,1,1,0.5
+mask,jya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_b,body:anger,jya,0,0,0,0,,,,
+imgconf,jya,jya1,0,-900,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——上了！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jya,0
+spriteoff,jya1,0
+spriteoff,bg2,0
+spriteoff,bg1,0
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,-380,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,320,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-170,1.35,0.5,,,,
+endwait
+spine,download/adv/spine/Slash4_Blue,em1,default,animation,0,0,0,1,0.8,0
+spine,download/adv/spine/Slash4_Red,em2,default,animation,0,0,0,1,0.8,0
+spine,download/adv/spine/Slash5_Blue,em3,default,animation,0,0,0,1,0.8,0
+spine,download/adv/spine/Slash5_Red,em4,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+shake,0.2,2,10,10
+endwait
+spineoff,em1,0.3
+spineoff,em2,0.3
+spineoff,em3,0.3
+spineoff,em4,0.3
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――……」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_025.mp3
+clickwait,,,,,,,,,,,
+spriteoff,enemy1,0.5
+spriteoff,enemy2,0.5
+spriteoff,enemy3,0.5
+endwait
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:anger,ily,0,-220,0.5,0.5,,,
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我們也上了哦，佛爾卡洛」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:unique,ily,0,-220,0.5,0,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「——用你的爪牙撕碎我們的一切仇敵吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,ily,0
+endwait
+mask,bg1,0,0,1280,300,0.5,,,,
+sprite,download/adv/image/black.jpg,bg2,0,0,0,0
+imgconf,bg2,bg1,0,0,,,0,1,1,0.5
+mask,foka1,0,0,1280,300,0.5,,,,
+sprite,download/character/100902/adv/image/dragon.png,foka,0,0,0,0
+imgconf,foka,foka1,0,-250,,,0,0.4,0.4,0.5
+endwait
+name,<size=27><outline width=2 color=black>芙卡洛爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「————————！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_051.mp3
+clickwait
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

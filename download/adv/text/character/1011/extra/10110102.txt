@@ -1,0 +1,185 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0.5,,,
+endwait
+spriteatlas,download/character/101102/adv/atlas/stand_b,body:sad,kirie,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈……哈……唔，咕……還剩一只！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_01.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,kirie,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,,
+sprite,download/monster/20010102/adv/image/20010102.png,monster,-30,-200,1.25,0.5,,,,
+endwait
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_b,body:anger,kirie,0,-120,0.5,0.5,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「就這樣，壓制住……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_02.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,,
+sprite,download/monster/20010102/adv/image/20010102.png,monster,-30,-200,1.25,0.5,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――――――！」</outline></size>,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_b,body:sad,kirie,0,-120,0.5,0.5,,,,,
+endwait
+shake,0.2,4,15,15
+flash,255,255,255,2,0.2,1.5
+spine,download/adv/spine/Ice1,em1,default,animation,0,0,0,0.65,1,0
+playse,/download/sound/se/se_040.mp3
+endwait,,,,,,,,,,,
+spineoff,em1,0.
+endwait
+msg,1,<size=30><outline width=2 color=black>「咕，這敵人……真難纏！！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_b,body:anger,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……連這種敵人都無法打倒的話，\n那我之前的努力算什麼……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哪怕只有我一個人……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_05.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+sprite,download/monster/20010104/adv/image/20010104.png,monster,-1000,-200,1.25,0,,,,
+sprite,download/monster/20010103/adv/image/20010103.png,monster2,1000,-200,1.25,0,,,,
+endwait,
+anm,move,monster,-300_-200,0.5,1
+endwait
+anm,move,monster2,300_-200,0.5,1
+endwait,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_b,body:sad,kirie,0,-120,0.5,0.5,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「什，竟然還有別的敵人……糟——！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_06.mp3
+clickwait,,,,,,,,,,,,
+spine,download/adv/spine/Thunder1_yellow,em2,default,animation,0,0,0,1,1,0,,,,,,
+playse,/download/sound/se/se_024.mp3
+shake,0.3,5,20,20,,,,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,,
+msg,0,
+name,
+endwait,,,,,,,,,,,,
+spineoff,em2,0
+endwait
+stopbgm,0.5
+bg,download/adv/image/black.jpg,1,,,,,,,,,,
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+endwait
+bg,download/bg/bg_10010300.jpg,1,,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,,,
+endwait
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,1,,,,,
+endwait
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這裏是……拉萊耶？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_07.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「傷得不重」,選項2　「你總算醒了」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「對了……我被敵人幹掉了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_08.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「連那種敵人都無法打倒……我怎麼是無能……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_09.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是大家救了我吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_10.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣啊……在戰鬥時昏迷」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_11.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……請不要一副擔心的表情。\n身體不礙事的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這樣啊，我昏迷之後，是大家救了我」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_13.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「原來……我又被救了啊。\n……我對自己的弱小無地自容」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我到底為什麼……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……剛才的戰鬥方式不像我的作風呢。\n如果能夠保持冷靜，結果或許完全不一樣」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不知天高地厚的憧憬終究會給周圍的人帶來不幸。\n……是我沒有自知之明」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「步步為營穩紮穩打……\n或許，這種戰鬥方式更適合我吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，那個人的戰鬥方式偶然在腦海裏浮現……\n於是一發不可收拾」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「想要變成那個人那樣……這種念頭佔據了上峰」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_20.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個人有天賦，而我沒有。\n我做不到憑藉自身的直覺和本能戰鬥……這些我都清楚的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_21.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但我就是放不下憧憬。一直，一直，期盼著。\n追上那個人，和她並肩同行……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_22.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「時至今日也無法忘懷，結果顯而易見……我真是笨呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_23.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……可以讓我一個人靜靜嗎？\n抱歉，我保證下不為例」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_24.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個……謝謝你照顧我」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101101/adv/sound/fav101101_04_25.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

@@ -1,0 +1,118 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,uru1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,0,0,0,0,,,,
+imgconf,uru,uru1,0,-850,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……真是的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真讓人頭疼啊……他的力量確實值得利用。\n但是，這份甜美……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……雖然歪曲一點，反而更好控制\n但是我總覺得那種人……是其他物種」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_03.mp3
+clickwait,,,,,,,,,,,
+shake,0.1,5,10,10
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,-20,-200,0.5,0.2,,,,
+anm,jump,uru,-20_-200_20_1,0.5,0
+endwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是誰！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:surprise,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「原……原來是你啊。不要突然拍我的肩膀啊。\n嚇得我，差點就攻擊你了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你叫過我了？ 真的麼？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:sad,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那個……抱歉，剛才在想事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以說，特意拉住我，是有什麼事麼？</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_08.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「因為你精神恍惚」,選項2　「擔心你的身體……」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我也是人啊。有時候也會走神的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「難道是，是擔心我在幻夢境承受了太多負荷？\n那可真是杞人憂天……真的不是這麼回事，不用擔心了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，我看起來像很累的樣子麼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「畢竟最近的想索我都參加了，\n會讓人擔心呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我沒事的。而且本來，就是我主動參加想索的，\n我真的只是在想事情，不用再瞎猜了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_13.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「確實，負荷在積累，也有一點累……但是，\n對於我來說，潛入幻夢境也不光是壞事哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所謂負荷，其作用原理就是人體無法耐受，\n充斥於幻夢境中的納克特原書的力量從而崩潰」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大概實際上，納克特原書並沒有要排除踏足幻夢境中的人的意思」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大象會把地上的蟲子當做敵人而發力麼？\n只是偶然間踩到了，就把蟲子踩死而已……大概就是，這麼回事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所謂的幻夢境的負荷，其實就是人體無法耐受\n納克特原書流出的力量而已……納克特原書的力量就是這麼強大」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我啊，轉用了納克特原書力量的一部分，成功地發動了\n某個術式」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，要維持這個術式，繼續深潛進入幻夢境中是不可欠缺的。\n所以說，比起其他人來我必須更多的把自己置身於幻夢境中……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……術式的內容？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:smile,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘿嘿，我可沒打算連這個都告訴你。\n畢竟對於魔術士來說，自己的術式可不是輕易就能公開的東西」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，這可是，我用七大原書的力量實現的哦。\n當然，你可以稱之為……任何人都會羡慕的美麗奇跡」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_04_23.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

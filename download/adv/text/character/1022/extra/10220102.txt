@@ -1,0 +1,129 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「噢，是你啊。剛好在這種地方遇到你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒什麼，就是想問你一件事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那邊不是有個房間嗎？　可是，名字是用外來語寫的，\n不知道是用來幹什麼的房間呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「裏面有隔板，還有個流著水的大容器之類的東西，\n那裏究竟是用來做什麼的？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……“Toilet”？　那好像是廁所的意思吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼啊，原來是這樣啊。跟妾身知道的相差太遠，\n都沒有反應過來呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「如果是這樣的話，直接寫“廁所”不就好了嗎……真是的，什麼東西\n都受西洋的影響啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_07.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+select,選項1　「有標注的日語也許也不錯」,選項2　「這也是沒辦法的事啊」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是嗎？　別的地方也是一樣啦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不是寫”kitchen”而是寫廚房、\n不是”training romm”而是寫道場才對啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「話說回來，這個”拉萊耶”也改成”妖狐城”如何？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:smile,vi,-20,-220,0.5,0,,,,
+spine,download/adv/spine/Mark1,em2,default,animation,0,85,300,0.7,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「咯咯。啊，那就是開玩笑的啦……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_11.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+spine,download/adv/spine/Mark3,em3,default,animation,0,80,280,0.65,0.8,0.5
+endwait
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼……你說日本人也幾乎沒人稱廁所為廁所（而是toilet）？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_12.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「從最開始，創建了“拉萊耶”的就是西洋的組織。\n嗯……是時代被西洋文明吞沒了嗎……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是世事艱難啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「噢……這樣啊。\n關於這個廁所還有一件事想問你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……為什麼這裏還有必要特地區分男女？\n只是廁所的話，明明就沒有這種必要啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯？　擺出那麼複雜的表情是幹什麼啦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「男性專用的便器？\n什麼啊……女人就沒有那種專用的東西！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「可惡……果然，就算是這種地方，\n男人也會被特別對待啊……真是可歎啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……我不喜歡。\n何況，這裏”拉萊耶”裏除了你不就沒有別的男人了麼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那樣的話，你也和妾身們一起用這邊的廁所不就好了嘛」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我知道的哦。現在的世界啊，流行男女平等噢，\n不是嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:smile,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不是很好嗎。也就是說，這樣的話無論誰都被平等對待。\n非常平等啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_23.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「既然這麼決定了……來，不進去麼。你不是想上廁所嗎？\n哎呀，不要在意那些細節啦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，喂……別逃跑！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102201/adv/sound/fav102201_04_25.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

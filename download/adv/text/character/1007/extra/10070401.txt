@@ -1,0 +1,115 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「希爾薇，為什麼呢？\n突然想要汗，什麼的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「說是\n為了進行偉大的研究而必須的東西什麼的，\n但總覺得哪里怪怪的……感到不安」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「折服於她的熱情，最終還是給了她汗，真的沒問題嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_03.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「不安」,選項2　「沒事的」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊……最終，也沒告訴我，\n是什麼樣的實驗」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_04.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark2,em1,default,animation,0,100,210,0.65,0.6,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「只是一直笑眯眯的……說實話，有點恐怖」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_05.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不……絕不是\n不信任希爾薇什麼的，即使如此，嗯－……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「即使從現在開始，還是還給我比較好吧？\n這樣的話處事又不太圓滑……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這種情況下，還是不要太過擾亂團隊合作……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對，對吧。希爾薇確實有點奇怪，\n在研究室淨做些奇怪的實驗……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，是為了幫助別人而進行的研究吧？\n是的……希爾薇是我們的夥伴……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「也為了攻略幻夢境，不要做出\n懷疑夥伴的行為呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_11.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，判斷交出去也可以的人是我，\n應該也是因為信任希爾薇，才委託的呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_12.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark13,em2,default,animation,0,100,210,0.65,0.6,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「嗯，嘛……說實話，也不能說是全面的信任。\n……儘管如此還是想相信」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_13.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,0,,,,,,,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，希爾薇對於瞭解納克特原書的真相\n也似乎有著很強的執著」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那樣的話應該就不會做出妨礙幻夢境攻略的事吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「實際上，希爾薇在研究上所傾注的熱情和熱量真的很厲害，\n說實話，真的很羡慕」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「因為我從來沒有，到那種程度的迷戀一件事情。\n一直，只是順從著家族的意向生存著……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我一直希望能改變這樣的自己，\n但我只是希望，沒有付諸過行動……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我沒有，那種勇氣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，現在的話……和你還有大家相遇，感覺稍微\n變強了一點。所以……可以，改變了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯，有你的話在，很安心」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:shy,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，那個……如果今後你也能在我身邊的話，我會更加，更加，\n安心的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100704/adv/sound/fav100704_11_22.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

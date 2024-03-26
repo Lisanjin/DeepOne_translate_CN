@@ -1,0 +1,135 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10960101.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈……哈……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……真是的，這個裝備，性能雖然都很好，消耗也很激烈啊。\n但是……不能這種程度就精疲力竭了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我，本來和別人一比……就還差得遠呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_03.mp3
+clickwait,,,,,,,,,,,
+select,選項1　打招呼,選項2　從後面接近
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:surprise,asaka,35,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,170,200,0.6,0.7,0.5
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_04.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「你，什麼時候……不會，一直看著我訓練吧……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_05.mp3
+clickwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「要那樣的話你早點出聲啊……看我的訓練什麼的，\n也不是很有趣吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:surprise,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「沒那回事兒……變了呢，你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_07.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:surprise,asaka,35,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,170,200,0.6,0.7,0.5
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_08.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:shy,asaka,35,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎，啊！等下，幹嘛呢你！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「冷不防地被摸了背的話，不管是誰都會嚇一跳吧……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，萬一條件反射性的攻擊了怎麼辦。\n如果真這樣了，現在已經焦了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:unique,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「又來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……連繼續訓練的心情都沒了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，累了身體也變重了，\n正適合收尾呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:surprise,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……難道你是，看准了那個嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_15.mp3
+clickwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:smile,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「真是奇怪的擔心呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:surprise,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我，過度訓練了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「可能，是吧……我想對於其他的大家來說也會這麼做的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_18.mp3
+clickwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，我和其他人不同，沒有應該貫徹到底的自豪也沒有什麼目的……所以，\n不比別人加倍努力的話是會被其他人拋棄的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_19.mp3
+clickwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「才能啦，能力啦……不是在這些部分上的優劣，\n我想一定是，在某個時刻有內心和沒有內心是，完全不同的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_20.mp3
+clickwait
+msg,1,<size=30><outline width=2 color=black>「越是和大家一起探索幻夢境的想索，越能深切的感覺到那個」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_21.mp3
+clickwait
+msg,1,<size=30><outline width=2 color=black>「我不想就這樣成為你的累贅，因為是朋友，\n所以希望你能依賴我，在困難的時候可以幫助你。所以，哪怕是為了那個——誒？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_22.mp3
+clickwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:surprise,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你說我也有心，那是……怎麼回事……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「等、等一下，為什麼笑啊！\n現在，根本就沒有什麼好笑的吧……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_24.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說起來，什麼意思嘛，我的心什麼的……啊，喂！\n說到一半，別在關鍵時刻停啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_25.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:anger,asaka,35,-120,0.5,0,,,,
+spine,download/adv/spine/Mark6,em4,default,animation,0,180,180,0.6,0.8,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「等等，你在聽嘛！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_03_26.mp3
+clickwait,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1,,,,,,,,,,
+endwait,,,,,,,,,,,

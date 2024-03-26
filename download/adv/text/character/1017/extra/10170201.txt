@@ -1,0 +1,121 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,qquinecy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_b,body:anger,qquinecy2,0,0,0,0,,,,
+imgconf,qquinecy2,qquinecy1,0,-370,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>昆茜</outline>,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_01.mp3
+msg,1,<outline width=2 color=black>「——……發射」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+wait,0.3
+endwait
+playse,/download/sound/se/se_053.mp3
+wait,0.5,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait
+bg,download/bg/bg_10020300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0.2,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_b,body:anger,qquinecy,0,-120,0.5,0.5,,,,
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_02.mp3
+msg,1,<outline width=2 color=black>「目標死亡……\n周圍一千五百米內肉眼可視的敵人已全部消滅」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:anger,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_03.mp3
+msg,1,<outline width=2 color=black>「陰暗處或許還潛伏著敵人，以及有可能會出現新的敵人，所以不可疏忽大意，\n目前先解除臨戰態勢，轉為警戒狀態」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「…………」,選項2　「好厲害啊」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_04.mp3
+msg,1,<outline width=2 color=black>「……？你怎麼渾身僵硬？\n後背好像也僵硬地板得筆直……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_05.mp3
+msg,1,<outline width=2 color=black>「你說很有緊迫感……難道說是因為我而緊張了？\n抱歉。因為戰鬥時我會轉換狀態……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_06.mp3
+msg,1,<outline width=2 color=black>「師父教過我，\n在戰鬥時不能和平常一樣，要把自己當成另一個人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_07.mp3
+msg,1,<outline width=2 color=black>「不然會被血淋淋的戰鬥所擊垮，失去重要的事物……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_08.mp3
+msg,1,<outline width=2 color=black>「哎……啊，謝謝你……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_09.mp3
+msg,1,<outline width=2 color=black>「呃……你這麼鄭重其事地對我這麼說，\n我覺得有些害羞啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_10.mp3
+msg,1,<outline width=2 color=black>「可是沒什麼值得誇獎的。\n我和師父相比還差得遠……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_11.mp3
+msg,1,<outline width=2 color=black>「如果師父在這裡的話，\n她肯定能比我更加迅速、更加精準地擊斃敵人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_12.mp3
+msg,1,<outline width=2 color=black>「我當然也打算有一天要趕上師父的。\n不然，我就無法守護自己重要的事物了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_13.mp3
+msg,1,<outline width=2 color=black>「……我非常害怕失去重要的事物。\n因為失去重要的事物，會給我的內心留下欠缺」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_14.mp3
+msg,1,<outline width=2 color=black>「我也是……小時候被魔術組織的衝突捲入失去了家人……\n那個時候，我的內心就像是空了一個大洞一樣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:anger,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_15.mp3
+msg,1,<outline width=2 color=black>「所以我成為了昆茜。\n因為，我不想再有人經歷跟我一樣的遭遇了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_16.mp3
+msg,1,<outline width=2 color=black>「我曾經失去過重要的事物……\n可是，我想重視因此而產生的重要的感情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_17.mp3
+msg,1,<outline width=2 color=black>「我想要變得更強……讓自己能堅定地貫徹自己的信念。\n為此，我得在戰鬥中磨練自己，不讓自己被戰鬥所擊垮」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_18.mp3
+msg,1,<outline width=2 color=black>「……可是，我時不時會想。\n為了守護而傷害他人究竟……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_19.mp3
+msg,1,<outline width=2 color=black>「——……不，沒什麼。\n這些話不該在這個不知道敵人會不會出現的地方說」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_05_20.mp3
+msg,1,<outline width=2 color=black>「好了，我們走吧。跟我來……\n只要你在我身邊，我絕對會保護好你的，請你放心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,103 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_01.mp3
+name,<outline width=2 color=black>艾爾瑪・莉絲菲爾特</outline>,
+msg,1,<outline width=2 color=black>「真是不衛生的病房呢……這種地方，會讓我想起我曾待過的\n那令人生厭的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「你住過院嗎？」,選項2　「是撫養你長大的機構麼？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_02.mp3
+msg,1,<outline width=2 color=black>「很遺憾沒有猜中喲。我以前從來沒有住院過。\n說起來，我也沒去過正經的醫院」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_03.mp3
+msg,1,<outline width=2 color=black>「我成長的地方，並不是能被允許\n做這些事情的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:surprise,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_04.mp3
+msg,1,<outline width=2 color=black>「嚇了一跳呢……為什麼你會知道那些事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_05.mp3
+msg,1,<outline width=2 color=black>「啊啊，這樣啊。拉萊耶是洛夫克拉夫特財團建造的設施呢。\n你是看了被保管的資料，知道了我成長的地方嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_06.mp3
+msg,1,<outline width=2 color=black>「肯定寫的都是些不三不四的東西吧？\n……但是，實際上，那裏一定是比你想像中更殘酷的地方哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_07.mp3
+msg,1,<outline width=2 color=black>「我在那個地方學到了很多東西。\n但是學習的方法都是痛苦和艱難的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_08.mp3
+msg,1,<outline width=2 color=black>「……想聽我再說說，麼。即使你表現出這麼有興趣，\n我也完全不會感到開心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_09.mp3
+msg,1,<outline width=2 color=black>「嘛，在這樣的地方光是沉默地走著，心情也會變得糟糕\n那我就稍微和你說一點吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_10.mp3
+msg,1,<outline width=2 color=black>「我從小時候開始，就和姐姐們在同一個組織裏長大。在那裏\n我學會了殺人方法，以及為此需要的各種各樣的東西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_11.mp3
+msg,1,<outline width=2 color=black>「在假想實戰的訓練中有好幾個處於同樣境遇的孩子都死了，\n在那之後，吃了很多藥，也打了點滴……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_12.mp3
+msg,1,<outline width=2 color=black>「盡是些痛苦的事，我最討厭那個地方了。這是理所當然的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_13.mp3
+msg,1,<outline width=2 color=black>「但是，在我被委派工作之後不久的某一天，\n我結束工作後回去，發現設施裏堆滿了屍體」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_14.mp3
+msg,1,<outline width=2 color=black>「不管是給我打了令人討厭的藥物的枯瘦研究者，還是因為表現不夠好作為懲罰\n而對我揮鞭的胡茬大叔也，大家都睜著空洞的眼睛倒下了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_15.mp3
+msg,1,<outline width=2 color=black>「把我最討厭的東西，全部都破壞掉了的那個情景……\n啊哈，即便是現在想起來，也高興得都要笑出來了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_16.mp3
+msg,1,<outline width=2 color=black>「然後，做了這些的是，莉迪亞姐姐和米露瓦姐姐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_17.mp3
+msg,1,<outline width=2 color=black>「所以我啊，最喜歡姐姐她們了。\n將我從那個最討厭的地方解放出來」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_18.mp3
+msg,1,<outline width=2 color=black>「我之所以成為想索者，也是因為聽姐姐她們說\n要來拉萊耶這裏，我對納克特原書和幻夢境之類的東西沒有興趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_19.mp3
+msg,1,<outline width=2 color=black>「但是，如果姐姐們想要那個的話我無論如何\n都會幫忙的。無論是要殺誰，我都會赴湯蹈火，在所不辭」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103203/adv/sound/fav103203_02_20.mp3
+msg,1,<outline width=2 color=black>「哪怕一點點也好，這是我能對姐姐們做出的回禮」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

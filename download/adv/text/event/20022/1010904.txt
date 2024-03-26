@@ -1,0 +1,877 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1000,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「……貝雷斯弗特。正因為你能獨自做到很多事，所以你也背負了過多的的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「身上的負擔過重的話，與他人一起分擔就很有必要了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「謝謝你擔心我。但是我已經不要緊了。\n確實很不輕鬆，也有很多事讓我覺得艱辛和痛苦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「但是這一切，都是源自我自己的決定」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「雖然我不認為依賴他人是什麼不好的事情，但會覺得那是嬌慣自己而拒絕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「我不認為這些分量的負擔就讓我到了極限。\n。要把這種想法稱為自尊，是不是太耍帥了呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「但是，我如果沒法這麼“耍帥”的話，也就喪失了自己的自傲。\n所以……讓我堅持到真的覺得已經撐不住了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+name,
+msg,0,
+stopbgm,0.3,,,,,,,,,,
+endwait
+bg,download/bg/bg_10050100.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:sad,ruiez,300,-100,0.5,0.5,,,,
+anm,tint,ruiez,150_150_150,0.0001,0
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「貝雷斯弗特……當時，你是這麼回答的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「現在，在苦難面前，你是否覺得，已經撐不住了呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:sad,ruiez,300,-100,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy1,0,-100,0.5,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:anger,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「嗚……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+anm,move,ruiez,300_-100,0.3,0
+endwait
+wait,0.5
+endwait
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:normal,ridia,-300,-120,0.5,0.5,,,,
+anm,tint,ruiez,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「這種程度就示弱的話，就由我來給你個痛快吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:sad,ruiez,300,-100,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「你要是激勵就算了，怎麼開始變成威脅了呢……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:sad,ruiez,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……啊，真是的……從剛剛開始就一直頭痛……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ridia,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,-300,-120,0.5,0.5,,,,
+anm,tint,ruiez,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「露伊茲……害怕的話，大家會幫你的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是……露伊茲肯定沒問題」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「因為露伊茲很堅強……芳乃和莉迪亞也相信你能堅強」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:sad,ruiez,300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「……你帶著這樣的笑容說這些，我真的沒法反駁了呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「加油」,選項2　「感覺辛苦的話可以依賴我們」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:sad,ruiez,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「這種鼓勵人加油的話，某些場合也會把人逼近絕路」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:normal,ruiez,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不過，現在……你剛剛的話推了我一把。\n總覺得，現在能夠向前邁進一步了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:normal,ruiez,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「什麼嘛，你這話。軟弱的女性或許會被寵溺的話打動。\n你如果這麼想就大錯特錯了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:normal,ruiez,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「總感覺……芳乃的話、莉迪亞的話，深深觸動了我的心……\n我的心底正漸漸熱起來」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:normal,ruiez,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「這份熱度，用語言表達的話就是……我可不止如此！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:anger,ruiez,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:surprise,ridia,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「露伊茲的身體被光芒包圍……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「他的力量更加強力、更加深入地傳達了過去……這是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:normal,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「休息到此為了……\n久違地忘記了很多東西，感覺煥然一新了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10050100.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm002.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:anger,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「來吧，該幹活了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy1,0,-100,0.5,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:anger,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「喝啊啊啊啊——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy1,0,-100,0.5,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+spine,download/adv/spine/Slash1_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_049.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:normal,ridia,300,-120,0.5,0.5,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:surprise,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「這動作……跟剛剛判若兩人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:normal,ridia,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「看來她總算找回自己了……真是的，這遲鈍的傢伙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「確實該這麼說」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy1,0,-100,0.5,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:anger,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+anm,move,ruiez,-300_-100,0.3,0
+endwait
+wait,1.0
+spine,download/adv/spine/blow_Red,em1,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+anm,move,ruiez,0_-100,0.3,0
+endwait,,,,,,,,,,,
+wait,1.0
+endwait
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「這傢伙，意外的沒什麼破綻……想要打出決定性一擊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy1,0,-100,0.5,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_b,body:surprise,ruiez,0,-100,0.5,0.5,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「……嗯！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+flash,255,255,255,2,0.2,1.0
+spine,download/adv/spine/Slash4_Red,em1,default,animation,0,300,400,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+shake,0.2,3,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「噫……嗚……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:anger,ridia,300,-120,0.5,0.5,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:surprise,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「不好，她的武器被打飛了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:anger,ridia,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「不，不對。她是故意引誘敵人用大開大合的攻擊，才故意放開武器……\n那是……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_a,body:anger,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-600,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「——嘶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm050.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_c,body:anger,ruiez,0,-100,0.5,0.5,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「呀啊啊啊啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,10,15
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy1,0,-100,0.5,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1.5,1,0
+playse,/download/sound/se/se_053.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em2,default,animation,0,-200,-170,0.7,1.2,0
+playse,/download/sound/se/se_053.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em3,default,animation,0,320,270,0.4,0.9,0
+playse,/download/sound/se/se_053.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em4,default,animation,0,-250,300,1,1.4,0
+playse,/download/sound/se/se_053.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em5,default,animation,0,260,-100,0.4,1.1,0
+playse,/download/sound/se/se_053.mp3
+endwait
+flash,255,255,255,4,0.3,1.0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_c,body:anger,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「看招看招看招！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy1,0,-100,0.5,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1.5,1,0
+playse,/download/sound/se/se_053.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em2,default,animation,0,-200,-170,0.7,1.2,0
+playse,/download/sound/se/se_053.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em3,default,animation,0,320,270,0.4,0.9,0
+playse,/download/sound/se/se_053.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em4,default,animation,0,-250,300,1,1.4,0
+playse,/download/sound/se/se_053.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em5,default,animation,0,260,-100,0.4,1.1,0
+playse,/download/sound/se/se_053.mp3
+endwait
+flash,255,255,255,4,0.3,1.0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:surprise,yoshino,-300,-240,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:surprise,ridia,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「空…空手格鬥……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:surprise,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「那是……中國武術……而且還有空手道、西斯特瑪、拳擊……\n踢技是跆拳道嗎？真是變幻自在啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:surprise,ridia,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「說起來，那不就是傳說中<ruby>鐘樓|</ruby>的<ruby>十二針|</ruby>皇家巫術師也在使用的戰法——魔術格鬥嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_c,body:anger,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「給我炸飛吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy1,0,-100,0.5,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1.2,1,0
+playse,/download/sound/se/se_053.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em2,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+wait0.3
+anm,move,enemy1,0_800,0.3,0
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+endwait,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:sad,ridia,-300,-120,0.5,0.5,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「爆炸……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101207/adv/atlas/stand_a,body:sad,ridia,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「為啥能用拳頭打出爆炸啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ridia,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「……這已經是空手反而更強的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_c,body:anger,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「這就是我全力的一拳……一擊必滅！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy2,0,0,0,0,,,,
+imgconf,enemy2,enemy1,0,-600,,,0,1.5,1.5,0.5
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10050100.jpg,1,255
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103402/adv/atlas/stand_c,body:anger,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「一拳貫穿——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy1,0,1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,scale,enemy1,0.5_-0.5,0,0
+endwait,,,,,,,,,,,
+anm,move,enemy1,0_0,0.6,0
+endwait
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――」</outline>,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,2,1,0
+playse,/download/sound/se/se_053.mp3
+endwait,,,,,,,,,,,
+wait,0.1
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Thunder1_yellow,em2,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/29070102/adv/image/29070102.png,enemy2,0,0,0,0,,,,
+imgconf,enemy2,enemy1,0,-600,,,0,1.5,1.5,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>奴迫主亡</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+sprite,download/bg/bg_white.jpg,bg,0,0,1,1,,,,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,1,255
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,elica1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:normal,elica2,0,0,0,0,,,,
+imgconf,elica2,elica1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾麗卡・露比婭</outline>,
+msg,0,<outline width=2 color=black>「哎呀……露伊茲，好久不見了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「艾麗卡也來拉萊耶了啊。\n之後也要你多指教了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,mamiya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:unique,mamiya2,0,0,0,0,,,,
+imgconf,mamiya2,mamiya1,0,-720,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>間宮|</ruby><ruby>舞夜|</ruby></outline>,
+msg,0,<outline width=2 color=black>「啊。聽說跟新的想索者匯合了，原來是露伊茲啊。\n上次一起工作還是在中國的遺跡裡解除詛咒的時候吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「嗯，真讓人懷念。冒出了大概一百隻殭屍，場面可是很緊張啊……\n我可是受夠了詛咒的遺跡了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,-40,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,0,<outline width=2 color=black>「露伊茲」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「啊，這不是埃爾塔嘛。來給你巧克力。\n是你喜歡的品牌喲」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,patrisia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,-860,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,0,<outline width=2 color=black>「露伊茲小姐。又一次見到你了。\n這次請一定與我一酌……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「啊啊，潘多莉西亞。怎麼，已經不戴銀質首飾了嗎？\n以前可是戴到誇張的地步呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:sad,ridia,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「與大家熟悉得像長年共事一樣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「難道說，她與現在在場的想索者都是已經互相熟識了嗎……這人脈也太廣了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:sad,ridia,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「英國流傳著“魔術士裡每三人有一人認識露伊茲”的說法，果然名不虛傳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「我可是第一次聽說。我聽到的說法是“沒人能與貝雷斯弗特失之交臂”」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,ridia,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「這也太誇張了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「她也確實交遊廣闊到能讓這種話流傳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不過，沒想到貝雷斯弗特的記憶真的找回來了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,ridia,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「好啦，好用的人變多了你還有什麼不滿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:smile,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「你也不要用那麼彆扭的說法啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ridia,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「露伊茲，大家要和和氣氣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:smile,yoshino,-300,-240,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「嗯，就該這樣。她的交際能力也有很多地方值得我學習」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,silvy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,silvy2,0,0,0,0,,,,
+imgconf,silvy2,silvy1,0,-302,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline>,
+msg,0,<outline width=2 color=black>「哎呀，露伊茲。其實我有個實驗想要你幫忙。\n服一份試驗藥贈一箱營養飲料如何？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「那是希爾薇特製的營養飲料吧？如果是的話我很樂意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,dana1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana2,0,0,0,0,,,,
+imgconf,dana2,dana1,0,-730,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,0,<outline width=2 color=black>「露伊茲小姐。抱歉這麼急麻煩您，農場區域有一區出現歉收……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「是飼育控制機調試不當嗎？之後我會去調查的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:sad,rin2,0,0,0,0,,,,
+imgconf,rin2,rin1,0,-380,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「露，露伊茲小姐！請幫幫我！剛剛我在洗澡的時候，水喉可能壞掉了，現在不出水了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「凜，你應該注意控制自己的力道」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:unique,yoshino,-300,-240,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:sad,ridia,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「……這個情況，與其說是溝通能力強，不如說大家把她當成萬能問題解決人了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:unique,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「……這麼說來我房間的門也是，最近感應器的狀況不太好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:sad,ridia,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「人們不止把露伊茲當成方便的人去接近她，\n也有很多人知道她真正的強大之處……是吧？這是你說過的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:unique,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:sad,ridia,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「難以回答就沉默以對，巴爾蒂克姆騎士還真是了不起啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline>,
+msg,0,<outline width=2 color=black>「不要太揶揄別人了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:sad,ridia,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「呼……但是吧，雖說如此——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,0,<outline width=2 color=black>「已經立刻被工作包圍了呢……\n。好吧，這種分量的工作，解決起來是小菜一碟！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「——她自己也樂在其中的樣子。果然她就是天生的社畜氣質吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

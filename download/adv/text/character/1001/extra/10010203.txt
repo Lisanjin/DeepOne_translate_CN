@@ -1,0 +1,163 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，在關鍵的時候……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我說，你肚子餓了沒？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_02.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「沒餓」,選項2　「餓了」
+if,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「太好了，那真是正好呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_04.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+spine,download/adv/spine/Mark12,em1,default,animation,0,200,190,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_03.mp3
+endwait
+spineoff,em1,1,,,,,,,,,
+endwait
+select,選項1　「沒餓」,選項2　「餓了」
+if,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「太好了，那真是正好呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_04.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+spine,download/adv/spine/Mark12,em1,default,animation,0,200,190,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_03.mp3
+endwait
+spineoff,em1,1,,,,,,,,,
+endwait
+select,選項1　「沒餓」,選項2　「餓了」
+if,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「太好了，那真是正好呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_04.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+spine,download/adv/spine/Mark12,em1,default,animation,0,200,190,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_03.mp3
+endwait
+spineoff,em1,1,,,,,,,,,
+endwait
+select,選項1　「餓了」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「太好了，那真是正好呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_04.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「拉萊耶的菜園正好有看起來很好吃的青椒長熟了，\n我摘了點過來做成了青椒肉絲……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_05.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark1,em2,default,animation,1,200,210,0.65,0.3,0.5
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「就是說啊，拉萊耶的廚房真厲害。\n中華鍋放在哪里就不用說了，爐灶是大號的魔術式火力異常的猛呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「菜刀的種類也是琳琅滿目……哎呀，切起來好順手呀\n中式菜刀還是第一次用呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「果然，如果備齊了好工具，不知不覺就會情緒高漲起來\n或者說是忘乎所以了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_08.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,0,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……那個，要說我想說什麼……其實我不小心做得太多了，\n可以幫我吃一些嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我可先說了，味道我還很自信的，懂嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「太好了……幫大忙了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「果然在這種時候，男人還是很可靠的。\n看好你們的食量噢！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+spine,download/adv/spine/Mark2,em3,default,animation,0,200,210,0.65,0.5,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=20><outline width=2 color=black>「順帶一說哦，這樣大盤子的量還有兩個要解決哦……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_13.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,0,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，你想逃什麼啊！\n既然是男人就要遵守說過的話！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「再說了，我又沒說把這些全部交給你解決。\n你就不會，去找找其他的人分擔一下嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「與其讓我去說，你去不是更好嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:anger,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……別在那兒一副窘態了。拿出點自信心好嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那是因為，一開始大家都很警惕對方是個來歷不明的人，\n但是一同生活過後，我覺得自然而然就會建立起信任的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「正是這樣，怎麼說要比我好多了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？是，這樣嗎……我也，能做得好嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「要真的是那樣，我還挺高興的說……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……說得對。既然這樣，那我們就一起去叫人來吧。\n這個，要是再沒人來的話那可就都要臉紅了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻，要是到那個時候，\n那就只能由我們兩人拼命吃完這堆成山的青椒肉絲」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_07_23.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1,,,,,,,,,,
+endwait,,,,,,,,,,,

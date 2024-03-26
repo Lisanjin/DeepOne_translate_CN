@@ -1,0 +1,255 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>或許是因為那時妾身才剛作為失想者誕生，\n所以金的相貌在那之後的各種經歷和記憶中變得模糊了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>不過，沒想到那天遇到的那個不知名的想索者會是潘多莉西亞的哥哥……\n緣分真是奇妙啊。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,vi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:smile,vi2,0,0,0,0,,,,
+imgconf,vi2,vi1,0,-980,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「咯咯，不過，沒想到汝的妹妹是這種認真的性格」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「或許也因為過於出乎意料，\n所以妾身才沒能馬上將汝和汝的兄長聯繫起來吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「……金」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「現在的妾身看起來開心嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0.2
+stopbgm,0.2,,,,,,,,,,
+endwait
+bg,download/bg/bg_11110300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20160202/adv/image/20160202.png,enemy1,0,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_b,body:normal,patrisia,300,-200,0.5,0.5,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:anger,xeno,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>澤乃・娜莎莉</outline>,
+msg,0,<outline width=2 color=black>「這些虛像的等級姑且不論，數量還是挺多的。\n你注意一點，別消耗過度了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_b,body:normal,patrisia,300,-200,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,0,<outline width=2 color=black>「謝謝你的忠告。不過有他的力量，現在還不要緊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/20160202/adv/image/20160202.png,enemy2,0,0,0,0,,,,
+imgconf,enemy2,enemy1,0,-600,,,0,2.5,2.5,0.5
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102206/adv/atlas/stand_b,body:normal,vi,300,-240,0.5,0.5,,,,
+anm,tint,vi,150_150_150,0.0001,0
+spriteatlas,download/character/101605/adv/atlas/stand_b,body:surprise,patrisia,-300,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,0,<outline width=2 color=black>「咦……？剛才的虛像，是不是拿著一張像是卡的東西……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102206/adv/atlas/stand_b,body:surprise,vi,300,-240,0.5,0,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「什麼？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,vi,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100707/adv/atlas/stand_b,body:anger,zizel,1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,zizel,300_-120,0.4,0
+endwait
+name,<outline width=2 color=black>吉澤爾・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「那個虛像在哪里！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_b,body:surprise,patrisia,-300,-200,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,0,<outline width=2 color=black>「啊……跑到這個走廊的另一邊了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,zizel,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102206/adv/atlas/stand_b,body:normal,vi,300,-240,0.5,0.5,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「嗯，得把這些虛像擊退才能去追啊……\n或許，這些傢伙是在阻礙吾等？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_b,body:normal,patrisia,-300,-200,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,0,<outline width=2 color=black>「確實……如果那張卡真的擁有驚人的力量，\n那虛像想要保護它也不奇怪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,patrisia,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:normal,xeno,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>澤乃・娜莎莉</outline>,
+msg,0,<outline width=2 color=black>「總之，必須先把這些虛像擊退」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,vi,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100707/adv/atlas/stand_b,body:anger,zizel,300,-120,0.5,0.5,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉澤爾・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「抱歉，這裏就交給我吧——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,zizel,-1200_-120,0.5,0
+endwait
+spriteoff,zizel,0
+endwait
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:surprise,xeno,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>澤乃・娜莎莉</outline>,
+msg,0,<outline width=2 color=black>「什……喂，等一下！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+sprite,download/monster/20160202/adv/image/20160202.png,enemy1,0,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100707/adv/atlas/stand_b,body:anger,zizel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉澤爾・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「任何東西都休想來妨礙我，克勞索拉斯！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20160202/adv/image/20160202.png,enemy1,0,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――、……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100707/adv/atlas/stand_b,body:anger,zizel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉澤爾・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「絕不能把那張卡交給虛像。付費頻道是屬於我的——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endwait
+anm,move,zizel,-1200_-120,0.5,0
+endwait
+spriteoff,zizel,0
+endwait
+spriteatlas,download/character/101605/adv/atlas/stand_b,body:normal,patrisia,-300,-200,0.5,0.5,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,weat,300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「吉澤爾她自己一個人追過去了，不要緊嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_b,body:normal,patrisia,-300,-200,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,0,<outline width=2 color=black>「以吉澤爾的實力，應該無需擔心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,weat,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:surprise,xeno,300,-120,0.5,0.5,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>澤乃・娜莎莉</outline>,
+msg,0,<outline width=2 color=black>「話雖如此，也不能置之不理。如果那張卡擁有的力量龐大到\n會對幻夢境產生影響，那就不只是想索者的問題了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:anger,xeno,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「把這些虛像擊退。貝托麗薩，唯，別手下留情。\n至於那個男人和芙勞，潘多莉西亞，可以交給你吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101605/adv/atlas/stand_b,body:normal,patrisia,-300,-200,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,0,<outline width=2 color=black>「是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:anger,xeno,300,-120,0.5,0,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>澤乃・娜莎莉</outline>,
+msg,0,<outline width=2 color=black>「那就上吧——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,1,255
+endwait
+spriteatlas,download/character/100707/adv/atlas/stand_b,body:anger,zizel,0,-120,0.5,0.5,,,,
+endwait
+name,<outline width=2 color=black>吉澤爾・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「——！這股魔力，是澤乃嗎。\n她正以驚人的氣勢追趕過來……我都還沒找到虛像呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100707/adv/atlas/stand_b,body:anger,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「總之，得抓緊才行……！\n無論如何，我都要得到那張卡，盡情地享受世外桃源！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100707/adv/atlas/stand_b,body:anger,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「為此……克勞索拉斯，將你的力量借給我吧——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

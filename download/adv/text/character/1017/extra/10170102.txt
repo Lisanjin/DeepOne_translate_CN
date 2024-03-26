@@ -1,0 +1,107 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0.5,,,,
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_01.mp3
+msg,1,<outline width=2 color=black>「哈啊……哈啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_02.mp3
+msg,1,<outline width=2 color=black>「啊啊，這個也很棒……這個也……好喜歡……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_03.mp3
+msg,1,<outline width=2 color=black>「不會吧……這……這我絕對忍不住的……！\n討厭，我已經……啊，怎麼會……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「你在幹什麼？」,選項2　「別這麼不正經了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_04.mp3
+msg,1,<outline width=2 color=black>「啊……你好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_05.mp3
+msg,1,<outline width=2 color=black>「你來看看嘛。我正在用終端觀看圖書館裡的動物影像，真是太棒了。\n有這麼多貓的視頻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_06.mp3
+msg,1,<outline width=2 color=black>「雖然我明白這裡為了慰勞員工和想索者而準備了娛樂之類的內容，\n但沒想到貓咪的視頻會這麼豐富」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_07.mp3
+msg,1,<outline width=2 color=black>「管理圖書館的數據的人肯定很喜歡貓咪吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_08.mp3
+msg,1,<outline width=2 color=black>「哎……？不正經……你指什麼？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_09.mp3
+msg,1,<outline width=2 color=black>「……奇怪的聲音……哎，我發出這種奇怪的聲音了嗎！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:unique,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_10.mp3
+msg,1,<outline width=2 color=black>「啊、嗚……對不起，讓你聽到我丟人的聲音了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_11.mp3
+msg,1,<outline width=2 color=black>「我在終端裡看到了關於貓的視頻，就不自覺，該怎麼說好呢……\n被迷倒了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_12.mp3
+msg,1,<outline width=2 color=black>「可是這沒辦法啊……！貓咪太可愛了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_13.mp3
+msg,1,<outline width=2 color=black>「啊，不介意的話你也來看吧？你看，多可愛呀。\n你看一看的話就能明白我的心情了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_14.mp3
+msg,1,<outline width=2 color=black>「哈啊……光是看著心就融化了……\n如果眼前有這麼毛茸茸的生物，肯定會忍不住去抱它的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_15.mp3
+msg,1,<outline width=2 color=black>「真棒啊……啊，這隻黑貓的白色小腳就像是襪子一樣……\n這邊這隻異色瞳的貓也很棒……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_16.mp3
+msg,1,<outline width=2 color=black>「我好喜歡……雖然我以前就想養一隻了，\n可是因為工作關係到處飛來飛去，實在是很困難……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_17.mp3
+msg,1,<outline width=2 color=black>「那麼至少看看視頻也好，於是我就養成了工作之後看視頻的習慣……\n現在對我來說已經是生命週期的一環了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_18.mp3
+msg,1,<outline width=2 color=black>「哎，狗之類的嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_19.mp3
+msg,1,<outline width=2 color=black>「我當然也覺得可愛呀。\n其他的還有刺蝟啊、貓頭鷹啊，都是很可愛的動物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_20.mp3
+msg,1,<outline width=2 color=black>「可是，我還是覺得貓咪是最棒的……\n它喜怒無常的一面，撒嬌時的模樣……就連不高興的時候都好可愛，太犯規了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_04_21.mp3
+msg,1,<outline width=2 color=black>「哈啊……好想擼貓啊……好想把臉埋在它的肚子上蹭來蹭去啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

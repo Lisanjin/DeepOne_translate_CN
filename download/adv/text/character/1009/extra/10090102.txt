@@ -1,0 +1,124 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀……？　你，那件襯衫，衣服扣子松了啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「在掉之前，還是縫起來比較好吧？\n……難道說你不會嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……拿你沒辦法呢。稍微等我一下」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_03.mp3
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,irina,0.5
+endwait
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,1.0,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「久等了啊。來吧，把襯衫脫了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……你臉紅什麼啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我不會對你做奇怪的事啦。\n不要瞎想好不好？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你看，這個。縫紉套裝。我給你縫上，\n快把衣服給我」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「針線活兒、你也會啊」,選項2　「不好意思啊我瞎想了」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不只是針線活兒。\n做飯和洗衣服，還有打掃也……基本的家務活都會做」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在聖奠教的時候，我受過了各種訓練。\n不管怎麼說我也是那個聖女大人的近侍啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然很想忘記這令人作嘔的往事……不過，\n學到手的技能不用白不用」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「行了啦，我也沒太在意。\n你也是男人嘛，會對這種事感興趣也是沒辦法的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，畢竟……我們之前也發生了不少事，對吧。\n但話說回來，我覺得你剛剛太大驚小怪了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「然後再打個結……你看，縫好了。\n我縫得挺牢固的，應該不會馬上就又掉了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_13.mp3
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+playbgm,/download/sound/bgm/bgm026.mp3,0,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「……稍微，有點懷念呢。以前，也有這樣幫”那孩子”\n縫紐扣的時候呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「聖奠教的聖女，雖然是被這麼叫著的，看著很認真，\n但其實她也有遲鈍的地方」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對其他人的事很關注，對自己的事就很敷衍……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過……這也已經是過去的事了呢。\n現在我不知道那孩子在做什麼，也沒興趣知道」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:anger,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……哈啊？怎麼可能會寂寞啊。\n你，在說些無聊的話呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「只是想起了以前的事稍微有點傷感而已，就只是這樣。\n這種瑣碎的感情，馬上就會忘了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:unique,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我現在的心裏，有著更強烈的感情……憎恨和憤怒\n充滿了我的內心」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這份感情是不會消失的……\n所以，我和那孩子是不會再走到一起的。絕對不會」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100901/adv/sound/fav100901_04_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,99 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這裏，到底是哪里？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「沒想到打開門的瞬間，就被傳送到了別的地方……\n不愧是幻夢境……會發生什麼事，完全想像不到啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……從魔力的反應來看，我們傳送得\n沒有離其他成員太遠的樣子」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣的話，匯合也不是難事……來吧，我們走」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「放心吧。就算有敵人出現了，我也會守護你的。\n不會讓你死在這種地方的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:anger,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……幹什麼啊，你這樣子。覺得一直被保護著不高興？\n確實，你是沒有絲毫的戰鬥力呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但正是如此，你就這麼跑前面去了也是在拖人後腿」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼嘛，你這眼神。這是事實啊，你也沒法否定的吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「還有一點，我就算在這裏和你說“沒這種事”鼓勵你，有什麼意義嗎？\n這樣也不會讓你能擁有戰鬥力」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「……你說得沒錯」,選項2　「雖然你說得沒錯……」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒錯吧？承認事實……然後，對自己的實力\n要看清，才能跨出成長的第一步」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果你，真的想在今後能幫助其他人的話，現在就不要勉強，\n集中精力鍛煉力量吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當然……就算如此，也有在資質方面的障礙。\n但不是說，我在否定努力」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「聽不清你在說什麼。\n難道說，你覺得我會說得更溫柔一點嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要是撿好聽的話和你說，那才叫不像話。\n才是對你的不負責任吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「再說，我們希望你做到的事，就是在幻夢境裏\n輔助我們的工作啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你只要能做到這一點……就沒有必要感到內疚，\n更不用勉強自己去努力」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:shy,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我沒有在安慰你。只是說了事實而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈啊？我才沒，害羞呢。\n我臉也沒紅，也沒看別的地方」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「比起這個，我們快離開這裏吧。\n像這樣說著閒話的時候，可能就有危險上門了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:shy,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我才沒有糊弄過去呢。\n不要說什麼奇怪的話好嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100902/adv/sound/fav100902_05_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,146 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哥~哥！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_01.mp3
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+shake,0.1,3,12,12
+endwait,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒嘿嘿，哥哥，今天有什麼預定嗎？\n我也想一起去呢～」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「深潛的負荷很小呢！\n我可是很精神的呢！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,25,-120,0.5,0,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,120,180,0.65,0.8,0.5
+endwait,
+msg,1,<size=30><outline width=2 color=black>「哇、會帶我去嗎？　太好了！\n今天我也會努力的！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_04.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0
+msg,1,<size=30><outline width=2 color=black>「無論哥哥走到哪里，我都會緊緊相隨。\n而且，會好好地保護你哦！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「話說回來，你還沒吃午飯吧？\n想索之前，要填飽肚子才行哦！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「難得有機會，一起去吧！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_07.mp3
+clickwait,,,,,,,,,,,
+slideinblack,1,right
+endwait
+spriteoff,rin,0,
+endwait
+name,
+msg,0,
+bg,color_0_0_0,0,255
+endwait
+slideoutblack,1,left
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,2.1,,,,,,,,,
+endwait,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,25,-120,0.5,0.5,,,,
+endwait,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼……撐死了。\n如果能吃到美味的午餐，即便身處這種狀況下也很開心呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看著哥哥吃飯的樣子，好萌啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊、抱、抱歉，說了奇怪的話！\n也有人被人盯著吃飯會很為難呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_10.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「看著凜吃飯的樣子很幸福、我很開心」,選項2　「難道、凜很為難嗎？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？　是嗎？誒嘿嘿……\n吃飯的時候確實很幸福呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……曾經，也有人說過同樣的話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哪有哪有，沒那麼一回事呢！\n不過……曾經，有人說吃飯時被盯著很害羞呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哥哥倒是不在意呢。真好～」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+stopbgm,0,,
+endwait
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我曾呆過的研究所裏，有一個像哥哥一樣，\n對我很好的人。我喊她姐姐」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_15.mp3
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「姐姐她，不好意思被人看著吃東西……\n可是，她說看著我吃東西會很開心」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:unique,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「可是，那個人……被我親手…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:sad,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我曾呆過的研究所被一個邪惡的魔術師所掌控，\n他在我和姐姐……以及其他的孩子身上都做了殘酷的實驗」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就在某一天，姐姐因實驗的影響而暴走了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我也受到了襲擊，\n但是姐姐好像還認得我」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:unique,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「她要我…………殺掉她……於是，我……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「抱、抱歉，說了些不吉利的話……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那種事，不會再發生了……我不會讓它再發生！\n我們，可以的！　我就是為了那個目標才變強的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_23.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「直到最後，我都要……守護哥哥！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_11_24.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

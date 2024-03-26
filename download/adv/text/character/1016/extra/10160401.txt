@@ -1,0 +1,107 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:smile,patrisia,0,-170,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_01.mp3
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,1,<outline width=2 color=black>「啊，你來得正好。\n正好有件事想問你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_02.mp3
+msg,1,<outline width=2 color=black>「呃……今晚有空嗎？\n如果可以的話，一起喝酒怎麼樣？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_03.mp3
+msg,1,<outline width=2 color=black>「其實，不是只有兩個人……那個，達納也在……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_04.mp3
+msg,1,<outline width=2 color=black>「從以前開始，達納就一直想跟我談談……但是，\n我怎麼也下不了決心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_05.mp3
+msg,1,<outline width=2 color=black>「那個人，和哥哥在同一部隊……知道關於我哥哥死亡的一切內情……\n所以，之前我就想和她談一下，這是毫無疑問的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_06.mp3
+msg,1,<outline width=2 color=black>「不過，只有那個人倖存下來，我哥哥卻死了這一事實……就\n像紮根在那裏一樣，不斷萌生的負面的感情，在我心中產生了遲疑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_07.mp3
+msg,1,<outline width=2 color=black>「……儘管如此，如果只有達納在接近我，\n而我卻在不停退縮的話……我覺得很丟人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_08.mp3
+msg,1,<outline width=2 color=black>「所以至少，一起喝個酒……然後就商量好了，\n不用兩個人獨處，再邀請一個人來」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_09.mp3
+msg,1,<outline width=2 color=black>「所以……可以拜託你嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「當然可以」,選項2　「我可以嗎？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:smile,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_10.mp3
+msg,1,<outline width=2 color=black>「謝謝……\n有你在，我覺得肯定沒問題了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_11.mp3
+msg,1,<outline width=2 color=black>「但是……如果你感覺我要說什麼傷害達納小姐的話\n，那時一定要阻止我啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_12.mp3
+msg,1,<outline width=2 color=black>「哥哥肯定也，不希望我傷害那個人吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_13.mp3
+msg,1,<outline width=2 color=black>「沒有比你更適合的人選了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_14.mp3
+msg,1,<outline width=2 color=black>「我也是……而且達納小姐也很信賴你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_15.mp3
+msg,1,<outline width=2 color=black>「正因如此……雖然麻煩你兩個陪我們兩個喝酒，我感覺\n很抱歉，但請務必給我點時間好嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:smile,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_16.mp3
+msg,1,<outline width=2 color=black>「――謝謝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_17.mp3
+msg,1,<outline width=2 color=black>「那個，當天我會準備美味的酒水的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:surprise,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_18.mp3
+msg,1,<outline width=2 color=black>「“那倒是不用”，哎……為什麼呢？\n有美酒肯定更好啊――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_19.mp3
+msg,1,<outline width=2 color=black>「還沒等開口先醉了咋辦……啊ー……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_20.mp3
+msg,1,<outline width=2 color=black>「這麼說來，我還沒和達納小姐喝過酒，\n也是聽到了很多傳言……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101604/adv/sound/fav101604_11_21.mp3
+msg,1,<outline width=2 color=black>「……那我當天，儘量準備點度數低的酒\n就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

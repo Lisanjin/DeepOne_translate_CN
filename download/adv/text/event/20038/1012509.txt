@@ -1,0 +1,541 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「……誒呀？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「大家呢……？啊──……糟了。莉瀨衝太快了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嗯──等哥哥他們追過來\n是比較正確沒錯，但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rise1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:anger,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「你們真的很礙事耶。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash4_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――、……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:unique,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「礙事、礙事、礙事……礙事到不行啊。我只是想把被搶走的東西\n搶回來而已，不想對付你們這些雜碎啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_038.mp3
+wait,0.1,
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「―――、…………、……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:unique,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「不過呢──這是怎樣？現在我的心情看起來很好嗎？別開玩笑了，怎麼可能嘛，\n我超不爽的啊，不爽到我都快笑出來了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/blow_Red,em1,default,animation,0,100,100,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,-50,-60,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「―――、…………、……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:unique,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「我就把你們打爛、揍穿、扯斷，然後再壓扁、踏個幾腳、當球踢吧……\n這麼做的話，應該多多少少能出口氣吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「……、…………、……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:sad,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「……啊──消失了。虛像真是脆弱呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:surprise,rise,-300,-100,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「妳還真是暴躁呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:surprise,rise,-300,-100,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「唯……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:sad,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊──……我丟臉的樣子是不是都被妳看到了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「那個被搶走的記憶，對妳來說好像非常重要呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:sad,rise,-300,-100,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「因為那是從我小時候就一直陪在我身邊的人啊……\n我不知道自己以前是怎麼看待那個人的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:sad,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，這股整個人好像都被砍成了兩半的感覺正在這麼說著──\n我弄丟了絕對不可以弄丟的東西。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:normal,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以我才想快點搶回來啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「不過，妳是不是因為太在意過去的回憶，而忽略了當下該盡的本分呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:normal,rise,-300,-100,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「……妳想說什麼？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「妳忽視了夥伴對妳的關懷，還讓自己陷入了危險，\n我只是在想啊，為了搶回過去的記憶做到這種地步，好像也不太好吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「因為妳一個人衝得這麼前面……所以現在妳的夥伴一定都很擔心吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:normal,rise,-300,-100,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「…………妳說得對，我錯了。我正在反省。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「那妳願意在原地等一下嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:normal,rise,-300,-100,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「我做不到。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:sad,vi,300,-240,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「……妳真是不聽勸呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:normal,rise,-300,-100,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「抱歉囉──……不過呢，唯。\n妳明明不知道被搶走的東西對我有多重要，那妳憑什麼講一堆大道理？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:normal,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我喜歡哥哥，我喜歡大家，雖然我跟唯才認識沒多久，\n但是我覺得自己可以和妳處得不錯喔！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:normal,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，我希望妳不要做會讓我討厭妳的事。\n話說回來，我還挺意外的，原來唯是這麼囉嗦的人啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「我也很意外，因為我本來就不喜歡多管閒事。\n但不可思議的是……在面對妳時，不知道為什麼，我就是管不住自己的嘴。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:anger,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「莉瀨。現在驅使妳前進的不只是焦慮感。\n其中還包含著妳對自己力量的自負。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:anger,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「自負會化作驕傲。驕傲則會演變成狂妄。然後狂妄會讓妳徹底忽略別人的勸導，\n走向孤獨的未來。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:anger,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「為了妳的夥伴，也為了妳自己……請妳不要走上那條路。\n只有放棄思考的愚者與無情的修羅，會選擇那種未來。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>──即使是非人的存在，也會做夢。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>最近出現在夢境中的那位女孩，給我的感覺十分奇妙。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>她在心中抱持著可說是確信的自負，認為自己的力量不弱旁人。\n然而，她卻從未以力量耀武揚威。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>雖然在家族的慣例與祖訓的束縛下覺得自己活像個籠中鳥，\n但與此同時，她也抱持著人生就是這麼回事的想法，冷眼旁觀著自己。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>在男尊女卑這類狗屁不通的藉口下，光是生為女性就會被視作便利的工具。\n對家族的人來說，這是他們自從出生之後就被灌輸的常識。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>生活這種環境之下，自己周遭的人們絕無可能改變他們的觀念與行動──\n這種不信任感，令她捨棄了對旁人的期待。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>但是女孩也沒有打破周遭的束縛，\n反而唯唯諾諾地執行著被吩咐的職責。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>被強塞過來的的職責，\n全都是能壓垮平庸施術者的重責大任。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>因此只要以第三者的角度觀察，\n就能理解那位女孩對周遭的人來說有多麼詭異。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>她的確會聽從家族的命令。\n然而家族卻無法理解她為何會乖乖聽話。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>因此，他們始終在擔心那股力量是不是會在某一天\n對自己展開報復。家族的猜疑心與日俱增。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>正因為那位女孩對旁人毫無期待，所以她也沒作出任何解釋。\n對放棄與他人相互理解、冷眼旁觀人生的女孩來說，話語只是無用的累贅。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>這位女孩，究竟是放棄思考的愚者，\n或者是走在無情之道上的修羅呢？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>我只是在作夢，不可能看透女孩的內心。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>然而在最後，那位女孩留在這世上的唯一痕跡，\n就是她被所有的事物拋棄，無依無靠地孤獨消失的結局。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>為什麼呢？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>莉瀨現在的模樣，在我的眼中與那位女孩重合了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0.5,,,,
+anm,tint,vi,150_150_150,0.0001,0
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「為了我自己？愚者？修羅？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:unique,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「──那是啥？妳別逗我笑了好不好！妳說的東西實在是莫名其妙到反而好笑耶，\n況且，唯憑什麼決定怎麼做對我才是好的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:unique,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我想要搶回重要的事物。我想要回想起那個一定很重要的人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:unique,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果妳還要繼續擋路……\n那我說不定就要請妳吃點苦頭囉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「嗯，真嚇人啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不過、問題來了……妳有那個能耐嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:unique,rise,-300,-100,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,0,<outline width=2 color=black>「──…………哈！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_b,body:anger,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我會把妳捏死的。妳可別怪我哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_b,body:anger,vi,300,-240,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「雖然很麻煩，但我就當妳的對手吧。放馬過來。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

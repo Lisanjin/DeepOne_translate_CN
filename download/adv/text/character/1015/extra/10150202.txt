@@ -1,0 +1,104 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喲，你也該差不多習慣這裏的生活了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「拉萊耶雖然在海底，但生活條件相當完善\n應該沒有不方便的地方吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我剛來到這裏的時候也嚇了一跳呢。\n明明在海底，竟然還能建牧場和農場啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不用為了明天的食物發愁，也不用穿著沾滿泥土和血跡的衣服入睡。\n……在外面生活的時候什麼都不足夠」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，這種富足的生活，\n在我這樣的人看來反倒沒什麼意思」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「以前我還在傭兵團的時候，在沒有水和食物的環境裏\n連續作戰好幾天，這都是司空見慣的事……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，看來我好像很適合那樣的生活。\n一點也不覺得痛苦哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「那樣的生活好像很痛苦」,選項2　「憧憬那樣的生活」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不做好充分的覺悟可能無法承受吧。\n為了活下去什麼都做的這種渴望也是很重要的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:unique,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……口渴得要死的時候也會喝泥水，\n為了造成不餓的錯覺也會去啃樹根和泥土……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為了能活下去，能做的事我都做過」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，你不適合上戰場吧。\n你最多也就適合在和平的國家裏悠閒地野營什麼的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_11.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:surprise,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，憧憬？你嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈，開玩笑的吧？明明連拉萊耶都沒出去過，\n口氣可真不小啊。我想你應該是無法忍受這種極端殘酷的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:surprise,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哈？ 一起？和我一起嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……確實，要是和我一起的話，那大部分情況\n應該都不是問題吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_15.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby>
+</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊……要是有一天，能從拉萊耶逃出去的話，如果那時候\n我心情好的話，就帶你一起旅行吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然不會帶你上戰場，但是教你一些\n求生的辦法也是可以的吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「等到那時候，你可要小心別再像以前那樣\n借著酒勁把整座山都給燒了啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:surprise,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哎喲，沒什麼。是我自己的事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:smile,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，對了。你先提前想好到那時候想吃蛇還是吃老鼠吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，這都是最基本的食物啊？\n如果不喜歡的話，那一起求生好像會很艱難啊……哈哈！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101502/adv/sound/fav101502_06_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,135 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,color_0_0_0_0,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,uru1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:sad,uru,0,0,0,0,,,,
+imgconf,uru,uru1,0,-850,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……明明最近每一天都有露面呢，\n今天這是怎麼了呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話說，我在想什麼呢……這不就，\n完全是在四處尋找那傢伙一樣了嗎……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我沒什麼……只是為了轉換下心情稍微散下步而已……\n啊啊，真是的。我這是在跟誰解釋啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――……那是」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_04.mp3
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,color_0_0_0_0,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,uru1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,0,0,0,0,,,,
+imgconf,uru,uru1,0,-850,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那是。\n那傢伙……我以為不來找我，是和其他的女人廝混去了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……剛剛，我說了什麼……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘁……為什麼說了這麼愚蠢的話……\n那傢伙和誰在一起，和我都沒有關係……」</outline></size>,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_07.mp3
+clickwait,,,,,,,,,,,
+name,
+msg,1,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait
+roombg,1021,1
+endwait
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,-20,-200,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「咦，今天來我這裏了呢。\n我還以為你肯定已經對我厭煩了呢，花花公子？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「心情不好？　沒什麼，一般般」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「不管怎麼看都是心情不好啊」,選項2　「有什麼困擾的事情嗎？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不管怎麼看啊……我的感情的微妙之處，就你也能看透不成」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:sad,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……不，算了吧。\n這樣只是在暴露自己的不像樣而已……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_11.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……嘁」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「總之，現在毫無疑問是“有什麼困擾的事情”呢。\n自己稍微想想如何？　例如昨天沒有來我的房間――っ」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:sad,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊啊，真是的。在說什麼啊我」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……老實回答我一個問題」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你，昨天為什麼沒有來我的房間？」</outline></size>,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼~……是陪著求助的魔術士啊。\n所以，你只顧著照顧那個柔弱的小姑娘才沒有來找我啊」</outline></size>,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這就是我為什麼心情不好？簡直錯得離譜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我只是……嗯，不喜歡你有益的力量\n被用在別人身上」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「比起軟弱的魔術士，不如把所有的力量全部獻給我\n……不是嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我只是想要讓你認識到什麼才是第一重要的。\n請你銘記這一點」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102104/adv/sound/fav102104_12_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

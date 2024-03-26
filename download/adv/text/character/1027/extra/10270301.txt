@@ -1,0 +1,127 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,1.0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy,0,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「―――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+flash,255,255,255,4,0.3,1.0
+playse,/download/sound/se/se_041.mp3
+endwait
+shake,0.2,4,30,30,enemy,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+wait,1.5
+endwait,,,,,,,,,,,
+stopbgm.0
+endwait
+wait,1
+endwait
+playbgm,/download/sound/bgm/bgm003.mp3,0.3,
+endwait
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_01.mp3
+name,<size=27><outline width=2 color=black>埃爾塔・塔拉絲庫</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……嗯，結束了？前面還有路啊，繼續前進吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_02.mp3
+msg,0,<size=30><outline width=2 color=black>「身體狀況……？放心吧。我還能繼續努力」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「不要勉強啊」,選項2　「真可靠」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_03.mp3
+msg,0,<size=30><outline width=2 color=black>「我沒有勉強」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_04.mp3
+msg,0,<size=30><outline width=2 color=black>「……我看起來就這麼不可靠嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_05.mp3
+msg,0,<size=30><outline width=2 color=black>「不停戰鬥，獲勝，我是為了得到納克特原書才來到這裏。\n……不要否定這一點」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_06.mp3
+msg,0,<size=30><outline width=2 color=black>「我的價值，僅此而已」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_07.mp3
+msg,0,<size=30><outline width=2 color=black>「……嗯，對，我非常可靠」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_08.mp3
+msg,0,<size=30><outline width=2 color=black>「我……我們很厲害……如果不厲害的話\n我們生而為人還有何意義呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_09.mp3
+msg,0,<size=30><outline width=2 color=black>「所以，你能依靠我，我很高興。感覺就像我被承認了\n可以呆在這裏……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_10.mp3
+msg,0,<size=30><outline width=2 color=black>「我要得到納克特原書……希望可以讓父母高興」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_11.mp3
+msg,0,<size=30><outline width=2 color=black>「我的家族現在已經沒落了。\n所以……為了像以前一樣被人們誇口稱讚，必須拿出成果」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_12.mp3
+msg,0,<size=30><outline width=2 color=black>「我是為此才被製造出來的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_13.mp3
+msg,0,<size=30><outline width=2 color=black>「為了讓出生的孩子擁有才能，我的父親母親\n用了各種方法」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_14.mp3
+msg,0,<size=30><outline width=2 color=black>「我也為了讓身體儘快成長，喝了很多藥」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_15.mp3
+msg,0,<size=30><outline width=2 color=black>「……我的，本應出生的妹妹也成為了<ruby>『黑森林的祈願』</ruby>」的受胎</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_16.mp3
+msg,0,<size=30><outline width=2 color=black>「對，妹妹……我的雙胞胎妹妹。但是當我們還在母親腹中時，\n由於<ruby>至高魔導書</ruby>」的發動，合二為一了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_17.mp3
+msg,0,<size=30><outline width=2 color=black>「以前，在日本……有一些人為了保護血脈相連的雙胞胎，\n以自己生命為代價發動具有強大力量的至高魔導書」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_18.mp3
+msg,0,<size=30><outline width=2 color=black>「聽聞了此事的父親和母親，想模仿他們。\n把雙胞胎之一變成魔導書的祭品，然後，使用剩下的一個……這樣，就能變強」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_19.mp3
+msg,0,<size=30><outline width=2 color=black>「然後他們就嘗試了……很順利」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_20.mp3
+msg,0,<size=30><outline width=2 color=black>「連名字都不曾擁有，甚至在不成人形的時候就被魔導書吞噬的我的妹妹，現在，正作為我的一部分，而存在著」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_21.mp3
+msg,0,<size=30><outline width=2 color=black>「我想要……證明我們兩個出生的意義。\n不然的話……也太悲哀了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_22.mp3
+msg,0,<size=30><outline width=2 color=black>「……？怎麼了，你看上去很傷心？\n發生了什麼……難過的事情嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102702/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102703/adv/sound/fav102703_03_23.mp3
+msg,0,<size=30><outline width=2 color=black>「沒有？是嗎……那就繼續前進吧？\n前面的路還很長」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

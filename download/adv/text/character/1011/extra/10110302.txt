@@ -1,0 +1,155 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——就快好了，你安靜坐著。\n我不需要幫忙，假借他人之手就沒有意義了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「今天就請你嘗嘗我的手藝吧。\n連材料和廚具都準備好了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「畢竟平時在幻夢境一直有你支援，\n在拉萊耶的生活上也受你不少照顧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不還禮我實在過意不去。\n放心吧，我不是第一次下廚」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「許是我出身的孤兒院是傭兵團直營的緣故，多是粗人，\n沒什麼人會做菜」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以經常由我在負責……\n敬請期待我的手藝吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_06.mp3
+clickwait,,,,,,,,,,,,
+slideinblack,1.0,right
+msg,0,
+name,
+endwait
+spriteoff,all,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/adv/image/black.jpg,0,,,,,,,,,,
+endwait
+slideoutblack,1.0,right
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,1,,,,,,,,,,
+endwait
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0.5,,,,,
+endwait
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「做好啦。來，請品嘗」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_07.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……怎麼樣？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_08.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「……微妙」,選項2　「難以言喻」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，那是當然呢，畢竟是我的得意之作……誒！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_09.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,150,240,0.65,0.7,0.2
+endwait
+msg,1,<size=30><outline width=2 color=black>「微，微妙，這，這怎麼可能……！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_10.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em1,0
+endwait
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:unique,kirie,0,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark12,em1,default,animation,0,150,210,0.65,0.7,0.2
+endwait
+msg,1,<size=30><outline width=2 color=black>「那個，你為什麼要閉上眼睛呢……？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_11.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark3,em2,default,animation,0,150,240,0.65,0.7,0.2
+endwait
+msg,1,<size=30><outline width=2 color=black>「突然抬頭望天做什麼……！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_12.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em2,0
+endwait
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark13,em3,default,animation,0,120,240,0.65,0.7,0.2
+endwait
+msg,1,<size=30><outline width=2 color=black>「你這溫柔的笑容又是什麼意思啊！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_13.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em3,0
+endif,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是莫名其妙。\n味道又沒有什麼奇怪的……嗯，嗯姆！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，這……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「難吃，呢。到底為什麼會變成這個味道……啊！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……看來是我搞錯調味料了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真沒用……我連一份簡單的料理都做不好嗎？\n以前也會出現這種不應該的失誤……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「同一設施的孩子們和傭兵時代的夥伴們，\n偶爾也會揶揄姬莉葉炸彈……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「偏偏在這種時候出現失誤，我……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不，不是我要狡辯，其實平時不這樣的！\n今天只是運氣不好……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不論如何，結果代表一切。\n對不起，我這就撤掉這道菜」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_22.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark3,em4,default,animation,0,150,240,0.65,0.7,0.2
+endwait
+msg,1,<size=30><outline width=2 color=black>「誒，你，你怎麼還吃啊！\n這麼難吃的東西……就不要逼著自己吃下去了！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_23.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em4,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「啊，一轉眼就剩丁點了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_24.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你啊，真是個老好人呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_09_25.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

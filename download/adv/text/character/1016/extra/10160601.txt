@@ -1,0 +1,95 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11190300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_01.mp3
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,1,<outline width=2 color=black>「我也差不多習慣被你的力量突然改變服裝了呢。\n這個，是學校的制服嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_02.mp3
+msg,1,<outline width=2 color=black>「然後，這裡……是體育館吧？\n居然還有以學校為藍本的領域……這裡還真是無奇不有呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_03.mp3
+msg,1,<outline width=2 color=black>「嗯，不過我記得現在這個季節，在日本應該是畢業季吧？\n這件制服給人的感覺，也像是日本的制服……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_04.mp3
+msg,1,<outline width=2 color=black>「不過……我是有聽過這類傳聞，說在日本都是這樣，\n不過日本的制服的裙子，是不是有點太短了？這設計好像有點太過大膽了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「我想進這所學校。」,選項2　「潘多莉西亞也更大膽一點吧！」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:unique,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_05.mp3
+msg,1,<outline width=2 color=black>「……你很明顯是衝著裙子短，才這樣說的對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_06.mp3
+msg,1,<outline width=2 color=black>「不過，我以前讀到的雜誌上好像有說，最近也有人\n是看制服可不可愛來選擇唸哪所學校的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_07.mp3
+msg,1,<outline width=2 color=black>「不對，那應該是指女生選擇學校的方式，\n你光這樣就想選這間學校，動機實在太不要臉了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_08.mp3
+msg,1,<outline width=2 color=black>「呃，不用，不需要。不如說，光是穿著這麼短的裙子，\n就已經有點踏到我的底線了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_09.mp3
+msg,1,<outline width=2 color=black>「這件制服比拉萊耶的制服用的布料更少，而且還輕飄飄的……\n感覺只要稍微動一下就會曝光了耶。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:anger,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_10.mp3
+msg,1,<outline width=2 color=black>「喂，你不要在這種時候繞到人家背後去啦……！\n太明顯了，你剛剛是想偷看對吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_11.mp3
+msg,1,<outline width=2 color=black>「咦……？你是對這件制服有興趣？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_12.mp3
+msg,1,<outline width=2 color=black>「啊，說的也是。對沒離開過拉萊耶的你來說，\n你是第一次看到學校制服嘛。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_13.mp3
+msg,1,<outline width=2 color=black>「有著像你這樣背景的人，會對學校或學校制服感到興趣，\n也是理所當然的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_14.mp3
+msg,1,<outline width=2 color=black>「不好意思，你總是表現得積極又開朗……所以，\n我才會忘了這回事……誤解了你。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_15.mp3
+msg,1,<outline width=2 color=black>「那麼，我們要不要一邊進行深潛，一邊瞭解校園生活呢？\n這也算不上是向你致歉，總之就由我來介紹校園生活吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_16.mp3
+msg,1,<outline width=2 color=black>「說是這麼說，但這裡好像是以日本的學校為藍本，\n我自己對日本的校園生活也只有一點皮毛知識而已……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_17.mp3
+msg,1,<outline width=2 color=black>「──好。我們就在幻夢境這虛幻之地，\n享受短暫的校園生活吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101606/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101606/adv/sound/fav101606_01_18.mp3
+msg,1,<outline width=2 color=black>「……開玩笑的啦，要是被別人知道我們在深潛時聊這種事，\n她們可能會生氣呢……呵呵！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,95 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「作為今天的探索，好像並沒有獲得什麼成功呢……我明白\n著急也沒有辦法，但是還是會很焦躁」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「吉澤爾小姐……還有，布麗吉特大小姐，我想把她們快點從海底\n解救出來……這種心情也是按捺不住的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是的。你說得我也明白。\n目前也只能一點一點地前進……可即便如此……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我接下來，想要進行一會兒魔術和格鬥的訓練」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「請不要露出那麼擔心的表情。現在已經想索過了，放輕鬆\n一點就好……而且，被你這麼盯著看總感覺不能平靜」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_05.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「你難道不再多休息一下嗎？」,選項2　「我擔心你會弄垮身體」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……再多休息，嗎」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然你是一片好意……但是我作為哈穀李維斯家族的人\n要時刻都要追求成為完美的從者」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_07.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我根本沒有放鬆的餘地……更重要的是，\n我已經忘記了，到底要怎麼樣才能放鬆了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_08.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真的謝謝你。我很高興你有這份心意」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_09.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……這麼點程度，對我來說不算苦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我從很小的時候開始……這種程度的事情就已經是家常便飯了。\n無論何時……都要做到完美，都要做到作為芭德薇家族中一個合格的從者，嗯」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_11.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「至今為止我還能回憶起……\n還不夠，要更好……這種程度還不行，這些都是祖父在我耳旁不斷重複著的話」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在哈穀李維斯家，祖父的話就是絕對的。\n祖父說對的就是對的，不對也是對的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當被命令以完美作為目標了，那就只能以這個為目標。\n除此之外的道路……都是不被允許的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不管是多麼細小的失敗，祖父都會嚴厲地斥責我，\n用鞭子鞭打我」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……對我來說，祖父的話就是絕對的……像現在這個時候也一樣，\n那個人的聲音在我的腦海之中，不斷地迴響」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以我才不斷地要求自己讓自己完美起來……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……對不起。說了些很無趣的話」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「耽誤你的時間了。我也該走了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼……今天辛苦你了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_10_20.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

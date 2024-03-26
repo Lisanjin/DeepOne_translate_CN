@@ -1,0 +1,493 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11210300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm060.mp3,0,
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-200,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「―――――――、――……、…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+
+
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_b,body:anger,tabasa,300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+spriteatlas,download/character/100907/adv/atlas/stand_b,body:anger,ilyna,-300,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「小心，米露瓦混進敵人裡面之後，人不見了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_b,body:anger,tabasa,300,-120,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,0,<outline width=2 color=black>「啊──受不了，她真的很會鑽耶……！\n因為她身體很小，所以她要是混進敵人裡面，就會很難找……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101651/adv/atlas/stand_a,body:sad,patrisia,-300,-150,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,0,<outline width=2 color=black>「話說回來，為什麼米露瓦要跟我們作對呢……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「因為對米露瓦來說，乖孩子就是這種角色。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102706/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,0,<outline width=2 color=black>「乖孩子和壞孩子的定義……米露瓦剛剛解釋過了。\n那大概就是米露瓦小時候的回憶吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102706/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「受到這個領域的影響後，我覺得自己開始回想起小時候的事情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,patrisia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_b,body:anger,tabasa,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,0,<outline width=2 color=black>「哼。我就回想不起那種事情哦。\n妳們是不是因為太大意，才受到了奇怪的影響？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva2,0,0,0,0,,,,
+imgconf,milva2,milva1,0,150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「真的是這樣嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+
+
+bg,download/bg/bg_11210300.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,200,-40,0.5,0.5,,,,
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「妳只是矇上眼睛，故意讓自己回想不起來，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,0,<outline width=2 color=black>「──！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,tabasa,300_-120,0.3,0
+anm,move,milva,-300_-40,0.3,0
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,-100,0.5,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「呵呵，妳又突然揍過來了，好過分哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,0,<outline width=2 color=black>「這都要怪妳突然從我背後跑出來胡說八道啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「哎呀，我還以為妳是裝傻被我戳破，所以惱羞成怒了呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+msg,0,<outline width=2 color=black>「對妳來說，家人是什麼呢？\n妳是壞孩子？還是乖孩子？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,0,<outline width=2 color=black>「――…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,endwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>那時候，家人都在排擠我。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>不只是家族繼承至今的魔法，連魔法本身都無法施展的我，\n是沒用的存在。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>然後，我構築了只有自己能使用的魔法，並且超越了家族的傳統魔法之後，\n家族又將我看做否定族人累積至今心血的可恨存在，對我視若無睹。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>在我真的很小的時候，也就是連普通魔法都無法施展這件事被發覺之前，\n我也許獲得過應有的愛情吧。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>然而，無論關係怎麼惡化下去，年幼時受到的關愛依舊會持續留在心底這種事──\n只可能發生在童話故事裡面。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>我都記得。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>他們曾經說過不要我這種小孩。他們曾經說過要是沒把我生下來就好了。\n那些累積到數也數不清的咒罵，我都記得。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>最令我無法原諒的，就是罵唯一愛著我、認同我的哥哥是瑕疵品時，\n那些傢伙嘲笑、鄙視的眼神。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>我絕對不可能原諒他們。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>所以，我把事情做得毫無轉圜餘地可言。我展現成果，獲得成功，\n憑著自己一個人的榮譽，將川寧家的歷史通通掩蓋。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>我要讓世人知道，那些傢伙一直以來做出的醜惡歧視，完全沒有意義。\n我至今尚未拋棄川寧這個姓氏的原因，就這麼簡單。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait
+
+
+bg,download/bg/bg_11210300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm060.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,0,<outline width=2 color=black>「妳問我是壞孩子還是乖孩子？\n這當然不用考慮啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「對不認同我和哥哥的傢伙來說，我可是壞到不行的壞孩子呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:surprise,milva,-300,-40,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「呃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Dark,em1,default,animation,0,-300,0,0.8,1,0
+playse,/download/sound/se/se_023.mp3
+endwait
+wait,0.2
+endwait,,,,,,,,,,,
+anm,move,milva,-1000_-40,0.3,0
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-100,-10,0.5,0.5,,,,
+anm,move,milva,-300_-40,0.5,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>呵呵，塔芭莎的內心一點都沒有動搖呢。\n堅強到能承認自己是壞孩子的話……就一點都不『壞孩子』哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102706/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,0,<outline width=2 color=black>「……米露瓦，妳到底想做什麼？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「我不是說了嗎？我是乖孩子呀。\n然後，為了讓我當乖孩子，就必須要有壞孩子。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100907/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「妳的理論讓人難以理解。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「呵呵……這對我來說是很平常的事哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:unique,milva,-300,-40,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嗯──不過……對你們來說，我才是壞孩子吧？\n既然這樣，那你們會怎麼對待壞孩子呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100907/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「總之，在妳肯反省之前，我一直打妳的屁股怎麼樣？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「哎呀，這樣子……感覺很棒耶！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,0,<outline width=2 color=black>「妳還是這麼變態呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「好過分哦，我內心受傷了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,0,<outline width=2 color=black>「妳就算內心受傷了，還是會覺得很開心吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「呵呵……答對了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102706/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,0,<outline width=2 color=black>「我勸妳不要再找壞孩子了。\n妳只是在被回憶牽著鼻子走而已。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「我現在的狀態，的確不是很正常。\n被回憶牽著鼻子走……沒錯，就跟妳說得一樣。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,0,<outline width=2 color=black>「如果妳有自覺，那就老實一──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「不過，我拒絕在這裡收手哦。\n因為，我還有王牌沒打呀……對不對，潘多莉西亞？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101651/adv/atlas/stand_a,body:surprise,patrisia,300,-150,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,0,<outline width=2 color=black>「誒？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「因為這個領域帶給妳的影響跟我一樣深入，\n都在身體上產生了變化。所以，妳一定跟埃爾塔和塔芭莎不一樣。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+msg,0,<outline width=2 color=black>「其實，妳應該會像我一樣被小時候的回憶牽著鼻子走，\n但是，妳卻拚命忍耐住了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101352/adv/atlas/stand_a,body:normal,milva,-300,-40,0.5,0,,,,
+msg,0,<outline width=2 color=black>「欸……妳是壞孩子？還是乖孩子？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,403 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,color_0_0_0,0,255,,,,
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>在我還小的時候，哥哥曾經帶著我去過某個廢墟探險。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>……準確來說是哥哥強行拉著我去的。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>據說那裏曾經是某個貴族的宅邸，整棟宅邸的牆壁上都爬滿了苔蘚。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>當時哥哥沒聽我的勸阻，翻牆爬了進去，而我害怕一個人待在外面，只好跟在他身後。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>但害怕被哥哥丟下的不安的焦躁讓我爬上牆頭的時候腳下一滑，掉了下去。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>當我回過神來的時候已經壓在了哥哥身上，\n他的左手也因為接住我的衝擊而無力地垂了下來。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>我不禁問他為什麼要這樣做，他卻只說了一句話——</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+name,<size=27><outline width=2 color=black>金・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我怎麼知道——是我的身子自己動起來的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+stopbgm,0.5
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Slash3_Red,em4,default,animation,0,0,200,1.3,1,0
+playse,/download/sound/se/se_037.mp3
+endwait
+wait,1
+endwait
+bg,download/bg/bg_10050100.jpg,1,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+mask,mask1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,mask,0,0,0,0
+imgconf,mask,mask1,0,0,,,0,1,1,0.5
+mask,dana1,0,0,1280,250,0,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,0,0,0,,,,,,,
+imgconf,dana,dana1,0,-700,,,0,1.5,1.5,0.5,,,,
+endwait,,,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「………………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+sprite,download/monster/20040106/adv/image/20040106.png,enemy3,-30,-170,1.35,0.5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――、………………」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_025.mp3
+clickwait
+spriteoff,enemy3,1,,
+endwait
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:anger,pato,-300,-200,0.5,0.5,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:surprise,dana,300,-120,0.5,0.5,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………哎呀？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:anger,pato,-300,-200,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「達納，你沒事吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:surprise,dana,300,-120,0.5,0,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，嗯……我沒事，但為什麼虛像突然被擊敗了」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,pato,0,
+endwait
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bri,-300,-190,0.5,0.5,,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「武器都不拿就沖向虛像可不是個好習慣，達納」</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:surprise,dana,300,-120,0.5,0,,,
+anm,tint,bri,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「布裏吉特……？難道這個虛像是」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bri,-300,-190,0.5,0,,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我只是做了該做的事而已」</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:normal,dana,300,-120,0.5,0,,,
+anm,tint,bri,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……謝謝你救了我」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「潘多莉西亞你也是，你們沒事就好」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bri,-300,-190,0.5,0,,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……就算是為了保護潘多莉西亞，你也不能傻到用身體硬擋吧？」</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,300,-120,0.5,0,,,
+anm,tint,bri,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那是因為……事出太突然了……」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,bri,0
+endwait
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:sad,pato,-300,-200,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼，達納……你為什麼要保護我，如果布裏吉特沒有救你的話，你可能就……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:smile,dana,300,-120,0.5,0,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那還用問嗎」</outline></size>,,,,,,,,,
+clickwait
+stopbgm,0.5
+name,
+msg,0,
+spriteoff,all,0.5
+bg,color_0_0_0,1,255,,,,
+endwait
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是我的身子自己動起來的」</outline></size>,,,,,,,,,
+clickwait
+name,
+msg,0,
+bg,download/bg/bg_10050100.jpg,1,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm031.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:smile,dana,300,-120,0.5,0.5,,,
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:surprise,pato,-300,-200,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:normal,dana,300,-120,0.5,0,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且幫助自己的同伴需要理由嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:smile,dana,300,-120,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「——雖然說得這麼好聽，但其實這些都是我從金那學來的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:normal,dana,300,-120,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「是他們教會了我同伴有多重要，所以我也不會輕易放棄身為同伴的你」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:surprise,pato,-300,-200,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「達納……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,all,0
+endwait,
+sprite,download/monster/20040106/adv/image/20040106.png,enemy1,370,-170,1.35,0.5.
+sprite,download/monster/20040106/adv/image/20040106.png,enemy2,-430,-170,1.35,0.5
+sprite,download/monster/20040106/adv/image/20040106.png,enemy3,-30,-170,1.35,0.5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――――」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait
+spriteoff,all,0
+endwait,
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:normal,pato,-300,-200,0.5,0.5,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-120,0.5,0.5,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這次是從正面來了……潘多莉西亞，你還能行嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:normal,pato,-300,-200,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「能行，為了感謝你剛才幫了我，這次輪到我來幫你了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,dana,0,
+endwait,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bri,300,-190,0.5,0.5,,,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我先提醒一下你們，可別再像剛才那樣用身體擋攻擊了」</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:normal,pato,-300,-200,0.5,0,,,,
+anm,tint,bri,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好的，剛才謝謝你的幫助」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:anger,pato,-300,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「話說達納，雖然現在可能不是說這些的時候……但有件事我很想知道」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,bri,0
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-120,0.5,0.5,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什、什麼……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:anger,pato,-300,-200,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是關於我哥哥的事，那個……達納你喜歡我哥哥嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,pato,0
+endwait
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bri,-300,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我並不瞭解那個叫金的人，而且我對過去的事也沒什麼興趣」</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,bri,-300,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………但你們當時是三角關係嗎？」</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:surprise,dana,300,-120,0.5,0,,,
+anm,tint,bri,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……………………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-120,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「……噗」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:smile,dana,300,-120,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵呵……哈，哈哈哈哈……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,bri,0
+endwait
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:surprise,pato,-300,-200,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「達，達納……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,pato,0,
+endwait,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:surprise,bri,-300,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這是想用笑來掩飾過去嗎……」</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:smile,dana,300,-120,0.5,0,,,
+anm,tint,bri,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不是的，那個……雖然不知道你們在期待著什麼，\n但你們居然以為我喜歡金……呵呵呵，這玩笑真有意思」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，居然連布裏吉特都對這個這麼感興趣……噗，啊哈，啊哈哈……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,bri,0
+endwait
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:sad,pato,-300,-200,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但從達納你之前說的來看，你似乎對哥哥有好感……所以……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:smile,dana,300,-120,0.5,0,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我確實很尊敬他……但我從沒對他產生過戀愛感情」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:sad,dana,300,-120,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「而且一般來說沒有女生會喜歡上見面就摸別人腦袋和屁股的男性的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:sad,pato,-300,-200,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，那個……他也對你那樣做了啊……真是抱歉」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,pato,0
+endwait
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bri,-300,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，那個叫金的男人在你心中是個什麼樣的存在？」</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-120,0.5,0,,,
+anm,tint,bri,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我想想……他是個開朗可靠的同伴，並且教會了我很多東西……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以硬要說的話，可能是類似哥哥一樣的存在吧……\n不過這樣說的話，可能會讓潘多莉西亞有些不舒服……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,bri,0
+endwait
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:sad,pato,-300,-200,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不……不會的，而且怎麼說呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在知道你是這樣看待哥哥之後，我感覺我們之間的關係更進了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:normal,pato,-300,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那個……如果可以的話今晚能跟我去喝幾杯嗎？我還想跟你多聊聊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-120,0.5,0,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是嗎……其實我也有很多想跟你說，和必須跟你說的事」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:smile,dana,300,-120,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「所以可能會聊到很晚……這樣也沒問題嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:smile,pato,-300,-200,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，當然」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,all,0,,
+endwait
+sprite,download/monster/20040106/adv/image/20040106.png,enemy1,370,-170,1.35,0.5.
+sprite,download/monster/20040106/adv/image/20040106.png,enemy2,-430,-170,1.35,0.5
+sprite,download/monster/20040106/adv/image/20040106.png,enemy3,-30,-170,1.35,0.5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――――」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bri,0,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然你們想好了今晚的計畫是件好事，\n但你們應該也知道為此必須先把眼前的問題解決吧」</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,
+endwait
+sprite,download/monster/20040106/adv/image/20040106.png,enemy1,370,-170,1.35,0.5.
+sprite,download/monster/20040106/adv/image/20040106.png,enemy2,-430,-170,1.35,0.5
+sprite,download/monster/20040106/adv/image/20040106.png,enemy3,-30,-170,1.35,0.5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――――」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait
+spriteoff,all,0
+endwait
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:smile,pato,-300,-200,0.5,0.5,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:smile,dana,300,-120,0.5,0.5,,,
+anm,tint,pato,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那為了我們今晚的小酌，速戰速決吧，潘多莉西亞」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_b,body:smile,pato,-300,-200,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潘多莉西亞・波特曼</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好的……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0.5
+stopbgm,0.5
+endwait
+bg,color_0_0_0,1,255,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,107 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「和你在一起的時間，越來越多了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……有一件事，一直困擾著我\n我可以和你談談嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大家，都想得到納克特原書，回到外面的世界。\n……在他們之中，只有你，不了解外面的世界」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:shy,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……儘管如此，你為什麼還要以一個陌生的地方為目標呢？\n冒著這麼大的風險……你對現在，有這麼的大不滿嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「想知道什麼是自由」,選項2　「為了大家」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「自由……嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「對於已經接受了……只能生活在幻夢境中，並且已經放棄的我來說\n真的是完全無法想像呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你，在被困在拉萊耶的期間裏……\n也像這樣不停地、不停地在追尋著自由嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊……你是，多麼的堅強啊。你有著不懼黑暗\n即便受傷也能不斷前行的勇氣啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:surprise,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……只是因為大家想出去，才幫忙的嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「為了別人……著想，甚至不惜讓自己受傷\n你真的很溫柔啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你，也會這麼在乎我嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「是嘛……嘻嘻、我很開心哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0,,,
+endwait
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……我很擔心」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「離開拉萊耶後，大家就會走上各自的道路了吧。\n那時……你能找到自己應該前進的方向嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「希望你不會變成孤單一人……\n也希望這只是我多餘的擔心……因為你，和我不一樣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「幻夢境的居民是無法出去外面，無法在現世生活\n所以不再追求更多，一直止步於此」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我能像現在這樣，走出拉萊耶，也是多虧了你\n這已經是奇跡了……但我不打算去嘗試觸碰，在此之上的奇跡」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我覺得即便不隨心而動，做一只籠中之鳥，也並非是一件壞事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……有了你的幫助，或許\n不僅僅是拉萊耶，我甚至可以走向外面的世界」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……即使如此，你也別牽住我的手哦。\n像我這種女人，只會變成你的累贅……說到底我連人都算不上」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你作為一個人類，一定能走上康莊大道的。\n請去追尋那美好的未來。你這麼做，我才會更高興」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……只是有點、寂寞啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102303/adv/sound/fav102303_09_22.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

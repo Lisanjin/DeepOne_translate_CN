@@ -1,0 +1,209 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040200.jpg,0,,,,,,,,
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101,robo3,0,-100,1.35,0.5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,
+spine,download/adv/spine/Slash2_Blue,em2,default,animation,0,-100,0,1,1,0
+playse,/download/sound/se/se_037.mp3
+wait,0.6
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+shake,0.2,5,20,20,,
+spriteoff,all,1
+playse,/download/sound/se/se_025.mp3
+wait,1.5
+endwait
+stopbgm,0.5
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_b,body:normal,yosi,-310,-200,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——這樣一來這附近的敵人就都解決了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yosi,-310,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你們沒受傷吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……我沒事，因為芳乃……保護了我們」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:smile,yosi,-310,-200,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是嗎，那就好……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+mask,bg1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,frau,0,0,0,0,,,,
+imgconf,frau,frau1,0,-1000,,,0,1.5,1.5,0.5
+endwait,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗚…………」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+bg,color_0_0_0,1,255,,,,
+endwait,,
+wait,0.2
+endwait
+msg,1,<size=30><outline width=2 color=black>身體感覺好重，使不上力……看來是連日想索的影響顯現出來了。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>但即便如此，我也不能示弱，因為現在能保護他們的人只有我。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>我不能再重蹈覆轍。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>曾經的我只會在遠處看著自己的同伴們身陷危險，\n但我是絕對不會再讓那種事情發生了……</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+name,
+msg,0,
+bg,download/bg/bg_10040200.jpg,1,,,,,,,,
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:anger,yosi,-310,-200,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——我必須保護好他們」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「芳乃」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:anger,yosi,-310,-200,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……？怎麼了，芙勞」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你的表情……很嚇人……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yosi,-310,-200,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……抱歉嚇到你了，我好像有些太緊張了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在能保護你們的人只有我一個……這樣一想就讓我不禁緊繃精神」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……真的……只是這樣而已嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yosi,-310,-200,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯，只是這樣而已，好了，一直站在這也不是個事，趕緊走吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……芳乃……這邊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yosi,-310,-200,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「芙勞……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「亞紗花和米婭姆……在那邊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:surprise,yosi,-310,-200,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼……？你知道她們在哪嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……大概能感覺到」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yosi,-310,-200,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是嗎，畢竟你能感受到他人的感情，擁有神奇的能力……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我覺得可以相信芙勞說的往那邊走……你覺得呢？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+select,選項1　「芳乃你說了算」,選項2　「我也相信芙勞」
+if,select_===_1,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那就相信芙勞的直覺吧，能麻煩你指路嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……交給我吧……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0,
+endwait,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我……會加油的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yosi,-310,-200,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那我走前面，你只要告訴我該往哪走就行了，絕對不能太靠前」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,yosi,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

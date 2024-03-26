@@ -1,0 +1,100 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話又說回來……我居然，會被關進海底\n這種事，真是難以想像呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？\n你問那是什麼感受？為什麼這麼問……啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「畢竟你除了被關進拉萊耶就沒有別的記憶了，\n想像不出來陽光是什麼感覺呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「聽起來……有點寂寞呢……\n抱歉啊，提了這種事情。我太不小心了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「別介意」,選項2　「不如說我該謝謝你才對」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「謝謝你能這麼說……\n但是，對此我也必須要反省才對」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……雖然稱不上是道歉，等逃出這拉萊耶之後，\n我就帶你回有著陽光的地面上去感受陽光吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼要謝我……因為逃出去的動力變得更強了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……原來如此，你是這麼想的嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻，你還真是會向前看呢。那麼，雖然稱不上是道歉，我會把你帶回有陽光的地面上的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_09.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？回到地面後要做什麼……你是問我的打算嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「作為參考……這樣啊，也對，你對地面的世界一無所知呢。\n其實我也沒想好到時候要做什麼……不知道，我能不能勝任呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我從記事起就在洛夫克拉夫特財團的設施裏生活著，\n一直都在隨波逐流……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以成為魔術士也好，成為想索者也好，都不過是隨大流」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「出於自身強烈的渴望所選擇的道路……現在想想，\n可能一次都沒有過吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我覺得，大概回到地面後也不會有什麼變化。\n所以說……對吧，沒什麼參考價值吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是…………如果能離開這裏……在這場戰爭中，\n說不定我也會有些變化吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……好想做出改變，這是我的心聲。但是，所謂改變到底該怎麼做才好，老實說\n我一點頭緒都沒有……和尋求改變的心情一樣的不安也在增長……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼，你說你想幫我？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻，明明連自己想做什麼都還沒找到\n還要管別人的閒事，你心腸還真好啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是，這樣也好。如果到時候你找到了自己的目標，\n到那時……說不定我會找你幫忙」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_02_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1,,,,,,,,,,
+endwait,,,,,,,,,,,

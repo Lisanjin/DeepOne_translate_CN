@@ -1,0 +1,135 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102207/adv/sound/fav102207_01_01.mp3
+name,<outline width=2 color=black>唯</outline>,
+msg,1,<outline width=2 color=black>「用汝的能力來改變吾的服裝……不過，這身衣服是怎麼回事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_02.mp3
+msg,1,<outline width=2 color=black>「明顯不是日式的……是大陸的服裝嗎？\n幾乎是衣不蔽體的……沒想到汝會讓吾穿得如此不知廉恥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:surprise,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_03.mp3
+msg,1,<outline width=2 color=black>「……旗袍？這是這身衣服的名字嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_04.mp3
+msg,1,<outline width=2 color=black>「唔……沒聽說過。\n這身衣服也是反映了汝那控制不住的慾望的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_05.mp3
+msg,1,<outline width=2 color=black>「如果不是……\n難道在現世，這樣的衣服非常常見嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_06.mp3
+msg,1,<outline width=2 color=black>「這種只用一點點的布遮擋住身體的服裝在市井中流傳，\n簡直是豈有此理……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:unique,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_07.mp3
+msg,1,<outline width=2 color=black>「汝這欲言又止的表情是怎麼回事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_08.mp3
+msg,1,<outline width=2 color=black>「和吾平常的打扮沒什麼不同？胡言亂語。\n看，和平常相比——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,550,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,vi1,0,0,1280,550,0.5,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi2,0,0,0,0,,,,
+imgconf,vi2,vi1,-800,-200,,,0,1,1,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_09.mp3
+msg,1,<outline width=2 color=black>「布料很少，所以尾巴能比平常活動得更加輕鬆。\n或許這點是這種衣服唯一的優勢吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102207/adv/sound/fav102207_01_10.mp3
+name,<outline width=2 color=black>唯</outline>,
+msg,1,<outline width=2 color=black>「話說回來，汝怎麼會知道有這種衣服？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_11.mp3
+msg,1,<outline width=2 color=black>「汝不是被囚禁在拉萊耶內，對外面的世界一無所知嗎？\n那麼，汝應該不會知道有這種衣服才是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「角色扮演……」,選項2　「……興趣」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_12.mp3
+msg,1,<outline width=2 color=black>「角色扮演……？\n啊，是什麼來著……是穿著特殊的服裝行淫亂之事對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_13.mp3
+msg,1,<outline width=2 color=black>「……真是的。\n跟汝打著交道，就連吾都學會了這麼無聊的詞彙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:unique,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_14.mp3
+msg,1,<outline width=2 color=black>「還有，先等一等。\n也就是說，這種衣服是做這種事時穿的嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_15.mp3
+msg,1,<outline width=2 color=black>「也就是說，汝讓吾穿上它是……汝真是毫無節操啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:surprise,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_16.mp3
+msg,1,<outline width=2 color=black>「興趣……難道穿這身衣服是汝的興趣……？\n不不不，這是汝的個人自由……唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_17.mp3
+msg,1,<outline width=2 color=black>「——開玩笑的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_18.mp3
+msg,1,<outline width=2 color=black>「汝的意思應該是，\n視奸穿著這種衣服的女生才是汝的興趣吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:unique,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_19.mp3
+msg,1,<outline width=2 color=black>「哼，汝可不能否定。\n因為吾一換衣服，汝看吾的眼神就變得更加火熱了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_20.mp3
+msg,1,<outline width=2 color=black>「可是這樣一來就有點麻煩了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_21.mp3
+msg,1,<outline width=2 color=black>「如果再這麼穿著這種叫什麼旗袍的衣服，\n汝可能會無法忍受地襲擊吾的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_22.mp3
+msg,1,<outline width=2 color=black>「——喂，汝為何要動搖。\n吾只是想戲弄戲弄汝而已，汝這種態度會讓吾懷疑汝真的會這麼做的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_23.mp3
+msg,1,<outline width=2 color=black>「如果汝真的忍不住的話，\n吾也不是不能平息汝的衝動……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_24.mp3
+msg,1,<outline width=2 color=black>「——不過若是再放縱吾一這麼說完就滿懷期待的汝，\n汝會成為控制不住慾望的猿猴的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102207/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102207/adv/sound/fav102207_01_25.mp3
+msg,1,<outline width=2 color=black>「不過……說到無法控制想渴求溫暖的慾望，\n我們或許是彼此彼此吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

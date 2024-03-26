@@ -1,0 +1,195 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,255
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait
+sprite,download/monster/20060101/adv/image/20060101.png,golem2,-500,-125,1,0.5,,,,,,,,,,
+sprite,download/monster/20060101/adv/image/20060101.png,golem3,500,-125,1,0.5,,,,,,,,,,
+sprite,download/monster/20060101/adv/image/20060101.png,golem,0,-125,1,0.5,,,,,,,,,,
+endwait
+name,<size=27><outline width=2 color=black>魔像</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「―――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait
+spriteoff,all,0.5
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「都給我……倒下吧……！」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,tabasa,0.5
+endwait
+sprite,download/monster/20060101/adv/image/20060101.png,golem2,-500,-125,1,0.5,,,,,,,,,,
+sprite,download/monster/20060101/adv/image/20060101.png,golem3,500,-125,1,0.5,,,,,,,,,,
+sprite,download/monster/20060101/adv/image/20060101.png,golem,0,-125,1,0.5,,,,,,,,,,
+endwait
+spine,download/adv/spine/Dark,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_039.mp3
+shake,0.1,6,100,100
+wait,0.5
+flash,255,255,255,2,0.2,0
+endwait
+anm,fade,golem2,0,1,1
+anm,fade,golem3,0,1,1
+anm,fade,golem,0,1,1
+playse,/download/sound/se/se_025.mp3
+spineoff,em1,1
+endwait
+stopbgm,0.5
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——呼」</outline></size>,,,,,,,,,
+clickwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「魔像應該都解決了……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:smile,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「兄長，謝謝你幫助塔巴莎……嗯，我沒事。\n多虧了兄長，塔巴莎沒有受到一絲傷害」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，看來這個屋子……\n只是儲存了一些魔像而已」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「……其他人到底消失到哪兒去了呢。\n為什麼只丟下我一個人……？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……咦？兄長，你在說什麼呢。塔巴莎並沒有感到寂寞啊」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:smile,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我只要有兄長陪在身邊就夠了」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「至今為止是那樣，今後也會一直如是，那樣就足夠了……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……境門？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「兄長……你讓我到境門去？但是，為什麼要去那種地方……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:smile,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……不，既然是兄長說的話，那應該是有什麼理由吧。\n我明白了。那我們就走吧，兄長」</outline></size>,,,,,,,,,
+clickwait
+slideinblack,1,right
+endwait
+name,
+msg,0,
+spriteoff,tabasa,0
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,1,left
+endwait
+stopbgm,0.5
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait
+bg,download/bg/bg_10010200.jpg,1.0,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0,
+endwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:anger,dana,-1600,-120,0.5,0.5,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,gizel,-1000,-120,0.5,0.5,,,,
+anm,move,gizel,300_-120,1.5,1
+anm,move,dana,-300_-120,1.5,1
+playse,/download/sound/se/se_018.mp3
+endwait
+anm,tint,dana,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這……魔像被破壞了……\n而且，這扇門，看起來像是被巨大的鐵塊砸癟了一樣……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,gizel,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「到底是發生了什麼……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:anger,dana,-300,-120,0.5,0,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然不清楚詳情，但肯定是發生了什麼異常情況。\n說不定塔芭莎也被捲進去了……我們趕緊去找她吧！」</outline></size>,,,,,,,,,
+clickwait
+anm,move,gizel,1600_-120,1,1
+anm,move,dana,1000_-120,1,1
+playse,/download/sound/se/se_018.mp3
+endwait
+stopbgm,0.5
+endwait
+slideinblack,1,right
+endwait
+name,
+msg,0,
+spriteoff,all,0
+endwait
+bgoff,0.0,,,,,,,,,,
+sprite,download/bg/bg_10010417.jpg,gate,0,0,1.2,0,,,,,,,,,
+endwait,,,,,,,,,,,
+slideoutblack,1,left
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「兄長，我按你說的來到境門了，\n但這裏到底有什麼？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「咦……境門處於啟動狀態……？\n也就是說，有人正在深潛嗎……？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，在沒有操作員的情況下進入幻夢境的話，\n要怎樣讓回歸術式相互發動……？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……？這是什麼……感覺境門的術式和往常不一樣……\n有人修改了它？到底是為什麼……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——啊啊啊，真是的，搞不懂對方為什麼要改變術式！\n搞什麼啊，把我當成什麼人了，真狂妄！」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「咦……兄長？你說深潛……是要我進入幻夢境嗎？\n可是，都不知道進去後能不能回來……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……如果現實世界沒有操作境門的人，\n那就沒辦法從幻夢境回到拉萊耶哦？」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「即便如此，兄長也要讓塔芭莎進去嗎？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「……我明白了。\n既然是兄長說的話，那一定是有理由的」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:smile,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「再說，兄長也不可能對塔巴莎做出過分的事」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那我們就走吧，兄長」</outline></size>,,,,,,,,,
+clickwait
+anm,scale,gate,1.4_1.4,1,0,,,,,,,,,,,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……關於，到底發生了什麼。\n進去之後，能找到這個答案嗎……」</outline></size>,,,,,,,,,
+clickwait
+playse,/download/sound/se/se_015.mp3
+flash,255,255,255,6,0.5,0,,,,,,,,,,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……被境門吸了進去……！」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……兄長，請在塔巴莎的身邊……守護著塔巴莎吧……！」</outline></size>,,,,,,,,,
+clickwait
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

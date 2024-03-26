@@ -1,0 +1,137 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11070300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_01.mp3
+name,<outline width=2 color=black>埃爾塔・塔拉絲庫</outline>,
+msg,1,<outline width=2 color=black>「看……團子和芒草都準備好了……完美。\n這樣就能賞月了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_02.mp3
+msg,1,<outline width=2 color=black>「那麼就快點來嘗嘗團子吧……我開動了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,-40,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_03.mp3
+msg,1,<outline width=2 color=black>「啊嗚……嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_04.mp3
+msg,1,<outline width=2 color=black>「微微有點甜……這是，上等的甘甜綿香？好好吃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_05.mp3
+msg,1,<outline width=2 color=black>「但還略顯不足……\n感覺它還能再更好吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_06.mp3
+msg,1,<outline width=2 color=black>「……！我想到點子了。這一定是天啟」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_07.mp3
+msg,1,<outline width=2 color=black>「如果給這個團子淋上巧克力的話，肯定會更好吃的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_08.mp3
+msg,1,<outline width=2 color=black>「要是能把它商品化，肯定會在全世界大受歡迎，一下就能成為大富翁……家族的復興，\n也有希望了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_09.mp3
+msg,1,<outline width=2 color=black>「真不愧是我，好可怕的想像力……這個主意太棒了。你也這麼認為吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「對」,選項2　「不好說吧？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_10.mp3
+msg,1,<outline width=2 color=black>「太好了……得到權威人士的保證了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_11.mp3
+msg,1,<outline width=2 color=black>「這樣就有自信去做巧克力團子了。\n謝謝你……我會努力的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_12.mp3
+msg,1,<outline width=2 color=black>「做任何事，最重要的是敢於挑戰。如果害怕失敗的話，\n是做不成什麼事情的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_13.mp3
+msg,1,<outline width=2 color=black>「——這是米露瓦借我的漫畫中的出場人物說的臺詞，\n感覺很帥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_14.mp3
+msg,1,<outline width=2 color=black>「回到拉萊耶之後，我就立刻去試著做一做。\n如果你能替我嘗味道，告訴我感想的話我會很高興的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_15.mp3
+msg,1,<outline width=2 color=black>「啊，但是……我不知道怎麼做團子。\n不知道有沒有誰可以教我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_16.mp3
+msg,1,<outline width=2 color=black>「我去問問吉澤爾吧。她又溫柔又全能。\n肯定會教我美味團子的製作方法的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_17.mp3
+msg,1,<outline width=2 color=black>「等我回到拉萊耶之後，立刻就讓她教我——誒？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_18.mp3
+msg,1,<outline width=2 color=black>「……？為什麼要這麼用力地搖頭？\n不要問吉澤爾為好？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_19.mp3
+msg,1,<outline width=2 color=black>「那我去問布麗吉特吧。\n她是吉澤爾的姐姐，肯定和吉澤爾一樣厲害」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_20.mp3
+msg,1,<outline width=2 color=black>「誒，布麗吉特也不行……？那去請教誰呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_21.mp3
+msg,1,<outline width=2 color=black>「啊……亞紗花很擅長料理，也經常做點心，\n做團子也應該很擅長吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_22.mp3
+msg,1,<outline width=2 color=black>「你也覺得選亞紗花比較讓人放心？是嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_23.mp3
+msg,1,<outline width=2 color=black>「那我去和亞紗花商量一下。絕對要做出好吃的團子……\n你就期待著吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_24.mp3
+msg,1,<outline width=2 color=black>「話說回來，為什麼吉澤爾和布麗吉特不行啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_25.mp3
+msg,1,<outline width=2 color=black>「……怎麼了，突然按著肚子，臉色好蒼白……身體不舒服嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102704/adv/sound/fav102704_02_26.mp3
+msg,1,<outline width=2 color=black>「誒……心理陰影？怎麼回事……我不太懂」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

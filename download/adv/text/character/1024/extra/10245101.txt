@@ -1,0 +1,150 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,xeno1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal:hige,xeno2,0,0,0,0,,,,
+imgconf,xeno2,xeno1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_01.mp3
+name,<outline width=2 color=black>澤乃・娜莎莉</outline>,
+msg,1,<outline width=2 color=black>「好了，服裝就是這樣的吧。\n那，走吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,1,255
+endwait
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:surprise:hige,xeno,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102451/adv/sound/fav102451_01_02.mp3
+name,<outline width=2 color=black>澤乃・娜莎莉</outline>,
+msg,1,<outline width=2 color=black>「什麼……，你從什麼時候開始在那裡！\n難道你在跟蹤我……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「澤乃……？」,選項2　「誰……？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:surprise:hige,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_03.mp3
+msg,1,<outline width=2 color=black>「啊，不對……等等，不對。\n我才不是叫澤乃！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal:hige,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_04.mp3
+msg,1,<outline width=2 color=black>「作為證據，看看這件衣服和白色的大袋子……。\n怎麼看都是聖誕老人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal:hige,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_05.mp3
+msg,1,<outline width=2 color=black>「我只是來送禮物的，所以請放我走。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:surprise:hige,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_06.mp3
+msg,1,<outline width=2 color=black>「欸，啊……難道你沒發現嗎……是嗎……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal:hige,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_07.mp3
+msg,1,<outline width=2 color=black>「嗯，我是聖誕老人。聽說在拉萊耶也有在\n過去的一年裡，一直是個好孩子的人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal:hige,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_08.mp3
+msg,1,<outline width=2 color=black>「今天我是來偷偷送禮物的，\n所以我在這裡的事情要對大家保密。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal:hige,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_09.mp3
+msg,1,<outline width=2 color=black>「我得趕緊去找熟睡的孩子們。那麼——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:sad:hige,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_10.mp3
+msg,1,<outline width=2 color=black>「嗯……假鬍子在鼻子……嗯，啊……啊，\n不行……呃，噴嚏，啊啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,xeno1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:surprise,xeno2,0,0,0,0,,,,
+imgconf,xeno2,xeno1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_11.mp3
+msg,1,<outline width=2 color=black>「……啾！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:surprise,xeno,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102451/adv/sound/fav102451_01_12.mp3
+msg,1,<outline width=2 color=black>「什麼！？糟了，假鬍子飛走了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:shy,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_13.mp3
+msg,1,<outline width=2 color=black>「嗯……可惡，變成這樣我也沒法騙你了。\n……對的，是我。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_14.mp3
+msg,1,<outline width=2 color=black>「你是不是覺得我打扮成聖誕老人不像？\n我自己也知道這一點。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_15.mp3
+msg,1,<outline width=2 color=black>「但這是有充分理由的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_16.mp3
+msg,1,<outline width=2 color=black>「最近，聽埃爾塔和卡蒂婭在\n大廳裡談論聖誕節。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_17.mp3
+msg,1,<outline width=2 color=black>「埃爾塔在那說。我從來沒有收到過聖誕老人的\n禮物……看起來非常孤獨。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_18.mp3
+msg,1,<outline width=2 color=black>「就連卡蒂婭也無法向這樣的埃爾塔傳達\n聖誕老人是一種迷信，看起來相當為難。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_19.mp3
+msg,1,<outline width=2 color=black>「……聽說埃爾塔是個身世複雜的人，\n所以我覺得應該有人送她禮物。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_20.mp3
+msg,1,<outline width=2 color=black>「她總是直截了當，忠於自己的信仰。\n這可以說是一個非常好的孩子。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_21.mp3
+msg,1,<outline width=2 color=black>「那麼，就必須告訴她有資格獲得禮物。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_22.mp3
+msg,1,<outline width=2 color=black>「這就是為什麼我試圖扮成聖誕老人送禮物。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_23.mp3
+msg,1,<outline width=2 color=black>「嗯，這身打扮嗎？送禮物的時候，萬一埃爾塔醒來了，\n這身打扮的話，應該不會注意到我的真實身分吧吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102451/adv/atlas/stand_a,body:normal:hige,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_24.mp3
+msg,1,<outline width=2 color=black>「不要露出那麼擔心的表情。這個化裝也很完美。\n特別是這個假鬍子做得可以吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/102451/adv/sound/fav102451_01_25.mp3
+msg,1,<outline width=2 color=black>「嗯，如果你這麼擔心的話，你也跟著來就好了。\n好好看看作為聖誕老人工作的樣子，也不錯呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,187 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_01.mp3
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,1,<outline width=2 color=black>「唉……居然突然下起了大雨……雖然似乎只是陣雨，\n一下子就停了……但還是被淋成了落湯雞。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_02.mp3
+msg,1,<outline width=2 color=black>「不過，幸好到這裡後換了服裝。\n這種簡單的休閒穿著很通風，應該馬上就乾了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_03.mp3
+msg,1,<outline width=2 color=black>「話說回來，這套服裝真的很好活動……我一直以來\n都沒有穿便服的習慣，看來準備一套以防萬一也不錯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_04.mp3
+msg,1,<outline width=2 color=black>「……只是，我平時很少穿得這麼輕鬆，所以不太清楚……這套服裝\n是不是有一點暴露啊？像這件襯衣就貼得超緊的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選項1　「這種衣服就是這樣。」,選項2　「仔細觀察她」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_05.mp3
+msg,1,<outline width=2 color=black>「是、是嗎？我好多年沒買這種休閒服飾了，\n難道是我落伍了嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_06.mp3
+msg,1,<outline width=2 color=black>「──呃，我說你啊……你嘴上說這樣穿很正常，\n但眼睛卻直直盯著我不放耶……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_07.mp3
+msg,1,<outline width=2 color=black>「唉……讓你看一下是不會怎樣啦，你盡量看吧。\n不過，不准你亂摸喔！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:sad,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-100,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103406/adv/sound/fav103406_01_08.mp3
+msg,1,<outline width=2 color=black>「………………喂。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:sad,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,200,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103406/adv/sound/fav103406_01_09.mp3
+msg,1,<outline width=2 color=black>「等一下，你幹嘛湊那麼近看著我啊……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:sad,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,-120,-260,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103406/adv/sound/fav103406_01_10.mp3
+msg,1,<outline width=2 color=black>「呀……！你、你呼氣都吹到我身上了耶！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_11.mp3
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,1,<outline width=2 color=black>「停！如果只是正常地看著就無所謂，\n但你剛才的舉止完全就是個變態！不能做那種事！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_12.mp3
+msg,1,<outline width=2 color=black>「講難聽一點，如果你對一般女生做出那種事情，\n就算人家報警把你抓起來都不能有怨言啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_13.mp3
+msg,1,<outline width=2 color=black>「真是受不了，你要是一直做這種變態行為，我就要罰你……對，\n我就要罰你賠錢給我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_14.mp3
+msg,1,<outline width=2 color=black>「呃……！？為什麼你要豎起大拇指啊……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_15.mp3
+msg,1,<outline width=2 color=black>「可惡！既然這樣，我就根據部位設定不同價碼……考量到顧客需求，\n胸部和屁股應該是最熱門的，那價碼就高一點……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_16.mp3
+msg,1,<outline width=2 color=black>「──哼哼。你喜歡付錢是吧？以後你只要看到我的身體，\n就得支付費用啦！別以為我不敢，我是認真的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_17.mp3
+msg,1,<outline width=2 color=black>「咦？不是，我是說用看的，用看的就要付錢喔！如果出手摸的話……要另外收費！\n而且，我還會大敲竹槓！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_18.mp3
+msg,1,<outline width=2 color=black>「你說沒有問題……？等等，我覺得大有問題啊。\n感覺就很不妙，你想想嘛，在法律和倫理觀念上來說都……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_19.mp3
+msg,1,<outline width=2 color=black>「好、好吧……！只用看的就照往常，免費讓你看吧！\n你想看就儘管看……拜託你別付錢來摸我！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103406/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103406/adv/sound/fav103406_01_20.mp3
+msg,1,<outline width=2 color=black>「嗚嗚……我只不過想開個小玩笑，為什麼\n這麼輕易就被反擊啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

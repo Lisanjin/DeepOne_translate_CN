@@ -1,0 +1,809 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm011.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:anger,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_042_10_08_01.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「呜、爱花……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,-200,0,1,1.0,0
+playse,/download/character/104102/se/se_c04104_ef_hit.mp3
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash2_Red,em1,default,animation,0,200,0,-1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10110200.jpg,1,255
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+playse,/download/sound/se/se_067.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,-300,-110,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+spriteatlas,download/character/104102/adv/atlas/stand_b,body:normal,aika,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_08_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「姐姐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,-300,-110,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_02.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「爱花、你……你、在做什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_b,body:normal,aika,300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_08_02.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「如你所见」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,-300,-110,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_03.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「唔……为什么你要对柘榴动手！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,aika,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:surprise,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_08_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「――为、什么……爱花？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_08_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「难道是、爱花被操控了吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_b,body:normal,aika,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_08_03.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「不是的。我并没有被操控」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_b,body:normal,aika,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_08_04.mp3
+msg,1,<outline width=2 color=black>「只是……我想要确认一下。我为什么要战斗呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_b,body:normal,aika,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_08_05.mp3
+msg,1,<outline width=2 color=black>「迄今为止、我一直按照财团和柘榴所说的在战斗。\n但是、这样做的意义我一直都没明白」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_b,body:normal,aika,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_08_06.mp3
+msg,1,<outline width=2 color=black>「所以说……嗯。这大概是在模仿姐姐吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,-300,-110,0.5,0.5,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_04.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「开什么玩笑！ 就因为这种理由你就要砍柘榴吗！？\n连这样做的意义都不明白、只是一味地模仿……把我当笨蛋吗！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_b,body:normal,aika,300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_08_07.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「为什么你要这么生气呢？ 姐姐你明明已经是柘榴的敌人了。\n为什么现在还要反过来保护她呢、我有点搞不懂了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,-300,-110,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_05.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「你对柘榴下手是不对的啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_06.mp3
+msg,1,<outline width=2 color=black>「为了要活下去、选择了反抗，但实际上却很讨厌、很讨厌、非常讨厌这样、\n即使讨厌、但这是自己选择的道路无法妥协……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_07.mp3
+msg,1,<outline width=2 color=black>「不要把我的感情、想得那么肤浅啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,dahune1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:unique,dahune2,0,0,0,0,,,,
+imgconf,dahune2,dahune1,0,-970,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_044_10_08_01.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「哼、呵、哈哈、啊哈哈哈哈哈哈！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:unique,dahune,300,-270,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_02.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「简直不要太滑稽了。\n我还真是没想到事情还能这样发展。爱花、你果然是最棒的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:unique,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_03.mp3
+msg,1,<outline width=2 color=black>「呐、柘榴。被最重要最重要的爱花用刀指着的感想如何啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_08_02.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「达芙妮……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:unique,dahune,300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_04.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「别这么瞪着我啊。\n爱花的行动、我是真的、什么也、一点点都没干涉啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:unique,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_05.mp3
+msg,1,<outline width=2 color=black>「――是没有引导迷路孩子的你的责任吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_08_03.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_06.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「爱花。可以哟、如果你想知道自己战斗的理由、\n想知道自己寻求的东西、就到这里来吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_07.mp3
+msg,1,<outline width=2 color=black>「真是可怜的孩子。\n柘榴选择了放手、就这么一直迷惘着……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_08.mp3
+msg,1,<outline width=2 color=black>「可以哟、我会和你一起寻找。寻找你所追寻的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_08_04.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「不行、爱花……听信达芙妮的话会……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,dahune,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_08_08.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,-300,-120,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_08_05.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「爱花……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,aika,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:unique,dahune,300,-270,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_09.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「呵呵……太好了呢、想花。这下你们姐妹就在一起了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_08.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「……不行的、达芙妮。就因为这种理由、我不能带着爱花一起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_09.mp3
+msg,1,<outline width=2 color=black>「我希望爱花能理解我、想要她选择和我一起前行。\n但并不是以这样的方式……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_10.mp3
+msg,1,<outline width=2 color=black>「我想让爱花明白的是生命的意义、\n而不是随意的伤害他人……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_10.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「……是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_11.mp3
+msg,1,<outline width=2 color=black>「呐、想花。你多半是个任性又矫情的人吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,-300,-110,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_11.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「达芙妮……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_12.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「想让人跟着自己。但对方没有理解到自己的想法就不行……\n这样的、不就是任性自私的小孩子嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_13.mp3
+msg,1,<outline width=2 color=black>「从一开始、我们就站错了队伍。你这样矫情的人、还是呆在柘榴身边更合适」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,-300,-120,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_08_06.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「你在、说什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_14.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「非得挑明了说才能理解吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_15.mp3
+msg,1,<outline width=2 color=black>「――有了<ruby>最高杰作|爱花</ruby>、她的<ruby>劣化版|你</ruby>就可以扔掉了。\n多谢你了、想花。感谢至今为止所做的努力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_12.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:unique,dahune,300,-270,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_16.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「太好了呢、柘榴。你不是很想夺回想花吗？\n我已经不需要了、就还给你吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_08_07.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「别开玩笑了！ 你这家伙、把想花当什么了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_13.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「算了、柘榴。事到如今说什么也晚了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_14.mp3
+msg,1,<outline width=2 color=black>「达芙妮、已经不需要我了吧。\n嗯、你就是这样的人、我是知道的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_15.mp3
+msg,1,<outline width=2 color=black>「我会被抛弃是早晚的事。\n只是有些出乎意料……但这也没关系」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:anger,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_16.mp3
+msg,1,<outline width=2 color=black>「但是爱花不会让你带走的。\n这和我设想的未来、完完全全不一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:anger,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_17.mp3
+msg,1,<outline width=2 color=black>「如果要妨碍我的未来、即使是达芙妮我也会杀掉你的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_08_17.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「我已经帮你到这一步了还在这儿叨叨什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:anger,soka,-300,-110,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_18.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「自己会这么任性、也是受你影响」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,-300,-120,0.5,0.5,,,,
+anm,tint,aika,150_150_150,0.0001,0
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_08_01.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「……爱花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_08_02.mp3
+msg,1,<outline width=2 color=black>「你做了一个很笨的选择呢。\n如果你再坦率一点、或许不只有这种方式吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,-300,-120,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_08_09.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「……什么意思？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_08_03.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「难道说、你自己还没有意识到吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alt1,0,0,1280,250,0.5,,,,
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:sad,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_10_08_04.mp3
+msg,1,<outline width=2 color=black>「在这一点上、你们果然很像啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_08_05.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「嘛、或许现在不该由我说出来吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_08_06.mp3
+msg,1,<outline width=2 color=black>「――爱花。稍微忍耐一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash4_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10110200.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:sad,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_041_10_08_10.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「呜……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blood,em1,default,animation,0,0,100,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:sad,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_041_10_08_11.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「呜、咕……咳啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_08_08.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「爱花！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_08_02.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「冷不丁的发生了什么……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_08_07.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「因为背叛了你们、爱花心脏的项圈已经开始启动了。\n一旦启动完毕就会变得很麻烦……所以、我连着她的心脏一起破坏了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:anger,soka,-300,-110,0.5,0.5,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_19.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「爱花和我不一样、这么做的话……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_08_08.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「嗯。如果没有V化心脏被破坏了的话、\n一般来说是会死吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_08_09.mp3
+msg,1,<outline width=2 color=black>「但是、放心吧。爱花不会死的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_08_03.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「什么意思――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,0,0,0,4,0.3,1.0
+shake,0.2,4,15,15
+playse,/download/sound/se/se_067.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_08_04.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊……什、么……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,alt,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_08_09.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「这股气息是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:anger,soka,-300,-110,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_10_08_20.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「…………纳克特原书」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,perufe1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:sad,perufe2,0,0,0,0,,,,
+imgconf,perufe2,perufe1,0,-600,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_046_10_08_01.mp3
+name,<outline width=2 color=black>？？？</outline>,
+msg,1,<outline width=2 color=black>「被吵醒了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10110200.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,-300,-170,0.5,0.5,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_08_10.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「早上好——纳克特原书」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,-300,-170,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_046_10_08_02.mp3
+name,<outline width=2 color=black>？？？</outline>,
+msg,1,<outline width=2 color=black>「嗯，早上好——黑蔷薇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

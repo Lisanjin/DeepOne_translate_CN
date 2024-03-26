@@ -1,0 +1,115 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020400.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_01.mp3
+name,<size=27><outline width=2 color=black>米婭姆・莉芙拉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這附近好像沒有敵人……再往前推進一點吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_02.mp3
+msg,0,<size=30><outline width=2 color=black>「……我明白。就算你不那麼一臉擔憂的看著我，\n有你在我也不會過分深入夢境的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_03.mp3
+msg,0,<size=30><outline width=2 color=black>「無論境況如何，無論碰到什麼樣的敵人，我都會保護你的。\n不過即使有這份心，我也很清楚現實往往要比想像來得更加複雜」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_04.mp3
+msg,0,<size=30><outline width=2 color=black>「我們要小心，因為常常只要走錯一步說不定就會迎來\n最壞的結局」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「相信你」,選項2　「擔心」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_05.mp3
+msg,0,<size=30><outline width=2 color=black>「謝謝。為了不辜負你的這番話，\n我會打起十二分的精神」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:smile,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_06.mp3
+msg,0,<size=30><outline width=2 color=black>「……能夠被別人相信，被別人依賴的感覺，真好啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_07.mp3
+msg,0,<size=30><outline width=2 color=black>「但是只要一想到你大概還在擔心我的事情，\n我的心裏，就多少有點彆扭」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_08.mp3
+msg,0,<size=30><outline width=2 color=black>「說我是心胸狹窄也好……或者說稍微有點被害妄想\n也好……你是因為，不完全信任我才會擔心我的對吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_09.mp3
+msg,0,<size=30><outline width=2 color=black>「啊……我沒有責怪你的意思」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_10.mp3
+msg,0,<size=30><outline width=2 color=black>「我想的是，為了能讓你更加信任我，\n我必須要更加的……努力，才是」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_11.mp3
+msg,0,<size=30><outline width=2 color=black>「……我，在被收容進財團的機構之之前，只是一個無用的人。\n什麼也不會……沒有任何存在的意義」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_12.mp3
+msg,0,<size=30><outline width=2 color=black>「我不知道我父親是誰。母親的樣子也記不大清了……但是，\n她厭惡我的目光我到現在都還記得很清楚」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_13.mp3
+msg,0,<size=30><outline width=2 color=black>「也許是因為我沒有成為她期望我成為的樣子吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_14.mp3
+msg,0,<size=30><outline width=2 color=black>「一般的父母會希望他們的孩子聰明，或者強壯……一般都會\n望子成龍，望女成鳳，但是我母親對我就沒有任何期望」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_15.mp3
+msg,0,<size=30><outline width=2 color=black>「……但是，在我被財團的機構收容之後，所有都改變了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_16.mp3
+msg,0,<size=30><outline width=2 color=black>「他們希望將我培育成一名想索者。\n他們期待我能為取得納克特原書貢獻出自己的力量」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_17.mp3
+msg,0,<size=30><outline width=2 color=black>「能使我才真真正正有一種活著的感覺\n有一種被認可的感覺」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_18.mp3
+msg,0,<size=30><outline width=2 color=black>「……人們的身上總是寄託著他人的期待，被別人需要、被別人認可，\n我認為人這種生物只有這樣，才能感覺到自己的存在」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_19.mp3
+msg,0,<size=30><outline width=2 color=black>「所以……為了被身邊的人期待、認可，\n為了能夠讓你更加信賴我，相信我的實力，我要加倍的努力」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_20.mp3
+msg,0,<size=30><outline width=2 color=black>「……只有通過別人才能獲得自我認同感。\n這樣的我……你又是，怎麼看我的呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_21.mp3
+msg,0,<size=30><outline width=2 color=black>「——對不起，我沒想到你會這麼困擾」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_22.mp3
+msg,0,<size=30><outline width=2 color=black>「說到底這也是我的一己之見。沒有要逼迫你的意思。\n我說的太多了……請忘掉吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102803/adv/sound/fav102803_05_23.mp3
+msg,0,<size=30><outline width=2 color=black>「在這種地方，我們也不能一直聊閑天。\n我們繼續前進吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

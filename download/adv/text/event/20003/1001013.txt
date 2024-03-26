@@ -1,0 +1,396 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10990300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm032.mp3,0,,,
+endwait
+spriteatlas,download/character/100805/adv/atlas/stand_a,body:surprise,holy,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:surprise:weapon_white,gizel,-300,-120,0.5,0.5,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,holy,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「布麗吉特姐姐……？」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大小姐，為什麼您會……您怎麼到這裏來的……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:normal,bri,300,-120,0.5,0.5,,,,
+anm,tint,bri,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒什麼，只不過是打破了牆」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:sad:weapon_white,gizel,-300,-120,0.5,0,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只是，什麼啊……那可是強度驚人的拉萊耶的牆壁……\n正常來說，憑個人的力量怎麼可能破壞得了……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒什麼……不是什麼大不了的事情。借助“他”的力量的話，\n就算不是在幻夢境中，也能夠增強能力」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+select,選項1　「小事一樁」,選項2　「能幫上你的忙就好」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:surprise:weapon_white,gizel,-300,-120,0.5,0,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你也……趕過來了呢」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:sad:weapon_white,gizel,-300,-120,0.5,0,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來，這個時候，我應該說，\n你不能來這麼危險的地方……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:smile:weapon_white,gizel,-300,-120,0.5,0,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……謝謝。看到你過來，我還蠻高興的」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:smile,asaka,-280,-120,0.5,0.5,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:sad,bri,300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說起來，這裏離門很近了吧。就連在幻夢境外面也依然能夠提升別人的能力，\n你的能力還真是一如既往地離譜呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:anger,bri,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，有這麼便利的能力，確實該好好感謝一下你。承蒙您……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:smile,asaka,-280,-120,0.5,0.5,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「他明明幫你拯救了陷入危機中的妹妹哦？」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「……嗯」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,-280,-120,0.5,0,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「還真是不坦率呢……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，就算說是有他的力量的幫助，能夠破壞由如此厚的金屬製成的牆壁\n也可以說布麗吉特的實力雄厚……吧？」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:normal,bri,300,-120,0.5,0,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「並不是。這只不過是……水滴石穿，誰都可以做到的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,-280,-120,0.5,0,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「幹嘛要說這麼怪異的話啊。誰都可以做到？胡說……咦？」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:surprise,asaka,-280,-120,0.5,0,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「等、等等、布麗吉特……你的手……手上全是血啊！？\n怎麼會這樣……！」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:sad,bri,300,-120,0.5,0,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……別在意這種無關緊要的事情」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,-280,-120,0.5,0,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不管是誰都會在意的吧！嗚哇，劍柄上都沾滿了血……是手掌裂開了麼？\n……你剛剛說的“水滴石穿”，難道是」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/100805/adv/atlas/stand_a,body:surprise,holy,-300,-120,0.5,0.5,,,,
+anm,tint,holy,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「用盡全力揮劍，以至於手掌都裂開了麼……？\n通過無數次的揮劍……一點點地削開牆壁……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,holy,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……怎麼可能，我總不至於為了來趟海底，就像礦工一樣挖牆吧。\n這種時候，當然是用魔道書比較方便，僅靠劍是不可能的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,holy,0
+endwait
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:surprise:weapon_white,gizel,-300,-120,0.5,0.5,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在不是開這種玩笑的時候……！\n得快點治療……姐姐漂亮的手都……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:normal,bri,300,-120,0.5,0,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,gizel,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「得了，手傷這種小事……不管做什麼事，都免不了會受傷。\n這種理所當然的事情，別一個個地斤斤計較了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:sad:weapon_white,gizel,-300,-120,0.5,0,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「可是，你是為了我……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:anger,bri,300,-120,0.5,0,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,gizel,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別把我個人的行動都全部歸責到你自己身上行麼？\n你這樣胡亂攬責，看著就像是施捨我一樣，很傲慢哦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你是受到克勞索拉斯的影響才這樣的？\n還是說，本來就是這樣的人麼。本性可真夠壞的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:unique:weapon_white,gizel,-300,-120,0.5,0,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「本、本性麼，抱歉……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,gizel,-300_-1000,2,0
+endwait
+spriteoff,gizel,0
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,-280,-120,0.5,0.5,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂，也不必對吉澤爾說的這麼過分吧。\n她都這麼難過了……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:normal,bri,300,-120,0.5,0,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你閉嘴就行了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:unique,asaka,-280,-120,0.5,0,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你這人真的……哎。\n吉澤爾也是，有這麼一個不坦率的姐姐，可真是苦了你了」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……廢話少說。\n希爾薇她們，再過一會兒就能掌握魔像系統了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大概，下次就是最後一波了……還能戰鬥麼？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,-280,-120,0.5,0,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我可以……說不能麼？」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「明明很想耍帥不是麼？就不能奉陪到底麼」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……又用這種討人厭的說法」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:anger:weapon_white,gizel,-300,-120,0.5,0.5,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「姐、姐姐大人，我和霍莉也……」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,gizel,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我不需要拖後腿的。霍莉，這個累贅就交給你看著了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,gizel,0
+endwait
+spriteatlas,download/character/100805/adv/atlas/stand_a,body:normal,holy,-300,-120,0.5,0.5,,,,
+anm,tint,holy,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「遵命，布麗吉特大小姐。祝武運昌隆」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,bri,0
+endwait
+spriteatlas,download/character/100705/adv/atlas/stand_a,body:anger:weapon_white,gizel,300,-120,0.5,0.5,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,holy,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「霍莉明明是我的從者吧……！？」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+sprite,download/monster/20060101/adv/image/20060101.png,golem2,-500,-125,1,0.5,,,,,,,,,,
+sprite,download/monster/20060101/adv/image/20060101.png,golem3,500,-125,1,0.5,,,,,,,,,,
+sprite,download/monster/20060101/adv/image/20060101.png,golem,0,-125,1,0.5,,,,,,,,,,
+endwait
+name,<size=27><outline size=8 color=black>訓練用魔像</outline></size>,,,,,,,,,
+msg,1,<size=31><outline size=8 color=black>「――――――――――――！」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,-280,-120,0.5,0.5,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:normal,bri,300,-120,0.5,0.5,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「來了呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……我也想讓吉澤爾來關心我一下啊\n哪怕只有她對你的一半關心也好」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「被別人關心，或者被別人溫柔對待，僅此就能滿足了麼……你是這樣的性格嗎」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你還真是，淨說些讓人討厭的話」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我沒有組織語言討好別人的興趣」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那你就，好好的用行動來表現啊。\n用行動來展現你對吉澤爾的感情啊」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:unique,bri,300,-120,0.5,0,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………哼。多管閒事」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,all,0
+endwait
+sprite,download/monster/20060101/adv/image/20060101.png,golem2,-500,-125,1,0.5,,,,,,,,,,
+sprite,download/monster/20060101/adv/image/20060101.png,golem3,500,-125,1,0.5,,,,,,,,,,
+sprite,download/monster/20060101/adv/image/20060101.png,golem,0,-125,1,0.5,,,,,,,,,,
+endwait
+name,<size=27><outline size=8 color=black>訓練用魔像</outline></size>,,,,,,,,,
+msg,1,<size=31><outline size=8 color=black>「――――――――――――！」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:anger,asaka,-280,-120,0.5,0.5,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:anger,bri,300,-120,0.5,0.5,,,,
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼——！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵啊啊啊啊啊！」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spine,download/adv/spine/Slash1_Blue,em4,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_049.mp3
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1
+endwait
+mask,bg1,-400,0,300,720,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,asaka1,-400,0,300,720,0.5,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:anger,asaka,0,0,0,0,,,,
+imgconf,asaka,asaka1,-50,-400,,,0,1,1,0.5
+mask,bg3,400,0,300,720,0.5,,,,
+sprite,download/adv/image/black.jpg,bg2,0,0,0,0
+imgconf,bg2,bg3,0,0,,,0,1,1,0.5
+mask,bri1,400,0,300,720,0.5,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_b,body:anger,bri,0,0,0,0,,,,
+imgconf,bri,bri1,0,-500,,,0,1,1,0.5
+anm,tint,bri,255_255_255,0.0001
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要上了！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯嗯！」</outline></size>,,,,,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,,,,,
+endwait,,,,,,,,,,,,,,,,
+endif,,,,,,,,,,,,,,,,
+name,,,,,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,,,,,
+endwait,,,,,,,,,,,,,,,,
+bgoff,1,,,,,,,,,,,,,,,
+endwait,,,,,,,,,,,,,,,,

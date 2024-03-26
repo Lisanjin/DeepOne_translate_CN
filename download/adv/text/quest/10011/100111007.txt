@@ -1,0 +1,844 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_014_10_07_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「……柘榴。这样做真的好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_014_10_07_02.mp3
+msg,1,<outline width=2 color=black>「不管是爱花、还是想花、对你来说都是重要的存在吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zakuro1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro2,0,0,0,0,,,,
+imgconf,zakuro2,zakuro1,0,-470,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_10_07_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「现在是以夺回芙拉和亚纱花为优先吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro2,0,0,0,0,,,,
+imgconf,zakuro2,zakuro1,0,-470,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_10_07_02.mp3
+msg,1,<outline width=2 color=black>「芙拉维持着幻梦境里的拉莱耶、如果她这样长时间沉睡、\n不知道会造成什么严重的后果」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro2,0,0,0,0,,,,
+imgconf,zakuro2,zakuro1,0,-470,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_10_07_03.mp3
+msg,1,<outline width=2 color=black>「还有、亚纱花——黑蔷薇的战力也至关重要\n不可或缺」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_014_10_07_03.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「说是这么说没错……但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zakuro1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro2,0,0,0,0,,,,
+imgconf,zakuro2,zakuro1,0,-470,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_10_07_04.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「――问答就到此结束了。氛围不对……要小心了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+msgwin,off
+
+endwait
+bg,color_0_0_0,1,255
+spine,download/adv/spine/28090109_stage,bgmovie1,default,animation,0,0,0,1,1,0.3
+playse,/download/sound/se/se_28090109_stage.mp3
+wait,14
+
+msgwin,on
+
+spriteoff,all,0,,,,,,,,,
+endwait
+spineoff,bgmovie1
+
+bg,download/bg/bg_10110200.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm010.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_04.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊、这是……纳克特原书的气息、一下子暴增了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_05.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「这股负荷的压力……错不了了、这里就是幻梦境的最深处」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_05.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「嗯……这种感觉、我还记得」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+flash,255,255,255,1,0.5,0.5
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10080300.jpg,1,255
+endwait
+wait,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+flash,255,255,255,1,0.5,0.5
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10110200.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_06.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「那个时候、是寻求理解的原书之梦所支配的领域。\n但是、这里是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,dahune1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune2,0,0,0,0,,,,
+imgconf,dahune2,dahune1,0,-970,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_044_10_07_01.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「无数原书之梦的王座之一。寻求完整的原书之梦的所在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_02.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「让我有点意外啊、柘榴。\n你居然丢下想花跑来了这里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_06.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「想花的话、爱花会想办法解决的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_03.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「总会想办法是吗……真是合理的借口啊。\n难道说、你认为爱花会拯救想花吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_04.mp3
+msg,1,<outline width=2 color=black>「如果真是那样的话、那你也不过如此了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_05.mp3
+msg,1,<outline width=2 color=black>「爱花救不了想花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_07.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「你到底又懂她们什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_06.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「一眼就能看明白的事。她们都只是什么都不懂的小孩子。\n即使能力再优秀、也只是没有心灵的机器」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_07.mp3
+msg,1,<outline width=2 color=black>「就像婴儿反射性地握住你伸出的手一样、行动其实和思考无关、\n小孩子甚至不知道自己为什么做出这样的行动」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_08.mp3
+msg,1,<outline width=2 color=black>「而且——孩子救不了孩子。即使迷路的孩子们手牵着手、\n更有可能是朝着错误的方向前进不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_09.mp3
+msg,1,<outline width=2 color=black>「如果你要装成监护人的样子、那就不应该放手啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_08.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「把想花引入歧途的罪魁祸首你以为是谁——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_10.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「不论什么道路有人牵着总会好一些吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_11.mp3
+msg,1,<outline width=2 color=black>「而你、连这个也没能为她们做。\n也许你本可以陪在她们身边、关心着她们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_12.mp3
+msg,1,<outline width=2 color=black>「但是……你却一直停留在原地。\n自己都没有目的地的人自然也指引不了别人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:normal,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_13.mp3
+msg,1,<outline width=2 color=black>「可怜的爱花。连能牵着她的人都没有」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_09.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「咕……你……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_07.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「柘榴、冷静点。别被牵着鼻子走了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_08.mp3
+msg,1,<outline width=2 color=black>「达芙妮……你在这里长篇大论、是在拖延时间吗？\n你到底有什么目的。夺走了芙拉的力量、究竟打算干什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_14.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「呵呵……你很快就会知道了。\n只是有一点要告诉你、诞生之器的力量、芙拉的力量已经还不回去了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_15.mp3
+msg,1,<outline width=2 color=black>「然后、因为还不回去、芙拉的存在也就无法恢复原状。\n随着时间的推移、最后或许会消散也说不定呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_09.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「……我不会让这种事发生的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,0,0,0,4,0.3,1.0
+playse,/download/sound/se/se_067.mp3
+spriteoff,norn,0.2
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn2,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_10.mp3
+msg,1,<outline width=2 color=black>「把我的妹妹还给我！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+anm,tint,norn2,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_16.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「不。你的妹妹……还有你现在守护的哥哥、\n最终都会失去」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_c,body:smile,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_17.mp3
+msg,1,<outline width=2 color=black>「干脆自己也消失了就好了、\n这样就不用担心这么多烦恼了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn2,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_11.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「去你妈的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait
+slideinblack,0.1,left,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla3,0,0,1,0,,,,
+playse,/download/character/103511/se/se_c03511_ef_hit.mp3
+slideoutblack,0.2,left,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+
+
+slideinblack,0.1,left,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla3,0,0,1,0,,,,
+anm,scale,sla3,-1_1,0,
+playse,/download/character/103511/se/se_c03511_ef_hit.mp3
+slideoutblack,0.2,right,
+endwait,
+slideinblack,0.1,right,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+playse,/download/sound/se/conA.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/104402/adv/atlas/stand_d,body:anger,dahune,300,-270,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_18.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「这就是否定和排斥他人的恶意的力量吗……还不赖嘛。\n柘榴的话姑且不论、连你一起对付倒还挺麻烦的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_12.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「柘榴、就这样一鼓作气上吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_10.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「嗯。不管她有什么企图、在这之前……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alt1,0,0,1280,250,0.5,,,,
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_10_07_01.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「――达芙妮。需要帮忙吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10110200.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm009.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_d,body:anger,dahune,300,-270,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:smile,alt,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_07_02.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「不过、我倒是更乐意看到你和她们两败俱伤就是了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:smile,alt,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_07_03.mp3
+msg,1,<outline width=2 color=black>「看来我就算被纳克特原书操控了、\n对你也还是喜欢不起来啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_d,body:anger,dahune,300,-270,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_19.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「哼。看来我们真是合不来啊、黑蔷薇。\n我对你的讨厌也一直没变过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_d,body:anger,dahune,300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_20.mp3
+msg,1,<outline width=2 color=black>「不想动手就滚一边去吧。\n说起来、“那边”准备得怎么样了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_07_04.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「我还没笨到你那种程度。准备工作已经做好了。\n现在只需要稍等就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_d,body:anger,dahune,300,-270,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_21.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「是吗……空的诞生之器的问题也解决了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_07_05.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「过去有段时间、诞生之器是作用在我身上的。\n在那个时候、多多少少在这个身体留下了一些碎片」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_07_06.mp3
+msg,1,<outline width=2 color=black>「把这点儿注入进去、勉勉强强就够用了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_07_07.mp3
+msg,1,<outline width=2 color=black>「嘛、虽然这样达不到最好的效果、\n但也足够了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,alt,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_b,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_13.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「……你们在说什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_b,body:anger,norn,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_14.mp3
+msg,1,<outline width=2 color=black>「你到底做了什么……芙拉的力量、被你们怎么样了！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,dahune,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_10_07_08.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「你现在着急也没什么用的、诺恩」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,alt,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_11.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「啊、诺伦！　快躲开！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_b,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_10_07_15.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「额……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Fire1,em1,default,animation,0,-300,0,1,1.0,0
+spine,download/adv/spine/Fire1,em2,default,animation,0,300,0,1,1.0,0
+playse,/download/sound/se/se_038.mp3
+anm,move,norn,-1200_-120,0.6,0
+anm,move,zakuro,1200_-120,0.6,0
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_d,body:smile,dahune,300,-270,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:sad,zakuro,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_12.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「还是老样子不得了的火力啊……被那个打中的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_d,body:smile,dahune,300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_22.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「哎呀、你害怕了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_13.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「别只会躲在黑蔷薇后面狗叫。\n真是的、看来你们的关系也变好了啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_d,body:anger,dahune,300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_23.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「嘴这么臭、活腻了是吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em1,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,-300,-120,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_14.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「呜、只有这种程度的话、和黑蔷薇的攻击比起来差远了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_d,body:anger,dahune,300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_10_07_24.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「嘁……黑蔷薇，诺恩就交给你了。柘榴就由我来――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_041_10_07_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「柘榴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,300,-120,0.5,0.5,,,,
+anm,tint,aika,150_150_150,0.0001,0
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:surprise,zakuro,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_15.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「爱花……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_07_02.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:sad,zakuro,-300,-120,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_16.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「你……想花呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_07_03.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「谁知道呢……应该是死了吧。比起那个、柘榴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_041_10_07_04.mp3
+msg,1,<outline width=2 color=black>「――抱歉了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:surprise,zakuro,-300,-120,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_10_07_17.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「欸……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,100,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blood,em1,default,animation,0,0,200,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

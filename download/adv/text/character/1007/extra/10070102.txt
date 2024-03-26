@@ -1,0 +1,140 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Mark13,em1,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈哈－……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_01.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「啊，抱，抱歉。突然歎氣什麼的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈……謝謝，還這麼擔心我。\n但並不是什麼煩惱的程度」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「只是……只是讓隨從者禁止吃辣了而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_04.mp3
+clickwait
+msg,1,<size=30><outline width=2 color=black>「三天……三天都，戒辣什麼的……啊。\n對我而言辣的東西就是每天的活力來源……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你也，喜歡的東西什麼的，有沒辦法割捨掉的東西嗎\n……誒？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizeru,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em2,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「我，我……嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_07.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,0,,,,,,,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:shy,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那，那個……那樣的話……難道\n是色色的意思嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_08.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「是的」,選項2　「不是」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:shy,zizeru,0,-120,0.5,0,,,,
+endwait
+spine,download/adv/spine/Mark3,em3,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……誒誒誒誒！？真，真的嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_09.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,0,,,,,,,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那，那個，啊……還，還是白天呢……這種不是\n晚上比較……不，並不是因為是晚上就好」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，誒……？難道是開玩笑，嗎？\n嚇，嚇我一跳……請不要嚇唬我啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_11.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是，是啊。哈哈哈哈，我，\n好像誤會了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:anger,zizeru,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark6,em4,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「啊，剛剛笑了吧？真，真是的……因為你那種\n令人誤會的說話方式，我才誤會的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_13.mp3
+clickwait,,,,,,,,,,,
+spineoff,em4,0,,,,,,,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……帶著好意的話我很開心，\n但是也想請您多注意點說話……或者說，不是故意的嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「最近的你，感覺開毫無遮掩的玩笑增加了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:shy,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，發生了好多事情後我們之間的關係也比之前更加深厚了，\n說理所應當的話也確實是這樣……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「話題又跑偏了……剛說什麼了來著」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，是的。喜歡的東西……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……但是說真的，為什麼禁止辣的東西是必要的呢。\n能不能稍微把辣椒當零食吃一下……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？怎麼了，臉靠這麼近……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_20.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「其他喜歡的東西？嗯－，辣以外的喜歡東西什麼的……啊，\n但是，倒不是吃的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我，從小布麗吉特姐姐——喜歡姐姐給我沏的紅茶。\n那個苦味和獨特的香味已經成為習慣了啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「已經不太會有，給我沏茶的機會了，但正因如此，\n偶爾沏一杯就非常開心……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……還想，再喝一次啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，誒？總覺得臉比剛才更扭曲了……\n人的味覺各種各樣？誒，那是什麼意思……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100701/adv/sound/fav100701_04_25.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

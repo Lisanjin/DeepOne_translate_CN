@@ -1,0 +1,171 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+mask,bg1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,vi1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,0,0,0,0,,,,
+imgconf,vi,vi1,0,-1000,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「―嗷―嗷嗚」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0.5,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「嗷……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――！呀啊啊啊啊！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_03.mp3
+clickwait,,,,,,,,,,,
+shake,0.2,5,10,10
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是…是你啊……！\n不要忽然從後面把手伸過來啊！正常點向我搭話啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,-20,-220,0.5,0,,,,
+spine,download/adv/spine/Mark6,em1,default,animation,0,80,300,0.7,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你說我看起來心情很好，所以就沒出聲打擾我？這根本不是理由！\n你要是不想打擾到我的話，就別摸我啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_05.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,,,
+endwait
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:shy,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「而…而且，你剛才是不是摸了妾身的尾巴……！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「明明誰都沒摸過我那裏，你居然……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「摸了那裏會怎麼樣？」,選項2　「抱歉了」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:shy,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那…那是因為…妾身的尾巴非常敏感，所以……那個，怎麼說呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,-20,-220,0.5,0,,,,
+spine,download/adv/spine/Mark6,em2,default,animation,0,80,300,0.7,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……唔，你這可是“性騷擾”啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_09.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,0,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「哼，我不聽我不聽！觸摸妾身尾巴，是一件極其無禮的事！\n妾身本來應該將你燃燒殆盡的！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+spine,download/adv/spine/Mark5,em3,default,animation,0,80,300,0.65,0.7,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔，怎麼了，一本正經地低著頭。\n你這麼老實地道歉，妾身怎麼忍心不原諒你嘛」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_11.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,0,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「嘛……你知道就好。妾身可不是什麼普通人類\n一不小心就會觸碰到狐狸的逆鱗」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身的怒火會將你燃燒殆盡，這可不是什麼玩笑話\n你可得感謝一下妾身開闊的胸襟」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你說狐狸沒有鱗片？廢話……這種事情我也知道\n你真的在反省嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「總而言之……可別再摸妾身的尾巴了哦，明白了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,30,-100,0.7,0,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身要走了，再見――」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_16.mp3
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+shake,0.2,5,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:shy,vi,-20,-220,0.5,0,,,,
+spine,download/adv/spine/Mark3,em4,default,animation,0,80,280,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呀啊啊啊啊啊！啊嗯……別、別握地那麼用力……！\n不可以呀呀――！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_17.mp3
+clickwait,,,,,,,,,,,
+spineoff,em4,0,,,,,,,,,
+endwait
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你…你在幹什麼……！\n我...我才剛說完不能摸尾巴的啊……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:shy,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不…不可以――不可以這樣子摸來摸去……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼啊……嗚……嗯嗯！　啊……！\n快放開我的尾巴呀！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_20.mp3
+clickwait,,,,,,,,,,,
+shake,0.2,5,10,10
+endwait,,,,,,,,,,,
+anm,move,vi,-300_-220,0.7,1
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-300,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哈啊……呼……哈啊啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不…不可以摸尾巴的呀…僅僅只是被撫摸而已\n居然就要……咕嗚嗚！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,-300,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你居然……！敢對我做這種事情！我不會輕易放過你的……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_23.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-300,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，混蛋你別跑啊……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-300,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「咕……雖然很想追上去，但是現在腳上實在沒有力氣……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_25.mp3
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,vi,0.5
+endwait
+mask,bg1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,vi1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,0,0,0,0,,,,
+imgconf,vi,vi1,0,-1000,,,0,1.5,1.5,0
+endwait
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「給我記住了！這筆帳，我一定會和你好好算的！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_08_26.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
+

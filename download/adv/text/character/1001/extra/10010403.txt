@@ -1,0 +1,145 @@
+name,　,
+stopbgm,,,,,,,,,,
+fadeinblack,0,,,,,,,,,
+endwait,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0.0,,,,,,,,
+endwait,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,
+endwait,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是抱歉，這個點兒來」</outline></size>,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_01.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我倒也不是因為有什麼事才來的。\n那個……我在想……你現在正在幹什麼呢」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_02.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，好像打擾到你了……哎？\n那張桌子上的書，是從資料室拿來的嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_03.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……做了很多功課呢……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_04.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哎？這個……《納克特手抄本實驗》……是我以前就參加的那個。\n將納克特原書的一部分力量在<ruby>魔道書</ruby>中再現……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_05.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然最後還是失敗了，但這樣也留下準確地記錄了呢。\n對了，前幾天也說過這個來著？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_06.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以你才有興趣嗎？我還特意準備了資料……啊，\n我的名字哎……總覺得這種情況下看到好不可思議哦」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_07.mp3
+clickwait,,,,,,,,,,
+shake,0.5,1,5,5
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+spine,download/adv/spine/Mark11,em1,default,animation,0,200,170,0.65,0.8,0.5
+endwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎，等一下，為什麼拿走嘛！\n明明正看著呢……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_08.mp3
+clickwait,,,,,,,,,,
+spineoff,em1,0
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼要這麼拼命藏起來呢……？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_09.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:anger,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「要是像這種被搶走的話，我就想把這個再拿……回來呢」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_10.mp3
+clickwait,,,,,,,,,,
+shake,0.5,2,5,5
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……那個……的話，呀！等一，要摔……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_11.mp3
+clickwait,,,,,,,,,,
+shake,0.1,3,10,10
+playse,/download/sound/se/se_043.mp3
+anm,move,asaka,65_-400,0.3,0
+endwait
+anm,scale,asaka,1.1_1.1,0.3,0
+endwait
+spriteoff,asaka,0
+bg,color_0_0_0_0,0
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,0,0,0,0,,,,
+imgconf,asaka,asaka1,90,-480,,,0,1.5,1.5,0.5
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……！？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_12.mp3
+clickwait,,,,,,,,,,
+spriteoff,all,1
+endwait
+bg,download/bg/bg_10010300.jpg,1,,,,,,,,
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,1.1,1,,,,
+endwait,,,,,,,,,,
+anm,scale,asaka,0.5_0.5,0.5,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……剛、剛才……嘴唇……！？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_13.mp3
+clickwait,,,,,,,,,,
+select,選項1　「可能碰到了」,選項2　「心理作用」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:shy,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔，嗯嗯……剛剛是事故！因為事故嘛！」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_14.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「剛剛那個，不算數的……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_15.mp3
+clickwait,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:shy,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說，說的也是，剛剛肯定，偏了……是吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_16.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「又不是嘴碰到嘴……沒，沒什麼的，是吧？\n哈，哈哈……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_17.mp3
+clickwait,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯。這還不是因為你非要很奇怪的把資料藏起來」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_18.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:shy,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……完蛋了，嗯……不，但是……雖說是，事故……即便如此……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_19.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，哎，怎麼回事……為什麼，臉好燙……哈，哈哈哈，\n好奇怪啊是吧。因為，kiss似的……啊，唔……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_20.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「再妨礙調查就不好了，我回去啦！\n那，再見……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_21.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……但、但是，我只告訴你這個！」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_22.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:shy,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然有點吃驚，但並沒有，不願意……就、就這些！」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100104/adv/sound/fav100104_13_23.mp3
+clickwait,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,
+endwait,,,,,,,,,,
+endif,,,,,,,,,,
+name,,,,,,,,,,
+msg,0,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,
+endwait,,,,,,,,,,
+bgoff,1.0,,,,,,,,,
+endwait,,,,,,,,,,

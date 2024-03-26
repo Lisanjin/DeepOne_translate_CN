@@ -1,0 +1,91 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼是你呀，居然一個人在這裏晃悠\n看來你很閑嘛」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼去大浴場泡泡澡怎麼樣啊？\n呵呵……妾身也剛剛洗完回來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「“拉萊耶”的溫泉設備，連妾身都不得不讚歎一番\n嗯姆嗯姆，確實做得非常棒」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是那個叫做“電吹風”的東西我實在是用不慣\n它發出來的噪音，會把我難得的好心情都糟蹋了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，妾身濕漉漉的長髮，很美麗吧。畢竟頭髮就是女人的性命呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「可別著涼了」,選項2　「你是怎麼保養頭髮的？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「可別把妾身和普通人類相提並論\n我的身體可不會那麼容易就著涼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「倒沒做什麼特別的保養。就是洗得比較認真罷了\n畢竟長髮很容易受損……得小心點洗」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……你說“護發素”嗎？我可沒聽說過這種東西」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:smile,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯姆，原來這個時代有這種護發手段嗎\n大浴場裏應該有吧……我下次也去試試吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_09.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對了……說起溫泉，我有事想問你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「男浴室裏是什麼樣呢？\n進過“拉萊耶”男浴室的人也就你了吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然女浴室裏有“泡沫浴缸”和“桑拿浴”……以及岩盤浴各種各樣的設備\n你們男浴室肯定有更棒的設備吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯…？你在吃驚什麼……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你不會是被我們女浴室的設備之少給震撼到了吧！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼擺出一副苦笑的表情啊……你說男浴室的設備更少？\n我還以為你要說什麼，沒想到你居然撒這麼淺顯的謊話……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「既然你堅持這麼說，那好吧\n我只能親自去一趟男浴室，確認一下了！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你可別抵抗哦。呵，狡辯什麼的我才不聽，別跑！\n跟上我，出發了哦！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_09_17.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

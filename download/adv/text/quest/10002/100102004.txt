@@ -1,0 +1,633 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10030200.jpg,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0.5,,,
+endwait
+sprite,download/monster/20020105/adv/image/20020105.png,angel,0,-250,1.35,0.5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,
+spriteoff,angel,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,65,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「可，惡……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/100901/adv/atlas/stand_b,body:anger,ily,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要應付這種雜魚到什麼時候啊？\n滾開，別妨礙我」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_01.mp3
+clickwait,,,,,,,,,,
+spriteoff,ily,0
+name,
+msg,0,
+endwait
+mask,bg1,0,0,1280,300,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,foka1,0,0,1280,300,0.5,,,,
+sprite,download/character/100902/adv/image/dragon.png,foka,0,0,0,0
+imgconf,foka,foka1,0,-250,,,0,0.4,0.4,0
+shake,0.2,4,10,10
+flash,255,255,255,4,0.2,0
+playse,/download/sound/se/se_051.mp3
+endwait
+name,<size=27><outline width=2 color=black>芙卡洛爾</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「————————————！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,foka1,0
+spriteoff,bg1,0
+endwait
+sprite,download/monster/20020105/adv/image/20020105.png,angel,-100,-250,1.35,0.5
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,65,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什……？！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_02.mp3
+clickwait,,,,,,,,,,,
+endwait
+spine,download/adv/spine/Slash2_Blue,em2,default,animation,0,-400,0,1,1.5,0
+anm,move,asaka,365_-120,0.3,1
+playse,/download/sound/se/se_037.mp3
+shake,0.2,2,5,5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――……、…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,angel,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+stopbgm,0.5
+spriteatlas,download/character/100901/adv/atlas/stand_b,body:normal,ily,-300,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看來已經結束了呢」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_02.mp3
+clickwait,,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,365,-120,0.5,0,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂……！你打算連我一起攻擊嗎？！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_03.mp3
+clickwait,,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我不是提前通知過了嗎。何況你也避開了，那就無所謂了吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_03.mp3
+clickwait,,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你這人……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_04.mp3
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:anger,dana,300,-120,0.5,0.5,,,,
+anm,tint,dana,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……既然都已經像這樣匯合了。\n你就不能稍微配合我們一點嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_2_04_01.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你應該也在苦於缺少逃離幻夢境的術式吧。\n不過，我們則是有辦法回到拉萊耶」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_2_04_02.mp3
+clickwait,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,dana,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你的意思是，為了保證自身安全，我需要順從你們？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_04.mp3
+clickwait,,,,,,,,,,
+anm,tint,dana,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我可沒那麼說。畢竟，我們也沒有十足的把握。\n我的意思是，既然要共同行動，那就存在一條不可逾越的底線」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_2_04_03.mp3
+clickwait,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,dana,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是嗎……既然如此，我和佛爾卡洛倒也可以幫幫你們」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_05.mp3
+clickwait,,,,,,,,,,
+spriteoff,all,0
+name,
+msg,0,
+endwait
+mask,bg1,0,0,1280,300,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,foka1,0,0,1280,300,0.5,,,,
+sprite,download/character/100902/adv/image/dragon.png,foka,0,0,0,0
+imgconf,foka,foka1,0,-250,,,0,0.4,0.4,0
+playse,/download/sound/se/se_051.mp3
+endwait
+name,<size=27><outline width=2 color=black>芙卡洛爾</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「………………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,foka1,0
+spriteoff,bg1,0
+endwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0.5,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_b,body:anger,ily,300,-120,0.5,0.5,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過相對的，你們要捨棄卡蒂婭。\n我可不打算與聖奠教的人一起行動」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_06.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且這也是一個忠告。聖奠教的人全都心懷不軌。\n待在一起的話，事後肯定會後悔哦」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_07.mp3
+clickwait,,,,,,,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「伊蓮娜……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_003_2_04_01.mp3
+clickwait,,,,,,,,,,
+spriteoff,catia,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-235,-120,0.5,0.5,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那種事絕對辦不到……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_05.mp3
+clickwait,,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那就沒什麼好說的了。我會獨自尋找逃離術式\n……比起與卡蒂婭一起行動，那樣反而更好些」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_08.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哪怕我的身體不堪幻夢境的重負而崩潰……我也不想扭曲自己的意志\n苟且偷生。那樣活著是沒意義的」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_09.mp3
+clickwait,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,300,-120,0.5,0.5,,,,
+anm,tint,dana,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你為什麼如此固執……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_2_04_04.mp3
+clickwait,,,,,,,,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,dana,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_2_04_01.mp3
+clickwait,,,,,,,,,,
+spriteoff,dana,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,365,-120,0.5,0.5,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什……不可以，芙勞！靠近她是很危險的……！\n喂，你在聽嗎？！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_06.mp3
+clickwait,,,,,,,,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你，為什麼要把自己的心，弄得如此冰冷呢？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_2_04_02.mp3
+clickwait,,,,,,,,,,
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/100901/adv/atlas/stand_b,body:normal,ily,300,-120,0.5,0.5,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那是，什麼意思？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_10.mp3
+clickwait,,,,,,,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你，其實是個，溫柔、善良——」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_2_04_03.mp3
+clickwait,,,,,,,,,,
+stopbgm,0.5
+spriteoff,all,0.5
+msg,0,
+name,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+mask,jya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:anger,jya,0,0,0,0,,,,
+imgconf,jya,jya1,0,-655,,,0,1.5,1.5,0
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「骯髒的叛徒，竟敢擾亂卡蒂婭大人的內心，簡直不可原諒。\n你身上的罪孽只能以死來償還」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_010_2_04_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,jya1,0
+endwait
+bg,download/bg/bg_10030200.jpg,0.7
+endwait,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_b,body:surprise,ily,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……佛爾卡洛！防禦！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_11.mp3
+clickwait,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,,,
+endwait
+spriteoff,ily,0
+name,
+msg,0,
+endwait
+mask,bg1,0,0,1280,300,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,foka1,0,0,1280,300,0.5,,,,
+sprite,download/character/100902/adv/image/dragon.png,foka,0,0,0,0
+imgconf,foka,foka1,0,-250,,,0,0.4,0.4,0
+shake,0.2,4,10,10
+flash,255,255,255,4,0.2,0
+playse,/download/sound/se/se_051.mp3
+endwait
+name,<size=27><outline width=2 color=black>芙卡洛爾</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「―――――――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,foka1,0
+spriteoff,bg1,0
+endwait
+spine,download/adv/spine/Slash1_Blue,em2,default,animation,0,0,0,1,0.8,0
+shake,0.2,2,10,10
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+endwait
+spineoff,em2,1
+endwait
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:anger,jya,0,-120,0.5,1,,,,
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那是從聖奠教手中奪走的秘寶……你竟敢當成自己的東西來使用」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_010_2_04_02.mp3
+clickwait,,,,,,,,,,
+spriteoff,jya,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:sad,asaka,365,-120,0.5,0.5,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,-300,-100,0.5,0.5,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「潔美拉……？！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_003_2_04_02.mp3
+clickwait,,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂，那也是卡蒂婭的熟人嗎……？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「剛一出現就如此憤怒……你的熟人\n究竟是怎麼回事啊？！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這、這……潔美拉，你退下！\n現在與伊蓮娜爭鬥不是一件……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_003_2_04_03.mp3
+clickwait,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:anger,jya,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_b,body:anger,ily,-300,-120,0.5,0.5,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「恕我直言，卡蒂婭大人。這個女人乃是傷害了眾多聖奠教教徒的\n重罪之人……況且，她剛才也踐踏了卡蒂婭大人的內心」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_010_2_04_03.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在我看來，她完全不值得原諒」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_010_2_04_04.mp3
+clickwait,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「潔美拉……啊啊，對了。你是潔美拉・吉普莉爾。\n你似乎就是卡蒂婭如今的近侍呢」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_12.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「同時……你也是劍之舞巫女」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_13.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我也討厭卡蒂婭那樣的無知之人，但你另當別論。\n因為狂熱的信仰而創造出諸多不幸……這是最為可恨的惡」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_14.mp3
+clickwait,,,,,,,,,,
+anm,tint,jya,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真巧啊。我也覺得你這人很可恨。\n由我親手為你超度，這一定也是納克特原書的指示」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_010_2_04_05.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_b,body:unique,jya,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——去死吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_010_2_04_06.mp3
+clickwait,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,jya,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要死的人是你」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_15.mp3
+clickwait,,,,,,,,,,
+spriteoff,all,0
+name,
+msg,0,
+endwait
+mask,bg1,0,0,1280,300,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,foka1,0,0,1280,300,0.5,,,,
+sprite,download/character/100902/adv/image/dragon.png,foka,0,0,0,0
+imgconf,foka,foka1,0,-250,,,0,0.4,0.4,0
+shake,0.2,4,10,10
+flash,255,255,255,4,0.2,0
+playse,/download/sound/se/se_051.mp3
+endwait
+name,<size=27><outline width=2 color=black>芙卡洛爾</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,foka1,0
+spriteoff,bg1,0
+endwait
+spine,download/adv/spine/Slash1_Blue,em2,default,animation,0,0,0,1,0.8,0
+shake,0.2,4,10,10
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.5
+endwait
+spineoff,em2
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,300,-120,0.5,0.5,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,dana,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、嗚……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_2_04_04.mp3
+clickwait,,,,,,,,,,
+anm,tint,dana,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「芙勞，危險……唔，和他一起退下！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_2_04_05.mp3
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-235,-120,0.5,0.5,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,dana,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，真是的……！什麼情況啊，明明我想要去追趕諾恩的，\n結果麻煩一個接一個地到來……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你們幾個，給我適可……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_10.mp3
+clickwait,,,,,,,,,,,
+shake,0.2,4,10,10
+playse,/download/sound/se/se_011.mp3
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,-235,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_11.mp3
+clickwait,,,,,,,,,,,
+anm,tint,dana,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「戰鬥的衝擊導致地面裂開了……趕緊退下！\n這樣下去——！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_2_04_06.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+shake,0.2,3,20,20
+playse,/download/sound/se/se_011.mp3
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,365,-120,0.5,0.5,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_b,body:sad,ily,-300,-120,0.5,0.5,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,ily,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「開、開玩笑的吧……唔，呀、呀啊啊啊啊啊？！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_12.mp3
+clickwait,,,,,,,,,,,
+anm,tint,ily,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……？！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_009_2_04_16.mp3
+clickwait,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_2_04_05.mp3
+clickwait,,,,,,,,,,
+select,選項1　抓住芙勞的手,選項2　抓住亞紗花的手
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_2_04_06.mp3
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_2_04_07.mp3
+clickwait,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:surprise,asaka,365,-120,0.5,0.5,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔，喂，為什麼連你也跳進來了……啊啊，真是的！\n芙勞也把手……準備迎接衝擊！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_2_04_13.mp3
+clickwait,,,,,,,,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯、嗯……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_006_2_04_08.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+stopbgm,0.5
+spriteoff,all,0
+msg,0,
+name,
+endwait
+shake,0.2,5,30,30
+flash,255,255,255,5,0.2,0
+playse,/download/sound/se/se_011.mp3
+playse,/download/sound/se/se_011.mp3
+wait,2
+endwait
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+bg,download/bg/bg_10030100.jpg,2,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm024.mp3,0.5,,,
+endwait
+mask,bg1,0,0,1280,300,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,vi1,0,0,1280,300,0.5,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,0,0,0,0,,,,
+imgconf,vi,vi1,0,-970,,,0,1.5,1.5,0
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼呣……之前那些人好像就在這裏……\n真是的，想索者這類人總是給我添麻煩」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_022_2_04_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就算是要尋找納克特，這點人也完全不夠看啊。\n為什麼就是不懂這個道理呢……真是愚蠢。喂，你覺得呢？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_022_2_04_02.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+mask,bg1,0,0,1280,300,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,beat1,0,0,1280,300,0.5,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,beat,0,0,0,0,,,,
+imgconf,beat,beat1,0,-900,,,0,-1.5,1.5,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_023_2_04_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+mask,bg1,0,110,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,vi1,0,110,1280,200,0,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,0,0,0,0,,,,
+imgconf,vi,vi1,0,-1000,,,0,1.5,1.5,0
+mask,bg3,0,-110,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,bg2,0,0,0,0
+imgconf,bg2,bg3,0,0,,,0,1,1,0
+mask,beat1,0,-110,1280,200,0,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,beat,0,0,0,0,,,,
+imgconf,beat,beat1,0,-930,,,0,-1.5,1.5,0
+endwait
+anm,tint,vi1,255_255_255,0.0001,0
+anm,tint,beat1,150_150_150,0.0001,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「唔，怎麼了？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_022_2_04_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,beat,0,0,0,0,,,,
+imgconf,beat,beat1,0,-930,,,0,-1.5,1.5,0
+anm,tint,beat1,255_255_255,0.0001,0
+anm,tint,vi1,150_150_150,0.0001,0
+msg,1,<size=30><outline width=2 color=black>「啊……沒什麼，我剛才在思考一些事。\n那個，人們尋求納克特的理由——是嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_023_2_04_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……畢竟人的心靈是很脆弱的。\n他們肯定發自內心憧憬著那種擁有無可動搖的強大的存在吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_023_2_04_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「人們就是想要依靠那樣的事物啦……\n如此一來，人們就會確信自己的心靈能夠得到守護」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_023_2_04_04.mp3
+clickwait,,,,,,,,,,,
+anm,tint,vi1,255_255_255,0.0001,0
+anm,tint,beat1,150_150_150,0.0001,0
+msg,1,<size=30><outline width=2 color=black>「呼呣……妾身不是很懂那種感情」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_022_2_04_04.mp3
+clickwait,,,,,,,,,,,
+anm,tint,beat1,255_255_255,0.0001,0
+anm,tint,vi1,150_150_150,0.0001,0
+msg,1,<size=30><outline width=2 color=black>「不能把人類與我們相提並論哦。\n畢竟兩者從根本上來說就是完全不同的存在」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_023_2_04_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個……接下來可以分開行動嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_023_2_04_06.mp3
+clickwait,,,,,,,,,,,
+anm,tint,vi1,255_255_255,0.0001,0
+anm,tint,beat1,150_150_150,0.0001,0
+msg,1,<size=30><outline width=2 color=black>「嗯？啊啊，分開行動說不定更有效率呢。\n妾身倒是無所謂」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_022_2_04_05.mp3
+clickwait,,,,,,,,,,,
+anm,tint,beat1,255_255_255,0.0001,0
+anm,tint,vi1,150_150_150,0.0001,0
+msg,1,<size=30><outline width=2 color=black>「非常感謝……那麼，\n我從後方進入內部」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_023_2_04_07.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+mask,bg1,0,0,1280,300,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,vi1,0,0,1280,300,0.5,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,0,0,0,0,,,,
+imgconf,vi,vi1,0,-970,,,0,1.5,1.5,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「唔呣。那就等會兒見了……呣？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_022_2_04_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「問題來了……為什麼她會知道這棟建築物的出入口所在呢？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_022_2_04_07.mp3
+clickwait,,,,,,,,,,,
+endwait
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,119 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0_0,1,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「晚上好」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……今晚，也能陪我一起喝酒嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_02.mp3
+clickwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>　</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+bg,download/bg/bg_10010300.jpg,1.0,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,-0,-180,0.5,1.5,,,,
+endwait,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵……感覺和你一起喝酒，變成每天\n必不可少的事情了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為你不反感這樣的我，所以就情不自禁地賴上你了，\n不控制一下可不行呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:shy,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……和別人一起喝酒，原來是這麼的美味啊\n真是久違的味道……不禁……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「很久之前，我也經常和想索幻夢境的同伴們喝酒。\n實際上，在那之前我一滴酒都沒沾過……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……回過神來的時候，我已經完全迷上了……\n那種和大家一起喝酒的滋味」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「現在的酒是什麼味道呢？」,選項2　「好羡慕」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……和那時候稍微有點不同」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:shy,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，這酒還是很好喝的……哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「完全沒有必要羡慕哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:smile,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那個時候的酒非常好喝，有種夢幻的感覺……\n但是，現在和你一起喝的酒，和那時比也沒有什麼不同」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:shy,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以……對吧？ 也沒什麼好羡慕的，不是嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_13.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻……要是能一直這樣下去就好了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是，這種簡簡單單的事情\n對於我們來說也是一種奢望」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「幻夢境……納克特原書的惡意隨時都可能會……\n不費吹灰之力地奪走屬於我們的幸福」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我到現在也無法忘記。那天發生的事情……同伴們\n在幻夢境中死去的那天……不……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「死去這種說法只是在逃避責任罷了……同伴們為了保護我\n挺身而出……是我的弱小，殺死了大家……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以……一定要讓自己變得更強。不能掉以輕心。\n為了不再失去……然後……總有一天，我一定要……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那天的誓言，我一定要……實現……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「…………不好意思，今天好像醉得有點快。\n能給我一杯水嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喝完水我今天就該回去了……真是的\n和你喝酒撒嬌這種事得控制一下才行呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_12_22.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

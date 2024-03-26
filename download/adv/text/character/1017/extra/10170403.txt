@@ -1,0 +1,103 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0.5,,,,
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_01.mp3
+msg,1,<outline width=2 color=black>「——誒？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_02.mp3
+msg,1,<outline width=2 color=black>「我真正的名字……你想知道這個嗎？\n昆茜確實只是稱號，並不是本名……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_03.mp3
+msg,1,<outline width=2 color=black>「……我認為知道這個也沒什麼意義」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_04.mp3
+msg,1,<outline width=2 color=black>「嗚……請不要用這麼期待的眼神看我。\n我的名字到底哪裡值得你這麼期待了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「我感覺應該是很可愛的名字」,選項2　「或許意外地是個可愛的名字？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_05.mp3
+msg,1,<outline width=2 color=black>「那麼就是個不適合我的名字了……\n因為我一點都不可愛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_06.mp3
+msg,1,<outline width=2 color=black>「……可是，為什麼呢。當你叫我的名字的時候，我會有什麼感覺……\n我不知為何有點好奇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_07.mp3
+msg,1,<outline width=2 color=black>「但是，不會有這樣的機會了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_08.mp3
+msg,1,<outline width=2 color=black>「感、感覺困難度增加了許多啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_09.mp3
+msg,1,<outline width=2 color=black>「真是的……雖然你這麼期待，但不好意思，我不告訴你。\n在我自稱昆茜的時候，原本的名字就已經捨棄了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_10.mp3
+msg,1,<outline width=2 color=black>「然後將各種各樣的東西連著名字一起捨棄，\n下定不再回頭的決心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_11.mp3
+msg,1,<outline width=2 color=black>「而且就算我想告訴你，我也想不起自己的名字了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_12.mp3
+msg,1,<outline width=2 color=black>「我在和你們相遇前就潛入過幾次幻夢境，\n況且先不論消滅敵人，我完全沒有魔術的才能」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_13.mp3
+msg,1,<outline width=2 color=black>「幻夢境的負荷奪走了我許多事物……\n狀態變得像現在這樣不穩定……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_14.mp3
+msg,1,<outline width=2 color=black>「……其實，我很少回憶起關於自己的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_15.mp3
+msg,1,<outline width=2 color=black>「雖然我還勉強記得那是很重要的回憶……\n比如說，雖然我記得父母被殺死了，但卻不記得他們的長相和聲音……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_16.mp3
+msg,1,<outline width=2 color=black>「連自己的事情都不明白，所以我好害怕。我有時候會產生這種心境」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:anger,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_17.mp3
+msg,1,<outline width=2 color=black>「所以正因如此，我才不能止步。我必須得往前邁進」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:anger,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_18.mp3
+msg,1,<outline width=2 color=black>「一旦失去的事物就再也不會回來……\n那麼至少，我應該相信我不是白白失去那一切而前進」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:anger,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_19.mp3
+msg,1,<outline width=2 color=black>「並且，我必須得找到納克特原書」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:anger,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_13_20.mp3
+msg,1,<outline width=2 color=black>「我必須得實現毫無勇氣和決心、軟弱而無用的我的微小的願望」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

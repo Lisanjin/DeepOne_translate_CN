@@ -1,0 +1,419 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050200.jpg,0,,,,,,,,
+endwait
+fadeoutblack,1.5,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20040101/adv/image/20040101.png,robo4,250,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo5,-250,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo,0,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo1,500,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo2,-500,-250,1.35,0.5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「————————————！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+endwait
+clickwait
+spriteoff,all,0
+endwait
+spriteatlas,download/character/102502/adv/atlas/stand_b,body:anger,yoshino,310,-200,0.47,0.5,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:anger,lid,-275,-120,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_b,body:anger,yoshino,310,-200,0.47,0,,,,
+anm,tint,lid,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你都開始喘粗氣了，看來你快堅持不住了啊？」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:anger,lid,-275,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你還好意思說我，我看你握劍握得劍尖都抬不起來了吧」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_b,body:anger,yoshino,310,-200,0.47,0,,,,
+anm,tint,lid,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在我們倆什麼時候雙雙倒地都不奇怪啊」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:anger,lid,-275,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別開玩笑了。我才不能在這種地方倒下。\n我不能留米露瓦孤身一個人――」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0
+endwait
+sprite,download/monster/20040101/adv/image/20040101.png,robo4,250,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo5,-250,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo,0,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo1,500,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo2,-500,-250,1.35,0.5
+endwait
+spine,download/adv/spine/blow_Red,em1,default,animation,0,-500,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/blow_Red,em2,default,animation,0,-250,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/blow_Red,em3,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/blow_Red,em4,default,animation,0,250,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/blow_Red,em5,default,animation,0,500,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+flash,255,255,255,4,0.2,0.2
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「——————————……」</outline></size>,,,,,,,,,
+clickwait
+name,
+msg,0,
+spriteoff,robo2,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,robo5,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,robo,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,robo4,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,robo1,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+wait.0.5
+endwait
+spriteatlas,download/character/102502/adv/atlas/stand_b,body:surprise,yoshino,310,-200,0.47,0.5,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:surprise,lid,-275,-120,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔——！？」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_b,body:anger,yoshino,310,-200,0.47,0,,,,
+anm,tint,lid,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼了……虛像被擊倒了？」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:surprise,lid,-275,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「剛剛的槍聲，是從遠距離的狙擊？\n難道說——是昆茜嗎！」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0
+endwait
+sprite,download/monster/20040101/adv/image/20040101.png,robo4,250,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo5,-250,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo,0,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo1,500,-250,1.35,0.5
+sprite,download/monster/20040101/adv/image/20040101.png,robo2,-500,-250,1.35,0.5
+endwait
+spine,download/adv/spine/blow_Red,em1,default,animation,0,-500,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/blow_Red,em2,default,animation,0,-250,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/blow_Red,em3,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/blow_Red,em4,default,animation,0,250,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/blow_Red,em5,default,animation,0,500,0,1,0.8,0
+playse,/download/sound/se/se_053.mp3
+endwait
+wait,0.5
+flash,255,255,255,4,0.2,0.2
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「——————————……」</outline></size>,,,,,,,,,
+clickwait
+name,
+msg,0,
+spriteoff,robo2,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,robo5,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,robo,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,robo4,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,robo1,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+wait.0.5
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:anger,lid,-275,-120,0.5,0.5,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_b,body:anger,yoshino,310,-200,0.47,0.5,,,,
+anm,tint,lid,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——林德曼！」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:anger,lid,-275,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我知道的。敵人的陣腳亂了……絕對不能放過這種好時機。\n趕緊突圍吧！」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0.2
+stopbgm,0.2
+bg,color_0_0_0,1,255,,,,
+endwait
+msg,1,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10050100.jpg,1,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:anger,lid,-275,-120,0.5,0.5,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:anger,yoshino,310,-200,0.47,0.5,,,,
+anm,tint,lid,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……哈、哈……跑到、這裡來的話……」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:sad,lid,-275,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……我居然會、背對那些虛像逃跑……」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,yoshino,0
+anm,tint,lid,150_150_150,0.0001,0
+endwait
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:anger,qui,300,-120,0.5,0.5,,
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「莉迪亞！芳乃！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:normal,lid,-275,-120,0.5,0,,,,
+anm,tint,qui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「昆茜……真愧虧你能找到這個地方」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qui,300,-120,0.5,0,,
+anm,tint,lid,150_150_150,0.0001,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「我順著魔力的反應找到的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:normal,lid,-275,-120,0.5,0,,,,
+anm,tint,qui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「原來如此……不管怎麼說也是一流的暗殺者啊。\n探知氣息還有魔力都是手到擒來……」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,lid,0
+endwait
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yoshino,-290,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「昆茜，真是幫大忙了。\n要是跟那麼多的虛像正面硬碰硬確實是太莽撞了」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yoshino,-290,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那時如果沒有你的掩護繼續打下去的話，都不知道要落得什麼下場……」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qui,300,-120,0.5,0,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「不，誇張了……也沒有什麼了不起――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,yoshino,0
+anm,tint,qui,150_150_150,0.0001,0
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:normal,lid,-275,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼，昆茜，別說些傻話了」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:surprise,qui,300,-120,0.5,0,,
+anm,tint,lid,150_150_150,0.0001,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「誒？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:normal,lid,-275,-120,0.5,0,,,,
+anm,tint,qui,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「從中彈到聽到聲音的時間差來看，剛才應該是從三千……\n不對，是三千五百米開外吧？」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣還說“沒有什麼了不起”的話……真是的，\n太過謙虛的話反而會讓人覺得是蹭鼻子上臉哦」」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,lid,0
+endwait
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:surprise,yoshino,-290,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「三千五百米……真是太驚人了」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qui,300,-120,0.5,0,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「說實話，那個……我自己也有點不敢相信。\n因為畢竟至今為止，都沒有在那麼遠的距離射擊成功過……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qui,300,-120,0.5,0,,
+msg,1,<outline width=2 color=black>「但當時我全神貫注到忘乎所以……\n指頭也像有了自我一般扣動著扳機」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「說句玩笑話，說不定是有外力在幫助我。\n順利得甚至都開始令我如是胡思亂想了――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0.2
+stopbgm,0.2
+bg,color_0_0_0,1,255,,,,
+endwait
+msg,1,<outline width=2 color=black>「——幹得漂亮」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,
+endwait
+bg,download/bg/bg_10050100.jpg,1,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yoshino,-290,-200,0.47,0.5,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:surprise,qui,300,-120,0.5,0.5,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「什麼……師傅？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:surprise,yoshino,-290,-200,0.47,0,,,,
+anm,tint,qui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「昆茜，怎麼了？」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:surprise,qui,300,-120,0.5,0,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「我剛才聽到了聲音……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yoshino,-290,-200,0.47,0,,,,
+anm,tint,qui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「聲音？我什麼都沒有聽到啊……\n林德曼，你聽到了嗎？」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,yoshino,0
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:normal,lid,-275,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我也沒什麼都沒聽到。是你聽錯了吧？」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qui,300,-120,0.5,0,,
+anm,tint,lid,150_150_150,0.0001,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「是這樣麼……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:normal,lid,-275,-120,0.5,0,,,,
+anm,tint,qui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不管這個了，我們還是快點轉移吧」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,lid,0
+endwait
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:normal,yoshino,-290,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也是。明明好不容易脫離了那些虛像的重圍，\n還繼續留在這裡的話，要被追上了」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:normal,qui,300,-120,0.5,0,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「也是呢……我知道了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,3,10,10,,,,,,,,,,,,
+endwait
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:surprise,qui,300,-120,0.5,0,,
+msg,1,<outline width=2 color=black>「呃——啊，咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:surprise,yoshino,-290,-200,0.47,0,,,,
+anm,tint,qui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「昆茜，你怎麼了？」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101702/adv/atlas/stand_a,body:sad,qui,300,-120,0.5,0,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+msg,1,<outline width=2 color=black>「不，沒啥……那個……突然感覺身體好乏力……\n而且，不知為何，我怎麼覺得世界在轉圈——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「——啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0.2
+stopbgm,0.2
+shake,0.2,2,10,10,,,,,,,,,,,,
+endwait
+bg,color_0_0_0,0.5,255,,,,
+endwait
+msg,1,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

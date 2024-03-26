@@ -1,0 +1,123 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼，房間這東西，這麼快就會變髒呢……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+spine,download/adv/spine/Mark2,em1,default,animation,0,110,200,0.65,0.8,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「等注意到的時候，連下腳的地方都沒有了……真是，\n拉萊耶的房間真的窄」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_02.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「之前也是，房間裏滿是灰塵，都打噴嚏了，\n搞錯最重要的構造就全都浪費了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你說，怎麼了……啊，沒事，什麼事都沒有」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_04.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……沒什麼啦，就是我的興趣罷了。\n為什麼我要把我的興趣告訴你？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「總之，回到房間的話題上。拉萊耶有賣最新的設備吧？\n比如掃除用的機器人，是不是該給我們準備這樣的東西？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你是不是也這麼覺得？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_07.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「是」,選項2　「我也沒什麼不滿」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:smile,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對啊，果然還是有機器人才比較方便。\n原來，偶爾我們意見也會一樣嘛」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_08.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的，房間又窄，生活輔助又不到位。\n拉萊耶也沒什麼了不起的嘛」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_09.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你，還真是奇怪」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_10.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「還是說，男人都不在乎\n房間稍微髒點嗎」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_11.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我一點都不羡慕你……你本來，從立場上講\n你和女性就有關聯，有時候還會有叫人來房間裏……誒？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_12.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「說起來，之前來你房間的時候，\n好像是很乾淨……誒？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你是擅長打掃和整理……這、這樣啊……嗯……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_14.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒，自、自己打掃？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「難、難不成你覺得我是不會打掃的女人？\n如果是這樣的話，你就小看我了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別看我這樣，其實我也習慣了人情世故。\n你要是覺得我是軟弱的深閨大小姐，那可太讓人生氣了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「只是，就現在來看，都已經沒地方下腳了，\n房間應該不會再亂了吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是的，我在跟你討論打掃的話題啊？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「算、算了！這樣的話，我今天就打掃房間給你看」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_21.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不用你幫忙。\n我自己的事情自己做……不只會依賴別人的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_22.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不管多麼信賴一個人，\n總有一天也會離你而去」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_23.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「然後才會幡然醒悟。人到最後，終究是孤獨的……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_24.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看你這樣子，應該是還沒理解這件事。\n但總有一天，你會明白的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_25.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………我真是，只是討論打掃，究竟在說什麼啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100203/adv/sound/fav100203_08_26.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

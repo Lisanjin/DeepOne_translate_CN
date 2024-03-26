@@ -1,0 +1,100 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「拉萊耶這裏不僅有魔術相關的設備，在娛樂設施上也很充實\n這麼聽說來著……這裏的音樂廳也非常的棒」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「樂器的種類也很豐富，大鋼琴、吉他、貝斯、\n連馬林巴這種小眾的樂器都有呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「音樂設備也是最先進的……還有古今東西的音樂檔\n也保存了許多，鑒賞音樂起來非常舒適」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_03.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「你會彈樂器嗎？」,選項2　「你喜歡什麼音樂？」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那是當然。作為從者要是不會彈一兩個吉他，\n鋼琴之類的樂器就太不像話了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為了應對，不知道什麼時候會被要求演奏樂曲的要求。\n當然，發生這種不測事態的可能性很低」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「即便這樣，能夠應對好“萬一”的從者\n才是完美的從者」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_06.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「個人來說比起古典音樂，我更喜歡搖滾音樂。\n特別是老式的英國搖滾，什麼時候聽都覺得很好」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_07.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然有著激烈的獨創性，但其中卻洋溢著優雅……\n與超越時代的被人喜愛很是映襯」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_08.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒呀，看來你挺驚訝嘛。是對我的喜好有些意外嗎？\n呵呵，人的喜好可不能只靠容貌來判斷」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_09.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「要是你也對音樂感興趣的話，要不要一起去音樂廳看看？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_10.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,holly,0
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,holy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holy,0,0,0,0,,,,
+imgconf,holy,holy1,0,-730,,,0,1.5,1.5,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「這裏的隔音效果也非常好，\n即便發出很大的聲音，也不用擔心會漏出去……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_11.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0.5,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「咦……剛剛，好像聽見有咽唾沫的聲音呢……嘻嘻，\n你是不是在臆想些什麼？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我本來是想提議邀請你一起鑒賞音樂的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這件音樂廳有一個很大的揚聲器，\n一定可以享受到身臨其境般的音樂盛宴……意下如何」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我這麼說了，但你好像還在想些別的東西……\n你該不會在期待一些羞羞的事情吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼哼……臉有些變紅了哦？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我一個從者說這樣的話有些不合禮節，\n但你實在是看著可愛……感覺是一個很有調戲價值的人呢，說真的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「像這樣子說話，總覺得……既沒有束縛也沒有不安\n有種回到那個時候的錯覺呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100801/adv/sound/fav100801_04_18.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

@@ -1,0 +1,105 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait
+bg,download/bg/bg_10010300.jpg,1,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,
+endwait
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——你醒了。口渴的話，我去給你弄點喝的來吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「放心，這裏是你的房間。\n你只是失去了意識大約四十分鐘」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「在幻夢境想索時你突然倒下了，嚇壞我了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「身體不舒服，還勉強自己去想索……真是見所未見。\n你真是，喜歡為了他人而理所當然地勉強自己啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我原本是想著，怎麼也得說教你一兩句的。但是我也知道，這就是你的個性，\n而我卻沒注意到這一點，我也有錯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這次我就不說重話了……下次有這種事的話，\n不要隱瞞，來和我商量」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_06.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「我不想讓你生氣」,選項2　「我不想讓你擔心」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果你任性地傷害自己的身體的話，我當然會生氣的。\n但是你的隱瞞，才讓我既悲傷、又痛苦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:unique,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你是那種，會讓女人傷心的人嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別說那樣的話……同伴之間，相互幫助是當然的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「難道說，我還沒有得到你的信任嗎……\n你這樣搞，會讓我忍不住往上想」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_10.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你有著重要的作用。但是，我擔心你，不僅僅是因為這個。\n只是單純地，不想讓你受到傷害」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「看到你倒下，我的胸口悶悶的，很難受……\n想要盡我所能地幫助你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「想讓你來問問我的意見，想要幫上你的忙，\n想要成為你的力量」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我不想教你戰鬥的方法，這一點永遠不會變。\n但是，其他事情我都會盡力幫你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「到現在為止，我一直送我的學生走向死亡」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「像死神一樣的我，也想要給予誰什麼……想要幫助他人\n雖然不知道別人願不願意」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，再來一次的話……這一次，為了不失去我重要的人，\n我已經，無法抑制自己想要為你指引方向的想法」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:unique,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你可以依賴我嗎。\n你能理解，我想要成為你的指明燈的心情嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:smile,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊，謝謝。既然如此，為了支持你，\n我會變得更強的，約好了哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「今後，也請多關照」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_13_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

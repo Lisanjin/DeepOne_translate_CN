@@ -1,0 +1,99 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「今天也辛苦了，想索感覺也很……順利\n只是，回饋總是感覺怪怪的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「隨著想索的深入，這片迷幻世界不斷地擴大……究竟，什麼時候\n我們才能抵達幻夢境的邊境呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在幻夢境裏睡眠，納克特原書的思想……你認為這些真的存在麼？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:sad,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……感覺，就算說出來也沒有辦法。就算再怎麼想也沒有答案。\n而且，我們也沒有第二條路可選」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這條路的盡頭，究竟是一個什麼樣的結局呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「一定是個好結局」,選項2　「不知道」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你的眼神……在拼命隱藏著不安，耿直地相信著這一切啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果你不安的話，就會傳給其他人……所以，\n你在顯示自己的剛強麼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:smile,uru,-20,-200,0.5,0,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,80,250,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘿嘿……真是太可愛了。\n你的這一點啊，真是可愛啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_08.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真實誠啊……但是，也不錯。\n姑且，我也算是年長者。你的洩氣話，就由我來承擔好了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以說，多來依賴、依靠一下我吧？\n戰鬥也好，其他事情也好……你畢竟是特別的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_10.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「從今往後，我將依舊成為你的力量。\n所以，你也不要有所顧慮，盡情使用我吧｣
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_11.mp3
+clickwait
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:surprise,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我說，這裏你應該是乖乖點頭才對吧？\n為什麼要搖頭啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:sad,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我也理解你，希望夥伴不要太過\n勉強的心情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以說，請把我放在你需要擔心的夥伴名單之外。\n我都說了我會為了實現你的願望而工作」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「之前也說過的吧，我可是比你還年長很多的。\n年長者都說要照顧你了，你就老老實實地接受吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，我說這些又不是因為我是單純的志願者\n或者無償的愛你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我也，有我自己的理由。無論多少次，我想盡可能\n多的深潛到幻夢境中……不這樣的話……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……總之，我也有自己的緣由。\n今後，對幻夢境的想索，大概會變得越來越嚴酷吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這種時候，沒有必要來考慮我……還請你\n好好記住這一點」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102101/adv/sound/fav102101_03_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

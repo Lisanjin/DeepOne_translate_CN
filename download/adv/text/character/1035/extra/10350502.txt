@@ -1,0 +1,247 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101400/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_01.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「啊，你來得正好……！欸，別問我為什麼，跟我一起過來！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101400/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_02.mp3
+msg,1,<outline width=2 color=black>「別管了……之後我再跟你解釋！現在是分秒必爭……！\n在拉萊耶裡沒辦法確實躲開她……來這邊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10020300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_03.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「呼……躲到幻夢境裡面的話，再怎麼說她都沒辦法簡單找來吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選項1　「妳這次又幹了什麼好事？」,選項2　「快去投案！」
+
+
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_04.mp3
+msg,1,<outline width=2 color=black>「等一下啦。你那種以我做了壞事為前提的詢問方式很沒禮貌耶！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_05.mp3
+msg,1,<outline width=2 color=black>「不過呢，我是做了壞事沒錯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_06.mp3
+msg,1,<outline width=2 color=black>「呵呵。你不懂啦，事到如今還去投案，\n那就跟把頭擺上斷頭台沒兩樣了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_07.mp3
+msg,1,<outline width=2 color=black>「不對，與其說是斬首，應該說是火刑吧……總之，\n我還不想死。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_08.mp3
+msg,1,<outline width=2 color=black>「至於我做了什麼嘛……我偷吃了亞紗花的珍藏布丁。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_09.mp3
+msg,1,<outline width=2 color=black>「更精確的說法是我偷吃了亞紗花為\n奈克特抄本的那個ASAKA做的布丁。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_10.mp3
+msg,1,<outline width=2 color=black>「只要牽扯到有關亞紗花的事……你想想，就是很那個，對吧？應該用會有點喪失理智去形容吧……\n因為她對亞紗花懷抱著人類的標準無法衡量的愛情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_11.mp3
+msg,1,<outline width=2 color=black>「然後對她重要無比的亞紗花做給她的布丁，竟然被偷吃了……\n所以我現在出去的話，大概真的會被燒死。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_12.mp3
+msg,1,<outline width=2 color=black>「就是知道亞紗花不會因為甜點被吃就生氣，我才會做這種惡作劇的說……\n如果知道那是奈克特抄本的東西，那我一開始就不會打它的主意。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_13.mp3
+msg,1,<outline width=2 color=black>「就是這麼回事，所以等風頭過了之前我都會躲在這。\n因為亞紗花一定會安撫她的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_14.mp3
+msg,1,<outline width=2 color=black>「嗯？為什麼我要把你一起帶來？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_15.mp3
+msg,1,<outline width=2 color=black>「我萬一被追上的時候，只要把你當成肉盾的話，\n就算是她也不太能做出粗暴的舉動，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+anm,scale,norn,0.6_0.6,0.3,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:surprise,norn,0,-120,0.6,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_16.mp3
+msg,1,<outline width=2 color=black>「啊──等一下，不要走啦！開玩笑的，我開玩笑的啦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,norn,0.5_0.5,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_17.mp3
+msg,1,<outline width=2 color=black>「其實我找你來，是想請你跟我一起想要怎麼向她道歉，\n她才肯原諒我啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_18.mp3
+msg,1,<outline width=2 color=black>「首先，你有沒有亞紗花的睡相照片之類的東西？\n有那個的話，她大概馬上就會原諒我了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_19.mp3
+msg,1,<outline width=2 color=black>「啊，更不雅的照片也可以哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+anm,scale,norn,0.6_0.6,0.3,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:surprise,norn,0,-120,0.6,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_20.mp3
+msg,1,<outline width=2 color=black>「啊──我開玩笑的啦！這是玩笑，所以你不要跑走啦！\n我知道了！之後我會給你有點色色的自拍！好不好！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.6,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_21.mp3
+msg,1,<outline width=2 color=black>「好吧！還附上芙勞的超私密照喔！怎麼樣！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,-200,0.5,1.0,0
+playse,/download/sound/se/se_043.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+bg,download/bg/bg_10020300.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_22.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「好、好痛……！？你、你敲我頭！？\n也沒必要用敲的吧……！而且敲下去的角度還超精準的！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_23.mp3
+msg,1,<outline width=2 color=black>「一定腫起來了啦……嗚嗚。\n你要我珍重自己……？可是我只可能對你送這種東西的說……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/101405/adv/sound/fav101405_02_24.mp3
+msg,1,<outline width=2 color=black>「知道了啦，我不會再拿這種事來講了──嘖，我本來還想送你\n前陣子芙勞被我叫去試穿各種內衣時的照片呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

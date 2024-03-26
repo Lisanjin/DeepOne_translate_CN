@@ -1,0 +1,107 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_01.mp3
+name,<outline width=2 color=black>艾麗卡・露比婭</outline>,
+msg,1,<outline width=2 color=black>「你啊，擁有別人所沒有的力量」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_02.mp3
+msg,1,<outline width=2 color=black>「需要離開拉萊的話就一定需要接觸納克特原書，\n為了在幻夢境中減輕想索的負擔，你的能力是不可或缺的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_03.mp3
+msg,1,<outline width=2 color=black>「但這一定會在提高你自身價值的同時，讓你對未來失去選擇權」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_04.mp3
+msg,1,<outline width=2 color=black>「所有人都會仰仗你，依靠你的吧\n即使是這樣，你也覺得你想要回應他們所有的期待嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_05.mp3
+msg,1,<outline width=2 color=black>「善意，自尊，或許還有些虛榮……無論你所持的感情是什麼，\n願意幫助向你求助的人是人類的本能之一」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_06.mp3
+msg,1,<outline width=2 color=black>「呐……你現在的願望是你自身產生的麼？ \n還是只是隨波逐流，為了應付當下的情景說的場面話呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「只是想要幫助大家而已」,選項2　「只有這一條路可走了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_07.mp3
+msg,1,<outline width=2 color=black>「你這下等人……聽懂我說什麼了嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:anger,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_08.mp3
+msg,1,<outline width=2 color=black>「這是除了你之外沒人做得到的事……如果沒辦法逃避責任責任，\n那至少也要找個讓心裏好受點的理由吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_09.mp3
+msg,1,<outline width=2 color=black>「就像是在被他人的期待綁架到懸崖邊一樣\n這種情節……還真是可笑呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_10.mp3
+msg,1,<outline width=2 color=black>「沒錯……正是大家的期待和這種狀況，剝奪了你選擇的權利」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:anger,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_11.mp3
+msg,1,<outline width=2 color=black>「我覺得，這還是太殘酷了即使是下等人的你，\n也應該擁有作為人的選擇自己生存方式的權力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_12.mp3
+msg,1,<outline width=2 color=black>「我和你這樣的下等人不同……對於任何人的期待，\n我都不會貿然回應，都會由自己做決定」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_13.mp3
+msg,1,<outline width=2 color=black>「呐，告訴你一件事……我的這雙眼睛――這『托希爾之眼』，\n有為人們帶來榮華富貴的能力，真的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_14.mp3
+msg,1,<outline width=2 color=black>「露比婭家族的女性，\n一生只有一次使用這能力的機會」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_15.mp3
+msg,1,<outline width=2 color=black>「使用之後就會雙目失明，\n四肢退化，心臟則會裂開，破碎，然後慢慢腐朽……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_16.mp3
+msg,1,<outline width=2 color=black>「我的家族就這樣，擁有了特殊的地位」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_17.mp3
+msg,1,<outline width=2 color=black>「我的母親和姐姐，最後的時間都很痛苦……我不想變成那樣\n所以我從家裏逃了出來反抗自己成為活祭品的宿命」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_18.mp3
+msg,1,<outline width=2 color=black>「只要有我的眼睛的力量，大家一定能從拉萊耶中逃脫……\n但是，我是絕對不會使用這力量的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:anger,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_19.mp3
+msg,1,<outline width=2 color=black>「別對我抱有期待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_20.mp3
+msg,1,<outline width=2 color=black>「我也對你，你這種下等人沒有任何期待……從一開始就沒有過\n所以也沒有回應的必要……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103301/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_02_21.mp3
+msg,1,<outline width=2 color=black>「如果想要逃離這沉重的期待的話，就到我這裏來吧\n當我的僕人，帶著你也沒什麼大不了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

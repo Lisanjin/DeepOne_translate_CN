@@ -1,0 +1,98 @@
+name,,,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「抱歉，讓你久等了。我從房間過來的時候，\n被唯和貝托麗薩纏住了……哎呀，她們真是讓我為難」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:unique,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「回歸正題，圖鑒的操作好像很棘手啊\n雖然讓我這個生活在幻夢境裏的人教你有點奇怪……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_02.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，我不會辜負你的期望的……就當我的操作很嫺熟吧。\n雖然很少有機會接觸這種機器，不過只要上手應該很簡單」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，先在圖鑒裏擴張你的領域吧。\n先把你的終端打開……嗯？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_04.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:unique,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不要在這裏存放你和女人的日程表啊。\n根本就不用黑進系統，誰都能看得到哦？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「給檔上個鎖吧……之後會有設定密碼的通知，\n一定要記得設置哦……真是的……注意，擴張快要完成了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_06.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯嗯……這種程度的操作，只要有點熱情和耐心很快就能記住」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_07.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對我來說，這是我不斷下功夫研究外界知識的成果。\n說不定不知道什麼時候就能瞭解到自己墮入幻夢境之前的事情」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_08.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「有什麼有趣的情報嗎？」,選項2　「你想知道關於自己的過去嗎？」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:unique,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在倒是沒什麼……唯一有趣的就是剛才的日程表吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_09.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「看起來，由於職員許可權不足，能夠閱覽的僅僅是很有限的一部分情報啊，\n我作為外來人員，無法連接到更深層次的區域」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我在尋找偽裝許可權的方法，但是一時半會兒搞不定。\n暫時就看看手邊的資料滿足一下好奇心吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_11.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……到底怎麼樣呢。我確實很好奇，很想知道過去的自己，\n但同時我也明白，就算知道了也不會改變什麼」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不管過去的自己是什麼樣子，現在的自己也不會改變。\n失想者的命運就是在幻夢境中重生。想要取回過去的記憶是不可能的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_13.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，隨著調查的進行，總有一天，你的故事也將揭曉。\n我覺得這也很有意義」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:anger,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，但是你別誤會。就算我知道了相關情報，\n也不一定會告訴你……也許還會故意隱瞞」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「之所以隱瞞，是因為那些情報具有高度危險性。\n你如果知道的話反而會不好……應該會有這種情況吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為了保護你，我不得不深思熟慮，\n哪怕要違背你的意志，你想要知曉自己的事情的意志」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我保護的是不是某個人而是所有人……我不想本末倒置」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，這是我自己的情況……如果你自己調查並且洞悉真相的話，\n我也不會阻止」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「還有……如果可以的話，我希望你\n也能找到自己追求的東西」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102401/adv/sound/fav102401_04_20.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

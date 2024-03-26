@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_01.mp3
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是我，潔美拉。您現在有空嗎\n我有點事想請您幫忙……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_02.mp3
+msg,0,<size=30><outline width=2 color=black>「……謝謝。\n可以進屋裏說嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10010300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_03.mp3
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我用之前在想索抵達的領域找到的水果，\n試著做成水果餡餅」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_04.mp3
+msg,0,<size=30><outline width=2 color=black>「在獻給卡蒂婭大人品嘗之前想先聽聽您的感想。\n可否請您試吃一下呢？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_05.mp3
+msg,0,<size=30><outline width=2 color=black>「……呵呵，謝謝您。\n這是糕點和叉子，請品鑒」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_06.mp3
+msg,0,<size=30><outline width=2 color=black>「那麼……您覺得味道如何？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「好吃」,選項2　「甜度低點會更好」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_07.mp3
+msg,0,<size=30><outline width=2 color=black>「謝謝您的稱讚，\n雖說只嘗了一口，不過好吃也是有分級的吧……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_08.mp3
+msg,0,<size=30><outline width=2 color=black>「如果以十級算，在哪個級別呢？\n不管意見如何我都會虛心接受，請您直言」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_09.mp3
+msg,0,<size=30><outline width=2 color=black>「……原來如此，“八”啊。\n看來還遠遠算不上是完美的甜品呢……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_10.mp3
+msg,0,<size=30><outline width=2 color=black>「我給水果裹了層糖漿，看來是弄巧成拙了呢。\n還有水果的比例也……嗯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_11.mp3
+msg,0,<size=30><outline width=2 color=black>「另外，水果下的奶油也要控制好甜度……原來如此。\n我大致找到方向了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_12.mp3
+msg,0,<size=30><outline width=2 color=black>「非常感謝您的建議，對我很有幫助。\n我這就去拿新的樣品，可否請您稍候片刻？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_13.mp3
+msg,0,<size=30><outline width=2 color=black>「……嗯，我做了不只一個。\n還另外準備了七十七個樣品」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:anger,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_14.mp3
+msg,0,<size=30><outline width=2 color=black>「不能把半成品獻給卡蒂婭大人。\n直到找到合適的味道，請盡情試吃吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name, 
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10010300.jpg,1,255
+endwait
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101005/adv/sound/fav101005_02_15.mp3
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——這是第三十二個樣品，請品鑒」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_16.mp3
+msg,0,<size=30><outline width=2 color=black>「……咦，您怎麼不繼續吃了？\n還一直流冷汗……莫非是身體不適——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_17.mp3
+msg,0,<size=30><outline width=2 color=black>「誒……水果，好可怕……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_18.mp3
+msg,0,<size=30><outline width=2 color=black>「我記得……日本的小笑話提到過這個……\n好像是，饅頭好可怕之類的……誒，不是？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_19.mp3
+msg,0,<size=30><outline width=2 color=black>「既然身體不舒服，還是躺床上休息吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_20.mp3
+msg,0,<size=30><outline width=2 color=black>「還有四十五個樣品需要聽聽您的建議，\n要是您現在倒下的話——誒，咦，怎麼跑了……！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,255
+endwait
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_029.mp3
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+playvoice,1,download/character/101005/adv/sound/fav101005_02_21.mp3
+msg,0,<size=30><outline width=2 color=black>「您要到哪里去啊……！？請，請留步……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

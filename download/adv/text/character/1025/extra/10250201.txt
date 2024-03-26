@@ -1,0 +1,127 @@
+name,
+msg,0,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10030100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0.5,,
+endwait
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:anger,yoshino,-10,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——誰都有絕對不擅長的東西」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼不擅長呢，有時候連本人都不知道。\n也許存在前世的因緣、性格、緣分吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「能夠確定的只有……要克服生理上無法接受的東西，\n需要很多的時間」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「或者，有的厭惡和恐懼，是無論花多少時間都無法抹去的吧。\n我覺得就算是再努力，也有些事情是無法做到的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我努力過了。為了克服缺點，我收集了很多知識。\n我學習生物、學習對應的辦法，也能想出數百種殺人的方法」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，都是徒勞。只要那些東西一進入我的視野，皮膚就會起雞皮疙瘩，\n腦中發出的危險信號就會不斷在後背遊走……恐懼感奔湧而上」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「即使是差點受到迫擊炮的攻擊的時候，我的腿也不會停下來。\n可是這樣的我，現在卻只能蜷縮著身體不得動彈……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你怎麼笑我都可以……\n所以，你不要讓那個蜈蚣靠近我……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_08.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你要哭了嗎？」,選項2　「交給我吧」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:unique,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……聽好了。我是巴爾蒂克姆騎士團的大將校。\n作為幹部，必須是後輩的榜樣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:surprise,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「必須無時無刻展現出作為勇敢的騎士的一面。\n那樣的我怎麼會哭——嗯！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_10.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:smile,yoshino,-10,-200,0.47,0,,,,
+spine,download/adv/spine/Mark1,em2,default,animation,0,70,260,0.65,0.8,0.5
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，這不是很可靠嗎……\n這是除了父親之外，我第一次感覺男性的後背如此可靠哦……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_11.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:surprise,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，這個危機就交給你處理了。\n我要作為後勤支援你——哈！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+spine,download/adv/spine/Mark3,em3,default,animation,0,70,260,0.65,0.8,0.5
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+shake,0.1,10,100,100
+msg,1,<size=30><outline width=2 color=black>「呼，變多了啊！還有一條！那裏！\n為什麼！到底藏到哪里去了！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_13.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_b,body:anger,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「等一下等一下！別回頭！不要把注意力從前方的敵人身上移開！\n現在我們可是正在受到夾擊噢！？不好好維持這份平衡的話，搞不好就被哪一邊的敵人給幹掉了！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102502/adv/atlas/stand_b,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「既然如此，就把我的刀給你……不行不行，不能砍那個。\n切斷的話好像會跳起來……他們會濺出體液的……誒！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_15.mp3
+clickwait,,,,,,,,,,,
+anm,move,yoshino,-8_-200,0.05,0
+endwait
+anm,move,yoshino,-10_-200,0.05,0
+endwait
+anm,move,yoshino,-8_-200,0.05,0
+endwait
+anm,move,yoshino,-10_-200,0.05,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「等、等一下……不要去！我可沒記得允許過你衝鋒陷陣！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_16.mp3
+clickwait,,,,,,,,,,,
+spriteoff,yoshino,0.5
+endwait,,,,,,,,,,,
+name,
+msg,0,
+bg,color_0_0_0,0.5,255
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+bg,download/bg/bg_10030100.jpg,1,,,,,,,,,
+endwait
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，平靜下來了……真是醜態百出啊。\n順便說一下，剛才的蜈蚣去……啊，已經逃到遠處的草叢裏了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_17.mp3
+clickwait,,,,,,,,,,,　
+spriteatlas,download/character/102502/adv/atlas/stand_a,body:unique,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「謝謝……我再也不要靠近這附近的區域了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102502/adv/sound/fav102502_05_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

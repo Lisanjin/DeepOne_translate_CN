@@ -1,0 +1,119 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:surprise,anna,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_01.mp3
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「——我來拉萊耶的理由？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_02.mp3
+msg,1,<size=30><outline width=2 color=black>「沒有什麼好隱瞞的理由啦，倒也不是不能說……\n說起來，你為什麼想問這個問題呢？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「因為想和安娜更加親近一點」,選項2　「只是好奇」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_03.mp3
+msg,1,<size=30><outline width=2 color=black>「哈、哈啊？你你你你你你、你在說什麼啊！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_04.mp3
+msg,1,<size=30><outline width=2 color=black>「那、那也就是說……確實、那個……為了在幻夢境中想索，\n各個方面、那個……都」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_05.mp3
+msg,1,<size=30><outline width=2 color=black>「可、可是、更加什麼的，更加、什麼的！\n你、你這個……變態！笨蛋！笨蛋笨——蛋！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:surprise,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_06.mp3
+msg,1,<size=30><outline width=2 color=black>「……啊、誒？什麼、不是那方面的意思麼？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_07.mp3
+msg,1,<size=30><outline width=2 color=black>「什麼嘛，別用這種容易讓人誤會的說法啊！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_08.mp3
+msg,1,<size=30><outline width=2 color=black>「真是的，哼……也就是說，是那個意思？\n想讓夥伴之間的羈絆連接得更加牢固，你是這種意思麼？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_09.mp3
+msg,1,<size=30><outline width=2 color=black>「呼——嗯……原來如此。該怎麼說呢，你這傢伙，有所改變了呢？\n聽到這個問題的答案你會感覺很開心嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_10.mp3
+msg,1,<size=30><outline width=2 color=black>「就算瞭解了別人的事情，對自己來說也沒有任何改變，不是嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_11.mp3
+msg,1,<size=30><outline width=2 color=black>「……沒什麼，要是你想知道的話也可以啦。\n每個人的想法，畢竟都不一樣……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_12.mp3
+msg,1,<size=30><outline width=2 color=black>「誒，在這種地方慢悠悠的散步，就是所謂的那個吧。\n就是閒聊對吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_13.mp3
+msg,1,<size=30><outline width=2 color=black>「我啊，原本是自由的傭兵，活躍在各地的戰場上」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_14.mp3
+msg,1,<size=30><outline width=2 color=black>「然後，我記得是在中美周圍的紛爭地帶吧。\n突然就碰上了洛夫克拉夫特財團的傢伙們」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_15.mp3
+msg,1,<size=30><outline width=2 color=black>「他們好像是在找有特殊適應性的魔術士。\n為了找我，還特地跑到戰場上來了，真是有勞他們了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_16.mp3
+msg,1,<size=30><outline width=2 color=black>「然後，他們委託我，\n協助他們找到一本叫做納克特原書的超厲害的魔導書」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_17.mp3
+msg,1,<size=30><outline width=2 color=black>「本來那些話，我是打算左耳朵進、右耳朵出……但是，他們說，在納克特原書裏\n這個叫做幻夢境的危險世界，正在不斷擴張」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_18.mp3
+msg,1,<size=30><outline width=2 color=black>「一旦進去，再次出來的可能性就微乎其微了，諸如此類的細節也有不少，\n聽到這些話的時候，我腦子裏的想法只有一個」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:smile,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_19.mp3
+msg,1,<size=30><outline width=2 color=black>「那是什麼啊，聽上去不是超——有趣的嘛」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_20.mp3
+msg,1,<size=30><outline width=2 color=black>「令人熱血沸騰吧。連本體都不明的存在、不曾被人發現的世界、\n數不勝數的冒險……這不正是最棒的搖滾麼」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_21.mp3
+msg,1,<size=30><outline width=2 color=black>「所以我和財團簽訂了契約，成為了想索者」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:smile,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_22.mp3
+msg,1,<size=30><outline width=2 color=black>「——啊哈哈。好像確實決定得太倉促了一點呢。\n不過、磨磨蹭蹭地考慮那些細枝末節的東西，也太麻煩了，不是麼？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_23.mp3
+msg,1,<size=30><outline width=2 color=black>「一旦有了想法就立馬行動。再者，行動要盡可能簡潔。\n這樣才是最具效率的活法」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:smile,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103003/adv/sound/fav103003_04_24.mp3
+msg,1,<size=30><outline width=2 color=black>「我就是抱著這樣的想法，如此行動的。僅此而已」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

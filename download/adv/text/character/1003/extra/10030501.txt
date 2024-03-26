@@ -1,0 +1,123 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_01.mp3
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「啊，那個……你現在方便嗎？\n其實我有事情找你商量……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「我拒絕」,選項2　「交給我了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_02.mp3
+msg,1,<size=30><outline width=2 color=black>「誒，啊……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_03.mp3
+msg,1,<size=30><outline width=2 color=black>「對、對不起……那個，你很忙嗎。\n如果我打擾到你的話，下次……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_04.mp3
+msg,1,<size=30><outline width=2 color=black>「誒……是開玩笑……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_05.mp3
+msg,1,<size=30><outline width=2 color=black>「嗚嗚，你為什麼要做那種事。\n我還以為真的給你添麻煩了呢……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:unique,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_06.mp3
+msg,1,<size=30><outline width=2 color=black>「……與其道歉，還不如一開始就不要這麼做……真的是」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_07.mp3
+msg,1,<size=30><outline width=2 color=black>「呵呵，都還沒有聽內容就答應我了嗎？\n萬一是個不得了的請求呢？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_08.mp3
+msg,1,<size=30><outline width=2 color=black>「誒？　比如說……這個嘛……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_09.mp3
+msg,1,<size=30><outline width=2 color=black>「……當一天我的從者……之類的？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_10.mp3
+msg,1,<size=30><outline width=2 color=black>「啊啊……但是，這會讓潔美拉產生奇怪的誤會。\懷疑自己作為從者是不夠格的……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_11.mp3
+msg,1,<size=30><outline width=2 color=black>「我其實覺得還挺有吸引力的……\n對不起，請忘記剛才的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_12.mp3
+msg,1,<size=30><outline width=2 color=black>「然後是，商量的事情……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_13.mp3
+msg,1,<size=30><outline width=2 color=black>「那個……明天，如果可以的話，能佔用你點時間嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_14.mp3
+msg,1,<size=30><outline width=2 color=black>「啊，那個……就是，平時除了幻夢境的想索以外還一直承蒙你的關照，\n所以我在想該怎麼謝謝你呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_15.mp3
+msg,1,<size=30><outline width=2 color=black>「那個……就是一點薄禮，\n希望你能接受……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_16.mp3
+msg,1,<size=30><outline width=2 color=black>「啊，但，但是！　如果你已經有安排了的話，\n我就不勉強了……如果真的有時間的話……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_17.mp3
+msg,1,<size=30><outline width=2 color=black>「……沒有什麼計畫？　真的嗎……？\n你沒有勉強騰出時間吧……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_18.mp3
+msg,1,<size=30><outline width=2 color=black>「那麼……我可以預約你明天的時間嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_19.mp3
+msg,1,<size=30><outline width=2 color=black>「……謝謝」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_20.mp3
+msg,1,<size=30><outline width=2 color=black>「難得佔用了你的時間，\n我也會努力不讓你後悔的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_21.mp3
+msg,1,<size=30><outline width=2 color=black>「啊……關於明天的事情，現在還不能告訴你詳情，\n能讓我先保密嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_22.mp3
+msg,1,<size=30><outline width=2 color=black>「潔美拉也說過還是當作驚喜比較好」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_23.mp3
+msg,1,<size=30><outline width=2 color=black>「那個，我會努力的……請期待那天的到來」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_24.mp3
+msg,1,<size=30><outline width=2 color=black>「啊，但是，太過期待的話我會有壓力，\n希望你還是保持適度的期待吧……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100305/adv/sound/fav100305_01_25.mp3
+msg,1,<size=30><outline width=2 color=black>「啊，嗚……請你不要用那樣充滿期待的目光看我。\n這樣的話，不就絕對不能失敗了嗎……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

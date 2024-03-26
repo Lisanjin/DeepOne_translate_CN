@@ -1,0 +1,89 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……你好。要去哪里嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「去資料室？　我想大部分的數據都在圖鑒裏……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你特意去資料室，\n是不是要找機密性很高的古老資訊呢…？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖說人從拉萊耶消失了，\n但是資料室裏面的特殊書架還是被封鎖了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……關於聖奠教，是嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「有道理……聖奠教是一個古老的組織，\n所以可能也有不經過數據化就被收藏起來的資料」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是想瞭解財團對聖奠教的看法吧。\n確實，這是我不能告訴你的……資料室也許有正確答案」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「讓你不愉快了嗎？」,選項2　「一起去嗎？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不愉快……？　\n哦……你是擔心我因為自己的話遭到質疑而感到不快？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我能告訴你的只有我知道的聖奠教的樣子。\n想要正確地瞭解事物的時候，擁有很多視點並不是壞事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且……你真的有興趣認真調查的話……\n對我來說是件高興的事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不了……如果和我一起去的話，可能會夾雜著多餘的先入為主的觀念」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「難得你想要知道，\n我不能浪費你的心意……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「能和你在一起確實很有吸引力，\n但是這次就敬謝不敏了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_13.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……只是，如果有什麼有趣的事情的話，也請告訴我。\n畢竟我只能從內部看待聖奠教」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「若能告知來自外部的看法……以及你所感受到的東西，\n對我來說是很有價值的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……對了，調查要多久呢？\n如果可以的話，結束之後一起喝茶怎麼樣？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「屆時你願意和我多聊聊的話……那個，我會很高興的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「好的！　那麼，調查完後請聯繫我。\n我會竭盡全力準備好招待你的，等你回來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_12_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

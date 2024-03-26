@@ -1,0 +1,242 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10040200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0.5,,
+endwait
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:anger,rin,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈呀啊啊啊啊啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,rin,0
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier,10,-120,1.25,0.5,,,,
+endwait,
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,1,0
+playse,/download/sound/se/se_024.mp3
+flash,255,255,255,2,0.2,0
+shake,0.5,3,3,3
+endwait
+spineoff,em1,0
+endwait
+anm,fade,toysoldier,0,1,1
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,toysoldier,0
+endwait
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:normal,rin,25,-120,0.5,0.5,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「吆西！　小菜一碟！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哥哥，你沒事吧？\n有沒有受傷……是嗎。那就好」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:sad,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「話說回來，大家去哪了……出現了那麼多的\n敵人，都走散了吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「直到會合之前，我都一定會保護好哥哥，\n不要離開我的身邊哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:surprise,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……！？　剛剛那巨大的聲響是……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_06.mp3
+clickwait,,,,,,,,,,,
+spriteoff,rin,0.5
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier,-1000,-120,1.25,0.5,,,,
+anm,move,toysoldier,10_-120,1,1
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,,
+spriteoff,toysoldier,0
+endwait,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:anger,rin,25,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哥哥，危險！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_07.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5,
+endwait
+mask,bg1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,rin1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:anger,rin,0,0,0,0,,,,
+imgconf,rin,rin1,-10,-600,,,0,1.5,1.5,0
+msg,1,<size=30><outline width=2 color=black>「離我哥哥……遠點！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_08.mp3
+clickwait
+spineoff,all,0.5
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier,10,-120,1.25,0.5,,,,
+endwait,
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,1,0
+playse,/download/sound/se/se_024.mp3
+flash,255,255,255,5,0.2,0
+wait,1
+spineoff,em1,0
+endwait
+anm,fade,toysoldier,0,1,1
+playse,/download/sound/se/se_025.mp3
+endwait
+shake,0.5,3,3,3
+playse,/download/sound/se/se_011.mp3
+endwait
+spriteoff,toysoldier,0
+endwait
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:smile,rin,25,-120,0.5,0.5,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「呼、呼、呼~怎麼樣啊，哥哥！\n看到我的樣子了嗎！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？　哥哥？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_10.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「在、在這……」,選項2　「噶吼、噶吼……」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:surprise,rin,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊！？　為、為什麼一片瓦礫！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:sad,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「難不成，是我的攻擊把天花板打壞了……！？\n哥、哥哥，你沒事吧！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:surprise,rin,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、太好了！　去那邊……啊、唔哇！？\n哥哥，怎麼會在瓦礫之下！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:sad,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這是、天花板塌了！？\n難、難道是我剛才的攻擊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:sad,rin,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對不起、哥哥！\n我馬上清理這些瓦礫！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_15.mp3
+clickwait,,,,,,,,,,,
+spriteoff,rin,0
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier,10,-120,1.25,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,,
+spriteoff,toysoldier,0
+endwait,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:surprise,rin,25,-120,0.5,0.5,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「……！？　又有敵人……！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:sad,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「該、該怎麼辦……我、我必須做點什麼……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_17.mp3
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+sprite,download/adv/image/black.jpg,bg,0,0,1,0.5
+endwait
+spriteoff,rin,0,
+endwait
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――不過，不能像剛才一樣做的太過火了，\n絕對不能再讓哥哥受傷……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不能再像以前姐姐那樣……那種事，絕對不能再發生……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_19.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5,
+endwait,
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier,10,-120,1.25,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――――」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,,
+spriteoff,toysoldier,0
+endwait
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:anger,rin,25,-120,0.5,0.5,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「……！　現在不是猶豫的時候！\n為了幫助哥哥……我不能，再猶豫！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哥哥！\n暫且離我遠一點！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看我，火力全開……！　為了不讓瓦礫再落下來\n，看我讓所有東西都灰飛煙滅……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈啊啊啊啊啊啊！！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_23.mp3
+clickwait,,,,,,,,,,,
+spriteoff,rin,0
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier,10,-120,1.25,0.5,,,,
+endwait
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,1,0.5
+playse,/download/sound/se/se_024.mp3
+wait,0.5
+spine,download/adv/spine/Thunder1_yellow,em2,default,animation,0,0,0,1,1,0.5
+playse,/download/sound/se/se_024.mp3
+wait,0.5
+spine,download/adv/spine/Thunder1_yellow,em3,default,animation,0,0,0,1,1,0.5
+playse,/download/sound/se/se_024.mp3
+wait,0.1
+spine,download/adv/spine/Thunder1_yellow,em4,default,animation,0,0,0,1,1,0.5
+playse,/download/sound/se/se_024.mp3
+wait,0.1
+spine,download/adv/spine/Thunder1_yellow,em5,default,animation,0,0,0,1,1,0.5
+playse,/download/sound/se/se_024.mp3
+flash,255,255,255,2,0.2,0
+shake,0.2,9,10,10
+endwait
+spineoff,em1,0
+spineoff,em2,0
+spineoff,em3,0
+spineoff,em4,0
+spineoff,em5,0
+endwait
+anm,fade,toysoldier,0,1,1
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,toysoldier,0
+endwait
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:sad,rin,25,-120,0.5,0.5,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「哥哥，你沒事吧！？\n哈啊……太好了。敵人也都被擊敗了呢……是吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:normal,rin,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我確實，保護好了哥哥，可以放心了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_25.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「都交給我吧，直到與大家會合之前！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101804/adv/sound/fav101804_12_26.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

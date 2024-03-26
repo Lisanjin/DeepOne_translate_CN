@@ -1,0 +1,139 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我要洗刷恥辱」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「有了前車之鑒……我保證這次絕對沒問題」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_02.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「為了不重蹈覆轍進行了大量的練習。\n同一道菜重複了不知多少遍……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……眼神很可怕？　是你看錯了啦，來請坐吧。\n這一次，我一定要讓你吃到美味的料理」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_04.mp3
+clickwait,,,,,,,,,,,,
+slideinblack,1.0,right
+msg,0,
+name,
+endwait
+spriteoff,all,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/adv/image/black.jpg,0,,,,,,,,,,
+endwait
+slideoutblack,1.0,right
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,1,,,,,,,,,,
+endwait
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0.5,,,,,
+endwait
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……如何？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_05.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「好吃！」,選項2　「好吃到想要介紹給其他人」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「太好了，這次總算讓你滿意了呢。\n不枉我一番苦心」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「從準備到試吃都精心準備好，\n我覺得沒有出任何岔子……不過能聽到你的誇獎我就放心了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_07.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你，你的盛讚真是讓我受寵若驚」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_08.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，我的廚藝其實很一般啦。\n拉萊耶總有比我廚藝好的人……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_09.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不過，很高興能得到你的褒獎。謝謝」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_10.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「既然你喜歡，就是說完成任務了呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_11.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？　會是個好妻子？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_12.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒，那個……莫非，你聽艾蒂爾加爾德小姐提到過？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「以前在傭兵團時，艾蒂爾加爾德小姐也說過類似的話。\n說我比較適合這種……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我一直覺得……結婚離我很遙遠。\n還以為是在取笑我呢……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你幹嘛這麼拼命否定啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我並沒覺得你在調侃我啦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「只是，跟某個人長相廝守，\n實在想像不出自己結婚的樣子」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「還不如為艾蒂爾加爾德小姐而奔波的自己，\n更加印象深刻呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「或者應該說，被她耍得團團轉比較貼切吧。\n就像以前那樣……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「對，對不起，瞧我都胡言亂語些什麼。\n是料理的緣故麼……變得容易感傷往事」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_22.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？　還要？　當然可以啊……\n呵呵，你胃口很好呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_23.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這裏還有很多呢，隨便吃」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101103/adv/sound/fav101103_10_24.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

@@ -1,0 +1,159 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+playbgm,/download/sound/bgm/bgm005.mp3,0,
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ridia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia2,0,0,0,0,,,,
+imgconf,ridia2,ridia1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_01.mp3
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,1,<outline width=2 color=black>「啊、真是的……真的、那麼棘手了……沒辦法了嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+mask,ridia1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:shy,ridia2,0,0,0,0,,,,
+imgconf,ridia2,ridia1,0,-300,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_02.mp3
+msg,1,<outline width=2 color=black>「真是的……這是種治療行為、\n請不要誤會……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+name,
+msg,0,
+endwait
+bg,download/bg/bg_11050300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:surprise,ridia,0,-200,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/101251/adv/sound/fav101251_03_03.mp3
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,1,<outline width=2 color=black>「嗯……你醒了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0.5,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_04.mp3
+msg,1,<outline width=2 color=black>「啊、別動、深吸一口氣……剛剛把你的臉掰了過來、\n水已經吐出來了、我想應該沒事了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_05.mp3
+msg,1,<outline width=2 color=black>「話說回來、真是的……再不注意也得有個限度啊……你還記得嗎？\n你被湍急的浪潮卷到海裏去了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_06.mp3
+msg,1,<outline width=2 color=black>「你應該感謝有我在。\n不然的話、現在你已經葬身大海了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「謝謝」,選項2　「你是怎麼幫助我的？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_07.mp3
+msg,1,<outline width=2 color=black>「啊、要好好感謝我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_08.mp3
+msg,1,<outline width=2 color=black>「我竟然在幫助人……至今為止、雖然也有奪去別人生命的經歷、\n但拯救他人的事可能還是第一次呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_09.mp3
+msg,1,<outline width=2 color=black>「……而且、竟然讓我做“這種事”」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_10.mp3
+msg,1,<outline width=2 color=black>「怎麼幫你的、就是、很普通的遊下去、\n抱著你上了海灘之後……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:shy,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_11.mp3
+msg,1,<outline width=2 color=black>「那個……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:anger,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_12.mp3
+msg,1,<outline width=2 color=black>「嗯……呃、沒必要問那麼清楚吧。\n反正你也得救了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ridia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:shy,ridia2,0,0,0,0,,,,
+imgconf,ridia2,ridia1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_13.mp3
+msg,1,<outline width=2 color=black>「啊、夠了……如果可以的話、我想把自己的記憶抹去」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:anger,ridia,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101251/adv/sound/fav101251_03_14.mp3
+msg,1,<outline width=2 color=black>「總之、別讓我再做這種事了。知道了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_15.mp3
+msg,1,<outline width=2 color=black>「……總之、事已至此，還是回到拉萊耶吧。\n雖然時間很短、但終歸還是溺水了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_16.mp3
+msg,1,<outline width=2 color=black>「如果你有什麼事的話、對整個拉萊耶來說都是一個問題……\n還是得緊張一點」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:surprise,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_17.mp3
+msg,1,<outline width=2 color=black>「話說……你還是腿腳發軟啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_18.mp3
+msg,1,<outline width=2 color=black>「最好再休息一會兒……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_19.mp3
+msg,1,<outline width=2 color=black>「……真拿你沒辦法。在身體恢復之前、還是稍微躺一下比較好。\n我把膝蓋借給你用」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:shy,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_20.mp3
+msg,1,<outline width=2 color=black>「所以說、是膝枕哦。你怎麼那麼多廢話。\n如果不需要的話、我也無所謂……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:shy,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_21.mp3
+msg,1,<outline width=2 color=black>「哼……想讓我這麼做的話，一開始就坦率地接受不就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101251/adv/sound/fav101251_03_22.mp3
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,1,<outline width=2 color=black>「……哼。真是的、感恩吧。你這笨蛋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

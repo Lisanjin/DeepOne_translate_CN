@@ -1,0 +1,155 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10030200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――――」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_b,body:anger,rin,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_01.mp3
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「混賬――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_043.mp3
+endwait
+shake,0.2,4,30,30
+endwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm005,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101805/adv/sound/fav101805_03_02.mp3
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「沒事的，哥哥。我還能繼續戰鬥！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_03.mp3
+msg,0,<size=30><outline width=2 color=black>「如果在戰鬥中我不能更加可靠的話，就沒辦法\n讓哥哥更依賴我了……就像，姐姐那時候一樣」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_04.mp3
+msg,0,<size=30><outline width=2 color=black>「姐姐她，無論多麼痛苦，都在我面前笑著……\n即便向神禱告，也從不求助於我」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_05.mp3
+msg,0,<size=30><outline width=2 color=black>「我明明，很想讓姐姐依賴我」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「很不甘吧」,選項2　「很悲傷吧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:surprise,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_06.mp3
+msg,0,<size=30><outline width=2 color=black>「……不、甘？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_07.mp3
+msg,0,<size=30><outline width=2 color=black>「或許吧。我明明就在姐姐的身邊，她卻從不求助我，\n而是去求助於那個存在與否都是個迷的神，或許我真的不甘……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_08.mp3
+msg,0,<size=30><outline width=2 color=black>「是的呢。很悲傷……我沒能幫到姐姐\n所以很悲傷，我痛恨那樣的自己……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_09.mp3
+msg,0,<size=30><outline width=2 color=black>「一直都是姐姐支持著我……而我\n卻無法回饋給她任何東西……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_10.mp3
+msg,0,<size=30><outline width=2 color=black>「我一直什麼都沒能為她做，姐姐因魔術的實驗\n暴走了……那時候，她才終於來拜託我」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:unique,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_11.mp3
+msg,0,<size=30><outline width=2 color=black>「……卻讓我殺掉她」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:unique,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_12.mp3
+msg,0,<size=30><outline width=2 color=black>「那是她最初的請求，實在是殘忍吧……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_045.mp3
+endwait
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:surprise,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_13.mp3
+msg,0,<size=30><outline width=2 color=black>「啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_14.mp3
+msg,0,<size=30><outline width=2 color=black>「被哥哥抱著……好溫暖」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_15.mp3
+msg,0,<size=30><outline width=2 color=black>「姐姐也常用這種方式，安慰著哭泣的我……\n那溫暖，我很喜歡……極其珍貴」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_16.mp3
+msg,0,<size=30><outline width=2 color=black>「我知道，明明是我親手毀了這一切，卻還自說自話。\n可是……我已經不想再失去這份溫暖了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_17.mp3
+msg,0,<size=30><outline width=2 color=black>「無論是哥哥，還是大家……讓我感受到溫暖的人們，\n我一定會守護他們」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_18.mp3
+msg,0,<size=30><outline width=2 color=black>「雖然我親手奪去了珍視之人的生命，這一事實無法改變，\n那時沒能守護好姐姐的份悔恨會化作動力去守護別人――」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_19.mp3
+msg,0,<size=30><outline width=2 color=black>「那是我唯一的贖罪方式」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_20.mp3
+msg,0,<size=30><outline width=2 color=black>「喂，哥哥你是怎麼想的？　我好怕。\n害怕這種事是我為了讓自己好過而擅自揣測的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_21.mp3
+msg,0,<size=30><outline width=2 color=black>「……我想姐姐她，應該不會原諒我吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:surprise,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_22.mp3
+msg,0,<size=30><outline width=2 color=black>「啊、嗚……哥哥，我好難受。\n擁抱的力氣，太大了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_23.mp3
+msg,0,<size=30><outline width=2 color=black>「――誒……如今的我，也依舊被姐姐守護著吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101805/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101805/adv/sound/fav101805_03_24.mp3
+msg,0,<size=30><outline width=2 color=black>「……哥哥……像姐姐一樣抱著我，\n既然哥哥那麼說，我願意相信……我可以相信你吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

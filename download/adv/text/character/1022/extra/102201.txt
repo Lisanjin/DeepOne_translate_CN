@@ -1,0 +1,104 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10050100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈，這裏有很多書啊。\n唔……有沒有能引起妾身興趣的書呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……這麼大的書架的話，\n就算有妾身想要的書，想找出來也很困難啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀呀……這種時候，不需要化生的耳朵，\n如果能多一雙手臂多個眼珠子就好了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……恐怖？　這樣嗎……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這麼說的話，這耳朵和尾巴在你看來是不是也\n很可怕？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「像唯這樣的耳朵的話、想要」,選項2　「像唯這樣的尾巴的話、想要」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:smile,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哦……可是，這不是什麼好東西哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「因為耳朵會妨礙，所以頭上也戴不了東西，\n不注意走路的話耳朵有時候會刮到天花板」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，耳朵太好使也是問題呢。很小的聲音都能聽到，\n很難冷靜下來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「尾巴啊……這種東西，有了也沒有用途哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來，人類在還是猿猴的時候不是誰都有尾巴嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「進化中把尾巴取掉了，\n就是因為認為那是沒用的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身也是，睡覺時很妨礙我，十分困惑呢。不過，手感方面還是很有自信的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯，就算覺得不方便或不需要，也只好和它們好好相處。\n總不能自己把它們拔掉吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身在幻夢境中產生自我意識的時候，身體就已經是現在的模樣了。\n本來就沒有記憶也沒有過去……身體更要好好珍惜的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……其他讓我苦惱的事情？　問這個你打算幹什麼呀？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……原來如此，有什麼能幫上忙的想幫我啊。值得表揚啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:smile,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「可是，妾身是狐狸。狐狸是迷惑欺騙人類的生物啊……真的，\n做出這種老好人的神情真的好麼？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「等會要是後悔了我可不管了哦？　咯咯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……什麼，對妾身的笑聲有什麼想說的嗎？\n覺得很奇怪嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒辦法。自從變成這幅身體，笑的時候就自然會有\n那種鳴聲了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「剛剛的話題……讓我困擾的事情啊，我想想。\n比如這個鳴聲怎麼也無法治好吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102200/adv/sound/fav102200_01_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

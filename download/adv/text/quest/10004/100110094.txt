@@ -1,0 +1,380 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040200.jpg,0,,,,,,,,
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101,robo,0,-100,1.35,0.5
+endwait
+spine,download/adv/spine/Slash2_Blue,em2,default,animation,0,-100,0,1,1,0
+playse,/download/sound/se/se_037.mp3
+wait,0.6
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――、………………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteoff,all,1
+playse,/download/sound/se/se_025.mp3
+wait,1.5
+endwait
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:normal,xeno,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「真是受不了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait
+sprite,download/monster/20030101/adv/image/20030101,robo,0,-100,1.35,0.5
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+endwait
+clickwait,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/102202/adv/atlas/stand_b,body:normal,vi,-300,-240,0.5,0.5,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:anger,xeno,300,-120,0.5,0.5,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「簡直是沒完沒了了，不僅如此，怎麼感覺數量還變多了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_b,body:normal,vi,-300,-240,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<outline width=2 color=black>「因為數量確實變多了，我也不知道為什麼會出現這麼多虛像」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:anger,xeno,300,-120,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「難道真的是凜・洛溫對幻夢境造成了什麼影響嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_b,body:normal,vi,-300,-240,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<outline width=2 color=black>「那應該不可能……我可從沒聽說過幻夢境和虛像會被愛犯迷糊的人吸引，\n並且做出反應」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「……話說澤乃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:sad,xeno,300,-120,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「嗯，我知道，要讓她在這種情況下冥想確實有些太強人所難了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait
+spriteoff,all,0
+name,
+msg,0,
+endwait
+slideoutblack,0.5,left
+endwait
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,vi1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,vi2,0,0,0,0,,,,
+imgconf,vi2,vi1,-10,-380,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「（躁動不安）……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗚，嗚嗚……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+slideinblack,0.5,left
+endwait
+spriteoff,all,0
+name,
+msg,0,
+endwait
+slideoutblack,0.5,left
+endwait
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:unique,xeno,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「唉……沒辦法了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:normal,xeno,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「凜・洛溫，暫時中斷冥想，先來跟我們一起解決敵人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:normal,xeno,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:smile,rin,-300,-120,0.5,0.5,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好的，我這就來！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:anger,xeno,300,-120,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「你去保護那個男人，我和唯還有貝托麗薩去殲滅周圍的敵人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_b,body:surprise,rin,-300,-120,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……咦？我還以為你會讓我去沖散敵人……其實我還是更擅長做那種事哦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:anger,xeno,300,-120,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「如果讓你那樣做，你又失誤了的話會很麻煩的，\n你只需要負責處理從我們手裏漏掉的虛像就行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「沒問題吧，唯，貝托麗薩」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-300,-200,0.5,0.5,,,
+spriteatlas,download/character/102202/adv/atlas/stand_b,body:normal,vi,300,-240,0.5,0.5,,,,
+anm,tint,bea,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<outline width=2 color=black>「妾身倒是也想做善後的工作……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-300,-200,0.5,0,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「別這麼說啦，唯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,vi,0,
+anm,tint,bea,150_150_150,0.0001,0
+endwait
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「………………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-300,-200,0.5,0,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「凜，難道是對自己不能上場感到不滿意？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:surprise,rin,300,-120,0.5,0,,,,
+anm,tint,bea,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不，那倒不是……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我只是想讓自己派上用場……因為我如果幫不上其他人的忙的話，\n會覺得自己的存在沒意義」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且我平時老是給大家添麻煩……所以我希望至少在戰鬥上能活用自己的能力」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-300,-200,0.5,0,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「添麻煩嗎……不過剛才那樣的爆炸確實讓我嚇了一跳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,300,-120,0.5,0,,,,
+anm,tint,bea,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊……對不起」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-300,-200,0.5,0,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「但我不覺得你給我添麻煩了，因為我知道你不是故意的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「而且澤乃和唯肯定也是這樣想的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:surprise,rin,300,-120,0.5,0,,,,
+anm,tint,bea,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哦，是這樣嗎……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:smile,bea,-300,-200,0.5,0,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「嗯，雖然我們只短短聊了幾句，但我也能知道你是個純真的人，\n澤乃肯定也是因為這個才決定幫你特訓的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-300,-200,0.5,0,,,
+msg,1,<outline width=2 color=black>「而且想索者的各位肯定也是知道你有多努力的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「所以我認為你身邊的人肯定比你想像的更加認可你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,300,-120,0.5,0,,,,
+anm,tint,bea,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「但是，我平時老是拖大家的後腿……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「凜你是我們重要的同伴」,選項2　「誰也沒有把你當做麻煩」
+if,select_===_1,,,,,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:surprise,rin,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哥哥……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:smile,bea,-300,-200,0.5,0,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「呵呵呵……至少從他的反應來看，我的想法是沒錯的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這只是因為哥哥很溫柔，才會這麼認為——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:surprise,rin,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「如果把我當做麻煩的話，就不會擔心我了？這是什麼意思……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0.5
+stopbgm,0.5
+endwait
+bg,color_0_0_0,1,255,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,0,
+bg,download/bg/bg_10010100.jpg,1,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,-235,-120,0.5,0.5,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,mil,300,-220,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>米婭姆・莉芙拉</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「……唉，凜那邊沒問題吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,-235,-120,0.5,0,,,,
+anm,tint,mil,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「畢竟有他在身邊，所以應該不用太擔心吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,mil,300,-220,0.5,0,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>米婭姆・莉芙拉</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「正常情況下，我應該更擔心沒有戰鬥力的他才對啊，腦子混亂了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,-235,-120,0.5,0,,,,
+anm,tint,mil,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好啦好啦……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不過我也希望凜那邊能一切順利」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,mil,300,-220,0.5,0,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>米婭姆・莉芙拉</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「是啊……她要是能少犯點糊塗，也不用哭哭啼啼的了。\n老實說，看到她那樣，我都有些不好意思責備她了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0.5
+stopbgm,0.5
+endwait
+bg,color_0_0_0,1,255,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,0,
+bg,download/bg/bg_10040200.jpg,1,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-300,-200,0.5,0.5,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:surprise,rin,300,-120,0.5,0.5,,,,
+anm,tint,bea,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……亞紗花和米婭姆一直很擔心我……真的嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-300,-200,0.5,0,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「雖然我不知道凜你決定來特訓之前都經歷了什麼……\n但我覺得人只會擔心自己看重的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,,,,,,
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,300,-120,0.5,0,,,,
+anm,tint,bea,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>凜・洛溫</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也就是說雖然我這麼沒用，大家還是把我當成了同伴嗎？\n我明明從來沒回報過大家…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,bea,-300,-200,0.5,0,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「如果同伴之間是為了得到回報才互相幫助的話，\n我肯定也沒辦法跟澤乃她們在一起了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,bea,-300,-200,0.5,0,,,
+msg,1,<outline width=2 color=black>「因為……我們失想者從一開始就沒有任何東西，\n所以我們之間沒辦法得到或者給予任何東西……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「而且澤乃是那種無論做什麼基本都獨來獨往的人，所以根本不需要我的幫助……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:smile,bea,-300,-200,0.5,0,,,
+msg,1,<outline width=2 color=black>「所以我認為所謂同伴並不是那種利益關係……而是心與心相交的美好關係……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:normal,xeno,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_b,body:normal,vi,-300,-240,0.5,0.5,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<outline width=2 color=black>「——她是這麼說的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:normal,xeno,300,-120,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_b,body:normal,vi,-300,-240,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<outline width=2 color=black>「怎麼，你害羞了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102402/adv/atlas/stand_b,body:surprise,xeno,300,-120,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<outline width=2 color=black>「什……那怎麼可能！話說還是先專心解決敵人吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_b,body:normal,vi,-300,-240,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<outline width=2 color=black>「呵呵呵，真是的，你也太容易被看穿了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

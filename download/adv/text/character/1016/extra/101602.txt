@@ -1,0 +1,138 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_01.mp3
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,1,<outline width=2 color=black>「誒……這件連衣裙，好可愛的設計……這件\n裙子也帶有飾邊……鞋子也好漂亮……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:smile,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_02.mp3
+msg,1,<outline width=2 color=black>「啊啊，要是能把這些全都集齊就好了……嘿嘿嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:surprise,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_03.mp3
+msg,1,<outline width=2 color=black>「——誒……！？ 你，你什麼時候來的……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:shy,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_04.mp3
+msg,1,<outline width=2 color=black>「那個……不是的哦？ 我讀這本雜誌，絕對不是被這個\n“可愛受歡迎大特集”的標題吸引住了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:surprise,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_05.mp3
+msg,1,<outline width=2 color=black>「是，是的！ 我只是在看這篇“做一個瀟灑能幹的女人”\n的報導。嗯嗯，是這個，這個」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「真的嗎？」,選項2　「可愛的衣服也很適合你」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_06.mp3
+msg,1,<outline width=2 color=black>「嗯嗯，真的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_07.mp3
+msg,1,<outline width=2 color=black>「……真，真的，哦？ 嗚……你不要那樣盯著我看啦。\n被你那樣清澈的眼神看著，我很難受的啦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_08.mp3
+msg,1,<outline width=2 color=black>「嗯，那個……那個……就是說，所以……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_09.mp3
+msg,1,<outline width=2 color=black>「……對，對不起，我撒謊了。其實，我只看了\n關於可愛系的報導……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:shy,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_10.mp3
+msg,1,<outline width=2 color=black>「可，可是這也沒辦法啊……！\n因為是女孩子嘛，喜歡可愛的東西啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_11.mp3
+msg,1,<outline width=2 color=black>「但是，這和適不適合可愛系是兩回事……！\n所以我才不想和別人說……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_12.mp3
+msg,1,<outline width=2 color=black>「哪里哪里，怎麼可能……不用故意誇我的啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_13.mp3
+msg,1,<outline width=2 color=black>「不是說自己是最瞭解自己的嗎……\n就這樣，我在挑戰了幾次這種風格之後內心受到了很深的傷害……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_14.mp3
+msg,1,<outline width=2 color=black>「確實，我喜歡可愛的東西……嗯嗯，我承認。\n不過，實際上還是稍微規整一點的衣服更能讓人安心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_15.mp3
+msg,1,<outline width=2 color=black>「我感覺自己不太適合穿可愛的衣服，\n多少也受到哥哥的影響」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_16.mp3
+msg,1,<outline width=2 color=black>「小時候，每次我穿上可愛的衣服，哥哥都會開我的玩笑……\n我覺得很不好意思，所以自己也打扮得像個男孩子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_17.mp3
+msg,1,<outline width=2 color=black>「時間長了，一旦我自己打扮成女孩子的樣子，\n就會害羞得不得了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:shy,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_18.mp3
+msg,1,<outline width=2 color=black>「其實拉萊耶的制服也是，我是在很努力地穿那個裙子哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:normal,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_19.mp3
+msg,1,<outline width=2 color=black>「因此，這樣的我根本沒法穿可愛的衣服，\n戴可愛的飾品，所以就想看雜誌滿足一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:surprise,patrisia,0,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_20.mp3
+msg,1,<outline width=2 color=black>「呀……！ 突，突然抓住我的手，嚇了我一跳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,patrisia,150_-170,0.3,0
+endwait
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,150,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_21.mp3
+msg,1,<outline width=2 color=black>「那個，你要去哪里……這邊，我記得好像是衣物倉庫……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,patrisia,300_-170,0.3,0
+endwait
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:surprise,patrisia,300,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_22.mp3
+msg,1,<outline width=2 color=black>「讓、讓我變可愛？ 這……是要做色色的事嗎！？\n把我帶到空無一人的倉庫，然後想對我做色色的事對吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,patrisia,450_-170,0.3,0
+endwait
+spriteatlas,download/character/101601/adv/atlas/stand_a,body:sad,patrisia,450,-170,0.5,0,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_23.mp3
+msg,1,<outline width=2 color=black>「啊啊！ 對不起我是開玩笑的！ 請不要這麼用力的拉我的手！\n先冷靜下來說話……等一下，你有在聽嗎！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,patrisia,600_-170,0.3,0
+endwait
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101600/adv/sound/fav101600_02_24.mp3
+name,<outline width=2 color=black>潘多莉西亞・波特曼</outline>,
+msg,1,<outline width=2 color=black>「可、可愛的衣服真的不適合我啦——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

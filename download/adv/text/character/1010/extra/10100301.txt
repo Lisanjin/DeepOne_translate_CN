@@ -1,0 +1,120 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10040100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamira,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「基本搜索完畢，沒發生什麼可疑之處」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「時間所剩無幾，迅速確認並和卡蒂婭大人她們匯合吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「分頭想索我不反對，只是要和卡蒂婭大人\n分開，我無法接受」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:anger,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「一想到卡蒂婭大人要是有個萬一……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「是啊」,選項2　「不用這麼急吧……」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamira,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「有亞紗花小姐和布麗吉特小姐陪同，\n一旦出現危險我想也能應付的來……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:surprise,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過我還是很擔心卡蒂婭大人。\n所以必須快點——誒？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:anger,jamira,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你胡說八道什麼！　我是卡蒂婭大人的隨從……\n必須一直隨侍在旁」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:surprise,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，溫柔的卡蒂婭大人說，\n要我跟著您——誒？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_08.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,
+msg,0,
+spine,download/adv/spine/Line_side,em1,default,animation,1,180,180,0.65,0.8,0
+playse,/download/sound/se/se_021.mp3
+slideinblack,1.5,left
+spriteoff,jamira,0.2,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait
+spineoff,em1,0
+endwait
+slideoutblack,1.0,left
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+bg,download/bg/bg_10040300.jpg,1.0,,,,,,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_047.mp3
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,1,,,,
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這邊也是死路……真糟心，\n繞來繞去也回不到原來的地方……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大意了……莫非邁出步伐的瞬間，\n就被傳送到別的地方……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我這邊兩眼一抹黑，\n卡蒂婭大人要是有個萬一……我……我……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:anger,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「眼下這狀況，你叫我怎麼冷靜……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……抱歉，我亂了方寸。您說得對……\n著急也無濟於事，這種時候更應該保持冷靜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——嗯，不過一直不見我回去，\n卡蒂婭大人會擔心的……得快點報個平安——」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:surprise,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——那個……您有沒有聽到卡蒂婭大人的聲音？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不，沒有錯……這是……那邊有魔術反應，\n一定是卡蒂婭大人她們……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊~，卡蒂婭大人。為了尋找遲遲未歸的我竟然不惜深入險地……\n我又被您拯救了呢……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:smile,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我再次起誓，將全身心奉獻給卡蒂婭大人，\n絕無二心……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101003/adv/sound/fav101003_08_18.mp3
+clickwait,,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

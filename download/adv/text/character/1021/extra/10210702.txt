@@ -1,0 +1,91 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11180300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_01.mp3
+name,<outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline>,
+msg,1,<outline width=2 color=black>「對了，結果你在情人節\n收到了多少巧克力？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_02.mp3
+msg,1,<outline width=2 color=black>「……哎呀？不說話？換句話說，我可以解釋為你收了\n無法對我說出口的數量吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:unique,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_03.mp3
+msg,1,<outline width=2 color=black>「好啊，沒關係。不管你收到多少個巧克力，我送的巧克力在你心裡\n都是第一名……對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:unique,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_04.mp3
+msg,1,<outline width=2 color=black>「你吃了那個巧克力之後，沒有變得更想要我嗎？\n沒有產生下流的慾望，例如身體發燙、想要摸我之類的嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_05.mp3
+msg,1,<outline width=2 color=black>「……沒有啦，開玩笑的。我怎麼可能會做出放春藥這種陰險的行為呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_06.mp3
+msg,1,<outline width=2 color=black>「就算不加藥，光說是我特地做的巧克力，\n就值得令你著迷了……難道不是這樣嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:unique,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_07.mp3
+msg,1,<outline width=2 color=black>「沒錯……即使用你的全部……用你的一生\n作為白色情人節的回禮也值得。對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「……這是求婚嗎？」,選項2　「說不定那樣也不錯。」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:surprise,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_08.mp3
+msg,1,<outline width=2 color=black>「啥？你在胡說些什麼啊？為什麼我得要跟你這種貨色\n求婚？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:anger,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_09.mp3
+msg,1,<outline width=2 color=black>「你說講法……我不是那個意思啦，笨蛋。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_10.mp3
+msg,1,<outline width=2 color=black>「你想要跟我有婚姻關係是你的自由，但是心懷不自量力的願望\n遲早會令人身敗名裂，我勸你說話前先拈拈自己的斤兩。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_11.mp3
+msg,1,<outline width=2 color=black>「如果你對我百依百順、盡心盡力，我也會給你\n合理的獎勵……光是這樣就已經足夠了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_12.mp3
+msg,1,<outline width=2 color=black>「對吧？一輩子被我飼養、為我做牛做馬……這可是一件\n非常光榮的事情哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_13.mp3
+msg,1,<outline width=2 color=black>「再進一步的話，如果你不是為了獲得獎賞，而是因為想要為我效勞\n而服從我的話，那我就更滿意了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_14.mp3
+msg,1,<outline width=2 color=black>「如果只是想要回報才聽命於我的話，這樣還不夠……即使如此，\n比起其他派不上用場的凡夫俗子，你還是有用多了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_15.mp3
+msg,1,<outline width=2 color=black>「反過來說，只要你對我沒用了，\n我會立刻拋棄你哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:unique,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_16.mp3
+msg,1,<outline width=2 color=black>「不想被拋棄的話就要努力啊。在你還能讓我滿意的這段時間裡，\n我也會讓你做一場好夢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102107/adv/atlas/stand_a,body:unique,ulusura,0,-200,0.5,0,,,,
+playvoice,1,download/character/102107/adv/sound/fav102107_02_17.mp3
+msg,1,<outline width=2 color=black>「想要獎賞的話，就好好為我效力，發揮你的功用……呵呵！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

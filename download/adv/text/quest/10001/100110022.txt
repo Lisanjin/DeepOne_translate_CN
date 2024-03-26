@@ -1,0 +1,369 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,-370,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,270,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1,1.0,0
+shake,0.2,4,30,30
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,-370,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,270,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:sad,silvy,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這些虛像真是像害蟲一樣殺都殺不完……\n現在我也沒有新藥想試了，真是看它們越來越煩了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「吉澤爾，你有沒有辦法能將它們一舉清除？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:sad,gizel,300,-120,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我想想……如果能盡可能地將敵人集中到一個地方，\n那我有一個可用的魔術」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「需要構建術式和累積魔力，\n發動起來需要一定時間」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「原來如此，由我來助你一臂之力吧。\n你和他就先退後，準備發動術式吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「布麗吉特，就麻煩你保護他們了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,300,-120,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「等一下，要吸引敵人的話，我也——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你沒有魔道書，實力是發揮不出來的吧？\n好了，聽話，乖乖躲在後面」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:anger,bligit,300,-120,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……！話是這麼說……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「行了，別一臉不甘心的表情。\n又不是只有前線才是戰場」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「而且，我也曾被你救過一命。\n這只是回報那時的恩情而已」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:anger,bligit,300,-120,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……我可不記得自己對你有恩」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「真是計較……老是要你幫忙我也有些過意不去，\n是時候還還人情了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:sad,bligit,300,-120,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……好吧，現在只能交給你了。\n你可別太亂來」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:smile,silvy,-300,-120,0.5,0,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「放心。別看我平時那樣，關鍵時刻還是挺行的，哼哼」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「好了，是時候上場了。吉澤爾，那就拜託你了。\n我們的命運就交托在你身上了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,bligit,0
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:anger,gizel,300,-120,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「好，交給我吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:sad,bligit,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name, 
+msg,0,<size=30><outline width=2 color=black>我的妹妹毫無疑問是個真正的天才。\n這一點不用任何人來告訴我，身為姐姐的我是最清楚的。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>可……僅憑“她是天才”這個理由，我還沒辦法徹底想開，放棄一切……\n再說……</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>——正因為她是我妹妹，所以我才不能說出那種丟人的洩氣話。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>因此，我渴求著力量。即便要握著那把形狀令人厭惡的劍……\n即便那副模樣看起來很可笑，都無所謂。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>這是我自己決定的事情。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,
+bg,download/bg/bg_10020200.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,bligit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:anger,bligit2,0,0,0,0,,,,
+imgconf,bligit2,bligit1,0,-661,,,0,1.5,1.5,0.5
+wait,0.1
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「還遠遠不夠……我究竟要到什麼時候，才能追上你」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:normal,gizel,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:anger,bligit,-300,-120,0.5,0.5,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……？那個，布麗吉特姐姐，你剛才有說話嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……沒什麼。好了，你快集中精力。\n畢竟她也沒辦法一直吸引敵人注意」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……是、是，我明白了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name, 
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,1,255
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,-370,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,270,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:sad,silvy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+shake,0.2,4,30,30
+wait,0.1
+endwait,,,,,,,,,,,
+anm,move,silvy,-400_-120,0.11,0
+endwait,,,,,,,,,,,
+wait,0.6
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:sad,silvy,-400,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——！呼……剛才那下真是相當危險」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-400,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「剩餘的藥量也不多了……\n長此以往，情況可真要不行了——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,gizel1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:normal,gizel2,0,0,0,0,,,,
+imgconf,gizel2,gizel1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——術式展開」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:anger,gizel,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「希爾薇，你退後吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:smile,silvy,-300,-120,0.5,0.5,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「噢噢，終於好了嗎。真是的，我都等急了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「那麼，吉澤爾，你能趕緊把這些虛像一網打盡嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:anger,gizel,300,-120,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「好，包在我身上！\n克勞索拉斯——用你的光輝掃除敵人吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,-370,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,270,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Shine,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+playse,/download/sound/se/se_011.mp3
+shake,0.2,4,50,50
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――、……、…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,-370,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,270,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Shine,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+playse,/download/sound/se/se_011.mp3
+shake,0.2,4,50,50
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――、……、…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:surprise,silvy,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「噢噢噢……居然真的只用一擊就消滅了所有敵人，吉澤爾果然厲害。\n“<ruby>以光自傲之劍</ruby>”的名號真不是蓋的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:unique,gizel,300,-120,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那個，我還是希望你能別那樣叫我……\n我不是很喜歡……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:smile,silvy,-300,-120,0.5,0,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哼哼，有什麼不好的。我覺得很酷啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「好了，『克勞索拉斯』的仿製品在哪里……啊，找到了找到了。\n布麗吉特，你看，你重要的魔道書回來了哦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bligit,300,-120,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,silvy,0
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:smile,gizel,-300,-120,0.5,0.5,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那、那個……布麗吉特姐姐。\n能拿回魔道書，真是太好了！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bligit,300,-120,0.5,0,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……嗯……是啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0.5,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「能拿回克勞索拉斯・仿製件，我也很高興啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「畢竟，作為製作者，要是眼睜睜地看著好不容易完成的作品丟失，\n也很受打擊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,bligit,0
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:normal,gizel,300,-120,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「製作者……咦？！\n克勞索拉斯・仿製件是你製作的？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是哦，我剛不是說了我和布麗吉特的相遇嗎」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「她那時候的請求，就是要我製作這本魔道書——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

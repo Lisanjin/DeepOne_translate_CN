@@ -1,0 +1,111 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm031.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0.5,,,,
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_01.mp3
+msg,1,<outline width=2 color=black>「關於我的師父，是嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_02.mp3
+msg,1,<outline width=2 color=black>「我的師父……上一任昆茜是個非常厲害的女性。\n雖然“厲害”這個表現有些曖昧，但我只能這麼去形容她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_03.mp3
+msg,1,<outline width=2 color=black>「或許哪怕是和現在的我相比，\n我能做到的她肯定也能做得到吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_04.mp3
+msg,1,<outline width=2 color=black>「……而師父唯一欣賞我的只有狙擊。\n她說我在這方面遲早有一天能追上她……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_05.mp3
+msg,1,<outline width=2 color=black>「可是，我現在完全體會不到自己接近了師父多少。\n她對我而言就是如此遙遠的存在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_06.mp3
+msg,1,<outline width=2 color=black>「就算想比較……她也已經不在了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「問你這種問題真對不起」,選項2　「你肯定已經追上她了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_07.mp3
+msg,1,<outline width=2 color=black>「啊……這麼說來，\n我還沒說過我的師父已經去世了啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_08.mp3
+msg,1,<outline width=2 color=black>「我才是要說對不起。我應該事先告訴你的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_09.mp3
+msg,1,<outline width=2 color=black>「說回來，我會繼承昆茜的名字，\n也就代表著上一任已經不在了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_10.mp3
+msg,1,<outline width=2 color=black>「……能得到你的評價，我很光榮。\n可是我認為，你是因為沒見過師父才能說出這番話」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_11.mp3
+msg,1,<outline width=2 color=black>「她真的是個非常了不起的人，戰鬥自不用說，\n對於各種知識她也很豐富……雖然性格有些粗暴，但特別溫柔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_12.mp3
+msg,1,<outline width=2 color=black>「師父是我的目標之一」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_13.mp3
+msg,1,<outline width=2 color=black>「……老實說，對於成為像師父那樣的昆茜，我沒什麼自信」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_14.mp3
+msg,1,<outline width=2 color=black>「而且說回來……我並沒有正式繼承昆茜之名。\n而且不僅如此，師父還反對我繼承」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_15.mp3
+msg,1,<outline width=2 color=black>「她沒有告訴我理由……可我還是不想放棄」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_16.mp3
+msg,1,<outline width=2 color=black>「所以……師父在工作中喪生之後，我繼承了沒有其他繼承人的昆茜的名字」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_17.mp3
+msg,1,<outline width=2 color=black>「師父肯定很生氣吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_18.mp3
+msg,1,<outline width=2 color=black>「不過，我想成為我所憧憬的師父那樣的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_19.mp3
+msg,1,<outline width=2 color=black>「因為我相信，\n只有這樣才能成為能守護他人的英雄……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_20.mp3
+msg,1,<outline width=2 color=black>「……說了這麼多洩氣話真對不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_21.mp3
+msg,1,<outline width=2 color=black>「我沒有聽師父的話，繼承了昆茜的名字。\n所以，我更加不能說洩氣話了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101702/adv/sound/fav101702_06_22.mp3
+msg,1,<outline width=2 color=black>「為了得到師父的認可，我必須變得更強」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

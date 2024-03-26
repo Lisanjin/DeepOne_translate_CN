@@ -1,0 +1,111 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm031.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_01.mp3
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,1,<outline width=2 color=black>「來拉萊耶之後，我就好像有點無事可做了啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_02.mp3
+msg,1,<outline width=2 color=black>「我來這裡之前基本上一天都在工作，\n剩下的都是移動時間，而且同時還是短暫的睡眠時間……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_03.mp3
+msg,1,<outline width=2 color=black>「怎麼說呢……\n雖然我聽說過有些人在退休後會因為沒有事幹而無精打采的……難道就是這種感覺嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_04.mp3
+msg,1,<outline width=2 color=black>「……總之，我去問問大家有沒有什麼事需要幫忙吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「喜歡勞動嗎？」,選項2　「已經算是一種病了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_05.mp3
+msg,1,<outline width=2 color=black>「並不是喜歡……可是我以前整天不是工作就是工作。\n現在突然時間空出來了，這讓我該怎麼辦嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_06.mp3
+msg,1,<outline width=2 color=black>「發掘興趣？\n興趣是指因為喜歡才去乾的事，並不是刻意去發掘出來的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_07.mp3
+msg,1,<outline width=2 color=black>「刻意去發掘反而會讓人產生“為了消磨時間”的莫名其妙的使命感，或者說是義務感……\n感覺就變味了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_08.mp3
+msg,1,<outline width=2 color=black>「我自己也有點自知之明，所以別說了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_09.mp3
+msg,1,<outline width=2 color=black>「嗚，我之所以會變成那樣，都是我的父母的責任……！\n如果沒有欠債的話，我也能過上有些不一樣的人生了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_10.mp3
+msg,1,<outline width=2 color=black>「啊？為什麼要這麼努力……你是指工作對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_11.mp3
+msg,1,<outline width=2 color=black>「為了還債而努力，這不是理所當然的嗎？\n就算不是我，而是父母欠下來的債也一樣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_12.mp3
+msg,1,<outline width=2 color=black>「……不過或許有更加輕鬆的活法，這點我不否定」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_13.mp3
+msg,1,<outline width=2 color=black>「如果像父母那樣逃避一切責任人間蒸發，或是向至今為止認識的各種各樣的人索求幫助的話，\n或許是可以實現」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_14.mp3
+msg,1,<outline width=2 color=black>「但是，\n逃避或者是接受他人的同情轉移債務，\n這些都不是值得驕傲的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_15.mp3
+msg,1,<outline width=2 color=black>「雖說我已經家破人亡，\n但我姑且還是有點來歷的家系出身的人。自尊我還是要維持的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_16.mp3
+msg,1,<outline width=2 color=black>「先不說父母，我那麼做會對不起過去守護了家庭的列祖列宗的。\n就算沒有了家，我也要守護這崇高的血統」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_17.mp3
+msg,1,<outline width=2 color=black>「否則，我的一切真的會變得一文不值的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_18.mp3
+msg,1,<outline width=2 color=black>「我想做一個能在祖先面前，最重要的是在自己面前昂首挺胸的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_19.mp3
+msg,1,<outline width=2 color=black>「……隨便說說的。怎麼樣，很帥氣吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_20.mp3
+msg,1,<outline width=2 color=black>「等、等一下，別這麼認真地點頭啊，好羞恥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_21.mp3
+msg,1,<outline width=2 color=black>「不，我不需要你的誇獎！我只是做了理所應當的事，別一副感動不已的樣子誇我！\n我會害羞的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103401/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103403/adv/sound/fav103403_05_22.mp3
+msg,1,<outline width=2 color=black>「我說的這番話你隨便聽聽就行了！\n。真是的……都說不要誇獎我了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

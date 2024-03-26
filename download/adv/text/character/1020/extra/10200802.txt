@@ -1,0 +1,153 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11210300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:surprise,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_01.mp3
+name,<outline width=2 color=black>塔芭莎・川寧</outline>,
+msg,1,<outline width=2 color=black>「喂……這衣服是什麼啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_02.mp3
+msg,1,<outline width=2 color=black>「再怎麼說也太孩子氣了吧。\n為什麼我非得穿成這樣不可啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_03.mp3
+msg,1,<outline width=2 color=black>「……聽到有人說我很適合穿小朋友的衣服，你以為我會開心嗎？\n我喜歡的是更成熟一點的設計。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_04.mp3
+msg,1,<outline width=2 color=black>「真是的，為什麼會是這種衣服啊？\n因為這個地方看起來像兒童用的設施，所以要配合這裡？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選項1　「這是個什麼樣的地方？」,選項2　「感覺是個有趣的地方。」
+
+
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_05.mp3
+msg,1,<outline width=2 color=black>「也對，你的確很有可能不知道呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_06.mp3
+msg,1,<outline width=2 color=black>「這裡應該是日間托兒所……簡單來說，\n就是寄放兒童的設施哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_07.mp3
+msg,1,<outline width=2 color=black>「家長因為工作之類的不在家，把小朋友寄放在這裡，\n請人幫忙照顧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_08.mp3
+msg,1,<outline width=2 color=black>「你……難道是真心覺得這種孩子氣的地方很有趣？\n這已經不能說是單純了，我都要懷疑你是不是個笨蛋了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_09.mp3
+msg,1,<outline width=2 color=black>「唉……總之，先撇開你的事不談，\n奈克特原書究竟是基於什麼原因創造了這個領域呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_10.mp3
+msg,1,<outline width=2 color=black>「就算做出這種場所，應該也派不上任何用場啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_11.mp3
+msg,1,<outline width=2 color=black>「而且不只是外觀而已，還特地連遊戲器材都準備了。\n該不會跟我說<ruby>虛像|vision</ruby>正在這裡玩吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_12.mp3
+msg,1,<outline width=2 color=black>「呃……你問我大家會玩什麼遊戲啊……\n應該會拿放在那邊的遊戲器材來玩吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_13.mp3
+msg,1,<outline width=2 color=black>「我沒有進出這種場所的經驗，所以不是很清楚，\n不過應該不會平白無故放一些用不到的東西吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_14.mp3
+msg,1,<outline width=2 color=black>「喂，你幹嘛眼神充滿期待啊？你該不會\n是想要玩吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_15.mp3
+msg,1,<outline width=2 color=black>「我跟你說，我們不是為了像個小朋友一樣玩耍\n才特地來這裡的，我們是來想索的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_16.mp3
+msg,1,<outline width=2 color=black>「你要對遊戲器材感興趣是無所謂啦，不過該做的事情不做就跑去玩，\n你覺得這種事是允許的嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_17.mp3
+msg,1,<outline width=2 color=black>「……哼。你明白就好。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_18.mp3
+msg,1,<outline width=2 color=black>「那就先從建築物裡面開始──啊，你幹嘛突然變得\n這麼有幹勁啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_19.mp3
+msg,1,<outline width=2 color=black>「算了。如果能快點結束，我也能早點從這身打扮解脫，\n我們快點完成工作吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:surprise,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_20.mp3
+msg,1,<outline width=2 color=black>「喂，等一下啦！你一個人顧著往前走不是很危險嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102008/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102008/adv/sound/fav102008_02_21.mp3
+msg,1,<outline width=2 color=black>「說真的，到底為什麼突然要這麼趕啊？總覺得好可疑……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

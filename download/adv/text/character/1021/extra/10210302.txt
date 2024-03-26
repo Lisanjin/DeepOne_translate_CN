@@ -1,0 +1,105 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:sad,uru,-20,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:surprise,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……咦，你在啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:sad,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「沒什麼，我也時常會歎息啦。\n只是有點鬱悶而已……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「出於研究的需要，\n我看了看『鐘樓』的魔術師發表的論文」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「通篇透露出一股自命非凡的酸臭氣息。\n真是的，那些魔術師……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯，我姑且也算是鐘樓的一員。\n但這不妨礙我鄙視他們」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那幫傢伙總是瞧不起我……\n明明我更優秀，但是一直以來被認可的人卻不是我……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘁……都是因為煩人的論文，讓我想起一些討厭的事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……最令人光火的是，我窩囊到不得不借助這種論文。\n如果不是出於需要，我都不想碰這種東西」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「論文沒有什麼錯吧」,選項2　「如果是出於需要那也沒辦法吧」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，是啊。不管是誰想出來的，成果對我來說有用是事實」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但請不要搞錯了，如果我有時間和設備的話，\n那種程度的成果我也可以做出來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這次只是為了走捷徑，圖個省事。\n……僅此而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:anger,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒錯……就是這樣。如果有必要的話，不管多麼厭惡都可以利用它。\n只有保持這種冷靜才能獲得成功」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我和那幫自尊心膨脹，只會說大話的白癡不一樣。\n沒錯……這更加證明我比他們優秀」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……抱歉，讓你見笑了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊，我才不會因為那種程度的論文就心煩意亂。\n我很快就會達成比他們更加了不起的成就」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:smile,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣想的話，反而成為我研究的動力，不如說我反過來要感謝他們呢。\n呵呵……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:surprise,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……為什麼你也跟著笑啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「稍微有點傲慢才更像我……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,uru,-20,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哼~，是嘛……你一直是這樣看我的啊。\n……哎呀，不用找理由也沒關係的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:smile,uru,-20,-200,0.5,0,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,80,250,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只是，有一種術式想嘗試一下，你願意配合嗎？\n沒事的，就算失敗了頂多睡上幾天就好了……怎樣？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102103/adv/sound/fav102103_09_21.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

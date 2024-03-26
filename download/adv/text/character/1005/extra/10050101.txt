@@ -1,0 +1,117 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「走了這麼久竟然見不到一個敵人……\n反正我比較希望他們能一股腦兒地出現」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:unique,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，好啦好啦，我知道的啦。別這麼看著我。說到底想索的目的是\n尋找納克特原書，應該儘量避免戰鬥……對吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那種事情我還是分得清的啦……老實說像這樣\n無所事事地走著，你不覺得很閑嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「難得有空，來聊聊天吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是，你什麼都不記得了，最後就會變成只有\n我一個人在那說個不停」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_05.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:surprise,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，我不是想要責備你什麼，別一副要哭出來的樣子啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_06.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是單純的傢伙。要稍微大膽點才容易生活下去哦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_07.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「快，現在正好有嘗試的機會哦。 對我不用客氣，試著大膽的問吧。\n什麼都可以問。不過，我不一定會回答就是了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_08.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「胸圍的大小」,選項2　「肚子不冷嗎？」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:unique,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊喔……真是不知廉恥的問題呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_09.mp3
+clickwait,,,,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「你在搞什麼啊，竟然在這種時候問這樣的問題，你是奶子星人嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_10.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你就這麼喜歡胸部嗎？　又大又不方便哦？\n一劇烈運動的話就會晃個不停……你看，跳起來咯」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_11.mp3
+clickwait,,,,,,,,,,,,
+anm,jump,edelgard,0_-120_50_2,1,0
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你眼睛都要看得發直了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_12.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:unique,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀，在這裏問的竟然是這個問題嗎……總覺得\n單純過了頭讓人不好意思」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_13.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「順便說一下，這種程度還不至於讓肚子著涼，所以不用擔心。\n以前當傭兵的時候還赤身裸體的被扔在雪山裏面呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個時候真的非常艱難。現在回想起來身體都忍不住要顫抖」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_15.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，也對。最先想問的是身體的一部分，\n畢竟你也是男人呢……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「男人的那種天性，看來跟記憶毫無關係」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過無所謂了。不如說你還是個健全的男人。\n而且我對性騷擾已經見怪不怪了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「以前，我還在傭兵團的時候，下流的傢伙比比皆是……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「順帶一提，有很多人想摸我胸部，那些傢伙\n本應該是因為那裏得不到發洩的可憐蟲才對，然而……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:surprise,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒，剛才的比喻聽不懂嗎？　你還真是單純啊……\n那裏得不到發洩，意思是說他們得自己用手……誒……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgard,0,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark2,em2,default,animation,0,100,140,0.6,0.5,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「…………唔，抱歉說了些下流的話。\n我會道歉的啦，可以別讓我解釋了嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_22.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「總覺得我這麼一本正經地跟你解釋這個，有點不好意思……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100501/adv/sound/fav100501_03_23.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

@@ -1,0 +1,107 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話說回來，對於幻夢境，魔術師感興趣的東西很多呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這個空間自體，是通過納克特原書製作出的亞空間，\n即使是一個小東西，也能用複雜的術式編織而成」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「正是如此，那些滾落的石塊，\n對普通的魔術師來說也應該會是個非常複雜的術式成果」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大部分情況下，如果從幻夢境搬出去的話，會因為無法維持結構\n而自毀，但其中也擁有強大的構成力的東西」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「洛夫克拉夫特財團，就收集像這樣的幻夢境裏的物品，\n進行研究……多虧了那個，好像取得了各種各樣的成果啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對了，之前用什麼資料，把來自納克特原書的遺物用術式解釋清楚\n製作出魔道書這樣的研究也在進行著，什麼的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我也稍微在那附近，為了打發時間順便研究一下吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_07.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:surprise,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……什，什麼嘛。為什麼眼睜得那麼大？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_08.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「知識份子的感覺」,選項2　「完全不知道在說什麼」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:unique,edelgard,0,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark12,em1,default,animation,0,125,140,0.65,0.6,0.5
+endwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不，這種程度的魔術基本都會稍微學學的……\n這麼說，特意用這種程度的事來封為知識份子什麼的……你啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_09.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「難道你平時就認為我是連自己的\n事情都不考慮的笨蛋嗎」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂不要移開視線。老實說，你以為別人都是一根筋嘛？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_11.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，那個實在是……沒有記憶什麼的我倒是知道，\n但就算那樣稍微也學點兒魔術不是更好嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_12.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「知識就是武器哦。在拉萊耶好不容易放著數據庫和\n龐大的資料，利用起來啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也不是說討厭學習的情況」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:surprise,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……我？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_15.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「 即使這樣，你還是對頭腦的強大挺有自信啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂，平時我用的空間投影的虛擬顯示器有吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要那個的話應該在拉萊耶系統裏進行駭客入侵，\n不過，那個設施不管是機械性的還是魔術性的安全防護都很嚴格啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:smile,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然看起來好像很簡單，但連我自己，\n都覺得超-級-的，厲害的哦？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在這個時代，雇傭兵也不能不用腦子……了，雖然是前雇傭兵」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_20.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果是這樣的話，下次我來看管你學習吧？\n用非常嚴厲的斯巴達式來？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:smile,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈，嘛，有興趣的話就跟我說，有空的話我陪你」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_07_22.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

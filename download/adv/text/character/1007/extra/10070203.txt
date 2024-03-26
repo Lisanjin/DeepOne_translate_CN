@@ -1,0 +1,103 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Mark7,em1,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哇……太棒了，我的心靈好像被淨化了似的。\n這麼精彩……要早點看到就好了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_01.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊，晚上好。現在，剛好看完電影哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「聽說圖書館裏保存了很多，\n正好也有時間，然後」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「正打算在自己的房間裏觀看時……從霍莉那裏得知共用空間的顯示器\n更大，更有魄力」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……聽從了建議真是太好了。\n這是一部，盡可能在好的環境中感受的名作」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，看的內容嗎？\n雖然是有點舊的日本電影，但卻是非常有名的青春電影哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「成立吹奏樂部的主人公和朋友們一起以比賽優勝為目標，\n團結一致前行的故事……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「很好啊。和誰一起合作努力，把事情做成功什麼的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「從小時候就一直進行魔術訓練，和朋友一起完成合作之類的……\n我……沒有這種經驗啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「現在有一起戰鬥的夥伴」,選項2　「我也沒和朋友玩過」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……啊，確實是這樣呢。\n我們是夥伴……而且，是有著共同目的的，朋友啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈……這麼說出來，總覺得有些不好意思呢。\n還是第一次知道」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_11.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……是這樣的。你一直被關在拉萊耶，\n和誰都沒有聯繫呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，但是……朋友的話，已經做到了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……你看，我們也是有著共同目的的夥伴，\n那個，怎麼說呢……就算說是朋友也沒關係啊，這樣……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……是嘛。如果也是這麼想的話我會很開心的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_15.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark14,em2,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，是這樣的！果然是朋友的話，\n會一起買東西什麼的，一起玩耍什麼的吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_16.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「要是可以從這裏逃脫出去的話，一起去哪兒玩玩吧。\n嘻嘻……外出的樂趣增加了一個呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……快一點，想和你在外面的世界做各種各樣的事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_07_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

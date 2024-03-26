@@ -1,0 +1,129 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11140300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alma1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:shy,alma2,0,0,0,0,,,,
+imgconf,alma2,alma1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_01.mp3
+name,<outline width=2 color=black>艾爾瑪・莉絲菲爾特</outline>,
+msg,1,<outline width=2 color=black>「啊啊，莉迪亞姐姐大人……哈啊，哈啊……米露瓦姐姐大人也是，\n居然這麼……哈啊……哈啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+mask,alma1,0,0,1280,250,0,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:shy,alma2,0,0,0,0,,,,
+imgconf,alma2,alma1,0,-300,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_02.mp3
+msg,1,<outline width=2 color=black>「啊啊，姐姐大人們，若是用這種眼神看著我……艾爾瑪會……\n可是，我還想……嗯、嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/103204/adv/sound/fav103204_03_03.mp3
+name,<outline width=2 color=black>艾爾瑪・莉絲菲爾特</outline>,
+msg,1,<outline width=2 color=black>「——喂，你看什麼看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_04.mp3
+msg,1,<outline width=2 color=black>「啊？什麼奇怪的聲音？\n我只是在堆姐姐大人的雪人而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_05.mp3
+msg,1,<outline width=2 color=black>「真沒辦法，特別允許給你看看好了。\n這是我聯想她們兩人的身影而堆的雪人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_06.mp3
+msg,1,<outline width=2 color=black>「你看，怎麼樣？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「這邊的是莉迪亞？」,選項2　「這邊的是米露瓦？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_07.mp3
+msg,1,<outline width=2 color=black>「一看不就懂了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_08.mp3
+msg,1,<outline width=2 color=black>「你好好看看。莉迪亞姐姐大人這冷靜凜然的表情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_09.mp3
+msg,1,<outline width=2 color=black>「當然存在感遠遠比不上真正的莉迪亞姐姐大人啦，\n可是惟妙惟肖得一眼就能看出是姐姐大人吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_10.mp3
+msg,1,<outline width=2 color=black>「沒錯。這麼簡單的事，就算是你也能看出來呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_11.mp3
+msg,1,<outline width=2 color=black>「米露瓦姐姐大人那溫柔中帶著妖豔與憂鬱的表情。\n而且雪人的手上還精心地用了和姐姐大人一樣的餐具」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_12.mp3
+msg,1,<outline width=2 color=black>「光是看著，就能感覺到米露瓦姐姐大人就站在眼前一般的幸福感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:shy,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_13.mp3
+msg,1,<outline width=2 color=black>「啊啊，米露瓦姐姐大人……艾爾瑪沒辦法完全還原姐姐大人的魅力，所以請別這麼溫柔地微笑……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:surprise,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_14.mp3
+msg,1,<outline width=2 color=black>「哎？你說做得很好……就算你誇獎我我也不覺得高興。\n姐姐大人以外的人的誇獎根本是毫無價值」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_15.mp3
+msg,1,<outline width=2 color=black>「而且，這種雪人連姐姐大人她們的四分之一的魅力都表現不了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_16.mp3
+msg,1,<outline width=2 color=black>「這種雪人是表現不了姐姐大人她們那種纏繞著背德的血腥味的美的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:surprise,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_17.mp3
+msg,1,<outline width=2 color=black>「喂，你幹嘛要拍照啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_18.mp3
+msg,1,<outline width=2 color=black>「拿給姐姐大人她們看？看這種不倫不類的東西！？\n我絕對不允許……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_19.mp3
+msg,1,<outline width=2 color=black>「絕對不能讓姐姐大人她們看到這種我都不能接受的東西……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_20.mp3
+msg,1,<outline width=2 color=black>「至少在我進一步打磨之前，\n這些雪人都要絕對保密！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_21.mp3
+msg,1,<outline width=2 color=black>「喂，你幹嘛突然笑得那麼噁心啊……啊？\n兩個人之間的秘密……你是不是傻啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_22.mp3
+msg,1,<outline width=2 color=black>「別說那麼多了，趕緊把終端收起來」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103204/adv/atlas/stand_a,body:unique,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103204/adv/sound/fav103204_03_23.mp3
+msg,1,<outline width=2 color=black>「否則——我就不得不給你一點教訓了，你不介意嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

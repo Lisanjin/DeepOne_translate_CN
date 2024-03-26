@@ -1,0 +1,117 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——你沒事吧！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那個，我聽說你在今天的想索中受傷了……看起來，\n還好傷的不重……松了口氣……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_02.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「多謝關心」,選項2　「抱歉讓你擔心了」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「謝謝什麼的……我當然要擔心你啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果沒有你，我們就無法進入幻夢境，\n也無法逃離拉萊耶」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「而且最重要的是……你還是無可替代的……我的夥伴」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_05.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「請不要……道歉……\n這樣反而讓我不舒服」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不僅姍姍來遲，連擔心都不被允許的話……\n只會讓我更痛苦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_07.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+stopbggm,0.5
+endwait
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……竟然在我不參加想索的時候發生這樣的事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……當然，也不是懷疑其他人的實力，\n也有這種無可奈何的狀況的吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，即便如此……我還是會想……如果當時有我在身邊的話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「與其追悔莫及，不如今後……一直陪在你身邊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:anger,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我知道。哪怕有你的支援，\n連續不斷深潛到幻夢境的話，風險太高了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「儘管如此，我還是想提些任性的要求……這樣的——」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……是啊。我在擔心你反而讓你擔心了，\n真是沒辦法啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個，你的手……呃，為什麼……摸頭……啊，呃？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不！ 那個，沒有沒有……絕對沒有不喜歡！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「只是……有點不習慣……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「作、作為回禮啊……呃，這樣的話，\n那個，你請便……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……一直作為聖女被大家崇拜著，\n像你這樣對待還是第一次……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……唔，……嗯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……等等……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那、那個……再摸一會兒……可以嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100303/adv/sound/fav100303_08_23.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

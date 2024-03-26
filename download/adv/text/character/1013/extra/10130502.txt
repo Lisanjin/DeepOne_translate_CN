@@ -1,0 +1,97 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,1.0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,miruva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_01.mp3
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯……不知道啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:surprise,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_02.mp3
+msg,0,<size=30><outline width=2 color=black>「啊……剛剛好。呐、我能問你一個問題嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_03.mp3
+msg,0,<size=30><outline width=2 color=black>「有孩子、是怎樣的心情呢？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「……想要嗎？」,選項2　「不知道」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_04.mp3
+msg,0,<size=30><outline width=2 color=black>「誒？　啊啊……我剛才的問題、會讓人誤會吧。\n我又沒想要孩子」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:shy,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_05.mp3
+msg,0,<size=30><outline width=2 color=black>「嘛……如果跟你生的話、我覺得可能會比較好」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_06.mp3
+msg,0,<size=30><outline width=2 color=black>「呵呵、開玩笑的。不過、被你這樣為難的表情嚇了一跳。\n你不想和我生孩子嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_07.mp3
+msg,0,<size=30><outline width=2 color=black>「呵呵、呵呵呵……開玩笑的話、不做到這個程度、\n你也會生氣嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_08.mp3
+msg,0,<size=30><outline width=2 color=black>「是啊……你也一直待在拉萊耶、\n幾乎沒接觸過孩子吧……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_09.mp3
+msg,0,<size=30><outline width=2 color=black>「我也……雖然不是完全沒有、\n但我從來也沒有好好陪過孩子……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_10.mp3
+msg,0,<size=30><outline width=2 color=black>「在拉萊耶裏、我找到了保育室。你看、這裏是海底、\n工作人員也不可能輕鬆地與地上往來吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_11.mp3
+msg,0,<size=30><outline width=2 color=black>「所以、這是為有孩子的職員準備的。\n好像也有保育士之類的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_12.mp3
+msg,0,<size=30><outline width=2 color=black>「保育員、是給孩子讀繪本的嗎？\n我、前幾天給你講故事……總覺得很開心呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_13.mp3
+msg,0,<size=30><outline width=2 color=black>「所以……我試著想象了一下。在孩子們的包圍下給他們讀繪本\n是怎樣的心情呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_14.mp3
+msg,0,<size=30><outline width=2 color=black>「我不明白……因為我、是無法理解一般的孩子的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_15.mp3
+msg,0,<size=30><outline width=2 color=black>「所謂的‘普通’、並不是在一個沒有窗戶的水泥房間裏長大、\n或是互相殘殺吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_16.mp3
+msg,0,<size=30><outline width=2 color=black>「所以、我無法想像。真遺憾」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_17.mp3
+msg,0,<size=30><outline width=2 color=black>「……對了。我拿你練練手吧、或許能稍微理解一下\n孩子在身旁的感受？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_18.mp3
+msg,0,<size=30><outline width=2 color=black>「就是這個意思。我想讓你像個孩子一樣撒嬌。\n我給你讀繪本、困了就讓你枕在膝蓋上」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_19.mp3
+msg,0,<size=30><outline width=2 color=black>「聽起來很有趣。快來試試吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,miruva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_20.mp3
+msg,0,<size=30><outline width=2 color=black>「寵愛你、給你很多甜蜜。首先你想做什麼？\n我什麼都會為你做的……畢竟是孩子、不用忍耐哦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101305/adv/sound/fav101305_02_21.mp3
+msg,0,<size=30><outline width=2 color=black>「來……坐下？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

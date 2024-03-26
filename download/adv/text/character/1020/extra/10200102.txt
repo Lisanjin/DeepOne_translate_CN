@@ -1,0 +1,103 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你盯著看什麼呢。\n最近，特別頻繁地感覺到你的視線……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這種不禮貌的目光讓人不悅……哼。\n走了，你別跟著我啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_02.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,
+slideinblack,1.0,right
+endwait,,,,,,,,,,,
+slideoutblack,1.0,right
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0.5,,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哥哥，今天在房間裏做什麼呢？\n和往常一樣――」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+spine,download/adv/spine/Mark6,em1,default,animation,0,130,100,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――喂！　你這人，不是說了別跟著我\n聽不懂嗎？　你是跟蹤狂嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「有點話想跟你說」,選項2　「你說的哥哥是……？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我沒有。所以不要跟我廢話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……而且，我想說的話自然會說的。\n是哥哥的事吧……對我們來說，那肯定是不愉快的話題」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你別隨便叫哥哥」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼……反正你也認為我在和幻覺說話，\n就是那麼想的對吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……以前也一直是這樣。不管是誰……就連和我有血緣關係的人，\n也都以為我瘋了，對我很不禮貌……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_09.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……哥哥對我來說是很重要的人。雖然沒有人會相信，\n但只有我知道哥哥就在這裏」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯，是啊。哥哥就在這棺材裏。\n在我創造的，連接我和哥哥的這本魔導書裏」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為哥哥的身體……已經不行了。\n所以我準備了容器」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「能和哥哥說話的，已經只有我自己了，\n我相信哥哥的意識還沒有消失……肯定還存在於這裏」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你是不是覺得那不可能？\n但別人的事……你沒有理由說三道四」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「即使你們不相信，我和哥哥，就存在在這裏……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你似乎在擔心我是不是因為幻夢境的負荷而產生了幻覺，\n其實你錯了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果明白了，就不要再問沒用的問題了。\n不要打擾我和哥哥的時間……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102001/adv/sound/fav102001_04_17.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

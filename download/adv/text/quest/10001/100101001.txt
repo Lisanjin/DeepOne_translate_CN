@@ -1,0 +1,733 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,2,,,,,,,,
+endwait
+bg,download/bg/bg_10010300.jpg,1,,,,,,,,
+playse,/download/sound/se/se_029.mp3
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,-225,-120,0.5,1,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,1,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呀，來探病，辛苦二位了」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_01.mp3
+clickwait,,,,,,,,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你有什麼可了不起的哦……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:smile,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說到探病的話，蜜瓜！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_02.mp3
+clickwait,,,,,,,,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不是……話說這樣的海底設施裏\n怎樣才能弄到蜜瓜啊」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「感覺一般去人工農場就行吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那樣的東西居然還有嗎……！？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_03.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「我去弄一個」,選項2　「蜜瓜好吃嗎？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在去嗎……？　話說回來，你知道人工農場的位置嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:smile,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那由我來帶路吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_04.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……啊，這麼說來，\n你說過你一直被困在拉萊耶裏對吧……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-225,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「連蜜瓜的味道都不知道……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:surprise,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「人生的損失了一半哦！　現在馬上去拿個蜜瓜吧！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_05.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「都說了病人要臥床休息！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊哈哈……嘛，玩笑就到這裏吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:smile,norn,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「其實剛才我親手摘下的蜜瓜就在這裏」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_07.mp3
+clickwait,,,,,,,,,,,
+shake,0.2,1,20,20
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以說病人給我老實點啊！？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_08.mp3
+clickwait,,,,,,,,,,,
+endwait
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「其實，也就是以防萬一讓我休養一下，並不需要絕對的靜養。\n也沒必要特意來探病的？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「事情鬧得這麼大，大家也很忙的吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「其他人好像，從昨天開始就一直在到處調查，\n因為我和他對拉萊耶還完全不熟悉……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「老實說，我沒什麼能幫上忙的地方呢」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:unique,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「偷懶可不好喲」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_10.mp3
+clickwait,,,,,,,,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我們也很尷尬的啊……對他而言，就更是如此了。\n畢竟，他連自己的身世都沒弄清楚」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，稍微調查了一下，他的靈質方面好像連普通的魔術都不能使用，\n完全偏向了關於夢幻境的能力」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼唔，是這樣啊……但是，對於現在的我們來說這是非常可靠的強大能力。\n而且，我覺得他作為一個人來說也是值得信賴的」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……第一次見面的時候我好像就說過，諾恩你啊，\n意外的偏袒他呢？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_13.mp3
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯ー……我啊，其實沒有四年前以前的記憶了。\n最初的記憶是，在洛夫克拉夫特財團醒來時的事」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好像是，確認了突然異常的<ruby>魔素</ruby>的上升情況並進行了調查，\n結果我倒在了那個地方」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那樣說的話，是不是被捲入了什麼事件……？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那誰知道呢……我知道的，大概，只有我不一般這件事」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我啊，對於人的惡意會有異常的感覺」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_15.mp3
+clickwait,,,,,,,,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔，這是什麼意思……？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_15.mp3
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這世上充滿了惡意。或者說，即使本人沒有想法，\n但心中潛藏著無意識的惡性這樣的事也並不稀奇」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我的話，能夠看透，聽出那些人的惡意。\n即便是現在，也能從亞紗花那裏感受到流露出來的惡意」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「等、等一下啊，我並沒有，惡意什麼的……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「“自己什麼事都做不到”，“肯定會有人來幫自己解決”。\n將責任強加給他人，怠惰地觀察情況……也是人的惡意」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，這是可愛的惡意。這種程度的惡意，誰都會有。\n可能有點誇張，但我覺得亞紗花你是個大善人哦」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:smile,norn,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但，他完全沒有傳達出惡意。真新鮮。\n簡直就是，乾淨得令人掃興啊」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……完全沒有，惡意嗎？　可能會有那種事嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「至少我是第一次遇到呢。或者說，單純有一些緣由使得我的這個能力\n不能影響到他，他或許其實也有一兩種惡意的」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，這都無所謂。第一次感覺不到惡意……沒有任何私心，\n能夠坦誠相待的對象。對我來說，這就是全部」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:smile,norn,300,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這就是，我支持他的理由。還有就是我意外地喜歡那張臉」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_23.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-225,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼要加上這麼多餘的一句話！？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊哈哈，我實在是不擅長嚴肅的場合」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_24.mp3
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait,
+playse,/download/sound/se/se_029.mp3
+endwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,-300,-180,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,dana,255_255_255,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看起來還真是很開心呢」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_1_01_01.mp3
+clickwait,,,,,,,,,,,
+anm,tint,dana,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，達納。怎麼了？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_25.mp3
+clickwait,,,,,,,,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,dana,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我是來叫亞紗花的」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_1_01_02.mp3
+clickwait,,,,,,,,,,,
+spriteoff,norn,0
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,375,-120,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我嗎……？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_20.mp3
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,dana,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是的。雖然在進行拉萊耶內部的調查，但是沒有什麼進展。\n……於是零提出，繼續對幻夢境內部進行想索」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_1_01_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話雖如此，\n現在所有人都深潛到幻夢境的話風險太高了」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_1_01_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以希望，包括能夠減輕其他人負擔的他在內\n先派遣幾人進行想索」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_1_01_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,-300,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「如果可以的話，希望亞紗花小姐也能加入深潛」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_1_01_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,375,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我知道了」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_21.mp3
+clickwait,,,,,,,,,,,
+spriteoff,dana,0
+endawait
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:surprise,norn,-300,-120,0.5,0.5.,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哦，意外地很爽快的接受了呢？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_26.mp3
+clickwait,,,,,,,,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為是這樣的情況嘛。如果有我能夠做到的事情的話，無論是什麼都想試試看。\n這麼想不是理所當然的嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_22.mp3
+clickwait,,,,,,,,,,,
+spriteoff,norn,0
+endwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,-300,-180,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,dana,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個，你還不太習慣這裏吧，如果感到不安的話\n這次就算是不去也無……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_1_01_07.mp3
+clickwait,,,,,,,,,,,
+anm,tint,dana,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒關係的，請不要那麼擔心。\n在調查設施的時候沒能派上用場，我只能在這種事上幫忙了」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_23.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,-300,-180,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,dana,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是嗎。那樣的話，那就拜託你了」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_1_01_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我也想跟你們一起去，\n但還要負責繼續調查拉萊耶內部的事情……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_004_1_01_09.mp3
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+anm,tint,norn,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，達納都來拉萊耶這麼久了，這也是理所當然的。\n……亞紗花，你也要加油哦」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_014_1_01_27.mp3
+clickwait,,,,,,,,,,,
+spriteoff,dana,0
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,-225,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，謝謝」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,-225,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，我們也走吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_25.mp3
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,1.5,right
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010400.jpg,0,,,,,,,,
+endwait
+slideoutblack,1.5,right
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102601/adv/atlas/stand_a,body:normal,zero,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,bri,300,-190,0.5,0.5,,,,
+anm,tint,zero,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「來了啊……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_01.mp3
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001,0
+anm,tint,zero,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……你看起來很悠閒啊，\n知不知道現在是什麼情況」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,zero,0
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-225,-120,0.5,0.5,,,,
+anm,tint,bri,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好像來遲了，對不起……那個，你叫布麗吉特，來著？\n你也一起深潛嗎？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_26.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,bri,300,-190,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,bri,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「希望你不要隨隨便便叫我的名字。先跟你說清楚，\n本小姐，一點都不想跟你搞好關係」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我只想做好，必要的事情」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_03.mp3
+clickwait,,,,,,,,,,,
+anm,tint,bri,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……嘛，不用這麼說，吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_27.mp3
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,bri,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_04.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/102601/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你還真是無依無靠啊。真的是，\n都是今後要一起行動的同伴啦，我覺得相處稍微融洽一點也好」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「算了。這次要深潛的是，你們和……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_03.mp3
+clickwait,,,,,,,,,,,
+spriteoff,zero,0
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0.5,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,gizel,300,-120,0.5,0.5,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個……我也……啊！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_003_1_01_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「非常抱歉。卡蒂婭小姐，這次望您能回避一下……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_007_1_01_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這是，因為我是與財團關係不和的聖奠教的人，是這樣的吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_003_1_01_02.mp3
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+endwait
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,bri,300,-190,0.5,0.5,,,,
+anm,tint,bri,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「再加上，昨天境門暴走時也是離境門最近的人\n的確很可疑啊」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「既然可以理解為是你，引起了境門暴走，\n招致了這個禍端，當然要警惕你啊？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_06.mp3
+clickwait,,,,,,,,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那只是，碰巧……不，說這些也沒有意義。\n看來就算產生了嫌隙，也是沒辦法的事……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_003_1_01_03.mp3
+clickwait,,,,,,,,,,,
+spriteoff,catia,0
+endwait
+spriteatlas,download/character/102601/adv/atlas/stand_a,body:normal,zero,-300,-120,0.5,0.5,,,,
+anm,tint,zero,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……雖然大概境門的暴走和她關係不大，但是深究下去\n也很麻煩，總之能夠和解就好了吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，進行深潛的是他和我，還有亞紗花，布麗吉特，吉澤爾\n這樣就好了吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_05.mp3
+clickwait,,,,,,,,,,,
+spriteoff,bri,0
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,gizel,300,-120,0.5,0.5,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,zero,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是的」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_007_1_01_02.mp3
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+endwait
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,bri,300,-190,0.5,0.5,,,,
+anm,tint,bri,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話說回來，怎麼是你在掌管這件事啊？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_07.mp3
+clickwait,,,,,,,,,,,
+anm,tint,zero,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我覺得應該由最熟悉幻夢境的人來負責？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,bri,300,-190,0.5,0s,,,,
+anm,tint,zero,150_150_150,0.0001,0
+anm,tint,bri,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……要說可疑的話，你和那個男人同樣可疑呢」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102601/adv/atlas/stand_a,body:smile,zero,-300,-120,0.5,0,,,,
+anm,tint,zero,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，你不來也無所謂啊？\n請在一邊仔細看著拉萊耶的情況變化吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_07.mp3
+clickwait,,,,,,,,,,,
+anm,tint,zero,150_150_150,0.0001,0
+anm,tint,bri,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………哼」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102601/adv/atlas/stand_a,body:normal,zero,-300,-120,0.5,0,,,,
+anm,tint,zero,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你認同就好。那麼，我們馬上出發吧」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_08.mp3
+clickwait,,,,,,,,,,,
+spriteoff,bri,0
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,375,-120,0.5,0,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,zero,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個，不再做些提前準備嗎……？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_28.mp3
+clickwait,,,,,,,,,,,
+anm,tint,zero,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「力量是他給予的，因為在幻夢境中也不知道會發生什麼，\n半吊子的準備是沒有任何意義的」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「做好心理準備就好」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_10.mp3
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+name,
+msg,0,
+endwait
+spriteoff,all,0.5
+endwait
+spine,download/adv/spine/gate,gate0,default,0_lp,1,0,0,1,1,0.3
+playse,/download/sound/se/se_015.mp3
+endwait
+spriteatlas,download/character/102601/adv/atlas/stand_a,body:anger,zero,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼就，出發嘍」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_11.mp3
+clickwait,,,,,,,,,,,
+spriteoff,zero,0.1
+endwait
+name,,
+msg,0,,,,,,,,,,,
+msgwin,off
+endwait
+bg,color_0_0_0,1,255
+spine,download/adv/spine/gate,gate1,default,0_out,0,0,0,1,1,0
+playse,/download/sound/se/se_1_out.mp3
+wait,5.4
+endwait
+spineoff,gate0
+spineoff,gate1
+playse,/download/sound/se/none.mp3
+endwait
+msgwin,on
+endwait
+bg,color_0_0_0_0,2.5
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+bg,download/bg/bg_10020100.jpg,2,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm024.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:normal,asaka,375,-220,0.5,0.5,,,,
+anm,move,asaka,375_-120,0.5,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這裏，和昨天是一樣的……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_29.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:surprise,gizel,-300,-220,0.5,0.5,,,,
+anm,move,gizel,-300_-120,0.5,0
+endwait
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「顛倒的，倫敦……？\n而且這身打扮……這就是，之前別人和我說的他的力量麼……」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_007_1_01_03.mp3
+clickwait,,,,,,,,,,
+spriteoff,all,0,
+endwait,
+spriteatlas,download/character/102601/adv/atlas/stand_a,body:normal,zero,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bri,300,-190,0.5,0.5,,,,
+anm,tint,zero,255_255_255,0.0001,0
+anm,tint,bri,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看來，這裏是和誰的心象相關的空間呢。\n到底，這景色與誰的心緊密相連呢？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_12.mp3
+clickwait,,,,,,,,,,,
+anm,tint,bri,255_255_255,0.0001,0
+anm,tint,zero,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_002_1_01_10.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:surprise,asaka,375,-120,0.5,0.5,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:sad,gizel,-300,-120,0.5,0.5,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「與心象相關聯，這事怎麼說？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_30.mp3
+clickwait,,,,,,,,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「幻夢境，會以各種各樣的形式揭露人的內心」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_007_1_01_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這個空間，映射出了某個人的內心……\n一定，會把心中隱藏的東西不合理地揭露出來」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_007_1_01_05.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/102601/adv/atlas/stand_a,body:anger,zero,0,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>零</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是，惡趣味啊………被盯上的人心裏有數\n還請多加小心」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……據說首先會受到熱烈的歡迎，\n那就讓我們盡情享受吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_026_1_01_14.mp3
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+spriteoff,zero,0
+endwait
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,,,
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,magician,-30,-170,1.35,1
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+shake,0.2,4,15,15
+endwait
+clickwait,,,,,,,,,,,
+spriteoff,magician,0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:anger,asaka,65,-120,0.5,0.5,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_31.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,65,-120,0.5,0,,,,
+playse,/download/sound/se/se_032.mp3
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒關係……還能戰鬥……就算是我，也還可以……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/adv/voice/quest/main_001_1_01_32.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

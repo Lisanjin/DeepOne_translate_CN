@@ -1,0 +1,269 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10030100.jpg,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,1.0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy3,-400,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy2,400,-250,1.35,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+name, 
+msg,0, 
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+wait,1.0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy3,-400,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait
+sprite,download/monster/20020101/adv/image/20020101.png,enemy2,400,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait
+wait,1.0
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「啊啊，夠了！打掉一個又來一個……\n真是的，簡直沒完沒了！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「喂，布麗吉特。逃離術式還是無法啟動嗎？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……不行啊。敵人太多，術式被干擾了。\n必須讓敵人的數量再減少一部分」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「減少數量……那種事做不到啊！\n現狀完全是越殺越多！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+spriteoff,bligit,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:normal,irina,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「即便如此，我們也只能硬上了……\n如果不有所作為，我們會因為數量壓制而全滅」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,irina,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「話是這麼說……啊啊，夠了！\n誰有打開局面的好辦法？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+spriteoff,irina,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holy,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……我有個想法」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「真的嗎？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,holy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「是的。主要問題出在敵人數量過多。\n既然如此，到遠離敵人的地方去不就可以了嗎」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「我來拖住這些虛像，\n大家趁機逃到能啟動術式的地方去吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+playbgm,/download/sound/bgm/bgm026.mp3,1.0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「等一下！……難道要犧牲霍莉來爭取逃跑的時間嗎？這怎麼可以！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,holy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「但是……這是最好的辦法了，亞紗花大人」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_b,body:normal,irina,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……沒錯。畢竟時間有限，\n我也覺得你的辦法是最好的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,irina,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「喂，伊蓮娜！你是認真的嗎？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,irina,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「我們的目的，是捕捉用於製作解毒劑的蟲子，將其帶回拉萊耶……\n留下一個人斷後很合理」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「況且……她本人作為近侍，也是如此期望的。\n我們沒理由去阻止吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,irina,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「怎麼這樣……喂，布麗吉特！你真的不介意這樣嗎？\n霍莉說不定會死啊？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+spriteoff,irina,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bligit,300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「霍莉……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holy,-300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,bligit,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「好吧……後面就拜託了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「什麼……？！連布麗吉特也這麼說——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holy,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「沒事的，亞紗花大人。伊蓮娜大人說的沒錯，\n這正是我所期望的……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「所以……作為吉澤爾大人的近侍，\n讓我盡到自己的職責吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「霍莉……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+anm,tint,holy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……這個瓶子就交給亞紗花大人了。\n請一定要將其順利帶到吉澤爾大人身邊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,holy,150_150_150,0.0001,0
+anm,tint,asaka,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……好的，我向你保證，我一定會救下吉澤爾」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「但是，霍莉。你一定要堅持到最後哦？\n等我們把蟲子送到後，絕對還會回來的。你一定要撐到那時候！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0, 
+anm,move,asaka,-800_-120,0.3,0
+playse,/download/sound/se/se_018.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:normal,holy,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「總算是走了……各位，一定要平安無事」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:sad,holy,0,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「不過……我可真是傻啊。明明處在這樣的狀況下，\n卻還想著……這樣能多少減輕自己的罪孽」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「多麼膚淺的想法……身為芭德薇家的從者，\n奉獻自己去保護主人是理所應當的事情——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy3,-400,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy2,400,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm010.mp3,0.5,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:normal,holy,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……真是夠了，連沉浸於傷感的時間都不給嗎。\n你們似乎非常渴望找個玩伴呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不過，大小姐她們現在很忙……不好意思，\n由我來陪你們，可以嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「我是芭德薇家的從者，霍莉・哈穀李維斯。\n今後還請多多指教」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「不過，反正你們接下來都要被我消滅，\n還是不必記住小女子的名字了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:anger,holy,0,-180,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「那麼——我上了！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

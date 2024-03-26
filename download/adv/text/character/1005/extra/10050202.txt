@@ -1,0 +1,141 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:anger,edelgard,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，怎麼了！\n動作這麼慢我都要睡著了哦！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_01.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,monster,-50,-200,1.25,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「―――――――――――――――！」</outline></size>,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,,
+shake,0.2,3,30,30
+endwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:anger,edelgard,0,-120,0.5,0.5,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「切，早就知道你打不中……那麼到此為止了！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_02.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,edelgard,0
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,monster,-50,-200,1.25,0.5,,,,
+endwait
+spine,download/adv/spine/Slash1_Blue,em1,default,animation,0,0,0,0.65,1,0.5
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,2,0.2,1.5
+shake,0.1,1,100,100
+endwait
+spriteoff,monster,1,,,,,,,,,,
+playse,/download/sound/se/se_025.mp3
+endwait
+wait,1.5
+stopbgm,0
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edelgard,0,-120,0.5,0.5,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「唉，真是些讓人提不起勁的傢伙。\n再強一點的話，我才能興奮起來啊……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_03.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「敵人很弱是再好不過的了」,選項2　「情緒化是很危險的」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖說是那樣沒錯，總是和弱者交手的話，\n能力會變遲鈍的哦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「緊急時刻發揮不了力量的話就難辦了吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_05.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「程度的問題。至少本事別生銹的程度\n想出現個強大的敵人啊……那麼想的沒錯吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_06.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，別說大話了哦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_07.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「依我說，戰鬥之類的基本上就是氣勢和情緒。\n心情要是低沉的話，無論做什麼都不會得到好的結果的……和那個是一樣的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_08.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，在戰場上赤手空拳什麼的，在我看來\n那個更糟糕吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_09.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「戰場和日常生活都以同樣的溫度感生活的人存在的話，\n那傢伙一定很瘋狂的哦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_10.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來戰鬥就是我的領域。\n總有人對我指手畫腳的，有點兒太荒唐了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_11.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要是你，自己的感受被輕視了也不會多好受吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「比如……你，偷偷的鍛煉身體，也在向其他人\n學習戰鬥方法吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_13.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:smile,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼要擺出一副吃驚臉啊。艾蒂爾加爾德什麼都能看透」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你的這種行動啊，是因為你自己的心理矛盾吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「多半，自己不能戰鬥，還要把戰鬥強加給我們很難為情什麼的，\n那樣的感覺？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，讓我來說我們就是互相扶持的關係，但說實話\n這樣是多管閒事，所以我也不會多嘴」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「做自己想做的就好。按自己喜歡的方式來吧。\n然後，我也打算這樣……就這麼點兒話」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「總之，不要給別人添麻煩，自己一個人任性的話，\n就不要互相干預了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「話雖如此，你反正還是會多管閒事吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……要是說那就是你想做的事情的話，\n我說什麼也沒用……真的，是個老實人啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100502/adv/sound/fav100502_06_21.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

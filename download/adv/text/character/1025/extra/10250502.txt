@@ -1,0 +1,147 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11030300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20010106/adv/image/20010106.png,enemy1,0,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「————————！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:anger,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1200,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_01.mp3
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「唉——！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+name,
+msg,0,
+sprite,download/monster/20010106/adv/image/20010106.png,enemy1,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——————……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm025,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_b,body:normal,yoshino,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_02.mp3
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「——這樣的話，幻象就全部散去了吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_03.mp3
+msg,1,<size=30><outline width=2 color=black>「但是……穿著這樣的衣服與敵人對峙，\n有點像驅魔師」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_04.mp3
+msg,1,<size=30><outline width=2 color=black>「所謂驅魔師……\n以前，某個村子裏有一個以驅魔為生的男人」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:sad,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_05.mp3
+msg,1,<size=30><outline width=2 color=black>「他說，人的身體不舒服，可能是因為有惡魔附身，\n然後他就通過胡編亂造的祈禱來賺錢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_06.mp3
+msg,1,<size=30><outline width=2 color=black>「我當然不能對這個男人的惡行坐視不理。\n所以，我決定和他好好談談」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_07.mp3
+msg,1,<size=30><outline width=2 color=black>「我讓他把從村民那騙到的錢還回來，\n並且要求他不再做這樣的事情，讓他離開了村子」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「你沒對他做什麼嗎？」,選項2　「同伴也沒說什麼嗎？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_08.mp3
+msg,1,<size=30><outline width=2 color=black>「啊，是的。我們只是協商，始終沒有刀劍相向。\n是一種安穩又和平的解決問題的方法，對吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_09.mp3
+msg,1,<size=30><outline width=2 color=black>「呵呵……你這個目瞪口呆的表情。\n讓我像是看到當時與我同行的學生們一樣」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_10.mp3
+msg,1,<size=30><outline width=2 color=black>「他們似乎也認為，我會用武力打敗他，讓他反省自己愚蠢的行為。\n……但是，我有我自己的想法」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_11.mp3
+msg,1,<size=30><outline width=2 color=black>「當然，這好像很不可思議。\n誰也沒有想到，那個男人居然就這麼毫髮無傷地被放走了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:sad,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_12.mp3
+msg,1,<size=30><outline width=2 color=black>「我的同伴們說，那個男人一定不會遵守約定，\n如果在別的地方又出現了新的受害者，問我打算怎麼辦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_13.mp3
+msg,1,<size=30><outline width=2 color=black>「確實，那個男人是通過話術抓住人們的弱點來謀財的。\n那是一種欺詐，大多數場合下都會被當作惡行來批判吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_14.mp3
+msg,1,<size=30><outline width=2 color=black>「但是，換種角度來看的話，那傢伙收了錢，\n也給人們的心裏帶來了平靜和安寧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_15.mp3
+msg,1,<size=30><outline width=2 color=black>「正如有句話說的，「病從心始」，因為那個男人的祈禱，\n也有人獲得精神上的安寧，病就好了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_16.mp3
+msg,1,<size=30><outline width=2 color=black>「那麼，既然他發誓不再做第二次的話，\n念在初犯，我就放過他吧，我是這麼想的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_17.mp3
+msg,1,<size=30><outline width=2 color=black>「……不管他做了什麼行為，他也確實拯救了一些人們的心\n這個事實絕對不會被抹消」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_18.mp3
+msg,1,<size=30><outline width=2 color=black>「你不這樣覺得麼？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_19.mp3
+msg,1,<size=30><outline width=2 color=black>「……呼呼。你也同意嗎。\n一想到和你有著同樣的想法，不知怎麼，我有點開心呐」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102505/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102505/adv/sound/fav102505_02_20.mp3
+msg,1,<size=30><outline width=2 color=black>「托你的福，我現在對自己當時的行為充滿自信……謝謝你」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

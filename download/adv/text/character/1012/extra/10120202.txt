@@ -1,0 +1,92 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……啊，是你啊。這麼晚了，在做什麼？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:surprise,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「訓練完要回去了？　這樣啊，你還鍛煉身體啊。\n這還真是值得稱讚」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我覺得你鍛煉身體也沒多大用，\n但誰也無法預測將來會發生什麼，所以我不會說這種行為是白費力氣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我嗎？　我只是過來看看境門」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果在拉萊耶這種地方悠閒度日的話，我的直覺也會變得遲鈍。\n我現在想戰鬥想得手癢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「來到境門旁，接近戰鬥的氣息，\n會讓我更加冷靜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，我想快點去幻夢境……下次什麼時候\n帶我去幻夢境？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果其他人準備耗時間的話，\n我一個人去也不是不可以……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對。機會難得，要不我們兩個人深潛試試？\n對於一直纏著我的寵物來說，是很光榮的吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「想索時我會和你一起去」,選項2　「我想盡可能的儲存體力」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣啊。呵呵，那麼事不宜遲……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:anger,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……你說現在最好別去嗎？　我手都癢到這個份上了，\n你還叫我忍耐？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「唉~……如果要去就要做好相應的準備……啊。你還真是慎重。\n你這種的，真的奔赴戰場的話是第一個死的哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說什麼儲存……都滿的要溢出來了才說想去的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「草率想索很危險……嗎。嗯，話是有點道理。\n幻夢境裏不知道究竟會發生什麼事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:sad,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但因此，也會變得享受它……\n不知道你能不能理解這份感受」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_15.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「算了，你這麼說的話，我今天就先忍忍吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但如果一直都是這樣，我可耐不住。\n可以的話我想快點進行下次的想索」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，約好了。如果你不遵守約定，那時候就……\n好好教教不守規矩的寵物禮儀吧？　呵呵，呵呵呵呵」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_06_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

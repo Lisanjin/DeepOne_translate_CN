@@ -1,0 +1,120 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,tabasa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:smile,tabasa,0,0,0,0,,,,
+imgconf,tabasa,tabasa1,0,-200,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，哥哥……你今天也看到我活躍的樣子了嗎？\n幻夢境中存在的敵人是微不足道的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「照這樣下去，離拿到納克特原書的日子就不遠了……這樣的話，\n我的名望會提高多少呢……好期盼那一天呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:anger,tabasa,0,0,0,0,,,,
+imgconf,tabasa,tabasa1,0,-200,,,0,1.5,1.5,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「……話雖如此，那個男人真讓人頭疼。\n既然沒有戰鬥力，本來應該默默地躲在後面才對」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「可他卻不停地為我擔心，特別是在戰鬥中，一旦面臨危機\n就會自己跳出來……真是的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我必須每次都去救他才行，\n真希望他能替我想想……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_05.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0.5,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「――我在跟你說話呢。在那裏偷偷摸摸地偷聽我和哥哥的對話，\n你有這樣的愛好嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_06.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「看起來很開心、我不想打擾」,選項2　「錯過了說話的時機」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你不是知道的嗎。\n是的呢。對我來說，和哥哥在一起的時間是無法取代的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不打算打擾，這倒是個值得稱讚的想法，\n但是只要有你在，我滿足的心情就會大打折扣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哦是嗎……真的只是那樣嗎？\n反正不就是用骯髒的欲望眼神看著我嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來，我是不希望你和我說話的？\n你沒有權利打擾我和哥哥」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_10.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你和哥哥，根本不用考慮要和誰說話。\n所以，你趕緊想去哪就去哪吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……而且，反正你也總覺得哥哥……和我，\n都很奇怪對吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一直以來都是這樣……沒有人相信我的話。\n哥哥就在這裏，一直在我身邊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你也……那麼覺得吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:surprise,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？　你說相信……你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:anger,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果是同情的話，我拒絕。反正也只是嘴上那麼說，\n明明你也是不相信的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好了!我不想再聽你說話了!\n我要走了……――不要跟著我！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_17.mp3
+clickwait,,,,,,,,,,,　
+spriteoff,tabasa,0.5
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,tabasa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:sad,tabasa,0,0,0,0,,,,
+imgconf,tabasa,tabasa1,0,-200,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼回事啊……怎麼回事啊，那雙眼睛。迄今為止\n還沒有過任何一個人用那樣執著的眼神說過相信我……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哥哥……那個男人到底是怎麼回事……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102002/adv/sound/fav102002_05_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

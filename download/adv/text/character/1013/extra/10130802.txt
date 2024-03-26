@@ -1,0 +1,150 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「雨停了，天氣變得非常晴朗呢……啊，你看。\n看那邊……那裡掛著一道彩虹。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,2,10,10
+playse,/download/sound/se/se_070
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:surprise,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_02.mp3
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_03.mp3
+msg,1,<outline width=2 color=black>「呵、呵呵！呵呵呵……！因為抬頭看彩虹踩到水灘……\n真的好呆呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_04.mp3
+msg,1,<outline width=2 color=black>「啊～～……被雨淋濕的衣服好不容易要乾的說，\n現在連褲管都濕透了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_05.mp3
+msg,1,<outline width=2 color=black>「呵呵……鞋子裡面感覺好不舒服喔。每走一步，\n都會感覺到從你那裡傳來的甜蜜氣息。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_06.mp3
+msg,1,<outline width=2 color=black>「那麼……剛好有個可以坐下休息的陽台，我們稍微休息一下吧。\n脫掉鞋子……還有襪子……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_07.mp3
+msg,1,<outline width=2 color=black>「我用魔法幫你烘乾吧。我不太習慣用魔法做細微的操作，\n所以可能會花點時間就是了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_08.mp3
+msg,1,<outline width=2 color=black>「就只是坐在這裡也有點無聊，我們來聊些什麼吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選項1　「聊聊米露瓦的衣服。」,選項2　「莉迪亞喜歡下雨嗎？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_09.mp3
+msg,1,<outline width=2 color=black>「你說這件衣服嗎……？很可愛吧。給人一種普通女孩子的\n感覺。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_10.mp3
+msg,1,<outline width=2 color=black>「穿上這種可愛又時尚的衣服，享受外出的樂趣……\n雖然是幻夢境裡面，不過……這該不會就是約會吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_11.mp3
+msg,1,<outline width=2 color=black>「如果是的話，那就有點可惜了……畢竟衣服濕了，還踩到水灘。\n如果這是約會，那還真是悽慘呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_12.mp3
+msg,1,<outline width=2 color=black>「嗯──不知道耶……我沒有跟她聊過這個……啊，不過之前\n槍被雨淋濕的時候，她抱怨說這樣保養要花更多時間呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_13.mp3
+msg,1,<outline width=2 color=black>「看來姊姊也沒有那麼喜歡下雨吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_14.mp3
+msg,1,<outline width=2 color=black>「話說回來，我們喜歡的東西跟討厭的東西幾乎一樣。\n所以我覺得討厭的東西，姊姊大概也討厭吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_15.mp3
+msg,1,<outline width=2 color=black>「──嗯，我們感情很要好喔。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_16.mp3
+msg,1,<outline width=2 color=black>「啊……不過，我不討厭這種雨過天晴的感覺，\n如果算上這點，可能也沒那麼討厭下雨吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_17.mp3
+msg,1,<outline width=2 color=black>「彩虹很美，還有……該怎麼形容比較好呢？該說是雨將空氣洗過嗎……？\n你不覺得空氣變清淨了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_18.mp3
+msg,1,<outline width=2 color=black>「而且最重要的是，還能看見你犯傻的樣子。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_19.mp3
+msg,1,<outline width=2 color=black>「沒有啦，開玩笑的……其實呢，因為下雨，我們才能像現在這樣\n小歇一會，還有時間聊天……距離也靠得很近……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101308/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101308/adv/sound/fav101308_02_20.mp3
+msg,1,<outline width=2 color=black>「所以……我今天稍微有點喜歡上下雨囉。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,102 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，關於下次的想索，確認一下事前的預定吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我今天不准備要進行那麼長時間的想索哦。\n我想暫時先觀望一下」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:surprise,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「關於遭遇敵人時的處理――嗯？\n怎麼了，一臉不可思議的表情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……難道說，我總是不經過思考就突入到戰鬥中？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，那種誤會我倒是也習慣了。\n但我也不總是，只屈從於好奇心而行動啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，確實這種情況會比其他人多，\n但那也要看時間和場合嘛」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為了接近納克特原書的真相，你是不可或缺的。\n所以，不能失手，不然就會失去你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，只要做好預測與準備，\n就能大幅減少失敗的風險哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，這事前準備，也是理所應當的。\n你也不能魯莽哦。明白？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「瞭解」,選項2　「如果希爾薇不會遇險的話」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯嗯，我喜歡坦率的人哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然好奇心也很重要，但如今，你的安全才是重中之重」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，不過對於我的實驗，你可以出更多的力哦？\n如果能充分瞭解你，就一定能接近納克特原書的真相」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:unique,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，你不想把自己託付給我一次嗎？\n噗呼、噗呼呼呼呼……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_13.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然你那麼說我很開心，但放心。\n我不會輕易的被幹掉的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「因為我也周遊世界，遭遇到過很多危險呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對了，我潛入到過中東的，\n用活祭品研究詛咒的魔術組織那次，還真是……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:unique,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「――誒、現在沒必要說那個話題……噗呼呼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_17.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「總之。這次的想索主題是對地理的把握，\n要事先準備才好過險橋」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「遭遇到難纏的敵人，最壞的情況就是逃跑。\n在目前這個階段死掉的話，也太蠢了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「作為研究員，有時也要根據合理的判斷，\n來行動哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，繼續確認行動的預定吧。行嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101901/adv/sound/fav101901_04_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

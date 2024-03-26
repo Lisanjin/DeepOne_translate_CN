@@ -1,0 +1,113 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+roombg,1020,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你啊，真是個老好人啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哪里好，麼……這種事情，我不說你自己心裏應該也清楚，\n難道說你心裏一點數都沒有？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這樣的話，你可是病的不清啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你又想讓我和其他人處好關係，\n一有時間還會來找我聊天……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果這都不能被稱為老好人的話，\n究竟該怎麼形容你呢，我反正是找不到詞了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「朋友」,選項2　「夥伴」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯嗯，是啊。你是，我的朋友……也是古裏斯的朋友，\n還是，哥哥的朋友」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那麼，跟朋友商量一些事情，也是可以的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_07.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「夥伴，麼。嘻嘻……沒想到會有人這麼稱呼我，\n在此之前我是連想都不敢想的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為對於我來說，和別人接觸，是件很痛苦的事……所以，\n我一直在不停的拒絕……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，對於我來說，只有哥哥是最重要的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，現在……稍微有一點……不一樣了啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_11.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+sttopbgm,0.5
+endwait
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,-10,-100,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……最近我感覺哥哥的聲音，離我，越來越遠了。\n以前，總是……能感覺到，哥哥就在身邊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在感覺一晃神……哥哥的存在，就變遠了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「究竟是怎麼一回事啊……現在也是，像現在這樣和你聊天的話，\n就聽不到哥哥的聲音了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不只是你。之前，和其他人說話的時候，\n哥哥的聲音也一定會消失……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我很害怕……這樣下去，哥哥會不會離開我，去別的地方」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，真正可怕的是……每到這種時候，我只要想到，\n無論是你或者是大家都會鼓勵我，支撐我……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——這樣一來，我說不定就能忍受住哥哥離我遠去的事實。\n我自己會這樣想，才是最可怕的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哥哥對於我來說很重要，是不可替代的……哥哥明明一直在\n我身邊守護著我……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那，你知道，為什麼會這樣嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你知道為什麼哥哥的聲音會離我遠去……為什麼在我心中，哥哥的存在\n會逐漸的……變得透明？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——不要！ 你還是，不要說了……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「求求你，不要說出來……我有一種感覺，感覺我如果聽了\n你想說的話，就會發生，一些不可挽回的事情……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好可怕……所以，什麼都不要說……把剛才的話，忘了吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_24.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……求求你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102004/adv/sound/fav102004_13_25.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,147 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-150,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「————————！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:unique,silvy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_01.mp3
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「呵呵……出現了哦，新武器的試驗品」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:anger,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_02.mp3
+msg,1,<size=30><outline width=2 color=black>「快，讓我試一試研究成果吧——來了!」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-150,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Water,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait,,,,,,,,,,,
+wait,2.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——————……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:sad,silvy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_03.mp3
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,1,<size=30><outline width=2 color=black>「喔……融化的速度比想像的要快啊？\n我本想讓效果體現得稍微慢一點呢……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_04.mp3
+msg,1,<size=30><outline width=2 color=black>「毒藥飛濺的範圍也太大了。一起戰鬥的夥伴\n也有可能被毒藥擊中，效果範圍再縮小一點比較好」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:smile,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_05.mp3
+msg,1,<size=30><outline width=2 color=black>「其他地方也還有很多改進的餘地。回到拉萊耶後\n必須馬上開始研究……呵呵呵……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「你看起來很開心」,選項2　「我認為是十分強大的武器」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_06.mp3
+msg,1,<size=30><outline width=2 color=black>「呵呵呵……那倒是」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_07.mp3
+msg,1,<size=30><outline width=2 color=black>「通過反復實驗，不斷改良，使其更強大，更高效。\n這就是研究的樂趣哦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_08.mp3
+msg,1,<size=30><outline width=2 color=black>「最重要的是，在親身感受科學和技術進步的這一瞬間，\n我內心的求知欲和好奇心得到了滿足」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_09.mp3
+msg,1,<size=30><outline width=2 color=black>「能得到這樣的表揚我很高興，\n但如果只滿足於這種程度，作為研究人員就太不稱職了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_10.mp3
+msg,1,<size=30><outline width=2 color=black>「我覺得研究人員最大的敵人便是“自我滿足”。\n失去上進心，就意味著進步的停滯……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_11.mp3
+msg,1,<size=30><outline width=2 color=black>「要去追求和創造更高的性能和成果。\n正是人類的這種想法，推動了文明的發展」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_12.mp3
+msg,1,<size=30><outline width=2 color=black>「而且，如果推進了武器的研究，保護你的方法也會變多……\n那不是很值得高興的事嗎」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_13.mp3
+msg,1,<size=30><outline width=2 color=black>「對我來說，你可是絕對不能失去的人啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_14.mp3
+msg,1,<size=30><outline width=2 color=black>「拯救被納克特原書所吞噬的家人——那就是我的\n最終目標」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_15.mp3
+msg,1,<size=30><outline width=2 color=black>「只要到達幻夢境的深處，或許就能找到那個手段。\n至少，那要比單純祈禱的概率高得多吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_16.mp3
+msg,1,<size=30><outline width=2 color=black>「而且，為了到達那裏，你的能力是必不可少的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:sad,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_17.mp3
+msg,1,<size=30><outline width=2 color=black>「而且……對我來說你的價值還不僅僅如此……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_18.mp3
+msg,1,<size=30><outline width=2 color=black>「你的陪伴是無人可以取代的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:sad,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_19.mp3
+msg,1,<size=30><outline width=2 color=black>「讓我有這種想法，你是第一個。\n我絕對不想失去，也不想離開……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_b,body:sad,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101905/adv/sound/fav101905_03_20.mp3
+msg,1,<size=30><outline width=2 color=black>「是的，我的想法很堅定」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

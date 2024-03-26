@@ -1,0 +1,101 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――嗯，今天還算可以，不要太得意哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，什麼呀，一直看我。真沒有禮貌啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這個？　這個叫“投扇興”……就是在那邊的桐木箱上方\n放上叫做“蝶”的標的，然後朝那邊投扇子的遊戲喲」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「命中了也不是就結束了，枕，也就是桐箱啦。\n還要比一比那個和扇、蝶構成的形狀哦」</outline></size>,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，果然還是不熟悉嗎。畢竟是古代的遊戲。\n沒辦法啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「其他的……？　對妾身知道的遊戲感興趣嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不知道和這個時代的人的興趣合不合得來呢……這樣啊。\n比如說詠歌，蹴鞠之類的我覺得就很好……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「對蹴鞠感興趣」,選項2　「對俳句感興趣」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哦？　這麼說來，也很久沒有玩蹴鞠了呢――」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+spine,download/adv/spine/Mark10,em1,default,animation,0,150,200,0.6,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊。很久沒有玩過了，嗎。我呀，在說什麼呢。\n仔細想想，在幻夢境中並沒有玩過蹴鞠什麼的啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_09.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,,,
+endwait
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哦，這樣的話，妾身可以破例和你一起詠歌哦。\n在幻夢境中，得空了我就會經常詠歌」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「詠歌的時候啊，心會不可思議地變得平靜……想想，\n可能因為這對妾身來說是熟悉的行為吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_11.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身應該是，以前被幻夢境吞噬的誰的化身吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「幻夢境中充滿了納克特原書的力量，這份負荷很容易就能夠把人的身心\n碾碎、抹去」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，有時那個殘骸會以適應幻夢境的人格\n誕生於此」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「想索者們，把我們叫做“失想者”之類的呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因而，妾身並沒有在幻夢境覺醒之前的記憶」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但就算那樣，前世的興趣愛好，或者是記憶的片段\n也會繼承下來，沒什麼不可思議的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身的說話方式，和服穿著，恐怕也都是這樣來的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「咯咯……雖然對自己來歷的前世多少有點興趣，\n但總是去想已經消亡的人也是太荒唐了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就算不知道以前的自己，妾身也還是妾身，這一點不會改變。\n現在，存在於這裏……明白這一點就足夠了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_05_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

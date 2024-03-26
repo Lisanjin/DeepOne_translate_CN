@@ -1,0 +1,108 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10030200.jpg,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在這樣的教堂裏，就不要想以前了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「曾是戰爭遺孤的我，被雇傭兵團撿到了。\n然後，被塞進了那個團直接經營的孤兒院」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這是一個重新再利用舊教會的設施……雖然氛圍完全不同，\n但是讓人有種懷念的感覺」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個時候還是，各個方面很單純呢。\n悲傷的，生氣的，想要變強……只是這樣而已」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_04.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在怎麼說呢，不管什麼都太複雜了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_05.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然不至於說想回到那個時候……怎麼回事啊，這份心情。\n……哈哈，這份心情果然也是“複雜”吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_06.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……怎麼了嘛，我說這種話很奇怪嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_07.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「沒有」,選項2　「有點意外」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈，你要是撒謊就撒的好一點。\n明明露出那麼意外的表情」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_08.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，變得傷感什麼的……也不像我呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_09.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂喂，你就這麼直接說嗎，平時」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_10.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:smile,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，我並不討厭那樣的話。\n比起用奇怪的話來修飾的傢伙好得多」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_11.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然這麼說，但也不是不生氣哦？\n我也是人，至少有點感傷情緒也可以的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_12.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我，並不是被強制成為士兵的。在孤兒院長大的\n孩子中，也有被普通安全國家的養父母收養的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我當然也有那樣的選擇……但是，果然啊，\n生著氣，沒辦法呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「誰的紛爭，把我重要的東西全部拿走。\n、被不講理奪走」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個啊……讓我很火大呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「軟弱的話，又會被奪走。不公的被踐踏。\n因為那樣想，我決定了要當一名雇傭兵」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然對方是看不見的東西，\n但是現在想起來，真的是很天真的話」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為不喜歡，所以想為了把他踢飛而變強。僅此而已」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那至今也沒有……改變嗎」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_20.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看到某個好人，總想幫幫他。\n現在，那種心情也不是零了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:smile,edelgard,0,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,100,160,0.7,0.4,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「這個艾蒂爾加爾德會幫助你的。靠得住吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_10_22.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

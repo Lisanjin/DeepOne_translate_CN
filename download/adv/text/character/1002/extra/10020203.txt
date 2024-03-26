@@ -1,0 +1,119 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我說，你剛剛是不是在這裏和我擦肩而過？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……就算猜到你想做什麼，對我來說也沒什麼好處。\n那我為何要白費力氣呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我看你是閑得發慌吧？\n還是說其實是欲求過剩？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:shy,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……忘了吧。我怎麼也開起這種無聊的玩笑了。\n看來是被你給帶歪了吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_04.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以？你想做什麼？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_05.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「散步」,選項2　「學習」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:unique,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你打發時間的方式還真是無聊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話說，拉萊耶裏的風景一成不變吧。\n有什麼可散步的？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_07.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你說，能和我說話，就算成功？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_08.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「是這個理嗎？　而且這也不涉及到成功還是失敗，\n……真搞不明白你腦回路是什麼構造」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_09.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只是在走廊晃悠，哪里算是學習了。\n怎麼看你都很閑啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你撒這種很快就會被拆穿的慌是為什麼。\n只是為了虛榮？　還是說你就是個笨蛋呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_11.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……為什麼你被笑笨蛋後還會笑出來啊。\n真是搞不懂你……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_12.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「難道你是想戲弄我嗎……還是說，\n是把我當成打發時間的玩具了？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_13.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果是這樣的話……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「――哼。算了，這次就饒了你」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……什麼意思，怎麼擺出那麼驚訝的表情。\n這只是，之前我欠你的，這樣一來就互不相欠了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一直欠你的我也過意不去……而且，\n我也不知道你會怎麼讓我還你人情」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「能這麼還清的話，我覺得這就很便宜我了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不可以，我才不讓你取消掉。這樣一來我們就兩清了。\n你說什麼我都不會聽了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:smile,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……呵呵，傻子」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……？　啊……我、我沒在笑。你看錯了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我沒笑」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_22.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,brizit,50,-190,0.5,0,,,,,
+spine,download/adv/spine/Mark6,em1,default,animation,0,150,180,0.65,0.3,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「都說我沒在笑了，你好煩！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_23.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「算了，我走啦！　等會，你可別跟著我！\n你說再來一次是什麼意思！？別說再來一次，我本來就不會笑啦！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_24.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊啊，真是，你還真蹬鼻子上眼了……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100202/adv/sound/fav100202_07_25.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

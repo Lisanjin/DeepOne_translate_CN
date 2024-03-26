@@ -1,0 +1,105 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+roombg,1013,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Mark5,em1,default,animation,0,100,200,0.65,0.8,0.2
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯、這裏有點難讀呢。\n應該按什麼順序讀呢……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_01.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……咦？　你在嗎？\n說起來、房間的門好像沒有鎖上……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼哼、不小心、你是在擔心嗎？\n即使這樣、我已經很厲害了呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛、不過對於讓你擔心這件事、還是說聲謝謝比較好吧\n對了……有什麼事嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、差不多到吃晚飯的時間啦？　你還特意來叫我、\n謝謝你。稍等一下、我把這個稍微讀順了就走」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這個？　誒、是漫畫書哦。在娛樂室找到的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為亞紗花說她以前讀過、所以我很感興趣呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「內容挺有意思的……這個、是說版面分割嗎？\n閱讀順序太難了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_08.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「什麼內容？」,選項2　「我能看一下嗎？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是男生和女生之間的戀愛故事。\n舞臺是寫著日本的學校的地方、這是教育機關吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我也有許多不明白的地方、那所學校？　在回去的路上、\n會順便去很多地方」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「描繪的街道風景，也和我知道的完全不同。\n怎麼說呢……日本真是寧靜祥和呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「一開始是為了打發時間才看的、沒想到意外的有趣……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你也有興趣嗎？\n那麼、來、坐我旁邊。一起看吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「好、那麼你拿著書吧。我在旁邊看」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、不過不要翻得太快啊。\n我只能慢慢地看……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「內容也是關於戀愛的，所以也不是很明白……但是、即使這樣也很有趣\n你不覺得很厲害嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_16.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你看、就是剛才出現的這個男孩子。要是能和他有什麼故事的話，我會很開心的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一邊暗中看著這對戀人、一邊又羡慕又嫉妒……、\n呃……難道說這是三角關係嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「變成這樣的氣氛的話、總覺得有種曖昧不明的感覺……、\n只要讀到登場人物的心情，嘴裏就會變甜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼呼、又變成甜蜜的場景了……令人心醉的味道……\n不只是漫畫、這個味道也能和你共用就好了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說真的、不能把這個故事的美味傳達出去讓人很著急。\n雖然是甜到晚飯前就能吃飽的程度……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_05_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

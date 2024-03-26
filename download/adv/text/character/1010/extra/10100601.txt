@@ -1,0 +1,141 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10030400.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101006/adv/sound/fav101006_01_01.mp3
+name,<outline width=2 color=black>潔美拉・吉普莉爾</outline>,
+msg,1,<outline width=2 color=black>「這附近的想索也告一段落了，\n差不多該回拉萊耶了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:surprise,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_02.mp3
+msg,1,<outline width=2 color=black>「哎呀……這個地圖怎麼了？\n看起來很舊了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_03.mp3
+msg,1,<outline width=2 color=black>「而且還有好像別有深意的記號呢。\n是不是指示著某個領域呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_04.mp3
+msg,1,<outline width=2 color=black>「……如果這是在故事裡的話，\n這張神秘的古老地圖指示的肯定是隱藏著重要的東西的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_05.mp3
+msg,1,<outline width=2 color=black>「說白一點的話就是藏寶圖了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_06.mp3
+msg,1,<outline width=2 color=black>「可是，存在於幻夢境中的寶物究竟是什麼……\n該不會是和納克特原書有關的東西？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「可能是吧」,選項2　「可能是黃金或是寶石」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_07.mp3
+msg,1,<outline width=2 color=black>「可是，幻夢境裡的一切都是由納克特原書創造出來的東西，\n這張地圖當然也一樣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_08.mp3
+msg,1,<outline width=2 color=black>「就像是希望我們去探尋一般創造這張地圖留在這裡……\n這到底是怎麼回事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_09.mp3
+msg,1,<outline width=2 color=black>「……雖然有些可疑，\n但放到現在無疑是貴重的線索」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_10.mp3
+msg,1,<outline width=2 color=black>「也有可能是陷阱，\n不過去地圖上指示的地方找找，或許會有什麼進展吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_11.mp3
+msg,1,<outline width=2 color=black>「這真是……確實如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_12.mp3
+msg,1,<outline width=2 color=black>「如果在地圖上指示的地方真的有這樣的東西，\n我們現在也並不需要……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_13.mp3
+msg,1,<outline width=2 color=black>「……不，考慮到我們要回到外面的世界，也不能這麼說。\n無依無靠的你肯定是需要錢的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_14.mp3
+msg,1,<outline width=2 color=black>「我將來準備建立卡蒂婭大人的銅像，\n如果有寶藏的話就能不使用銅，而是用配得上卡蒂婭大人的地位的金子來打造雕像了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_15.mp3
+msg,1,<outline width=2 color=black>「幸運的是地圖上的座標離這裡很近，\n去看看怎麼樣？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_16.mp3
+msg,1,<outline width=2 color=black>「別擔心。若是遇到什麼事，我會保護你的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_11160300.jpg,1,255
+endwait
+spriteatlas,download/character/101006/adv/atlas/stand_a,body:surprise,jamila,0,-180,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101006/adv/sound/fav101006_01_17.mp3
+name,<outline width=2 color=black>潔美拉・吉普莉爾</outline>,
+msg,1,<outline width=2 color=black>「這裡的氣氛……相當離奇啊。\n而且，這種打扮是怎麼回事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101006/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_18.mp3
+msg,1,<outline width=2 color=black>「就像是以前在電影裡看過的寶藏獵人一樣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101006/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_19.mp3
+msg,1,<outline width=2 color=black>「這身打扮確實適合去尋寶……\n不過有點奇怪的是怎麼這麼暴露？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101006/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_20.mp3
+msg,1,<outline width=2 color=black>「要在危險的地方探索，\n這麼暴露的話會很容易受傷的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101006/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_21.mp3
+msg,1,<outline width=2 color=black>「這件衣服也應該和平常一樣，是用你的能力來創造的吧。\n那麼……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101006/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_22.mp3
+msg,1,<outline width=2 color=black>「啊，沒什麼。我並沒有好奇……你平常都在想象些什麼之類的。\n我並沒有……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101006/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_23.mp3
+msg,1,<outline width=2 color=black>「反正不管是什麼衣服都沒什麼問題。\n若是有敵人出現，不受到攻擊就行了，有陷阱的話躲開就行了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101006/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101006/adv/sound/fav101006_01_24.mp3
+msg,1,<outline width=2 color=black>「好了，我們趕緊去確認裡面有什麼吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

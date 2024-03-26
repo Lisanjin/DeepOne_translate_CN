@@ -1,0 +1,302 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020100.jpg,0,,,,,,,,
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,-370,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,270,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,0,-120,0.5,0.5,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯……數量挺多啊。但這樣也能得到更多有關新藥的數據，\n倒是挺令人高興的——嘿！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,-370,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,270,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_042.mp3
+spine,download/adv/spine/Water,em1,default,animation,0,0,0,1,1.0,0
+flash,255,255,255,4,0.3,1.0
+wait,1.0
+endwait,,,,,,,,,,,
+spriteoff,all,1.4
+wait,0.3
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_025.mp3
+wait,1.1
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:smile,silvy,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「融化了融化了……哼哼，哼哼哼……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:unique,gizel,300,-120,0.5,0.5,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「今、今晚要做噩夢了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯？怎麼了，吉澤爾。幹嘛皺著臉？\n像是看到了什麼髒東西一樣」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,bligit,300,-120,0.5,0.5,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……看了這些，她當然會那樣了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「為什麼要特意用慢慢融化的藥品攻擊？\n要殺就痛快些嘛」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「有什麼不好的，敵人都已經倒下了不是。\n喂，你說是不是？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「……你對研究的熱情真是令人佩服」,選項2　「這怎麼說呢……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:smile,silvy,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「是吧是吧。哼哼，\n我就知道你會理解我」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「要是你能把身體也給我研究一下，\n我就更開心啦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,bligit,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:shy,gizel,300,-120,0.5,0.5,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「研、研究身體……！\n希希希爾薇，你在說什麼呢？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:smile,silvy,-300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你在意的居然是這個，吉澤爾還真不令我失望啊。\n悶騷人設真是一點不假」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,silvy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:unique,bligit,-300,-120,0.5,0.5,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「吉澤爾……你……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:sad,silvy,-300,-120,0.5,0,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「唔，是麼……過於偉大的研究，\n確實很難令人理解啊，你說對吧？布麗吉特」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,bligit,300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「開發這種奇怪的藥，怎麼可能算得上是偉大的研究。\n你真是，無可救藥了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:smile,silvy,-300,-120,0.5,0,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「噢噢，言語刺激嗎？感覺也不錯啊……哼哼哼！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,bligit,0
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:sad,gizel,300,-120,0.5,0.5,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……希爾薇真是百折不撓呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bligit,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,-300,-120,0.5,0.5,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「話說……布麗吉特，被這麼多敵人包圍，\n你會不會回想起我們第一次見面時的場景？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「只不過那時我們面對的，不是這種像幽靈一樣的敵人，\n而是真正的人類就是了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「那焦躁和絕望……現在回想起來身體都會顫抖。\n哎呀呀，真是美妙無比的記憶」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,bligit,300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你是白癡嗎，那麼糟糕的記憶，我想都不願想」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:sad,gizel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——！危險，敵人要……布麗吉特姐姐，快躲開！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:surprise,bligit,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:surprise,bligit,0,-120,0.5,0.5,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「呃……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,bligit,-300_-120,0.5,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:sad,gizel,300,-120,0.5,0.5,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「布麗吉特姐姐，你沒事吧？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:sad,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……沒事，只是有點擦傷而已」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:sad,gizel,300,-120,0.5,0,,,,
+anm,tint,gizel,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這、這樣，太好了……咦？\n布麗吉特姐姐……你的魔道書呢？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,300,-120,0.5,0.5,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是說克勞索拉斯・仿製件？\n那好像是在剛才受到攻擊的時候被彈飛了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:surprise,bligit,-300,-120,0.5,0,,,,
+anm,tint,bligit,255_255_255,0.0001,0
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——啊？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+anm,scale,enemy1,0.2_0.2,1.5,0
+anm,fade,enemy1,0,1,0
+anm,move,enemy1,0_0,1,0
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,-300,-120,0.5,0.5,,,,
+msg,0,<size=30><outline width=2 color=black>「我的劍……喂，別隨便拿走我的劍啊！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,300,-120,0.5,0.5,,,,
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哎呀呀……這可真是令人意想不到」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「我還以為這裏出現的虛像，和沒有感情的人偶一樣……\n原來還會對仿造魔導書的魔道書有反應嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「正因為納克特原書是被七大原書創造出來的，\n所以才這麼吸引人麼……真是太令我好奇啦，嗯嗯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,bligit,0
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:sad,gizel,-300,-120,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「現在哪是悠閒地分析的時候！得快點追上它！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「說的也是，如果手上沒有克勞索拉斯・仿製件，\n布麗吉特心裏應該也會有些沒底吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,bligit,-300,-120,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……我心裏怎麼想的用你管啊？真讓人不爽」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,silvy,300,-120,0.5,0,,,,
+anm,tint,silvy,255_255_255,0.0001,0
+anm,tint,bligit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「好了好了，別那麼生氣。對你來說，那的確是很重要的東西吧？\n而且——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,silvy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:smile,silvy2,0,0,0,0,,,,
+imgconf,silvy2,silvy1,0,-308,,,0,1.5,1.5,0.5
+wait,0.1
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「——如果就這麼把它弄丟了，\n我也覺得有點……哼哼」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

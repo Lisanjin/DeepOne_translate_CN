@@ -1,0 +1,550 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>那個人的身影在黑影中逐漸浮現出來。\n對方嘴角露出的，是柔和的笑容。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>那樣子跟我最後一次看到的樣子一模一樣……\n明確地表示出那道身影並不是現實。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>雖然覺得這是當然的……但是同時湧上的懷念感，也令人不禁熱淚盈眶。\n但是為了不讓感情潰堤，我拚命忍住了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>就算對方只存在於記憶中……也不想對方看到自己丟臉的模樣。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>那個人教了我很多重要的事情。所以我才想自豪地說，\n自己已經因此變強了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>──為什麼要挺身守護一個喪失記憶、礙手礙腳的人呢？\n為什麼不拋下我呢？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>那些之前感到的疑問，心中早已有了答案。我怎麼可能會不知道。\n那是理所當然的。如果立場相反，我也會做同樣的事。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>因為……為了好友，還有夥伴做什麼事情，\n根本不需要理由。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>那就是那個人教給我的最重要的一件事。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>我──那個我為了活得像自己，而不能違背的事情之一。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>我對那個人露出笑容，轉頭邁步出去。\n目的地不是記憶之中，也不是過去。而是相反方向。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>我得回到夥伴的身邊。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「早安……妳已經沒事了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「──……嗯……太好了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10040200.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,-350,-200,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy2,350,-200,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy3,0,-200,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「————————————！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,300,-120,0.5,0.5,,,,
+anm,tint,rin,150_150_150,0.0001,0
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「嘖……真事沒完沒了啊……到底要什麼時候才會結束啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「布麗吉特，我還是也──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「夠了啦，妳就在後面保護安娜他們吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「可是……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,anna1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:smile,anna2,0,0,0,0,,,,
+imgconf,anna2,anna1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「光是被人保護，一點都不搖滾啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:surprise,rin,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「——誒？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm039.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:anger,anna,300,-100,0.5,0.5,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「看我把你們揍飛，喝啊──────！！！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-200,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.3,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「————————……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:smile,anna,300,-100,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:surprise,rin,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「安娜……！妳恢復意識了嗎！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:smile,anna,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「嘿嘿，讓你們久等了。那個啦，該怎麼說……\n英雄是會在最後才登場的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rin,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「真是的，什麼英雄啊……\n妳知道自己給人添了多少麻煩嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:normal,anna,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「抱歉抱歉，別在意啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:unique,blizit,-300,-190,0.5,0,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「那句話不是給人添麻煩的人說的……\n真是的，妳是不是真的喪失記憶比較好啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:sad,anna,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「哇！講話好過分……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:sad,anna,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真是的，布麗吉特還是老樣子，很那個……呃──妖嬌？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「呃……妳想說的該不會是傲嬌吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:sad,anna,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「就是那個！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rin,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「什麼就是那個啊，妳們兩個不要再講蠢話了啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:smile,anna,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「哈哈，搞什麼啊，真不配合耶。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:normal,anna,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……該怎麼說呢，謝謝你們喔。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:surprise,rin,-300,-120,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「咦？謝什麼？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rin,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,blizit,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「太突然了，根本不知道你在說什麼。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:normal,anna,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「你們不是為了喪失記憶的我四處奔走嗎？\n我是在謝這個啦。真的給你們添了麻煩──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「妳在說什麼啊？我們不是夥伴嘛？\n不但要保護妳，而且有麻煩的時候要幫妳，也是理所當然的啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:smile,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以妳不用謝我們，我們也沒有嫌妳麻煩。\n安娜恢復原狀了。光是這樣我就心滿意足了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:surprise,anna,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「凜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rin,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「總之，雖然妳是愛吵鬧、煩人、少根筋的傢伙，\n但即使如此，我還是承認妳的實力啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……而且我也要為妳喪失記憶負起一部分責任啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:anger,anna,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「不是吧！妳說什麼一部分啊，別開玩笑了。不要以為\n氣氛佳就能蒙混過去了。什麼一部分，不都是妳做的三明治闖的禍嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「什麼？……那、那的確是我做的，但還不是因為妳一開始──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「請、請妳們兩個不要吵架了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:normal,anna,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「什麼？我們又沒有吵架。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rin,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「就是說啊，我們只是藉此確認一下彼此已經扯平了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:surprise,rin,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「是、是麼……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,-350,-200,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy2,350,-200,1.35,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy3,0,-200,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「————————！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:normal,anna,300,-100,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+spriteatlas,download/character/101802/adv/atlas/stand_a,body:anger,rin,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凜・洛溫</outline>,
+msg,0,<outline width=2 color=black>「呃、還有這麼多虛像……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:normal,anna,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「哼，正好當起床運動呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rin,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,0,<outline width=2 color=black>「既然如此，我也累了，就去休息吧。\n……可以交給妳吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:smile,anna,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「那當然！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:anger,anna,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>安娜・露絲卡莉達</outline>,
+msg,0,<outline width=2 color=black>「那就來大幹一場吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

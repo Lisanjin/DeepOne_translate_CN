@@ -1,0 +1,101 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,,
+endwait
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……我到底怎麼了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,100,200,0.65,0.8,0.2
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……太好了、好像在這裏等著是正確的。\n我好想你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_02.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:shy,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我啊、有無論如何都想讓你聽到的話……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_03.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「發生什麼事了？」,選項2　「重要的話？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個、我也不知道發生了什麼……、\n最近、我有點奇怪」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「到現在為止、從沒發生過這樣的事……第一次、\n讓我不知所措……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_05.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊、對我來說是非常重大的事情……\n那個……現在、我不想吃太甜的點心……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:surprise,mil,-10,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark3,em2,default,animation,0,100,200,0.65,0.8,0
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「別、別露出那種表情……！　我不想吃點心、\n可是很不容易的！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_07.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不如說……那個……說不想吃、也有點不對吧。\n吃點心的時候、感覺它的甜味很可怕……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_08.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「最近啊……感覺至今為止的甜味一點點變淡了\n無論怎麼品嘗、品嘗多少、都覺得不夠、無法滿足……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、說到甜味、也不是點心之類的甜味、\n而是人的生命所體味的感情的甜味……絕望的、融化的甜味……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣的事、至今為止一次都沒有過。\n無論何時、無論何地……我都強烈地感受到了這種甜蜜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在這世界上、我無論在哪、都沒有如此強烈地感受到過\n這種甜蜜……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在……胸口刺痛的感覺更強烈。\n比起甜、更能感受到疼痛和痛苦……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、我怎麼了？\n是不是太習慣甜了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「感受不到別人絕望的滋味、這樣的情況……簡直就像、\n我不再是我一樣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「光是想到這一點……舌頭上就有一股淡淡的甜味擴散開來……、\n但是、胸口更加刺痛了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只有現在才這樣對吧……一定、是出了什麼差錯……一定會馬上恢復原狀的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_10_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

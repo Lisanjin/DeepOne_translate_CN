@@ -1,0 +1,111 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唉……我連那樣的事都不會……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,140,140,0.5,0.8,0.5
+endwait,
+msg,1,<size=30><outline width=2 color=black>「啊……你好」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_02.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……總覺得被人聽到了很難為情的自言自語呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也沒有發生什麼問題啦……\n呃，那個……就是」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我本來想沏紅茶的，沒想到失敗了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也沒有想泡得特別好，\n只是想普通地泡一下來著……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……請不要問我是怎麼失敗的……嗚嗚」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為身邊一直有侍從在照顧著我……\n終於意識到自己做的有多不好……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「對於總是給我沏茶的潔美拉，我真的非常感謝她」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你怎麼樣？\n一直被關在拉萊耶，生活上有什麼不方便的地方嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_10.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「沒有」,選項2　「都差不多」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那可真厲害啊……是說適應力很高吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「或者說，只是我的獨立生活能力太差了嗎……\n越想越覺得是……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是、是這樣吧……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果可以的話我很想幫助你，但我連自力更生都做不到，\n只會給你添麻煩吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……這麼說來\n我好像聽說過亞紗花很擅長做家務」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我也必須要做到一定程度的自立。\n可能向亞紗花取經比較好……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，對了……\n如果你方便的話現在我們一起去亞紗花的房間怎麼樣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大家今後都是在幻夢境想索的夥伴\n順便可以促進交流，請務必」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「好了！　那麼，我們走吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_19.mp3
+clickwait,,,,,,,,,,,
+anm,move,catia,-300_-40,1,1
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,-300,-40,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？　啊，房間的方向在另一邊啊……原來如此」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,-300,-40,0.5,0,,,,
+spine,download/adv/spine/Mark13,em2,default,animation,0,-220,150,0.65,0.5,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我、我……一個人的話，果然還是不行……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_03_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spineoff,all,0
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

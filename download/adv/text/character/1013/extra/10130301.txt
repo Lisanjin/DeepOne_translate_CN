@@ -1,0 +1,89 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+roombg,1013,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣……從小鏡子的中心開始仔細擦拭。\n這樣一來……你看、變得有光澤了！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼哼、很厲害吧？　為了擦拭得乾乾淨淨不留痕跡、\n需要一點小竅門哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這個小鏡子一直都在使用……已經幾年了呢。\n每天這樣保養、像新的一樣閃閃發亮吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_03.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你好像很喜歡它呢」,選項2　「你很珍惜呢」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,100,200,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當然啦。這是我隨身攜帶的物品中最好的寶物！\n無論去哪里我都隨身帶著」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_04.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果不這樣保養的話，就會變得無法冷靜……、\n已經、感覺成為身體的一部分了……這樣的說法、確實有點言過其實了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_05.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯、是呢……比這更重要的東西、就是姐姐了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為很重要、所以也要帶去戰場。\n無論多麼激烈的戰鬥都不會碎裂、用布包了好幾層……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不能讓它有一絲傷痕。\n就因為這樣、我也曾因為守護這面鏡子而受傷過」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_08.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這面鏡子、是很久以前……小時候過生日的時候、\n姐姐送我的寶物」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我們是雙胞胎、生日當然在一起。不過、\n以前的我、從來都沒想過要給姐姐送禮物……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「突然、姐姐給了我這面鏡子、我嚇了一跳。\n就在那時、我覺得姐姐果然還是姐姐啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「無論何時都在關心著我、強烈地思念著我……\n給我這面鏡子時說的話、這輩子我都一定不會忘記」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「『米露瓦的笑顏很可愛、所以無論何時都要保持美麗』\n――。明明雙胞胎都長著一模一樣的容顏」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark9,em2,default,animation,0,100,200,0.65,0.8,0.2
+endwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……哼哼、確實是這樣啊。姐姐一直都很珍惜我\n所以……這句話是出於這種心情吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_14.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我今後也會好好珍惜這面鏡子的。\n為了讓姐姐開心、露出可愛的笑容」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101303/adv/sound/fav101303_08_15.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

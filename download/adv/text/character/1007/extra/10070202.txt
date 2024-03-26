@@ -1,0 +1,122 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizeru,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻，唔－，嘻嘻嘻－……啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:shy,zizeru,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark4,em1,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「晚，晚上好……沒，沒有，並不是因為心情好……\n啊啊……好害羞啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_02.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「誒？啊啊，這件行李是要洗的……\n因為積攢了很多，所以正打算去洗衣店」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……是啊。霍莉也經常這麼說。\n這種事是隨從者的工作，所以我沒必要做這種事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「確實，可能按霍莉所說的託付給他們就好。\n大概，從我的立場來看的話，這是很普通的事吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……像這樣被別人使喚，一直為別人服務的話，\n就算自己是優秀的人也會誤會的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，自己就能做的事情，儘量還是想自己做」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「打掃也是自己做？」,選項2　「料理也是自己做？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「自己的房間，是這樣的。我會儘量注意\n保持清潔的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，好像從霍莉的角度來看完全沒有做得很好……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「結果，霍莉重新做了一遍……\n果然，敵不過本職工作」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊。雖然不能像，一流餐廳那樣\n但簡單的東西還是可以做的哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是調味太辣了，總是被霍莉罵。\n雖然並不難吃，但能吃的人還是有限的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我的話，覺得越辣越好吃……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_13.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，雖然有時候做的不好，\n但是自己的事情自己做，……從某種意義上來講，是理所當然的事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我不想忘記這一點……因為我不想成為\n那種認為自己是被他人服務的，理所當然這麼想著的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizeru,0,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……抱歉。留了這麼長時間。也不能一直\n在這裏聊天，我差不多也該去了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不不，不跟來也沒關係哦。\n已經很晚了，請在房間好好休息吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且……被看到要洗的衣服，真的很害羞。\n那我就……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_18.mp3
+clickwait,,,,,,,,,,,
+shake,0.1,5,40,40
+playse,/download/sound/se/se_043.mp3
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizeru,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em2,default,animation,0,120,220,0.65,0.6,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「——空了！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_19.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,0,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「啊！？衣服撒了……等，等一下！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:shy,zizeru,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark4,em3,default,animation,0,110,210,0.65,0.6,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「啊，啊啊！那個不可以……因為是我，我的……內衣！\n聽我說……請不要看……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_21.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,0,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「為，為什麼在這裏絆倒了啊……啊，嗚嗚」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100702/adv/sound/fav100702_06_22.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,175 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11090300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20140201/adv/image/20140201.png,enemy1,0,-100,1,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:anger,weat,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_01.mp3
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,1,<outline width=2 color=black>「使魔們，將敵人撕碎——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,
+endwait,,,,,,,,,,,
+sprite,download/monster/20140201/adv/image/20140201.png,enemy1,0,-100,1,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Wind1,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_046.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.2,,,,,,,,,,
+endwait
+wait,0.2
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:normal,weat,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_02.mp3
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,1,<outline width=2 color=black>「……總算打贏了。虛像突然出現，\n我有點慌了，不過你平安無事就好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_03.mp3
+msg,1,<outline width=2 color=black>「那麼，我們繼續想索吧——咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_04.mp3
+msg,1,<outline width=2 color=black>「剛才樹叢那邊好像有響動……難道還藏著\n和之前不一樣的另一個虛像嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「去看看情況？」,選項2　「別管它了？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_05.mp3
+msg,1,<outline width=2 color=black>「還是這樣比較好……如果有虛像在那，\n就不能放任不管」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_06.mp3
+msg,1,<outline width=2 color=black>「如果我們放著不管，其他人因此而被虛像襲擊，\n就不妙了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_07.mp3
+msg,1,<outline width=2 color=black>「雖然我們應該儘量避免讓自己陷入不必要的危險之中，\n而且，要是可以回避戰鬥的話，我也挺樂意的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_08.mp3
+msg,1,<outline width=2 color=black>「但是話說回來，對方是虛像的話，放任不管以後難免也會造成威脅……\n以防萬一，我們還是去調查一下吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_09.mp3
+msg,1,<outline width=2 color=black>「因為比較危險，所以請儘量不要離開我的身邊……\n那麼，我們走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:surprise,weat,0,-240,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102306/adv/sound/fav102306_02_10.mp3
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,1,<outline width=2 color=black>「響動應該就是在這邊……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_11.mp3
+msg,1,<outline width=2 color=black>「你看呀，這是……誒，是怪物嗎……？\n滿身是傷呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_12.mp3
+msg,1,<outline width=2 color=black>「看來不是虛像呢……而且，應該是更加難以確定的東西……恐怕，\n是這一帶特有的生物。也就是類似小動物的東西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_13.mp3
+msg,1,<outline width=2 color=black>「它身上都是傷……也許是被虛像襲擊了呢。\n雖然同樣是幻夢境中出生的生物，但也會有相互為敵的時候」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_14.mp3
+msg,1,<outline width=2 color=black>「看起來還挺人畜無害的，放著不管的話\n心裏好像有點過意不去……我們幫幫它吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.2,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_11090300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:sad,weat,0,-240,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102306/adv/sound/fav102306_02_15.mp3
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,1,<outline width=2 color=black>「啊，哎呀？感覺怪物先生被繃帶包起來……\n看起來是不是變得和木乃伊一樣了……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_16.mp3
+msg,1,<outline width=2 color=black>「而且，從剛才開始就在拼命地掙扎……\n到底是怎麼回事啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_17.mp3
+msg,1,<outline width=2 color=black>「難、難道說它被繃帶纏得\n喘不過氣來了嗎……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_18.mp3
+msg,1,<outline width=2 color=black>「對、對不起，怪物先生！\n我馬上幫你重新包紮，請忍耐一下！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_19.mp3
+msg,1,<outline width=2 color=black>「那個……很抱歉。我包紮技術太差了，還是拜託你來\n幫他治療比較好……沒問題吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102306/adv/atlas/stand_b,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102306/adv/sound/fav102306_02_20.mp3
+msg,1,<outline width=2 color=black>「嗚……我怎麼這麼不中用……哎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

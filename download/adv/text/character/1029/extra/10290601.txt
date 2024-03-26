@@ -1,0 +1,166 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11220300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_01.mp3
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,1,<outline width=2 color=black>「這整個領域都是沙漠……日照十分猛烈，\n請您務必留意身體狀況。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_02.mp3
+msg,1,<outline width=2 color=black>「……不好意思，不知道是不是小女子羅澤特的錯覺，您好像一直\n盯著小女子看，請問是怎麼了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_03.mp3
+msg,1,<outline width=2 color=black>「啊……您是在看這套服裝嗎？呃、小女子羅澤特知道\n小女子穿如此華麗的服裝實在僭越了，非常不合宜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_04.mp3
+msg,1,<outline width=2 color=black>「萬分抱歉，在您面前獻醜了，還請您容忍到\n這場深潛結束為止。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_05.mp3
+msg,1,<outline width=2 color=black>「又或者，也許我們可以現在中止今天的深潛……？\n這樣小女子羅澤特就不會繼續傷您的眼了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選項1　「就這樣繼續沒關係。」,選項2　「請讓我仔細看一看。」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:surprise,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_06.mp3
+msg,1,<outline width=2 color=black>「是這樣嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_07.mp3
+msg,1,<outline width=2 color=black>「小女子明白了。您說一，\n小女子羅澤特就絕對不會說二。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_08.mp3
+msg,1,<outline width=2 color=black>「那麼，讓我們直接開始進行深潛吧。待在這樣的地方，\n光是站著，體力就會因為日曬而耗損，請務必小心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_09.mp3
+msg,1,<outline width=2 color=black>「當然沒問題。雖這身衣服華麗得實在跟身為工具的小女子很不相襯，\n想必會讓您見笑……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_10.mp3
+msg,1,<outline width=2 color=black>「但如果這就是您所希望的，當然歡迎您隨意觀看。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rozet1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet2,0,0,0,0,,,,
+imgconf,rozet2,rozet1,0,-50,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102906/adv/sound/fav102906_01_11.mp3
+msg,1,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rozet1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet2,0,0,0,0,,,,
+imgconf,rozet2,rozet1,0,300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102906/adv/sound/fav102906_01_12.mp3
+msg,1,<outline width=2 color=black>「……呃、那個，您從剛才開始就一直用熱情的視線看過來，\n實在讓小女子感到不勝惶恐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0.5,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_13.mp3
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,1,<outline width=2 color=black>「您這樣注視著小女子的肌膚……讓小女子有點坐立難安……\n恕小女子任性，可以請您稍微……手下留情嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_14.mp3
+msg,1,<outline width=2 color=black>「不過，看來小女子羅澤特做這樣的裝扮似乎並未讓您感到不快，\n小女子這就放心了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_15.mp3
+msg,1,<outline width=2 color=black>「這實在是一件非常光榮的事……或許也是因此，小女子羅澤特自然而然地\n開始心跳加速，胸口發熱了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_16.mp3
+msg,1,<outline width=2 color=black>「……但是，恕小女子失禮，即便是這樣，聽到您過度的稱讚還是讓小女子\n感到有點困擾……雖然這確實是小女子擔當不起的天大殊榮……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_17.mp3
+msg,1,<outline width=2 color=black>「這讓小女子羅澤特心跳得更快了。\n快到小女子開始擔心自己會不會變得不太對勁……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_18.mp3
+msg,1,<outline width=2 color=black>「小女子羅澤特明明應該當個只為您盡心盡力的工具，\n可再這樣下去，小女子就要沒辦法專注在深潛上了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102906/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102906/adv/sound/fav102906_01_19.mp3
+msg,1,<outline width=2 color=black>「所以還是請您別太過抬舉小女子了……拜託您了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

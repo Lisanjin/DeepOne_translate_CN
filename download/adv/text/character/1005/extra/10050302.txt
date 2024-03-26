@@ -1,0 +1,114 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:surprise,edelgard,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈？我不擅長的東西？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你啊……剛一開口，就突然找別人的弱點？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_02.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛？問這個什麼都能做的艾蒂爾加爾德，\n有什麼不擅長的事情什麼的，想問一下的心情也不是不能理解」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:unique,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「喂，別苦笑」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_04.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是正經的，為什麼這麼問啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_05.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「想關注不擅長的地方」,選項2　「很在意艾蒂爾加爾德不擅長的地方」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「好—的，這樣啊。雖然戰爭中起不到什麼作用，\n但還是想在其他方面裝得很好，這種？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_06.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:shy,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……挺值得讚揚的啊，你」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_07.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:unique,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不不，即使晚了一步也……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_08.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的，我不擅長的事情，啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_09.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……這麼說來，不算是很不擅長吧，\n但是我完全沒做過飯呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為在雇傭兵團的時候，在戰場上吃的是乾糧，\n平時的話部隊有人給做飯……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_11.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「來了拉萊耶之後也是，即食什麼的很充實啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_12.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:smile,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，我的話，如果想認真做的話\n馬上就能做到呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_13.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「只不過，現在沒這樣的打算。\n但是，知道這樣的事情該怎麼做呢？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:smile,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「要磨練手藝，成為我的專屬廚師嗎?\n這樣的話，是件挺好的事情呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:normal,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……還有別的嗎，即使這樣說。\n基本，艾蒂爾加爾德是個天才呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:surprise,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:sad,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「說起來酒也……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不，沒什麼。忘掉說的事情吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_19.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒，沒什麼……以前，喝了酒做了什麼意想不到的事，\n所以不會再做那樣的事情了……真的哦？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_20.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊，回想起那時候的話，\n事到如今也覺得難為情了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100502/adv/atlas/stand_a,body:anger,edelgard,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「煩死了！告訴你發生了什麼！\n那完全就是黑歷史」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_22.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就算不喝酒人也可以活下去哦！\n酒什麼的從這個世界上消失就好了！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100503/adv/sound/fav100503_09_23.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

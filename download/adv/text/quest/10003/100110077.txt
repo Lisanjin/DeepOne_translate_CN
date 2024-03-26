@@ -1,0 +1,299 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020100.jpg,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-170,1.35,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,
+spine,download/adv/spine/Shine,em1,default,animation,0,0,0,1,1,0
+playse,/download/sound/se/se_041.mp3
+endwait
+spineoff,em1,2
+endwait
+spriteoff,enemy1,1
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:sad,catia,-300,-100,0.5,0.5,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈啊……哈啊……追兵的數量越來越多……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不趕緊想辦法的話……會發展成無法挽回的局面。\n但是究竟要怎麼辦——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+select,選項1　「很難從正面突破？」,選項2　「藏到哪里去吧」
+if,select_===_1,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖、雖然很想那麼去做……但是對不起。\n現在的我很難打倒那麼多敵人……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那……有哪里能藏一下嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊。不能讓你們兩位再暴露在危險之下了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也許這的確是最好的方法了……\n繼續逃下去，遲早會被抓住的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「無法正面應付敵人，\n實在是非常丟人的事情……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我們一邊躲避敵人一邊一起尋找能夠躲藏的地方吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……知道了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+spriteoff,catia,0.5
+spriteoff,frau,0.5
+endwait
+name,
+msg,0,
+bg,download/adv/image/black.jpg,1,255
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,1,255
+endwait
+mask,bg1,400,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,catia1,400,0,300,720,0,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,0,0,0,0,,,,
+imgconf,catia,catia1,0,-200,,,0,1.5,1.5,0.5
+mask,bg2,-400,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg3,0,0,0,0
+imgconf,bg3,bg2,0,0,,,0,1,1,0.5
+mask,frau1,-400,0,300,720,0,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,0,0,0,,,,
+imgconf,frau,frau1,0,-600,,,0,-1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>芙勞／卡蒂婭</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,-380,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,320,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-170,1.35,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait
+spriteoff,all,0
+endwait
+mask,bg1,400,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,catia1,400,0,300,720,0,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,0,0,0,0,,,,
+imgconf,catia,catia1,0,-200,,,0,1.5,1.5,0.5
+mask,bg2,-400,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg3,0,0,0,0
+imgconf,bg3,bg2,0,0,,,0,1,1,0.5
+mask,frau1,-400,0,300,720,0,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,0,0,0,,,,
+imgconf,frau,frau1,0,-600,,,0,-1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=20><outline width=2 color=black>「拜託了……千萬不要暴露……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,-380,-300,1.8,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,320,-300,1.8,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-300,1.8,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait
+spriteoff,all,0
+endwait
+mask,bg1,400,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,catia1,400,0,300,720,0,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,0,0,0,0,,,,
+imgconf,catia,catia1,0,-200,,,0,1.5,1.5,0.5
+mask,bg2,-400,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg3,0,0,0,0
+imgconf,bg3,bg2,0,0,,,0,1,1,0.5
+mask,frau1,-400,0,300,720,0,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,0,0,0,,,,
+imgconf,frau,frau1,0,-600,,,0,-1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=20><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,enemy3,-380,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy2,320,-170,1.35,0.5,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-30,-170,1.35,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――――――」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,all,2,
+playse,/download/sound/se/se_025.mp3
+endwait
+mask,bg1,400,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,catia1,400,0,300,720,0,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,0,0,0,0,,,,
+imgconf,catia,catia1,0,-200,,,0,1.5,1.5,0.5
+mask,bg2,-400,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg3,0,0,0,0
+imgconf,bg3,bg2,0,0,,,0,1,1,0.5
+mask,frau1,-400,0,300,720,0,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,0,0,0,,,,
+imgconf,frau,frau1,0,-600,,,0,-1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=20><outline width=2 color=black>「………………好像已經走了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,1
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0.5,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈啊……總算是熬過去了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「你們兩位沒事吧？有沒有受傷……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不要緊……沒事的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「可是……好像，有點，累了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_039.mp3
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,-300,-100,0.5,0,,,
+anm,jump,catia,-300_-100_10_2,0.5,0
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呀？！剛、剛才的聲音是什麼？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那邊……在燃燒」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……？那、那棟建築……潔美拉和伊蓮娜在裏面……怎麼會這樣，\n那裏究竟發生了什麼……？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「得去救救她們……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我當然想去救……但肯定會面臨危險，\n不能連累你們……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+shake,0.5,2,5,5
+endwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:shy,catia,-300,-100,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「誒，那、那個……為什麼，突然捏住手……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,-300,-100,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「去？……難道要去那個地方……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……潔美拉和伊蓮娜……必須要救她們吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為她們兩人……對卡蒂婭來說，是很重要的人。\n對我們來說……也是很重要的人」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「芙勞……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為很危險而不去救……這，我不要」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……明白了。既然如此，那就一起去迎接那兩人吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,300,-120,0.5,0,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……加油」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,
+anm,tint,catia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，你們不要因過於熱血而做出危險的行為……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……但你的心意讓我很開心。\n真的非常感謝你們兩人」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,catia,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這個人也說過了哦。\n那個啊，既然是夥伴……相互幫助，是應該的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,113 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:anger,lid,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……原來是你啊，已經吃過飯了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……你問我為什麼要在這種地方吃飯？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「理由很簡單。我不打算和你們玩朋友遊戲。\n連吃飯的時間都要被打擾的話，我可受不住」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:anger,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒，我明明都解釋了，為什麼還要坐在我前面」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:sad,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你想和我聊天？　唉~……你還真是喜歡多管閒事。\n話說，你有在聽我說話嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是，算了。我格外允許你和我同座吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「今天我心情好。\n亞紗花做的這個三明治很好吃」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，我告訴她我想一個人吃的時候，她\n特意給我做的，還帶了沙拉和湯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我本來就不是會對食物的味道挑三揀四的人，\n但好吃到這個份上，吃飯的時間也會變得開心」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你一直都是怎麼吃飯的？」,選項2　「你喜歡什麼樣的味道？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「來這裏之前……我一直都生活在戰場上。\n基本都是比起味道，更重視營養價值的固體食物」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然能填飽肚子，但我從來沒覺得過\n一種東西很好吃」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這麼熱騰騰的湯我已經很久沒喝到了……\n不對，說不定是我第一次喝到」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我喜歡的味道……嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在戰場上的時候，能把食物吃下肚就已經很不錯了，\n所以也一直沒在意過味道什麼的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過呢……來拉萊耶之後，\n我的味覺意識漸漸覺醒了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「比如這份湯。濃烈的味道非常刺激味覺。\n我應該喜歡這種味道吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_16.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:smile,lid,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我也很中意亞紗花。能做出如此美味的食物，\n格外把她放在身邊也沒什麼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:surprise,lid,25,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em5,default,animation,0,100,150,0.65,0.8,0.2
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼……你說這個湯只是速食品？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_18.mp3
+clickwait,,,,,,,,,,,
+spineoff,em5,0
+msg,1,<size=30><outline width=2 color=black>「不可能的吧？　速食品才不會有這種味道」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那種東西，和軍糧沒什麼兩樣吧。\n比起味道，更重視營養價值，還有方便食用和省時……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:surprise,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼？　這真的是速食品？　竟能如此簡單的……做出這種湯……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101201/adv/atlas/stand_a,body:normal,lid,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不愧是拉萊耶……現代技術真是發展到了極致……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101202/adv/sound/fav101202_05_22.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

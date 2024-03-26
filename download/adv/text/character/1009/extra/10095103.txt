@@ -1,0 +1,91 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:smile,ilyna,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_01.mp3
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「……你的燒好像已經退了不少。雖然還不能太大意，\n不過應該可以暫時先鬆口氣了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_02.mp3
+msg,1,<outline width=2 color=black>「啊，對了……我剛才去做羅宋湯的時候，\n有看到卡蒂婭在和希爾薇說話……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_03.mp3
+msg,1,<outline width=2 color=black>「她看起來好像蠻著急的。\n應該是在跟希爾薇打聽你的狀況吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_04.mp3
+msg,1,<outline width=2 color=black>「依她的個性，等等應該會來給你探病吧。\n我不想剛好跟她撞上，所以我會在她來之前離開。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「為什麼要離開？」,選項2　「她會不會穿護士服來看我呢？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:anger,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_05.mp3
+msg,1,<outline width=2 color=black>「……這種事用不著我一一解釋吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_06.mp3
+msg,1,<outline width=2 color=black>「要是被她看到我打扮成這副模樣照顧你，\n不知道她會做何反應……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_07.mp3
+msg,1,<outline width=2 color=black>「我想在氣氛變尷尬之前離開現場，\n是很合理的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_08.mp3
+msg,1,<outline width=2 color=black>「這怎麼可能……而且啊，一下醫生一下護士的，\n你這個人的興趣真的很奇特耶。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:anger,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_09.mp3
+msg,1,<outline width=2 color=black>「難道凡是跟醫療相關的角色扮演你都不挑嗎？\n這也未免太變態了吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_10.mp3
+msg,1,<outline width=2 color=black>「唉……我到底是為什麼要配合你這種變態打扮成\n這副模樣啊？我突然又覺得有點羞恥，又有點丟臉了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_11.mp3
+msg,1,<outline width=2 color=black>「等卡蒂婭離開這個房間之後，我會再來看你的，\n在我回來之前，你可要乖乖讓她照顧你喔。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:anger,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_12.mp3
+msg,1,<outline width=2 color=black>「我要先聲明喔，我不是因為會擔心你\n才打算回來看看的。你可別會錯意了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:shy,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_13.mp3
+msg,1,<outline width=2 color=black>「要說我是想知道她有沒有好好照顧你嗎──其實也不是，\n我只是覺得，既然我都答應要照顧你了，就應該要好好照看到最後，否則太不負責任了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:shy,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_14.mp3
+msg,1,<outline width=2 color=black>「總之，我沒別的意思。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:anger,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_15.mp3
+msg,1,<outline width=2 color=black>「……等一下，你在偷笑什麼啦。\n你有聽懂我說的話嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:anger,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_16.mp3
+msg,1,<outline width=2 color=black>「你不要隨便敷衍我。你肯定沒聽懂\n我說的話吧？快把你的笑容給我收起來。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100951/adv/atlas/stand_a,body:anger,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100951/adv/sound/fav100951_03_17.mp3
+msg,1,<outline width=2 color=black>「我只是因為你是病人才對你好一點的，你卻得意忘形……踩到我頭上，\n等你感冒好了，最好給我洗乾淨脖子等著。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

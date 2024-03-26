@@ -1,0 +1,211 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,watorisa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_c,body:normal,watorisa,0,0,0,0,,,,
+imgconf,watorisa,watorisa1,870,-580,,,0,1.0,1.0,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>鳥</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:smile,watorisa,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「鳥兒們，做得非常好……辛苦了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,watorisa,0,-240,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「雖然稍微花了點時間，不過這麼一來就能專注於本來的目的了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_011.mp3
+shake,0.2,4,50,50
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:surprise,watorisa,0,-240,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「――！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:anger,watorisa,0,-240,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「這股動靜是……除此以外，還有魔力激烈碰撞的反應……\n難道想索者們產生了爭執……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……得去確認一下。如果對方好戰到連夥伴之間都會產生內鬥……\n那就必須採取相應的對策了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,watorisa,0,-240,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「如果可以的話……我不希望是那種情況」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name, 
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait
+sprite,download/bg/bg_10030200.jpg,move_bg,120,0,1.2,1,,,,
+sprite,download/adv/image/black.jpg,black1_1,0,0,0,0,,,,
+sprite,download/adv/image/black.jpg,black2_1,0,0,0,0,,,,
+mask,black1_2,0,-460,1280,200,0,,,,
+mask,black2_2,0,460,1280,200,0,,,,
+imgconf,black1_1,black1_2,0,0,,,0,1,1,0
+imgconf,black2_1,black2_2,0,0,,,0,1,1,0
+endwait
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,watorisa,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「魔力是從這附近感覺到的……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,black1_2,0_-350,0.5,0
+anm,move,black2_2,0_350,0.5,0
+anm,move,watorisa,-320_-240,0.5
+anm,move,move_bg,60_0,0.5,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,250,-50,0.3,0.5,,,,
+sprite,download/adv/image/black.jpg,black1_1,0,0,0,0,,,,
+mask,black1_2,0,-350,1280,200,0,,,,
+imgconf,black1_1,black1_2,0,0,,,0,1,1,0
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,watorisa,-320,-240,0.5,0,,,,
+wait,1
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:anger,watorisa,-320,-240,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……她們就是，新的想索者。\n究竟是怎樣的人呢，得好好弄清楚——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,watorisa,0.2,,,,,,,,,
+endwait,,,,,,,,,,,
+anm,move,move_bg,0_0,0.5,0
+anm,move,catia,190_-50,0.5,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,-190,-75,0.3,0.5,,,,
+sprite,download/adv/image/black.jpg,black1_1,0,0,0,0,,,,
+mask,black1_2,0,-350,1280,200,0,,,,
+imgconf,black1_1,black1_2,0,0,,,0,1,1,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不行……地面的洞完全被堵住了。\n這樣子是無法把他們拉上來的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,dana,0,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:anger,jamila,-190,-75,0.3,0.5,,,,
+sprite,download/adv/image/black.jpg,black1_1,0,0,0,0,,,,
+mask,black1_2,0,-350,1280,200,0,,,,
+imgconf,black1_1,black1_2,0,0,,,0,1,1,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……我不認為那個叛徒會因為這種程度的崩塌而發生意外。\n這麼一想，反而是我們無法追擊她了，實在是可惜……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「那個女人不僅背叛了卡蒂婭大人，還向聖奠教舉起了反旗，\n我必須親手將其誅殺……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,190,-50,0.3,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+sprite,download/adv/image/black.jpg,black1_1,0,0,0,0,,,,
+mask,black1_2,0,-350,1280,200,0,,,,
+imgconf,black1_1,black1_2,0,0,,,0,1,1,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……潔美拉。你的行動都是為了我和聖奠教，\n這一點我非常清楚」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「但是，我無論如何也無法相信伊蓮娜會毫無理由地離開聖奠教」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「更何況，她還懷有如此強烈的憤怒和憎惡……\n其中一定存在某種緣由，不然就解釋不通了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:sad,jamila,-190,-75,0.3,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+sprite,download/adv/image/black.jpg,black1_1,0,0,0,0,,,,
+mask,black1_2,0,-350,1280,200,0,,,,
+imgconf,black1_1,black1_2,0,0,,,0,1,1,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「雖然您這麼說——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,-190,-75,0.3,0.5,,,,
+sprite,download/adv/image/black.jpg,black1_1,0,0,0,0,,,,
+mask,black1_2,0,-350,1280,200,0,,,,
+imgconf,black1_1,black1_2,0,0,,,0,1,1,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這事之後再說吧。現在我們得儘快與他們匯合才行……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「剛才的墜落或許會導致有人受傷，而且與他分離的話，\n身心所承受的幻夢境負荷也有可能增加」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,190,-50,0.3,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+sprite,download/adv/image/black.jpg,black1_1,0,0,0,0,,,,
+mask,black1_2,0,-350,1280,200,0,,,,
+imgconf,black1_1,black1_2,0,0,,,0,1,1,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是啊。潔美拉，這下面……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,dana,0,,,,,,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,-190,-75,0.3,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+sprite,download/adv/image/black.jpg,black1_1,0,0,0,0,,,,
+mask,black1_2,0,-350,1280,200,0,,,,
+imgconf,black1_1,black1_2,0,0,,,0,1,1,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……應該存在著一棟地下聖堂。如今那裏\n只有在舉行特殊儀式的時候才會用到，所以被嚴密封鎖著」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「裏面的構造有些複雜，還是我來帶路吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,catia,0.2
+spriteoff,jamila,0.2
+spriteoff,black1_2,0.2
+spriteoff,black2_2,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,0,-120,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「謝謝你，潔美拉。那我們走吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,catia,0.5
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+anm,move,move_bg,120_0,0.6,0
+endwait,,,,,,,,,,,
+wait,0.6
+endwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,watorisa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,watorisa2,0,0,0,0,,,,
+imgconf,watorisa2,watorisa1,0,-950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……卡蒂、婭？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「那、那個少女……剛才……不是吧，怎麼會……是不是搞錯了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「可是，發色和瞳色都與記錄中的一樣……\n她就是，我的——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

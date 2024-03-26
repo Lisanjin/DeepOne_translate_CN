@@ -1,0 +1,105 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0,,
+endwait
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,brizit,50,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……今天怎麼這麼倒楣。\n現在竟然遇到了最不想遇到的人」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_02.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，今天已經沒事了。昨天說了一點喪氣的話……\n我一定是累了吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_03.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:shy,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊，真是的。現在想想真的好生氣啊。\n昨天的我到底在想什麼啊……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「總之，請不要誤會。\n還有，我昨天說的話全部忘掉，知道了嗎」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_05.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「好的」,選項2　「有點難」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:unique,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……點頭倒是非常爽快，你真的明白了嗎」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_06.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「好吧，這次我就相信你……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_07.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，我來幫你忘記吧？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_08.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼……早答應不就得了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_09.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「算了，退一百步說，\n只要答應我一直守口如瓶就好了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_10.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這件事就到此為止吧。\n深入討論也不會變成好事」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_11.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「然後呢？　你在這兒幹什麼」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……反正問了也白問，你八成是在這裏蹲我吧。\n真是愛多管閒事啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「明明你在這個設施裏也接觸到了很多人的惡意，\n為什麼還能當個好人呢？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……就是這樣的你才讓我說出了真心話……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……要趕緊重新振作起來。\n如果這樣的狀態持續下去的話，就會變的越來越窩囊了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那我去訓練了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「在活動身體時，這種莫名的感情和雜念，\n也會拋諸腦後吧……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我說，你跟著我不就沒有意義了嗎？\n喂，你在聽嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你的那份厚顏無恥真是讓人生氣」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「唉……真的是……糟糕透了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100204/adv/sound/fav100204_13_21.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

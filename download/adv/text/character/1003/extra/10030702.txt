@@ -1,0 +1,112 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11120300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_01.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「這麼說來，你不冷嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_02.mp3
+msg,1,<outline width=2 color=black>「我沒關係。因為我原本生活的地方也是氣溫低的地方。\n冬天氣溫有時也會低於零度」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_03.mp3
+msg,1,<outline width=2 color=black>「當然，也不是完全不冷。\n因為習慣了，所以可以忍耐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「耐寒的訣竅是？」,選項2　「無法忍受」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_04.mp3
+msg,1,<outline width=2 color=black>「訣竅嗎……是啊……身體的一部分就可以，\n只要把注意力集中在溫暖的地方就行了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_05.mp3
+msg,1,<outline width=2 color=black>「比起寒冷，如果將意識轉向溫暖的話，多少可以敷衍一下吧。\n這是我自己的做法，雖然不知道是否適合你……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_06.mp3
+msg,1,<outline width=2 color=black>「咦，沒關係嗎……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_07.mp3
+msg,1,<outline width=2 color=black>「手腳都在發抖……為什麼不早點告訴我呢……！？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_08.mp3
+msg,1,<outline width=2 color=black>「就算我看起來沒什麼大不了的……請不要因為這樣的理由而逞強。\n如果你的身體垮了的話，我和大家都會很難過的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_09.mp3
+msg,1,<outline width=2 color=black>「嗯，為了馬上暖和起來……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_10.mp3
+msg,1,<outline width=2 color=black>「對了……可以幫忙嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,0,-75,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/100307/adv/sound/fav100307_02_11.mp3
+msg,1,<outline width=2 color=black>「像這樣握住手的話……怎麼樣？暖和嗎？\n這樣，能敷衍一點點寒冷的感覺……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:sad,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_12.mp3
+msg,1,<outline width=2 color=black>「你的手變得非常冰冷……如果能早點注意到的話，就好了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_13.mp3
+msg,1,<outline width=2 color=black>「這樣擦的話，會暖和一點嗎……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:shy,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_14.mp3
+msg,1,<outline width=2 color=black>「……是，是什麼呢？像這樣握著手，\n摩擦著肌膚，感覺有點奇怪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:shy,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_15.mp3
+msg,1,<outline width=2 color=black>「哦，好奇怪啊。明明是要唔熱手，\n我卻不知為何臉變得熱起來了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:shy,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_16.mp3
+msg,1,<outline width=2 color=black>「你覺得怎麼樣……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:smile,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_17.mp3
+msg,1,<outline width=2 color=black>「……太好了。如果你也覺得溫暖的話」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_18.mp3
+msg,1,<outline width=2 color=black>「那個……放開這只手，又會變冷吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:shy,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_19.mp3
+msg,1,<outline width=2 color=black>「如果可以的話……。再稍微，\n就這樣……牽著手吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:surprise,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_20.mp3
+msg,1,<outline width=2 color=black>「啊，不，我並不是想牽著手，而是……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:shy,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_21.mp3
+msg,1,<outline width=2 color=black>「……對不起。剛才那是假的。我希望能再多感受一下\n這只手的溫暖，所以希望你能一直牽著我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:shy,catia,0,-75,0.7,0,,,,
+playvoice,1,download/character/100307/adv/sound/fav100307_02_22.mp3
+msg,1,<outline width=2 color=black>「如果你也有同樣的心情的話……那個，不行嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

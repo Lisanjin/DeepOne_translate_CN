@@ -1,0 +1,153 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10020100.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0.5,,,
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,monster,-30,-200,1.25,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――――！」</outline></size>,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_b,body:anger,holly,0,-160,0.5,0.5,,,,,
+endwait
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好了，這樣就結束了！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_01.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,holly,0
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,monster,-30,-200,1.25,0.5,,,,
+endwait,,,,,,,,,,,,
+spine,download/adv/spine/Wind1,em1,default,animation,0,0,0,1,1,0.2
+playse,/download/sound/se/se_046.mp3
+endwait,,,,,,,,,,,,
+shake,0.1,4,100,100
+endwait
+spriteoff,monster,1,,,,,,,,,,,
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,,
+spineoff,em1,0.5
+endwait
+stopbgm,0.5
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0.5,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「……呼。這就全部解決了吧。\n有沒有受傷？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣啊。那接下來————」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_03.mp3
+clickwait,,,,,,,,,,,,
+anm,move,holly,-10_-220,0.5,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:sad,holly,-10,-220,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……抱歉。\n剛才跌倒，讓你看到我不像話的樣子了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「剛才敵人的攻擊，真是比想像中還要兇猛呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「傷口本身沒什麼大不了的……從這個感覺來看，\n可能裏面有毒素……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈，啊……唔，唔……意識，有點朦朧，了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_07.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我，我，好像……只能到此為止了呢……沒想到，居然會在，\n這裏倒下……真是的……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_08.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「我馬上帶你回去」,選項2　「別說這種話！」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+shake,0.2,1,20,20
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:surprise,holly,50,-500,1,0.5,,,,,
+msg,1,<size=30><outline width=2 color=black>「呀……誒？啊，幹什麼……為什麼，要把我抱起來……？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_09.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:shy,holly,50,-500,1,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這是要幹什麼……不，不行，放開……唔，\n可，可是，就算你說要帶我回去這種姿勢……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_10.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+shake,0.2,1,20,20
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:surprise,holly,50,-500,1,0.5,,,,,
+msg,1,<size=30><outline width=2 color=black>「——誒？啊，哦……等，等一下，這麼突然就抱過來，\n到底要……！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_11.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:shy,holly,50,-500,1,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這，這麼用力……唔，不，不行的，不可以……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_12.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:shy,holly,50,-500,1,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「對，對不起！雖然我確實受到了攻擊，但中毒是開玩笑的，\n不用做的那麼拼命……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真的沒想到，你會做這樣的事……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就，就是這樣……你要是放下我，我就很高興了……\n就是這樣的姿勢……有點難為情……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0.5,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那個，真的對不起。讓你那麼驚慌失措」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:anger,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「既然你用那樣認真的表情，我也知道該反省了……\n我保證，這種玩笑絕對不會再發生」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是，有一點，要我發自內心說一句」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:shy,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「剛剛被你緊緊抱住的時候，不知不覺地感到很開心。\n胸口總有一種難以平復的激動，這一定——」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「——哼，開玩笑的啦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_20.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對不起呢。剛剛被你被嚇到了，現在我要嚇回去」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……哈哈，被嚇到了吧。\n不把玩笑說到這種程度的話，那可就真被討厭了呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_22.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,holly,0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,holy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:smile,holy,0,0,0,0,,,,
+imgconf,holy,holy1,0,-730,,,0,1.5,1.5,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「…………嗯嗯，就是玩笑」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_23.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好了，就到這裏吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100803/adv/sound/fav100803_09_24.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

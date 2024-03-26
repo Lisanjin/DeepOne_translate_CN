@@ -1,0 +1,107 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,,
+endwait
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,brizit,50,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「唉……遇到煩人的傢伙了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你那沮喪的表情是什麼意思？　對我有意見？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「問我在做什麼，沒什麼……只是在尋找需要的東西」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不用你幫忙，我已經找到了。\n……找什麼，只是粘著劑啦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_05.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「用來幹什麼，這不關你事吧。\n你還有完沒完了？」</outline></size>,brizit:anger,brizit,50,-190,0.8,0.5,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「請不要隨意干涉他人的隱私。\n坦白說讓人不愉快」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_07.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這種事找你關係好的人去啊？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_08.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「我想瞭解布麗吉特」,選項2　「抱歉」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:unique,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你啊，說這種話就不覺得羞恥嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_09.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「真虧你能平靜地說出這種話呢。而且還是對我說的……\n坦白說噁心」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你幹嘛一副受委屈的樣子喔……得到這種回答\n不是應該早就想到了麼……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_11.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這麼老實道歉？感覺好可疑……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_12.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:unique,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你到底在想什麼？\n不會是有什麼不軌的企圖吧……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_13.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……信你才有鬼喔。\n特別是你這種對誰都笑嘻嘻的傢伙」</outline></size>　,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_14.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「多說無益，\n我要回房間了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……又怎麼了。還有事情嗎？\n這種沒營養的對話，我已經厭倦了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你似乎想和所有人搞好關係，\n但不湊巧，我可沒有這種奇特的興趣」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我不覺得誰離了誰就活不下去」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我可以獨自……不依靠任何人活下去」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這世上，不盡是你這種離不開他人的\n弱小傢伙哦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_20.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，請不要將你的價值觀套在我身上」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「告辭」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100200/adv/sound/fav100200_02_22.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

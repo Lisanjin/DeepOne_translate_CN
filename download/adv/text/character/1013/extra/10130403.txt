@@ -1,0 +1,104 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0,,
+endwait
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個……突然打擾你，我很抱歉。你有空吧？　還是要睡下了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……我又睡不著了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我想、會給你添麻煩、\n但是無論如何都想和你說話…………所以就來了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、啊哈哈、你突然這麼說我也很為難啊。\n如果給你添麻煩的話，我就回去……嗯、那個……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「不用在意」,選項2　「不用去找莉迪亞嗎？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……呵呵、謝謝你。\n能這麼說的話……真是幫大忙了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:shy,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為、我現在要說的、是無論如何都想讓你聽的事……\n是想要傳達的事……所以……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:shy,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯、不找姐姐、是想跟你說的……\n關於我和姐姐的事……有個請求……所以……可以嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈、謝謝。你果然是這麼說的。\n你那一點……總覺得特別溫暖……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我可能是第一次有這樣的心情……\n姐姐也沒感覺過」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……正因為你這樣、給了我新的東西、\n所以、我才想好好和你說話……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_10.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我啊……不想離開……你和姐姐」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你們倆都是非常重要的人……我終於意識到了。\n一直、一直在想……但是、一旦意識到、就非常簡單了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個、我喜歡絕望的甜蜜……至今為止、\n想像著和姐姐以及你分手的場面、就會覺得甜蜜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……這一點一點地發生了變化……現在、只要一有這種想像、比起甜蜜，胸口深處……就會感到刺痛」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「太痛苦了……很難過……難受得眼淚都要出來了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我呢……比起我被甜蜜包圍著的幸福、\n一定、與你和姐姐在一起更幸福」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊、從一開始就是這樣……想和重要的人一邊吃著甜點心、\n一邊微笑著享受下午茶……只是、僅此而已……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「和你的相遇、讓我想起了那件事。\n正因為如此……才拜託你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「今後也要一直、和我和姐姐在一起。\n不管發生什麼都不要消失」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣的話……我的感情就不會再迷失了。\n……這樣的溫暖、就不會再迷失了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:shy,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……拜託了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_13_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

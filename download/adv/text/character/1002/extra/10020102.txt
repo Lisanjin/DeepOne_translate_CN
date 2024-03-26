@@ -1,0 +1,91 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playse,/download/sound/se/se_029.mp3
+wait,0.7
+playbgm,/download/sound/bgm/bgm026.mp3,0,,
+endwait
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,brizit,50,-190,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大晚上的，你站我房門前幹什麼？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你到底想幹什麼？\n……不會是有什麼不良企圖吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果是這樣的話，我可不會手下留情的哦……\n說吧，你還有什麼遺言？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……上廁所順道？\n什麼嘛，這算哪門子順道啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒事的話，能不能讓開別擋道？\n我還有事」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……私人時間在哪里做什麼，\n是我的自由吧。不要事事都過問」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我沒有義務向你彙報」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_07.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「還請拜託啦」,選項2　「不想說就算了」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你好煩耶……就是這種不管不顧\n一頭紮進別人的事情裏令人討厭啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_08.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且還莫名的不死心……你到底想幹什麼啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_09.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:surprise,brizit,50,-190,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「突然就放棄了呢……真是意外。\n我還以為你會刨根問底呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_10.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不過心思全寫在臉上了。其實心裏好奇的不得了\n對吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_11.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「唉……真麻煩。\n我只是準備去進行魔術鍛煉而已啦」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你一臉震驚是什麼意思？\n難道法律還規定晚上不能鍛煉不成」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「想要獲得盡可能的進步，每日堅持鑽研\n不是理所當然的嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我要變得，更強更強」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_15.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:sad,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不然……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:normal,brizit,50,-190,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「——閒聊過頭了呢。總之，不能繼續把時間浪費在對話上，\n白白錯過重要的成長機會」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我要走了。你別跟來，我想保持專注」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100201/adv/sound/fav100201_04_18.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

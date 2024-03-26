@@ -1,0 +1,99 @@
+name,,,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:unique,xeno,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……怎麼剛見面你就這麼開心啊。\n雖然這話不是睡過頭遲到的我該說的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_01.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「我承認我鬆懈了……你別這樣笑啊。\n這次不是想索，而是探索拉萊耶內部，所以應該沒什麼問題吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也許是習慣了這裏的安穩，被舒服的環境毒害了吧。\n我得振作起來才行……你也注意一下為妙」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這麼多擅長魔術的人，面對這種異常情況\n竟然還能安穩地生活，太奇怪了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_04.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一般來說，應該會比較騷亂才對……作為核心人物的男人\n竟然人畜無害到讓人吃驚的地步，這也許也是原因之一吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……呐，在這裏生活很開心嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_06.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「很開心哦」,選項2　「拉萊耶之外的生活我不太清楚」
+if,select_===_1,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「原來如此……我也覺得在拉萊耶生活很充實。\n所以，我應該能理解你的感受」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_07.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「正因為如此……我才會察覺到誘惑的存在。如果可以忘記自己作為失想者的立場，\n就這樣安穩地度過一生就好了——這種因為自己心靈脆弱而產生的誘惑」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_08.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也對……你是被關在拉萊耶裏面的啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_09.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，你和各種各樣的人交流過，應該已經知道很多事情了。\n這種經歷和羈絆價值千金」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「其實，我在此之前也只知道幻夢境這一個世界，\n自從來了拉萊耶，知道了很多事情……我對這樣的體驗很感激」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_11.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「對了，你想過拋棄現在的生活，去別的世界旅行嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「拉萊耶是為了讓人無憂無慮生活下去而設計的。\n不存在貧窮和不合理，只是為了生存下去的話，誰都能做得到吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這種說法可能有點傷人。\n但是，選擇在這裏生活，肯定沒有錯。我是這麼認為的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要是你選擇這條道路的話，幻夢境就能保持穩定，\n納克特原書被帶走的可能性也幾乎為零」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這……對於我們失想者來說，是最好的結局了。\n如果你選擇這種生活的話，我可以發誓，未來永遠都服從於你」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這樣啊。這種程度的好話，還不足以籠絡你的心呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「反正我也認為你不會放棄拯救其他人的道路。\n在某種意義上確認了你還是原來的你，我應該可以放心了吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對我來說，最喜歡的就是你那副好心了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:surprise,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯？怎麼了，臉這麼紅。我只是坦率地說了自己的想法而已，\n有什麼奇怪的嗎？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_20.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……？算了，你說沒什麼的話，我也就不深究了……\n你突然變得有些奇怪」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102403/adv/sound/fav102403_08_21.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

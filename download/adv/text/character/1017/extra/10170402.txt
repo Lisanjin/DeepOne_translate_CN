@@ -1,0 +1,144 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:unique,qquinecy,1000,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,qquinecy,0_-120,3,1
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_01.mp3
+msg,1,<outline width=2 color=black>「唔嗝……唔……呼哎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,qquinecy,-120_-120,0.5,0
+endwait
+playvoice,1,download/character/101704/adv/sound/fav101704_12_02.mp3
+msg,1,<outline width=2 color=black>「啊……晚上好。今天也是個好日子啊……唔嗝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,qquinecy,120_-120,1,0
+endwait
+playvoice,1,download/character/101704/adv/sound/fav101704_12_03.mp3
+msg,1,<outline width=2 color=black>「哎哎？什麼我喝醉了，你胡說什麼啊？\n我沒醉，唔呃……唔嗝？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,qquinecy,0_-120,0.5,0
+endwait
+playvoice,1,download/character/101704/adv/sound/fav101704_12_04.mp3
+msg,1,<outline width=2 color=black>「嗝……我記得我和達納啊，潘多莉西亞學姐啊一起喝了特別好喝的果汁，\n就這樣而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「你的臉好紅」,選項2　「你都東倒西歪的了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_05.mp3
+msg,1,<outline width=2 color=black>「嗝……嗚……這是因為、那個啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_06.mp3
+msg,1,<outline width=2 color=black>「想見你想得臉都發燒了啦。\n哎嘿嘿……嗝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/101704/adv/sound/fav101704_12_07.mp3
+msg,1,<outline width=2 color=black>「我太高興了，所以我要抱抱……嗝嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_08.mp3
+msg,1,<outline width=2 color=black>「這是……嗝……因為這些日子太累了。\n所以請你扶穩我……嗝……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/101704/adv/sound/fav101704_12_09.mp3
+msg,1,<outline width=2 color=black>「嗝呼……你的手臂、又粗又壯……我擦我擦……嗝呼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_10.mp3
+msg,1,<outline width=2 color=black>「嗝……像這樣觸摸著你，好讓人放心，好讓人平靜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_11.mp3
+msg,1,<outline width=2 color=black>「因為、我平常總是揹負著許多沉重的……沉重得幾乎要把我的雙腳給壓垮……讓我無比不安……\n但是，和你在一起時……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_12.mp3
+msg,1,<outline width=2 color=black>「不管我的所作所為……我犯下的罪孽……我的行徑有多罪大惡極，\n你也不會對我扔下不理」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_13.mp3
+msg,1,<outline width=2 color=black>「我相信你……嘿，嗝……\n我要抱得更緊了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_14.mp3
+msg,1,<outline width=2 color=black>「可是……這樣的時光不能一直持續下去……\n最後我肯定會下地獄……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_15.mp3
+msg,1,<outline width=2 color=black>「我不能帶著你一起下地獄的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_16.mp3
+msg,1,<outline width=2 color=black>「我總有一天要得到納克特原書……\n弄明白我做的一切到底是對的還是錯的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_17.mp3
+msg,1,<outline width=2 color=black>「如果我做錯了……\n我想要能勇敢地下地獄的勇氣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_18.mp3
+msg,1,<outline width=2 color=black>「——所以，至少在那之前，我還可以繼續依賴你吧。\n唔、嗝……哎嘿嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,1,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10010200.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0.5,,,,
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_19.mp3
+msg,1,<outline width=2 color=black>「那、那個！\n昨晚我是不是碰到你了……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_20.mp3
+msg,1,<outline width=2 color=black>「記憶一片模糊……\n可、可是，我隱約記得自己好像說了一堆特別離譜的話……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:unique,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_21.mp3
+msg,1,<outline width=2 color=black>「……呃，哎！？為什麼要摸我的頭啊！？\n我到底做了什麼……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:unique,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101704/adv/sound/fav101704_12_22.mp3
+msg,1,<outline width=2 color=black>「啊、嗚嗚……求你告訴我啦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

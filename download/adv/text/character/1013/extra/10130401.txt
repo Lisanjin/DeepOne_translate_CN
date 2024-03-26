@@ -1,0 +1,100 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+roombg,1013,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:smile,mil,-10,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、你給我泡咖啡啦？　當然是多糖吧？　\n哼哼、謝謝」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「坐在那裏、稍等一下。馬上就結束了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你問我在做什麼呢……如你所見、要好好的保養武器。\n如果不好好保養的話、在關鍵時刻就會不行的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「仔細地打磨、打磨……就這樣、會好好地散發出光澤。\n嗯……好、結束……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你很認真嘛」,選項2　「為什麼武器是餐具？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈、當然啦。因為、為了品嘗人心所產生的甜蜜\n它是不可或缺的重要工具」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「至今為止、我用它品嘗了很多美味的感情。\n恐懼、不安、後悔、苦悶……以及、放棄生命那一瞬間的、絕望」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「――不過、我珍惜它的理由還不止這些呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_07.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:smile,mil,-10,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,100,200,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵、你果然還是很在意？\n一般來說、應該有短劍和槍之類、更容易使用的武器吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_08.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「可是你看、殺人對我來說、是一次大餐。\n是非常甜美的盛宴」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為了吃到美味所以才用叉子或刀……\n呵呵、對不起、剛才的理由、是開玩笑的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_10.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……在我們長大的地方附近、有個有錢人家、\n那兒的一對姐妹經常在院子裏享受下午茶」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「剛開始的時候……是看起來很好吃的點心啊……一定是很貴的\n很甜的吧……我一邊這樣想一邊遠遠看著……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「看了好幾次後、不知怎的……在那兩人身上\n重疊著我和姐姐的影子……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「在庭院裏的餐桌上、一邊吃著美味的食物、\n一邊幸福地笑著的二人時光」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那裏沒有討厭的人、沒有可怕的人、也沒有必須殺掉的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……真羡慕下午茶啊……所以、\n我一定會選擇餐具當作武器哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個憧憬……想慢慢靠近」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……回想起來、那個光景、\n好像來到了相當遙遠的地方」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_b,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是、沒關係。因為、我的世界裏、充滿了美妙的甜蜜。\n時至今日也十分幸福……能綻放笑容……所以、我現在這樣就可以了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101304/adv/sound/fav101304_11_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

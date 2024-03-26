@@ -1,0 +1,132 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102805/adv/sound/fav102805_01_01.mp3
+name,<outline width=2 color=black>米婭姆・莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「雖然我來了拉萊耶有好一段時間了，\n但是在迎接新年之前，跟大家進行大掃除還是第一次呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_02.mp3
+msg,1,<outline width=2 color=black>「亞紗花說過，迎接新年之前首先要徹底地進行大掃除，\n這可是日本的風俗文化」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_03.mp3
+msg,1,<outline width=2 color=black>「雖然說拉萊耶的掃除基本上都是用機械進行，\n但是偶爾像現在這樣自己清潔衛生，能直接感覺到變得乾淨還挺好的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_04.mp3
+msg,1,<outline width=2 color=black>「不過，徹底打掃乾淨還是很費勞力的。\n一旦開始打掃衛生之後，就會連平常不注意的地方都想打掃乾淨……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_05.mp3
+msg,1,<outline width=2 color=black>「最近回過神來就發現自己的東西變多了……\n光是整理都要花上不少時間」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_06.mp3
+msg,1,<outline width=2 color=black>「誒？雖然有你的幫忙我會輕鬆很多……但是，也沒這必要。\n自己的房間還是要自己來打掃乾淨」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_07.mp3
+msg,1,<outline width=2 color=black>「而且，我也有不想要你碰的東西――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_08.mp3
+msg,1,<outline width=2 color=black>「我才說完，你別碰那個箱子！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:shy,miliam,0,-350,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+wait,0.3,
+endwait
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102805/adv/sound/fav102805_01_09.mp3
+msg,1,<outline width=2 color=black>「哈、哈……沒、沒有看到箱子裡面吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「沒看到」,選項2　「為什麼要這麼慌張？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_10.mp3
+msg,1,<outline width=2 color=black>「那、那……就好了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_11.mp3
+msg,1,<outline width=2 color=black>「女孩子的房間裡的東西，可千萬不要擅自觸碰。\n這次我就放過你，所以你要把這基本的常識記下來」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_12.mp3
+msg,1,<outline width=2 color=black>「我、我才沒有慌張哦？我也沒有慌張的理由，\n我只不過是在提醒你不要擅自觸碰別人的東西而已……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_13.mp3
+msg,1,<outline width=2 color=black>「我也沒有什麼怕被人看到的東西，你為什麼會覺得我在慌張？\n哈哈、啊哈哈……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_14.mp3
+msg,1,<outline width=2 color=black>「……等下，為什麼你從剛剛開始就這麼在意箱子的事情啊。\n你再怎麼拜託我，我也不會給你看箱子裡面的東西哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_15.mp3
+msg,1,<outline width=2 color=black>「你問我為什麼……那是因為，那個……\n女孩子也有不可以給男孩子看到的東西啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_16.mp3
+msg,1,<outline width=2 color=black>「好、好了，打掃房間這種小事我自己一個人幹就好了，\n要不你去廚房幫幫亞紗花打掃吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_17.mp3
+msg,1,<outline width=2 color=black>「廚房是為大家煮飯的地方，所以比起打掃我個人的房間，\n你還是應該去廚房幫忙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_18.mp3
+msg,1,<outline width=2 color=black>「好了，你知道的話就趕緊去啊！　不過，千萬不要在走廊上奔跑哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102805/adv/sound/fav102805_01_19.mp3
+name,<outline width=2 color=black>米婭姆・莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_20.mp3
+msg,1,<outline width=2 color=black>「唉……太好了。這箱子被發現的時候我還在想會發生什麼事。\n從今以後還是要把這箱子放到更不顯眼的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_21.mp3
+msg,1,<outline width=2 color=black>「其他的東西還好，但是隻有這個箱子得想盡辦法不讓別人發現」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102805/adv/sound/fav102805_01_22.mp3
+name,<outline width=2 color=black>米婭姆・莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「如果被發現我有這種玩具的話，那就不是保護風紀的時候了……\n嗚嗚，為什麼我要因為興趣而把這種東西……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

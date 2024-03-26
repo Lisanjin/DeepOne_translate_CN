@@ -1,0 +1,104 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你突然來找我……而且還帶著酒。\n真是稀奇啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「……確實，我最近都沒有去你那邊。\n所以，你就過來找我了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我當然不討厭這樣……只是覺得有點意外」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你為什麼這麼在意我的事情呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「因為我們是同伴」,選項2　「需要理由嗎？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「因為是，同伴……嗎……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……能面不改色地說出這種話。\n我以前的同伴裏也有這樣的人呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，現在回想起來……真是覺得太可惜了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……當然啦，你和其他人一樣……\n都是我最好的同伴」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_09.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……我或許沒有資格……\n被大家稱作夥伴」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為我……欺騙了大家」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在幻夢境中想索，接觸納克特原書，解除對拉萊耶的封鎖。\n同伴們為此拼上了性命」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是只有……只有我……為了其他目的\n不斷潛入幻夢境中」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對不起……要是告訴你理由，你一定會\n看不起我吧。所以……這是秘密」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……如果有一天，我向你坦白一切的話……\n那一定是訣別的時刻了吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為我發誓要實現的願望……肯定和你們的願望\n有衝突」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我知道這一點，還把你們稱作夥伴\n都是為了方便自己行事而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……所以，每當你對我好，逗我開心的時候……\n我的心就像是被人緊緊勒住一樣痛苦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我清楚地知道，你現在肯定不會深究……\n請原諒我的任性……為了稍微能讓自己輕鬆一下而說出那樣的話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,
+msg,1,<size=30><outline width=2 color=black>「我真的又卑鄙又狡猾……是一個討人嫌的女人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……啊，肯定是因為今天的酒很苦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「喝不了苦酒的話，不用勉強來陪我哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100404/adv/sound/fav100404_13_22.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

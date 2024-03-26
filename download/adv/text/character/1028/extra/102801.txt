@@ -1,0 +1,117 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,1,255
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:unique,miliam,0,-220,0.5,0.5,,,,
+playse,/download/sound/se/se_046.mp3
+endwait
+wait,1
+endwait
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_01.mp3
+name,<size=27><outline width=2 color=black>米婭姆・莉芙拉</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「等等。你知道現在幾點了嗎？\n現在都快要12點了啊？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_02.mp3
+msg,0,<size=30><outline width=2 color=black>「……我現在作為拉萊耶治安的守護者問你，\n你現在想去哪？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「……資料室」,選項2　「熟人的房間」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_03.mp3
+msg,0,<size=30><outline width=2 color=black>「資料室……嗯，資料室？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_04.mp3
+msg,0,<size=30><outline width=2 color=black>「看來你這個人還真是個路癡。\n資料室的話，在之前的路口就該右拐了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_05.mp3
+msg,0,<size=30><outline width=2 color=black>「如果可以的話就由我來帶路吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_06.mp3
+msg,0,<size=30><outline width=2 color=black>「……哈啊。與其這樣道歉\n還不如一開始就不要撒謊 」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_07.mp3
+msg,0,<size=30><outline width=2 color=black>「你在拉萊耶的熟人，那得是女性吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_08.mp3
+msg,0,<size=30><outline width=2 color=black>「你為什麼要，一邊躲開我的眼神，一邊用這麼模糊的答案搪塞我、\n還是說，你心裏有鬼？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_09.mp3
+msg,0,<size=30><outline width=2 color=black>「你現在說真話的話還來得及，我還不會把你送到反省房哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_10.mp3
+msg,0,<size=30><outline width=2 color=black>「……原來如此，去別人那過夜啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_11.mp3
+msg,0,<size=30><outline width=2 color=black>「……誒？去別人那過夜！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_12.mp3
+msg,0,<size=30><outline width=2 color=black>「什、什、什麼……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_13.mp3
+msg,0,<size=30><outline width=2 color=black>「骯髒！太骯髒了！你這個傢伙！把拉萊耶當成什麼地方了啊！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_14.mp3
+msg,0,<size=30><outline width=2 color=black>「這裏是魔術士們，為了實現挑戰魔術奧秘這一偉大夢想而聚集的地方\n……而你……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_15.mp3
+msg,0,<size=30><outline width=2 color=black>「先不說教你了！現在最重要的是，把你這樣的性欲大魔王送到\n反省房裏，等等……你在笑什麼啊！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_16.mp3
+msg,0,<size=30><outline width=2 color=black>「誒，這是……水杯？什麼啊……咖啡？慰問品？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_17.mp3
+msg,0,<size=30><outline width=2 color=black>「但是，你不是為了去別人那過夜才出來的嗎……為什麼\n還拿著這種東西……誒？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_18.mp3
+msg,0,<size=30><outline width=2 color=black>「難道……一開始就是為了給我送慰問品才出來的嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_19.mp3
+msg,0,<size=30><outline width=2 color=black>「……啊，嗯。慰勞的話就不需要了。\n巡邏本來就是我的職務——不對！先不說這些！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_20.mp3
+msg,0,<size=30><outline width=2 color=black>「你，你這個傢伙，難道一開始就想戲弄我嗎……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_21.mp3
+msg,0,<size=30><outline width=2 color=black>「可惡……！ 收到東西我很開心，你來慰勞我我也很感謝，\n但是你這麼拿我尋開心我很難就這麼感謝你……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102801/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102800/adv/sound/fav102803_01_22.mp3
+msg,0,<size=30><outline width=2 color=black>「既然這樣的話，一開始就坦誠地說出來不就好了嗎？\n為什麼要戲弄我呢，總之…….謝謝你了！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

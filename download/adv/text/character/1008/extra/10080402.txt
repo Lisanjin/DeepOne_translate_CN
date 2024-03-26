@@ -1,0 +1,123 @@
+name,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,color_0_0_0,0
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,holy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holy,0,0,0,0,,,,
+imgconf,holy,holy1,0,-730,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，唔……大小，姐……請等我，一下……現在，我就過去，等……\n唔，嗯……為什麼……等等……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不是……不是這樣的……我怎麼會，做出對你……嗯」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真的，對不起……真的真的對不起……\n我什麼，都沒有做到……唔，唔……唔啊……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_03.mp3
+clickwait,,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,1,,,,,,,,,,
+endwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>……</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………</outline></size>,,,,,,,,,,,
+clickwait,,,,,,,,,,,,
+endwait
+bg,download/bg/bg_10020200.jpg,1.5,,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,holy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:sad,holy,0,0,0,0,,,,
+imgconf,holy,holy1,0,-730,,,0,1.5,1.5,0.5
+endwait
+endwait
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼，啊……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_04.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0.5,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……對不起，我竟然打哈欠了……\n不好意思，讓你看到了我不成體統的樣子」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那個，其實我夜裏醒了。\n在那之後就一直沒睡著，現在有點睡眠不足呢……所以」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_06.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「你沒事吧？」,選項2　「你做噩夢了嗎？」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒事的。我倒沒有身體不好。\n因為還沒有到影響想索的程度，所以不必擔心」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_07.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「本來，身體管理這方面也應該要做到完美才對……\n可我做了個噩夢……所以，就不敢睡覺了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_08.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，沒錯呢……\n我夢到了我人生中，最差勁，最壞的瞬間了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_09.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為害怕看到夢的後續，所以怎麼也睡不著」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_10.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這其實是我，做過很多次的夢呢，\n但是至今我都還沒有習慣」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_11.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「既有悲傷，還有後悔……以及自己暴露無遺的脆弱，那種深深的無力感」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_12.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:sad,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我還是，像個孩子似的。\n只是做了個惡夢了什麼的就睡不著了……說到底，就是個夢而已」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_13.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「你在意夢的內容嗎……？\n哈哈，居然想要揭露女性的夢，真是個壞心眼的人啊」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_14.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:smile,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，沒有必要道歉的。其實我也沒有不高興」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……倒不如說，我可以把所有的事情都告訴你，因為如果只是這樣\n思考著自己的內心，只會感到困惑而已」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holly,0,-160,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……要不，還是下次吧。\n如果有機會的話……到那時候，我可能就會告訴你的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在的話需要集中想索。\n在這個幻夢境裏，不知道會從哪里出現敵人」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_18.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……話是這麼說，但是我這麼個打哈欠的人\n可能沒什麼說服力吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/100804/adv/sound/fav100804_12_19.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

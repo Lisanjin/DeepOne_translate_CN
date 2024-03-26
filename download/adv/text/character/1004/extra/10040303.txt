@@ -1,0 +1,121 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你想瞭解……我的事情？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，就算你這麼說……說實話我覺得有點晚了……\n你具體想瞭解什麼呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:unique,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……什麼啊，竟然這麼理直氣壯地回答……不知道。\n那麼，你為什麼要說想要瞭解我的事情呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「算了……總而言之，我先試著自我介紹一下吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:shy,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「重新來一遍，真是有點不好意思呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我的名字是達納・達蕾露・<ruby>道明寺</ruby>。和亞紗花一樣，\n出身於洛夫克拉夫特財團所屬的孤兒院，四年前開始在拉萊耶成為想索者」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「興趣，或者說是喜歡的東西……是酒哦。\n雖然有點不好意思，酒我比其他人喝得都多」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「相反我不太喜歡氣味太濃的香草類……\n比如說紫蘇葉以及香菜等等」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+spine,download/adv/spine/Mark12,em1,default,animation,0,110,220,0.65,0.8,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「……那個，還要往下說嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_09.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+select,選項1　「特長是？」,選項2　「說一段羞恥的回憶吧」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「還要說啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「特長……我想一下，應該是剪貼畫吧……\n我可是心靈手巧哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但，也不是特別有用的特長……但是，\n以前的同伴都誇讚我……即使現在我也時常會做一下」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_12.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:shy,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔，和以前的同伴喝酒喝到爛醉的時候，\n雖然我完全不記得了……聽說是把在場的所有人的衣服都扒掉了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在那之後的一段時間裏，就被大家稱作“脫衣將軍”了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0,,,,
+spine,download/adv/spine/Mark3,em2,default,animation,0,110,220,0.65,0.8,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「誒，你讓我說了什麼……啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_15.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是，仔細想想，這樣說起自己的時候，\n總會想起以前的同伴們」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是因為大家對我來說，都是很重要的存在吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:surprise,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？　你說……有點不甘心，怎麼了嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不會是因為我總說起過去的同伴吧……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……嘻嘻，正納悶你怎麼突然說些奇怪的話，\n原來是在嫉妒這個啊，你這個人真是」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，我們從現在起就一起積累回憶吧\n請讓我有一天也能開心地說起我們的回憶」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……在遙遠的將來，如果有一天還能像現在這樣一起聊天，\n我希望我們能有聊不完的回憶」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:smile,dana,0,-180,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，如果真有那麼一天，一定會無比的幸福吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我真的非常……期待」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100403/adv/sound/fav100403_10_24.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

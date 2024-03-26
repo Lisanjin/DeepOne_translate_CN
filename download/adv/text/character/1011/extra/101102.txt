@@ -1,0 +1,134 @@
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+mask,bg1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,kirie1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_b,body:anger,kirie,0,0,0,0,,,,
+imgconf,kirie,kirie1,0,-485,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈，……哈……糟，糕……好像有點勉強，自己了……\n這種程度的訓練就……我真是……丟人……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不妙，呢……腳沒力氣……至少，要堅持到房間。\n唔，咕……！」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_02.mp3
+clickwait,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0.5,,,,,
+endwait
+anm,jump,kirie,0_-120_10_1,0.3,0
+spine,download/adv/spine/Mark3,em1,default,animation,0,150,240,0.65,0.8,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「——呀~！？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_03.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em1,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「誒，這冰冷的觸感……啊，你這是……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_04.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「給你送喝的」,選項2　「不要太勉強自己」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「這是，給我的……？　為什麼在這時候……？」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_05.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是說你很關注我呢。\n真是愛操心呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好吧……我就不客氣了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_07.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>姬莉葉・桐原</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……區區訓練就倒下，\n讓你見笑了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_08.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……喝的？　不是，我哪里值得你如此關照——」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_09.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark4,em2,default,animation,0,130,220,0.65,0.6,0.2
+endwait
+msg,1,<size=30><outline width=2 color=black>「——不，不用這樣硬塞啦。\n好好好，我喝，我喝就是了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_10.mp3
+clickwait,,,,,,,,,,,,
+spineoff,em2,0
+endwait
+endif,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……嗯，咕咚……哈~……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_11.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……謝謝，真是幫大忙了。\n沒想到你會如此周到」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_12.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……沒有戰鬥能力更應該提高輔助能力。\n我很感謝您的好意，但我覺得沒必要太過在意」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「有你在我們才能在幻夢境戰鬥。\n你就是我們的救命稻草，是獨一無二的存在」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只要有你在，我們就能受到鼓舞」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話雖如此，這種關心……\n感覺還不壞」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_16.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一直以來，我更多的是負責支援，\n這種感覺很新鮮」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_17.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在想來，傭兵團確保補給路線和作戰計畫……\n都是後方人員在忙前忙後呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_18.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「然而，“那個人”總是單打獨鬥，\n無視命令獨斷專行……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_19.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……卻常常歪打正著」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_20.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我嚮往著那個人……努力不停追趕……\n依舊望塵莫及」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_21.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「那背影實在太耀眼了……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_22.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？　我臉紅了？\n沒，沒有的事啦，你看錯了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_23.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「不是那種輕浮的情愫……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_24.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/101101/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我先回屋了，謝謝你的飲料。\n告辭」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/101100/adv/sound/fav101100_02_25.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

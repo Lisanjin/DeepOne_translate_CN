@@ -1,0 +1,101 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你現在有時間嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不，也不是大不了的事……\n只是我有件無論如何都在意的事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「前幾天，你去資料室調查聖奠教的事情之後，\n好像經常沉思……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我也很在意那裏有什麼，就去了資料室。\n但是……不知道為什麼就是找不到聖奠教相關的資料……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……給我一種……簡直就像是誰藏起來了一樣的感覺」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「我去的時候已經是那樣了」,選項2　「……」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……怎麼什麼都不說呢。\n如果你否定的話，我就相信你了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你再稍微……變得狡猾點也沒關係」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_08.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我覺得我沒有找到那些資料，\n一定有什麼意義」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一定是有什麼理由才被某些人藏起來了……\n也許是為我著想」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以……我不會再提這件事了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，有一點。\n我可以說一些猜測的話嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_12.mp3
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……如果因為我，你感覺到負擔的話……\n希望能讓我和你一起承擔」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我並不可靠……也許，在你的眼中\n我是應該保護的對象……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:anger,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，我不想一直被你保護……我也想\n成為你和大家的力量……所以我不會硬逼你現在說出來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「等你相信我的強大之時……\n請把你心裏的想法分享給我」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這些就是我想說的……對不起，是不是有點突兀」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，這是現在我的願望。\n邂逅了許多人，我想要改變從今往後的自己」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不要從任何真相上移開視線，和重要的人一起，接受、背負任何真相\n……我想變成這樣堅強的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_13_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

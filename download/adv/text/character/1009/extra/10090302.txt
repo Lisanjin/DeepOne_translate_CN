@@ -1,0 +1,110 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,,
+endwait
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:surprise,irina,-20,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「之前那次抱歉啊。我突然倒下了。\n……對，已經沒問題了。身體也已經沒事了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒有騙你啦。真的已經恢復了。\n……為什麼要這麼多疑啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你的能力也治不好？\n……我有說過那種話嗎。我忘了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……和其他別的人說的弄錯了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「我沒有弄錯」,選項2　「不要再騙我了」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……唉。這時候你能當做是弄錯了的話，我反而會高興呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，你也不是那種能坐視不理\n的類型啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……大意了。\n雖說是變弱了點，但沒想到我會說漏多餘的事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就算我說……我沒有騙你，你也不會相信的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「唉……能當做什麼都不知道的話，就好了呢……\n還真是愛管閒事啊，你……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_10.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「身體不舒服的原因……是我所擁有的魔導書」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這本魔導書，蘊藏有很優秀的破壞力」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是啊，魔導書是超越人類智慧的異物，\n不是實現願望的魔法道具」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「力量，是伴隨著代價的……特別是，力量越大代價也越大」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我會拐彎抹角地說也沒辦法啊。\n總之我的魔導書，每次使用都會消減使用者的生命」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這之前在幻夢境裏身體不舒服也是。\n力量使用的太多了，所以反作用也大了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:sad,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「之前的話還能堅持的住，\n最近魔導書的力量，使用得太多太久了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……你是不是想問，為什麼\n我要如此拼命，根本無法理解呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，我不是為了讓誰理解我而戰鬥著」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……只是，為了減少曾經像我的父母一樣被聖奠教利用而陷入不幸的人，\n就算只能減少一個也好……然後也是為了我自己的復仇……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:unique,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以我，會毫不猶豫地使用這力量。\n因此，就算是消減我的性命——我也做好思想準備了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:normal,irina,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……所以，不用太在意我的事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「連性命都能捨棄，被仇恨蒙蔽了雙眼的愚蠢的女人……\n你沒必要和我牽連上」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100903/adv/sound/fav100903_09_23.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

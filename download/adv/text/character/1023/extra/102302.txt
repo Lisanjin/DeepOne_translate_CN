@@ -1,0 +1,111 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我想你應該知道，我們失想者是由漂泊在幻夢境中的人類，經過重新構建\n獲得的新人格而形成的非人之物……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在被重新構建的階段，會失去原有的記憶……這是一件很普通的事\n但事實上，我繼承了幾乎沒有損失的記憶」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「比起說是殘留的記憶……不如說更像是我閱讀了一個陌生人的人生之書\n這樣描述應該更容易理解吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「然後，從過去我的“記錄”中，我知道了一件事情」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_04.mp3
+clickwait,,,,,,,,,,,
+stopbgm,0
+msg,1,<size=30><outline width=2 color=black>「――我，有一個被我留在現實世界的孩子」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「真叫人大吃一驚」,選項2　「男孩？女孩？」
+if,select_===_1,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……果然，是這樣啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為和你，那個……一起共度過夜晚。\n所以，我覺得先把這件事告訴你會比較好……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，只經歷過……一次。\n況且，還是另一個我做的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個……那……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………剛好只有那部分的記憶缺失了。\n我甚至不知道那孩子的性別和名字」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「自己開的話頭，卻只能說到一半……非常抱歉」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_11.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……聽了這些話，果然會防備起來吧……？\n其他人都還很年輕，像這樣子的，只有我吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……在你看來，我是個大媽吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不用，沒事的。不用安慰我……\n本來再加上在幻夢境中度過的歲月，把我當大媽對待也是理所當然的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……要我自己說的話，為什麼……我的心理年齡怎麼就這麼……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_15.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:surprise,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你說……沒有這種事情，那是……真心話嗎。\n還請不要因為擔心我，而說出安慰的話……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:shy,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「――呵呵，漂亮什麼的。你這麼一說\n弄得我都有些難為情了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你，真是個溫柔的人。啊啊，感謝上天能讓我與你相遇。\n你能來到這裏，真是太好了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「如果……我是說如果。\n你遇見了我的孩子，那時……也請你同樣溫柔地對待那個孩子」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我是，不行的。\n在那個孩子看來，我就是一個丟棄了自己的孩子、令人憎惡的母親」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「儘管如此……我還是如此地在意那孩子，可能這就是所謂的父母心吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「明明是原來人類的孩子，並非是自己的親生孩子\n真的是一件很不可思議的事情呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102300/adv/sound/fav102300_02_23.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

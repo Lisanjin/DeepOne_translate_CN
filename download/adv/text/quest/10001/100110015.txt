@@ -1,0 +1,273 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0.5,,,
+endwait
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ulusura1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102102/adv/atlas/stand_a,body:unique,ulusura2,0,0,0,0,,,,
+imgconf,ulusura2,ulusura1,0,-850,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name, 
+msg,0,<size=30><outline width=2 color=black>如果吉澤爾・芭德薇——這個天才消失了，\n那站得比我高的人，又會少一個。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>這世上不需要有比我更耀眼的人……我不想讓旁人的榮光刺到自己的眼睛。\n沒錯……因為那光芒會將我掩蓋……</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>終將榮耀加身的人是我才對，不是你們。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>永別了，”<ruby>以光自傲之劍</ruby>”。\n那些你本該得到的名譽和榮耀，將來都會被我收入囊中。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.5
+endwait
+name, 
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「危險！快躲開！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:surprise,ulusura,300,-180,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——誒？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――！」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,
+name, 
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:sad,ulusura,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「糟——？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,,,
+endwait
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name, 
+msg,0,<size=30><outline width=2 color=black>——糟糕。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>放在平時，這種攻擊對我來說根本算不上什麼，\n但因為剛才走神，我沒來得及防禦。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>不是吧……我……我的榮耀之路，\n就這麼到此為止了麼？</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>為什麼，我的人生……總是這樣……</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0.5,255
+endwait
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:anger,ulusura,0,-180,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「別開玩笑了……我不要這樣……絕不允許這種事發生！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「幫助烏爾蘇拉」
+if,select_===_1,,,,,,,,,
+endif,,,,,,,,,,
+stopbgm,0.5
+endwait
+playse,/download/sound/se/se_020.mp3
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:surprise,ulusura,0,-180,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「——唔？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0,
+spriteoff,ulusura,0.5
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:anger,ulusura,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「呃……你幹嘛……！突然就撲過來，你到底在想什麼……？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0.5,,,
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「吉澤爾！敵人和烏爾蘇拉分開了！快趁現在……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:anger,gizel,300,-120,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「克勞索拉斯——用你的光消滅所有敵人吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name, 
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,-50,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Shine,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash1_Blue,em2,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0.5,,,
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,flau,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「烏爾蘇拉……你沒事吧……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,flau,150_150_150,0.0001,0
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:anger,ulusura,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……擦傷了胳膊肘」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,flau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:normal,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「能這樣就躲過一劫，算是萬幸了吧。\n沒有他幫忙，你受的可能就不只是這點擦傷了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,ulusura,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……你為什麼要那樣做……\n為什麼不惜涉險救我」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:sad,gizel,-300,-120,0.5,0.5,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「對我們來說，那也不是能輕易做出的行動……\n而他在那種時候，就是會毫不猶豫地行動起來」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「我們是同伴，出手相助是理所當然的……\n他肯定會這麼說」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「……正因為他是那樣的人，所以我們也能信任他」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:surprise,ulusura,300,-180,0.5,0,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「————哈」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:normal,ulusura,300,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「……信任？因為是同伴？\n真想不到這是擠掉自己姐姐，成為繼承者的人說出來的話」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:sad,gizel,-300,-120,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「唔……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「喂，我們剛幫了你哎，你這語氣也太嗆了吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:anger,ulusura,300,-180,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我壓根沒請求你們幫我。\n再說剛才那算什麼危險，靠我自己也能解決」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……你什麼意思啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ulusura,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:smile,gizel,300,-120,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「亞紗花，別說了。\n現在還有些敵人沒打倒，得先解決那邊才行」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,gizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯…」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,gizel,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102102/adv/atlas/stand_b,body:sad,ulusura,300,-180,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>烏爾蘇拉・阿庫哈特</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,flau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「烏爾蘇拉的心……一直很冰冷……很悲傷……\n如果能將大家溫暖的情感……傳遞給她，就好了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

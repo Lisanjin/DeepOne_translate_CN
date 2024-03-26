@@ -1,0 +1,125 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然被關進拉萊耶之後我很懷念地上，\n但是這樣的生活也很方便呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「中央的人工庭園，你去過沒？有豐富的植物，天花板上倒映著\n天空的影像，甚至還有風在吹，我都快忘記這裏是海底了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「除此之外訓練室和娛樂用的圖書館也很齊全，\n……地以久居為安，說的就是這種情況嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，對了對了。而且啊，這裏各個地區都有不同的浴場哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「居住區是羅馬風格的，研究區是和風的露天浴場。\n另外還有芬蘭式的桑拿也是設備齊全哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「設計拉萊耶的人，到底是有多喜歡泡澡啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，我也喜歡泡澡，這下能好好地轉換心情了呢。\n你也去試試看，感受一下各種風格吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「要不一起去？」,選項2　「一個人泡好寂寞啊」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_08.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark11,em1,default,animation,0,200,180,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………哈？你居然會說出這麼不著調的話\n害得我有一瞬間都停止思考了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_09.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你啊，說話這麼不正經，會被別人當成是個輕浮的傢伙哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……也對，這裏只有你一個男性呢。\n那麼寬大的浴場裏只有一個人，確實會覺得有點寂寞呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那，要不一起去？……開玩笑的。這當然是不可能的啦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:shy,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「幹、幹嘛啊，為什麼表情那麼遺憾啊。\n這種事情，我怎麼可能會做嘛！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:anger,asaka,65,-120,0.5,0,,,,
+spine,download/adv/spine/Mark6,em2,default,animation,0,200,210,0.5,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼叫請你想想辦法，我才不想呢！\n別把玩笑當真啊！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spineoff,em2,0,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你啊，偶爾就會不著調呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒？你說……穿泳裝」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+spine,download/adv/spine/Mark12,em3,default,animation,0,180,190,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就這麼想一起去泡嘛……？有點感興趣了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_17.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,0,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「玩笑，啊……真的嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哼，這次就信你一回吧……只有這次哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_19.mp3
+clickwait,,,,,,,,,,,
+spriteoff,asaka,1,,,,,,,,,
+endwait,,,,,,,,,,,
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,0,0,0,0,,,,
+imgconf,asaka,asaka1,90,-480,,,0,1.5,1.5,0.5
+clickwait
+msg,1,<size=30><outline width=2 color=black>「……說到底，泳裝什麼的……那麼突然……我什麼準備都……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那要不，用訓練室試試看吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100102/adv/sound/fav100102_06_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1,,,,,,,,,,
+endwait,,,,,,,,,,,

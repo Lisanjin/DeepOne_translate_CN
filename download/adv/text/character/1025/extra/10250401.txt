@@ -1,0 +1,115 @@
+name,
+msg,0,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,,
+endwait
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:surprise,yoshino,-10,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——你想要我教你劍術嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0.,,,,
+msg,1,<size=30><outline width=2 color=black>「原來如此，你以前一直是被別人保護著的，\n所以也想要成為真正的男子漢啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「確實，我已經習慣教別人戰鬥了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:anger,yoshino,-10,-200,0.47,0.,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……我醜話說在前頭，\n你拿起劍，能夠做什麼呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「能保護自己」,選項2　「也許能幫上忙」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看你真不像那種只顧自保的人啊。\n如果，有人在你面前身陷囹圄呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你會沖上去吧……而且，因為你力量微弱，又無法擺脫困境，\n反而會搭上自己的命」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:anger,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你一定要，更加清楚自己的資質和作用」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果你想要保護自己的話，就老老實實地被我們保護，\n儘量不要使自己接近危險」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:anger,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……如果你硬要這樣的話，我可得多教訓你一會了哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「想要幫助同伴的想法，本身是很不錯的。\n但是，如果你想要幫助我們的話，就不要弄錯努力的方向」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「半吊子的力量，只會把自己逼入絕境。\n如果你不在了，留給我們的就只有不幸的未來」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_11.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你太貪心了……你已經派上足夠的用場了。\n除了你，誰還能去除幻夢境的影響呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你要知道，如果失去了你，就會犧牲更多人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……不要在我面前露出這樣的表情。掉眼淚可是沒有用的哦。\n我理解你不甘的心情，但是光有幹勁是不行的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……話雖如此，你都來拜託我了，我也不能讓你空手而歸。\n我不想教你在前線戰鬥的方法，作為替代，我來教你一些其他東西吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我要教你的是關於魔術的知識。\n當然我知道，你的魔術才能比較一般」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:smile,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，多具備一點知識的話，說不定可以避開危險。\n使用一些技巧，說不定可以事先察覺到危機」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣一來，當同伴的魔術出現問題的時候，\n你說不定可以察覺到……怎麼樣？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:smile,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵，你能想通，這很不錯。\n我們趕緊去準備教學用的教案和課題吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_19.mp3
+clickwait,,,,,,,,,,,
+spriteoff,yoshino,0
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:sad,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1000,,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……本來，如果日復一日地努力鍛煉的話，總有一天會有回報的。\n話雖如此……事實上卻沒那麼簡單」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我已經，不想再失去任何人了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_11_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

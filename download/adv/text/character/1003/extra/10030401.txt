@@ -1,0 +1,117 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……你好」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你出了很多汗啊……還有這身訓練服。\n難道你是在鍛煉身體嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:unique,catia,30,-40,0.5,0,,,,
+spine,download/adv/spine/Mark5,em1,default,animation,0,140,140,0.4,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「之前明明約好了一起的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_03.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「還有，汗不好好擦的話……請你先不要動」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，請不要動……一條手帕不礙事啦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……這樣看來，果然很有男子氣概啊。\n個子高，體格也和女性完全不同……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，不好意思！　讓你特意蹲下……！\n我並沒有不好擦的意思……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……誒呀？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那個……難道是身體不舒服嗎？\n或者說累壞了嗎……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_09.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「沒有那回事」,選項2　「好像是這樣」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，臉色比平時……因為我一直都在看你，所以我知道哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「鍛煉身體是很好的，但是請你不要亂來。\n須知過猶不及哦……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_11.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:anger,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不要那麼漫不經心的……請馬上休息……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「希望你能稍微珍惜一下自己的身體……\n如果你有什麼事的話，我……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:unique,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「…………與其道歉，不如一開始就注意一下」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+stopbgm,0.5
+endwait
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對了……請過來這邊。對，在沙發那邊……\n嗯……來，請把頭枕在這裏」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……？　是的，是膝枕哦……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「以前，媽媽曾這樣對我做過同樣的事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「她在我小的時候就潛入了幻夢境，\n我對母親幾乎沒有什麼記憶……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「只有……把頭放在母親膝上時的安心感，\n還隱約地留在了我的記憶中……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以我心想，如果你累了的話也在我膝蓋上躺一下」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也許在我膝蓋上有點不舒服，\n不過你要是……願意的話？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……好的，來吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100304/adv/sound/fav100304_11_22.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

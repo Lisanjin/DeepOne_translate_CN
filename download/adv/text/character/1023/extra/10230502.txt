@@ -1,0 +1,152 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_01.mp3
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,1,<outline width=2 color=black>「這個領域，盡是些有趣的東西呢，真讓人眼花繚亂啊。\n接下來我們去逛哪個攤位好呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_02.mp3
+msg,1,<outline width=2 color=black>「啊、你看。好像那個攤位，好像可以射擊啊。\n看來，這子彈是由軟木製成的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_03.mp3
+msg,1,<outline width=2 color=black>「要玩玩看嗎？　話雖如此，但我完全沒有開槍的經驗\n感覺完全射不中啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_04.mp3
+msg,1,<outline width=2 color=black>「如果可以放出鳥類使魔的話，那就另當別論了\n但是那違反規則了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「沒有人在看、不挺好的嘛？」,選項2　「我來幫你拿下獎品」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_05.mp3
+msg,1,<outline width=2 color=black>「不，我們不能通過這種不正當行為來獲取得獎品。\n為了創造回憶，我也想靠自己的力量來試試看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:anger,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_06.mp3
+msg,1,<outline width=2 color=black>「那，我要上了哦……好好、瞄準…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:anger,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-1150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_07.mp3
+msg,1,<outline width=2 color=black>「……嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102305/adv/sound/fav102305_02_08.mp3
+msg,1,<outline width=2 color=black>「啊……果然打不中呢。\n――呀！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,4,15,15
+playse,/download/sound/se/se_046.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_09.mp3
+msg,1,<outline width=2 color=black>「突、突然吹來了一陣風……啊、獎品倒下了……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_10.mp3
+msg,1,<outline width=2 color=black>「誒？　不是，剛才那是風吹倒了，並不是我擊倒的……\n只能憑自己的實力獲得獎品哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_11.mp3
+msg,1,<outline width=2 color=black>「確、確實，運氣也可以說是實力的一種……\n嗯唔……真的可以這樣收下獎品嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_12.mp3
+msg,1,<outline width=2 color=black>「真的嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_13.mp3
+msg,1,<outline width=2 color=black>「……那麼，就讓我見識下你的英姿吧。\n要加油哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_14.mp3
+msg,1,<outline width=2 color=black>「――……啊，射中了……獎品倒下來了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_15.mp3
+msg,1,<outline width=2 color=black>「好厲害……這樣，就能拿到獎品了吧。\n恭喜你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_16.mp3
+msg,1,<outline width=2 color=black>「誒……給我，是說……送給我嗎？　\n但，這是你贏到的東西呀……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_17.mp3
+msg,1,<outline width=2 color=black>「……不，這樣說就顯得不解風情了。既然是你送的禮物，\n那我就心懷感激地收下了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_18.mp3
+msg,1,<outline width=2 color=black>「謝謝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_19.mp3
+msg,1,<outline width=2 color=black>「這是打靶的獎品……看起來像是玩具，\n是怎麼玩的呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_20.mp3
+msg,1,<outline width=2 color=black>「是風車啊……啊。\n原來如此，像這樣朝它吹氣，這樣玩的對吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_21.mp3
+msg,1,<outline width=2 color=black>「呼呼……咕嚕咕嚕地轉好可愛啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_22.mp3
+msg,1,<outline width=2 color=black>「……我想，像這樣親子一起來逛祭典的人們\n應該不少呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_23.mp3
+msg,1,<outline width=2 color=black>「然後，父母也像這樣，給孩子們買玩具……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:sad,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_24.mp3
+msg,1,<outline width=2 color=black>「其實，我想多讓那孩子——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102305/adv/sound/fav102305_02_25.mp3
+msg,1,<outline width=2 color=black>「……我說，要不我們再去玩一次射靶子吧？\n我還想要一個風車……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102305/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102305/adv/sound/fav102305_02_26.mp3
+msg,1,<outline width=2 color=black>「嗯，謝謝你陪我任性。\n那我們就加把勁兒再拿一個獎品回來吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

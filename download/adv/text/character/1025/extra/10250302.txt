@@ -1,0 +1,114 @@
+name,
+msg,0,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm005.mp3,0.5,,
+endwait
+mask,mask1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,mask,0,0,0,0
+imgconf,mask,mask1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,0,0,0,0,,,,,,,,,
+imgconf,yoshino,yoshino1,-300,650,,,0,1.5,1.5,0.5,,,,,,
+endwait
+wait,2
+endwait
+spriteoff,all,1
+endwait
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這捆識別牌嗎？這是學生們的東西。\n這裏應該記載著名字、從屬、血型等資訊吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「識別牌，是為了證明殞命於戰場的戰士的身份的，\n通常有兩張，一張留在遺體上，另一張帶走」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這一捆，是去世的學生們的。\n沒有家屬的騎士的識別牌，就由我收著」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我所培育的年輕人，有很多是受騎士團保護的孤兒。\n不知不覺間，都已經培養了這麼多人了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那些孩子們和我一樣，立志於大義，為了回應他們的理想，\n我本想盡我所能」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那樣一起度過的日子，現在我也牢記於心」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……記憶，是會隨時間流逝而淡薄的。\n有時候，遺忘會使人內心保持平靜」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:anger,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，也有絕對不能忘記的東西」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那些孩子們所相信的大義，以及他們確確實實曾在這個世界上活過，這些記憶……\n我必須背負著它們……這是，我的責任」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「為了把這個決心一直留在心裏，我就一直這樣帶著識別牌。\n因為這些牌的數量，正是我引入死地的學生的數量，如此而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_10.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「我想要幫助芳乃」,選項2　「……要不要起來走走？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:smile,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈……你這樣說我很開心，但還是要鄭重地拒絕你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我想要依賴這份溫柔……\n但是，我還有巴爾蒂克騎士團大將校的職務在身」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我必須是無愧於學生們的人。\n如果沒有別人的幫助就站不起來，那就沒臉見人了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……沒關係，請不要太在意」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_14.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:sad,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……現在的我，是不是一副要哭的表情？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_15.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唉……雖說不用擔心，但你一定會在意的。\n與其跟你說請讓我獨自背負苦難這種話，我們還是換一些令人輕鬆的話題吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「聊聊開心的話題，馬上就沒有這種令人傷感的氣氛了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_17.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對了。要不要去我房間裏，找找保存在圖鑒的影像作品？\n找點像美國喜劇那樣，輕快簡單的東西比較好」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_a,body:smile,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「偶爾看看這些也不錯吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102503/adv/sound/fav102503_09_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

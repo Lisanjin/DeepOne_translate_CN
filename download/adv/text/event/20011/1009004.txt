@@ -1,0 +1,438 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm039.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/29030102/adv/image/29030102.png,enemy1,0,-70,0.5,0.5,,,,
+playse,/download/monster/29030102/se/se_raging_in.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>戰輪鋼渦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em1,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+endwait
+spineoff,em1,0
+endwait
+spriteatlas,download/character/103002/adv/atlas/stand_b,body:anger,anna,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這是最後一擊了，超絕丸……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,1.0,0
+spine,download/adv/spine/blow_Blue,em2,default,animation,0,0,0,1,1.0,0
+playse,/download/character/103002/se/se_c03003_ef_hit.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait
+bg,download/bg/bg_10040100.jpg,1,255
+endwait
+sprite,download/monster/29030102/adv/image/29030102.png,enemy1,0,-70,0.5,0.5,,,,
+playse,/download/monster/29030102/se/se_raging_in.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>戰輪鋼渦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――、……、……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spine,download/adv/spine/Fire1,em1,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_038.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Fire1,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_038.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Fire1,em1,default,animation,0,300,0,1,1.0,0
+playse,/download/sound/se/se_038.mp3
+endwait
+wait,0.5
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……再見啦，超絕丸」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100806/adv/atlas/stand_a,body:sad,holy,-300,-160,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「總算是打倒了呢……感覺還是不太能釋懷」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……超絕丸，byebye」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:normal,silvy,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嘻嘻嘻……這股新力量，真是讓人感興趣呢。\n真想深入研究分析一下」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,300,-100,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「希爾薇……還有，你是叫霍莉來著？多謝你們幫忙了。\n只有我一個人，是贏不了超絕丸的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,300,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「因為有你們在……有同伴在，我才能贏！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,silvy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100806/adv/atlas/stand_a,body:sad,holy,-300,-160,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誒、是啊……呃、不用客氣……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,300,-100,0.5,0,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「超絕丸……我會跟這些人一起邁出新一步的。\n把我跟你的回憶放在心裏……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:surprise,anna,300,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「嗯……回憶？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:surprise,anna,300,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「咦，仔細想想，我跟超絕丸並沒有什麼回憶——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:normal,silvy,-300,-120,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嘻嘻嘻……安娜。激戰之後也累了吧？\n把這個喝了吧。能夠解乏哦。而且還是可樂味的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:normal,anna,300,-100,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哦哦，真的啊！謝啦！我收下了……嗯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,anna1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:sad,anna2,0,0,0,0,,,,
+imgconf,anna2,anna1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「嗚噗？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/103002/adv/atlas/stand_a,body:sad,anna,300,-100,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait
+shake,0.1,5,8,8,anna
+endwait
+anm,move,anna,300_-1000,0.5,0
+playse,/download/sound/se/se_020.mp3
+endwait
+spriteoff,anna,0.2
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,-300,-120,0.5,0.,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100806/adv/atlas/stand_a,body:surprise,holy,300,-160,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「突、突然倒下了……？！希爾薇大人，你剛剛讓她喝了什麼？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:smile,silvy,-300,-120,0.5,0.5,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「布麗吉特泡的紅茶」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100806/adv/atlas/stand_a,body:unique,holy,300,-160,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「為什麼……要做……那麼殘酷的事……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:normal,silvy,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「因為要是安娜剛剛恢復了正常，不是會很麻煩嗎」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:smile,silvy,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「沒事的，聽說喝了這紅茶就會失去一部分記憶。\n等醒來的時候，安娜應該就幾乎不記得這次發生的事了吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「記憶……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:normal,silvy,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊啊，不會對身體有惡性影響的，放心吧。\n我雖然也很好奇其中的原理，但已經通過臨床驗證了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100806/adv/atlas/stand_a,body:sad,holy,300,-160,0.5,0.5,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……布麗吉特大小姐」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:normal,silvy,-300,-120,0.5,0,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嘻嘻嘻……這次的想索也很充實呢。\n也順利跟安娜匯合了，這成果應該無可挑剔吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101905/adv/atlas/stand_a,body:smile,silvy,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「好了大夥兒，我們回去吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100806/adv/atlas/stand_a,body:sad,holy,300,-160,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「也是……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-430,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎麼說呢，蠻可憐的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+name, 
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10010100.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm031.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗚……感覺腦子昏昏沉沉的……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「在拉萊耶發生了什麼，又忽然被扔到了幻夢境……\n到這裏為止還勉強記得，但之後的記憶就很模糊了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「似乎忘記了什麼重要的事……又似乎並非如此……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:sad,anna,300,-100,0.5,0.5,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:surprise,holy,-300,-160,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊……安娜大人」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:surprise,anna,300,-100,0.5,0,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯？你是……呃，似乎沒見過……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holy,-300,-160,0.5,0,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……真的是幾乎沒有記憶了呢。\n我叫霍莉・哈穀李維斯。再次請你多多指教」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:normal,anna,300,-100,0.5,0,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「噢，請多指教啊，霍莉」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,-300,-120,0.5,0.5,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「霍莉。這位就是你們說的新人嗎……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,zizel,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holy,-300,-160,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是的……安娜大人，我來介紹一下。這位是我的主人，\n芭德薇家下一任當家，吉澤爾・芭德薇大人」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizel,-300,-120,0.5,0.5,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「請多關照，安娜」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:smile,anna,300,-100,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「喲」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,-300,-120,0.5,0,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「對了……好不容易見面，順便拉近一下關係好了，\n安娜待會兒要不要跟我一起？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「布麗吉特姐姐大人要開茶會哦。\n而且今天姐姐大人還會準備紅茶……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「姐姐大人泡的茶味道獨特，但很美味哦——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,anna,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:anger,holy,300,-160,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不可以，吉澤爾大人」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizel,-300,-120,0.5,0,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誒？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holy,300,-160,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「即便是吉澤爾大人，但要繼續這樣殘酷地對待安娜大人的話，\n我也是無法忽視的……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:sad,holy,300,-160,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「安娜大人遇到了難過的事……\n現在就請讓她一個人靜靜吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「咦……咦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holy,300,-160,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>霍莉・哈穀李維斯</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「安娜大人……請你堅強地活下去啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:sad,anna,300,-100,0.5,0.5,,,,
+anm,tint,holy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>安娜・露絲卡莉達</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「咦？啊、嗯……嗯？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:sad,anna,300,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「…………什麼意思？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0,,,,
+anm,tint,anna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誰知道呢……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,108 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,siruvi,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「噗呼……掉下來了、掉下來了。\n看長度和顏色，是亞紗花君的吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_01.mp3
+anm,move,siruvi,100_-250,0.8,1
+endwait,
+clickwait,,,,,,,,,,,
+anm,move,siruvi,-100_-250,0.8,1
+endwait,
+msg,1,<size=30><outline width=2 color=black>「然後……這是個卡蒂婭君的呢……呼唔呼唔。\n這個是――噢喲？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,-100,-250,0.5,0,,,,
+endwait,
+anm,move,siruvi,25_-120,0.8,0.5
+endwait,
+msg,1,<size=30><outline width=2 color=black>「幹嘛，想看啊。\n那你吱個聲不就好了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你問我在幹什麼，看不懂嗎？\n在採集毛髮啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「其實目前，我正在著手新的實驗呢。\n為此，我需要素質高的魔術士的毛髮」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:unique,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……想知道研究內容嗎？\n噗呼呼呼、不能告訴你呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_06.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「可我還想知道」,選項2　「是危險的研究嗎」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我懂得哦，那種心情。想要知道，想要理解，\n那種想法是人類作為智慧生命體的證明」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「可是，作為研究者，直到得出結論為止，\n都不會告訴別人自己的研究內容哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒准資訊會從哪里洩露出去，\n花了很多精力的到的結果，如果被別人搶走了，那可就慘了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，就算是你，也不能透露呢。\n抱歉哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不知道你是用什麼來定義危險的…，\n不過，不是會死人的研究呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「至少這一點你是可以放心的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……不過，除此之外或許會有其他影響……啊。\n不能再告訴你了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「等研究結束，得出實驗結果的時候，自然就什麼都知道了……\n噗呼呼呼呼呼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，樣品已經採集足夠了，\n我該回實驗室了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「時間是有限的。一秒鐘都不能浪費」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_16.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark8,em1,default,animation,0,130,150,0.65,0.5,0.5
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,siruvi,25,-120,0.5,0,,,,
+endwait,
+msg,1,<size=30><outline width=2 color=black>「我要去實驗室待一個通宵了。\n哎呀哎呀，會忙的不得了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_17.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，一想到能親眼看到研究成果，\n一下子就充滿了活力，真是不可思議」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「探究心和好奇心……這兩件事對研究者來說，\n是無法斬斷的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼我要告辭了。\n噗呼呼呼呼……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101900/adv/sound/fav101900_02_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

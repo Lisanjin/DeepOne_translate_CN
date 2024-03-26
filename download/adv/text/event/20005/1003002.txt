@@ -1,0 +1,470 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11000300.jpg,0,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-100,1.35,0.5,,,,
+playse,/download/sound/se/se_022.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_053.mp3
+flash,255,255,255,4,0.2,0.2
+anm,tint,enemy1,10_10_10,1,0
+endwait
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:anger,lydia,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:normal,miruva,300,-120,0.5,0.5,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「慢得我都要打瞌睡了……這種臺詞是不是有點老套了呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:normal,miruva,300,-120,0.5,0,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那換成…慢得我都要開始吃零食了…如何？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:normal,lydia,-300,-120,0.5,0,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎麼了，米露瓦。嘴饞了嗎，給你點巧克力？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:smile,miruva,300,-120,0.5,0,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,lydia,0
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:sad,dana,-300,-180,0.5,0.5,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「知道你們遊刃有餘了，不過這事還是等到打倒敵人之後再說吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,dana,0
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_b,body:normal,lydia,-300,-120,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你啊，真是不解風情」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_b,body:normal,miruva,300,-120,0.5,0,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「打倒敵人之前都不能吃巧克力？那……就得快點收拾掉了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,enemy1,0,-100,1.35,0.5,,,,
+playse,/download/sound/se/se_023
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,-200,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+wait,1
+endwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――、……、…………」</outline></size>,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:normal,lydia,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:normal,miruva,300,-120,0.5,0.5,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這下你就沒意見了吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:normal,miruva,300,-120,0.5,0,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「姐姐，我想快點吃巧克力」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:smile,lydia,-300,-120,0.5,0,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「好啊。來，張嘴」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:smile,miruva,300,-120,0.5,0,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊……嗯，呵呵……好吃」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,lydia,0
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,-300,-180,0.5,0.5,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「只看實力的話，確實無可挑剔……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:surprise,miruva,300,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「為什麼臉色那麼難看？\n難道你也想吃巧克力？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,dana,255_255_255,0.0001,0
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不，我——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,500,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「巧克力……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:surprise,miruva,-300,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哎呀，你也想吃？呵呵，真沒辦法。\n姐姐，巧克力還有嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,miruva,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:smile,lydia,-300,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我本來是為米露瓦準備的……算了。\n你可要感激米露瓦的好心，仔細品味啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯，謝謝。莉迪亞，米露瓦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:sad,maruta,500,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.00001,0
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,jump,maruta,500_-120_80_2,0.5,0
+endwait
+spriteoff,lydia,0
+endwait
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:surprise,miruva,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不客氣……來，啊～嗯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊～嗯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,jump,maruta,500_-120_80_2,0.5,0
+endwait
+anm,tint,miruva,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「好吃嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯……甜甜的……好吃」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,jump,maruta,500_-120_80_2,0.5,0
+endwait
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:smile,miruva,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「那就好」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,-300,-180,0.5,0.5,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………呃，打擾你們的和睦氣氛實在惶恐，\n但是不是該給點反應了？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:sad,maruta,300,-120,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,dana,0
+endwait
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:smile,miruva,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不好意思。得不到點心而傷心的孩子的心靈\n實在是太甜美了，忍不住使了壞」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:normal,miruva,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「你也想要巧克力嗎」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,300,-120,0.5,0,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+anm,tint,maruta,255_255_255,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……！嗯……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:smile,miruva,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「但是不給」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+shake,0.2,3,15,15,maruta
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:sad,maruta,300,-120,0.5,0,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……！？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,maruta,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「欺負人，是不行的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,miruva,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊啊……小芙勞悲傷的心情也很甜美呢。\n竟然會為了別人而表現出這樣的感情，真是好孩子呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「能夠品嘗到兩個這麼可愛的甜美之物，真的好幸福啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……唉。沒辦法了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「還好我特地為這種情況準備了魷魚乾——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,dana,0
+endwait
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:anger,maruta,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>？？？</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這個不對」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,frau,255_255_255,0.0001,0
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「感覺不搭邊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,maruta,0
+endwait
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:unique,miruva,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我不需要，而且會有怪味的，別拿出來」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:anger,lydia,-300,-120,0.5,0.5,,,,
+anm,tint,miruva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「能別讓米露瓦不高興嗎」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0.5,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「大家是不是太過分了？！魷魚乾很好吃的哦……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「但是現在不是時候吧」,選項2　「為什麼會帶著那種東西……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「連你都這麼說……？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「為什麼巧克力就能正常地被大家接受，\n魷魚乾就不行呢……？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「不被理解，是多麼悲哀啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,dana,0
+endwait
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:sad,miruva,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:sad,lydia,-300,-120,0.5,0.5,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「悲傷的心情本應該是香甜可口的，卻感覺……有股奇怪的雜味……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+anm,tint,miruva,255_255_255,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「沒事吧，米露瓦……來再吃一塊巧克力清清口吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,miruva,0
+endwait
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,300,-120,0.5,0.5,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……盯——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+anm,tint,lydia,255_255_255,0.0001,0
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「唉……這渴望的眼神，真是敗給你了。\n沒辦法……來，你就是想要這個對吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:smile,maruta,300,-120,0.5,0,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯……謝謝」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,maruta,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,lydia,255_255_255,0.0001,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「唉……你也是，這是最後一塊了哦。要不米露瓦不夠了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……！謝謝你，莉迪亞」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:smile,miruva,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「很好吃哦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,miruva,0
+endwait
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:smile,maruta,300,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,maruta,0
+endwait
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「好甜」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:sad,lydia,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「為什麼我連來到幻夢境還要分發點心……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,lydia,0
+endwait
+spriteatlas,download/character/100402/adv/atlas/stand_a,body:sad,dana,-300,-180,0.5,0.5,,,,
+anm,tint,lydia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「話說啊……差不多可以問一下了吧。\n雖然你看似很自然地混了進來，但你究竟是誰？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,300,-120,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>？？？</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——我？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「埃爾塔・塔拉絲庫……叫我埃爾塔就好」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+anm,tint,dana,255_255_255,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「埃爾塔對吧……看你那副打扮，是被困幻夢境的拉萊耶相關人員嗎，\n真虧你能一個人來到這裏……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「幻夢境會給人造成負荷的吧，而且還有虛像……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,maruta,255_255_255,0.0001,0
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>埃爾塔・塔拉絲庫</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「沒事……這不算什麼」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「我很強的……大概比在場的所有人都強」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,dana,0
+endwait
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:anger,lydia,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>莉迪亞・林德曼</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……誒？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,1685 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash3_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait
+
+
+bg,download/bg/bg_10070400.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_01.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「唔……好險啊……！要是我晚退後一步，\n頭跟身體就要分家了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_02.mp3
+msg,1,<outline width=2 color=black>「不過，像零那麼精明，怎麼可能不在這個領域的中心做任何準備……\n真的要說起來，她算是個守護者……不過這是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,1,0,
+
+bgmstop,1,0.3,
+name,,
+msg,0,,,,,,,,,,,
+msgwin,off
+endwait
+bg,color_0_0_0,1,255
+spine,download/adv/spine/28060105_entry,bgmovie1,default,entry,0,0,0,1,1,0.3
+playse,/download/sound/se/se_28060105_entry.mp3
+wait,8
+endwait
+spriteoff,all,0,,,,,,,,,
+endwait
+spineoff,bgmovie1
+playse,/download/sound/se/none.mp3
+endwait
+msgwin,on
+endwait
+
+bg,download/bg/bg_10070400.jpg,1,255
+playbgm,/download/sound/bgm/bgm014.mp3,0,
+
+mask,black1,0,200,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,200,1280,250,0.5,,,,
+sprite,download/monster/28060105/adv/image/28060105.png,enemy2,0,0,0,0,,,,
+imgconf,enemy2,enemy1,-400,-700,,,0,1.2,1.2,0.9
+anm,move,enemy2,400_0,0.9,0
+endwait,,,,,,,,,,,
+wait,0.3
+
+
+spriteoff,all,0.2
+wait,0.2
+
+
+mask,black1,0,-100,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,-100,1280,250,0.5,,,,
+sprite,download/monster/28060105/adv/image/28060105.png,enemy2,0,0,0,0,,,,
+imgconf,enemy2,enemy1,400,200,,,0,1.2,1.2,0.9
+anm,move,enemy2,-400_0,0.9,0
+endwait,,,,,,,,,,,
+wait,0.3
+
+
+spriteoff,all,0.2
+wait,0.2
+
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/28060105/adv/image/28060105.png,enemy2,0,0,0,0,,,,
+imgconf,enemy2,enemy1,0,0,,,0,1.2,1.2,0.9
+anm,move,enemy2,0_-600,0.9,0
+endwait,,,,,,,,,,,
+wait,0.3
+
+
+spriteoff,all,0.2
+wait,0.2
+
+
+sprite,download/monster/28060105/adv/image/28060105.png,enemy1,0,-135,0.55,0.5,,,,
+
+
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤色境獄之嗣灰</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――――」</outline>,,,,,,,,,
+playse,/download/sound/se/se_28060105_entry_06.mp3
+clickwait,,,,,,,,,,,
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0.5,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_03.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「被奈克特原書的力量侵蝕了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28060105/adv/image/28060105.png,enemy1,0,-135,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤色境獄之嗣灰</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――――！」</outline>,,,,,,,,,
+playse,/download/sound/se/se_28060105_entry_06.mp3
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_04.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「呃……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash2_Red,em1,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+anm,move,norn,400_-120,0.3,0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+spine,download/adv/spine/Slash2_Red,em1,default,animation,0,600,0,-1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+anm,move,norn,0_-120,0.2,0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_05.mp3
+msg,1,<outline width=2 color=black>「可惡……！就算和奈克特原書斷絕連結，\n我的力量也不會全部消失……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28060105/adv/image/28060105.png,enemy1,0,-135,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1.5,1,0
+playse,/download/sound/se/se_041.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em2,default,animation,0,-200,-170,0.7,1.2,0
+playse,/download/sound/se/se_041.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em3,default,animation,0,320,270,0.4,0.9,0
+playse,/download/sound/se/se_041.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em4,default,animation,0,-250,300,1,1.4,0
+playse,/download/sound/se/se_041.mp3
+wait,0.1
+spine,download/adv/spine/blow_Blue,em5,default,animation,0,260,-100,0.4,1.1,0
+playse,/download/sound/se/se_041.mp3
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+playse,/download/sound/se/conA.mp3
+
+name,<outline width=2 color=black>赤色境獄之嗣灰</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――」</outline>,,,,,,,,,
+playse,/download/sound/se/se_28060105_entry_06.mp3
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_06.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「不會吧……剛才那招傷不到一根寒毛嗎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/28060105/adv/image/28060105.png,enemy2,0,0,0,0,,,,
+imgconf,enemy2,enemy1,0,-300,,,0,1.3,1.3,0.5
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_07.mp3
+msg,1,<outline width=2 color=black>「零啊，妳竟然在最後的最後準備了一份大禮。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28060105/adv/image/28060105.png,enemy1,0,-135,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤色境獄之嗣灰</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――」</outline>,,,,,,,,,
+playse,/download/sound/se/se_28060105_entry_06.mp3
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_08.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「唔！有東西要來了……你退到我背後！\n無論是什麼，我一定會保護你……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28060105/adv/image/28060105.png,enemy1,0,-135,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤色境獄之嗣灰</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――！」</outline>,,,,,,,,,
+playse,/download/sound/se/se_28060105_entry_06.mp3
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash1_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_049.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10070400.jpg,1,255
+endwait
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:surprise,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-430,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_014_6_07_09.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「——誒？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_10.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「什麼時候、被砍到、了……唔……噗嗚！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,243,1,0,4,0.3,1.0
+endwait
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_11.mp3
+msg,1,<outline width=2 color=black>「糟了……身體、使不上、力氣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28060105/adv/image/28060105.png,enemy1,0,-135,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤色境獄之嗣灰</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――」</outline>,,,,,,,,,
+playse,/download/sound/se/se_28060105_entry_06.mp3
+clickwait,,,,,,,,,,,
+
+
+select,選項1　擋在諾恩身前
+if,select_===_1,,,,,,,,,
+endif,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_12.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「你……你在幹什麼啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_13.mp3
+msg,1,<outline width=2 color=black>「你又沒有方法能夠傷害別人……\n沒有戰鬥能力的人，往前站也只會被殺而已！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_14.mp3
+msg,1,<outline width=2 color=black>「你不用想怎麼保護我！\n就算只有你也好，快逃吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_15.mp3
+msg,1,<outline width=2 color=black>「求求你……如果不只是芙勞，連你都失去的話，\n我會、無法忍受的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28060105/adv/image/28060105.png,enemy1,0,-135,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤色境獄之嗣灰</outline>,
+playse,/download/sound/se/se_28060105_entry_06.mp3
+msg,0,<outline width=2 color=black>「―――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_6_07_16.mp3
+name,<outline width=2 color=black>諾恩</outline>,
+msg,1,<outline width=2 color=black>「夠了……住手……！拜託你，別這樣！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash3_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+wait,2
+endwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_006_6_07_01.mp3
+name,<outline width=2 color=black>芙勞</outline>,
+msg,1,<outline width=2 color=black>「──沒事的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_006_6_07_02.mp3
+msg,1,<outline width=2 color=black>「思念著彼此的心，無論何時何地，都能連結在一起。\n那份心意能夠成為比一切更強的力量。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10070200.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm012.mp3,0,
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20070106/adv/image/20070106.png,enemy1,-350,-100,0.8,0.5,,,,
+sprite,download/monster/20070106/adv/image/20070106.png,enemy2,350,-100,0.8,0.5,,,,
+sprite,download/monster/20070106/adv/image/20070106.png,enemy3,0,-100,0.8,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:anger,edel,-300,-120,0.5,0.5,,,,
+anm,tint,edel,150_150_150,0.0001,0
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:sad,dana,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_01.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「唔……艾蒂爾加爾德，妳還行嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:anger,edel,-300,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_01.mp3
+name,<outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline>,
+msg,1,<outline width=2 color=black>「哼、輕鬆啦──我是很想這麼說，不過也快沒力了。\n老實說，我沒什麼把握能夠解決剩下的敵人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-180,0.5,0,,,,
+anm,tint,edel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_02.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「真是意外啊。我還以為妳是那種會在這種時候逞強的人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_02.mp3
+name,<outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline>,
+msg,1,<outline width=2 color=black>「沒有啦，我偶爾也要表現出一點柔弱女生的要素啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:sad,dana,300,-180,0.5,0,,,,
+anm,tint,edel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_03.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「那應該不是現在這狀況要表現的東西吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_03.mp3
+name,<outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline>,
+msg,1,<outline width=2 color=black>「所以要怎麼辦？他們往前走已經過一段時間了，\n我們要不要也腳底抹油閃人啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-180,0.5,0,,,,
+anm,tint,edel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_04.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「這提議蠻不錯的嘛……不過前提是妳有想到要逃到哪裡去。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:sad,edel,-300,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_04.mp3
+name,<outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline>,
+msg,1,<outline width=2 color=black>「這──說得也是呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_05.mp3
+msg,1,<outline width=2 color=black>「……喂，妳覺得他們那邊還順利嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-180,0.5,0,,,,
+anm,tint,edel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_05.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「嗯，一定是吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_06.mp3
+name,<outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline>,
+msg,1,<outline width=2 color=black>「這樣啊……既然如此，那就……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-180,0.5,0,,,,
+anm,tint,edel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_06.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「──瞧妳說得好像一副在交代後事的樣子，\n不過應該沒有想要放棄吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:smile,edel,-300,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_07.mp3
+name,<outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline>,
+msg,1,<outline width=2 color=black>「啥？那還用說嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_08.mp3
+msg,1,<outline width=2 color=black>「如果他們有順利達成快樂結局，\n那本大人當然就得去湊一腳才行啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:anger,edel,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_09.mp3
+msg,1,<outline width=2 color=black>「好啦，雖然體力和魔力都快乾了，不過再來努力一下吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:anger,dana,300,-180,0.5,0,,,,
+anm,tint,edel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_07.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,150,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ouka1,0,150,1280,200,0.5,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:normal,ouka2,0,0,0,0,,,,
+imgconf,ouka2,ouka1,0,-472,,,0,1.5,1.5,0
+
+
+mask,black3,0,-50,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black4,0,0,0,0,,,,
+imgconf,black4,black3,0,0,,,0,1,1,0.5
+mask,kirie1,0,-50,1280,200,0.5,,,,
+spriteatlas,download/character/101102/adv/atlas/stand_a,body:normal,kirie2,0,0,0,0,,,,
+imgconf,kirie2,kirie1,0,-510,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,150,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ridia1,0,150,1280,200,0.5,,,,
+spriteatlas,download/character/101202/adv/atlas/stand_a,body:normal,ridia2,0,0,0,0,,,,
+imgconf,ridia2,ridia1,0,-350,,,0,1.5,1.5,0
+
+
+mask,black3,0,-50,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black4,0,0,0,0,,,,
+imgconf,black4,black3,0,0,,,0,1,1,0.5
+mask,milva1,0,-50,1280,200,0.5,,,,
+spriteatlas,download/character/101302/adv/atlas/stand_a,body:normal,milva2,0,0,0,0,,,,
+imgconf,milva2,milva1,0,-350,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10070200.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:surprise,edel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_10.mp3
+name,<outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline>,
+msg,1,<outline width=2 color=black>「剛才那是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,patrisia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:normal,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,-860,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10070200.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:surprise,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_08.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「這股魔力……潘多莉西亞……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>「――――――――――――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10070200.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0.5,,,,
+anm,tint,edel,150_150_150,0.0001,0
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:surprise,dana,300,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_09.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「啊……剛才那感覺……是金……？而且大家的力量都在我體內……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm032.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_11.mp3
+name,<outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline>,
+msg,1,<outline width=2 color=black>「搞什麼鬼啊……說了半天，結果你們這些傢伙\n根本愛死本大人了嘛。真是的，那我豈不是更不能出糗了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:normal,edel,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_12.mp3
+msg,1,<outline width=2 color=black>「喂，達納……看來接下來才是我們該表現的時候。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-180,0.5,0,,,,
+anm,tint,edel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_10.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「……是啊，看來是這樣。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20070106/adv/image/20070106.png,enemy1,-350,-100,0.8,0.5,,,,
+sprite,download/monster/20070106/adv/image/20070106.png,enemy2,350,-100,0.8,0.5,,,,
+sprite,download/monster/20070106/adv/image/20070106.png,enemy3,0,-100,0.8,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:normal,dana,300,-180,0.5,0.5,,,,
+anm,tint,dana,150_150_150,0.0001,0
+spriteatlas,download/character/100502/adv/atlas/stand_b,body:anger,edel,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_005_6_07_13.mp3
+name,<outline width=2 color=black>艾蒂爾加爾德・愛因斯坦</outline>,
+msg,1,<outline width=2 color=black>「上吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100402/adv/atlas/stand_b,body:anger,dana,300,-180,0.5,0,,,,
+anm,tint,edel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_004_6_07_11.mp3
+name,<outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline>,
+msg,1,<outline width=2 color=black>「好的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait
+bg,download/adv/image/black.jpg,1,255
+endwait
+
+
+bg,download/bg/bg_10070100.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_01.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「喝啊──────！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20070106/adv/image/20070106.png,enemy1,0,-100,0.8,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+flash,255,255,255,4,0.3,1.0
+endwait
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:sad,catia,300,-100,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,blizit,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_02.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「呃、唔……呼……呼……真的是沒完沒了呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:sad,catia,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_01.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「布麗吉特，妳還好吧……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,blizit,-300,-190,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_03.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「我沒事……妳自己呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:normal,catia,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_02.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「因為妳在前面，所以……\n要是快撐不住了，就換我上前──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,blizit,-300,-190,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_04.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「說什麼傻話？別怪我說話難聽，\n就算妳上前，也只會立刻就被踩扁而已。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:sad,catia,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_03.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「……是啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_05.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「不過我也是，如果沒有妳的支援，早就已經死了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:surprise,catia,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_04.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「布麗吉特」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:normal,blizit,-300,-190,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_06.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「所以現在這樣子，就已經是我們的最佳解了。\n……妳能繼續這樣再撐一下嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:normal,catia,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_05.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「那當然了。我們無論如何都要把這地方守下來──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20070206/adv/image/20070206.png,enemy1,0,-100,1,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:surprise,catia,300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_06.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「什……？！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_07.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「糟了……什麼時候到後面……卡蒂婭！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:sad,catia,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_07.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「呃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,150,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,jamila1,0,150,1280,200,0.5,,,,
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila2,0,0,0,0,,,,
+imgconf,jamila2,jamila1,0,-668,,,0,1.5,1.5,0
+
+
+mask,black3,0,-50,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black4,0,0,0,0,,,,
+imgconf,black4,black3,0,0,,,0,1,1,0.5
+mask,ilyna1,0,-50,1280,200,0.5,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna2,0,0,0,0,,,,
+imgconf,ilyna2,ilyna1,0,-770,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10070100.jpg,1,255
+endwait
+
+
+sprite,download/monster/20070206/adv/image/20070206.png,enemy1,0,-100,1,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash4_Blue,em1,default,animation,0,0,200,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+spine,download/adv/spine/Slash5_Red,em2,default,animation,0,0,200,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+endwait
+spine,download/adv/spine/Wind3,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_046.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――…………、……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:surprise,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_08.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「剛才那是潔美拉和伊莉娜的……而且……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10070100.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_b,body:normal,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_09.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「……謝謝妳們……保護我。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,catia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:surprise,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_08.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「剛才那個……不是卡蒂婭的魔法……？\n到底發生了什麼事──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20070206/adv/image/20070206.png,enemy1,0,-100,1,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_b,body:anger,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_09.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「唔！糟糕……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,150,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zizel1,0,150,1280,200,0.5,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:normal,zizel2,0,0,0,0,,,,
+imgconf,zizel2,zizel1,0,-375,,,0,1.5,1.5,0
+
+
+mask,black3,0,-50,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black4,0,0,0,0,,,,
+imgconf,black4,black3,0,0,,,0,1,1,0.5
+mask,holy1,0,-50,1280,200,0.5,,,,
+spriteatlas,download/character/100802/adv/atlas/stand_a,body:normal,holy2,0,0,0,0,,,,
+imgconf,holy2,holy1,0,-750,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10070100.jpg,1,255
+endwait
+
+
+mask,black1,0,0,480,720,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zizel1,0,0,480,720,0.5,,,,
+spriteatlas,download/character/100705/adv/atlas/stand_b,body:normal:weapon_white,zizel2,0,0,0,0,,,,
+imgconf,zizel2,zizel1,720,720,,,0,0.8,0.8,0.5
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20070206/adv/image/20070206.png,enemy1,0,-100,1,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――、…………、……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:surprise,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_10.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「什麼……『這個』是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_11.mp3
+msg,1,<outline width=2 color=black>「……她們真是的，都這種時候了，還在擔心我。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:normal,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,670,-270,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:sad,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_12.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「真是諷刺啊，這東西竟然會有輪到我拿的一天。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_13.mp3
+msg,1,<outline width=2 color=black>「你不這麼覺得嗎？……光之劍啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,3,0.3,1.0
+endwait
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:surprise,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_14.mp3
+msg,1,<outline width=2 color=black>「唔、力量、湧上來了……這就是、光之劍的力量──\n芭德薇一族被賦予的光輝……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_15.mp3
+msg,1,<outline width=2 color=black>「啊啊……果然只有我才配得上這股力量。\n因為照理說不該是她，我才是芭德薇家的──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:normal,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-661,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_002_6_07_16.mp3
+msg,1,<outline width=2 color=black>「──你以為我會這麼說嗎？真瞧不起我啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:anger,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_17.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「你這把有怪癖的鍍金破銅爛鐵，休想窺探我的心！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_18.mp3
+msg,1,<outline width=2 color=black>「怎麼？還是說，你想被隨手丟在路邊，\n永遠在幻夢境中漂流？如果你喜歡這樣，我是無所謂啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:normal,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,670,-270,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:anger,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_19.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「只不過我沒有那種用發光金屬包覆內心的興趣，\n可能不合你的喜好吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_20.mp3
+msg,1,<outline width=2 color=black>「我也是逼不得已才拿起你這種噁心的東西，害我覺得自己的自尊\n都被玷污了。所以你現在也屈就一下，把力量借給我吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_21.mp3
+msg,1,<outline width=2 color=black>「哼……要上囉，光之劍。\n你就努力證明你那傲慢的光芒不是虛有其表吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_22.mp3
+msg,1,<outline width=2 color=black>「這樣的話，說不定可以博得我的芳心喔！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20070206/adv/image/20070206.png,enemy1,0,-100,1,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash1_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_049.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――……、…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,300,-100,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+spriteatlas,download/character/100202/adv/atlas/stand_c,body:anger,blizit,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_002_6_07_23.mp3
+name,<outline width=2 color=black>布麗吉特・芭德薇</outline>,
+msg,1,<outline width=2 color=black>「這行得通……卡蒂婭！一口氣解決吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,300,-100,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_003_6_07_10.mp3
+name,<outline width=2 color=black>卡蒂婭・布倫茨瓦</outline>,
+msg,1,<outline width=2 color=black>「好的……深刻的羈絆會帶給我們力量……\n既然如此，這點程度的障礙，絕不可能跨不過去……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait
+bg,download/adv/image/black.jpg,1,255
+endwait
+
+
+bg,download/bg/bg_10070300.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,-230,-120,0.5,0.5,,,,
+mask,black1,350,0,400,720,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alt1,350,0,400,720,0.5,,,,
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-140,,,0,0.55,0.55,0.5
+anm,tint,alt2,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_001_6_07_01.mp3
+name,<outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline>,
+msg,1,<outline width=2 color=black>「這是……芙勞的力量出現在拉萊耶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,tint,alt2,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_6_07_01.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「芙勞現在和奈克特原書在同一個地方……\n大概是因為這個緣故，所以獲得了強大的影響力吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:sad,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-140,,,0,0.55,0.55,0
+playvoice,1,download/adv/voice/quest/main_099_6_07_02.mp3
+msg,1,<outline width=2 color=black>「不過很可惜，我們看來是沒有拿到任何禮物。是被排擠了嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:normal,asaka,-230,-120,0.5,0,,,,
+anm,tint,alt2,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_6_07_02.mp3
+name,<outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline>,
+msg,1,<outline width=2 color=black>「因為我有妳幫忙吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:smile,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-140,,,0,0.55,0.55,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_6_07_03.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「哎呀，妳嘴巴還真甜呢。感覺我會忍不住拿出幹勁，\n讓妳的靈魂從內側爆破喔。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:unique,asaka,-230,-120,0.5,0,,,,
+anm,tint,alt2,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_6_07_03.mp3
+name,<outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline>,
+msg,1,<outline width=2 color=black>「也太可怕了吧，拜託不要。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-140,,,0,0.55,0.55,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_6_07_04.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「呵呵……不過也是呢。妳只要有我在就夠了。\n而且，更重要的是──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:smile,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-140,,,0,0.55,0.55,0
+playvoice,1,download/adv/voice/quest/main_099_6_07_05.mp3
+msg,1,<outline width=2 color=black>「妳與其被人追，還比較喜歡追求對方吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-230,-120,0.5,0,,,,
+anm,tint,alt2,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_6_07_04.mp3
+name,<outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline>,
+msg,1,<outline width=2 color=black>「怎麼光聽這句話，感覺像會以單戀結尾啊……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:normal,asaka,-230,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_001_6_07_05.mp3
+msg,1,<outline width=2 color=black>「話先說在前頭，我對這件事可是完全沒有放棄。\n我已經決定要把我的一切賭在這心情──這份愛上。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,tint,alt2,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_6_07_06.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「妳這女人真沉重啊……不過，這才像我的亞紗花。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_6_07_07.mp3
+msg,1,<outline width=2 color=black>「先在這裡賣姊姊一份恩情，對實現妳心目中的未來很有幫助喔。\n我們加油吧。」我們加油吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:unique,asaka,-230,-120,0.5,0,,,,
+anm,tint,alt2,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_6_07_06.mp3
+name,<outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline>,
+msg,1,<outline width=2 color=black>「……姊姊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,tint,alt2,255_255_255,0.0001,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_6_07_08.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「對諾恩而言，他就像是兄弟吧。而且芙勞也是──\n喔，不過也有可能不是姊姊，而是妹妹呢。這樣的話，就要叫妹妹……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_6_07_09.mp3
+msg,1,<outline width=2 color=black>「總之，賣她一份恩情是百利而無一害。\n我們就射人先射馬，擒賊先擒王吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-230,-120,0.5,0,,,,
+anm,tint,alt2,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_6_07_07.mp3
+name,<outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline>,
+msg,1,<outline width=2 color=black>「我說妳啊，可以不要在這麼嚴肅的場合提這種話題嗎！？\n這豈不是會害我鬆懈下來嗎……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

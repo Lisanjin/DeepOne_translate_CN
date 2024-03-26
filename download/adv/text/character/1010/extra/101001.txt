@@ -1,0 +1,85 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,,
+endwait
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:normal,jamira,25,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀……這麼巧在這裏見面了。這樣的碰面\n一定是命運的安排……能和你，稍微聊聊嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>其實我有件事想要拜託你……\n雖然很突然，但你有興趣加入聖奠教嗎？</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「聖奠教是信仰著擁有偉大力量的納克特原書，為了能受到\n那份力量的恩賜，我們獻上了眾多的祈禱，並多次嘗試與其接觸」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:sad,jamira,25,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……我們的祈禱，尚未傳達至納克特原書。\n因為攻略不了納克特原書展開的幻夢境……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:normal,jamira,25,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，你所擁有的某種與納克特原書的聯繫……\n它所附帶的能力，希望能為聖奠教使用」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「就算你這麼說我也很難辦」,選項2　「我考慮考慮」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:sad,jamira,25,-100,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「確實連組織是什麼情況都不知道，\n不想幫忙的心情我能理解」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，這世上也有很多亂用納克特原書的力量的\n人和集團……但是，聖奠教不是這樣」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:normal,jamira,25,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我們絕不會，把這力量用在自私自利的地方……\n只是希望，所有人都能獲得救贖」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:smile,jamira,25,-100,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「非常感謝。\n你能這麼說，我也就很高興了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果你能入教的話……\n卡蒂婭大人也定會高興的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_10.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:normal,jamira,25,-100,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，請一定多多考慮入教的事。\n向納克特原書祈禱，祝福和救贖眾人吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……其實還想和你再多聊一會兒的，但是馬上就要\n到祈禱的時間了，今天就說到這裏吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果能考慮一下的話，還請隨時找我，\n關於聖奠教的事我會向你說明的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:smile,jamira,25,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「只要深入瞭解，你也一定能瞭解聖奠教的好……\n這麼好的教，不會再有了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「首先，聖奠教有最好的聖女大人在……哼哼，\n你也，一定會，覺得聖奠教的教義是正確的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:normal,jamira,25,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，今天就先告辭了。\n願你被納克特原書祝福」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101000/adv/sound/fav101000_01_16.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

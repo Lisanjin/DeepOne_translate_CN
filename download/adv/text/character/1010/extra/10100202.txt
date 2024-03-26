@@ -1,0 +1,119 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+anm,move,jamira,250_-120,1,1
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……真讓人擔憂……\n沒事吧……真的沒事吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_01.mp3
+clickwait,,,,,,,,,,,
+anm,move,jamira,-350_-120,2,1
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……您，您好。您也要用熱水嗎？\n不好意思，可否麻煩您稍候片刻……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_02.mp3
+clickwait,,,,,,,,,,,
+anm,move,jamira,25_-120,1,1
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:surprise,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……我看起來很緊張麼？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「好像是比平時少了份冷靜。\n但是，這也在所難免。因為——」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:anger,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「——卡蒂婭大人想要自己泡紅茶！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「……就這？」,選項2　「是這樣啊」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:anger,jamira,25,-120,0.5,0,,,,
+spine,download/adv/spine/Mark6,em1,default,animation,0,130,250,0.65,0.8,0.2
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼就這！\n聖奠教的聖女可是想要自己泡紅茶啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_06.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「卡蒂婭大人最近確實熱衷於挑戰新事物，\n我覺得這份精神可嘉。但是……但是……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_07.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:anger,jamira,25,-120,0.5,0,,,,
+spine,download/adv/spine/Mark6,em2,default,animation,0,130,250,0.65,0.8,0.2
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你這冷淡的反應是什麼意思！\n現在可是見證歷史的時刻啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_08.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,0,
+msg,1,<size=30><outline width=2 color=black>「卡蒂婭大人儘管已經十分優秀，還依然向新事物\n發起挑戰……多麼的偉大……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「她要是變得更加完美的話，人家會感到炫目\n以致不敢直視的……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_10.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話雖如此，一想到萬一熱水灑出來\n燙到了……我就坐立不安……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:normal,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……嗯，我知道過度保護會適得其反。\n卡蒂婭大人也是這樣說的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但就是忍不住擔心啊……我現在能做的，\n唯有祈禱順順利利……何等的無力」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:surprise,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，您瞧！卡蒂婭大人開始往茶壺倒熱水了！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:normal,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「多，多麼的認真啊……那舉止，\n完美彰顯了卡蒂婭大人的慈愛……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀……不行，太感動了，\n淚水嘩啦啦的往下流」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:smile,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「真想讓所有教徒看到這令人感動的一幕……\n大家一定會和我一樣激動得痛哭流涕的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:surprise,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「只是往茶壺倒熱水……這一簡單的行為，\n如詩如畫，也唯有神聖如她才能——啊！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_18.mp3
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_042.mp3
+wait,0.5
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:sad,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「熱，熱水，濺到卡蒂婭大人手上了……！？\n完了……擔心的事情還是發生了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:anger,jamira,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那宛若陶瓷的柔荑要是留下疤痕就糟了……\n不能坐視不管……卡蒂婭大人！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101002/adv/sound/fav101002_06_20.mp3
+clickwait,,,,,,,,,,,
+anm,move,jamira,1200_-120,0.5,1
+endwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,143 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020400.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_01.mp3
+name,<outline width=2 color=black>潔美拉・吉普莉爾</outline>,
+msg,1,<outline width=2 color=black>「杯盤的數量完全足夠，\n廚房的設備也做好最低限度的準備……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_02.mp3
+msg,1,<outline width=2 color=black>「宴會要用的桌椅雖然有點舊，\n不過只要修繕一下就能繼續用——嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:unique,jamila,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_03.mp3
+name,<outline width=2 color=black>潔美拉・吉普莉爾</outline>,
+msg,1,<outline width=2 color=black>「看來有虛像入侵了呢。接下來還得清掃窗戶和地板，\n以及準備裝飾用的花卉，快點解決掉吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name, 
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10020400.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_04.mp3
+name,<outline width=2 color=black>潔美拉・吉普莉爾</outline>,
+msg,1,<outline width=2 color=black>「……怎麼就變成這樣了呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_10020400.jpg,bg,0,0,1,0
+endwait,,,,,,,,,,,
+anm,tint,bg,200_0_0,0.001,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_05.mp3
+name,<outline width=2 color=black>潔美拉・吉普莉爾</outline>,
+msg,1,<outline width=2 color=black>「好好的壯麗宴會廳染滿鮮血……誰能想到，\n切開的瞬間會噴出大量血液……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_06.mp3
+msg,1,<outline width=2 color=black>「之前砍倒之後就會煙消雲散，偏偏這次不按套路出牌……\n話說，身型和出血量根本不一致吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「這算挑釁？」,選項2　「誰讓你胡亂砍的……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_07.mp3
+msg,1,<outline width=2 color=black>「虛像懂不懂挑釁還得打個問號，\n如果有，它們真的成功了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_08.mp3
+msg,1,<outline width=2 color=black>「這出血量……要刷乾淨可得費好大一番功夫……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:unique,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_09.mp3
+msg,1,<outline width=2 color=black>「膽敢妨礙卡蒂婭大人即將舉辦的宴會，\n真是罪該萬死……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:unique,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_10.mp3
+msg,1,<outline width=2 color=black>「不管出於什麼原因，\n我都不會放任這些礙事的傢伙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:unique,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_11.mp3
+msg,1,<outline width=2 color=black>「話雖如此……\n我確實有必要考慮一下處理的方式呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_12.mp3
+msg,1,<outline width=2 color=black>「……抱怨也於事無補，\n努力打掃乾淨吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_13.mp3
+msg,1,<outline width=2 color=black>「我瞭解怎麼刷掉血跡，\n只要花點時間就又變得乾乾淨淨了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_14.mp3
+msg,1,<outline width=2 color=black>「咦，您為何一副疑惑的神情？\n……怎麼懂得處理血跡，您想知道？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:unique,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_15.mp3
+msg,1,<outline width=2 color=black>「我建議……您還是少問為好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101051/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101051/adv/sound/fav101051_02_16.mp3
+msg,1,<outline width=2 color=black>「無知也是一種幸福……\n呵呵，呵呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

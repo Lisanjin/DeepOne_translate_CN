@@ -1,0 +1,182 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11230300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm004.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_01.mp3
+name,<outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline>,
+msg,1,<outline width=2 color=black>「在遇見你和大家之後，發生了很多事情……\n我能夠確實感覺到我們正在離逃脫奈克特原書和拉萊耶的目標越來越近。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_02.mp3
+msg,1,<outline width=2 color=black>「但是每次獲得任何進展……都會讓我有點不放心。\n你想想嘛。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_03.mp3
+msg,1,<outline width=2 color=black>「獲得進展，就代表我們要去跟現在不同的地方，\n也就是說不做出改變不行……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_04.mp3
+msg,1,<outline width=2 color=black>「以前我從來都沒這樣想過。開始學習魔法的時候，\n從學校畢業的時候，就算是離開設施前往拉萊耶的那天也沒有……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_05.mp3
+msg,1,<outline width=2 color=black>「以前，我並不會對隨波逐流地去做事\n有什麼不放心的感覺。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_06.mp3
+msg,1,<outline width=2 color=black>「不過、我現在卻非常不安……甚至可以用害怕形容。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選項1　「為什麼？」,選項2　「我會陪著妳，所以妳沒必要害怕。」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_07.mp3
+msg,1,<outline width=2 color=black>「因為我會害怕……\n要是我們走錯了路該怎麼辦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_08.mp3
+msg,1,<outline width=2 color=black>「當然了，我也很清楚一個道理。\n別說步調了，就連每個人的志向幾乎都有所差別。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_09.mp3
+msg,1,<outline width=2 color=black>「但是……一想到未來有和伙伴們、或者和你分開的可能性，\n我實在鼓不起說嘗試就去嘗試的勇氣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_10.mp3
+msg,1,<outline width=2 color=black>「你說會陪著我？……那是什麼意思……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_11.mp3
+msg,1,<outline width=2 color=black>「你這麼說的話……我會很期待的喔！\n從今以後……不管狀況出現了什麼變化，你都會──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_12.mp3
+msg,1,<outline width=2 color=black>「……哎呀，我大概把你的意思想得太複雜了。\n你的意思一定比我解釋得更單純，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_13.mp3
+msg,1,<outline width=2 color=black>「你真的……是個大壞蛋呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_14.mp3
+msg,1,<outline width=2 color=black>「不過，如果有能夠與你一起前進的路可走，\n對我來說，就不可能有比那更光明的未來了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_15.mp3
+msg,1,<outline width=2 color=black>「……對不起。我繼續說下去的話，一定會影響到你的自由意願。\n雖然我是沉重、麻煩，又難搞的女人……但我還是不想妨礙你。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_16.mp3
+msg,1,<outline width=2 color=black>「剛剛我說的話，你就當成沒聽過，好嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,asaka,0.6_0.6,0.5,0
+anm,move,asaka,0_-150,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:surprise,asaka,0,-150,0.6,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_17.mp3
+msg,1,<outline width=2 color=black>「呃、怎、怎麼了？你為什麼要突然靠這麼近……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:shy,asaka,0,-150,0.6,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_18.mp3
+msg,1,<outline width=2 color=black>「啊、唔……欸、你的臉貼太近了……你這樣我心臟會跳很快啦……\n很突然耶、到底怎麼了……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,asaka,0.7_0.7,0.5,0
+anm,move,asaka,0_-170,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100109/adv/sound/fav100109_03_19.mp3
+msg,1,<outline width=2 color=black>「等等……那個、你的臉繼續貼過來的話……啊、唔……\n你、你這樣偷襲，我會受不了啦……！現在心臟都跳到快彈出來了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+
+anm,move,asaka,1200_-120,0.3,0
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100109/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100109/adv/sound/fav100109_03_20.mp3
+name,<outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline>,
+msg,1,<outline width=2 color=black>「要是就這樣做下去的話……\n我真的會徹底控制不住自己好不好……笨蛋。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

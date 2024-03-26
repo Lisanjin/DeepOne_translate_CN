@@ -1,0 +1,129 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0_0,1,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那個……你現在有時間嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_01.mp3
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+bg,download/bg/bg_10010300.jpg,1.0,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,1,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不好意思，我突然過來打擾。\n其實最近，我在向亞紗花請教紅茶的泡法」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好不容易泡的還可以……\n你一定要嘗嘗看」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_03.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「原來如此、試試味道」,選項2　「原來如此、試試毒」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是的。至少亞紗花說我泡的已經合格了，\n應該沒問題吧……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_04.mp3
+clickwait,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果可以我想聽聽你的意見。\n畢竟我們都在學習怎麼獨自生活」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_05.mp3
+clickwait,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,140,140,0.5,0.8,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「才不是試毒呢……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_06.mp3
+clickwait,,,,,,,,,,
+spineoff,em1,0,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我姑且也喝了！　沒問題的！\n先不說味道好不好，應該是能喝的……！」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_07.mp3
+clickwait,,,,,,,,,,
+spine,download/adv/spine/Mark13,em2,default,animation,0,110,150,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗚嗚……如果是開玩笑就算了……\n我還擔心是我做的不好喝……」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_08.mp3
+clickwait,,,,,,,,,,
+spineoff,em2,0,
+msg,1,<size=30><outline width=2 color=black>「……真的是開玩笑的……對吧？」</outline></size>,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_09.mp3
+clickwait,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那麼我放在你桌子上咯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:shy,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，不要勉強從那麼高的位置開始倒……小心撒了……\n慢慢來就好了……我可以的……呼~」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「請用……因為是剛沏好的要小心被燙傷哦？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「…………那個，味道怎麼樣？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「――真的嗎！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_14.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark1,em3,default,animation,0,120,140,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「太好了……只要你說好喝，\n那我的努力就沒有白費了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_15.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,0,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……以前有人對我說過」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「就算自己很辛苦如果有人會露出笑容的話，\n這就是對自己最好的回報……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這句話一定是在說現在吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「有人喝了我泡的茶以後感到很高興。\n就算是這樣的小事……我也感到幸福」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……總覺得真是不錯呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，還要再來一杯嗎。好的，請多喝點！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……那個，如果可以的話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我會為了泡出好茶而繼續努力的，\n到時……你可以再嘗一下嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果是為了誰……做一件事的話，感覺會更加努力」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100301/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……好！　那就敬請期待了！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100301/adv/sound/fav100301_04_25.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

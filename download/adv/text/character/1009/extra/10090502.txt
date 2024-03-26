@@ -1,0 +1,166 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11040300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ilyna1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:anger,ilyna2,0,0,0,0,,,,
+imgconf,ilyna2,ilyna1,0,-750,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_01.mp3
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「——礙事！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Water,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait,,,,,,,,,,,
+wait,2.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――――」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_b,body:unique,ilyna,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_02.mp3
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「混蛋……混蛋混蛋混蛋……那個女瘋狗……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Water,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Water,em2,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Water,em3,default,animation,0,300,0,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait
+wait,2
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「――――……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait
+wait,0.5
+endwait
+playbgm,/download/sound/bgm/bgm031.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_b,body:unique,ilyna,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_03.mp3
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哈啊，哈啊……哈啊……！趁著人不高興的時候過來偷襲，\n活該會遭殃……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「發生了什麼事？」,選項2　「難道是“那一天”？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_b,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_04.mp3
+msg,0,<size=30><outline width=2 color=black>「是啊，是發生了什麼事啊。真讓人不爽啊……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_b,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_05.mp3
+msg,0,<size=30><outline width=2 color=black>「只是想起來就上火……\n光是揍虛像，完全不能讓我平息煩躁……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0
+endwait
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+sprite,download/character/100902/adv/image/dragon.png,dragon,0,0,0,0,,,,
+imgconf,dragon,black1,0,-300,,,0,0.5,0.5,0.5
+endwait,,,,,,,,,,,
+wait,0.5
+endwait
+spriteoff,all,0.2
+endwait
+spriteatlas,download/character/100905/adv/atlas/stand_b,body:anger,ilyna,0,-220,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/100905/adv/sound/fav100905_02_06.mp3
+msg,0,<size=30><outline width=2 color=black>「佛爾卡洛，給我把眼前的男人撕成碎片，\n吃了內臟————」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_07.mp3
+msg,0,<size=30><outline width=2 color=black>「——……哼，現在才這麼慌張地道歉，\n一開始就別說不就好了？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_08.mp3
+msg,0,<size=30><outline width=2 color=black>「真是的……稍微學習一下什麼叫體貼怎麼樣？\n而且，我怎麼可能因為那種事就這麼上火」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_09.mp3
+msg,0,<size=30><outline width=2 color=black>「今天，在想索之前，就突然的和卡蒂婭同那\n該死的瘋狗碰上了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_10.mp3
+msg,0,<size=30><outline width=2 color=black>「我明明都沒問，卡蒂婭就說著我們兩個\n打算去作甜點，而向我搭話……這關我什麼事」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:unique,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_11.mp3
+msg,0,<size=30><outline width=2 color=black>「我本想無視她們直接走人，那女瘋狗就……“看著臉上很冷靜\n其實心裏羡慕的不得了吧？”似地炫耀勝利般笑了起來……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:unique,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_12.mp3
+msg,0,<size=30><outline width=2 color=black>「真是的，開什麼玩笑……\n我會去想那種事，就是太陽打西邊出來都沒可能！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:unique,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_13.mp3
+msg,0,<size=30><outline width=2 color=black>「……等等，你那什麼眼神啊？ 你也以為，我想和卡蒂婭她們\n一起做甜點嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:unique,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_14.mp3
+msg,0,<size=30><outline width=2 color=black>「這怎麼可能……我一點\n都不羡慕。不如說我還嫌棄和她們在一個地方呢！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100905/adv/sound/fav100905_02_15.mp3
+msg,0,<size=30><outline width=2 color=black>「所以，你不要亂誤會行不行。聽到沒！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

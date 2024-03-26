@@ -1,0 +1,116 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_01.mp3
+name,<outline width=2 color=black>曹操</outline>,
+msg,1,<outline width=2 color=black>「這個叫拉萊耶的地方，設備真是不錯。雖然我沒搞懂它們的技術原理\n是怎麼回事，不過相當方便，大多也都能活用在戰鬥中。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_02.mp3
+msg,1,<outline width=2 color=black>「倘若我能掌握這個設施和這些技術的知識，\n想必能夠為我的霸道奠定根基。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:smile,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_03.mp3
+msg,1,<outline width=2 color=black>「──只不過，我到現在還是無法判斷，在這裡度過的生活究竟是夢境還是現實。\n在下一秒鐘，我說不定就會醒過來，忘掉這裡所有的事情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_04.mp3
+msg,1,<outline width=2 color=black>「唉，莊周夢蝶這種事情啊，再怎麼煩惱也不會有答案吧。\n如果可以的話，真希望在這場夢境中發生的事情，都能帶回現實啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:smile,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_05.mp3
+msg,1,<outline width=2 color=black>「而且，不只是知識而已……我記得，那是叫做魔法師吧。\n在這裡使用那些妖術的少女們，我也真想把她們帶回去。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_06.mp3
+msg,1,<outline width=2 color=black>「她們有著那麼優秀的力量和能力……更重要的是，\n每一位都如此美麗，關在這種地方實在太浪費了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:unique2,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_07.mp3
+msg,1,<outline width=2 color=black>「你不覺得她們來當我的手下會更幸福嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1「她們不需要」,選項2「你是認真的？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:unique1,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_08.mp3
+msg,1,<outline width=2 color=black>「哎呀？你又怎麼會知道她們不願意？\n話說回來，我有必要考量她們願不願意嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:unique1,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_09.mp3
+msg,1,<outline width=2 color=black>「我是統治天下的魏國霸主，只要是我想要的，我都會弄到手。\n就算她們不願意，強迫她們聽從不就行了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:unique3,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_10.mp3
+msg,1,<outline width=2 color=black>「如果有人想要阻撓我，就以死謝罪吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:unique2,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_11.mp3
+msg,1,<outline width=2 color=black>「哎呀？你覺得我像是在開玩笑嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_12.mp3
+msg,1,<outline width=2 color=black>「我一向不開玩笑。在沒把想要的東西弄到手之前，我不會罷休。\n我不但不允許別人反抗我，有人敢阻撓我，我也不會輕饒。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:unique2,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_13.mp3
+msg,1,<outline width=2 color=black>「如果用說的你無法理解，我就直接教教你的身體，\n讓你知道霸王是什麼樣的存在吧，如何？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:unique3,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_14.mp3
+msg,1,<outline width=2 color=black>「聽從我說的話，獻上你的身體吧。\n如果你夠乖巧的話，我會賞賜你應有的報酬哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:anger,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_15.mp3
+msg,1,<outline width=2 color=black>「──……你那表情，我都已經說到這個份上了，\n你還是不服氣是吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:smile,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_16.mp3
+msg,1,<outline width=2 color=black>「明明毫無作戰能力，眼睛卻如此炯炯有神。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_17.mp3
+msg,1,<outline width=2 color=black>「你多半是在想不能讓我得逞，要挺身而出保護她們吧……\n明明手無縛雞之力，真是可笑。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:smile,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_18.mp3
+msg,1,<outline width=2 color=black>「雖然可笑，但是有像你這樣的濫好人身處拉萊耶的核心，\n或許我也能夠信任這裡的人吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_19.mp3
+msg,1,<outline width=2 color=black>「抱歉，我只是想要測試你一下，\n看看你們是不是真的值得我信任。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_20.mp3
+msg,1,<outline width=2 color=black>「我們要回到原來的世界，就必須借助你們的力量。\n但是，我總不能依靠自己無法信任的人，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_21.mp3
+msg,1,<outline width=2 color=black>「不好意思，這樣測試你……雖然這算不上是致歉，\n不過今後，你們就叫我『華琳』吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:normal,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_22.mp3
+name,<outline width=2 color=black>華琳</outline>,
+msg,1,<outline width=2 color=black>「雖然這邊的世界不存在真名的習俗，\n不過就當成是我信任你們的證據吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/190104/adv/atlas/stand_a,body:smile,sou,0,-110,0.5,0,,,,
+playvoice,1,download/character/190104/adv/sound/fav190104_01_23.mp3
+msg,1,<outline width=2 color=black>「今後就請多指教囉，\n有我這個霸王助你們一臂之力，你們可要感到光榮……呵呵！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

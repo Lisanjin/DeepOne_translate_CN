@@ -1,0 +1,140 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_b,body:anger,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_01.mp3
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,1,<outline width=2 color=black>「就用這招定勝負！看招，騰虵天英──！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_038.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+flash,255,255,255,4,0.3,1.0
+playse,/download/sound/se/conA.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――、…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+stopbgm,0.3,,,,,,,,,,
+endwait
+wait,0.2
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_02.mp3
+name,<outline width=2 color=black><ruby>火乃渡|</ruby><ruby>莉瀨|</ruby></outline>,
+msg,1,<outline width=2 color=black>「好，解決囉──！欸欸，你覺得怎麼樣？\n看到我的英姿了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「騰、騰虵……？」,選項2　「真是帥氣的必殺技。」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_03.mp3
+msg,1,<outline width=2 color=black>「剛才的必殺技？哼哼！很帥氣吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_04.mp3
+msg,1,<outline width=2 color=black>「很且那招不只是華麗而已，招式名稱也是有意義的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_05.mp3
+msg,1,<outline width=2 color=black>「啊，要詳細說明由來的話，三天三夜都說不完，\n所以就先省略吧，反正你應該也不會感興趣。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_06.mp3
+msg,1,<outline width=2 color=black>「對吧對吧？哎呀，哥哥你呀，\n真的很有眼光呢，沒錯沒錯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_07.mp3
+msg,1,<outline width=2 color=black>「順便告訴你，莉瀨的必殺技還有二十三種，\n之後你就好好期待吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_08.mp3
+msg,1,<outline width=2 color=black>「其實我本來想說名稱用外來語的話會比較有必殺技的感覺，\n但就術式而言，還是會變成漢字的名稱呢──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_09.mp3
+msg,1,<outline width=2 color=black>「我的家族在日本世世代代都是陰陽師的血統，\n所以我用的魔法不管怎樣就是會傾向那邊──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_10.mp3
+msg,1,<outline width=2 color=black>「不過，莉瀨和家裡已經沒有關係了，所以我想要採用外國的術式，\n更靈活地去思考新的必殺技，這樣也是可行的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_11.mp3
+msg,1,<outline width=2 color=black>「……嗯？在家裡發生了什麼事？這個嘛……──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_12.mp3
+msg,1,<outline width=2 color=black>「……我還不想說！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_13.mp3
+msg,1,<outline width=2 color=black>「想了解女孩子的過去，沒有好感度和心理準備\n以及充足的甜點，可是不行的哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_14.mp3
+msg,1,<outline width=2 color=black>「跟甜點無關？嘖嘖嘖，哥哥你太天真囉。\n天真到不行呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_15.mp3
+msg,1,<outline width=2 color=black>「只要請我吃很多甜點不就行了嗎？這樣一來，\n莉瀨對哥哥的好感度就會上升了，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_16.mp3
+msg,1,<outline width=2 color=black>「好感上升之後，莉瀨不就有可能會把少女的祕密也告訴你嗎？\n所以請我吃甜點，也是為了哥哥你的好處啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_17.mp3
+msg,1,<outline width=2 color=black>「事情就是這樣，哥哥，回到拉萊耶以後就把甜點\n獻上來吧！順便告訴你，我現在非常想吃水果蛋糕！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,jump,rise,0_-100_30_1,0.3,0
+playvoice,1,download/character/103603/adv/sound/fav103603_02_18.mp3
+msg,1,<outline width=2 color=black>「太好了！既然說定了，那就盡快結束這一帶的深潛吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103602/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103603/adv/sound/fav103603_02_19.mp3
+msg,1,<outline width=2 color=black>「好啦，我們要前進囉，哥哥。為了好吃的蛋糕，\n我們沒有時間在這裡悠悠哉哉的啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

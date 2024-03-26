@@ -1,0 +1,96 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+roombg,1013,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「請進、今天怎麼了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯、你給我泡了杯冰咖啡」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「牛奶和糖漿很足……你非常清楚我喜歡的口味了\n我有些口渴、你真是幫了大忙」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我……你看、這個。又在看漫畫了。\n很在意後續有什麼發展」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:surprise,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……？　啊、已經到這個時間點了……\n比我想像得還要讓人著迷」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,100,200,0.65,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「還差一點、就在你想著還差一點的時候、\n時間不知不覺地就過去了……呵呵。果然、漫畫很有趣呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_06.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+select,選項1　「你果然還是喜歡三角關係嗎？」,選項2　「現在是什麼樣的場景？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是啊。我喜歡那種黏膩的甜味啊。\n不過、這種展開好像告一段落了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在呢、都是一對戀人開啟兩個人在一起的生活、\n看起來很和睦的場景……真遺憾呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「三角關係會不會又開始了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_09.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「前段時間鬧矛盾的一對戀人重歸於好、\n兩個人開始新生活的場景」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「結果、那個三角關係的中的第三人、\n那個女孩放棄了，並搬到了國外」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>從那以後、只有兩個人的幸福場景一直持續著……\n我以為今後會越來越甜才讀的……有點遺憾」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、但是、只有一對戀人相處的場景、\n但不知道為什麼、也很吸引人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「很在意兩個人的臺詞和感情的變化、\n讀到停不下來了呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼說呢……雖然沒有我知道的那麼甜、\n但心裏……有一種輕飄飄的感覺？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「讀到兩個人的對話、我的心怦怦直跳……\n嗯……雖然不能好好表達、但是確實有不可思議的心情呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然不知道這是怎樣的感情……但是——」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:shy,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒有不愉快的心情呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101302/adv/sound/fav101302_07_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

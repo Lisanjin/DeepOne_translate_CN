@@ -1,0 +1,101 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身所使用的術式？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「咯咯……又來了，又對奇怪的事情感興趣啊。\n問了這個，你有什麼好處嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，算了，告訴你吧……話雖這麼說，過於詳細的說明\n妾身也沒法做到誒」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身所使用的術式叫做”陰陽術”……是妾身在幻夢境中\n新生的那一瞬間領會的術式」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「恐怕這個也是，從妾身前世所擁有的能力那\n繼承過來的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「其他的失想者們，繼承了同樣的能力或靈質的\n也挺多的啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒法太過詳細地說明，也是這個原因。\n即使理解了這個能力，也缺乏造詣呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「充其量，就是日本流傳下來的固有魔術體系吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_08.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「果然是日本人？」,選項2　「你能做到什麼？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然不清楚這副容貌反映了多少前世的姿容，\n但十有八九就是那樣吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「話雖如此，對現在的妾身而言，故鄉\n就是幻夢境了啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……妾身通過陰陽術產生的火焰，真正的價值是退魔。\n擊退魔物……就是字面意思啦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「要論魔力、魔術術式的優劣的話。\n雖然也不是絕對，如果對上攻擊力不強的魔術，妾身的火焰能將其瞬間燒為灰燼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:smile,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「迄今為止有好幾個想索者想對妾身出手，\n但看到我的火焰後都十分驚愕呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_13.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,85,300,0.7,0.8,0.5
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「恐怕不僅只有陰陽術，連妾身的這種能力\n也很罕見吧……呵呵」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_14.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身能告訴你的事情，也就只有這些了\n沒想到妾身居然會說出如此沒有意義的話……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼你一副非常高興樣子……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身講述自己的經歷，你高興什麼？\n真是……一個不可思議的男人啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「即便得知了我的經歷，這些事對你而言也毫無用處吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「如果只是想和我聊這些事，下次也可以來找妾身……算了，你當妾身沒說」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「一旦我這樣子說了，你每天都會毫不客氣地跑過來找我吧。\n想了想還是算了，我嫌麻煩」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102202/adv/sound/fav102202_06_20.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

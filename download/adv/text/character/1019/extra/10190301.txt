@@ -1,0 +1,139 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm006.mp3,0.5,,
+endwait
+sprite,download/monster/20010101/adv/image/20010101.png,majutsushi,-30,-200,1.25,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+clickwait,,,,,,,,,,,
+spriteoff,majutsushi,0.5,
+endwait
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:unique,siruvi,25,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵呵呵……藥好像起效了啊。\n是不是連行動都很吃力了啊?」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:anger,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我也不忍心讓你一直痛苦下去，\n看來該給你終結一刺了啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_02.mp3
+clickwait,,,,,,,,,,,
+spriteoff,siruvi,0.5,
+endwait,
+sprite,download/monster/20010101/adv/image/20010101.png,majutsushi,-30,-200,1.25,0.5,,,,
+endwait,
+spine,download/adv/spine/Water,em1,default,animation,0,0,0,2,0.8,0.5
+wait,1
+playse,/download/sound/se/se_050.mp3
+endwait,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――」</outline></size>,,,,,,,,,,
+endwait,
+wait,0.5
+endwait
+anm,fade,majutsushi,0,1,0
+playse,/download/sound/se/se_025.mp3
+endwait,
+wait,1
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,siruvi,25,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼……總算擊退了。\n雖然有點棘手，不過結果還是好的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼。這裏好像已經沒有值得調查的東西了。\n繼續前進吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_04.mp3
+clickwait,,,,,,,,,,,
+spriteoff,siruvi,0.5,
+endwait
+mask,bg1,0,0,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0
+mask,siruvi1,0,0,1280,200,0.5,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_a,body:anger,siruvi,0,0,0,0,,,,
+imgconf,siruvi,siruvi1,-10,-330,,,0,1.5,1.5,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「――…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_05.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:surprise,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……？　怎麼突然說起了這個……說我看起來很寂寞嗎?\n你為什麼這麼覺得呢――……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:sad,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……不，對你坦白也沒關係的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我之前可能說過……由於以前發生的境門失控事故，\n身為研究人員的父母和弟弟，他們被帶入了幻夢境之中」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那時……我只能看著，什麼也做不了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:anger,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以……那個時候我什麼也做不了，\n我更要盡一切努力找回我的家人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:unique,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「投身於幻夢境也是因為這個。\n至於結果，不管我自己會變成怎樣……呵，呵呵」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_11.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「為什麼笑」,選項2　「真的只是這樣？」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「無論自己受到怎樣的傷害，無論遭受怎樣的痛苦，\n我都有寸步不讓的信念……這才有人樣，很不錯對吧?」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我很高興自己心中還殘留著這樣的回憶」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:unique,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你不知道吧？　呵呵呵，事物的價值觀因人而異。\n你不能理解我的喜悅，這也並不是不可思議的事情吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_14.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……呵呵呵」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「到底還有沒有什麼別的理由呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:sad,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「對我來說，查明幻夢境——納克特原書的真理。\n沒有什麼理由……是不應該有理由的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_17.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101902/adv/atlas/stand_b,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果在你的眼中，我看起來很寂寞，\n那……一定是……腦海中的幻想吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「存在於幻夢境某個地方的家人……會不會也許就在附近，\n我會這樣想」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101903/adv/sound/fav101903_08_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

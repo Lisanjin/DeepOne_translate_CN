@@ -1,0 +1,676 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/20100201/adv/image/20100201.png,enemy2,0,0,1.35,0.5,,,,
+imgconf,enemy2,enemy1,0,-100,,,0,1.5,1.5,0.5
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――――――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「こんな時くらいは、大人しくしていて頂けるとありがたいのですが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+
+sprite,download/monster/20100201/adv/image/20100201.png,enemy1,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――、……、……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,tint,enemy1,0_0_0,0.5,0
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:smile,weat,-300,-240,0.5,0.5,,,,
+anm,tint,weat,150_150_150,0.0001,0
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:surprise,miliam,300,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米婭姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「ん、今なにか魔力が……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:smile,weat,-300,-240,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「ゼノさんたちのビーチバレーが盛り上がっているようですね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米婭姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「……ああ……なるほどね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:sad,miliam,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「というか、そろそろバーベキューの準備もできそうだし、\n声をかけにいった方がいいかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:sad,miliam,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……あれ、止めに入ったら巻き込まれそうで怖いんだけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,weat,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,-300,-100,0.5,0.5,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「それでしたら、ロゼットめがお声がけして参りましょうか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,300,-220,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米婭姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「押し付けるのもなんだし、一緒に行きましょうか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,-300,-100,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「好的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「下手な誤魔化しだわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「……あまり余計な心配をかけたくなかったのですが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「ミリアムもロゼットも気づいていて、気づかないふりをしていただけよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「……それは、逆に気を遣わせてしまったようで申し訳ないですね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「そこまで気にしなくていいとは思うけれどね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……那個」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,-300,-240,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「什麼？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「あなたって、失想者の癖に人間の頃の記憶があるの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「えぁ……っ、ごほ、けほ！？　こほっ、ん、かふっ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「なに急に死にかけてるのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「いえ、あの、あまりにも急すぎて、咽喉が詰まってしまって……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「え、え、ええと、ななんでそんなふうに……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「むしろ、よく気づかれないと思ったわね。あれだけ宗教――というか、\n聖奠教かしら。そういう類の話題に反応しておいて……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「…………た、たまたま、では」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「はぁ……とぼけるなら、それでもいいけれどね。\n別になにかを聞きたいわけじゃなく、ちょっと気になっただけだし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「ただ、奇妙な縁よね……こんな場所まで繋がりが続いているなんて。\nもっとも、決して嬉しいことではないけれど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「こんな腐れ縁じみたもの、思い切って捨てられたらいいのに……。\nそんな風に思うことはない？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「……それでも、繋がりは繋がりですから、\nわたくしは、それにきちんと向き合いたいと、そう思います」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「望まざる宿命や忌むべき因縁かもしれません……それでも、それを捨てて\n先に進むことなど出来ないから……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………なんて言っても、わたくしも、そのためにどうすればいいかは\nわかっていませんが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「やっぱりなにかしら縁があるのは認めたわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:surprise,weat,-300,-240,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「あっ、いえ……い、今のは違っ……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「ここにきて否定されてもね……ねえ、ひとつ聞きたいのだけれど――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,400,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「ばーべきゅー、じゅんび、できたよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「……そう。すぐに行くわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,400,-120,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「ん、ほかのみんなも、よんでくるね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「……気を付けなさいよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,xeno1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102405/adv/atlas/stand_a,body:anger,xeno2,0,0,0,0,,,,
+imgconf,xeno2,xeno1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>澤乃・娜莎莉</outline>,
+msg,0,<outline width=2 color=black>「くらうがいい……これが、全てを薙ぎ払う一撃だ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ridia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101251/adv/atlas/stand_a,body:anger,ridia2,0,0,0,0,,,,
+imgconf,ridia2,ridia1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莉迪亞・林德曼</outline>,
+msg,0,<outline width=2 color=black>「はっ、大袈裟なことだ……そんなの豆鉄砲だろう！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,miliam1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:sad,miliam2,0,0,0,0,,,,
+imgconf,miliam2,miliam1,0,-870,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>米婭姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「ちょっ……だ、だから、そろそろバーベキューの時間だから！\n人の話を聞い――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rozet1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:surprise,rozet2,0,0,0,0,,,,
+imgconf,rozet2,rozet1,0,-200,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>羅澤特・薩維尼</outline>,
+msg,0,<outline width=2 color=black>「ミ、ミリアム様、お避けください……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,1,0.3,0.5
+playse,/download/sound/se/se_043.mp3
+shake,0.2,2,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,vi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102205/adv/atlas/stand_a,body:normal,vi2,0,0,0,0,,,,
+imgconf,vi2,vi1,0,-980,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「おお……見事に流れ玉にあたったのう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101351/adv/atlas/stand_a,body:normal,milva2,0,0,0,0,,,,
+imgconf,milva2,milva1,0,-350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「今、三回転くらいしながら飛んでいったけど、大丈夫かしら？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:sad,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「…………ぅ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:sad,ilyna,300,-220,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「はぁ……仕方ないわね。私も一緒にいってあげるわよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:smile,frau,-300,-120,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙勞</outline>,
+msg,0,<outline width=2 color=black>「真的嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>貝托麗薩</outline>,
+msg,0,<outline width=2 color=black>「あ、あの、イリーナさん。今、なにか言いかけていたのは、一体……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:sad,ilyna,300,-220,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「……沒什麼。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>――どこまでもバカな話だ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>本当に、自分で自分に呆れてしまう。\n一体なにを聞こうとしているのか……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ilyna1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100908/adv/atlas/stand_a,body:sad,ilyna2,0,0,0,0,,,,
+imgconf,ilyna2,ilyna1,0,-770,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>かつて、私の両親は、私を顧みることなく、信仰に全てを捧げた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>ナコト原書を求め、幻夢境に身を投じる殉教者。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>そんなものに選ばれた両親は、引き留める私の言葉など聞こえぬように、\n一度も振り返ることなく幻夢境への一方通行の術式に身を投じた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>なんて、愚かだったのだろう。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>聖奠教なんてものを信じ縋っていた両親も。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>信仰に依存していた両親が\n自分への愛を選んでくれるなどと妄信していた私も。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>そう……本当は分かっている。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>聖奠教が私から両親を奪ったというのは事実で。\n……けれど、両親が私よりも聖奠教を選んだというのも事実なのだ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>私が聖奠教に憎悪を燃やしたのは、\nそうしなければ、自分の心が耐えられなかったから。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>両親が私を本当の意味で愛してくれなかったことへの責任を、なにかに\n押し付けたかった。そこには理由があるのだと、孤独に納得をつけたかった。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>そして、その弱さは……多分、今も変わってない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>だって、そうでしょう。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>じゃなかったら……こんなこと、聞こうだなんて思わない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>幻夢境に落ちた、私の両親を知らないか――なんて。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>今さらなにを期待しているのか。いつまで引きずっているのか。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name, 
+msg,0,<outline width=2 color=black>本当に、バカな女。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,136 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11170300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「──呵呵，這套衣服真的很可愛，實在太棒了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:surprise,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_02.mp3
+msg,1,<outline width=2 color=black>「哎呀，你這是什麼表情。你不明白為什麼送個情人節巧克力\n也有必要大費周章跑來深潛……是不是？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_03.mp3
+msg,1,<outline width=2 color=black>「呵呵，這還用得著問嗎？畢竟機會難得，\n當然會想打扮成你覺得可愛的樣子來送巧克力呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_04.mp3
+msg,1,<outline width=2 color=black>「那麼事不宜遲……來，給你。這就是我做的巧克力。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_05.mp3
+msg,1,<outline width=2 color=black>「雖然這是我第一次做巧克力，\n但我做得可好吃了。就連教我怎麼做的亞紗花都有稱讚我呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_06.mp3
+msg,1,<outline width=2 color=black>「你也跟我說說你的感想好不好？來，請發表感想！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_07.mp3
+msg,1,<outline width=2 color=black>「……怎麼樣？很好吃吧？我用加了滿滿砂糖的巧克力\n去包裹加了楓糖的牛奶糖哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1「……好吃」,選項2「…………甜」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_08.mp3
+msg,1,<outline width=2 color=black>「呵呵，我就說吧！我之前吃的時候也覺得\n又甜又好吃。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_09.mp3
+msg,1,<outline width=2 color=black>「我很高興你也和我有一樣的想法。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_10.mp3
+msg,1,<outline width=2 color=black>「哎呀，你的表情怎麼看起來\n好像在忍耐什麼？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_11.mp3
+msg,1,<outline width=2 color=black>「你要是想再吃更多的話，其實不用忍耐哦！\n你很喜歡吃甜食吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_12.mp3
+msg,1,<outline width=2 color=black>「巧克力會甜不是理所當然的嗎？你這個人真奇怪。\n而且，既然要甜，當然是越甜越好，不是嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_13.mp3
+msg,1,<outline width=2 color=black>「哎呀，你的手怎麼停下來啦……我可是因為你說想吃\n才做給你吃的耶。再多吃點吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_14.mp3
+msg,1,<outline width=2 color=black>「對了，難得有這個機會，乾脆我來餵你吃吧。\n來，張開嘴……說聲『啊──』！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_15.mp3
+msg,1,<outline width=2 color=black>「呵呵，看來你也很喜歡，太好了。\n我做了很多，我們一起吃吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_16.mp3
+msg,1,<outline width=2 color=black>「啊嗯……呵呵，這個巧克力真的很甜很好吃呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_17.mp3
+msg,1,<outline width=2 color=black>「我啊，最喜歡吃甜食了。比如巧克力和點心──還有，\n他人的絕望情感。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_18.mp3
+msg,1,<outline width=2 color=black>「不過，來到拉萊耶之後，我開始能感受到另一種不一樣的美好味道了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_19.mp3
+msg,1,<outline width=2 color=black>「那種味道啊，就是你的情緒。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_20.mp3
+msg,1,<outline width=2 color=black>「我從你身上感受到的情緒，總是和絕望、憤怒那類灰暗的情緒正好相反，\n我最近開始覺得……這樣的情緒好像還不錯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:shy,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_21.mp3
+msg,1,<outline width=2 color=black>「所以，我這樣是為了感謝你讓我知道了這麼美好的味道。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_22.mp3
+msg,1,<outline width=2 color=black>「此刻我也能感受到你的喜悅。那是一種溫暖\n又溫和的甜。這代表你很高興能收到我的巧克力，對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_23.mp3
+msg,1,<outline width=2 color=black>「我開始忍不住想要品嘗更多你產生的這類情緒。\n我有點奇怪對吧？……耶呵、耶呵呵。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_24.mp3
+msg,1,<outline width=2 color=black>「對了，我有一個方法，可以讓巧克力吃起來更甜。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101307/adv/atlas/stand_a,body:shy,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_25.mp3
+msg,1,<outline width=2 color=black>「來，你用嘴巴咬住這塊巧克力。先別吃下去哦！\n咬好了就閉上眼。不可以瞇眼偷看哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_26.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「那現在──啾、唔、啊嗯……嗯呵，好甜──♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playvoice,1,download/character/101307/adv/sound/fav101307_03_27.mp3
+msg,1,<outline width=2 color=black>「來，你也吃呀……啾、啾！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

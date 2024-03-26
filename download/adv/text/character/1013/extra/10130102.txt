@@ -1,0 +1,106 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+roombg,1013,0
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「請進。你突然來我房間、嚇了我一跳。\n你是有什麼急事嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……這是薯片嗎？\n而且貌似還熱乎乎的……難道是剛做的嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:surprise,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哦、是亞紗花做的吧……那個姑娘、真的很會做菜。\n我是第一次吃剛做好的薯片」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……莫非、這個、\n是專門拿來給我的嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「因為你說過很喜歡吃點心」,選項2　「這麼難得、就一起吃吧」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「誒、是的哦。你記得很清楚，我很開心呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark5,em1,default,animation,0,100,200,0.65,0.8,0.2
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但是、總覺得被這麼一說、\n我就像是一個貪吃鬼似的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_06.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「也不是總是吃點心的――不是這樣的、\n嘛、女孩子和點心是密不可分的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「甜的點心也好、不甜的點心也罷、對女孩子來說\n都是不可或缺的東西……我可不是貪吃鬼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼哼、你真是個機靈人呢。這樣可能也不讓人討厭呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「總覺得、你真是不可思議呢。換做是一般人，知道了我的事情之後、\n視線裏都會有些許甜蜜的感情……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你的眼睛、直勾勾地盯著我……沒有味道……\n唔、不對……是我不知道的味道嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼哼……不知為何、我對你產生了興趣。\n來、坐這裏。一邊吃點心、一邊慢慢聊天吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_12.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:smile,mil,-10,-120,0.5,0,,,,,
+name,<size=27><outline width=2 color=black>米露瓦・林德曼</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼哼、雖然也很喜歡甜的點心、但是偶爾吃不甜的點心也不錯呢。\n那麼、我開吃……了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:surprise,mil,-10,-120,0.5,0,,,,,
+spine,download/adv/spine/Mark3,em2,default,animation,0,100,200,0.65,0.8,0
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……嗯嗯……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_14.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……好鹹。最近一直在吃甜食、\n所以感覺特別鹹」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:sad,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「還沒到那種程度……？　是嗎……只是放在舌頭上、\n嘴裏就有種突然一緊的感覺……嗯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:normal,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「……果然、我還是喜歡甜的點心」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:surprise,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊、不過也不是說這個點心不好吃啊？\n只是相比較會這樣說、這個也很好了……嗯、嗯、」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101301/adv/atlas/stand_a,body:shy,mil,-10,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀、不要再我啦。一吃鹹的東西我就會露出奇怪的表情。\n沒辦法呢……嗯……好鹹」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101301/adv/sound/fav101301_04_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

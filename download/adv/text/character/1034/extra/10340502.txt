@@ -1,0 +1,107 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11180300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_01.mp3
+name,<outline width=2 color=black>露易絲·貝雷斯弗特</outline>,
+msg,1,<outline width=2 color=black>「敵人也不出來……這樣悠閒地走着，\n總覺得反而會變得不安……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_02.mp3
+msg,1,<outline width=2 color=black>「怎麼說才好呢，這種感覺……嗯，什麼都不做，\n光走着不覺得很可惜嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_03.mp3
+msg,1,<outline width=2 color=black>「把這個時間用在檔案工作上的話，能處理多少？\n邊走邊打電話不是也可以嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_04.mp3
+msg,1,<outline width=2 color=black>「你總是在想這種事吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_05.mp3
+msg,1,<outline width=2 color=black>「喂，你為什麼用那種可憐的眼神看我！\n那是看棄犬時的眼神吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1「忘了工作的事吧」,選項2「如果是棄犬的話，我想幫你撿回來」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_06.mp3
+msg,1,<outline width=2 color=black>「忘記……工作？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_07.mp3
+msg,1,<outline width=2 color=black>「……啊，怎麼辦。如果忘了工作，我完全不知道該怎麼想。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_08.mp3
+msg,1,<outline width=2 color=black>「或許我是那種一旦工作了就什麼都剩不下的\n寂寞的人……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_09.mp3
+msg,1,<outline width=2 color=black>「那果然是把我當棄犬對待吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_10.mp3
+msg,1,<outline width=2 color=black>「不管怎麼說，棄犬就是棄犬……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_11.mp3
+msg,1,<outline width=2 color=black>「啊，但是被撿到的棄犬一定會對它很溫柔的吧。\n溫暖的被窩和美味的飯……還有，被人撫摸……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_12.mp3
+msg,1,<outline width=2 color=black>「棄犬……也許不錯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_13.mp3
+msg,1,<outline width=2 color=black>「——哈！等一下，剛剛的不算！那個……\n我也是有自尊的……不是，不是那樣的！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_14.mp3
+msg,1,<outline width=2 color=black>「喂，你看。今天是和你護花使者的約會，\n所以先把這些話放在一邊，讓我好好享受吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_15.mp3
+msg,1,<outline width=2 color=black>「首先還是買東西吧。話雖如此，這附近到底有什麼呢……呃。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_16.mp3
+msg,1,<outline width=2 color=black>「原來如此。因為是白色情人節，所以白巧克力很多。\n然後是曲奇、糖……總之都是些點心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_17.mp3
+msg,1,<outline width=2 color=black>「實際上在日本，白色情人節的時候也是這樣賣點心的吧……原來如此。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_18.mp3
+msg,1,<outline width=2 color=black>「聽說過日本的情人節是糖果業界的準備，不過聽說白色情人節\n也是為了提高點心的消費量而創造的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_19.mp3
+msg,1,<outline width=2 color=black>「把那個作為一般的活動固定下來，真是做得很好啊。\n到底是為了多少利益……這次，我們調查一下經濟效果吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_20.mp3
+msg,1,<outline width=2 color=black>「——哈！？不對……因為現在的情況也不一樣！\n並不是考慮工作的事情，而是學習經濟！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103405/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103405/adv/sound/fav103405_02_21.mp3
+msg,1,<outline width=2 color=black>「嗯……不是的。不應該是這樣的。\n本來打算普通地享受約會的，為什麼會變成這樣呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

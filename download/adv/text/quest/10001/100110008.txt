@@ -1,0 +1,324 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020400.jpg,0
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm008.mp3,0,
+endwait
+mask,bg1,-300,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,asaka1,-300,0,300,720,0,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,0,0,0,0,,,,
+imgconf,asaka,asaka1,-140,-650,200,,0,1.5,1.5,0.5
+mask,bg2,300,0,300,720,0,,,,
+sprite,download/adv/image/black.jpg,bg3,0,0,0,0
+imgconf,bg3,bg2,0,0,,,0,1,1,0.5
+mask,tabasa1,300,0,300,720,0,,,,
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,0,0,0,0,,,,
+imgconf,tabasa,tabasa1,0,-370,200,,0,1.5,1.5,0.5
+endwait
+name,<size=27><outline width=2 color=black><ruby>亞紗花|</ruby>／塔芭莎</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈啊——！」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,all,0.5
+endwait
+sprite,download/monster/20010102/adv/image/20010102.png,magician,-50,-250,1.35,0.5
+endwait
+spine,download/adv/spine/Fire1,em1,default,animation,0,0,0,0.65,0.8,0
+spine,download/adv/spine/Dark,em2,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_038.mp3
+wait,0.1
+playse,/download/sound/se/se_039.mp3
+shake,0.1,6,100,100
+wait,0.5
+flash,255,255,255,2,0.2,0
+endwait
+spineoff,em1,1
+spineoff,em2,1
+endwait
+anm,fade,magician,0,1,1
+playse,/download/sound/se/se_025.mp3
+endwait
+spriteoff,magician,0
+endwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:normal,tabasa,300,-100,0.5,0.5,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼……這就結束了？」</outline></size>,,,,,,,,,
+clickwait
+anm,tint,asaka,255_255_255,0.0001,0
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖說有他的支援，但這力量還真是驚人……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這有什麼好驚訝的。對吧，兄長？」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀呀……既然幫手也來了，那再繼續糾纏也沒用。\n我還是乾脆壞人當到底，狼狽逃走好了」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「不過，塔芭莎……你真的能信任他們嗎？\n你覺得他們真的能接納你和你哥哥嗎？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:normal,tabasa,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「羅裏吧嗦的……那又怎樣？反正我都無所謂。\n我一開始就沒想要她們的接受」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哎……別總是說那種孩子氣的話，好好看看外面的世界吧。\n這是我給你的最後一個建議」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「——你珍視的人，也在期待你這樣做」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……？你說什麼？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:smile,norn,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>諾恩・納爾維諾特</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼哼……雖然不舍，但我今天就先告辭了。\n下次有機會再見吧，拜拜」</outline></size>,,,,,,,,,
+clickwait
+stopbgm,0.5
+endwait
+flash,255,255,255,2,0.2,0
+anm,fade,norn,0,1,1
+playse,/download/sound/se/se_015.mp3
+endwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「等一下……！」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……沒用了，領域裏已經找不到她的魔力反應了。\n雖然很不甘心，但她的逃跑速度似乎是一流的」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「…………諾恩」</outline></size>,,,,,,,,,
+clickwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,300,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「看來你們認識那個女人啊……你們是想索者吧？\n那或許，你們也知道回到拉萊耶的方法？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:normal,asaka,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，嗯……只要通過他和納克特原書的聯繫就可以回去了……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:sad,tabasa,300,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「和納克特原書的……？算了，不用告訴我詳情。\n現在只要知道能回去……就可以了……唔……啊——」</outline></size>,,,,,,,,,
+clickwait
+playse,/download/sound/se/se_020.mp3
+shake,0.1,2,100,100
+anm,fade,tabasa,0,1,1
+endwait
+spriteoff,tabasa,0
+spriteatlas,download/character/100102/adv/atlas/stand_b,body:surprise,asaka,-300,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「咦，喂！怎麼突然就倒下了……沒、沒事吧？！」</outline></size>,,,,,,,,,
+clickwait
+stopbgm,0.5
+endwait
+slideinblack,1,right
+endwait
+spriteoff,all,0,
+name,
+msg,0,
+bg,color_0_0_0,0,255
+endwait
+slideoutblack,1,left
+endwait
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,
+clickwait
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,
+clickwait
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,
+clickwait
+roombg,1020,1
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,gizel,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,-300,-120,0.5,0.5,,,,
+anm,tint,gizel,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「抱歉……這該怎麼賠罪才好……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,gizel,300,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>吉澤爾・芭德薇</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是我們沒注意，\n沒想到你會醒得那麼快」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,all,0
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,-250,-120,0.5,0.5,,,,
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:anger,tabasa,250,-100,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼，你們用不著道歉」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,-250,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「好了好了……總之，現在的拉萊耶和我們的狀況，\n都和你講清楚了」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:sad,tabasa,250,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「原本聽起來，我應該很難相信……\n但看現在這狀況，也不得不信了」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,asaka,0
+endwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:normal,dana,-300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，那個……如果可以的話，\n今後我們也想得到你的幫助……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:sad,tabasa,250,-100,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……是的呢」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:normal,tabasa,250,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「本來我是沒興趣和其他人合作的，但現在也是沒辦法……\n兄長也叫我那樣做」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:smile,dana,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「塔芭莎……謝謝你」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,dana,0
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,-250,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「太好了，這樣就多了一個值得信賴的同伴了」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:surprise,tabasa,250,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……同伴？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,-250,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，你剛在幻夢境裏的戰鬥，\n真的很厲害，非常可靠」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:shy,tabasa,250,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼……少說漂亮話哄人開心」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-250,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「咦？我沒那個意思啊……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,-250,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「真是固執——來」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:surprise,tabasa,250,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……這是？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka,-250,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我們是今後要一起並肩作戰的同伴，握個手總可以吧？」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:surprise,tabasa,250,-100,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――――」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:sad,tabasa,250,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……抱歉，我的身體還有點不舒服。讓我自己休息一會兒吧」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-250,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「塔芭莎……」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,tabasa,0
+endwait
+spriteatlas,download/character/100401/adv/atlas/stand_a,body:sad,dana,300,-120,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>達納・達蕾露・<ruby>道明寺|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……情況突然，你應該還沒反應過來，\n需要一些獨處時間對吧。我們走吧，亞紗花」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,-250,-120,0.5,0,,,,
+anm,tint,dana,150_150_150,0.0001,0
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……如果有什麼事就馬上叫我們吧？\n只要是力所能及的事，我們都會幫忙的」</outline></size>,,,,,,,,,
+clickwait
+spriteoff,all,0.5
+endwait
+playse,/download/sound/se/se_029.mp3
+wait,0.5
+endwait
+stopbgm,0.5
+endwait
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,0,-100,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>塔芭莎・川寧</outline></size>,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「呼……她們好像走了呢，兄長」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「總算順利地回來了。這也全都是多虧了兄長……」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:sad,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，兄長為什麼要把塔芭莎帶到幻夢境……？\n是為了讓我和那個叫諾恩的女人相遇嗎？」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「……還是說，想讓我遇到那個男人？」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「塔芭莎只要有兄長就足夠了」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「——可如果能握住他的手，也許事情會有所改變？\n不管是塔芭莎……還是兄長」</outline></size>,,,,,,,,,
+clickwait
+spriteatlas,download/character/102001/adv/atlas/stand_b,body:normal,tabasa,0,-100,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「算了……是我剛才說的話太莫名其妙了。\n大概是因為累了吧，睡一會兒好了」</outline></size>,,,,,,,,,
+clickwait
+msg,1,<size=30><outline width=2 color=black>「今後，也請一直陪在塔巴莎身邊吧，兄長」</outline></size>,,,,,,,,,
+clickwait
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

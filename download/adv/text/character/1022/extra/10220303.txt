@@ -1,0 +1,122 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……你還是像往常一樣，一到夜裏就會變成禽獸啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,,
+spine,download/adv/spine/Mark12,em1,default,animation,0,100,280,0.65,0.8,0
+endwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你裝什麼傻啊，假惺惺的\n如果你晚上都是這樣子的話，其他的女孩子應該也很辛苦吧……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_02.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,0,,,,,,,,,
+endwait
+msg,1,<size=30><outline width=2 color=black>「真是的，男人這種生物都是這樣子嗎？\n如果都是的話，可真是駭人聽聞啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「果然你們男人都不正經哎……嗯？你問妾身\n我為什麼那麼討厭男性？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這不是廢話嗎。男人這種生物，一旦知道對方是女人\n就會產生出一種奇怪的優越感，真的是愚昧至極」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「無論對方有著怎樣優秀的能力，只要對方是女人\n就會從心底裏看不起對方」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_06.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「唯很優秀啊」,選項2　「並不是看不起女人」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我又怎麼知道你這些話是否發自內心呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「――這種話我是說不出口的。因為妾身也知道\n你不是那種說話輕浮的人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:smile,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「呵呵……我是這麼想的\n雖然你也是個男人，但妾身可以破例相信你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_09.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_10.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為自己生為男子，所以想保護女人？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:anger,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「說到底，你也在無意識間將妾身當成那些弱女子\n想要保護妾身，不就是你看不起妾身的證明嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身可沒有軟弱到需要你來守護」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……失態了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一談到這個話題，我就容易過激\n冷靜下來仔細想想，你根本不會有那方面的想法」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_15.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+name,<size=27><outline width=2 color=black>唯</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「妾身對男人的厭惡感……並沒有什麼特別的緣由\n確切地說，應該是不記得了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:normal,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「恐怕在妾身成為失想者之前\n原來的那個自己就對男人有些特別的情結了吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「能讓妾身產生出這種感情的事情，估計也不是什麼像樣的事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然我對過去的自己也不是沒有興趣\n但是，有些事情，恐怕還是不知道更好」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「即便知道了，也只會讓自己糟心罷了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:sad,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，估計也就是\n被像你這種男人殘忍地玩弄罷了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:unique,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「有什麼想反駁的話，還請你控制好自己之後再說吧\n真是的……也體會下妾身的心情吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:smile,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，說到底也許還是妾身太有魅力了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_23.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:surprise,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗚……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102201/adv/atlas/stand_a,body:shy,vi,-20,-220,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「笨蛋，為什麼剛才默默地點頭啊……\n你果然是個壞心眼的男人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102203/adv/sound/fav102203_10_25.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

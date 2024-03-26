@@ -1,0 +1,132 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020400.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+flash,255,255,255,5,0.3,0
+spine,download/adv/spine/Wind1,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_046.mp3
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+anm,tint,enemy1,0_0_0,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敵方</outline>,
+msg,0,<outline width=2 color=black>「――――――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+name,
+msg,0,
+stopbgm,0.5,,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:surprise,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「啊呀、這就結束了？　本來還可以再跳一會兒的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_02.mp3
+msg,1,<outline width=2 color=black>「雖然有點美中不足、但是好不容易穿的裙子又不願意弄髒、\n就這樣吧，行嗎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_03.mp3
+msg,1,<outline width=2 color=black>「嗯、我很喜歡這件禮服。\n就像是去參加舞會的灰姑娘吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_04.mp3
+msg,1,<outline width=2 color=black>「你覺得我這身打扮怎麼樣。\n你喜歡嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「裙子很可愛」,選項2　「水晶鞋很漂亮」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_05.mp3
+msg,1,<outline width=2 color=black>「呵呵、是呢。我也喜歡這個設計呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_06.mp3
+msg,1,<outline width=2 color=black>「灰姑娘也穿著這麼漂亮的衣服去了城堡的舞會嗎。\n如果是這樣的話、王子為之著迷也是理所當然的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_07.mp3
+msg,1,<outline width=2 color=black>「因為……你看。不僅僅是可愛、為了誘惑男人\n還露出這麼多肌膚……對吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_08.mp3
+msg,1,<outline width=2 color=black>「我也這麼認為。雖然一般不會用玻璃做鞋子什麼的、不過很漂亮呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_09.mp3
+msg,1,<outline width=2 color=black>「可是、我最喜歡的故事裏的灰姑娘、不是穿水晶鞋\n而是穿著金鞋去參加舞會哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_10.mp3
+msg,1,<outline width=2 color=black>「而且也沒有南瓜馬車、是走路去城堡、\n從王子身邊逃走的時候再跑回家」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_11.mp3
+msg,1,<outline width=2 color=black>「果然是因為平時經常被欺負、被強迫做一些亂七八糟的工作\n所以才有體力嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_12.mp3
+msg,1,<outline width=2 color=black>「怎麼、追究童話故事的真實性是毫無意義的嗎。呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_13.mp3
+msg,1,<outline width=2 color=black>「可是、姐姐們也太傻了。竟然沒發現參加舞會的灰姑娘\n是自己的妹妹呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_14.mp3
+msg,1,<outline width=2 color=black>「哎、沒想到一直受欺負的灰姑娘會以這麼漂亮的樣子\n出現在這兒、這是完全沒有想到的吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_15.mp3
+msg,1,<outline width=2 color=black>「那樣的話、姐姐們在舞會上沒注意到她的真實身份\n也不無道理」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:unique,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_16.mp3
+msg,1,<outline width=2 color=black>「如果我是灰姑娘的話、可能會在背後\n對沒有注意到自己，疏忽大意的姐姐們――做些什麼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:unique,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_17.mp3
+msg,1,<outline width=2 color=black>「然後、對奄奄一息的姐姐說、\n自己是灰姑娘」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:unique,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_18.mp3
+msg,1,<outline width=2 color=black>「在失去生命的絕望中、如果知道一直欺負自己的灰姑娘\n這麼漂亮、會是什麼樣的表情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:unique,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_19.mp3
+msg,1,<outline width=2 color=black>「我覺得那個時候從姐姐那裏、一定能得到非常香甜美味的東西。光是想像，嘴裏就會充滿甜甜的味道……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_20.mp3
+msg,1,<outline width=2 color=black>「呵呵、啊、我又想讀灰姑娘的故事了。\n等我回到拉萊耶、我也會再讀給你聽的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101306/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101306/adv/sound/fav101306_02_21.mp3
+msg,1,<outline width=2 color=black>「這種甜蜜的心情、我也想讓你嘗嘗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

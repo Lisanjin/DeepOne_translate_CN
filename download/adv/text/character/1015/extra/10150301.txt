@@ -1,0 +1,150 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10040100.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,,
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier1,-350,-140,1.25,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier3,350,-140,1.25,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier2,－100,-200,1.25,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:unique,ouka,-10,-120,0.47,0.5,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈，今天也有不錯的收穫啊！\n可以啊……不管是誰都放馬過來吧！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:anger,ouka,-10,-120,0.47,0.2,,,,
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,200,-10,0.65,0.65,0
+wait,0.1
+playse,/download/sound/se/se_037.mp3
+anm,move,ouka,-300_-120,0.2,0
+shake,0.1,2,20,20
+endwait
+spineoff,em1,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呼……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_02.mp3
+clickwait,,,,,,,,,,,
+endwait
+anm,move,ouka,-10_-120,0.5,0
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「什麼？剛剛的是在攻擊嗎？這種程度的攻擊我簡直要打哈欠了！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:unique,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，接下來輪到我了。\n我給了你機會的……沒好好抓住是你的問題咯？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:anger,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這傢伙……我已經熱血沸騰了！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_05.mp3
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0.5
+endwait
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier1,-350,-140,1.25,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier3,350,-140,1.25,0.5,,,,
+sprite,download/monster/20030101/adv/image/20030101.png,toysoldier2,0,-200,1.25,0.5,,,,
+endwait
+spine,download/adv/spine/Fire1,em2,default,animation,0,0,0,0.65,0.8,0
+playse,/download/sound/se/se_038.mp3
+shake,0.1,20,50,50
+flash,255,255,255,10,0.2,1.5
+endwait
+spineoff,em2,,,,,,,,,,
+endwait
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+stopbgm,0.5
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:unique,ouka,-10,-120,0.47,0,.5,,,
+msg,1,<size=30><outline width=2 color=black>「……哼，真沒勁啊。這就結束了？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_06.mp3
+clickwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「好了，我們繼續前進吧。\n要是接下來的敵人更強一些就好了啊……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「為什麼這麼熱衷於戰鬥呢？」,選項2　「敵人太強的話就麻煩了」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我想沉浸在眼前的戰鬥中。\n在生死關頭，就沒有時間去考慮其他的事了吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「戰鬥的時候是最純粹的。什麼煩惱的事都沒有……\n攻擊，和被攻擊。簡單也很好啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「像我這種空虛的人，只有在那種地方才能找到歸屬」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:unique,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「然後就是……我還活著。\n對現在的我來說，只有這個事實，才是我存在於此的證明」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_11.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:smile,ouka,-10,-120,0.47,0,,,,
+spine,download/adv/spine/Mark1,em3,default,animation,0,80,190,0.65,0.8,0.5
+endwait
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哈哈，放心吧……不管是誰來，我都能把他打倒」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_12.mp3
+clickwait,,,,,,,,,,,
+spineoff,em3,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「還是說，我就那麼不可信？\n那麼，我就把更強的傢伙打倒，來證明我的厲害」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:unique,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「用不了多久，你就會覺得全都交給我也沒問題了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以啊，不用那麼擔心啦。而且，\n這附近都是雜魚，我不可能被打倒的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「連你都能打倒他們……雖然這麼說可能有點言過其實了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:surprise,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……你說，我故意接下了敵人的攻擊嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒，沒想到你還挺有眼力見兒……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「並沒有什麼深層次的含義啦。只是覺得只有我單方面打倒敵人\n沒什麼意思。所以，這算是給我自己設立的小小障礙」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_19.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:surprise,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……哈？我想傷害自己，這怎麼可能呢。\n我為什麼要那麼做……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那是你想太多啦。\n我只是，想進行一場滿足的戰鬥而已……真的只是因為這個」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_08_21.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

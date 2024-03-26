@@ -1,0 +1,98 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,siruvi,25,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔唔……頭和眼皮都好沉啊。\n不過，再稍微繼續――好痛！？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:surprise,siruvi,25,-120,0.5,0,,,,
+spine,download/adv/spine/Mark3,em1,default,animation,0,120,160,0.65,0.7,0
+shake,0.5,0.3,5,5
+wait,1.5
+endwait,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，啊啊，是你啊……抱歉，撞到你了。\n我有些注意力不集中呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_02.mp3
+clickwait,,,,,,,,,,,
+spriteoff,em1,0,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀……其實我從昨天起就沒睡覺呢。\n一直醉心於研究之中，回過神來已經天亮了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「已經快到了最終階段了，為了轉換心情才出來溜達溜達。\n一回去就要馬上繼續投身於研究了……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……哎呀，看你的表情好像是要說什麼啊？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你需要好好休息」,選項2　「會什麼要那麼拼命呢」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嘛，說的沒錯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，就差一點，就差一點了，話說，\n總會有停不下來的時候吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「尤其是有新點子浮現出來的時候」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「真是的……為什麼一天只有二十四個小時啊。\n太不方便了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「連睡覺和吃飯的時間我都捨不得花呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:sad,siruvi,25,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「唔……這也沒什麼大不了的啊。\n因為喜歡才做的嘛」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我的研究，是為了接近納克特原書的真理。或多或少的亂來也是必要的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:unique,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「沒錯，這幅皮囊變成什麼樣都無所謂……噗呼呼」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_13.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>希爾薇・斯沃瑪萊恩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對納克特原書的研究就是那麼有趣，\n有意義，極具魅力，所以才讓人那麼的熱衷」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「離那真理越近，想要瞭解它的想法，\n就越來越強烈……誰都抵擋不了這種感覺的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「沒錯，就連我自己……\n即使與本來的目的大相徑庭了，都深陷其中無法自拔」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:normal,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「哎呀……說了太多廢話了呢。\n該回研究室了呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,siruvi,25,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「能和你說說話，心情也不一樣了。那麼，再見咯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101902/adv/sound/fav101902_06_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

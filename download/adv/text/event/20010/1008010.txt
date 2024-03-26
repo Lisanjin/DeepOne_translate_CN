@@ -1,0 +1,484 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11040300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm031.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊啊……卡蒂婭大人……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,jamila,300_-180,0.8,1
+endwait
+anm,scale,jamila,-0.5_0.5,0,0
+endwait
+anm,move,jamila,-300_-180,0.8,1
+endwait
+anm,scale,jamila,0.5_0.5,0,0
+endwait
+anm,move,jamila,300_-180,0.8,1
+endwait
+anm,scale,jamila,-0.5_0.5,0,0
+endwait
+anm,move,jamila,-300_-180,0.8,1
+endwait
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:sad,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……你就不能老實點？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,-300,-180,0.5,0,,,,
+anm,scale,jamila,-0.5_0.5,0,0
+endwait
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你不擔心嗎？！\n竟然讓卡蒂婭一個人進廚房……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,-300,-180,0.5,0,,,,
+anm,scale,jamila,-0.5_0.5,0,0
+endwait
+msg,0,<size=30><outline width=2 color=black>「要是燙傷了怎麼辦……還、還是幫一下她吧……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「卡蒂婭都說不用幫忙了。\n你還是別硬湊過去比較好哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:anger,jamila,300,-180,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「請你閉嘴」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哎呀哎呀……看來我說話反而會惹惱她們，\n還是你們來勸勸吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「卡蒂婭做的點心，好期待」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哎呀……芙勞靠不上啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「相信卡蒂婭吧」,選項2　「擔心也是能理解的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「瞧，他也這麼說了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,300,-180,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「但是……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「要是你現在硬闖進去，卡蒂婭會開心嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,300,-180,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……真煩。這道理我當然懂啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,300,-180,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+msg,0,<size=30><outline width=2 color=black>「對了……！\n你要是也擔心卡蒂婭大人的話，就一起去幫忙……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「他是相信卡蒂婭說的話，才忍住想要去幫忙的衝動，\n在這裏乖乖等著的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「你那種行為就等同於不相信你的主人哦。這樣真的好嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,300,-180,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……那……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「現在先老實等會兒吧。而且感覺她也差不多了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「呃……讓各位久等了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,300,-180,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「卡蒂婭大人……你沒事吧！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:surprise,catia,-300,-100,0.5,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「咦……能有什麼事，只是做個點心而已」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不用在意她。\n話說……那些曲奇餅就是你想嘗試的？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是的……但我自己一個人做果然失敗了呢……\n本以為曲奇餅應該是沒問題的，看來還是我太天真了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「形狀姑且還能看……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「顏色……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,catia,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嗯~，烤的有點焦了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:surprise,jamila,300,-180,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「說、說什麼呢？\n這可是卡蒂婭大人烤的曲奇餅啊！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,300,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「就算多少有點焦黑或形狀不一致，但又怎麼樣呢！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,300,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「卡蒂婭大人，這些是可以讓我們品嘗的嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,300,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「對我來說能夠有幸品嘗到這些至高的點心，沒有比這更開心的了……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:sad,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎麼激動成那樣……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「真是的，潔美拉……太誇張了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「當然可以了，如果不介意的話，還請嘗嘗看吧。\n味道……我就不太能保證了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:smile,jamila,300,-180,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「非常感謝……！那我就不客氣了……嗯」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:sad,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……好吧，畢竟都做出來了，不吃也挺浪費的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,catia,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「真是不坦率呢……那我們也嘗嘗吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊唔……嗯——」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「好苦」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:sad,ilyna,-300,-220,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……是麵團沒做好嗎，口感很差呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:surprise,jamila,300,-180,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「說、說什麼呢……？你竟然理解不了這種深沉的味道！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「沒關係的，潔美拉。我自己也試過味道，深有感觸。\n本來是不該拿出來讓大家吃的……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:sad,jamila,300,-180,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎麼會呢，卡蒂婭大人……我能吃到這塊曲奇餅，\n就已經感到無比的幸福了……！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「第一次就能做成這樣，也可以說是十分厲害了。\n……而且吃著曲奇餅，我不知不覺回想起了往事」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……是啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不過，諾恩是不會對這個感到滿意的吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,catia,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「也並非如此哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:surprise,ilyna,300,-220,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你說什麼？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我說卡蒂婭。這是徹頭徹尾的失敗呢……只針對點心來說，\n或許就像你自己說的那樣，這樣的東西是不能拿出來給人品嘗的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:smile,norn,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「……但是，也並非沒有益處」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:smile,norn,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「實際上潔美拉和伊蓮娜不也挺高興的嗎」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,300,-180,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這是當然」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「等等。我才沒有……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,-300,-120,0.5,0.5,,,,
+anm,scale,frau,-0.5_0.5,0,0
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>芙勞</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「剛剛吃曲奇餅的時候……你笑了一下」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:sad,ilyna,300,-220,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:anger,jamila,-300,-180,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哼，沒辦法坦率地接受卡蒂婭大人的恩賞嗎？\n你大可以感謝千萬次哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:sad,ilyna,300,-220,0.5,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你閉會兒嘴吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,-300,-180,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「呵呵，現在就不跟你計較了。\n畢竟我現在滿心都是喜悅」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,-300,-180,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「而且這曲奇餅……配方難道是我以前給卡蒂婭大人做的那種？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哈？不對吧。\n這是我給小時候的卡蒂婭做的曲奇餅的配方啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:anger,jamila,-300,-180,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎麼找起茬來了。嫉妒了嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:anger,ilyna,300,-220,0.5,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「我只是說了事實而已」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:surprise,catia,-300,-100,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「這曲奇餅並沒有用誰的配方……\n呃，雖然確實是參考了我之前吃過的曲奇餅……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「但我參考的是你們兩位各自做的曲奇餅哦。\n本想要把兩種曲奇餅的優點都提取出來，看來我這個初學者還是太天真了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:smile,catia,-300,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「不管是伊蓮娜做的曲奇餅，還是潔美拉做的曲奇餅，我都最喜歡了。\n還以為這樣能做得更加好吃呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:surprise,ilyna,300,-220,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>伊莉娜・伊麗莎洛瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……卡蒂婭」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,ilyna,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:surprise,jamila,300,-180,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>潔美拉・吉普莉爾</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「卡蒂婭大人……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,catia,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「居然希望讓兩種美味疊加，變成更棒的美味……\n真是單純的想法啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101401/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「不過也挺好……帶著兩種回憶的曲奇餅啊。\n我也想嘗嘗看呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:normal,catia,300,-100,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「是啊……我也想嘗嘗看。我和伊蓮娜，還有潔美拉……\n大家一起製作，一起分享……一定會很幸福的」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101005/adv/atlas/stand_a,body:normal,jamila,-120,-180,0.5,0.5,,,,
+spriteatlas,download/character/100905/adv/atlas/stand_a,body:normal,ilyna,-470,-220,0.5,0.5,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:normal,catia,300,-100,0.5,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait
+msg,0,<size=30><outline width=2 color=black>「所以說，伊蓮娜、潔美拉，鄭重拜託你們。\n能請你們跟我一起製作曲奇餅嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100305/adv/atlas/stand_a,body:smile,catia,300,-100,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「雖然我可能什麼忙都幫不上」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

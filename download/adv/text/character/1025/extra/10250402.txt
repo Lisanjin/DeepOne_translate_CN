@@ -1,0 +1,94 @@
+name,
+msg,0,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,,
+endwait
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:sad,yoshino,-10,-200,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「為什麼……你會在我要去訓練的時候出現呢？\n你跟著我過來，也沒關係……但是我也沒有什麼能教你的，不是嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:unique,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……控制飲食、鍛煉肌肉和改變名字，對你來說都是沒用的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「之前也說過吧……你有你的作用。\n用你那副連魔術都操縱不了的身體去參加戰鬥，簡直等於自殺，無謀至極」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「說起來，就算你能使用魔術，但鑒於你能力的重要性，\n我也不會允許你參加戰鬥的……其他人也會這麼覺得吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「……這是真正的理由嗎？」,選項2　「只是因為看芳乃訓練、很開心」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:surprise,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「有時，我覺得你有洞穿人心的能力。\n原來如此……只要你不願放棄，就還會來繼續想辦法找我教你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:unique,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，就算我說實話給你聽，也不是什麼令人愉快的話。\n從你的角度來看，可能還會覺得我多管閒事……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:surprise,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣啊……可能是我過度敏感了。\n我還以為，都明明告訴你不能教你那個，你卻還不放棄呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「抱歉……我也知道我說的話很嚴厲。\n無論如何，我都會儘量回避教你戰鬥技術」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_08.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:normal,yoshino,-10,-200,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>芳乃|</ruby>・伊普絲洛</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我認為，沒有戰鬥才能的人不應該站在戰場上。\n……也許我並沒有說這句話的資格」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我所教的學生們，大多數都死在戰場上」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:normal,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「巴爾迪克姆騎士團所保護的孤兒中的大多數，\n都像我這樣立志於成為騎士」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「其中也有很多不適合戰場的孩子。\n即便如此，為了騎士團的大義，他們也勉強自己跟著我訓練」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「作為教官，為了讓那些孩子成為獨當一面的騎士，我已經盡了全力。\n大家也拼盡全力，想要作出貢獻」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_13.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「修行結束後，那些成為騎士的孩子們，充滿幹勁地說，\n下次我也要去拯救別人，要去守護人們的安寧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:sad,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「而且，越是內心高尚的人，越是會為了別人，竭盡全力，\n奉獻出了自己的生命」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「或者，我應該做的，其實是教會他們軟弱，\n我應該阻止他們去戰場」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我再也不想讓別人去送死，再也不想給誰力量了。\n所以……像你這樣的老好人，我是絕對不會教的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102501/adv/atlas/stand_b,body:unique,yoshino,-10,-200,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「與其讓你拿起劍，倒不如我一個人站在最前線」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102504/adv/sound/fav102504_12_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

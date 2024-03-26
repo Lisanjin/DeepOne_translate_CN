@@ -1,0 +1,99 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你……你在這種地方做什麼？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，散步……你在拉萊耶到處閑晃嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「確實，暫時會在這裏生活，\n也要好好瞭解設施比較好……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:sad,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……不過，那事歸那事，你還是不要太不小心出門比較好」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「現在還不知道是你什麼人，\n也許會有人懷疑你要做些什麼壞事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「你也在懷疑嗎？」,選項2　「那我去做點壞事吧」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「叫我亞紗花就可以了。今後就要一起合作了，\n卻像叫外人一樣的叫法，總覺得很奇怪」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「還有，先不說懷不懷疑，我對你一無所知。\n除了被困在拉萊耶的情報以外什麼都不知道」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「光憑這個不能判斷一個人……對我來說，\n現在是需要觀察的期間」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_08.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「請不要開這種玩笑。因為有的人不把玩笑當作玩笑來對待」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「你問我指的是誰？嗯……比如說布麗吉特？\n……哎呀，記得別說出去哦。要是這種話被傳出去了可能會變得鬧翻天吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「這樣一來要是真暴露了，那我馬上就會知道犯人是你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_11.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「想要獲得他人的信任，就要注意自己的言行舉止啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_12.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark12,em1,default,animation,0,180,180,0.65,0.3,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「……話說回來，這拉萊耶的設施我還沒看完呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_13.mp3
+clickwait,,,,,,,,,,,
+spineoff,em1,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「正好我也有空，接下來再稍稍到處看看吧。\n要不要一起去？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「兩個人一起行動，你不用那麼疑神疑鬼，\n我也有了聊天的對象……你不覺得我們利益一致嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:surprise,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「喂，幹嘛啊，你笑什麼笑……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:shy,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「反正，這也沒什麼大不了的，你可別誤會了哦？\n就算是我偶爾也會想圖個方便啦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:unique,asaka,65,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……看你那表情，根本沒聽懂吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:normal,asaka,65,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「受不了……再講些有的沒的，我就丟下你自己走咯」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100100/adv/sound/fav100100_01_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

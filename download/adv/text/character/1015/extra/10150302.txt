@@ -1,0 +1,181 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10040200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,,
+endwait
+sprite,download/monster/20030301/adv/image/20030301.png,toysoldier,60,-200,1.25,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――」</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Fire1,em2,default,animation,0,0,0,0.65,0.8,0
+playse,/download/sound/se/se_038.mp3
+shake,0.1,20,50,50
+flash,255,255,255,10,0.2,1.5
+endwait
+spineoff,em2,,,,,,,,,,
+spriteoff,toysoldier,0.5
+playse,/download/sound/se/se_025.mp3
+endwait
+stopbgm,0
+endwait
+wait,1
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哼，這傢伙也是一擊都承受不住……怎麼還沒有強敵出現啊。\n再這樣下去我的胳膊該抱怨了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_01.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「納克特原書也是，不要總是做些揭露人心，揭開人舊時的傷口的事\n要是能給我創造出一個簡單易懂，又有勁頭的敵人該多好啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……還是說，它在取笑人們被過去操縱著的樣子呢。\n要真是那樣的話，它可真是惡劣得很啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你怎麼看？站在一個目睹了許多同伴被幻夢境——那本書\n玩弄於股掌之間的人的立場來說」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「不知道」,選項2　「我認為它並不簡單」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯，畢竟對手是魔導書……而且是，被稱作七大原書的\n不得了的東西啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不管我們怎麼想像，\n沒有親眼看到的話肯定是不會明白的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_06.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「怎麼說呢……確實對方是人類無法理解的存在，\n但也許正因為它是這種東西，所以意外地很簡單呢？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「比如說，它喜歡人的哀鳴，之類的。\n……雖然實際情況如何我也不了解啦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_08.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:normal,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且……是因為本來我們的內心深處就隱藏著黑暗，\n所以它才會有可乘之機……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:sad,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……話雖如此，我想不管是誰都有自己\n在意的事物」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlasoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+stopbgm,0
+endwait
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,ouka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:sad,ouka,0,0,0,0,,,,
+imgconf,ouka,ouka1,-10,-450,,,0,1.5,1.5,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「我也一樣，如果失去了那個人的話，一切都會變得毫無意義，\n所以——」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_11.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait
+sprite,download/monster/20030301/adv/image/20030301.png,toysoldier,60,-200,1.25,0.5,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「―――――――――――――――――！」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm007.mp3,0.5,,
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:surprise,ouka,-10,-120,0.47,0.5,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——！？什、什麼時候……可惡！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_12.mp3
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0,,,,,,,,,,
+endwait
+sprite,download/monster/20030301/adv/image/20030301.png,toysoldier,60,-200,1.25,0.5,,,,
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「―――――――――――――――――！」</outline></size>,,,,,,,,,,
+playse,/download/sound/se/se_022.mp3
+clickwait,,,,,,,,,,,
+spriteoff,all,0,,,,,,,,,,
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:anger,ouka,-10,-120,0.47,0.5,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「糟了……快逃！這傢伙的目標，是你……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlasoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+mask,bg1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,bg,0,0,0,0
+imgconf,bg,bg1,0,0,,,0,1,1,0.5
+mask,ouka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_a,body:anger,ouka,0,0,0,0,,,,
+imgconf,ouka,ouka1,-10,-450,,,0,1.5,1.5,0.5
+endwait
+msg,1,<size=30><outline width=2 color=black>「混蛋……給我趕上啊啊啊——！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_14.mp3
+clickwait,,,,,,,,,,,
+stopbgm,0
+endwait
+name,
+msg,0,
+bg,color_0_0_0,1,255
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>……。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>…………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>………………。</outline></size>,,,,,,,,,,
+clickwait,,,,,,,,,,,
+bg,download/bg/bg_10040200.jpg,0.5,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm026.mp3,0.5,,
+endwait
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:anger,ouka,-10,-120,0.47,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……可惡……抱歉。我沒能保護好你」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:sad,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「就算只是擦傷，也是我的疏忽造成的。\n……這次，只是因為運氣好而已」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101502/adv/atlas/stand_b,body:anger,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我到底……在幹什麼啊……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_17.mp3
+clickwait,,,,,,,,,,,
+spriteoff,ouka,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0.5,255
+endwait
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「——打算重蹈覆轍嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……對不起啊。真的，對不起」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101503/adv/sound/fav101503_09_19.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,122 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_01.mp3
+name,<outline width=2 color=black>艾麗卡・露比婭</outline>,
+msg,1,<outline width=2 color=black>「……下等人，在你看來，我是個什麼樣的人呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_02.mp3
+msg,1,<outline width=2 color=black>「到這為止，我遇到了很多人……誰不是一知道，關於我眼睛的事情，\n態度馬上就變了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_03.mp3
+msg,1,<outline width=2 color=black>「只要犧牲我一次，就能保證得到成功與榮譽的魔眼……那群下賤的傢伙們，\n做夢都想得到這樣的力量吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_04.mp3
+msg,1,<outline width=2 color=black>「連自己實現自己的願望，自己開創自己的未來\n都做不到……我不可能為了那樣的人，而犧牲自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_05.mp3
+msg,1,<outline width=2 color=black>「但是，你就算知道了我的眼睛的事情，態度也依然沒有改變。\n還說著這雙眼睛很漂亮那樣奇怪的話……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_06.mp3
+msg,1,<outline width=2 color=black>你到底是如何看待我的？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「敏感的人」,選項2　「膽小的人」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:surprise,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_07.mp3
+msg,1,<outline width=2 color=black>「……還是第一次被人這樣說呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:surprise,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_08.mp3
+msg,1,<outline width=2 color=black>「你明白吧？我誰都瞧不起。\n即使是你，我也蔑稱為下等人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:surprise,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_09.mp3
+msg,1,<outline width=2 color=black>「說別人壞話的人很敏感什麼的，真奇怪啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_10.mp3
+msg,1,<outline width=2 color=black>「膽小……是啊，也許是這樣的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_11.mp3
+msg,1,<outline width=2 color=black>「明明是個臭下等人，卻說的很準確呢……是的。我就是膽小。\n因為不想與人親近，所以故意惡言相向……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_12.mp3
+msg,1,<outline width=2 color=black>「我想再被人討厭一些，再被人拒絕一些。再離我遠一些，\n我希望……我的眼中可以什麼都看不到」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_13.mp3
+msg,1,<outline width=2 color=black>「但是，無論我用多麼難聽的話攻擊你，\n你也一次都沒有生氣過……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_14.mp3
+msg,1,<outline width=2 color=black>「簡直就像是看透了我的內心一樣，讓我坐立不安。\n然而，與之相反的是，我卻看不透你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_15.mp3
+msg,1,<outline width=2 color=black>「一直以來，那些希望我犧牲的最差勁的人，明明我都能看透他們的心，\n為什麼呢……明明是個臭下等人，卻很自大呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_16.mp3
+msg,1,<outline width=2 color=black>「喂，如果你願意的話，我就為你使用這雙眼睛吧？\n從拉萊耶逃出也好……甚至是，獲得納克特原書這種願望也一定會實現的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_17.mp3
+msg,1,<outline width=2 color=black>「總有一天，如果一定要用這雙眼睛的話，我想為像你這樣\n心靈澄澈的人使用……這樣說的話，你的心裏有動搖嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:surprise,elica,0,-100,0.5,0,,,,
+anm,scale,elica,0.75_0.75,0.3,0
+anm,move,elica,0_-180,0,6,0
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:surprise,elica,0,-180,0.75,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_18.mp3
+msg,1,<outline width=2 color=black>「――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:surprise,elica,0,-180,0.75,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_19.mp3
+msg,1,<outline width=2 color=black>「嚇，嚇了我一跳。原來你也，會擺出那麼可怕的表情怒吼呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:sad,elica,0,-180,0.75,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_20.mp3
+msg,1,<outline width=2 color=black>「那個……手臂，不要抓的那麼用力……很痛啊。\n我不會再開這樣的玩笑了，放開我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_21.mp3
+msg,1,<outline width=2 color=black>「……對不起。用這樣的話來測試你的心意。\n真的，我不會再說這樣的話了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:shy,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_22.mp3
+msg,1,<outline width=2 color=black>「還有就是，那個……謝謝。對我說，不要使用這只眼睛，什麼的。\n你是第一個……真心地對我說那樣的話的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/103302/adv/atlas/stand_a,body:shy,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103303/adv/sound/fav103303_05_23.mp3
+msg,1,<outline width=2 color=black>「你現在說的話，不要忘了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

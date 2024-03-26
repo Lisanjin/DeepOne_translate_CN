@@ -1,0 +1,93 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm019.mp3,0.5,,,
+endwait
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0.5,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……和你一起在這個拉萊耶裏生活，我不斷地瞭解了你\n也接觸到了……各種各樣的事物」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_01.mp3
+clickwait,,,,,,,,,,,】
+msg,1,<size=30><outline width=2 color=black>「我不曾在幻夢境中，對時間的流逝懷有感慨。\n但是如今，我心裏深處卻每分每秒充滿了暖意……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「像這樣和你一起度過的時間，仿佛……跟做了一場美夢一樣\n即便是虛假的，我也想和你共處在那樣的地方」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「在某處的小村子裏，有著一棟房子，打開家中的窗，映入眼簾的便是那廣闊的自然……\n在拉萊耶所發生的事，全部都是一場惡夢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我變成失想者的事也好，你失去記憶被困在拉萊耶裏的事也好……\n都是夢中的事情，都是虛構的故事」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「其實今天醒來後，我們像往常一樣去田裏幹著農活，過著樸素的日子\n――之類的事，根本是不存在的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「無論怎麼看這裏才是現實，這裏是拉萊耶的一個房間。\n幻夢境中的戰鬥是不可避免的……與夢境相比，現實是何等的殘酷啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_07.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「只要有貝托麗薩在就好」,選項2　「還想聽更多關於夢境的內容」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:shy,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……你要是這麼說的話，我會把你的溫柔\n誤認為是其他東西哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……能像現在這樣子觸碰到你，我也覺得這是無比珍貴的瞬間。\n無論時光的流逝是多麼的殘酷，唯有這個瞬間……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊啊，或許，的確如你所言」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「那麼，在家裏養條小狗如何呢？ \n到了早上，小狗會來到你的床上，壓在你身上叫你起床」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_11.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而我，在準備著早飯――」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:sad,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「設，設定裏我已經學會做飯……\n真的是，請不要在奇怪的地方把我帶回現實……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嘻嘻……這種使壞的地方，也讓我覺得很棒呢\n我到底怎麼了呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_14.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:smile,bea,-10,-200,0.5,0,,,,
+name,<size=27><outline width=2 color=black>貝托麗薩</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……無論是夢境還是現實，只要有你在身邊\n我就很幸福了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/102301/adv/atlas/stand_a,body:normal,bea,-10,-200,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我想……如果我的願望可以實現的話\n還請你不要前往我所不能觸及的地方」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「但，這只是我的任性罷了……獨佔你什麼的\n我怎麼可能會有這樣的權利」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_17.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是，至少在夢裏，稍微有一點這樣的想法，也不是不行的吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/102304/adv/sound/fav102304_11_18.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

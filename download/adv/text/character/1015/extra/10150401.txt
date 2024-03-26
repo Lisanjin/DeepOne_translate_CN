@@ -1,0 +1,112 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm019.mp3,0,,
+endwait
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:shy,ouka,-10,-120,0.47,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……真是的，說一點沒變可以嗎……今天在床上\n你也是蠻可靠的啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「呐……不稍微說說話嗎？\n我不想現在就回房間……稍微陪我一下吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……偶爾，也想說些以前的事呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_03.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我有一個，無論如何也想保護……想要幫助的對象\n……什麼啊，你那副表情。很意外嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_04.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「有點嫉妒」,選項2　「仔細想想也不意外」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:shy,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嫉妒，嗎……怎麼說才好呢，這種感覺」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_05.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……能對別人坦誠地表達自己的感情，原來是件這麼幸福的事啊。\n我的心中，竟然還保留著這樣的感情……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:shy,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我能想起這些，多虧了你啊……我很感謝你哦。謝謝」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_07.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:surprise,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby>
+</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……什麼啊。什麼叫可以想像……我自己很清楚，我不適合\n守護任何事物。你不用拍馬屁了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_08.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……不過，如果你真的這麼想的話——」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_09.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:smile,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我想回應你的這份心思……我也會這麼想的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_10.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:sad,ouka,-10,-120,0.47,0,,,,
+name,<size=27><outline width=2 color=black><ruby>弟橘|</ruby><ruby>旺華|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我曾經想要保護的人，\n已經不在這個世界上了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「那應該是很久以前的事了……是我還在某個傭兵團時，擔任幹部什麼的\n和我很不搭的工作時的事情了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_12.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當時的兵團團長，是我的好朋友……是他，\n給了只會使用暴力的我，戰鬥的理由」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:sad,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「只要我們展示出自己的力量，它就會變成某種抑制力，可以帶來和平……這樣的理想\n他一直相信著，毫不畏懼地向前……我就是被他這種姿態深深地吸引了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_14.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「因此，我決定要成為他的劍。\n我發自內心地想，我必須要保護他 」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_15.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我為他而戰，也是在為和平做點什麼，\n……沉浸於理想和自我當中」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_16.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我滿足於戰鬥之中……想要保護他的這份心情，漸漸變得模糊了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:sad,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「所以……我沒能保護好他。\n在我在戰場上戰鬥的時候，他被殺害了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_18.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果當時我在他的身邊，就能幫到他了。\n……就能夠保護他了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「我就是這樣的人。結果……只知道戰鬥，\n沒能保護好他……失敗了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「即使如此，我……還是想保護你。\n在你看來，我肯定很靠不住吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101501/adv/atlas/stand_a,body:normal,ouka,-10,-120,0.47,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……笨蛋，為什麼聽了剛才我說的那些話，還說相信我啊。\n你……真的……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……我不會再重蹈覆轍了。這一次我一定要保護好重要的東西。\n我會向曾經沒能保護好的那傢伙發誓……所以，你就放心吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/101504/adv/sound/fav101504_11_23.mp3
+clickwait,,,,,,,,,,, 
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

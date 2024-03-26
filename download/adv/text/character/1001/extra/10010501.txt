@@ -1,0 +1,153 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm022.mp3,0.5,,
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:anger,asaka,35,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「火力好猛……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_01.mp3
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait
+sprite,download/monster/20010101/adv/image/20010101,enemy1,-30,-250,1.35,0.5,,,,
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,0.8,0
+shake,0.2,4,10,10
+playse,/download/sound/se/se_038.mp3
+endwait
+anm,tint,enemy1,0_0_0,0.0001,0
+endwait
+name,<size=27><outline width=2 color=black>敵方</outline></size>,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>「――――――――――！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,
+playse,/download/sound/se/se_025.mp3
+spriteoff,all,1
+endwait
+wait,1.5
+endwait
+playbgm,/download/sound/bgm/bgm021.mp3,0,,
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:surprise,asaka,35,-120,0.5,0.5,,,,
+endwait
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「呃，雖……雖然是我的攻擊，好大的威力……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_02.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「加上你的強化，再算上這個裝備的強化，\n變得不得了了呢……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「輕輕一用力，敵方就會灰飛煙滅……\n所以千萬不能用力過猛……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_04.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「因為威力強到離譜了，\n會讓同伴之間的合作不復存在」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_05.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「與希爾薇商量」,選項2　「與吉澤爾商量」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也是呢……因為這個裝備的最終調整工作是希爾薇做的，\n說了的話可能會幫助輸出」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_06.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是，因為是希爾薇的事情，\n她能坦率地聽我的請求嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_07.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「反過來說，又能提高輸出功率，又能增加額外的功能……\n就連希爾薇也把那種東西當成了救命工具……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_08.mp3
+clickwait,,,,,,,,,,,
+spine,download/adv/spine/Mark12,em2,default,animation,0,180,180,0.7,0.8,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_09.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,0
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「放棄，使用這個裝備吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_10.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:surprise,asaka,35,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「給吉澤爾……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_11.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，是嘛。確實吉澤爾能操縱強大的魔術。\n如果能告訴我訣竅的話……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:smile,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊……但是和吉澤爾關係太好的話，布裏吉特會吃醋\n——什麼的呢」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_13.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+spine,download/adv/spine/Mark12,em2,default,animation,0,180,180,0.7,0.8,0
+endwait
+msg,1,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_14.mp3
+clickwait,,,,,,,,,,,
+spineoff,em2,0
+endwait
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:unique,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「不，那個隱藏的姐姐是個笨蛋，所以可能不是開玩笑也不一定」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_15.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不管怎樣，厲害是沒錯的，\n控制不了的話就沒有意義了，要快想點辦法才行」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「在那之前，請先把實戰投入交給我，好嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然覺得有點可惜。\n但是如果造成同伴受傷的話是無法挽回的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_18.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:sad,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……但是」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「其實，總覺得有些不安呢……使用這個武器」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_20.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「具體是為什麼，我也沒辦法說明……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_21.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「總覺得，不像是第一次使用\n從這個個武器中感受到的力量太過於熟悉了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_22.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當然了，像這樣的武器我一次都沒用過。\n明明……第一次拿到手的時候，也有種更加懷念的感覺」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_23.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……感覺自己身上有自己不知道的部分。\n所以，我不知道是不是又有另一個我，在發揮著這個力量」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_24.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100105/adv/atlas/stand_b,body:normal,asaka,35,-120,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……話雖如此，突然聽到這樣的話也會很困擾吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_25.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一直在這裏閒談也不是辦法，\n回去吧……好啦，走吧？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100105/adv/sound/fav100105_01_26.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1,,,,,,,,,,
+endwait,,,,,,,,,,,

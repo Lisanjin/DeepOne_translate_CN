@@ -1,0 +1,87 @@
+name,,,
+stopbgm,,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0.0,,,,,,,,,,
+endwait,,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,
+endwait
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0.5,,,,,
+endwait,,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「你問我狀態如何，我也很難回答啊。\n雖然和幻夢境情況不同，但是在這裏生活也不錯」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_01.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……話說回來，你都不知道失想者是怎麼生活的吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_02.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「幻夢境裏存在著多個空間。\n失想者在幻夢境中彷徨，大多數都居住在波長與自己相符的區域」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_03.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大部分的人，在確定自己的住處之後都不再去往其他的領域了。\n在很長一段時間裏，就在當地各隨己願地生活著」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_04.mp3
+clickwait,,,,,,,,,,,,
+select,選項1　「波長相符的區域？」,選項2　「澤乃你就在這裏」
+if,select_===_1,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「自己喜歡的區域，應該這麼說比較好吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_05.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「也許是成為失想者之前的記憶在產生影響吧。\n或者說，是幻夢境在引導失想者，將他們吸引過來……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_06.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「對我來說也有一個地方住著比較舒服，但是我不想宅在裏面。\n所以才跨越多個區域，將保持著自我意識的失想者聚集起來」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_07.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一開始只是為了自衛……和眾多失想者的相遇，\n讓我的心靈成長了起來。我沒有失去正常思維，也許也是因為這個」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_08.mp3
+clickwait,,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>澤乃・娜莎莉</outline></size>,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「最後還是被你帶了出來呢……嘛，不過說起來，我本來就不是會乖乖呆在自己領域的那類人\n常常遊走於各個領域之間」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_09.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「留在同一個地方，不太符合我的個性」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_10.mp3
+clickwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「於是如今，我卻在和你一起度過時光……我是不是該\n感謝這坎坷的命運呢」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_11.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「這是難得的緣分……我是不吝嗇於\n為你們效力的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_12.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「如果你想離開拉萊耶的話，我會幫你的。\n我們已經相互交流，如此親近了，我是不會拋棄你不管的」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_13.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當然了，前提是你相信我這個失想者所說的話，\n並且接下來也繼續信賴我……」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_14.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「不過，我倒是無法想像你懷疑他人的樣子」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_15.mp3
+clickwait,,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「……像你這樣的人，接下來肯定會遇到除了我們之外的失想者，\n並且與她們產生新的羈絆吧」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_16.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「像這樣，你、或者其他想索者和失想者共存的未來\n如果真的能到來……就好了」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_17.mp3
+clickwait,,,,,,,,,,,,
+spriteatlas,download/character/102401/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,,
+msg,1,<size=30><outline width=2 color=black>「或者說，有你在的話，這樣的未來也……這樣說的話，有些把重擔\n強加給你的味道，太不負責任了。抱歉，你當我沒說」</outline></size>,,,,,,,,,,,
+playvoice,1,/download/character/102402/adv/sound/fav102402_07_18.mp3
+clickwait,,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,,
+endwait,,,,,,,,,,,,
+endif,,,,,,,,,,,,
+name,,,,,,,,,,,,
+msg,0,,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,,
+endwait,,,,,,,,,,,,

@@ -1,0 +1,113 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0.0,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0.5,,,
+endwait
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「一直走沒關係嗎？　稍微休息一下吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_01.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，不，不是在擔心你……那個……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_02.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:shy,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「嗯……其實我是有點累了。\n所以我可以拜託你嗎？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_03.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「其他魔術士的各位，都是以實戰標準開展鍛煉，\n我……對我的體力沒有自信……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_04.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「正因如此，我才想盡我所能……\n我比較擅長的是魔術的技巧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_05.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「關於這一點，我自認不輸給其他人」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_06.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「同樣，你也在用你自己的力量\n支持著我們吧」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_07.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以，你不必覺得不如其他人而感到失落，\n或者失敗」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_08.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「大家花了很長時間鍛煉了自己的能力……\n想要簡單地追上大家不會很傲慢嗎」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_09.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「當然，我覺得想要追趕他們的想法是非常棒的。\n但是……請不要勉強自己哦」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_10.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「……我說了些有點自大的話呢。\n讓你不舒服了的話對不起」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_11.mp3
+clickwait,,,,,,,,,,,
+select,選項1　「我不能接受」,選項2　「謝謝」
+if,select_===_1,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「是的……我知道這並不是能簡單充分理解的事情。\n對不起，我說了風涼話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_12.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……你這樣煩惱，是體諒別人心情的證據，\n知道你很溫柔……我稍微有點放心了」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_13.mp3
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「哪里，並不是什麼值得道謝的話」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_14.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「而且……你是對我來說重要的人。\n我當然擔心你啊」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_15.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:surprise,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「誒……？　啊！　不，重要的意思是為了得到納克特原書，\n你是不可或缺的存在……！」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_16.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:shy,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「啊，越描越黑了，對不起……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_17.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是……我不禁想道」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_18.mp3
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+name,<size=27><outline width=2 color=black>卡蒂婭・布倫茨瓦</outline></size>,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「雖然還沒有抵達核心……\n但顯然你和納克特原書確實有著深深的聯繫……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_19.mp3
+clickwait,,,,,,,,,,,
+msg,1,<size=30><outline width=2 color=black>「所以……知道了你是什麼人，通過和你接觸……\n也能對與你相連的納克特原著抱有希望……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_20.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:sad,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我的想法很天真嗎……？」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_21.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:normal,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「但是，如果不相信的話就無法前進。\n所以……不管是多麼渺小的希望……」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_22.mp3
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:smile,catia,30,-40,0.5,0,,,,
+msg,1,<size=30><outline width=2 color=black>「我也願意相信……和你一起追尋的未來是光明的」</outline></size>,,,,,,,,,,
+playvoice,1,/download/character/100302/adv/sound/fav100302_06_23.mp3
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

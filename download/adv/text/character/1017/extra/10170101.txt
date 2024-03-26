@@ -1,0 +1,105 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm031.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:surprise,qquinecy,1000,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,qquinecy,0_-120,2,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_01.mp3
+msg,1,<outline width=2 color=black>「咦……我還以為是在這邊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+anm,move,qquinecy,-1000_-120,2,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,1000,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,qquinecy,0_-120,2,0
+endwait
+name,<outline width=2 color=black>昆茜</outline>,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_02.mp3
+msg,1,<outline width=2 color=black>「這……難道我又迷路了……？\n啊嗚嗚……我真討厭複雜的建築物……拉萊耶太大了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:surprise,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_03.mp3
+msg,1,<outline width=2 color=black>「——這種感覺……有人在盯著我看？\n呃，那邊的人是……啊。是你啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_04.mp3
+msg,1,<outline width=2 color=black>「呃……不是這樣的。我不是迷路了……我是在探索拉萊耶內部……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_05.mp3
+msg,1,<outline width=2 color=black>「……對不起，我迷路了。可以的話能告訴我路嗎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+select,選項1　「在終端裡安裝導航怎麼樣？」,選項2　「看指示板不就好了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:smile,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_06.mp3
+msg,1,<outline width=2 color=black>「啊，我已經安裝過了。\n能指示前往設施內的各種地方的最短路線，這東西還真是方便」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_07.mp3
+msg,1,<outline width=2 color=black>「可是，把終端忘記在房間裡了就沒有意義了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_08.mp3
+msg,1,<outline width=2 color=black>「明明手槍肯定不會忘記帶的，但我為什麼三次會有一次忘記帶終端呢……\n啊哈哈，哈哈哈……唉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_09.mp3
+msg,1,<outline width=2 color=black>「我認為有看指示板的習慣的人應該不會迷路得這麼頻繁的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_10.mp3
+msg,1,<outline width=2 color=black>「我從以前起就是這樣……在大街上倒還好，\n一到建築物裡就會突然失去方向感……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_11.mp3
+msg,1,<outline width=2 color=black>「我在這裡徘徊著，突然想起了之前去日本工作的時候……\n新宿、涉谷、秋葉原……東京真是個可怕的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:normal,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_12.mp3
+msg,1,<outline width=2 color=black>「能遇見你真的太好了……\n我還以為我這輩子就一直在拉萊耶裡徘徊了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_13.mp3
+msg,1,<outline width=2 color=black>「你覺得我太誇張了是嗎……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_14.mp3
+msg,1,<outline width=2 color=black>「之前在美國順路去了一趟美術館，在裡面迷路的時候，\n最後直到來關門的警衛發現我為止，我一直都找不到路出去」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_15.mp3
+msg,1,<outline width=2 color=black>「考慮到拉萊耶這麼大，而且裡面還沒有員工，\n餓死的可能性……也不是沒有……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_16.mp3
+msg,1,<outline width=2 color=black>「所、所以，雖然很麻煩你，\n能請你給我指路嗎……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:sad,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_17.mp3
+msg,1,<outline width=2 color=black>「如果能再斗膽請你為我帶路的話就幫大忙了，\n不然我會繼續迷路下去的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101701/adv/atlas/stand_a,body:shy,qquinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101701/adv/sound/fav101701_03_18.mp3
+msg,1,<outline width=2 color=black>「拜託了。我現在只能依靠你了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,1,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

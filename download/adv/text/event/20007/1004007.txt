@@ -1,0 +1,281 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>——我明白了什麼是重要的東西。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>那就不會再迷惘了。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>本來我的雙手就空空如也。</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+msg,0,<size=30><outline width=2 color=black>如果能用這雙手拯救重要的事物，我……</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait
+stopbgm,0.5,,,,,,,,,,
+endwait
+bg,download/bg/bg_11020300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait
+flash,0,0,0,4,0.3,1.0
+endwait
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0.5,,,,
+anm,scale,norn,-0.5_0.5,0,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「嘿咻……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,all,0.3
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100106/adv/atlas/stand_a,body:surprise,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「呃……又、又在半空……！呀啊啊？！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+endwait,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100106/adv/atlas/stand_a,body:surprise,asaka,-300,1200,0.5,0,,,,
+anm,move,asaka,-300_-700,0.5,1
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+playse,/download/sound/se/se_043.mp3
+endwait,,,,,,,,,,
+spriteatlas,download/character/100106/adv/atlas/stand_a,body:sad,asaka,-300,-700,0.5,0.5,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:sad,norn,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+anm,scale,norn,-0.5_0.5,0,0
+anm,move,asaka,-300_-120,1,1
+endwait,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「好痛……摔到屁股了……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:sad,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「亞紗花，你也不是第一次轉移了吧……？\n打算每次都用屁股著地嗎？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100106/adv/atlas/stand_a,body:anger,asaka,-300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誰讓你把轉移的出口設在半空啊？！\n而且不是你突然把我帶走的嗎……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:sad,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「話是這麼說啦……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+name,
+msg,0,
+anm,tint,norn,150_150_150,0.0001,0
+spriteoff,asaka,0.5
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,1200,0.5,0,,,,
+anm,move,blizit,-300_-210,0.5,1
+endwait,,,,,,,,,,,
+anm,move,blizit,-300_-190,0.5,1
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「真是鬧騰呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「瞧，布麗吉特可是順利落地了哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100106/adv/atlas/stand_a,body:unique,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「…………」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:sad,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「為什麼要用那種眼神看著我啊……」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「不說這個了，諾恩。真有你的啊」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「不是你說讓我解決一下被敵人包圍的狀況的嗎。\n如你所見，我這樣解決了哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「跟吉澤爾她們分開了就沒意義了啊！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:surprise,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「哎喲，好可怕好可怕。姐姐果然還是會擔心妹妹？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+endwait
+msg,0,<size=30><outline width=2 color=black>「不過，就你這實力還擔心吉澤爾・芭德薇，真是滑稽」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……別想用這種話動搖我的內心」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「實力比不上吉澤爾？我擔心那孩子算多管閒事？\n這些事……我比誰都要清楚」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「呵呵……知道自己有多弱小的人類還是很堅強的呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「就算被你表揚，我也完全不會覺得高興。\n亞紗花，準備好」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100106/adv/atlas/stand_a,body:surprise,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「誒……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「雖然現在是這種情況，但也是個絕好的機會。\n二對一……你該不會說我們卑鄙吧？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「怎麼會呢。以多欺少可是世間公認的惡意。\n我怎麼可能會否定呢？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+endwait
+msg,0,<size=30><outline width=2 color=black>「話雖如此……如果覺得憑兩個人就能拿我怎樣的話，\n倒是個令人愉快的誤解了」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「究竟是不是誤解，試試看不就知道了？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「——亞紗花，別手下留情」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100106/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……我知道。我有很多事想問諾恩，\n也有很多話想跟她說」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100106/adv/atlas/stand_b,body:anger,asaka,-300,-120,0.5,0,,,,
+msg,0,<size=30><outline width=2 color=black>「為此……不好意思了，我要用盡全力！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「……呵、呵呵、啊哈哈哈哈！」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+endwait
+msg,0,<size=30><outline width=2 color=black>「“反正自己什麼都辦不到”」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+endwait
+msg,0,<size=30><outline width=2 color=black>「“就算自己不去做，也會有別人去做的”」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+endwait
+msg,0,<size=30><outline width=2 color=black>「剛來拉萊耶那會兒還缺少自信，\n總會這麼想的亞紗花，也改變了不少呢」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:smile,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+endwait
+msg,0,<size=30><outline width=2 color=black>「我很高興哦，亞紗花。你成長了。\n那份成長……總有一天會開花結果的吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/100106/adv/atlas/stand_b,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black><ruby>赤井|</ruby><ruby>亞紗花|</ruby></outline></size>,
+msg,0,<size=30><outline width=2 color=black>「你在說什麼啊……？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100205/adv/atlas/stand_b,body:anger,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>布麗吉特・芭德薇</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「認真聽她說話也沒有意義。想問個清楚就之後再問吧。\n……在把她抓住之後」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:normal,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<size=27><outline width=2 color=black>諾恩</outline></size>,
+msg,0,<size=30><outline width=2 color=black>「啊哈哈……可以哦，我稍微有點興趣了。就陪你們玩玩吧」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+spriteatlas,download/character/101402/adv/atlas/stand_a,body:anger,norn,300,-120,0.5,0,,,,
+anm,scale,norn,-0.5_0.5,0,0
+endwait
+msg,0,<size=30><outline width=2 color=black>「可別讓我太失望哦？」</outline></size>,,,,,,,,,
+clickwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
