@@ -1,0 +1,192 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_02.mp3
+msg,1,<outline width=2 color=black>「嗯……并不是，我并不是心情不好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_03.mp3
+msg,1,<outline width=2 color=black>「我并没有心情不好。哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「你在撒谎……」,选项2 「是吗」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_04.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「我没有撒谎，为什么你会觉得我在撒谎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_05.mp3
+msg,1,<outline width=2 color=black>「――对不起，你为什么现在才道歉？\n或者说，哥哥你知道我为什么会心情不好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_06.mp3
+msg,1,<outline width=2 color=black>「如果你以为只要道歉就能被原谅，\n那就大错特错了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_07.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「并不是这样的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_08.mp3
+msg,1,<outline width=2 color=black>「哥哥，你到底知不知道我为什么会这么生气？\n可是哥哥你做错事了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_09.mp3
+msg,1,<outline width=2 color=black>「就算你笑着想要掩饰也没用的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_10.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「这样的哥哥，我讨厌……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_068.mp3
+shake,0.2,4,30,30
+endwait
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_11.mp3
+msg,1,<outline width=2 color=black>「我呢，很伤心，很寂寞，真的真的很不喜欢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_12.mp3
+msg,1,<outline width=2 color=black>「昨天！明明约好一起睡觉的！\n可是当我进了房间，你已经和诺恩睡在一起了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_13.mp3
+msg,1,<outline width=2 color=black>「我想可能是因为你在做训练，所以很累，没有办法\n但即使是这样，为什么只有诺恩！不公平！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_14.mp3
+msg,1,<outline width=2 color=black>「其实我也想一起的，但是我不想吵醒你们两个\n所以……我一个人回房间睡觉了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_15.mp3
+msg,1,<outline width=2 color=black>「…………我很寂寞」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-150,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_16.mp3
+msg,1,<outline width=2 color=black>「嗯呜呜～！就算你抱紧我也没用的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-150,0.7,0,,,,
+shake,0.5,3,12,0,frau
+playvoice,1,download/character/103710/adv/sound/fav103710_03_17.mp3
+msg,1,<outline width=2 color=black>「就算你摸我的头也不行！我不会原谅你的！\n会忘记我的哥哥我讨厌死了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_18.mp3
+msg,1,<outline width=2 color=black>「嗯哼～……以后我都不会和哥哥一起睡觉了，\n也不会和你一起洗澡了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_19.mp3
+msg,1,<outline width=2 color=black>「…………假的，其实，我不喜欢那样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_20.mp3
+msg,1,<outline width=2 color=black>「哥哥，你反省了吗？以后不会再把我丢在一边去睡觉了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_21.mp3
+msg,1,<outline width=2 color=black>「如果是这样的话……这次就原谅你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_22.mp3
+msg,1,<outline width=2 color=black>「但是！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_23.mp3
+msg,1,<outline width=2 color=black>「今天晚上，你的手臂就当做枕头，我要睡在上面。\n另一只手必须紧紧地抱住我哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_24.mp3
+msg,1,<outline width=2 color=black>「如果做到了，我就会原谅你。因为你是我最喜欢的哥哥，所以这是特别的待遇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_03_25.mp3
+msg,1,<outline width=2 color=black>「嘿嘿……希望快点到晚上」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

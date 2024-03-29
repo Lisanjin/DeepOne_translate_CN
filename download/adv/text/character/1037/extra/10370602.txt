@@ -1,0 +1,251 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11390300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:unique,frau,600,-100,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/103706/adv/sound/fav103706_02_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「偷偷地……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+anm,move,frau,-1200_-100,1.5,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:normal,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103706/adv/sound/fav103706_02_02.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯咽……嗯、嗯……啊，这个好吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　拍拍她的肩,选项2　静静地观察
+if,select_===_1,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+shake,0.4,2,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:surprise,frau,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_03.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「呃……！啊，这是……那个……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_04.mp3
+msg,1,<outline width=2 color=black>「不，不是的……？我并没有偷吃……\n这是，那个，怎么说呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:shy,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_05.mp3
+msg,1,<outline width=2 color=black>「………………看上去，好像很好吃，所以」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_06.mp3
+msg,1,<outline width=2 color=black>「没，没关系！这里的糖果，并不会有危险！\n可以放心大胆地吃……看，这个房子的墙也很好吃的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:smile,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103706/adv/sound/fav103706_02_07.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯，这边的墙也很好吃……嗯咽……呵呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:normal,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+playvoice,1,download/character/103706/adv/sound/fav103706_02_08.mp3
+msg,1,<outline width=2 color=black>「再偷偷多吃一点也没关系吧……――哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:surprise,frau,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_09.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「…………你、你看到了、吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:shy,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_10.mp3
+msg,1,<outline width=2 color=black>「这、这是，无可奈何的情况……女孩子，\n对甜点的诱惑，是无法抵抗的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:smile,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_11.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「看，哥哥也来！ 好，啊～！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:smile,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_12.mp3
+msg,1,<outline width=2 color=black>「好吃吗？ 呵呵。糖果屋真是太棒了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:unique,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_13.mp3
+msg,1,<outline width=2 color=black>「然后这样我们就同罪了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_14.mp3
+msg,1,<outline width=2 color=black>「亚纱花告诉我，在吃饭之前不能吃太多糖果。\n我不能违反承诺……但是……但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:shy,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_15.mp3
+msg,1,<outline width=2 color=black>「……哥哥，可以帮我保密吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:anger,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_16.mp3
+msg,1,<outline width=2 color=black>「如果你不帮我保密，我也会采取最后的手段……！\n我会告诉亚纱花，哥哥也在吃糖果的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_17.mp3
+msg,1,<outline width=2 color=black>「然后我们两个就会被亚纱花训话了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:surprise,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_18.mp3
+msg,1,<outline width=2 color=black>「为、为什么你要笑呢……！？ 嗯咽……这可是大事啊！\n你不能笑的啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:shy,frau,0,-140,0.7,0.5,,,,
+endwait
+
+
+shake,0.5,3,12,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103706/adv/sound/fav103706_02_19.mp3
+msg,1,<outline width=2 color=black>「哎呀，头发又乱了！不行啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-100,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/103706/adv/sound/fav103706_02_20.mp3
+msg,1,<outline width=2 color=black>「哼，哥哥真是防不胜防……。\n今天你只能再摸我的头一次了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-100,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_21.mp3
+msg,1,<outline width=2 color=black>「那是为了晚安时候用的，要留着哦。\n绝对不能提前用哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+anm,scale,frau,0.4_0.4,0.5,0
+anm,move,frau,0_-90,0.5,0
+endwait
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:anger,frau,0,-90,0.4,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_02_22.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「咕噜，这种时候的哥哥是不能信的。\n绝对，绝对，不能再摸了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+anm,move,frau,-1200_-90,0.7,0
+playse,/download/sound/se/se_016.mp3
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103706/adv/sound/fav103706_02_23.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「我说了不行就是不行！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11130301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm106.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「呜、呜、呜……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,scale,frau,0.7_0.7,0.7,0
+anm,move,frau,0_-150,0.7,0
+endwait
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:sad,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_02.mp3
+msg,1,<outline width=2 color=black>「啊……谢谢你，哥哥，如果你没有扶住我，\n我就要摔倒把和服弄脏了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_03.mp3
+msg,1,<outline width=2 color=black>「这附近，地面好像有点冻住了……这么好的和服\n如果弄脏了会很伤心的，所以要小心点哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:surprise,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_04.mp3
+msg,1,<outline width=2 color=black>「诶……？ 已经要回去了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:sad,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_05.mp3
+msg,1,<outline width=2 color=black>「虽然我们已经来参拜过了，我也知道再摔一跤会很危险……。\n但是，我还想再在这里多待一会儿……可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:smile,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_06.mp3
+msg,1,<outline width=2 color=black>「――谢谢你，哥哥。嘿嘿……再多待一会儿只有我们两个人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:surprise,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_07.mp3
+msg,1,<outline width=2 color=black>「啊……那个。那边那个是许愿牌，对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_08.mp3
+msg,1,<outline width=2 color=black>「许愿牌也是用来写下祈愿的东西吧？ 不仅要参拜，\n还要让许愿牌上的祈愿实现，神明真是辛苦呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「你要写点什么吗？」,选项2 「所以我们必须倾注心意」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_09.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯……现在，我就不写了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:smile,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_10.mp3
+msg,1,<outline width=2 color=black>「刚才，我已经向哥哥许过愿了……而且，哥哥也\n答应了会帮我实现，所以我已经很满足了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_11.mp3
+msg,1,<outline width=2 color=black>「如果神明能够因为我不许愿而去实现别人的愿望，\n那我就觉得很好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_12.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「原来如此……神明肯定更愿意去实现\n那些充满真心的愿望吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_13.mp3
+msg,1,<outline width=2 color=black>「……但是，真心的愿望呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_14.mp3
+msg,1,<outline width=2 color=black>「其实我，可能并没有那么渴望实现的事情，以至于要向神明许愿……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_15.mp3
+msg,1,<outline width=2 color=black>「还有很多我不知道的事情，需要知道的事情。\n所以，找到真心的愿望，可能是在那之后吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_16.mp3
+msg,1,<outline width=2 color=black>「……但是，如果有一天，我能有一个非常强烈地希望能实现的愿望……那一定是很美好的事情吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:surprise,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_17.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「啊……但是，虽然我不写了，如果哥哥有想要许的愿望的话――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:smile,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_18.mp3
+msg,1,<outline width=2 color=black>「……原来如此。你和我一样呢。我们真是心有灵犀呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_19.mp3
+msg,1,<outline width=2 color=black>「啊，但是如果我们要一起许愿的话，哥哥刚才听了我的愿望，\n那我也要听听哥哥的愿望才行吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_20.mp3
+msg,1,<outline width=2 color=black>「哥哥，有没有什么愿望是想让我帮你实现的呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:smile,frau,0,-150,0.7,0,,,,
+playvoice,1,download/character/103709/adv/sound/fav103709_03_21.mp3
+msg,1,<outline width=2 color=black>「嗯……如果现在想不出来，以后有了再告诉我也没关系。\n毕竟是哥哥的愿望。我会努力去实现的……嘿嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

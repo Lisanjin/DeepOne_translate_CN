@@ -1,0 +1,195 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11390300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「哇、哇、哇……这里太棒了。全都是糖果做的。
+看，那是糖果房子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_02.mp3
+msg,1,<outline width=2 color=black>「这么多，吃不完呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_03.mp3
+msg,1,<outline width=2 color=black>「甜食真是神奇。只是吃了一点，就能让心里软软的
+感觉……不由自主的，就会笑出来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_04.mp3
+msg,1,<outline width=2 color=black>「哥哥喜欢甜食吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「喜欢」,选项2 「不怎么喜欢」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_05.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嘿嘿嘿，我们一样呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_06.mp3
+msg,1,<outline width=2 color=black>「对了……你知道吗，情人节快到了？
+所以，我会为你做一份特别甜的巧克力的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_07.mp3
+msg,1,<outline width=2 color=black>「我们一起吃吧？ 我觉得这样肯定会感觉特别好吃的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_08.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「真的吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_09.mp3
+msg,1,<outline width=2 color=black>「……该怎么办呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_10.mp3
+msg,1,<outline width=2 color=black>「那个，我本来想在下次的情人节给你巧克力的，
+……但是，你不能吃甜的……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_11.mp3
+msg,1,<outline width=2 color=black>「但，但是，也有不甜的巧克力！
+那个……如果你能接受就好了……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_12.mp3
+msg,1,<outline width=2 color=black>「我会努力做出一些有点成熟的味道……！ 所以，请期待哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_13.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「为了这个，我正在偷偷和亚纱花进行做巧克力的特训。
+这是秘密，所以嘘——哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_14.mp3
+msg,1,<outline width=2 color=black>「……啊。说漏嘴了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_15.mp3
+msg,1,<outline width=2 color=black>「啊呜、啊呜呜……犯错误了……。
+那个，希望你能当作没听见，好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:surprise,frau,0,-140,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/103706/adv/sound/fav103706_01_16.mp3
+msg,1,<outline width=2 color=black>「……？ 那个，为什么突然抱住我？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.5,3,12,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:shy,frau,0,-140,0.7,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_17.mp3
+msg,1,<outline width=2 color=black>「嗯呜呜呜，头发、乱弄就不行啦—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/103706/adv/sound/fav103706_01_18.mp3
+msg,1,<outline width=2 color=black>「最近感觉哥哥可能开始有点像诺恩了。
+比如突然抱住我、摸头之类的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_19.mp3
+msg,1,<outline width=2 color=black>「虽然你说我可爱我也很开心……但是，不能随便就
+摸我哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_20.mp3
+msg,1,<outline width=2 color=black>「对女孩子总是这么做，是不行的。哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_21.mp3
+msg,1,<outline width=2 color=black>「……但是……如果完全不做，我也会不开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103706/adv/sound/fav103706_01_22.mp3
+msg,1,<outline width=2 color=black>「节制很重要哦。摸头一天三次，
+抱住一天一次……还是两次吧！　所以，请你遵守……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103706/adv/atlas/stand_a,body:shy,frau,0,-140,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/103706/adv/sound/fav103706_01_23.mp3
+msg,1,<outline width=2 color=black>「啊呜呜，又抱住了……今天的抱住配额已经用完了啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

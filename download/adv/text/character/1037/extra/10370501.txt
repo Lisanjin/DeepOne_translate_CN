@@ -1,0 +1,203 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10080100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,0,-120.0,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,frau,50_-120,0.7,1
+endwait
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,50,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯—……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,frau,-50_-120,0.8,1
+endwait
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:smile,frau,-50,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_02.mp3
+msg,1,<outline width=2 color=black>「……嘿嘿嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,frau,0_-120,0.7,1
+endwait
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_03.mp3
+msg,1,<outline width=2 color=black>「嗯？我，笑了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_04.mp3
+msg,1,<outline width=2 color=black>「其实呢，不知为何，和你在一起时心里就会感到很温暖……。\n也许是因为这个吧？因为幸福，所以笑出来了吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「为什么幸福？」,选项2　「我也很幸福」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_05.mp3
+msg,1,<outline width=2 color=black>「嗯……因为和你在一起呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_06.mp3
+msg,1,<outline width=2 color=black>「并没有什么特别的事情。\n但是，虽然不特别，却非常特别……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_07.mp3
+msg,1,<outline width=2 color=black>「……唔唔。用言语来表达真的很困难」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_08.mp3
+msg,1,<outline width=2 color=black>「嘿嘿……是啊。只是和你在一起，心就已经满满的了。\n这种感觉，应该怎么说呢。我也不知道呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_09.mp3
+msg,1,<outline width=2 color=black>「虽然不知道，但肯定是，非常美好的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_10.mp3
+msg,1,<outline width=2 color=black>「想到我们有着相同的感觉，就会感到更加温暖，更加开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_11.mp3
+msg,1,<outline width=2 color=black>「一起度过现在……明天也能这样度过……。\n只有这样，我就觉得什么都不需要了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_12.mp3
+msg,1,<outline width=2 color=black>「…………果然，是假的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_13.mp3
+msg,1,<outline width=2 color=black>「我想要更多更多，让我情不自禁露出笑容的这种感觉。\n如果那样的话，我的内心就会装不下了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_14.mp3
+msg,1,<outline width=2 color=black>「所以，溢出来的部分我会给大家。\n希望大家也能露出笑容」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_15.mp3
+msg,1,<outline width=2 color=black>「要怎么做呢，其实很简单」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_16.mp3
+msg,1,<outline width=2 color=black>「在我身边……握住我的手……紧紧抱住我。\n只需要这样就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:smile,frau,0,-150,0.75,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_17.mp3
+msg,1,<outline width=2 color=black>「嗯……嘿嘿，嘿嘿嘿……怎么办。比我想象的要多得多……。\n都快让人喘不过气来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:shy,frau,0,-150,0.75,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_18.mp3
+msg,1,<outline width=2 color=black>「所以……首先，我要把一部分给你。\n从我这里也来一个紧紧的抱抱……看，怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:shy,frau,0,-150,0.75,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_19.mp3
+msg,1,<outline width=2 color=black>「如果不够的话……再来一个紧紧的抱抱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:shy,frau,0,-150,0.75,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_20.mp3
+msg,1,<outline width=2 color=black>「……然后，那个……看看这边？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:shy,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103705/adv/sound/fav103705_01_21.mp3
+msg,1,<outline width=2 color=black>「嗯，嘟……吻，嘟……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:shy,frau,0,-150,0.75,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_22.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「啊呜呜……怎、怎么办，这个……本来是想分给你的，\n但是无论给多少，都会有更多更多的涌出来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:shy,frau,0,-150,0.75,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_23.mp3
+msg,1,<outline width=2 color=black>「真是困扰了……该怎么办呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:shy,frau,0,-150,0.75,0,,,,
+playvoice,1,download/character/103705/adv/sound/fav103705_01_24.mp3
+msg,1,<outline width=2 color=black>「那个……再来一个紧紧的抱抱，试试看？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

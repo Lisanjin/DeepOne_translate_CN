@@ -1,0 +1,202 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11160300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm088.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嘿……哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_02.mp3
+msg,1,<outline width=2 color=black>「哥哥，停下。看看我……不要躲避我的目光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_03.mp3
+msg,1,<outline width=2 color=black>「那个……虽然不太确定。\n我们是不是迷路了，不知道该走哪条路了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_04.mp3
+msg,1,<outline width=2 color=black>「刚才转弯的时候，你看起来非常自信……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「只要不认为自己迷路就行」,选项2　「相信我，跟着我来！」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_05.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「我不太明白哥哥你在说什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_06.mp3
+msg,1,<outline width=2 color=black>「迷路就是迷路啊……哥哥，你还记得回到原来地方的路吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_07.mp3
+msg,1,<outline width=2 color=black>「真是的……所以说，比起盲目地选择分叉路口，\n我建议我们应该回头……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_08.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「这已经是第三次听到这个了……。\n哥哥，你真的不适合玩迷宫游戏吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_09.mp3
+msg,1,<outline width=2 color=black>「这个区域，没有什么可怕的气息，应该只是一个迷宫，\n我们应该不会被攻击，但你还是太大意了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_10.mp3
+msg,1,<outline width=2 color=black>「总之，如果我们继续前进，只会更迷路。\n要不我们就在这里等待吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_11.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「那我就先设个结界……呃……嗯——嘿！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,2,0.5,0.5
+playse,/download/character/103707/se/se_c03707_skill_01.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_12.mp3
+msg,1,<outline width=2 color=black>「――哦，这个？ 这是诺恩的力量。我是纳科图原书创造的「容器」，\n所以从你、诺恩和其他人那里得到了各种东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_13.mp3
+msg,1,<outline width=2 color=black>「平时我需要非常集中才能借用一点点，\n在紧急情况下可能用不好……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_14.mp3
+msg,1,<outline width=2 color=black>「诺恩应该很快就会发现我们迷路了，\n他会来救我们的，所以我们就静静等待吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_15.mp3
+msg,1,<outline width=2 color=black>「……？ 哥哥，你为什么会沮丧呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_16.mp3
+msg,1,<outline width=2 color=black>「啊……对了。哥哥你一直在意自己不能使用魔术。\n但是，我的这个，其实就像作弊一样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_17.mp3
+msg,1,<outline width=2 color=black>「并不是我自己的力量……所以，呃，那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,0,-120,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_18.mp3
+msg,1,<outline width=2 color=black>「唔……为、为什么你要摸我的头？\n明明是哥哥你在沮丧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.6,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_19.mp3
+msg,1,<outline width=2 color=black>「真的，没事了吗……真的吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,0,-120,0.6,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_20.mp3
+msg,1,<outline width=2 color=black>「……那就好。真的很高兴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,-120,0.6,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_21.mp3
+msg,1,<outline width=2 color=black>「啊，但是，有一件事我想明确地告诉你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,-120,0.6,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_22.mp3
+msg,1,<outline width=2 color=black>「我可以从诺恩和其他大家那里借来力量」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,0,-120,0.6,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_23.mp3
+msg,1,<outline width=2 color=black>「但是……我真正想要珍视的不是战斗的力量，\n而是想要珍视重要的人的笑容……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,0,-120,0.6,0,,,,
+playvoice,1,download/character/103710/adv/sound/fav103710_02_24.mp3
+msg,1,<outline width=2 color=black>「教会我这一点的人……还是哥哥你啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

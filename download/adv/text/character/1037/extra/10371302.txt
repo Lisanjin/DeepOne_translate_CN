@@ -1,0 +1,178 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11690300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「这里，景色真美……看，哥哥。\n月亮在池塘里映照出来了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_02.mp3
+msg,1,<outline width=2 color=black>「话说，那边的椅子，是用来在外面喝茶的\n吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_03.mp3
+msg,1,<outline width=2 color=black>「其实，我最近在向莉瀬学习泡茶。\n上次，莉瀬还夸我进步大呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_04.mp3
+msg,1,<outline width=2 color=black>「虽然这里没有工具，但下次我会为哥哥\n泡茶的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_05.mp3
+msg,1,<outline width=2 color=black>「一开始，我觉得日本茶的礼仪很难懂，\n但莉瀬说泡茶和喝茶都是为了享受的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_06.mp3
+msg,1,<outline width=2 color=black>「所以，如果能和哥哥一起享受茶道就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_07.mp3
+msg,1,<outline width=2 color=black>「……其实，我并不太喜欢抹茶的苦味，\n有点难以接受」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_08.mp3
+msg,1,<outline width=2 color=black>「但是有甜点的话就没问题了，和莉瀬喝茶时我会准备\n和式点心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「带上大量甜点」,选项2　「那苦味才是美味之处」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_09.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「那、那么多我不需要的……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_10.mp3
+msg,1,<outline width=2 color=black>「而且，如果有很多的话，我肯定会吃很多……莉瀬说，\n和式点心不容易发胖……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_11.mp3
+msg,1,<outline width=2 color=black>「但是，如果吃太多的话……我可能也要\n做很多运动了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_12.mp3
+msg,1,<outline width=2 color=black>「所以，虽然我很高兴你能带点心来，\n但也请适量……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_13.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「……总觉得被当成小孩子看待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_14.mp3
+msg,1,<outline width=2 color=black>「哼……就算你道歉也没用哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_15.mp3
+msg,1,<outline width=2 color=black>「我决定要给哥哥泡一杯特别苦的茶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_16.mp3
+msg,1,<outline width=2 color=black>「为了让喜欢苦味的哥哥高兴，我会让莉瀬\n帮忙的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_17.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「但是，我现在还在练习泡茶，\n如果你期待过高，我可能会有点困扰」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_18.mp3
+msg,1,<outline width=2 color=black>「我泡的和莉瀬泡的……虽然用的是同样的东西\n但味道完全不同呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_19.mp3
+msg,1,<outline width=2 color=black>「不愧是真正的大和抚子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_20.mp3
+msg,1,<outline width=2 color=black>「――……哥哥。你那样歪着头，我觉得有点奇怪。\n……我稍微能理解你的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_21.mp3
+msg,1,<outline width=2 color=black>「但是，莉瀬的茶真的很好喝，所以哥哥你也\n有一天要尝尝――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_22.mp3
+msg,1,<outline width=2 color=black>「啊，不，突然觉得你喝莉瀬的茶，可能不太好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_23.mp3
+msg,1,<outline width=2 color=black>「因为，如果在喝了莉瀬的茶之后再喝我的茶，实力差距就会……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_24.mp3
+msg,1,<outline width=2 color=black>「所、所以，哥哥你只能喝我泡的茶。\n在这之前，不能喝其他人的茶哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103713/adv/sound/fav103713_02_25.mp3
+msg,1,<outline width=2 color=black>「这是约定，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

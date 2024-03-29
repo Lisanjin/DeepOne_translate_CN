@@ -1,0 +1,179 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_1170300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_02.mp3
+msg,1,<outline width=2 color=black>「嗯嗯……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_03.mp3
+msg,1,<outline width=2 color=black>「嘿，哥哥。关于特尔蒂亚的事情，\n我们和特尔蒂亚是什么关系呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_04.mp3
+msg,1,<outline width=2 color=black>「我们是特尔蒂亚的——人类理解的梦想展开的\n法术的一部分，因此而诞生」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_05.mp3
+msg,1,<outline width=2 color=black>「但是，像生母或者妈妈这样的\n感觉我怎么也想象不出来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_06.mp3
+msg,1,<outline width=2 color=black>「而且，现在的特尔蒂亚在哥哥体内，\n借用哥哥的身体出现对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_07.mp3
+msg,1,<outline width=2 color=black>「这么说，特尔蒂亚是……姐姐？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「诺恩会生气」,选项2　「反而是妹妹」
+if,select_===_1,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_08.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「并不是说，特尔蒂亚成为姐姐，\n诺恩就不再是姐姐了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_09.mp3
+msg,1,<outline width=2 color=black>「那样的话，诺恩也会生气……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_10.mp3
+msg,1,<outline width=2 color=black>「……可能会吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_11.mp3
+msg,1,<outline width=2 color=black>「芙拉的姐姐只有我——是这样吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_12.mp3
+msg,1,<outline width=2 color=black>「啊，像吗？太好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_13.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「哈，反转了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_14.mp3
+msg,1,<outline width=2 color=black>「特尔蒂亚从纳科托原书的梦想变成可以被称为特尔蒂亚的\n存在是最近的事情，所以确实作为人来说是年纪小……可能？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_15.mp3
+msg,1,<outline width=2 color=black>「也就是说，对于特尔蒂亚来说，我是芙拉姐姐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_16.mp3
+msg,1,<outline width=2 color=black>「……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_17.mp3
+msg,1,<outline width=2 color=black>「被特尔蒂亚这么称呼，总感觉有点不舒服。\n不是讨厌，至少并不觉得她像妹妹一样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_18.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「特尔蒂亚怎么看呢？\n我想问问她对我们的看法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_19.mp3
+msg,1,<outline width=2 color=black>「啊，不过，这个问题我们下次再说吧。\n现在，交换身体什么的，有点……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_20.mp3
+msg,1,<outline width=2 color=black>「……毕竟，终于能和哥哥在一起了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_21.mp3
+msg,1,<outline width=2 color=black>「关于特尔蒂亚的事情，我们下次再说……现在，优先考虑的是哥哥。\n我想要更多的，只有我们两个人在一起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_22.mp3
+msg,1,<outline width=2 color=black>「这就是独占欲，对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_23.mp3
+msg,1,<outline width=2 color=black>「这样的时候，哥哥就是只属于我的哥哥。\n再让我独占一会儿好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,frau,0.7_0.7,0.7,0
+anm,move,frau,0_-160,0.7,0
+endwait
+
+
+spriteatlas,download/character/103714/adv/atlas/stand_a,body:smile,frau,0,-160,0.7,0,,,,
+playvoice,1,download/character/103714/adv/sound/fav103714_02_24.mp3
+msg,1,<outline width=2 color=black>「嘿嘿……紧紧抱住」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
