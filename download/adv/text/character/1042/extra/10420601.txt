@@ -1,0 +1,210 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11650300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm064.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:unique,soka,-500,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_01.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,soka,500_-110,1.5,0
+endwait
+anm,jump,soka,500_-110_30_2,0.5,0
+endwait
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:unique,soka,500,-110,0.5,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_02.mp3
+msg,1,<outline width=2 color=black>「嗖嗖」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,soka,0_-110,0.7,0
+endwait
+anm,jump,soka,0_-110_30_2,0.5,0
+endwait
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_03.mp3
+msg,1,<outline width=2 color=black>「嘀嗒，嘀嗒」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,soka,0.6_0.6,0.5,0
+anm,move,soka,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:sad,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_04.mp3
+msg,1,<outline width=2 color=black>「呣……喂，从刚才开始，为什么你一直不说话？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:sad,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_05.mp3
+msg,1,<outline width=2 color=black>「明明我特意穿上了这样的礼服……难道，不适合我？\n是不是很奇怪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:sad,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_06.mp3
+msg,1,<outline width=2 color=black>「我，是不是不适合穿婚纱……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:sad,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_07.mp3
+msg,1,<outline width=2 color=black>「……啊，对不起，我可能快要哭了。你先别看我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「只是被你的美貌惊艳到了！」,选项2 「一时找不到合适的词来形容」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:shy,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_08.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「那、那样的话……我的这个打扮，并没有什么问题吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:surprise,soka,0,-160,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/104206/adv/sound/fav104206_01_09.mp3
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:smile,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_10.mp3
+msg,1,<outline width=2 color=black>「嗯、呃……被你这样抚摸头发……我，有点喜欢。\n感觉很舒服，让我安心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:smile,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_11.mp3
+msg,1,<outline width=2 color=black>「――如果你觉得我这个样子很漂亮的话，\n我会非常、非常、开心的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:surprise,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_12.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:shy,soka,0,-160,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/104206/adv/sound/fav104206_01_13.mp3
+msg,1,<outline width=2 color=black>「啊呀……你、你突然抱住我，吓了我一跳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:shy,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_14.mp3
+msg,1,<outline width=2 color=black>「不过，这是……因为我太美了所以忍不住想要拥抱――\n是这个意思吗…………如果是这样的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:smile,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_15.mp3
+msg,1,<outline width=2 color=black>「嗯，嘿嘿……呵呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:sad,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_16.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「我，从未想过自己会穿婚纱。\n甚至无法想象自己会结婚……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:sad,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_17.mp3
+msg,1,<outline width=2 color=black>「而且，看看我的身体，已经乱七八糟了……。\n不仅仅是强化魔术师的问题，甚至连是不是普通人都变得可疑了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:smile,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_18.mp3
+msg,1,<outline width=2 color=black>「但是……即使只是现在，即使可能只是虚假的形象，\n只要能穿上这件礼服，并且得到你的认可……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:smile,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_19.mp3
+msg,1,<outline width=2 color=black>「我很开心。非常、非常的开心……嘿嘿，不知为何，我忍不住笑出声来。\n呜呜，对不起，这样的表情一定很难看……请别看我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:shy,soka,0,-240,0.8,0.5,,,,
+endwait
+playvoice,1,download/character/104206/adv/sound/fav104206_01_20.mp3
+msg,1,<outline width=2 color=black>「啊，呃……我、我都说了不要看的，为什么你还要这样盯着\n我看……真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:shy,soka,0,-240,0.8,0,,,,
+playvoice,1,download/character/104206/adv/sound/fav104206_01_21.mp3
+msg,1,<outline width=2 color=black>「呜呜……那么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104206/adv/atlas/stand_a,body:unique,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-750,,,0,1.3,1.3,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104206/adv/sound/fav104206_01_22.mp3
+msg,1,<outline width=2 color=black>「如果我把头靠在你的胸口，你就不能偷看我的脸了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.7,4,12,0,soka2
+playvoice,1,download/character/104206/adv/sound/fav104206_01_23.mp3
+msg,1,<outline width=2 color=black>「嗯……呜嗯……揉揉……揉揉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104206/adv/sound/fav104206_01_24.mp3
+msg,1,<outline width=2 color=black>「…………但是，这样也有点害羞」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
