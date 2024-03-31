@@ -1,0 +1,180 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11210300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:unique,asaka,0,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「嗯嗯——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:unique,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_02.mp3
+msg,1,<outline width=2 color=black>「你知道吗，哥哥。“婚外情”是不可以的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「什么什么的事情？」,选项2 「我没有做出轨这种事」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:anger,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_03.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「就是这样，不直视别人的眼睛，就说明你做了坏事\n对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:anger,asaka,0,-20,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:unique,asaka,0,-20,0.7,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_04.mp3
+msg,1,<outline width=2 color=black>「……就算摸摸头，也不能掩盖事实哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:surprise,asaka,0,-20,0.7,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_05.mp3
+msg,1,<outline width=2 color=black>「啊，抱抱？那个——…」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,asaka,0.5_0.5,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:anger,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_06.mp3
+msg,1,<outline width=2 color=black>「等等，那可不行！欺骗女孩子是不对的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:unique,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_07.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「那么，昨天晚上，你在哪里？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:unique,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_08.mp3
+msg,1,<outline width=2 color=black>「说在房间里……是谁的房间？\n哥哥，你不会是想要瞒过去吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:anger,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_09.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「哥哥你，真是个坏大人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_10.mp3
+msg,1,<outline width=2 color=black>「你知道吗，我好像稍微记起了一些东西。\n可能是未来的我所拥有的记忆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_11.mp3
+msg,1,<outline width=2 color=black>「看到哥哥走进别的女人的房间，\n这里……我的心，就会痛得紧紧的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_12.mp3
+msg,1,<outline width=2 color=black>「但是，这种感觉，肯定会让哥哥困扰。\n所以我想……所以我一直忍耐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:anger,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_13.mp3
+msg,1,<outline width=2 color=black>「但是，这对未来的我来说太可怜了。婚外情是不行的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_14.mp3
+msg,1,<outline width=2 color=black>「你知道吗，你要向未来的我好好道歉哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:normal,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_15.mp3
+msg,1,<outline width=2 color=black>「哥哥……你反省了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:smile,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_16.mp3
+msg,1,<outline width=2 color=black>「嗯……太好了。这样就和未来的我和好了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:normal,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_17.mp3
+msg,1,<outline width=2 color=black>「虽然我不太明白未来的自己……但是，\n我和哥哥能成为好朋友，我非常开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:normal,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_18.mp3
+msg,1,<outline width=2 color=black>「有些奇怪的感觉……明明我不应该知道关于哥哥的任何事情……但是在一起时，我的心就会跳个不停」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:normal,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_19.mp3
+msg,1,<outline width=2 color=black>「我想和哥哥待在一起更久，想要多聊聊天……感觉，我的心情，都要溢出来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:normal,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_20.mp3
+msg,1,<outline width=2 color=black>「这是未来的我所拥有的感觉，对吧……嗯，肯定就是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:smile,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_21.mp3
+msg,1,<outline width=2 color=black>「我也……而且，我相信未来的我一定也非常非常喜欢哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:smile,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_22.mp3
+msg,1,<outline width=2 color=black>「所以，以后也……不能做出轨这种事哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:normal,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_23.mp3
+msg,1,<outline width=2 color=black>「但是，哥哥你肯定还会再出轨吧。\n因为哥哥你就是个坏大人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:smile,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_03_24.mp3
+msg,1,<outline width=2 color=black>「然后……我却全都、全部、全部都喜欢上了……嘿嘿。真奇怪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

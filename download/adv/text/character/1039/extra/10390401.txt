@@ -1,0 +1,177 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11360300.jpg,0,,,,,
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「快看快看，哥哥。怎么样，这件连衣裙，可不可爱？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_02.mp3
+msg,1,<outline width=2 color=black>「这里是音乐厅，好像是让我来演奏一场音乐会的样子。
+嗯～哈～哈～哥哥也想听我演奏吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_03.mp3
+msg,1,<outline width=2 color=black>「虽然说我并不擅长演奏乐器。
+顶多，对于钢琴这种我还能以初学者的水平弹弹……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_04.mp3
+msg,1,<outline width=2 color=black>「但是，实际上我的水平根本达不到让人家来听的程度」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_05.mp3
+msg,1,<outline width=2 color=black>「你看……人总是有所长有所短，比如说音感？
+还有节奏感？ 这些方面我就稍微……对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_06.mp3
+msg,1,<outline width=2 color=black>「尽管曾经有一段时间，我真的很认真地练习过。
+但是但是，结果却一点都没有进步」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_07.mp3
+msg,1,<outline width=2 color=black>「我甚至找了一位相当有名的钢琴老师教我，
+但是，那种「啊，这个人没救了」之类的放弃表情我至今都无法忘记」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_08.mp3
+msg,1,<outline width=2 color=black>「所以，这么丢脸的事情，我可不能让哥哥听到啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「一起来练习吧」,选项2 「即使如此我还是想听你演奏」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_09.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「但是，哥哥你也没有接触过乐器吧？
+这样的两个人一起练习，肯定不会有什么好结果的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_10.mp3
+msg,1,<outline width=2 color=black>「嗯，但是，如果哥哥非要这样的话，
+我也只好陪你一起了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_11.mp3
+msg,1,<outline width=2 color=black>「和哥哥在一起的话，就算只是随便弹弹也
+应该会很有趣吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_12.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「哇，哥哥你真是太残忍了。
+打算听我糟糕的演奏然后大笑一场吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_13.mp3
+msg,1,<outline width=2 color=black>「开玩笑的……嗯～哈～哈～我知道哥哥不会那么做的。
+如果你非要听的话，我就让你听听看吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_14.mp3
+msg,1,<outline width=2 color=black>「但是，这样一来我又得重新开始练习了……毕竟，
+既然要让别人听，尽可能演奏得好一点总是最好的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_15.mp3
+msg,1,<outline width=2 color=black>「为了哥哥，有了这个目标，无论多么艰难的练习
+我都觉得可以愉快地进行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_16.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「嘻嘻，想到这里我就开始兴奋起来。
+这种事情，总是享受其中的人赢得了胜利呢♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_17.mp3
+msg,1,<outline width=2 color=black>「……不仅仅是音乐。对于我来说所有事情都是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_18.mp3
+msg,1,<outline width=2 color=black>「即使比起普通人来说我的生命更短暂，
+只要能接触到更多事物、享受其中、并且开心地笑出来，那就是我的胜利」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_19.mp3
+msg,1,<outline width=2 color=black>「如果能一直笑到最后一刻，
+我就能骄傲地说，我真正地活过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_20.mp3
+msg,1,<outline width=2 color=black>「比起悲伤、痛苦……和泪水，我更希望我的人生充满笑容」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_21.mp3
+msg,1,<outline width=2 color=black>「所以……哥哥，从现在开始，和我一起
+做很多有趣的事吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_01_22.mp3
+msg,1,<outline width=2 color=black>「因为我想在哥哥的记忆中留下很多笑脸的我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,205 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm070.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_01.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「んー……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,1300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_02.mp3
+msg,1,<outline width=2 color=black>「……変なの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_03.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「金魚すくいって、なんの意味があってやるんだろ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_04.mp3
+msg,1,<outline width=2 color=black>「わざわざゲームにして金魚をとる意味がわからない。\n観賞魚として飼育したいなら、普通に買えばいいのに」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_05.mp3
+msg,1,<outline width=2 color=black>「せっかくこうやってお祭り会場の領域にきたんだし、試してみたけど、\n実際にやっても、やっぱり面白さとか、いまいちよくわからなかった」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「難しいから面白い」,選択肢2　「他の遊びも試す？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_06.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「確かに、ポイの紙はすぐ破れちゃったけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_07.mp3
+msg,1,<outline width=2 color=black>「でも、わたしがその気になれば、ポイのフチの部分だけで\n水の中の金魚を全部すくえたよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_08.mp3
+msg,1,<outline width=2 color=black>「それ自体は、明確にルールで禁止されてるとかはないんでしょ？\nだったら、金魚すくいってそんな難しくないよね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_09.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「他って……射的とか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_10.mp3
+msg,1,<outline width=2 color=black>「別にいいかな。屋台の遊びって、どれも簡単そうだし。\n射的だって、変なズルとかがないなら、多分けっこう楽勝だと思う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_11.mp3
+msg,1,<outline width=2 color=black>「私、射撃技能の評価とかもよかったし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_12.mp3
+msg,1,<outline width=2 color=black>「だから、もう金魚すくいをやっただけで遊びは十分」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_13.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「というか、こういうのって普通、生き物で遊ぶな、って\n怒られるものなんじゃないの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_14.mp3
+msg,1,<outline width=2 color=black>「まあ、この金魚は幻夢境が作り出した幻で、本当に生きているわけじゃ\nないから、そのうち消えちゃうんだろうけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_15.mp3
+msg,1,<outline width=2 color=black>「……人は、生き物を自分の都合でどうこうするのが、\nそもそも好きなのかもね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_16.mp3
+msg,1,<outline width=2 color=black>「考えて見れば、わたしたちだって、出店の遊びに利用される金魚と\n大差ない存在なのかもしれないし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_17.mp3
+msg,1,<outline width=2 color=black>「しかも、すぐにいなくなっちゃうところまで、この金魚と同じで……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:surprise,aika,0,-140,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_18.mp3
+msg,1,<outline width=2 color=black>「……？　なんで急に、手を握るの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_19.mp3
+msg,1,<outline width=2 color=black>「わたしは、別にいいけど……急に変なの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_20.mp3
+msg,1,<outline width=2 color=black>「……ところで、遊びはもういいけど、お祭りの食べ物はちょっと気になる」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_21.mp3
+msg,1,<outline width=2 color=black>「食べ物なら、普通にお店で食べればいいのに、\nわざわざ出店で買って食べ歩く必要ってどこにあるのかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_22.mp3
+msg,1,<outline width=2 color=black>「しかも、普通のお祭りの会場って人混みがすごいし、\n商品も割高なんでしょ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_23.mp3
+msg,1,<outline width=2 color=black>「それだけの価値があるってことなのかな？\nちゃんとしたお店のものより、むしろ質は低いと思うんだけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_24.mp3
+msg,1,<outline width=2 color=black>「せっかくだし、出店にあるものをなにか食べてみようか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_25.mp3
+msg,1,<outline width=2 color=black>「なにがいいかな……――あ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104108/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104108/adv/sound/fav104108_02_26.mp3
+msg,1,<outline width=2 color=black>「あのチョコバナナってやつ。あれ、食べてみたいかも。\n一本、すごく大きいのがある。あれにしよう……口、入るかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

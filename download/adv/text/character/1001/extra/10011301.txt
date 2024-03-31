@@ -1,0 +1,223 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11520300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm101.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「怎么说呢……风景也很好，非常豪华……真是好的露天浴池。\n有时候，都快要忘记这里是幻梦境了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_02.mp3
+msg,1,<outline width=2 color=black>「总之，周围没有敌人，除了温泉似乎什么都没有……接下来，我们要做什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_03.mp3
+msg,1,<outline width=2 color=black>「在和正在探索其他地方的大家汇合之前，还有一些时间，\n要不要休息一下？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「去泡温泉？」,选项2「虽然胸口敞开着……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_04.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「诶……你是说，一起去吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_05.mp3
+msg,1,<outline width=2 color=black>「两个人一起泡温泉……也不错」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_06.mp3
+msg,1,<outline width=2 color=black>「――等、等一下！现在正在探索中，虽然有时间，\n但不能完全放松警惕。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_07.mp3
+msg,1,<outline width=2 color=black>「你也应该明白这个道理吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_08.mp3
+msg,1,<outline width=2 color=black>「……或者说，你很想和我一起泡温泉，是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_09.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊……那个，其实这件浴衣有点小，\n胸部的地方有点紧……动一动就会散开的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_10.mp3
+msg,1,<outline width=2 color=black>「那个……希望你不要过多地看我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100113/adv/sound/fav100113_01_11.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「明明说了不要看，为什么还要把脸凑得更近了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_12.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「真是的……你这个人……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_13.mp3
+msg,1,<outline width=2 color=black>「……如果你那么在意的话，那个，稍微摸一摸\n我也不会介意，但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_14.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「哎……不、不对，刚才的话忘掉！其实我并没有……那个，\n总之，忘掉刚才的话！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_15.mp3
+msg,1,<outline width=2 color=black>「唔，我感觉和你在一起时，越来越无法控制自己了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_16.mp3
+msg,1,<outline width=2 color=black>「啊，但是，并不是说讨厌和你在一起，\n并不是这个意思……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_17.mp3
+msg,1,<outline width=2 color=black>「……怎么说呢，一旦失去控制，我感觉自己也无法停下来了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_18.mp3
+msg,1,<outline width=2 color=black>「现在也是，其实我正在忍耐很多事情……所以……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka,0,-140,0.6,0.5,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_19.mp3
+msg,1,<outline width=2 color=black>「你、你不觉得太近了吗？现在你这么靠近我，\n感觉有点不妙……不，我脸红不是因为热……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka,0,-180,0.7,0.5,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_20.mp3
+msg,1,<outline width=2 color=black>「所、所以我说你太近了啊！故意的吧！？假装在关心我，\n其实是在戏弄我对吧……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka,0,-180,0.7,0,,,,
+playvoice,1,download/character/100113/adv/sound/fav100113_01_21.mp3
+msg,1,<outline width=2 color=black>「啊，唔……感觉要坏掉了，再靠近的话，我就……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100113/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100113/adv/sound/fav100113_01_22.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「真的……不行，所以……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

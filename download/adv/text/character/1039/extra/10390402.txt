@@ -1,0 +1,186 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11360300.jpg,0,,,,,
+endwait
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,-260,-100,,,0,1.6,1.6,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103904/adv/sound/fav103904_02_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「嗯——…？哥哥，你从刚才开始一直在看哪里啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_02.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「一直盯着妹妹的腋下看呢。\n哥哥果然是挺喜欢小众的东西呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_03.mp3
+msg,1,<outline width=2 color=black>「其实你不用否认也没关系。趣味这种事情本来就因人而异，\n被哥哥用那种淫秽的目光看，我也不讨厌啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_04.mp3
+msg,1,<outline width=2 color=black>「但是呢，哥哥。世上的女孩子们，并不是所有人都能接受你这种腋下恋好，并具备足够容忍度的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:shy,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_05.mp3
+msg,1,<outline width=2 color=black>「所以……这种性癖的你只能向这个既可爱又富有包容力和理解力的妹妹释放了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_06.mp3
+msg,1,<outline width=2 color=black>「嗯——…你在犹豫什么呢？\n难道说，到了这个地步，你还打算隐藏自己的性癖？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_07.mp3
+msg,1,<outline width=2 color=black>「我觉得那是不可能的哦。来，哥哥。\n你想摸我的腋下还是大腿呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「……腋下」,选项2 「大腿」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_08.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「嗯——嘻嘻♪ 果然是腋下恋好者呢♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_09.mp3
+msg,1,<outline width=2 color=black>「……但是，也是呢。我知道有人喜欢这种的，\n但如果哥哥也是这样的话……总之，我稍后去查一查吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:surprise,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_10.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「啊，真的吗？但是你看的更多的是我的腋下而不是大腿吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_11.mp3
+msg,1,<outline width=2 color=black>「不过……也是呢。我记得听说过这种恋好者，他们觉得价值在于\n能看到平时看不到的地方……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_12.mp3
+msg,1,<outline width=2 color=black>「所以说，哥哥你就是只要是女孩子害羞的地方，无论在哪里都好\n完全没有原则吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:anger,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_13.mp3
+msg,1,<outline width=2 color=black>「也就是说，重要的不是露出来，而是平时隐藏起来的部分在\n某个瞬间被展现出来……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_14.mp3
+msg,1,<outline width=2 color=black>「嗯——嘻嘻，又解开了哥哥的一个性癖。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_15.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「这个信息，拉莱耶现在应该会以相当好的条件买下吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_16.mp3
+msg,1,<outline width=2 color=black>「啊——♪ 你为什么这么慌张呢？我觉得这并不会给哥哥带来什么麻烦啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_17.mp3
+msg,1,<outline width=2 color=black>「因为，我会很高兴能把信息卖出去。\n买下的人能知道哥哥的喜好也会很开心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_18.mp3
+msg,1,<outline width=2 color=black>「而且哥哥的性癖得到满足，会非常开心♪\n看，这不仅没有麻烦，反而能让大家都变得幸福的美好世界就在那里……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_19.mp3
+msg,1,<outline width=2 color=black>「……啊——。为什么一定要保密呢——。\n你真的那么不想被别人知道吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_20.mp3
+msg,1,<outline width=2 color=black>「嗯——如果是这样的话，那就让哥哥自己买下这个信息吧。\n那么……作为报酬，我应该让你做些什么好呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_21.mp3
+msg,1,<outline width=2 color=black>「――好，决定了♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_22.mp3
+msg,1,<outline width=2 color=black>「今天晚上，我要让哥哥当我的抱枕。\n啊，附带拍照选项哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_23.mp3
+msg,1,<outline width=2 color=black>「嗯——嘻嘻……一边抱着哥哥睡觉，一边拍摄睡脸，可以吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103904/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103904/adv/sound/fav103904_02_24.mp3
+msg,1,<outline width=2 color=black>「――好的，交易成立♪ 那么，让我们快点结束思考，\n回去找拉莱耶吧，哥哥♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

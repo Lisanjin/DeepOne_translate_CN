@@ -1,0 +1,182 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_01.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「もしもの話だけれど……あなたは、明日、自分が世界のどこからも\nいなくなるってわかったら、どうする？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_02.mp3
+msg,1,<outline width=2 color=black>「……別に、ちょっと聞いてみたいって思っただけ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_03.mp3
+msg,1,<outline width=2 color=black>「あなたは、いつも誰かとの繋がりを大切にしているみたいだから、\nそういう人にとって、いなくなることは、どういうことなんだろうって」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_04.mp3
+msg,1,<outline width=2 color=black>「――そう、怖いんだ……やっぱり、そうなんだ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_05.mp3
+msg,1,<outline width=2 color=black>「でも、やっぱり不思議……それなら、どうしてあなたは、\nいつも誰かと一緒にいるの？　誰かと想いを交わそうとするの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_06.mp3
+msg,1,<outline width=2 color=black>「そうすれば、そうするほどに……いなくなることは、怖くなるはずなのに」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「後悔しないため」,選択肢2　「思い出を残したいから」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_07.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「後悔……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_08.mp3
+msg,1,<outline width=2 color=black>「わからない。いなくなってしまえば、それで終わり。\n後に悔いることなんて、ないと思うけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_09.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「……思い出？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_10.mp3
+msg,1,<outline width=2 color=black>「あなたがいなくなった後で、あなたのことを、誰かに覚えておいて\nほしいってこと……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_11.mp3
+msg,1,<outline width=2 color=black>「わからない……そこに、いったいどんな意味があるのか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_12.mp3
+msg,1,<outline width=2 color=black>「誰かの記憶の中に残ることって、そんなに大切で、そんなに\n価値のあることなの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_13.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「わたしは……独りがいい……誰かの心に踏み入るのも、\n誰かを心の中に受け入れるのも、いや」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_14.mp3
+msg,1,<outline width=2 color=black>「――そう思っていたはずなのに。こんな質問をしてしまう時点で、\nきっと、わたしはなにか、変わってきているんだと思う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_15.mp3
+msg,1,<outline width=2 color=black>「あなたたちと……あなたといる中で、わたしは……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:anger,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_16.mp3
+msg,1,<outline width=2 color=black>「……わたしのことなんて、なにも知らないくせに。\nどうしてあなたたちは、わたしにかかわろうとするの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:anger,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_17.mp3
+msg,1,<outline width=2 color=black>「わたしは、独りでいたいのに……いなくなるその時まで、なにも持たずに\nいたいのに……どうしてあなたたちが相手だと、こんなにも心が……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:surprise,aika,0,-120,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_18.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「っ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:sad,aika,0,-120,0.6,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_19.mp3
+msg,1,<outline width=2 color=black>「なに、を……なんで、いきなり……手、握って……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:sad,aika,0,-120,0.6,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_20.mp3
+msg,1,<outline width=2 color=black>「…………どう、って……そんなこと聞かれても、わからない。\nわたしより、大きな手で……それから、あたたかくて……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:anger,aika,0,-120,0.6,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_21.mp3
+msg,1,<outline width=2 color=black>「っ……はなして」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,7,7
+anm,scale,aika,0.5_0.5,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_22.mp3
+msg,1,<outline width=2 color=black>「これ以上、わたしに、そんなぬくもりを、感じさせないで。\nぬくもりの中に……なにかを、求めてしまいそうになる」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104100/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_05_23.mp3
+msg,1,<outline width=2 color=black>「――あなたは、ひどい人。へんたい。ばか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,aika,1200_-120,0.6,0
+playse,/download/sound/se/se_016.mp3
+endwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

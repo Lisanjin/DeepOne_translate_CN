@@ -1,0 +1,254 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11530300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「魔女啊……我是魔术师，这样的打扮，从某种意义上说\n也算是合情合理的吧，这么说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_02.mp3
+msg,1,<outline width=2 color=black>「……嗯，对设计还有些想法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:sad,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,260,400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100119/adv/sound/fav100119_02_03.mp3
+msg,1,<outline width=2 color=black>「啊，喂！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:sad,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100119/adv/sound/fav100119_02_04.mp3
+msg,1,<outline width=2 color=black>「只看那些奇怪的地方……真是的，我说不行就不行……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_05.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「唔……你这个人，真是的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「可爱」,选项2 「心跳加速」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_06.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「……就算你这样随口一说，也糊弄不过我哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_07.mp3
+msg,1,<outline width=2 color=black>「…………被糊弄过去了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_08.mp3
+msg,1,<outline width=2 color=black>「――……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_09.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「嗯……你的心跳加速，我感觉有点不健康的氛围哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_10.mp3
+msg,1,<outline width=2 color=black>「真是的。男孩子就是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_11.mp3
+msg,1,<outline width=2 color=black>「…………如果你只是这样看着我，倒不如直接，\n触碰我也――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_12.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊……刚、刚才那个，不是……我、我没有那个意思哦！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_13.mp3
+msg,1,<outline width=2 color=black>「～～！　说、说起来！　提到魔女，总是会联想到童话故事里\n出现的那种形象呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_14.mp3
+msg,1,<outline width=2 color=black>「魔术师太过日常，没有特别感觉！　比如，变出南瓜马车，\n或者像坏魔女那样让公主陷入沉睡！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_15.mp3
+msg,1,<outline width=2 color=black>「能感受到这种突如其来的奇幻感觉，\n才更像所谓的魔女……啊、你不也这么认为吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/100119/adv/sound/fav100119_02_16.mp3
+msg,1,<outline width=2 color=black>「咿呀！？　诶、诶？　什么？　为什么要抱我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_17.mp3
+msg,1,<outline width=2 color=black>「啊！？　亲、亲吻……！？　不、不要，等等，为什么……只有公主才会被吻醒，而且我现在是魔女……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_18.mp3
+msg,1,<outline width=2 color=black>「话说回来，我也没在睡觉啊……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_19.mp3
+msg,1,<outline width=2 color=black>「等等，听我说――嗯嗯！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100119/adv/sound/fav100119_02_20.mp3
+msg,1,<outline width=2 color=black>「吸、吮……嗯，呼……吸、接……吸啪……吸、吸、\n嗯，哈……突然，这样……嗯，呜！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,scale,asaka,0.6_0.6,0.7,0
+anm,move,asaka,0_-130,0.7,0
+endwait
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_21.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「呜……再、再多就，不行了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_22.mp3
+msg,1,<outline width=2 color=black>「唔……你是想让我的心脏出问题吗？\n真的快要、快要受不了了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100119/adv/sound/fav100119_02_23.mp3
+msg,1,<outline width=2 color=black>「听说过王子吻魔女的事情么……真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/100119/adv/sound/fav100119_02_24.mp3
+msg,1,<outline width=2 color=black>「――等等，为什么又……不、不行的！真的不行！\n如果再这样下去……我也、无法、停下来了……所以……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100119/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100119/adv/sound/fav100119_02_25.mp3
+msg,1,<outline width=2 color=black>「不行……我说了不行啊……――吸，吸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

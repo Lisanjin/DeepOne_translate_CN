@@ -1,0 +1,258 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm077.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,-255,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103954/adv/sound/fav103954_02_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「哥哥♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin,0,-40,0.45,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_02.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「找到空当了—♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+flash,255,255,255,3,0.2,0.5
+endwait,,,,,,,,,,,
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_03.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「嗯—呼—呼—♪雪球，精准地命中了―♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_04.mp3
+msg,1,<outline width=2 color=black>「哥哥你刚才被吓得好惊讶，做出了很有趣的表情。\n真可惜没拍下来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_05.mp3
+msg,1,<outline width=2 color=black>「啊，这次是瞪眼的表情。怎么，有什么不满吗？\n在这样的雪山上发呆的罪魁祸首就是你哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_06.mp3
+msg,1,<outline width=2 color=black>「既然雪这么厚，不好好享受一下就亏大了对吧？\n所以，我们来玩雪仗吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_07.mp3
+msg,1,<outline width=2 color=black>「虽然并不是为了赔罪才提这个建议的，\n但下一次可以让你向我扔雪球哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_08.mp3
+msg,1,<outline width=2 color=black>「但是……我可不打算轻易让你打中我。\n哥哥，你能准确地命中我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin,0,-60,0.45,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_09.mp3
+msg,1,<outline width=2 color=black>「快看快看，哥哥，来吧来吧♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　轻轻地扔过去,选项2　全力投掷
+if,select_===_1,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:unique,rlin,0,-60,0.45,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_10.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「哥哥……你有没有劲头啊？\n完全扔不到我这里来哦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-60,0.45,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_11.mp3
+msg,1,<outline width=2 color=black>「难道你在想，如果雪球打到我身上会让我感觉冷，\n所以不能这么做吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-60,0.45,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_12.mp3
+msg,1,<outline width=2 color=black>「哎呀……我完全不介意这种程度的事情。你想太多了。\n这样的话就无法享受雪仗了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin,0,-60,0.45,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_13.mp3
+msg,1,<outline width=2 color=black>「而且……如果我真的觉得冷的话，\n我会借用哥哥的温度来取暖，所以没关系的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin,0,-60,0.45,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_14.mp3
+msg,1,<outline width=2 color=black>「嗯—呼—呼—♪比如说，就像这样！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_055.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,1,255
+endwait
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:sad,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,-255,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103954/adv/sound/fav103954_02_15.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「噗哈……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:sad,rlin,0,-60,0.45,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_16.mp3
+msg,1,<outline width=2 color=black>「噗哈……等、等一下，哥哥！？\n无论如何瞄准女孩子的脸部也太过分了吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-60,0.45,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_17.mp3
+msg,1,<outline width=2 color=black>「唔……对于这么坏的哥哥，我绝对不会手下留情的。\n从现在开始，就是血洗血的雪仗了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-60,0.45,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_18.mp3
+msg,1,<outline width=2 color=black>「等等，在那之前――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+anm,scale,rlin,0.7_0.7,0.6,0
+anm,move,rlin,0_-100,0.6,0
+endwait
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin,0,-100,0.7,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_19.mp3
+msg,1,<outline width=2 color=black>「紧紧抱住」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin,0,-100,0.7,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_20.mp3
+msg,1,<outline width=2 color=black>「嗯—呼—呼—♪ 毕竟这样的话，可以感受到哥哥的体温\n真的好暖和♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-100,0.7,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_21.mp3
+msg,1,<outline width=2 color=black>「当身体感觉冷的时候，果然还是这样最好♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-100,0.7,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_22.mp3
+msg,1,<outline width=2 color=black>「毕竟预防胜于治疗，\n我想在雪仗开始之前先让身体暖和起来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-100,0.7,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_23.mp3
+msg,1,<outline width=2 color=black>「雪仗也很好，但这个也有特别的感觉呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:normal,rlin,0,-100,0.7,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_24.mp3
+msg,1,<outline width=2 color=black>「所以……哥哥，我们可以再这样一会儿吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103954/adv/atlas/stand_a,body:smile,rlin,0,-100,0.7,0,,,,
+playvoice,1,download/character/103954/adv/sound/fav103954_02_25.mp3
+msg,1,<outline width=2 color=black>「嗯—呼—呼—♪ 紧紧抱住♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

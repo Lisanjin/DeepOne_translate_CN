@@ -1,0 +1,197 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_01.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「我从卡蒂亚那里听说了。关于你和她，发生过的种种事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_02.mp3
+msg,1,<outline width=2 color=black>「她说你给了她很大的帮助。虽然口头上是尊重你，但从她的态度来看，比尊重更深的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_03.mp3
+msg,1,<outline width=2 color=black>「……从现在开始，是不是应该称呼你为女婿呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:smile,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_04.mp3
+msg,1,<outline width=2 color=black>「呵呵，我只是开个玩笑。对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_05.mp3
+msg,1,<outline width=2 color=black>「……谢谢你。谢谢你成为卡蒂亚的力量」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_06.mp3
+msg,1,<outline width=2 color=black>「那个孩子，对我来说就像我的侄女……也是我弟弟的后代，承受了我们那个时代的痛苦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_07.mp3
+msg,1,<outline width=2 color=black>「你支持了她……如果没有你，卡蒂亚可能永远都无法有如此坚强的心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「并非如此」,选项2「我也得到了帮助」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_08.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「虽然谦逊可以被称为美德，但如果不能接受感谢就有些让人伤心了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_09.mp3
+msg,1,<outline width=2 color=black>「请不要否定别人对你的感谢。那是你理所当然应该接受的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_10.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「没有必要这样，试图在你和别人之间找到平衡。请不要用「彼此彼此」这样的漂亮话来结束」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:smile,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_11.mp3
+msg,1,<outline width=2 color=black>「接受别人的感情，你应该更加奢侈一些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_12.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「如果你不接受应该接受的东西，你的心会枯萎的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_13.mp3
+msg,1,<outline width=2 color=black>「所以……来这边。看……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:smile,raz,0,-110,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_14.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「好孩子，好孩子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:smile,raz,0,-110,0.6,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_15.mp3
+msg,1,<outline width=2 color=black>「呵呵，不习惯被摸头吗？脸都红了一点……真是可爱呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:surprise,raz,0,-110,0.6,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_16.mp3
+msg,1,<outline width=2 color=black>「啊，看，不要离开」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.6,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_17.mp3
+msg,1,<outline width=2 color=black>「没关系的。没有什么好害羞的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:normal,raz,0,-110,0.6,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_18.mp3
+msg,1,<outline width=2 color=black>「成为别人的力量，成为别人的支持……因为你一直在努力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:smile,raz,0,-110,0.6,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_19.mp3
+msg,1,<outline width=2 color=black>「对于那些不愿直接赞美自己，只会装强的人，我会代替他们赞美你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:smile,raz,0,-110,0.6,0,,,,
+playvoice,1,download/character/104503/adv/sound/fav104503_02_20.mp3
+msg,1,<outline width=2 color=black>「看……闭上眼睛。这样，我就会紧紧地抱住你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,raz1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:smile,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104503/adv/sound/fav104503_02_21.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「放松下来……对。现在，只有我在这里。无论是什么样子都可以给我看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:smile,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-410,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104503/adv/sound/fav104503_02_22.mp3
+msg,1,<outline width=2 color=black>「辛苦了。你很努力……好孩子，好孩子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104500/adv/atlas/stand_a,body:smile,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-410,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104503/adv/sound/fav104503_02_23.mp3
+msg,1,<outline width=2 color=black>「呵呵……要不要我更紧地抱住你呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

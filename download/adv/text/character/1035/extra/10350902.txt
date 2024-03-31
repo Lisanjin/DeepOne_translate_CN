@@ -1,0 +1,164 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020400.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「说起来，这里是以博尔温家的大厅为模型建造的\n领域吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_02.mp3
+msg,1,<outline width=2 color=black>「肯定吉泽尔和布里吉特在这样的地方对着大人们\n进行过繁琐的接待吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_03.mp3
+msg,1,<outline width=2 color=black>「社交界，就是这么回事……如果是名门的千金，\n肯定会有很多纠葛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_04.mp3
+msg,1,<outline width=2 color=black>「我可不想再去那种地方了。\n欲望、阴谋、人性的恶意都让人无法忍受」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_05.mp3
+msg,1,<outline width=2 color=black>「嗯……啊，对了，这可能是我第一次谈论这个话题。\n其实，我以前参加过几次社交界的活动」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_06.mp3
+msg,1,<outline width=2 color=black>「你可能已经忘记了，但是你曾经作为突然出现的神秘天才美少女\n在财团的设施中接受了周围所有人的期待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_07.mp3
+msg,1,<outline width=2 color=black>「因此，也有被迫向重要人物问候之类的事情发生过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「无法想象」,选项2　「也跳过舞吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_08.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「嗯。即使是我，在社交界也作为神秘美少女而广受欢迎\n呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_09.mp3
+msg,1,<outline width=2 color=black>「——什么嘛，那副满脸怀疑的表情！　你啊，我在那种场合也会\n做出相应的态度的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_10.mp3
+msg,1,<outline width=2 color=black>「你从来没看过我全力装乖的样子，所以才会说出那样的话。\n真是的，太小看我这个演技派了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_11.mp3
+msg,1,<outline width=2 color=black>「咦？　想看，是吗……哎，我装乖的样子？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_12.mp3
+msg,1,<outline width=2 color=black>「那个……再想想的话，有点害羞啊。\n呃，还是算了吧。我收回之前的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_13.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哦，难道你对那种事情感兴趣？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_14.mp3
+msg,1,<outline width=2 color=black>「如果是那样的话，就交给我吧。如果你接受我的特别课程，\n从明天开始淑女们的目光就会一直盯着你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_15.mp3
+msg,1,<outline width=2 color=black>「……不过那有点让人不爽啊。还是算了。\n舞蹈嘛，等心情来了再教你。就这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:shy,norn,0,-140,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_16.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哇——等、等一下，为什么突然抓住我的肩膀。\n你太冲动了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:anger,norn,0,-140,0.7,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_17.mp3
+msg,1,<outline width=2 color=black>「我说不行就是不行。绝对不行。\n如果你再纠缠下去，我也有办法的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-140,0.7,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_02_18.mp3
+msg,1,<outline width=2 color=black>「我这个人隐藏的百种奥义之一……地狱痒痒拳\n送给你看看……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:smile,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103509/adv/sound/fav103509_02_19.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊，喂别跑！　你这家伙，等等我——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

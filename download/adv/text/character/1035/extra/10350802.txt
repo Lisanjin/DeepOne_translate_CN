@@ -1,0 +1,176 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11120300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_02.mp3
+msg,1,<outline width=2 color=black>「嗯————」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_03.mp3
+msg,1,<outline width=2 color=black>「…………稍等。从刚刚开始这个可爱的小姐姐\n一直在明显的烦恼中，你就这么无视吗？难道不觉得太过分了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_04.mp3
+msg,1,<outline width=2 color=black>「你看，女孩子啊，当她们迷茫或者感到无助的时候，如果有人温柔对待她们\n她们就会感到心动的，你知道吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_05.mp3
+msg,1,<outline width=2 color=black>「所以……你应该知道该怎么做了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「有什么烦恼吗？」,选项2　「为了以后参考」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_06.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「嗯，你这么诚实我很高兴。\n如果你一开始就这样做那就完美了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_07.mp3
+msg,1,<outline width=2 color=black>「——刚才，你是不是露出了一副「好麻烦」的表情？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_08.mp3
+msg,1,<outline width=2 color=black>「嗯……算了，这次特例我就放过你吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_09.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「不是以后，而是现在这一刻就要表现出温柔！\n我们都是活在当下的人啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_10.mp3
+msg,1,<outline width=2 color=black>「唔……总感觉你对我有些不屑一顾！\n多关注我一点啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-140,0.7,0.5,,,,
+endwait,,,,,,,,,,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_11.mp3
+msg,1,<outline width=2 color=black>「啊，等等，你以为摸摸我的头就能让我原谅你吗！这种事情\n只有在少女漫画里才会发生，我可不会轻易原谅你的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,norn,0.5_0.5,0.5,0
+anm,move,norn,0_-120,0.5,0
+endwait
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_12.mp3
+msg,1,<outline width=2 color=black>「真是的……至少，你得听我倾诉一下吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_13.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「其实，我正在为圣诞节要送什么礼物而烦恼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_14.mp3
+msg,1,<outline width=2 color=black>「你也知道的，她非常可爱。\n看到那个笑容的人会不被打动吗？不，肯定没有！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_15.mp3
+msg,1,<outline width=2 color=black>「所以，其他人肯定也会送她\n圣诞礼物的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_16.mp3
+msg,1,<outline width=2 color=black>「我……不，我们必须送出一个能够打败其他所有礼物、能让她高兴到跳起来的礼物……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_17.mp3
+msg,1,<outline width=2 color=black>「你明白吗？这是关乎我们尊严的、\n绝不能输掉的战斗啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_18.mp3
+msg,1,<outline width=2 color=black>「试想一下。比如她喜欢上了亚纱花送的礼物，\n然后说要做亚纱花的妹妹……那我可能会吐血倒下了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_19.mp3
+msg,1,<outline width=2 color=black>「——嗯，虽然从长远来看，她成为亚纱花的妹妹的可能性\n是存在的，但那是另一回事，现在我们要面对的是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_20.mp3
+msg,1,<outline width=2 color=black>「总之。为了不让她被别人夺走，我们必须送出她最喜欢的\n礼物！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_21.mp3
+msg,1,<outline width=2 color=black>「当然，我知道这种事情最重要的是心意，而不是和别人竞争\n这只是像一种固执罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_22.mp3
+msg,1,<outline width=2 color=black>「但是，我绝对要坚持这份固执。你也有同样的感觉吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103508/adv/sound/fav103508_02_23.mp3
+msg,1,<outline width=2 color=black>「既然已经决定了……那就让我们今晚通宵讨论\n礼物的事情吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

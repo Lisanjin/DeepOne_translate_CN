@@ -1,0 +1,191 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010800.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:normal,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,-255,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103908/adv/sound/fav103908_02_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「哈啊……可能有点过于卖力了……真的有点累了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:surprise,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_02.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「――等等，那个，哥哥？ 什么时候……今天不是休息日吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_03.mp3
+msg,1,<outline width=2 color=black>「啊……难道是，因为担心我，特地过来看看我？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_04.mp3
+msg,1,<outline width=2 color=black>「哎呀……哥哥真是太过保护我了。不过，这样被你关心，我还是很开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_05.mp3
+msg,1,<outline width=2 color=black>「但是你不用那么担心。我已经按时服药了，稍微运动一下也没问题的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_06.mp3
+msg,1,<outline width=2 color=black>「而且，我喜欢活动身体。以前运动都被禁止了，可能是反作用吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「下次一起训练？」,选项2 「和莉瀬的打斗也……？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_07.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「诶？ 我不介意……但是哥哥，你能跟得上吗？虽然这么说有点奇怪，但我的训练菜单可是相当硬核的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_08.mp3
+msg,1,<outline width=2 color=black>「哦―……哥哥的眼神好像在燃烧呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_09.mp3
+msg,1,<outline width=2 color=black>「好的。那么，如果你能坚持到我训练的最后，我就给你奖励好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_10.mp3
+msg,1,<outline width=2 color=black>「嗯―呼―呼♪ 你的眼神又变了……哥哥，你在期待什么样的奖励呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_11.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「不，那只是莉瀬自作主张过来搭话的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_12.mp3
+msg,1,<outline width=2 color=black>「首先，对我这样弱小的人真心实意地动手，也太过分了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_13.mp3
+msg,1,<outline width=2 color=black>「……但是，我并不讨厌莉瀬这种毫无顾忌的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_14.mp3
+msg,1,<outline width=2 color=black>「话虽如此，我不能屈服于莉瀬的无理取闹，我也必须变得更强！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_15.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「话说回来，哥哥你平时也很努力训练呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_16.mp3
+msg,1,<outline width=2 color=black>「啊，那个表情……你在想，在战斗中没什么用吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_17.mp3
+msg,1,<outline width=2 color=black>「确实，没有魔术能做的事情可能会有限……但是，这并不意味着哥哥你的努力就没有意义」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_18.mp3
+msg,1,<outline width=2 color=black>「无论做什么事情，都能积累努力，这一点你应该更加自豪才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_19.mp3
+msg,1,<outline width=2 color=black>「至少我是，很尊敬也很喜欢看到哥哥你这样努力的样子？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_20.mp3
+msg,1,<outline width=2 color=black>「嗯―？ 嗯―呼―呼……哥哥你怎么了，突然好像充满了干劲，但今天不是休息日吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_21.mp3
+msg,1,<outline width=2 color=black>「被我夸奖了，就有干劲了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_22.mp3
+msg,1,<outline width=2 color=black>「如果是这样的话，我也再稍微活动一下身体吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_23.mp3
+msg,1,<outline width=2 color=black>「流汗的哥哥的性感照片什么的，感觉可以卖个好价钱呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_24.mp3
+msg,1,<outline width=2 color=black>「――开玩笑的。嗯，开玩笑开玩笑。这种照片，我会私人享用的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103901/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103908/adv/sound/fav103908_02_25.mp3
+msg,1,<outline width=2 color=black>「所以，我期待你的服务照片哦，哥哥♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

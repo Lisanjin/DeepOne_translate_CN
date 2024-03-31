@@ -1,0 +1,181 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11400301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_01.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「学生服なんて、着る機会があるとは思わなかった」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_02.mp3
+msg,1,<outline width=2 color=black>「なんか、妙な感じ……わたしは、強化魔術師として生まれて、\nここまできて……もう、あとはそれだけなんだって思ってた」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_03.mp3
+msg,1,<outline width=2 color=black>「幻夢境の中でのことだけど……でも、こういう恰好をさせられるのは、\nいまいちしっくりこないっていうか……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「よく似合ってるよ」,選択肢2　「その服装はいや？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_04.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「……？　別に、似合ってるかどうかなんて、聞いてないけど、\nなんでいきなりそんなことを……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_05.mp3
+msg,1,<outline width=2 color=black>「……けど、そっか。うん、変じゃないなら、いいこと、なのかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_06.mp3
+msg,1,<outline width=2 color=black>「あなたは、学生服を着た女の子って好きなの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_07.mp3
+msg,1,<outline width=2 color=black>「だって、さっきからちらちら、スカートのあたりを見てるし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_08.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「いや、ってわけじゃないけど……別に、服装なんて、\nなんだっていいし……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_09.mp3
+msg,1,<outline width=2 color=black>「どんな恰好をしたって、わたしのなにかが変わるわけじゃない。\n……そのはずだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_10.mp3
+msg,1,<outline width=2 color=black>「あ……けど、この服装になって、気になることはあるかも」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,850,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_11.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「裾が短くて気になるのはわかるけど、\nもう少し視線を誤魔化す努力はしたほうがいいと思うよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_12.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「――そんな太ももをまじまじ見ておいて、いまさら誤魔化そうというのは\n無理があると思う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_13.mp3
+msg,1,<outline width=2 color=black>「というか、別に見たいなら、もっとちゃんと見ればいいのに。\nそんなこそこそする必要、ないでしょ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_14.mp3
+msg,1,<outline width=2 color=black>「スカートが短くて気になるってことは、スカートの下が見たいってこと\nなのかな……とりあえず、めくる？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_15.mp3
+msg,1,<outline width=2 color=black>「――ダメって、なんで？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_16.mp3
+msg,1,<outline width=2 color=black>「隠れているのが、いい……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_17.mp3
+msg,1,<outline width=2 color=black>「……？　いや、ちょっと何言ってるのかよくわからない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_18.mp3
+msg,1,<outline width=2 color=black>「興味があって、見たいんだよね？　なのに見えない方がいいって、\nなんだかおかしなこと言ってるよ、あなた」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_19.mp3
+msg,1,<outline width=2 color=black>「……ロマンとか言われても、わからないものはわからないし。\n見たいなら、見せてあげるから好きに見ればいいんだよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,aika,0.6_0.6,0.5,0
+anm,move,aika,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_20.mp3
+msg,1,<outline width=2 color=black>「とりあえず校舎の中に入ろう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104151/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104151/adv/sound/fav104151_01_21.mp3
+msg,1,<outline width=2 color=black>「スカートの中を見て終わり、とはならないと思うし。\n外よりは中のほうがいいかな……ほら、行こう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

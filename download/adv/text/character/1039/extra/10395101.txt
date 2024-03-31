@@ -1,0 +1,206 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+
+
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「白色的沙滩，蓝色的海！海总是让人感觉释放了自我，真是太好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_02.mp3
+msg,1,<outline width=2 color=black>「那么，哥哥？在这么美丽的地方，而且我还穿着泳装，你有什么想说的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_03.mp3
+msg,1,<outline width=2 color=black>「嗯～嘻嘻。被哥哥夸奖，我的脸都笑开了。我也很喜欢这件泳装，觉得很可爱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_04.mp3
+msg,1,<outline width=2 color=black>「顺便问一下，哥哥最喜欢泳装版的莉音在哪个部分最吸引你呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_05.mp3
+msg,1,<outline width=2 color=black>「如果你告诉我……或许我会给你一个……小惊喜？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「……肚脐」,选项2 「……腋窝？」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,230,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103951/adv/sound/fav103951_01_06.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「嗯……肚脐啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_07.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「虽然我不太清楚那里有什么好的……但如果哥哥喜欢，要试着摸摸看吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_08.mp3
+msg,1,<outline width=2 color=black>「--开玩笑的。果然还是不行。我不认为哥哥只摸摸肚脐就会满足，而且现在我们应该享受海滩的乐趣呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,-120,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103951/adv/sound/fav103951_01_09.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「……果然哥哥你的喜好挺特别的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:shy,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_10.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「明明穿着泳装，胸部和腿部比平时都更加暴露，你却忽略这些，选了腋窝？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_11.mp3
+msg,1,<outline width=2 color=black>「虽然我对胸部没什么自信，但是……腋窝……腋窝啊……。原来如此，原来如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_12.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「总之，这次我又发现了一点哥哥的喜好呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_13.mp3
+msg,1,<outline width=2 color=black>「这个信息很宝贵……嗯～嘻嘻。从明天开始，拉莱耶的大家可能会穿上有这种设计的衣服呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_14.mp3
+msg,1,<outline width=2 color=black>「开玩笑的。这个信息，我会独自保留的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:shy,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_15.mp3
+msg,1,<outline width=2 color=black>「对了，因为你回答了我的问题，按照约定，我应该给你一个小惊喜吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rlin,0.7_0.7,1,0
+anm,move,rlin,0_-90,0.7,1
+endwait
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-90,0.7,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_16.mp3
+msg,1,<outline width=2 color=black>「哥哥……你希望我做什么呢？你在期待什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-90,0.7,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_17.mp3
+msg,1,<outline width=2 color=black>「如果你告诉我……也许我会按照你说的去做呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-90,0.7,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_18.mp3
+msg,1,<outline width=2 color=black>「……嘻嘻，哈哈哈。开玩笑的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rlin,0.5_0.5,1,0
+anm,move,rlin,0_-60,0.5,1
+endwait
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_19.mp3
+msg,1,<outline width=2 color=black>「看你脸红红的想得那么认真。哥哥，你在想什么呢？真是个色狼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_20.mp3
+msg,1,<outline width=2 color=black>「我可不是那么便宜，仅凭这点就答应你什么都做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_21.mp3
+msg,1,<outline width=2 color=black>「不过……如果哥哥能陪我享受海滩约会，那时候我可能会考虑一下呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_01_22.mp3
+msg,1,<outline width=2 color=black>「嗯～嘻嘻……今天一整天，都要好好玩耍哦，哥哥？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

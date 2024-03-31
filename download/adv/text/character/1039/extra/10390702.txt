@@ -1,0 +1,237 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:surprise,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,-255,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103907/adv/sound/fav103907_02_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「哇哇哇！？刚才还是晴天，突然就下起来了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103907/adv/sound/fav103907_02_02.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「哥哥，我们先去那边！那儿有一栋看起来不错的建筑，\n我们就去那儿避雨吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_03.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「哈啊……这个区域的天气真是变化无常啊。\n刚才还下着大雨，现在突然就变成晴天了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_04.mp3
+msg,1,<outline width=2 color=black>「话说回来，像印度尼西亚这样的赤道附近的国家也有很多\n天气变化无常的地方呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_05.mp3
+msg,1,<outline width=2 color=black>「在那边的雨季，会突然下起猛烈的雨，叫做骤雨，\n然后很快就会停止。就像倒过来的水桶一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_06.mp3
+msg,1,<outline width=2 color=black>「嗯……是因为雨水的原因让气温降低了吗？\n风感觉有点冷……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_07.mp3
+msg,1,<outline width=2 color=black>「嗯？ 哦，即使说冷，但这个程度其实没关系。\n我又不是被雨淋湿了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_08.mp3
+msg,1,<outline width=2 color=black>「如果你还是担心的话……如果哥哥能帮我暖和一下，\n我也会很开心的，比如说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「借你上衣」,选项2 「帮你擦身子」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_09.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「哇，谢谢你哥哥。有了这个，就算风再大我也不怕了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_10.mp3
+msg,1,<outline width=2 color=black>「等等！ 这不对！ 这肯定不对！\n虽然我很感激也很高兴，但现在不是这个时候……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_11.mp3
+msg,1,<outline width=2 color=black>「咕——哥哥，你为什么在笑？\n难道是在取笑我？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_12.mp3
+msg,1,<outline width=2 color=black>「对于这么恶意的哥哥……就这样吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rlin,0.6_0.6,0.5,0
+anm,move,rlin,0_-80,0.5,1
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:smile,rlin,0,-80,0.6,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_13.mp3
+msg,1,<outline width=2 color=black>「看，像这样做的话，就算风再大也会很暖和吧？\n这就是正确的做法，记住了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_14.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「真是的，哥哥你这么说，难道不就是想摸我吗？\n就像你对其他女孩子那样随便动手动脚吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_15.mp3
+msg,1,<outline width=2 color=black>「嗯——呼——呼♪ 哥哥为什么那么尴尬呢。\n其实我并没有在责难你呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_16.mp3
+msg,1,<outline width=2 color=black>「哥哥如果对方真的不喜欢的话，你也不会做的对吧？\n我也……并没有真的讨厌这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_17.mp3
+msg,1,<outline width=2 color=black>「虽然说，我觉得哥哥只是轻轻摸一下就能忍住的可能性\n非常小，所以这个提议被否决了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_18.mp3
+msg,1,<outline width=2 color=black>「那么代替那个……呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rlin,0.6_0.6,0.5,0
+anm,move,rlin,0_-80,0.5,1
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:smile,rlin,0,-80,0.6,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_19.mp3
+msg,1,<outline width=2 color=black>「像这样，用哥哥来取暖吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:smile,rlin,0,-80,0.6,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_20.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「这样贴在一起，感觉很安心——嘟」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:sad,rlin,0,-80,0.6,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_21.mp3
+msg,1,<outline width=2 color=black>「嗯，感觉身体比我想象的要冷」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,0,-80,0.6,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_22.mp3
+msg,1,<outline width=2 color=black>「……所以说—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:smile,rlin,0,-80,0.6,0,,,,
+playvoice,1,download/character/103907/adv/sound/fav103907_02_23.mp3
+msg,1,<outline width=2 color=black>「更紧紧地抱住哥哥！\n快看，哥哥也要紧紧地抱住我才行呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:smile,rlin,0,-100,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/103907/adv/sound/fav103907_02_24.mp3
+msg,1,<outline width=2 color=black>「嗯——呼——呼♪ 好暖和♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

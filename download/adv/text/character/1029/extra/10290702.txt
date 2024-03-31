@@ -1,0 +1,234 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_01.mp3
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,1,<outline width=2 color=black>「嗯，呜……我感觉我已经开始适应海浪的触感了。\n虽然当海浪退去时，脚被带走的感觉还是有些不适……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_02.mp3
+msg,1,<outline width=2 color=black>「偶尔涌来的大浪让我感觉身体要被带走，\n这让我有些不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_03.mp3
+msg,1,<outline width=2 color=black>「……真是对不起。只在海里淹到脚踝的地方，\n您也一定觉得无聊吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_04.mp3
+msg,1,<outline width=2 color=black>「罗泽特也已经适应了很多，所以请尽情享受您想要的\n海边游戏吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+flash,255,255,255,3,0.2,0.5
+shake,0.2,2,10,10
+playse,/download/sound/se/se_070.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:surprise,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_05.mp3
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,1,<outline width=2 color=black>「呀呼……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:surprise,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_06.mp3
+msg,1,<outline width=2 color=black>「啊，您……突然溅起海水，这是要……嗯，呜，又来了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「这就是传统的玩法」,选项2　「被动后就该反击」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_07.mp3
+msg,1,<outline width=2 color=black>「这样互相溅水，就是游戏的方式，对吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_08.mp3
+msg,1,<outline width=2 color=black>「……即使只是模仿，罗泽特和您扮演\n恋人这种角色，也太过于敬畏和不相称了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_09.mp3
+msg,1,<outline width=2 color=black>「但是……不知为何。罗泽特的内心，\n也有想要和您做同样事情的想法……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_10.mp3
+msg,1,<outline width=2 color=black>「……现在这个时候，罗泽特可以按照自己的任性愿望\n来行动吗……如果可以的话，罗泽特会……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_11.mp3
+msg,1,<outline width=2 color=black>「反击，是……这样做对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash5_Blue,em2,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_055.mp3
+wait,0.5
+playse,/download/sound/se/se_050.mp3
+flash,255,255,255,2,0.2,0.5
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+endwait
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_12.mp3
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,1,<outline width=2 color=black>「抱、抱歉……我用力过猛了。\n下次我会控制好力度的――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_050.mp3
+flash,255,255,255,3,0.2,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:surprise,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_13.mp3
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,1,<outline width=2 color=black>「呜呼……！　果、果然很厉害……手大的话，可以控制的水量就\n不同了……啊？　要更激烈一些，是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_14.mp3
+msg,1,<outline width=2 color=black>「明白了。如果您希望的话，罗泽特会\n把更多的海水溅向您」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+playse,/download/sound/se/se_070.mp3
+wait,0.1
+endwait,,,,,,,,,,,
+flash,255,255,255,1,0.3,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_070.mp3
+flash,255,255,255,1,0.3,0.5
+wait,0.7
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+playse,/download/sound/se/se_070.mp3
+wait,0.1
+endwait,,,,,,,,,,,
+flash,255,255,255,1,0.3,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_070.mp3
+flash,255,255,255,1,0.3,0.5
+wait,0.7
+endwait,,,,,,,,,,,
+spineoff,em2,0
+endwait
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_15.mp3
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,1,<outline width=2 color=black>「嗯……虽然只是这样互相浇水而已……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_16.mp3
+msg,1,<outline width=2 color=black>「――为什么我的心中会充满兴奋感呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_17.mp3
+msg,1,<outline width=2 color=black>「以前的罗泽特对于这种事情，该如何享受\n可能一直都不明白」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_18.mp3
+msg,1,<outline width=2 color=black>「但是现在……罗泽特感觉自己也能理解那种乐趣了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_19.mp3
+msg,1,<outline width=2 color=black>「这个，让人痛苦的快速心跳，高涨的情绪……我觉得，\n就是这样的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_20.mp3
+msg,1,<outline width=2 color=black>「这种痛苦，虽然有些不便……但罗泽特想和您一起，\n更深入地体验这种不便」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_21.mp3
+msg,1,<outline width=2 color=black>「所以……能再陪我一会儿吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102907/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102907/adv/sound/fav102907_02_22.mp3
+msg,1,<outline width=2 color=black>「而且……如果您也能和罗泽特一样感受到这种高涨的情绪\n那么……我会感到无比幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

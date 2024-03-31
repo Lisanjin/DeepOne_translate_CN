@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_01.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「……わたしと、ざくろの関係？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_02.mp3
+msg,1,<outline width=2 color=black>「あなたは、どうしてそんなに、わたしたちのことを気にするの？\nそんなこと別に知らなくたっていいはずなのに……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「仲良くなりたい」,選択肢2　「仲間だから」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_03.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「なか、よく……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_04.mp3
+msg,1,<outline width=2 color=black>「あなたにとって、わたしと仲良くすることに、なんのメリットがあるの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_05.mp3
+msg,1,<outline width=2 color=black>「……肉体関係を迫りやすくなるとか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_06.mp3
+msg,1,<outline width=2 color=black>「冗談だから、そんなに慌てなくていい。\nさすがに、そんなふうには思ってない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_07.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「仲間だから、お互いのことを知らないといけない……なんてこと、\nないと思う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_08.mp3
+msg,1,<outline width=2 color=black>「協力できるかどうか。どれくらいの実力を持っているか。\nそれさえ分かっていれば、支障はないはず」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_09.mp3
+msg,1,<outline width=2 color=black>「相手がどういう人間か分かったところで、意味なんてない。\nそもそも……わたしには、伝えるほどのなにかもないけれど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_10.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「ほんとうに、あなたは不可解で不思議な人。\n私の話なんてしても、面白くないよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_11.mp3
+msg,1,<outline width=2 color=black>「……わたしとざくろは同じ強化魔術士。クラネスってふうにも呼ばれる。\nでも、ロット……強化の方向性が、ちょっと違う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_12.mp3
+msg,1,<outline width=2 color=black>「ざくろはわたしのお世話係で、だから、わたしがこれまで生きてきた中で、\nざくろと一緒にいた時間が一番長いと思う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_13.mp3
+msg,1,<outline width=2 color=black>「――え……姉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_14.mp3
+msg,1,<outline width=2 color=black>「それは…………たしかに、あなたが言う通り、\nざくろは私にとって姉のような存在、なのかもしれない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_15.mp3
+msg,1,<outline width=2 color=black>「でも、姉のようではあっても、やっぱり、姉ではない。\nわたしたちの間にあるのは、人間らしい感情や関係性なんかじゃないから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_16.mp3
+msg,1,<outline width=2 color=black>「わたしたちは、そんなものを抱いても苦しいだけ。\nまして、タイプVのわたしは、ざくろよりも早く……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_17.mp3
+msg,1,<outline width=2 color=black>「…………ん、なんでもない。とにかく、わたしたちは、きっと\nあなたが想像したような間柄じゃない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_18.mp3
+msg,1,<outline width=2 color=black>「財団に決められて、一緒にいるだけだから……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_19.mp3
+msg,1,<outline width=2 color=black>「ざくろが、わたしを見るときの視線？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_20.mp3
+msg,1,<outline width=2 color=black>「――……知らない、分からない。そこにどんな気持ちが\n込められているかなんて、ざくろ以外にわかるはずがない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_21.mp3
+msg,1,<outline width=2 color=black>「そして、知りたくない……知りたくなんて、ない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104104/adv/sound/fav104104_04_22.mp3
+msg,1,<outline width=2 color=black>「知ってしまったら……心残りに、なってしまいそうだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

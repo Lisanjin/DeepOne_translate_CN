@@ -1,0 +1,145 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11260300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_01.mp3
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,1,<outline width=2 color=black>「无论国家还是时代，至今为止有许多士兵为他们所尊敬的君主效力，\n全心全意地侍奉着。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_02.mp3
+msg,1,<outline width=2 color=black>「我想，如此编织出的历史正在延续至今。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_03.mp3
+msg,1,<outline width=2 color=black>「虽然这听起来有些自大，但罗泽特觉得，\n能稍微理解那些士兵们的心情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_04.mp3
+msg,1,<outline width=2 color=black>「罗泽特被训练成一个工具，只知道按照命令\n完成任务是最重要的目标。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_05.mp3
+msg,1,<outline width=2 color=black>「但是……我想，「侍奉」，肯定与此完全不同\n吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_06.mp3
+msg,1,<outline width=2 color=black>「想要待在他身边，成为他的力量，希望能派上用场——想要成为那个人的士兵。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_07.mp3
+msg,1,<outline width=2 color=black>「这种感情是从心底涌出来的。\n这是从未拥有过的心情，因为罗泽特只是一个没有意识的工具。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_08.mp3
+msg,1,<outline width=2 color=black>「……但现在，我觉得我能稍微理解这一点了\n。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「你想侍奉哪种人？」,选项2　「你已经不再是工具了？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_09.mp3
+msg,1,<outline width=2 color=black>「……答案，已经确定。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_10.mp3
+msg,1,<outline width=2 color=black>「请不要问我是谁……那会让人有些悲伤\n。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_11.mp3
+msg,1,<outline width=2 color=black>「罗泽特心中真心想要侍奉的人，\n只有一个。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_12.mp3
+msg,1,<outline width=2 color=black>「……说实话，这种感情仍然\n存在于罗泽特的内心深处。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_13.mp3
+msg,1,<outline width=2 color=black>「从我有记忆起，就被灌输这个身体是工具的观念，并被训练。\n这种认知并不是那么容易就能改变的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_14.mp3
+msg,1,<outline width=2 color=black>「现在，偶尔……或者在梦中，\n我还能听到那个声音。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_15.mp3
+msg,1,<outline width=2 color=black>「不要有自己的意识，不要反抗，只作为消灭伟大主人的敌人的\n工具……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_16.mp3
+msg,1,<outline width=2 color=black>「但每次这样，我都会想起你的笑容和温暖，\n罗泽特的心会剧烈地摇晃。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_17.mp3
+msg,1,<outline width=2 color=black>「我对自己内心有如此大的存在感到困惑……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_18.mp3
+msg,1,<outline width=2 color=black>「但这绝对不是不愉快的……我希望有一天能在更深层次上接受它。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_19.mp3
+msg,1,<outline width=2 color=black>「我相信，历代的士兵可能也抱着类似的感情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102952/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+playvoice,1,download/character/102952/adv/sound/fav102952_02_20.mp3
+msg,1,<outline width=2 color=black>「罗泽特也希望有一天能……挺起胸膛，满怀自豪，用言语表达出这份心情……这就是我的愿望。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

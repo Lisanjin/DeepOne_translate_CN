@@ -1,0 +1,262 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm070.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「这不就是充满热闹气氛的地方吗。\n我从未参加过这种日本的祭典，感觉挺新鲜的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_02.mp3
+msg,1,<outline width=2 color=black>「有各种各样的摊位啊……比如章鱼烧，迷你蛋糕之类的，\n食物看起来很美味，玩的项目也很有趣呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_03.mp3
+msg,1,<outline width=2 color=black>「哥哥对哪个摊位有兴趣吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「我对大饼焼き很感兴趣」,选项2 「抽奖」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_04.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「等等哥哥，这可是战争的开始」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_05.mp3
+msg,1,<outline width=2 color=black>「我也知道……大饼焼き，又名今川焼き，或者叫做回转烧，\n还有太鼓烧、斗帐烧等各种别名的甜点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_06.mp3
+msg,1,<outline width=2 color=black>「在日本自古以来，围绕这个名称进行了数不清的争论\n并且一直在重复进行……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_07.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊。就是选择一根绳子，如果它连着奖品就能得到奖品的那种游戏吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_08.mp3
+msg,1,<outline width=2 color=black>「…………嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_09.mp3
+msg,1,<outline width=2 color=black>「我借一根绳子重新系在我身上怎么样？\n我觉得这是个非常好的主意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_10.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「――哎，哥哥？ 不理人家就向摊位走去\n这样好吗？ 你可以再多关心一下妹妹的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_11.mp3
+msg,1,<outline width=2 color=black>「哎呀……真没劲」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_12.mp3
+msg,1,<outline width=2 color=black>「啊，这边是射击游戏。既然来了，要不要试试看？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_13.mp3
+msg,1,<outline width=2 color=black>「嗯？ 这个射击游戏，感觉有些奇怪……这是……嗯嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_14.mp3
+msg,1,<outline width=2 color=black>「这是什么。生成弹丸需要回忆起让人尴尬的过去的情景的法术……？ 幻梦境总是有些莫名其妙的东西……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_15.mp3
+msg,1,<outline width=2 color=black>「啊？ 不愿意，你说……哈哈哈，别闹了哥哥。\n我可没有什么让我羞耻想对哥哥隐藏的过去呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_16.mp3
+msg,1,<outline width=2 color=black>「这种法术对我来说根本不――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_019.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_17.mp3
+msg,1,<outline width=2 color=black>「咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+bg,color_0_0_0,2,255
+endwait,,,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm122.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103552/adv/sound/fav103552_01_18.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「――啊哈，穿着的睡衣。还是刚脱下来的，很温暖。\n呵呵呵呵……闻闻、闻闻闻……呵呵呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_19.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「等等哥哥。我希望你不要那么惊讶，听我说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_20.mp3
+msg,1,<outline width=2 color=black>「…………这、这没办法吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,-200,0,1,1.0,0
+playse,/download/sound/se/se_055.mp3
+endwait,,,,,,,,,,,
+wait,0.4
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em2,default,animation,0,0,100,1,1.0,0
+playse,/download/sound/se/se_075.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+anm,move,norn,0_-130,0.2,0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+endwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-130,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_21.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哎呀！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-130,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_01_22.mp3
+msg,1,<outline width=2 color=black>「你、你打了我！？ 用那么大力气打我的头！？\n太过分了，这是家庭暴力！ 是虐待！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,-200,0,1,1.0,0
+playse,/download/sound/se/se_055.mp3
+endwait,,,,,,,,,,,
+wait,0.4
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em2,default,animation,0,0,100,1,1.0,0
+playse,/download/sound/se/se_075.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+anm,move,norn,0_-150,0.2,0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103552/adv/sound/fav103552_01_23.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊呜！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103552/adv/sound/fav103552_01_24.mp3
+msg,1,<outline width=2 color=black>「我、我知道了，回去后我会向你道歉的！\n我会道歉的，所以请不要再给我猛击了，哥哥……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

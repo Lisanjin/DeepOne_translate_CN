@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「虽然幻梦境什么都有，但是我真没想到岩石区域竟然还会有水上摩托车，\n这真是吓了我一跳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_02.mp3
+msg,1,<outline width=2 color=black>「不过，和哥哥一起玩还是很开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_03.mp3
+msg,1,<outline width=2 color=black>「……啊，看来我无论怎么笑也掩饰不住心情吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_04.mp3
+msg,1,<outline width=2 color=black>「唔，虽然我开得太快也不对，\n但是谁能想到波浪中竟然隐藏着一块小石头呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_05.mp3
+msg,1,<outline width=2 color=black>「虽然因为莉音的临危不乱我们才得以安全脱险，\n但是摩托车现在已经成了碎片了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_06.mp3
+msg,1,<outline width=2 color=black>「总之，我现在想要静下心来，我们在这附近休息一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_07.mp3
+msg,1,<outline width=2 color=black>「抛开摩托车的事情不谈，我确实玩得有点累了。\n享受海边的乐趣并不只有奔跑嬉戏那么简单呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_08.mp3
+msg,1,<outline width=2 color=black>「这样两个人一起倾听海浪的声音，你觉得怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「你身体没事吧？」,选项2 「可能玩得有点过头了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_09.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「没事，没事。\n虽然当时出事故的时候，我还以为我心脏要停了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_10.mp3
+msg,1,<outline width=2 color=black>「我不想把快乐的时间浪费在这上面，\n所以我会好好自我管理的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_11.mp3
+msg,1,<outline width=2 color=black>「所以不用多余的担心，哥哥也要坦然地享受海滩。对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_12.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「可能是因为哥哥也很兴奋，\n所以我才会玩得有点过火」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_13.mp3
+msg,1,<outline width=2 color=black>「我们不仅玩了水上摩托车，还打了水仗，游泳，\n还玩了砸西瓜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_14.mp3
+msg,1,<outline width=2 color=black>「顺便说一下，当我们在游泳时，哥哥的手碰到我的胸部，\n我可是清清楚楚地感觉到了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_15.mp3
+msg,1,<outline width=2 color=black>「嗯——呼——呼——。你不用做出那么尴尬的表情。\n你是我的哥哥，我特别地原谅你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_16.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「休息结束后，哥哥有想做的事情吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_17.mp3
+msg,1,<outline width=2 color=black>「我什么都可以。就算只是靠着浮圈漂浮在海上，\n只要和哥哥在一起我就会觉得很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_18.mp3
+msg,1,<outline width=2 color=black>「虽然之前已经去过世界各地看过各种海洋了。\n但……和哥哥一起来海边却是第一次，这很特别」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_19.mp3
+msg,1,<outline width=2 color=black>「真奇妙呢。只要和哥哥在一起，我就能感觉到胸口深处，\n有一种舒服的心跳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_20.mp3
+msg,1,<outline width=2 color=black>「啊，说到这里，我开始觉得只是休息实在是太浪费时间了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103951/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103951/adv/sound/fav103951_02_21.mp3
+msg,1,<outline width=2 color=black>「休息结束了！来吧，哥哥。\n我们的夏天，才刚刚开始呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

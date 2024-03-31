@@ -1,0 +1,199 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s2,0,0,0,0,,,,
+imgconf,aika_s2,aika_s1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104180/adv/sound/fav104180_01_01.mp3
+name,<outline width=2 color=black>愛花</outline>,
+msg,1,<outline width=2 color=black>「パーパ♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.2,4,10,10
+name,<outline width=2 color=black>愛花</outline>,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_02.mp3
+msg,1,<outline width=2 color=black>「はい、ぎゅー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:surprise,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_03.mp3
+msg,1,<outline width=2 color=black>「んー？　どうしたの、そんな驚いた顔して」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_04.mp3
+msg,1,<outline width=2 color=black>「親愛のハグなんて、別におかしなことじゃないでしょ？\nもしかして、チューの方がよかったかな？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/104180/adv/sound/fav104180_01_05.mp3
+msg,1,<outline width=2 color=black>「あ、それとも、私がこうやって表に出てきてるのに驚いちゃった感じ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_06.mp3
+msg,1,<outline width=2 color=black>「私もね、別にアイカが毎日エンジョイしてくれるなら出張ったり\nしないんだけどさ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:sad,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_07.mp3
+msg,1,<outline width=2 color=black>「あの子ったら、部屋でなんにもせず、ぼーっとしてるんだもん。\nだから、身体、借りちゃった」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:sad,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_08.mp3
+msg,1,<outline width=2 color=black>「私が見聞きしたこと、感じたことは、あの子にも伝わる」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:sad,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_09.mp3
+msg,1,<outline width=2 color=black>「だから、私がこうやっていろいろなことをすれば、その中のなにかには、\nあの子も興味を持ってくれるかもしれないでしょ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「アイカが大切なんだな」,選択肢2　「全部アイカのため？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:surprise,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_10.mp3
+name,<outline width=2 color=black>愛花</outline>,
+msg,1,<outline width=2 color=black>「変なこと言うね、パパって」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_11.mp3
+msg,1,<outline width=2 color=black>「そんなのは、当たり前。私にとってアイカは絶対に一番。\nなににおいても最優先」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_12.mp3
+msg,1,<outline width=2 color=black>「私という存在がここにいる意味は、全てアイカのため」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_13.mp3
+name,<outline width=2 color=black>愛花</outline>,
+msg,1,<outline width=2 color=black>「ふふ。パパ的には、ここで私がそうだって答えたら、\nアイカのことばかりじゃなく自分のことも、みたいな話をするのかな？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_14.mp3
+msg,1,<outline width=2 color=black>「知ってるよ、パパがそういう人だって。\nとっても優しくて、他人想いで、素敵なパパ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_15.mp3
+msg,1,<outline width=2 color=black>「大丈夫、安心して？　パパの言いたいこと、わかってるから。\n私はね、世界で二番目に私を大事にするよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_16.mp3
+name,<outline width=2 color=black>愛花</outline>,
+msg,1,<outline width=2 color=black>「私は、アイカの心を埋めるために咲いた花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_17.mp3
+msg,1,<outline width=2 color=black>「だから、パパが好き。ママが好き。ソーカもざくろも好き。\nアイカが大好き。自分自身も好きになる努力をしていきたい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_18.mp3
+msg,1,<outline width=2 color=black>「明日が楽しければいいって期待するし、自分ばかりじゃなく\n誰かを笑顔にしたいとも思う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_19.mp3
+msg,1,<outline width=2 color=black>「それはすべて、まだアイカの知らない心。\nだから、今は私がそれを満たしておくの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_20.mp3
+msg,1,<outline width=2 color=black>「いつか、アイカが自分から、自分の心を様々な色で彩れるその日まで、\n私の白であの子をそっと包み込む」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_21.mp3
+msg,1,<outline width=2 color=black>「それが、ナコト写本、白桜……私という存在なの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_22.mp3
+msg,1,<outline width=2 color=black>「だからね、パパ。アイカは不器用で、まだまだ多くのことを\n取りこぼしてしまうけれど、たくさん愛してあげてね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_23.mp3
+msg,1,<outline width=2 color=black>「心配しないで。アイカが取りこぼしても、それは全部、\n私が受け止めておくよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104180/adv/sound/fav104180_01_24.mp3
+msg,1,<outline width=2 color=black>「みんながアイカに伝えきれなかった分は、私がいつか必ず、\nあの子の心に届けてみせるから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

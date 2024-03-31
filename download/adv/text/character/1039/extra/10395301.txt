@@ -1,0 +1,202 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11260300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「嘻～！怎么样，哥哥。哥特萝莉风的莉音也\n很可爱吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_02.mp3
+msg,1,<outline width=2 color=black>「这套衣服是之前从另一个世界来的爱丽丝的。\n平时很少穿这种衣服，感觉挺新鲜的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_03.mp3
+msg,1,<outline width=2 color=black>「……只是，有点让我纠结的是，\n爱丽丝那个挥舞铁块的猩猩角色可能不太合适」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_04.mp3
+msg,1,<outline width=2 color=black>「可能并不太适合弱小美少女莉音的形象」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_05.mp3
+msg,1,<outline width=2 color=black>「嗯～？哥哥，怎么了？看起来像是有什么想说的，\n对我刚才说的话有异议吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「很可爱」,选项2　「我觉得很适合你」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_06.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「嗯～嘻嘻♪　不愧是哥哥，眼光真好♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_07.mp3
+msg,1,<outline width=2 color=black>「以前我更注重衣服的舒适度，但既然哥哥\n喜欢，以后我也会考虑这种风格的衣服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_08.mp3
+msg,1,<outline width=2 color=black>「然后，更加诱惑哥哥……开玩笑啦♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_09.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「嗯……怎么回事。你现在的表情和话语中\n都仿佛藏着什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_10.mp3
+msg,1,<outline width=2 color=black>「难道，哥哥……你觉得我和爱丽丝一样\n像个猩猩吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_11.mp3
+msg,1,<outline width=2 color=black>「嗯～嘻嘻♪　肯定不会吧。这么美的少女怎么可能是猩猩，\n你不会真的这么想吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_12.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「……话说回来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_13.mp3
+msg,1,<outline width=2 color=black>「爱丽丝的性格有点大而化之，好像并不太在意衣服之类的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:sad,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,600,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103953/adv/sound/fav103953_01_14.mp3
+msg,1,<outline width=2 color=black>「――但她穿的衣服真的很成熟呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_15.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「啊，没，没什么，没什么大不了的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_16.mp3
+msg,1,<outline width=2 color=black>「再想想看，爱丽丝也是个女孩子，而且她好像很喜欢帮别人拿东西\n……所以她关心这些也是理所当然的，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_17.mp3
+msg,1,<outline width=2 color=black>「我也是为了让哥哥夸我可爱，\n所以才每天都在努力呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_18.mp3
+msg,1,<outline width=2 color=black>「从拉莱耶大家族那里收集哥哥的信息，\n还有分析我换新衣服时你的反应来了解你的喜好……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:unique,rlin,0,-50,0.45,0.5,,,,
+endwait
+playvoice,1,download/character/103953/adv/sound/fav103953_01_19.mp3
+msg,1,<outline width=2 color=black>「等等，为什么你会感到害怕呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/103953/adv/sound/fav103953_01_20.mp3
+msg,1,<outline width=2 color=black>「我要告诉你，这种程度是很正常的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_21.mp3
+msg,1,<outline width=2 color=black>「如果有一个你非常在乎、希望他能看到你的人，那么你肯定会\n想要更了解他……每个人都会这样吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_22.mp3
+msg,1,<outline width=2 color=black>「……嗯，也许相比其他人，我可能稍微更用心一些，\n这个嘛，是职业病？信息收集者的习惯吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_23.mp3
+msg,1,<outline width=2 color=black>「但是，如果你不喜欢被我这样调查的话……我有个\n提议给你……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103953/adv/sound/fav103953_01_24.mp3
+msg,1,<outline width=2 color=black>「如果哥哥你能直接告诉我很多事情……那我就\n会很满足了…………怎么样呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

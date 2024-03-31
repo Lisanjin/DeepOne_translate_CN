@@ -1,0 +1,188 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11490300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_01.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「これは……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_02.mp3
+msg,1,<outline width=2 color=black>「幻夢境で格好に変化が起きることも、そこに法則性はないってことも\n知ってはいるけど……一応、聞いてもいい？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_03.mp3
+msg,1,<outline width=2 color=black>「なんでメイド服？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「似合ってる」,選択肢2　「ネコミミさわっていい？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_04.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「別に似合ってるかどうかは聞いてないけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_05.mp3
+msg,1,<outline width=2 color=black>「でも、そんなに嬉しそうにするなんて……やっぱり、\n幻夢境での服装の変化って、あなたの意思も関わっているんじゃ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_06.mp3
+msg,1,<outline width=2 color=black>「まあ、どうでもいいけど……わたしは、自分の服とか、あんまり興味ないし。\nあなたが嬉しいなら、それはそれで、いいんじゃないかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:shy,aika,0,-180,0.7,0.5,,,,
+endwait
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_07.mp3
+msg,1,<outline width=2 color=black>「ん、ぅっ……わたし、まださわっていいなんて答えてないのに……ひぁ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:shy,aika,0,-180,0.7,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_08.mp3
+msg,1,<outline width=2 color=black>「ぁ、んん……この耳、感覚あって……それに、すごく敏感みたい……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:shy,aika,0,-180,0.7,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_09.mp3
+msg,1,<outline width=2 color=black>「あ、ぁ……ん、ふぅ……っ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,aika,0.5_0.5,0.5,0
+anm,move,aika,0_-120,0.5,0
+endwait
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:shy,aika,0,-120,0.5,0,,,,
+endwait
+playvoice,1,download/character/104105/adv/sound/fav104105_01_10.mp3
+msg,1,<outline width=2 color=black>「っ……そういうの、セクハラって言うんだと思う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_11.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「……そんなにこの格好が好みなら、とりあえず、\nそこらへんの建物に入る？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_12.mp3
+msg,1,<outline width=2 color=black>「さすがに、わたしも他に他人がいないとはいえ、こんな道の真ん中で\nするのは憚られる。どうしてもっていうならいいけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_13.mp3
+msg,1,<outline width=2 color=black>「……そこで動揺する理由がわからない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_14.mp3
+msg,1,<outline width=2 color=black>「あなた的には、わたしとするのって嬉しくないことなの？\n前にしたときは、そんな嫌がってるように見えなかったけれど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_15.mp3
+msg,1,<outline width=2 color=black>「……？　こういう話、したらマズいの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_16.mp3
+msg,1,<outline width=2 color=black>「別に隠すようなことじゃないと思う。あなたと肉体的なつながりを\n持ってることなんて、みんな、お互いに知っていることだし……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_17.mp3
+msg,1,<outline width=2 color=black>「慎み……あなたがそれを言う……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_18.mp3
+msg,1,<outline width=2 color=black>「まあいいや。とりあえず」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,aika,0.7_0.7,0.5,0
+anm,move,aika,0_-180,0.5,0
+endwait
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:normal,aika,0,-180,0.7,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_19.mp3
+msg,1,<outline width=2 color=black>「いこう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:normal,aika,0,-180,0.7,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_20.mp3
+msg,1,<outline width=2 color=black>「こんな話してたら、ちょっとそういう気分になってきた。\n適当なとこ入ろう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:unique,aika,0,-180,0.7,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_21.mp3
+msg,1,<outline width=2 color=black>「逃げようとしても無駄。一度、こうして掴まれた以上、\nあなたが<ruby>強化魔術師|わたし</ruby>の腕力に勝てるはずない。抵抗は諦めたほうがいい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:sad,aika,0,-180,0.7,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_22.mp3
+msg,1,<outline width=2 color=black>「誰に似たのか、って……ほんと、あなたが言うことじゃないと思う……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104105/adv/atlas/stand_a,body:normal,aika,0,-180,0.7,0,,,,
+playvoice,1,download/character/104105/adv/sound/fav104105_01_23.mp3
+msg,1,<outline width=2 color=black>「ほら、自分で歩いて。それとも、抱き上げて運ばれたい？\nわたしは別に、どっちでもいいけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

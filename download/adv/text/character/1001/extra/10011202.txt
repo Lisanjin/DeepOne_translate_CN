@@ -1,0 +1,293 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「嘿，你说到玩水，会想到什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_02.mp3
+msg,1,<outline width=2 color=black>「如果是海的话，可以游泳，用沙子堆城堡……人多的话还可以
+打沙滩排球对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_03.mp3
+msg,1,<outline width=2 color=black>「但是，说到在河里玩，我就有点摸不着头脑了，没有那种特定的
+标准游戏让我想起来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_04.mp3
+msg,1,<outline width=2 color=black>「虽然这是幻梦境，但既然来到了这样的地方。
+那就趁机好好享受一下不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_05.mp3
+msg,1,<outline width=2 color=black>「你有什么想做的事情吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「抓鱼」,选项2 「互相泼水」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_06.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「说抓鱼也好，但没有工具……啊，难道你打算用手？
+嗯……就算河流很浅，那也很难啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+sprite,download/bg/bg_11310303.jpg,bg,0,0,1.2,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,0,255
+endwait,,,,,,,,,,,
+anm,move,bg,0_-200,1.5,0
+anm,scale,bg,2_2,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100112/adv/sound/fav100112_02_07.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊，等一下——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.2,up
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.2,up
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Water,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,down
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_11310303.jpg,bg,0,0,1.5,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,down
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_08.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_09.mp3
+msg,1,<outline width=2 color=black>「――呃，嘿嘿，哈哈哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_10.mp3
+msg,1,<outline width=2 color=black>「真是的，你能不能听人说话啊。我刚说完你就滑倒了，
+真像个小孩子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_11.mp3
+msg,1,<outline width=2 color=black>「听着，我知道你很不甘心，但快从河里出来吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,bg,0_0,1,0
+anm,scale,bg,1.2_1.2,1,0
+endwait,,,,,,,,,,,
+
+spineoff,bg,0
+endwait,,,,,,,,,,,
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_12.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「我觉得这并不只是在河里才会发生的事……而且，这种事情
+更像是在玩耍，或者说……恋人之间的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_13.mp3
+msg,1,<outline width=2 color=black>「……呃，那个」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_14.mp3
+msg,1,<outline width=2 color=black>「啊！ 不，我不讨厌！ 完全不讨厌，
+反而很开心……呃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Water,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait,,,,,,,,,,,
+wait,1.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_15.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:anger,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_16.mp3
+msg,1,<outline width=2 color=black>「等、等一下！ 突然这样可是犯规的……！
+真是的……既然这样，我也要――哎呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+flash,255,255,255,3,0.3,1.0
+spine,download/adv/spine/Water,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_17.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊……对、对不起，我用力过猛了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_18.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「全身都湿透了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_19.mp3
+msg,1,<outline width=2 color=black>「虽然阳光很强烈，但河边很凉快，水也很冷，不能感冒……过来这边。我用魔术帮你把身体弄干」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/100112/adv/sound/fav100112_02_20.mp3
+msg,1,<outline width=2 color=black>「头发都湿透了……稍微静一静」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.6,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_21.mp3
+msg,1,<outline width=2 color=black>「接下来我们要烧烤，所以把身体也擦干吧。
+好了，我知道你觉得痒，但不要动」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,0,-120,0.6,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_22.mp3
+msg,1,<outline width=2 color=black>「……不过……怎么说呢，这样看你，
+无论是身材还是肌肉这些……毕竟你是男人啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:shy,asaka,0,-120,0.6,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_23.mp3
+msg,1,<outline width=2 color=black>「…………啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,asaka,0.5_0.5,0.2,0
+endwait
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_24.mp3
+msg,1,<outline width=2 color=black>「对、对不起，我在不知不觉中就摸了……啊，呜、呜呜……我、我没有！
+这个，那个……怎么说呢……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100112/adv/sound/fav100112_02_25.mp3
+msg,1,<outline width=2 color=black>「――啊，没什么啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,asaka,1200_-120,0.4,0
+endwait
+spriteoff,asaka,0
+endwait
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

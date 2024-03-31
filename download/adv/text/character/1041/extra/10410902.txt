@@ -1,0 +1,225 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm129.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_01.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「そういえば……姉さんが、クリスマスプレゼントをくれたんだよね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_02.mp3
+msg,1,<outline width=2 color=black>「なんだっけ。あの、お風呂に入れるやつ。\n普通の入浴剤じゃなくて、固形の……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「バスボム」,選択肢2　「アヒル」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_03.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「あ、それ。今のでよくわかったね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_04.mp3
+msg,1,<outline width=2 color=black>「いろんな種類のが入ってて、それぞれ香りとかが違うの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_05.mp3
+msg,1,<outline width=2 color=black>「正直、お風呂なんてゆっくりつかる必要ないかな、って思うんだけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_06.mp3
+msg,1,<outline width=2 color=black>「普通の人なら、疲労の回復とかで必要なのかもしれないけれど、\nわたしの身体は特別だから、そういうの、なくても平気だし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_07.mp3
+msg,1,<outline width=2 color=black>「まあ……いや、ってわけじゃないけどね。\nまだ使ってないけど、香りは、わりと好きだったし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_08.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「アヒル……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_09.mp3
+msg,1,<outline width=2 color=black>「なんでアヒルなんてお風呂にいれるの？　飼うの？\nアヒルってお湯で生活できるんだっけ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_10.mp3
+msg,1,<outline width=2 color=black>「わたしがもらったのは、アヒルじゃなくて……ええと……。\nバス……バス……ああ、そうだ、バスボムだ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_11.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「今夜、姉さんが一緒にお風呂入ろうって言うから、\nとりあえず、バスボム使おうと思うんだけど……どの香りから使おうかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_12.mp3
+msg,1,<outline width=2 color=black>「やっぱり、オレンジかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_13.mp3
+msg,1,<outline width=2 color=black>「…………なんだか、おかしいな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_14.mp3
+msg,1,<outline width=2 color=black>「だって、少し前の私なら、こんなプレゼントいらないって言ってたと思う。\nお風呂もシャワーで済ませてたと思うし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_15.mp3
+msg,1,<outline width=2 color=black>「なのに、今は……姉さんに誘われて、悪くないって思えて……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_16.mp3
+msg,1,<outline width=2 color=black>「――ううん。違う、かな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_17.mp3
+msg,1,<outline width=2 color=black>「ちょっとだけ……バスボムを入れるのって、どんな感じなんだろうって\n考えてる」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_18.mp3
+msg,1,<outline width=2 color=black>「これってもしかして、わたし……期待、して……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_19.mp3
+msg,1,<outline width=2 color=black>「――ううん、違う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_20.mp3
+msg,1,<outline width=2 color=black>「最近、姉さんは、こういうの断ると妙に粘るっていうか、\nしつこいから……だから、断る時間の方がもったいないし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_21.mp3
+msg,1,<outline width=2 color=black>「ただ、それだけ……それだけだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:unique,aika,0,-140,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,aika
+playvoice,1,download/character/104109/adv/sound/fav104109_02_22.mp3
+msg,1,<outline width=2 color=black>「……なんで笑いながら人のこと撫でるの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:sad,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104109/adv/sound/fav104109_02_23.mp3
+msg,1,<outline width=2 color=black>「変な人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104109/adv/sound/fav104109_02_24.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「――期待なんて、していない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104109/adv/sound/fav104109_02_25.mp3
+msg,1,<outline width=2 color=black>「わたしは、なにかに期待するなんて、そんな一番無駄なことしないから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104109/adv/sound/fav104109_02_26.mp3
+msg,1,<outline width=2 color=black>「この気持ちは……きっと、なにかの間違い……そのはず」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104109/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104109/adv/sound/fav104109_02_27.mp3
+msg,1,<outline width=2 color=black>「そうでないと……――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

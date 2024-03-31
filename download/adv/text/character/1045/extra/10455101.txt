@@ -1,0 +1,192 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010102.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm055.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_01.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「这些装饰，是为了情人节的吧，\n平时看惯的拉莱耶也因此氛围变得不一样，挺可爱的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:smile,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_02.mp3
+msg,1,<outline width=2 color=black>「这个时代，像这样欢快气氛的活动很多呢。\n而且，能向重要的人表达自己感情的日子，我觉得很美好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:surprise,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_03.mp3
+msg,1,<outline width=2 color=black>「……话说，那个，你刚才一直在看这身衣服，\n这个装扮，是不是很奇怪……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_04.mp3
+msg,1,<outline width=2 color=black>「正好有机会就被劝说换衣服了。\n虽然是在听取大家意见后选的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_05.mp3
+msg,1,<outline width=2 color=black>「听了各种意见，最后还是没能决定而开始迷茫了\n也有这种感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_06.mp3
+msg,1,<outline width=2 color=black>「果然像我这样的，来自古老时代的人穿这样的衣服，\n是不是有些勉强呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「不由自主地被吸引了」,选项2 「希望你能继续勉强」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:shy,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_07.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「是、是吗……？ 不是因为奇怪之类的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:smile,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_08.mp3
+msg,1,<outline width=2 color=black>「――原来如此，明白了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:smile,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_09.mp3
+msg,1,<outline width=2 color=black>「只要你喜欢，我随时都可以穿这件衣服给你看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:smile,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_10.mp3
+msg,1,<outline width=2 color=black>「如果还有别的你想让我穿的衣服，就尽管说出来吧。\n只要你开口，姐姐我什么样子都愿意做给你看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_11.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「勉强……？ 嗯，那个，也就是说，\n这个装扮在你看来，并不是坏印象，可以这么理解吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:shy,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_12.mp3
+msg,1,<outline width=2 color=black>「而且……反而感觉，你的目光好像有点热烈……难、难道说，\n这件衣服的长度或者领口之类的，是不是太大胆了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:shy,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_13.mp3
+msg,1,<outline width=2 color=black>「现在的女性真的很大胆，我都惊讶了，我也不确定自己能不能穿……你是、想看更多吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_14.mp3
+msg,1,<outline width=2 color=black>「――原来如此。那么……虽然会慢一些，但是姐姐、\n会努力尝试各种可能的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_15.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「顺便问一下，你喜欢我这个装扮的哪一点呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,raz1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:normal,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-160,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104551/adv/sound/fav104551_01_16.mp3
+msg,1,<outline width=2 color=black>「真是的……和人说话的时候要好好看着对方的脸哦。\n姐姐我的脸可不在那里呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_17.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「而且，那种淫荡的目光，除了对着姐姐我以外就不可以哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,raz,0.6_0.6,0.5,0
+anm,move,raz,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:smile,raz,0,-130,0.6,0,,,,
+playvoice,1,download/character/104551/adv/sound/fav104551_01_18.mp3
+msg,1,<outline width=2 color=black>「但是，因为你这么专注地看着我，我还挺高兴的——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,raz1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104551/adv/atlas/stand_a,body:smile,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-160,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104551/adv/sound/fav104551_01_19.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「紧……呵呵，这样的话，是不是会更喜欢姐姐的这里，\n更愿意撒娇呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104551/adv/sound/fav104551_01_20.mp3
+msg,1,<outline width=2 color=black>「啊、嗯……呵呵，把脸那么贴近我……嗯，那就这样，\n让我紧紧抱着你吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104551/adv/sound/fav104551_01_21.mp3
+msg,1,<outline width=2 color=black>「我会一直这样，直到你厌烦为止……尽情地、\n向姐姐撒娇吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

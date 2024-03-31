@@ -1,0 +1,184 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「不不不……刚才是因为冲动，差点就被带偏了，\n但这次再这么随波逐流，不太好吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_02.mp3
+msg,1,<outline width=2 color=black>「虽然对方拥有<ruby>魔导书|オ—ルドワン</ruby>的力量……但还是不能把\n事情简单化，好像什么都没发生过一样，我觉得这样不对。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_03.mp3
+msg,1,<outline width=2 color=black>「忘记了你的存在，甚至还试图伤害你……啊啊，\n我真是太糟糕了……太差劲了……笨蛋、傻瓜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_04.mp3
+msg,1,<outline width=2 color=black>「魔导书算什么。明明一直说着喜欢你、爱你之类的话，\n结果却轻易成为敌人，这怎么可能。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「亚纱花在自责」,选项2　「其实我挺受打击的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_05.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「自责也是有的……我受够了、无法忍受。我无法忍受现在这样的自己……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_06.mp3
+msg,1,<outline width=2 color=black>「什么都不想做。感到羞耻想要躲起来……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_07.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「……！？ 啊、哇、呜呜，我该怎么办啊……！\n无论什么都行，请告诉我该怎么做……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_08.mp3
+msg,1,<outline width=2 color=black>「是、是打我吗？ 还、还是大声地责骂我？ 或者干脆就\n不再接近你――啊、不行，那样的话我根本无法生存下去」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_09.mp3
+msg,1,<outline width=2 color=black>「――诶，你在开玩笑吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_10.mp3
+msg,1,<outline width=2 color=black>「我、我背叛了你，你就这么不在意吗？\n是觉得我就只值得这种程度吗……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+shake,0.5,3,12,0,asaka
+playvoice,1,download/character/100117/adv/sound/fav100117_02_11.mp3
+msg,1,<outline width=2 color=black>「呜呜，你又在摸我的头来搪塞我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100117/adv/sound/fav100117_02_12.mp3
+msg,1,<outline width=2 color=black>「嗯……吻、吻、唔、唔、吻。啪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:shy,asaka,0,-130,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_13.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊、我、我果然被认为是个只要接吻就能被轻易骗过的女人\n对吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_14.mp3
+msg,1,<outline width=2 color=black>「……嗯，其实，有点，感觉被蒙混过关了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_15.mp3
+msg,1,<outline width=2 color=black>「有点其实是很多，是不是……大概七成……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_16.mp3
+msg,1,<outline width=2 color=black>「……哎呀，实际上已经被蒙混过关了九成」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_17.mp3
+msg,1,<outline width=2 color=black>「脑海里全都是你的身影，\n深入心底的那份……喜欢的感情，溢出来了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_18.mp3
+msg,1,<outline width=2 color=black>「刚刚还在自责，现在又这么心跳加速……我也太情绪化了。\n不仅仅是矫情，还有点精神病患者……这样真的好吗……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-170,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/100117/adv/sound/fav100117_02_19.mp3
+msg,1,<outline width=2 color=black>「嗯、啊……这里，你应该不是紧紧抱住我，\n而是告诉我你讨厌麻烦的女人才对。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_20.mp3
+msg,1,<outline width=2 color=black>「如果你不告诉我……我可能就会失去控制。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100117/adv/atlas/stand_a,body:sad,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100117/adv/sound/fav100117_02_21.mp3
+msg,1,<outline width=2 color=black>「所以……就算是现在的我也没关系，这种话……绝对、\n绝对不能说出来哦……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

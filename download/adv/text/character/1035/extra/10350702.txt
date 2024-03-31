@@ -1,0 +1,175 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10080100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「我觉得有些事情是时候明确一下了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_02.mp3
+msg,1,<outline width=2 color=black>「对，就是谁在上面，谁在下面这个问题！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「你是说兄妹关系？」,选项2 「你是说在床上的事？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_03.mp3
+msg,1,<outline width=2 color=black>「没错！这会影响我们未来的关系！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_04.mp3
+msg,1,<outline width=2 color=black>「顺便说一下，我觉得社会经验最丰富的人应该在上面，\n你怎么看？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_05.mp3
+msg,1,<outline width=2 color=black>「你希望我成为你的姐姐，还是你想成为我的弟弟，快选一个！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_06.mp3
+msg,1,<outline width=2 color=black>「等等，突然间说这么下流的话会让人不知所措的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_07.mp3
+msg,1,<outline width=2 color=black>「你就是这样的人，总有这样的地方。\n不过，你是男孩子，有这样的一面也可以理解……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_08.mp3
+msg,1,<outline width=2 color=black>「虽然我们并不是普通的兄妹，但即使如此，\n你真的要和姐姐讨论这种事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_09.mp3
+msg,1,<outline width=2 color=black>「嗯……我本来打算强行成为你的姐姐，\n但看来你已经发现了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_10.mp3
+msg,1,<outline width=2 color=black>「话说，你有什么问题吗，我成为你的姐姐？\n我成为你的姐姐不是挺好的吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_11.mp3
+msg,1,<outline width=2 color=black>「虽然到现在为止，我都是以开玩笑的方式把你当哥哥，\n但如果我成为你的姐姐，对你也有好处的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_12.mp3
+msg,1,<outline width=2 color=black>「首先，作为你的姐姐，我会宠爱你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_13.mp3
+msg,1,<outline width=2 color=black>「每天早上醒来我会夸奖你，给你喂饭，一起午睡，\n洗澡时帮你擦背。当然，也会陪你睡觉！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_14.mp3
+msg,1,<outline width=2 color=black>「这样被姐姐宠爱的生活怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_15.mp3
+msg,1,<outline width=2 color=black>「诶……反过来？那么说，就是我要接受刚才那些事情？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_16.mp3
+msg,1,<outline width=2 color=black>「…………哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_17.mp3
+msg,1,<outline width=2 color=black>「哦哦哦……原来如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_18.mp3
+msg,1,<outline width=2 color=black>「明白了，如果你这么说的话，我也可以让步」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_19.mp3
+msg,1,<outline width=2 color=black>「奇数日我当姐姐，偶数日你当哥哥。\n怎么样！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_20.mp3
+msg,1,<outline width=2 color=black>「诶，每个月的第一天是奇数日……？\n那就是说，我是姐姐？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_21.mp3
+msg,1,<outline width=2 color=black>「所，所以……这就意味着……我要尽全力表现得像个姐姐，\n然后告诉你我是你的姐姐吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_22.mp3
+msg,1,<outline width=2 color=black>「好！我当姐姐没问题！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_23.mp3
+msg,1,<outline width=2 color=black>「啊，怎么办，光是想象一下就已经开始兴奋了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_24.mp3
+msg,1,<outline width=2 color=black>「让姐姐给你枕着膝盖睡觉，或者在浴缸里从背后抱住你……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103507/adv/sound/fav103507_02_25.mp3
+msg,1,<outline width=2 color=black>「哥哥你真是天才！世界第一！我好喜欢你！太棒了，抱我一下！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

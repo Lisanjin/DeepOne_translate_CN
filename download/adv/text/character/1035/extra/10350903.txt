@@ -1,0 +1,242 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020400.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm004.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「说起来……自从我穿上这件裙子，你好像还没有好好地用言语夸奖过我？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_02.mp3
+msg,1,<outline width=2 color=black>「喂，你刚才为什么要躲开我的眼神！？一个女孩在你面前穿着可爱的衣服，你却不夸奖，这是男孩子的失格行为啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_03.mp3
+msg,1,<outline width=2 color=black>「快看这边，然后夸奖我！快一点！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_04.mp3
+msg,1,<outline width=2 color=black>「――等等，怎么了？怎么了？难道你……是在害羞吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_05.mp3
+msg,1,<outline width=2 color=black>「…………哦～哼～嗯～面对可爱的妹妹，现在开始直接夸奖都感到害羞了，哥哥？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「没有那回事」,选项2 「有错吗」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_06.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哎～是吗？那就看着我，然后说我可爱试试看。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_07.mp3
+msg,1,<outline width=2 color=black>「你平时不都是对大家毫不犹豫地说出来的吗？为什么对我就不能说呢？这让我很伤心啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_08.mp3
+msg,1,<outline width=2 color=black>「哎～我没笑。真的没笑哦～你看错了。呵呵呵～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_09.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哦，你直接承认了？真是个可爱的哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_10.mp3
+msg,1,<outline width=2 color=black>「但是我要在这里发动妹妹特权！不管你是否感到害羞，哥哥都要好好地夸奖我哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_11.mp3
+msg,1,<outline width=2 color=black>「快看这边～？嗯，怎么了，哥哥。你的脸开始变红了呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+shake,0.2,2,10,10
+anm,scale,norn,0.7_0.7,0.5,0
+anm,move,norn,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-140,0.7,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_12.mp3
+msg,1,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:surprise,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103509/adv/sound/fav103509_03_13.mp3
+msg,1,<outline width=2 color=black>「嗯，唔，嗯嗯……！？啊，唔……吻、啪、吻、唔、啊、嗯唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_14.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊、啪……等等，你、你突然做什么……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_15.mp3
+msg,1,<outline width=2 color=black>「明明说过这种亲吻或者重要的事情需要有氛围！为什么会这样……真是的真是的真是的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_16.mp3
+msg,1,<outline width=2 color=black>「唔……如果不是突然袭击，我还能稍微做些心理准备，居然让我这样紧张……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_17.mp3
+msg,1,<outline width=2 color=black>「你为什么要做出那么红扑扑的脸和满足的表情！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_18.mp3
+msg,1,<outline width=2 color=black>「这个……既然已经这样了……呼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103509/adv/sound/fav103509_03_19.mp3
+msg,1,<outline width=2 color=black>「嗯……吻、唔、吻、吻……嗯、唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:shy,norn,0,-140,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_20.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哈、啊……嗯，呵呵……怎么样，我的吻。让你心跳加速了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn,0,-140,0.7,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_21.mp3
+msg,1,<outline width=2 color=black>「呵呵，你试图隐藏也没用，这样紧紧抱着我，我能感觉得到的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:surprise,norn,0,-140,0.7,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_22.mp3
+msg,1,<outline width=2 color=black>「诶，你说我比较，……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:shy,norn,0,-140,0.7,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_23.mp3
+msg,1,<outline width=2 color=black>「没、没有那回事！绝对是你比我更紧张！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:shy,norn,0,-140,0.7,0,,,,
+playvoice,1,download/character/103509/adv/sound/fav103509_03_24.mp3
+msg,1,<outline width=2 color=black>「唔、唔唔……既然这样……我就用吻让你心跳加速到无法自控，让你承认吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103509/adv/atlas/stand_a,body:normal,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103509/adv/sound/fav103509_03_25.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「吻、啊……吻啪、啊……嗯，呵呵……准备好了吗，哥哥？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

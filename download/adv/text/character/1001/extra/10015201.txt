@@ -1,0 +1,217 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11410300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,-650,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_01.mp3
+msg,1,<outline width=2 color=black>「嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,asaka,-900_10,0.8,0
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+anm,move,asaka,-550_-20,1.0,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,-550,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_02.mp3
+msg,1,<outline width=2 color=black>「呜、呜呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「发生什么了？」,选项2 「过来这边」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:surprise,asaka,-550,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_03.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊……那个……这个，嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,asaka,0_-20,1.8,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_04.mp3
+msg,1,<outline width=2 color=black>「……对不起。关于哥哥的事，我记不清了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_05.mp3
+msg,1,<outline width=2 color=black>「虽然不太明白……但看哥哥好像很孤单。\n……那个，你是生气了吗，我在想」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,-550,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_06.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,asaka,0_-20,1.8,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_07.mp3
+msg,1,<outline width=2 color=black>「其实，哥哥……我，有点怪。\n关于哥哥的事情……我总觉得有些害怕……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:surprise,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_08.mp3
+msg,1,<outline width=2 color=black>「啊，害怕不是那个意思！那个，其实是这样的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_09.mp3
+msg,1,<outline width=2 color=black>「虽然不了解哥哥的事情……却想要靠近你。\n这个……我不太明白」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_10.mp3
+msg,1,<outline width=2 color=black>「感觉像是心脏被紧紧握住……这个，我不明白……是怎么回事呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:surprise,asaka,0,-20,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_11.mp3
+msg,1,<outline width=2 color=black>「啊……哥哥？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.5,3,12,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,-20,0.7,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_12.mp3
+msg,1,<outline width=2 color=black>「嗯，啊……那个，头被摸摸，有点害羞呢。\n嗯呜……哥、哥哥，你听我说……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,-20,0.7,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_13.mp3
+msg,1,<outline width=2 color=black>「……但是，为什么呢。哥哥的手，好大好暖和。\n这个……好舒服……那个，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:sad,asaka,0,-20,0.7,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_14.mp3
+msg,1,<outline width=2 color=black>「那个……嗯，额……呜、呜呜…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_15.mp3
+msg,1,<outline width=2 color=black>「还、还是算了，没什么！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,-20,0.5,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_16.mp3
+msg,1,<outline width=2 color=black>「那个，我并不是想让你抱抱我什么的……所以，\n没、没有什么的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,10,0.8,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.3,2,10,10
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_17.mp3
+msg,1,<outline width=2 color=black>「哇、哇啊……！？ 哥、哥哥…嗯、嗯嗯……啊、呜、\n突然抱得这么紧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,10,0.8,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_18.mp3
+msg,1,<outline width=2 color=black>「对、对女孩子做这种事情，是、是不可以的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,10,0.8,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_19.mp3
+msg,1,<outline width=2 color=black>「但是……哥哥，你的身体好大啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:normal,asaka,0,10,0.8,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_20.mp3
+msg,1,<outline width=2 color=black>「感觉，这样做的话……果然，很安心……嗯，\n那个，能不能再这样待一会儿……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:normal,asaka,0,10,0.8,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_21.mp3
+msg,1,<outline width=2 color=black>「――……嗯。谢谢你，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:smile,asaka,0,10,0.8,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_22.mp3
+msg,1,<outline width=2 color=black>「那个，哥哥。我呢……我好喜欢哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,10,0.8,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_23.mp3
+msg,1,<outline width=2 color=black>「嘿、嘿嘿……说出来了……说出来了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,10,0.8,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_24.mp3
+msg,1,<outline width=2 color=black>「嗯……哥哥，现在不能看我哦……因为，\n被哥哥看着我的脸，我会觉得不好意思……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100152/adv/atlas/stand_a,body:shy,asaka,0,10,0.8,0,,,,
+playvoice,1,download/character/100152/adv/sound/fav100152_01_25.mp3
+msg,1,<outline width=2 color=black>「因为……肯定变得满脸通红了呢……呜呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

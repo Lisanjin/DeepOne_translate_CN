@@ -1,0 +1,189 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010102.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm055.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哥哥，情人节快乐！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_02.mp3
+msg,1,<outline width=2 color=black>「怎么样？这身衣服，可爱吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_03.mp3
+msg,1,<outline width=2 color=black>「赞美可爱的妹妹也没关系哦？\n如果愿意的话，我甚至可以让你稍微摸摸呢～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:normal,norn,0,-130,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,norn
+playvoice,1,download/character/103516/adv/sound/fav103516_01_04.mp3
+msg,1,<outline width=2 color=black>「嗯……呵呵。你要摸摸我吗？\n怎么的，今天的哥哥变得好诚实呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:normal,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_05.mp3
+msg,1,<outline width=2 color=black>「平时的哥哥在这种时候，不是会稍微捉弄一下我，\n或者做些有点色色的事情吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:unique,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_06.mp3
+msg,1,<outline width=2 color=black>「咕……就算你逃避我的视线装糊涂，你对我做过的事情\n都不会消失的啊～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:sad,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_07.mp3
+msg,1,<outline width=2 color=black>「我都记得清清楚楚哥哥打过我的次数……真是的，\n我这个被哥哥欺负的可怜妹妹……唔唔唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:sad,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_08.mp3
+msg,1,<outline width=2 color=black>「明明我一直如此想着哥哥……对于哥哥来说\n我到底是什么呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:unique,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_09.mp3
+msg,1,<outline width=2 color=black>「好了好了，别露出那副烦人的表情。好好站稳，好好听着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:anger,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_10.mp3
+msg,1,<outline width=2 color=black>「你确定吗？我不介意每次被你欺负都大声地哭出来，\n在拉莱耶中悲伤地奔跑也没关系啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:smile,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_11.mp3
+msg,1,<outline width=2 color=black>「快看看，如果你不愿意的话，给我一些充满爱意的抚摸，\n也许，我会忘记对哥哥不利的事情哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　继续抚摸,选项2　捏脸颊
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:smile,norn,0,-130,0.6,0,,,,
+shake,0.5,3,12,0,norn
+playvoice,1,download/character/103516/adv/sound/fav103516_01_12.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「呵呵呵～，不痛不痛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:shy,norn,0,-160,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/103516/adv/sound/fav103516_01_13.mp3
+msg,1,<outline width=2 color=black>「嗯咿，嗯？ 哦，等等，哥哥，为什么要摸我的颈部……啊，\n那里不用摸也……嗯咿，唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:shy,norn,0,-160,0.7,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_14.mp3
+msg,1,<outline width=2 color=black>「啊，嗯嗯……嗯，啊唔……――唔，你、你这色狼哥哥！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/103516/adv/sound/fav103516_01_15.mp3
+msg,1,<outline width=2 color=black>「真是的，一不小心就立刻这样了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103516/adv/sound/fav103516_01_16.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊大大大大大……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/103516/adv/sound/fav103516_01_17.mp3
+msg,1,<outline width=2 color=black>「喂喂，哥哥！？ 在这里做那种动作，我完全搞不懂啊！？\n那里应该是甜蜜地欣赏我可爱模样的场景吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_18.mp3
+msg,1,<outline width=2 color=black>「唔……这就是对待可爱的妹妹的方式吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_19.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「如果你这样做，我特意为你准备的情人节巧克力\n就不给你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_20.mp3
+msg,1,<outline width=2 color=black>「呵呵呵……这是我在亚纱花的指导下一直专心制作的\n妹妹特制巧克力。你不会说不想要的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103516/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103516/adv/sound/fav103516_01_21.mp3
+msg,1,<outline width=2 color=black>「来来来，如果你想要这个，就要反省并且发誓今天一整天，\n都要听我的话哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

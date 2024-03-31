@@ -1,0 +1,178 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11570300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm107.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「这个领域……难道是美食天堂吗？\n不，我自己也在想，我这是在说什么呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_02.mp3
+msg,1,<outline width=2 color=black>「因为那边是炒饭，这边是拉面，还有包子、烧卖、\n饺子……啊，还有火锅……各种各样的菜肴店铺一字排开……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_03.mp3
+msg,1,<outline width=2 color=black>「而且，它们都像是刚做好的一样，蒸气和香味扑鼻而来……。\n虽然我知道我正在思考中，但是忍不住就想吃东西了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「就这么吃了」,选项2 「回去自己做？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_04.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「诶，那可真是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_05.mp3
+msg,1,<outline width=2 color=black>「但、但是，如果你想吃的话……不过……嗯——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_06.mp3
+msg,1,<outline width=2 color=black>「――等、等一下，你怎么突然沮丧起来了……！？\n并、并不是我不想和你一起吃饭或者什么的哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_07.mp3
+msg,1,<outline width=2 color=black>「唔、唔呜……太狡猾了。你这么说，\n我怎么可能会拒绝呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_08.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「诶……？　你说的是，你的手艺，对吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_09.mp3
+msg,1,<outline width=2 color=black>「啊，不，我并不是在怀疑你的厨艺……！\n我们偶尔会一起做饭，我知道你的厨艺是有一定水平的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_10.mp3
+msg,1,<outline width=2 color=black>「但是，因为我们总是一起做饭，所以说到你的手艺，\n某种程度上感觉有点不同……那个，我很高兴……非常期待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_11.mp3
+msg,1,<outline width=2 color=black>「……非常、期待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_12.mp3
+msg,1,<outline width=2 color=black>「――诶？　这里的菜品，要尝遍吗？\n为了研究口味……难道这是为了我……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_13.mp3
+msg,1,<outline width=2 color=black>「嘻嘻……真是的。其实没有必要那么紧张。\n只要是你做的菜，我就已经很满足了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_14.mp3
+msg,1,<outline width=2 color=black>「……但是，说实话可能会很开心。毕竟你是为了我而努力。\n不可能不高兴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_15.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「那个……那我们从哪个开始尝试呢？\n毕竟我们不可能吃遍这里所有的菜品……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_16.mp3
+msg,1,<outline width=2 color=black>「――我喜欢的东西？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_17.mp3
+msg,1,<outline width=2 color=black>「嗯……让我想想。当你特地问起来，我就有点犹豫了。\n太辣的东西可能不太适合我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_18.mp3
+msg,1,<outline width=2 color=black>「像饺子或者包子这种需要包裹的菜品，虽然做起来很有趣，\n但如果说这是我最喜欢吃的，那也未必」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_19.mp3
+msg,1,<outline width=2 color=black>「炒青菜……什么的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_20.mp3
+msg,1,<outline width=2 color=black>「啊，你笑了……我也觉得，这种菜品可能没有什么特别的感觉，或者说有点平淡\n但是没关系啊，炒青菜。很好吃的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:unique,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_21.mp3
+msg,1,<outline width=2 color=black>「你笑我，我有点不甘心。下次，我会做出最棒的炒青菜给你\n你就等着吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_22.mp3
+msg,1,<outline width=2 color=black>「所以，我喜欢的东西就先放一边，\n这次，我们去寻找你喜欢的东西吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_23.mp3
+msg,1,<outline width=2 color=black>「虽然你考虑我的喜好让我很开心，\n但是能和你一起品尝你喜欢的东西，我也会很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_24.mp3
+msg,1,<outline width=2 color=black>「而且，既然这里有这么多种类的菜品。\n既然如此……我们去尝遍各种美食吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100120/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100120/adv/sound/fav100120_02_25.mp3
+msg,1,<outline width=2 color=black>「你喜欢的东西，多告诉我一些吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

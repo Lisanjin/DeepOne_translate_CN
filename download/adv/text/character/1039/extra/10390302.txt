@@ -1,0 +1,190 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11070300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「我其实，一直不喜欢夜晚呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_02.mp3
+msg,1,<outline width=2 color=black>「从小到大……我每天都在想。\n为什么我的身体就是这么破烂呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103903/adv/sound/fav103903_04_03.mp3
+msg,1,<outline width=2 color=black>「我总是向爸爸妈妈抱怨这个问题。\n彼此其实一点也不坏……反而，彼此一直都在尽全力地爱我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103903/adv/sound/fav103903_04_04.mp3
+msg,1,<outline width=2 color=black>「彼此为了我的医疗费，总是工作到很晚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103903/adv/sound/fav103903_04_05.mp3
+msg,1,<outline width=2 color=black>「那一天也是……彼此工作到深夜，然后去买了我的生日礼物……回家的路上，出了车祸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103903/adv/sound/fav103903_04_06.mp3
+msg,1,<outline width=2 color=black>「我在家里一个人等着他们，心里想着为什么今天是我的生日，他们却没有早点回来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_07.mp3
+msg,1,<outline width=2 color=black>「所以，我讨厌夜晚。感觉自己一个人孤零零的，这种感觉就会\n涌上心头」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_08.mp3
+msg,1,<outline width=2 color=black>「但是……真奇怪。如果哥哥在身边的话，那种感觉就会\n稍微减轻一点……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_09.mp3
+msg,1,<outline width=2 color=black>「这么看着月亮，已经有多久了呢。好美啊……还有，\n那是什么呢。好多小小的光点在闪烁……是萤火虫吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「看不见萤火虫」,选项2 「…………」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:surprise,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_10.mp3
+msg,1,<outline width=2 color=black>「诶，但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_11.mp3
+msg,1,<outline width=2 color=black>「……啊，原来是这样……可能是因为和哥哥在一起很开心，\n所以我误解了自己的身体状况」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_12.mp3
+msg,1,<outline width=2 color=black>「哥哥……？为什么你不说话――啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,rlin,0_-200,0.5,1
+endwait
+shake,0.2,4,10,10
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+wait,1
+endwait
+anm,move,rlin,0_-60,1.5,1
+endwait
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_13.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「嗯……对不起，我以为我最近的身体状况还不错，\n但看来情况比我想象的要糟一些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:sad,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,-100,335,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103903/adv/sound/fav103903_04_14.mp3
+msg,1,<outline width=2 color=black>「稍等一下……啊，呜……嗯，呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:sad,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_15.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「哈……嗯，呜……对不起，没事。吃了这个就会恢复的。\n呼……哈……哈，啊啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_16.mp3
+msg,1,<outline width=2 color=black>「…………对不起，让你担心了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_17.mp3
+msg,1,<outline width=2 color=black>「现在已经恢复正常了，你放心吧。\n如果有敌人出现的话，我还是可以全力战斗的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_18.mp3
+msg,1,<outline width=2 color=black>「虽然不能说我没有做过任何过度的行动――但这只是因为我服用了一种能强行使身体各部位运动的药物而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103903/adv/sound/fav103903_04_19.mp3
+msg,1,<outline width=2 color=black>「用这种东西去战斗，消耗自己的身体，\n某些地方变得不正常，这是理所当然的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103903/adv/sound/fav103903_04_20.mp3
+msg,1,<outline width=2 color=black>「即使如此，我也不会选择待在病房里，保持绝对静止，\n尽可能地延长生命——那样的选择简直就是开玩笑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103902/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103903/adv/sound/fav103903_04_21.mp3
+msg,1,<outline width=2 color=black>「活得长并不一定就是幸福。\n我要为了快乐而奔跑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103903/adv/sound/fav103903_04_22.mp3
+msg,1,<outline width=2 color=black>「然后有一天……我要告诉爸爸妈妈，\n我一直都在努力地活着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103903/adv/sound/fav103903_04_23.mp3
+msg,1,<outline width=2 color=black>「因为你们的爱，我能够一直笑着，过着快乐的生活，\n直到最后那一刻……我想说谢谢你们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

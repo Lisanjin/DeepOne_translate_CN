@@ -1,0 +1,189 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm070.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哥哥～♪ 哎呀～♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,norn,0.6_0.6,0.5,0
+anm,move,norn,0_-130,0.5,1
+endwait
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:smile,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_02.mp3
+msg,1,<outline width=2 color=black>「嘿嘿，我紧紧地抱住了哥哥的手臂」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_03.mp3
+msg,1,<outline width=2 color=black>「哥哥的手臂，又大又结实，给人一种男人的感觉。\n这样紧紧抱着，感觉好安心啊♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「我都起鸡皮疙瘩了♪」,选项2 「呕～」
+if,select_===_1,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_04.mp3
+msg,1,<outline width=2 color=black>「喂，等一下啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_05.mp3
+msg,1,<outline width=2 color=black>「哥哥，我最近有点害怕不敢问你，\n你是不是讨厌我……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_06.mp3
+msg,1,<outline width=2 color=black>「我挺受伤的啊！？ 能不能道歉啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_07.mp3
+msg,1,<outline width=2 color=black>「对妹妹的反应，能不能不要像某个金光闪闪的恶趣味剑那样……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_08.mp3
+msg,1,<outline width=2 color=black>「明明是这么可爱的小美女在撒娇啊？\n应该有更好的反应吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_09.mp3
+msg,1,<outline width=2 color=black>「嘿呀，小宝贝好可爱～抱抱！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_10.mp3
+msg,1,<outline width=2 color=black>「像这样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_11.mp3
+msg,1,<outline width=2 color=black>「——你，你刚刚用鼻子笑了吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_12.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哼，呜呜……！ 什么嘛，什么嘛，明明我忍着羞耻撒娇的说！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_13.mp3
+msg,1,<outline width=2 color=black>「我也是妹妹啊！ 可是，你对我和对她的态度差太多了！\n如果是她做出刚才的举动，你肯定会抚摸她的头，宠爱她的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_14.mp3
+msg,1,<outline width=2 color=black>「……当然，我不是她。\n所以，你对我和对她的态度肯定不一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_15.mp3
+msg,1,<outline width=2 color=black>「这说明哥哥你真正看到了我，\n因为是我，所以你才会表现出那种随意的态度。我想这就是原因」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_16.mp3
+msg,1,<outline width=2 color=black>「从某种意义上说，这可能反而是一种只有我才有的特别待遇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_17.mp3
+msg,1,<outline width=2 color=black>「但是！但是啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_18.mp3
+msg,1,<outline width=2 color=black>「我也想偶尔被哥哥正常地宠爱一下！\n想被温柔地对待！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_19.mp3
+msg,1,<outline width=2 color=black>「……不行吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:shy,norn,0,-130,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,norn
+playvoice,1,download/character/103552/adv/sound/fav103552_02_20.mp3
+msg,1,<outline width=2 color=black>「嗯……呜呜……真是的。非得我说到这个份上，你才肯摸摸我的头，\n你真是个不合格的哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:shy,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_21.mp3
+msg,1,<outline width=2 color=black>「但是……你摸头的手法很熟练，感觉很舒服，所以作为特别的特例，\n我可以勉强给你及格」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103552/adv/atlas/stand_a,body:normal,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103552/adv/sound/fav103552_02_22.mp3
+msg,1,<outline width=2 color=black>「作为交换……我们就这样待一会儿，可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
