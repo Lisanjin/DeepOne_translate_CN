@@ -1,0 +1,771 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11720301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm111.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「初次见面，玛利亚小姐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,milva_s,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「――咦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+slideinblack,0.1,left,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla3,0,0,1,0,,,,
+playse,/download/sound/se/chaA.mp3
+slideoutblack,0.2,left,
+endwait,
+slideinblack,0.1,left,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+slideinblack,0.1,right,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla3,0,0,1,0,,,,
+anm,scale,sla3,-1_1,0,
+
+playse,/download/sound/se/chaA.mp3
+slideoutblack,0.2,right,
+endwait,
+slideinblack,0.1,right,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11720301.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:unique,milva_s,0,-120,0.5,0.5,,,,
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「米露瓦……咦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11720301.jpg,1,255
+endwait
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:sad,milva_s2,0,0,0,0,,,,
+imgconf,milva_s2,milva_s1,0,-350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「咳咳，咳咳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「你这打招呼方式还真是直接。虽然我也不是那种温文尔雅的类型，但我们至少可以稍微聊聊天――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1
+endwait
+spineoff,em1,0
+endwait,,,,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:surprise,milva_s,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「――哎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1
+endwait
+spineoff,em1,0
+endwait,,,,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1
+endwait
+spineoff,em1,0
+endwait,,,,,,,,,,,,,,
+
+
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,-40,-200,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em2,default,animation,0,30,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em3,default,animation,0,0,-250,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+spineoff,em3,0
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+spriteatlas,download/character/104903/adv/atlas/stand_b,body:anger,maria,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「你，很危险」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「你这也太不留情面了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「那个不是可以手下留情的对手」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那是什么，那种气息……就像真的怪物出现了一样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s2,0,0,0,0,,,,
+imgconf,milva_s2,milva_s1,0,-350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「嘻嘻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:surprise,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s1,400,-120,0.5,1,,,,
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s2,-100,-120,0.5,1,,,,
+imgconf,milva_s1,,400,-120,,,-1,0.5,0.5,0
+imgconf,milva_s2,,-100,-120,,,-1,0.5,0.5,0
+playse,/download/sound/se/se_046.mp3
+anm,move,milva_s1,100_-120,0.6,0
+anm,move,milva_s2,100_-120,0.6,0
+endwait,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「吼～开玩笑的啦♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Slash4_green,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_075.mp3
+endwait,,,,,,,,,,,
+anm,move,maria,-1200_-120,0.5,0
+endwait
+spineoff,em1,0
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteoff,maria,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:surprise,milva_s,100,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+spriteoff,milva_s1,0
+spriteoff,maria_s2,0
+endwait,,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「哎呀。只是稍微激动了一下，难道我用力过猛了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,maria,300_-120,0.5,0
+endwait
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「呜、唔……你、这……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0.5,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「这么快就需要帮助了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「……没事，不用。只是稍微大意了一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「哼。真是糟糕的借口。\n你已经警戒到那个程度了，还说什么大意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:anger,maruta,-300,-90,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「对不起。我一直在这里睡觉，可能有点迷糊，做过头了。你疼吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:anger,maruta,-300,-90,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「……米露瓦。别打人家的妹妹。如果再这样，我会生气的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「哎呀。即使在这种情况下，你还是称呼玛利亚为妹妹，真是太珍贵了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:normal,maruta,-300,-90,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「理所当然」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「嘻嘻嘻，是啊。埃尔塔会这么说的。\n你真是个了不起的好姐姐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「有这样的姐姐，玛利亚也很幸福吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,-300,-120,0.5,0.5,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:sad,milva_s,300,-120,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「真寂寞。你就不能和我说话吗？\n我觉得我和玛利亚能成为好朋友呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「因为，我们是同路人啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「什么意思？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「就是字面意思。自己对姐姐来说是个麻烦。\n只给姐姐带来不幸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果是这样，那么像我这样的人就应该消失。\n啊，我深深理解这种感觉，那种压在心头的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:unique,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，我不会接受你的做法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「咦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:unique,milva_s,300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,300,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em1,default,animation,0,300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「哎呀，人家正说话呢，你就攻击过来，真是太过分了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maria,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:normal,maruta,-300,-90,0.5,0.5,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「都是因为米露瓦你散发出那种杀气」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「我可没有故意散发杀气。\n这就是我的正常状态……看来我需要稍微控制一下了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:normal,maruta,-300,-90,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「……你打算做什么。\n我不会允许你伤害我的妹妹的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:sad,milva_s,300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「'打算做什么'……你说得太过分了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我只是看到你们有困难，所以才借用这个身体出来帮忙的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:surprise,maruta,-300,-90,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「……帮忙？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:sad,milva_s,300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「我有说过让你这么惊讶的话吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你真是个好人。尽管生活中充满了不公平，但你还是努力地活着。\n每天都在努力和他人共度笑容满面的时光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我认为你绝对是个好人，我不希望看到这样的人有太多的悲伤\n表情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:smile,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「最重要的是――你那深爱着妹妹的心，我非常喜欢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，我想帮助你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,-300,-120,0.5,0.5,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「别多管闲事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这是埃尔塔和玛利亚的问题。\n你不应该从外部跳进来，然后随便乱来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「那不也适用于你吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「……你刚才说过，你能理解玛利亚的感受。\n那么，你不也应该站在玛利亚的立场上吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「不行。我也说过――正因为如此，我不能接受」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「玛利亚，你想为了埃尔塔消除自己，我想这真的是因为你爱着埃尔塔吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「事实上，我也觉得如果没有黑森的祈祷，\n埃尔塔会更幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――只要不需要牺牲埃尔塔的妹妹」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「玛利亚，你打算把失去世上唯一妹妹的绝望强加给埃尔塔。这真是太残忍了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「失去的悲痛或许会随着时间而愈合。心中空出的地方，可能会被各种人的温柔和温暖填满」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果忍受现在的悲伤，未来总有一天会重新找回笑容」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是……这并不能成为让埃尔塔现在感到悲伤的理由，也不能成为借口」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果真要做，你应该寻找一种不让埃尔塔感到悲伤就消失的方法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「比如……努力从埃尔塔的记忆中完全消失？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果连记忆都不存在，那么就不必承受失去你的悲伤了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:smile,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，这个方法也不一定能成功呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,milva_s,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104903/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「你在说什么……从刚才开始，就只有你一个人在说个不停……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maria,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「如果你想为了姐姐消失――为了保护姐姐的笑容和幸福而不受伤害，那你应该更加努力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这种半途而废，让人看着都有点生气」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，我要阻止你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0.5,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「别在后面横冲直撞，别闹了。\n快滚开。否则，我会用力把你从舞台上打下去的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦の影</outline>,
+msg,0,<outline width=2 color=black>「哦。塔芭莎能做到吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「别得意忘形……好吧。\n既然你这么说，那我就彻底打败你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「---停下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「塔芭莎，米露瓦……都别再吵了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
