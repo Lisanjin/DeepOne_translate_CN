@@ -1,0 +1,150 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11370300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_01.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「下郎は、雪を見ていて楽しいのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_02.mp3
+msg,1,<outline width=2 color=black>「私は……雪は好きではなかったわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_03.mp3
+msg,1,<outline width=2 color=black>「私の生まれた国は、地域によって寒暖の差が激しくてね。\nリウビアの家は寒い地域にあったから、冬にはよく雪が積もっていたわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_04.mp3
+msg,1,<outline width=2 color=black>「けれど……雪は、雨のように音がしないから。傘を差しても、周囲の音を\n隠してくれるわけでもなくて……あまり一人になれる感じがしなかった」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_05.mp3
+msg,1,<outline width=2 color=black>「雪は冷たくて、ただ憂鬱なばかり……だから私は、雪が嫌いだった。\n下郎はどう？　こうして雪を見て、なにか感じるのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「きれいだと思う」,選択肢2　「……寒い」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_06.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「そう……ええ、そうね。私もそう思うわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_07.mp3
+msg,1,<outline width=2 color=black>「おかしなものね……ずっと嫌いで、疎んでいたのに、下郎とこうして\n雪景色を見ていると、美しいと思えてくる」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_08.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「……下郎に情緒を期待した私が愚かだったわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_09.mp3
+msg,1,<outline width=2 color=black>「常に気温の保たれているルルイエと比べれば冷えるでしょうけれど、\nこの程度の寒さで弱音をはくなんて、情けないわよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_10.mp3
+msg,1,<outline width=2 color=black>「それに、寒くなければ雪も降り積らない……この美しい雪景色を楽しむ\n対価だと思えば、少しは我慢が出来るのではないかしら？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_11.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「あら、なにを驚いた顔をしているの？\n言っていたでしょう。私は、雪が嫌い“だった”と」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_12.mp3
+msg,1,<outline width=2 color=black>「この領域にあなたとやってきて、一目この景色を見た時から、\nどうしてか、雪を綺麗だと、そう思ったわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_13.mp3
+msg,1,<outline width=2 color=black>「……別に、今は一人になりたいとは思っていないし、\n冷たさを感じたとしても、ぬくもりは、すぐそこにあるのだもの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_14.mp3
+msg,1,<outline width=2 color=black>「だから、今の私には雪を嫌う理由なんてないのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_15.mp3
+msg,1,<outline width=2 color=black>「むしろ……ちょうどいい言い訳になってくれるくらい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_16.mp3
+msg,1,<outline width=2 color=black>「あら、なんの言い訳かなんて、いちいち言ったりしないわ。\nなんでも聞けば答えが返ってくるだなんて思わないことね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_17.mp3
+msg,1,<outline width=2 color=black>「それよりも、ほら下郎。少し風が冷たいわ。\n風よけに、もっとこちらに身体を寄せなさい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,elica,0.6_0.6,0.6,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.6,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_18.mp3
+msg,1,<outline width=2 color=black>「あら……急に腕を組んできたりして、何のつもり？\n女性相手にこんな真似、失礼だとは思わないの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:sad,elica,0,-100,0.6,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_19.mp3
+msg,1,<outline width=2 color=black>「……まあ、これなら暖もとれるし……仕方ないわね。\n懐炉の代わりということで、大目に見てあげるわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:smile,elica,0,-100,0.6,0,,,,
+playvoice,1,download/character/103307/adv/sound/fav103307_02_20.mp3
+msg,1,<outline width=2 color=black>「ふふ……まったく、困った下郎だわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

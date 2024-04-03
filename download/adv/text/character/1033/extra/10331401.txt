@@ -1,0 +1,188 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11420300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_01.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「そういえば……この間、少しだけルイーズとお酒を飲んだのだけれど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_02.mp3
+msg,1,<outline width=2 color=black>「……いえ、訂正するわ。私はともかく、ルイーズは少しと言うには、\nお酒が進み過ぎたわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_03.mp3
+msg,1,<outline width=2 color=black>「それで、最終的には記憶がなくなるくらいまで酔ってしまったのだけれど、\nその時にあなたの話題になって……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_04.mp3
+msg,1,<outline width=2 color=black>「無自覚にルイーズが何度かあなたのことを“ご主人様”と呼んで\nいたのだけれど……それって、追究していいのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_05.mp3
+msg,1,<outline width=2 color=black>「あら、なぜ目を逸らすの？　なにか悪いことをしたかのような\n態度だけれど、あなたは後ろめたいことでもしたのかしら？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「ごっこ遊びみたいなもので……」,選択肢2　「違うんだ……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_06.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「そう、ごっこ遊び……どんなごっこ遊びなのかしら？\nとても興味があるわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_07.mp3
+msg,1,<outline width=2 color=black>「ぜひとも、詳しい内容を聞かせてくれるかしら？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_08.mp3
+msg,1,<outline width=2 color=black>「あらあら、そんな顔を背けて……そんなに首をまわしたら、\n戻らなくなってしまうわよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_09.mp3
+msg,1,<outline width=2 color=black>「ほら、こっちを向きなさい？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_10.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「なにが違うのかしら？　それだけではわからないわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_11.mp3
+msg,1,<outline width=2 color=black>「どうやら、私の理解力に問題があるみたい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_12.mp3
+msg,1,<outline width=2 color=black>「ルイーズは、随分と楽しそうにいろいろ話してくれたのだけれど、\nその上でなにが違うというのか、私に教えてくれない？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:anger,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_13.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「はぁ……まったく、あなたと言う人は。そんな怒られて怯える子犬の\nような目をして……普段はケダモノのくせに」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_14.mp3
+msg,1,<outline width=2 color=black>「安心しなさい、少しからかっただけよ。ルイーズが嫌がっているなら\nともかく、そうじゃないようだし、私がとやかく言うことではないでしょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_15.mp3
+msg,1,<outline width=2 color=black>「……ないけれど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:shy,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_16.mp3
+msg,1,<outline width=2 color=black>「やはり、少し……ほんの少しだけ、そういうのも……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_17.mp3
+msg,1,<outline width=2 color=black>「――いえ。なにを言おうとしているのかしら、私は。\nまったく、こんなことを考えてしまうなんて、毒されすぎだわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_18.mp3
+msg,1,<outline width=2 color=black>「私はただ……そう。少しだけ癪だったのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_19.mp3
+msg,1,<outline width=2 color=black>「下郎の癖に、ご主人様だなんて……そんなの、\n随分と不釣り合いでしょう？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_20.mp3
+msg,1,<outline width=2 color=black>「だから、その思い上がりをなんとかしたくて……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_21.mp3
+msg,1,<outline width=2 color=black>「……そのためにも、今夜は私があなたのご主人様に\nなってあげましょうか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_22.mp3
+msg,1,<outline width=2 color=black>「そうすれば、少しは自分の立場というものを再認識できるでしょう？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_23.mp3
+msg,1,<outline width=2 color=black>「あら、こんなことを言われて、なにをそんな期待した目をしているの？\nまさか、ご主人様にご褒美でももらえると、そんな勘違いをしているのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_24.mp3
+msg,1,<outline width=2 color=black>「それなら、ご褒美をもらえるだけのことはしなさい……まずは、そうね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103314/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103314/adv/sound/fav103314_01_25.mp3
+msg,1,<outline width=2 color=black>「このドレス、少しヒールが高いのだけれど……ころんでしまわないか、\n少し心配だわ。だから、あなたの腕を借りてあげる。光栄に思いなさい？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

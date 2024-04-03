@@ -1,0 +1,157 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_01.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「ねえ下郎、あなたは自分が死んだ後のことを考えたことがあるかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_02.mp3
+msg,1,<outline width=2 color=black>「私は、そんなもの考えたことはなかった」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_03.mp3
+msg,1,<outline width=2 color=black>「トヒルの瞳を使わないまま死ねるなら、それが一番マシだと\n考えていたくらいで……死ぬまでが、私の見えている全てだった」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_04.mp3
+msg,1,<outline width=2 color=black>「だけど、最近になって少し考えるようになったわ。\n自分が死んだら、今ここにいる自分はどうなるのか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_05.mp3
+msg,1,<outline width=2 color=black>「普通に考えれば、それっきりよね。\nなにもなくなって……意識も人格もなくなって、おしまい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_06.mp3
+msg,1,<outline width=2 color=black>「実際に死後がどういうものか……少なくとも私は、\nそれを確かめた人間を知らない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_07.mp3
+msg,1,<outline width=2 color=black>「だというのに、人々は死者にも当然のように心や意識があるように考える。\nこの領域の光景も、だから生まれたものなのでしょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_08.mp3
+msg,1,<outline width=2 color=black>「どうして人はこうして死者を想うのかしら……過ぎ去ったものなんて、\n忘れてしまったほうが、楽なはずなのに」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「それぞれ信じたいものがあるから」,選択肢2　「わからない」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_09.mp3
+msg,1,<outline width=2 color=black>「……そうね。きっとあなたの言う通りだわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_10.mp3
+msg,1,<outline width=2 color=black>「人は、いつだって死を――死の向こう側を恐れ続けてきた。\nだからせめて、死後にも救いや慰めがあるのだと、そう思いたい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_11.mp3
+msg,1,<outline width=2 color=black>「死者を弔うのだって……それを信じるための準備のような\nものなのでしょうね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_12.mp3
+msg,1,<outline width=2 color=black>「下郎にしては、素直ね……けれど、それが当然の答えなのかもしれない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_13.mp3
+msg,1,<outline width=2 color=black>「だって、誰も見たこともないし、実際に体験したわけでもない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_14.mp3
+msg,1,<outline width=2 color=black>「魂の研究をする魔術師も少なくはないでしょうけれど……その答えは\nきっと、人の身には余るものなのだろうと、私は思う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_15.mp3
+msg,1,<outline width=2 color=black>「だから、これからも、理解できることはないのでしょうね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_16.mp3
+msg,1,<outline width=2 color=black>「きっと、ほとんどの人は、死者が存在すると本気で信じている\nわけではない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_17.mp3
+msg,1,<outline width=2 color=black>「それでも死者の安寧を願うことに、自己満足以上の意味があるのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_18.mp3
+msg,1,<outline width=2 color=black>「……大切な人を忘れないために、ね。\nそれも結局、死者のためではなく自分のための行いということではないの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_19.mp3
+msg,1,<outline width=2 color=black>「それに、鎮魂の目的が大切な人の忘却を防ぐためなら、私には無縁そうだわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_20.mp3
+msg,1,<outline width=2 color=black>「私には、死んでなお忘れたくないと思った誰かなどいないし、\nいるかどうかもわからないものに捧げる祈りも持たない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_21.mp3
+msg,1,<outline width=2 color=black>「――だからね、下郎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103306/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103306/adv/sound/fav103306_02_22.mp3
+msg,1,<outline width=2 color=black>「私に忘れられたくないと思うのなら、勝手にいなくなっては駄目よ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

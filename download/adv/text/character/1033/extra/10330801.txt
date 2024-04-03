@@ -1,0 +1,170 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11130301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_01.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「この領域は、底冷えのするような寒さね……この振袖、生地は厚いし、\n何枚か重ね着もしているけれど、それでも少し震えてしまいそうだわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,elica,0.2
+endwait
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:normal,elica,0,-130,0.7,0.5,,,,
+endwait,,,,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_02.mp3
+msg,1,<outline width=2 color=black>「――あら、下郎。なぜ急に、身体を寄せてくるのかしら。\nまさか、くっついて暖をとろうとでも言うわけ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:normal,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_03.mp3
+msg,1,<outline width=2 color=black>「まったく、なんて馬鹿げたことを考えるのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　離れる,選択肢2　強引に腕を組む
+if,select_===_1,,,,,,,,,
+
+spriteoff,elica,0.2
+endwait
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait
+
+playvoice,1,download/character/103308/adv/sound/fav103308_01_04.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「ちょっと、なにを離れているの。\n別に、くっつかないと答えた覚えはないのだけれど？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_05.mp3
+msg,1,<outline width=2 color=black>「どうせ下郎は浅ましい欲望も込みで提案したのでしょうけれど、\nせっかくの新年だもの……こんな時くらい、あなたの願望に応えてあげるわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_06.mp3
+msg,1,<outline width=2 color=black>「だから、ほら……来なさい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:surprise,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_07.mp3
+msg,1,<outline width=2 color=black>「――……私から？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_08.mp3
+msg,1,<outline width=2 color=black>「はあ、本当に……私からあなたにくっつきにいけと？\nそんな要求に私が応じると思っているのかしら。調子に乗りすぎよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,elica,0.7_0.7,0.5,0
+anm,move,elica,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:smile,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_09.mp3
+msg,1,<outline width=2 color=black>「本当に、仕方がないのだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+shake,0.2,2,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:surprise,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_10.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「あ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:unique,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_11.mp3
+msg,1,<outline width=2 color=black>「まったく、人の腕を強引にとるなんて、この下郎は相変わらず不躾ね。\n女性への配慮というものを知らないのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:unique,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_12.mp3
+msg,1,<outline width=2 color=black>「それに……どうせ腕を組むのなら、そんな中途半端に控えめに\nするのではなく、もっとしっかりと身体を寄せなさい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:smile,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_13.mp3
+msg,1,<outline width=2 color=black>「こんなことも言わないと分からないなんて、本当に、あなたという人は」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:normal,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_14.mp3
+name,<outline width=2 color=black>エーリカ・リウビア</outline>,
+msg,1,<outline width=2 color=black>「ん……これなら、少し寒さも誤魔化せるわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:normal,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_15.mp3
+msg,1,<outline width=2 color=black>「言っておくけれど、下郎。こういうことは、私以外にはしないように\nしなさい。そういう態度ばかりだと、嫌われてしまうのだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:normal,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_16.mp3
+msg,1,<outline width=2 color=black>「私……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:smile,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_17.mp3
+msg,1,<outline width=2 color=black>「ふふ……遺憾だけれど、あなたのすることにはもう慣れたわ。\nこれまで、散々振り回されてきたのだもの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:unique,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_18.mp3
+msg,1,<outline width=2 color=black>「別に謝れなどとは言わないけれど……しっかりと認識してほしいものね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:smile,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_19.mp3
+msg,1,<outline width=2 color=black>「こんなこと望んでいなかったのに……あなたのせいで、私は\nたくさん変えられてしまった」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103308/adv/atlas/stand_a,body:smile,elica,0,-130,0.7,0,,,,
+playvoice,1,download/character/103308/adv/sound/fav103308_01_20.mp3
+msg,1,<outline width=2 color=black>「こんな、下郎のぬくもりに縋ってしまうような無様を晒すなんて、\n本当に……情けなくて、たまらないのだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
