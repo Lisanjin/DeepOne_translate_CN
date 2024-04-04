@@ -1,0 +1,178 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010102.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm055.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_01.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「说起来，主要是在日本，人们会在情人节送巧克力，这似乎是日本特有的文化呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_02.mp3
+msg,1,<outline width=2 color=black>「在许多国家，人们不是送巧克力，而是准备带着平日里的感谢之情的花朵和卡片」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_03.mp3
+msg,1,<outline width=2 color=black>「当然，我认为这两种方式都很好……但如果非要我选择的话，我可能更喜欢日本式的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_04.mp3
+msg,1,<outline width=2 color=black>「为什么呢，那个……总的来说，我觉得收到糖果会很开心吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_05.mp3
+msg,1,<outline width=2 color=black>「并、并不是这样的！绝对不是因为我贪吃或者什么的……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_06.mp3
+msg,1,<outline width=2 color=black>「那个，从我小的时候开始，就一直被要求要有像圣女一样的举止，所以我也一直在控制自己不去奢侈……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_07.mp3
+msg,1,<outline width=2 color=black>「所以，享受美食……比如说糖果这样的机会对我来说并不多。所以，这可能算是反应过度了吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_08.mp3
+msg,1,<outline width=2 color=black>「总、总之，我觉得这是无法避免的事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「回礼就选糖果吧」,选项2 「去问问伊莉娜」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_09.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「咦，回礼……？那是什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_10.mp3
+msg,1,<outline width=2 color=black>「――啊，对了。说起来，日本有专门为了回应情人节的礼物而设立的节日……叫做白色情人节对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_11.mp3
+msg,1,<outline width=2 color=black>「那么，我可以期待你的回礼吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_12.mp3
+msg,1,<outline width=2 color=black>「……这么说，其实现在还没到情人节，就在考虑回礼的事情，是不是有点太早了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_13.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「等、等一下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_14.mp3
+msg,1,<outline width=2 color=black>「那个，我并没有撒谎……真的被要求过要过清贫的生活……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_15.mp3
+msg,1,<outline width=2 color=black>「……只是，伊莉娜总是因为我不能吃糖果，所以总是偷偷地烤饼干给我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_16.mp3
+msg,1,<outline width=2 color=black>「所以，那个……对不起，我有点夸大了事实」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_17.mp3
+msg,1,<outline width=2 color=black>「呜呜呜……没错，我就是个贪吃鬼……听说伊莉娜和洁美拉会准备糖果给我，在情人节时我就很开心了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_18.mp3
+msg,1,<outline width=2 color=black>「但、但是……两位的糖果都很好吃，这也没办法对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_19.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「哼，不要那样笑我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_20.mp3
+msg,1,<outline width=2 color=black>「……不过，真的……我很期待情人节」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_21.mp3
+msg,1,<outline width=2 color=black>「说起来，我们已经约好要互换所谓的友情巧克力了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_22.mp3
+msg,1,<outline width=2 color=black>「只是想到可以从大家那里收到各种各样的巧克力和糖果，就有点小激动了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_23.mp3
+msg,1,<outline width=2 color=black>「呵呵，你不能羡慕哦。这可是女孩子之间的特权」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_24.mp3
+msg,1,<outline width=2 color=black>「而且，我相信大家一定会给你比友情巧克力更好的礼物，所以你没必要羡慕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100356/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100356/adv/sound/fav100356_02_25.mp3
+msg,1,<outline width=2 color=black>「……当然，我也是这么打算的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,136 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11130300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_01.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「说起来，拉莱耶这里也有很多从日本来的人\n所以我就去问了他们关于日本新年的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_02.mp3
+msg,1,<outline width=2 color=black>「除了初诣，还有确认年贺卡这种问候信。然后是把今年的目标\n写下来的书初等，新年似乎有各种各样的活动呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_03.mp3
+msg,1,<outline width=2 color=black>「这些都让人感兴趣呢。听说还有其他各种活动和文化\n你对新年有什么感兴趣的事情吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「おせち」,选项2 「初梦」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_04.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「啊，如果是那个的话，亚纱花小姐之前已经准备得很充分了。\n我想肯定能吃到非常美味的おせち」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_05.mp3
+msg,1,<outline width=2 color=black>「只是……日本的新年有很多美食，\n只是稍微担心会不会吃太多……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_06.mp3
+msg,1,<outline width=2 color=black>「节制很重要呢……但是，在亚纱花小姐的料理面前自制力就……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_07.mp3
+msg,1,<outline width=2 color=black>「……现、现在想也没用吧。\n再说了，就算稍微增加一点体重，运动一下就好了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_08.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「初梦……是根据年初看到的梦内容来预测运势的对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_09.mp3
+msg,1,<outline width=2 color=black>「那么，希望我们都能做个好梦。\n我记得，梦里出现某些东西是吉兆的对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_10.mp3
+msg,1,<outline width=2 color=black>「但是……我觉得比起那些，梦里有重要的人在身边才是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_11.mp3
+msg,1,<outline width=2 color=black>「啊……没、没有什么！请别在意！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_12.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「啊，对了，我还有一个很感兴趣的事情，\n听说日本有一种叫做炬燵的取暖器具」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_13.mp3
+msg,1,<outline width=2 color=black>「在带有暖气的桌子上面盖上被子，\n钻进去之后感觉真的非常舒服……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_14.mp3
+msg,1,<outline width=2 color=black>「参加各种活动也很有趣，\n但是坐在炬燵里慢慢度过一段时间……也让人感到很有魅力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_15.mp3
+msg,1,<outline width=2 color=black>「那个……其实，我在想象后，打算在房间里放一个炬燵试试，\n如果你愿意的话，我们一起怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_16.mp3
+msg,1,<outline width=2 color=black>「――好的。我们一起悠闲地度过吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_17.mp3
+msg,1,<outline width=2 color=black>「对了。既然这样，不如我们边躺在炬燵里边玩游戏怎么样？\n正好我有一个想推荐给你的游戏……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100353/adv/sound/fav100353_02_18.mp3
+msg,1,<outline width=2 color=black>「呵呵……真是期待啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

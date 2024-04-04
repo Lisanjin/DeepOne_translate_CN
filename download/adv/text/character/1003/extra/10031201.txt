@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11400301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_01.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「这个区域……难道，是在模仿日本的学校吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_02.mp3
+msg,1,<outline width=2 color=black>「虽然我没有直接看过日本的学校，但是我经常玩日本的游戏，\n所以对这样的舞台很熟悉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_03.mp3
+msg,1,<outline width=2 color=black>「当然，我明白现实和游戏之间是有差异的。\n只是，亲眼看到这样的场景，心情有些激动」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_04.mp3
+msg,1,<outline width=2 color=black>「既然在幻梦境中，也许真的可以像游戏那样\n过上特别的学园生活呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_05.mp3
+msg,1,<outline width=2 color=black>「比如说，有一棵告白一定会成功的传说中的樱花树，\n或者背地里掌握着学校大权的学生会……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:anger,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_06.mp3
+msg,1,<outline width=2 color=black>「或者，在校舍地下隐藏着一个秘密的房间，\n里面住着默默拯救世界危机的英雄……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「这也太……」,选项2 「如果真有会很有趣」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_07.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「呃……当、当然，我知道那只是想象」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_08.mp3
+msg,1,<outline width=2 color=black>「……但是，还是有点向往那样……如果能过上像游戏中那样\n的日子，我想一定会非常有趣的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_09.mp3
+msg,1,<outline width=2 color=black>「所以，如果你愿意的话……我们是否可以在这个区域里，\n寻找一下那些特别的东西呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_10.mp3
+msg,1,<outline width=2 color=black>「当然，也许我们什么都找不到……但即使那样\n也没关系」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_11.mp3
+msg,1,<outline width=2 color=black>「即使是平凡的不特殊的事情……对我来说，也是有价值的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_12.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「是呢。如果是在幻梦境中，或许真的会……一想到这个，\n就有些心跳加速……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_13.mp3
+msg,1,<outline width=2 color=black>「为了不遗漏任何东西，我们得仔细地调查每一个角落\n才行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_14.mp3
+msg,1,<outline width=2 color=black>「当然，即使看起来平和，这里毕竟是幻梦境，我绝对不会掉以轻心的\n所以，请放心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_15.mp3
+msg,1,<outline width=2 color=black>「只是……如果我显得有点兴奋的话，希望你能原谅我\n我会很开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_16.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「我一直都有点向往……那种学校生活」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_17.mp3
+msg,1,<outline width=2 color=black>「一想到我可能能和你一起体验那样的生活，就忍不住\n想要笑出来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_18.mp3
+msg,1,<outline width=2 color=black>「你也没有去过学校对吧？\n那么在这里，不如和我一起体验吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100312/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100312/adv/sound/fav100312_01_19.mp3
+msg,1,<outline width=2 color=black>「――呵呵。也许只是短暂的一瞬……但还是让我们一起，\n享受学园生活吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
