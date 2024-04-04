@@ -1,0 +1,202 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm105.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:normal,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100211/adv/sound/fav100211_02_01.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「话说回来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:normal,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-160,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100211/adv/sound/fav100211_02_02.mp3
+msg,1,<outline width=2 color=black>「你还是一如既往的，怎么说呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_03.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「——看得太明显了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_04.mp3
+msg,1,<outline width=2 color=black>「我知道我这样穿着，不能说完全不在意，\n但正常情况下，你应该会稍微注意一下视线的方向吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我没看」,选项2　「对不起……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_05.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「哼……我只是承认你有这个说法的决心而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_06.mp3
+msg,1,<outline width=2 color=black>「但是，你一边说着，眼睛却盯着我的胸部，这可怎么行呢。\n如果想要掩饰的话，至少要做得更像一点啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_07.mp3
+msg,1,<outline width=2 color=black>「虽然说，你的别有用心，真的是老生常谈了……。\n但坦白说，我已经习惯了……虽然并不想习惯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_08.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「虽然诚实地道歉是好事，但道歉应该伴随着改进」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_09.mp3
+msg,1,<outline width=2 color=black>「你，对于这些问题有改善的打算吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_10.mp3
+msg,1,<outline width=2 color=black>「……不知道是不是应该把你没有回避问题视为诚实呢。\n了解自己的性格是好事，但内容并不值得赞扬」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_11.mp3
+msg,1,<outline width=2 color=black>「嗯，我知道你就是这样的人，\n也理解这并不代表你所有的一面」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_12.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「我真是糊涂了，居然会对这样的人产生信任感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_13.mp3
+msg,1,<outline width=2 color=black>「……什么啊。为什么你现在要看我五次？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_14.mp3
+msg,1,<outline width=2 color=black>「别拉你自己的脸颊。这可不是梦哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_15.mp3
+msg,1,<outline width=2 color=black>「哼……我知道我说的话有些不像我自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_16.mp3
+msg,1,<outline width=2 color=black>「……一直以来，我都在选择言辞来保护自己的心。\n为了看起来更强大，为了隐藏弱点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_17.mp3
+msg,1,<outline width=2 color=black>「但是，我说过。我也不想一直保持现状。\n我愿意带着心会受伤的觉悟前进」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_18.mp3
+msg,1,<outline width=2 color=black>「而且……至少在圣诞节这样的日子里，我想要毫无顾忌地说出口」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:shy,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_19.mp3
+msg,1,<outline width=2 color=black>「……哼、但、但是！ 就算是这样，也不代表我接受了你满脸的情欲\n那和这个是两码事……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_20.mp3
+msg,1,<outline width=2 color=black>「就算你这样，我也不会想要抛弃对你的信任，\n但是……你还是要做到能让我骄傲地说你值得我信任的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100211/adv/sound/fav100211_02_21.mp3
+msg,1,<outline width=2 color=black>「……哼。我对这一点不会抱太大期望的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100211/adv/atlas/stand_a,body:shy,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-661,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100211/adv/sound/fav100211_02_22.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「――……虽然并没有那么担心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

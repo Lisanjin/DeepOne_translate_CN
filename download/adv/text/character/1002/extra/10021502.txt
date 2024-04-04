@@ -1,0 +1,227 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm077.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_01.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「说到雪，我突然想起来，前段时间在拉莱耶的人工庭园里，\n好像有一部分人用魔法制造了雪玩耍呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_02.mp3
+msg,1,<outline width=2 color=black>「他们特意用魔术制造雪打雪仗，听说收拾起来很麻烦。\n米莉亚姆都在抱怨」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_03.mp3
+msg,1,<outline width=2 color=black>「……如果当时把他们带到这个领域，应该不会\n变成那样的惨状吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_04.mp3
+msg,1,<outline width=2 color=black>「虽然我觉得专门为了玩雪而来到幻梦境也有些过分，\n但是负荷问题应该可以解决……再说，现在说这些也晚了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_05.mp3
+msg,1,<outline width=2 color=black>「至少，在这里就不会出现墙壁被打穿、电气系统因爆炸而\n被摧毁这样的情况了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_06.mp3
+msg,1,<outline width=2 color=black>「本来打雪仗怎么会导致这样的事态发生我也难以理解。\n真是的，每个人都很有实力却不知道适可而止……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「雪仗……？」,选项2　「发生了什么」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_07.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「嗯，我能理解你听到雪仗后想要重新定义它的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_08.mp3
+msg,1,<outline width=2 color=black>「但是，拉莱耶的那些人开始打雪仗，如果你以为他们只是投掷雪球、\n欢快地玩耍就结束了，可能你才是错的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rise1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:smile,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100215/adv/sound/fav100215_02_09.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「他们用强化过的力量投出了惊人的猛速球」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,150,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ilyna1,0,150,1280,200,0.5,,,,
+spriteatlas,download/character/100901/adv/atlas/stand_a,body:anger,ilyna2,0,0,0,0,,,,
+imgconf,ilyna2,ilyna1,0,-770,,,0,1.5,1.5,0
+
+
+mask,black3,0,-50,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black4,0,0,0,0,,,,
+imgconf,black4,black3,0,0,,,0,1,1,0.5
+mask,jamila1,0,-50,1280,200,0.5,,,,
+spriteatlas,download/character/101001/adv/atlas/stand_a,body:anger,jamila2,0,0,0,0,,,,
+imgconf,jamila2,jamila1,0,-680,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100215/adv/sound/fav100215_02_10.mp3
+msg,1,<outline width=2 color=black>「雪球中甚至混杂着飞舞的刀刃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,-40,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+playvoice,1,download/character/100215/adv/sound/fav100215_02_11.mp3
+msg,1,<outline width=2 color=black>「<ruby>魔导书|旧神</ruby>被用来在大范围内让雪球降下，进行了地毯式轰炸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_12.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「光是听到这些，你就能明白这已经和一般意义上的雪仗\n相去甚远了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_13.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「他们开始打雪仗，埃尔塔和莉瑟大闹一场――\n你应该能想象得出来吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_14.mp3
+msg,1,<outline width=2 color=black>「实际上，塔芭莎和莉音也参与其中，所以情况比你想象的还要疯狂\n一定是个难以置信的场面」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_15.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「令人头疼的是，他们都是实力者，一旦失控就无法应对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_16.mp3
+msg,1,<outline width=2 color=black>「你也应该好好教训他们一次――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_17.mp3
+msg,1,<outline width=2 color=black>「……不过。说起来，你似乎更可能在这种场合中率先开始胡闹呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_18.mp3
+msg,1,<outline width=2 color=black>「怎么了，看起来好像受了什么打击。这不过是自作自受罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_19.mp3
+msg,1,<outline width=2 color=black>「嗯，至少你要懂得，在玩闹的时候也不要给周围的人带来麻烦。\n另外，你自己的安全也一定要确保好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_20.mp3
+msg,1,<outline width=2 color=black>「虽然我觉得他们都不会对你使用全力，\n但是他们有可能会失控，所以你要小心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_21.mp3
+msg,1,<outline width=2 color=black>「如果我在场的话，我可以保护你，\n但是我也不能一直陪在你身边……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_22.mp3
+msg,1,<outline width=2 color=black>「……等等，为什么你在咧嘴笑？\n刚才有什么好笑的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100215/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100215/adv/sound/fav100215_02_23.mp3
+msg,1,<outline width=2 color=black>「真是搞不懂你……唉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

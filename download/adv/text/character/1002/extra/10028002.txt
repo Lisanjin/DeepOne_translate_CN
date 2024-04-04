@@ -1,0 +1,242 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:normal,holy,300,-160,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+wait,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizel2,-300,-120,0.5,0.5,,,,
+spriteatlas,download/character/100801/adv/atlas/stand_a,body:smile,holy2,300,-160,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,zizel,0
+spriteoff,holy,0
+endwait,,,,,,,,,,,
+wait,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,1,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,255
+endwait,,,,,,,,,,,
+slideoutblack,1,right
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:normal,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-661,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100280/adv/sound/fav100280_02_01.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「……果然，像我这样的人，现在再出现在她们面前，根本没有资格」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:surprise,blizit,-500,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_02.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「――……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100280/adv/sound/fav100280_02_03.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「等一下！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_04.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「你，刚才要做什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「我想去叫吉泽尔和霍莉」,选项2 「散步……吧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_05.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「你这副无所谓的表情是什么意思！\n你，难道不觉得应该多读读气氛吗……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_06.mp3
+msg,1,<outline width=2 color=black>「我这边正在烦恼着是否应该退下来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_07.mp3
+msg,1,<outline width=2 color=black>「我没有保护住那些孩子们。这样的人出现在他们面前，\n究竟应该说什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_08.mp3
+msg,1,<outline width=2 color=black>「应该和这个世界的孩子们交流的，是这个世界的我。\n而不是绝望的<ruby>我|わたし</ruby>」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_09.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「什么嘛，那随便编的借口……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_10.mp3
+msg,1,<outline width=2 color=black>「反正你是想去叫吉泽尔和霍莉吧？\n这点我还是能看出来的。毕竟通过我的眼睛，看过了很多事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_11.mp3
+msg,1,<outline width=2 color=black>「你就是一个无可救药的多管闲事者」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_12.mp3
+msg,1,<outline width=2 color=black>「……但是，你那多管闲事就留着吧。\n至少，像我这样的人不值得你这么做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_13.mp3
+msg,1,<outline width=2 color=black>「反正你只是个过客……本来就和这个世界没有任何关系的存在。\n把你当作不存在的东西来对待，正好合适」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_14.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「――……我、我并不是因为不知道该怎么和她们说话才\n不去找她们的，可不是这种原因哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100280/adv/sound/fav100280_02_15.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「所以说等一下嘛！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_16.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「喂，你是不听人说话吗？ 没有礼貌感吗？\n难道你其实没有心？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_17.mp3
+msg,1,<outline width=2 color=black>「就这样吧，明白了。你也记得那个你熟知的、这个世界的\n布丽吉特·芭德薇。然后再听我说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_18.mp3
+msg,1,<outline width=2 color=black>「我也知道那个虽然是我但又不是我的她。那个女人就是\n一个在关键时刻会退缩、胆小怕事、幼稚到底的懦夫」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_19.mp3
+msg,1,<outline width=2 color=black>「即使是尝到了让整个世界都变得无所谓的绝望，\n那种本质的地方是不会改变的。你明白吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100280/adv/sound/fav100280_02_20.mp3
+msg,1,<outline width=2 color=black>「关于那些孩子们的事情，就让它们自然发展吧。可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
