@@ -1,0 +1,138 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:normal,kurau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_01.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「神子大人他们总是那么亲密，看着就让人感到非常温馨。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:sad,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_02.mp3
+msg,1,<outline width=2 color=black>「相比之下，我的主人和他的姐姐……那可真是，即使是非人类的我也能理解彼此两个有问题。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:sad,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_03.mp3
+msg,1,<outline width=2 color=black>「因为彼此深爱着，所以有些心情无法坦白。这就是人类吧，我在芭德薇家代代相传的继承者身边学到的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:unique,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_04.mp3
+msg,1,<outline width=2 color=black>「但那可真是顽固不化啊。芭德薇家族的血统一向都倾向于钻牛角尖，但那两个人可真是顽固不化啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:sad,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_05.mp3
+msg,1,<outline width=2 color=black>「我只知道一个人能把事情搞得那么复杂。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「你在说谁？」,选项2「他们的父亲怎么样？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:normal,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_06.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「芭德薇家的祖先……我被称为克劳索拉斯后的第一位主人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:sad,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_07.mp3
+msg,1,<outline width=2 color=black>「说到底，她的血才是一切问题的根源吧。爱到了极致，甚至杀害了自己亲生的姐姐和心爱的男人……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:normal,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_08.mp3
+msg,1,<outline width=2 color=black>「啊，我要说一句，那位女士——傲慢的魔女，并非恶劣的人类哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:normal,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_09.mp3
+msg,1,<outline width=2 color=black>「虽然我无法完全理解她的心，但我相信她因为爱而走错了路，因为爱而失去了一切。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:unique,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_10.mp3
+msg,1,<outline width=2 color=black>「……神子大人，请不要被杀害好吗？现在的情况微妙地和那时候相似，我有点担心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:normal,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_11.mp3
+msg,1,<outline width=2 color=black>「开玩笑的，别做那么紧张的表情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:sad,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_12.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「啊……那个人，那个……是的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:sad,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_13.mp3
+msg,1,<outline width=2 color=black>「我的主人和他的姐姐，虽然方向有些不同，但都有一些思维过于偏激的地方，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:unique,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_14.mp3
+msg,1,<outline width=2 color=black>「这样看来，他们的父亲的性格是可以理解的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:sad,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_15.mp3
+msg,1,<outline width=2 color=black>「原本他的姐姐被排除在下一任家主之外也是出于对权力会毁掉自己这种顾虑——啊，不，忘记我刚才说的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:normal,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_16.mp3
+msg,1,<outline width=2 color=black>「这是我的主人和他的姐姐需要面对的挑战，我或者旁观者并不应该插手。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:normal,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_17.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「看来我再多说就要说出多余的话了。像我这样的魔导书并不应该过多地插入人类之间的事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104000/adv/atlas/stand_a,body:normal,kurau,0,-120,0.5,0,,,,
+playvoice,1,download/character/104003/adv/sound/fav104003_02_18.mp3
+msg,1,<outline width=2 color=black>「在我说出不该说的话之前，我将返回主人身边。神子大人，失陪了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

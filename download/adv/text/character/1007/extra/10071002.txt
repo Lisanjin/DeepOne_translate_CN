@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11360300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_01.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「对了，你对乐器或音乐有兴趣吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_02.mp3
+msg,1,<outline width=2 color=black>「拉莱耶的仓库和音乐堂里有各种各样的乐器，\n我觉得你试着摸摸看也许会很有趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_03.mp3
+msg,1,<outline width=2 color=black>「当然有吉他和钢琴这样的乐器，还有用静电演奏的特尔明琴，\n甚至有一些我都不知道怎么演奏的民族乐器」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_04.mp3
+msg,1,<outline width=2 color=black>「拉莱耶的探索者们是从世界各地聚集来的，\n我想这些应该是他们用来放松的工具」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_05.mp3
+msg,1,<outline width=2 color=black>「既然有这么多乐器，我想你肯定也会对其中一些感兴趣的，\n不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_06.mp3
+msg,1,<outline width=2 color=black>「而且，你看。如果你也会弹奏乐器，我们就可以一起演奏了。\n你不觉得那样会很美妙吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_07.mp3
+msg,1,<outline width=2 color=black>「所以，怎么样呢？你对哪种乐器感兴趣呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「可能是吉他」,选项2　「迪吉里杜管」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_08.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「原来如此，真是经典选择。如果是吉他的话应该有很多教程，\n学起来应该会比较容易」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_09.mp3
+msg,1,<outline width=2 color=black>「不过，很遗憾的是我也不会弹吉他，\n所以似乎没什么可以帮到你的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_10.mp3
+msg,1,<outline width=2 color=black>「霍莉好像很喜欢电吉他，现在也偶尔会弹一弹，\n或许你可以请她教你怎么弹吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_11.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「迪、迪吉……？那个，你能再说一遍吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_12.mp3
+msg,1,<outline width=2 color=black>「迪吉里杜管……对不起，我没听过这个名字，\n这是什么样的乐器呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:unique,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_13.mp3
+msg,1,<outline width=2 color=black>「是澳大利亚的民族乐器……为什么你会对这种小众的\n东西感兴趣呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_14.mp3
+msg,1,<outline width=2 color=black>「如果是这个乐器的话，恐怕我也无法帮助你\n了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_15.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「对不起，明明是我推荐你学乐器的，结果却无法帮助你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_16.mp3
+msg,1,<outline width=2 color=black>「……既然不能帮助你练习，那就一起来演奏怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_17.mp3
+msg,1,<outline width=2 color=black>「好的，明白了。等你学会演奏后，\n随时可以叫我一起来演奏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_18.mp3
+msg,1,<outline width=2 color=black>「在那之前，我也得好好提升自己的技艺才行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_19.mp3
+msg,1,<outline width=2 color=black>「自从来到拉莱耶后，我几乎没有接触过乐器，\n所以我想我的技艺肯定已经生疏了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_20.mp3
+msg,1,<outline width=2 color=black>「在你面前表演糟糕的演奏，我也会感到不好意思……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100710/adv/sound/fav100710_02_21.mp3
+msg,1,<outline width=2 color=black>「我也很期待和你的合奏，\n所以我们彼此都要努力练习乐器哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

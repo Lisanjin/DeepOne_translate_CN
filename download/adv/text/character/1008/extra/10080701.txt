@@ -1,0 +1,189 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11270300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:sad,holy,0,-160,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_01.mp3
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,1,<outline width=2 color=black>「唉……我真的不习惯这种装扮」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:sad,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_02.mp3
+msg,1,<outline width=2 color=black>「特别是，我平时不会露出这么多的脚，\n所以总是不由自主地关注自己的脚步……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:unique,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_03.mp3
+msg,1,<outline width=2 color=black>「……嗯，看起来你很高兴。\n从刚才开始，你的视线就一直在往下移动，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「围裙……」,选项2 「……没穿？」
+
+
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:normal,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_04.mp3
+msg,1,<outline width=2 color=black>「难道你想要试试看移开它吗。\n但遗憾的是――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,1,0.6,1.0
+playse,/download/sound/se/se_046.mp3
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,holy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:surprise,holy2,0,0,0,0,,,,
+imgconf,holy2,holy1,0,-750,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100807/adv/sound/fav100807_01_05.mp3
+msg,1,<outline width=2 color=black>「……哇！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:shy,holy,0,-160,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_06.mp3
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,1,<outline width=2 color=black>「那、那个，刚才的风……就像是有人故意吹来的。\n把我吹得很狼狈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:shy,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_07.mp3
+msg,1,<outline width=2 color=black>「……难道，你看到里面了吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_08.mp3
+msg,1,<outline width=2 color=black>「那么，怎么样呢。\n也许，跟你想象的一样呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_09.mp3
+msg,1,<outline width=2 color=black>「如果，现在这层薄布被揭开了……。\n会变成什么样呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:shy,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_10.mp3
+msg,1,<outline width=2 color=black>「你的视线突然变得炙热了。\n嗯……感觉好像连肌肤都要被透过衣服烧焦了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:shy,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_11.mp3
+msg,1,<outline width=2 color=black>「嗯，如果是你的话，就算被看到也……只要不过分的话\n我并不介意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:shy,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_12.mp3
+msg,1,<outline width=2 color=black>「如果你非常在意的话……、\n要不要仔细看一看？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_13.mp3
+msg,1,<outline width=2 color=black>「――开玩笑的。\n毕竟太害羞了，就饶了我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:sad,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_14.mp3
+msg,1,<outline width=2 color=black>「……请不要露出那么失望的表情。\n你还是一如既往地忠于自己的欲望呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:normal,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_15.mp3
+msg,1,<outline width=2 color=black>「嗯……既然你如此坦率地反应，我也就不会感到不悦了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:normal,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_16.mp3
+msg,1,<outline width=2 color=black>「本来，如果我讨厌的话，就不会开这样的玩笑，\n也不会和你保持这样的距离感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_17.mp3
+msg,1,<outline width=2 color=black>「虽然身为一个低级仆人说这样的话可能有些冒昧……、\n但对我来说，你是个我可以放心交谈的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_18.mp3
+msg,1,<outline width=2 color=black>「直到现在，我都没有能这样和我交谈的人。\n朋友……可能又有些不同吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_19.mp3
+msg,1,<outline width=2 color=black>「当我和你在一起的时候，我会感到一种痒痒的、快乐的……。\n这种奇妙的感觉……让我觉得和朋友相比，你更特别……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_20.mp3
+msg,1,<outline width=2 color=black>「朋友这个词，对于每个人来说都可以有很多，\n但我感觉，对于我来说，你的存在是无二的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_21.mp3
+msg,1,<outline width=2 color=black>「和你在一起的这些时刻中，我心中萌发的各种感情\n对于我来说都是第一次……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_22.mp3
+msg,1,<outline width=2 color=black>「……这些感情，应该用什么样的词语来表达呢……关于这个，\n我还是一知半解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100807/adv/atlas/stand_a,body:smile,holy,0,-160,0.5,0,,,,
+playvoice,1,download/character/100807/adv/sound/fav100807_01_23.mp3
+msg,1,<outline width=2 color=black>「但是，当我找到答案的那一刻……我想首先告诉你，\n我就是这么想的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

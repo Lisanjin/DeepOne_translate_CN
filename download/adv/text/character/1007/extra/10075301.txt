@@ -1,0 +1,145 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_01.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「夏祭り，是吗？这，这好突然……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_02.mp3
+msg,1,<outline width=2 color=black>「确实不久前，我和霍莉一起看了一部老日本电影，\n那时候就想过有一天也想去参加看看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_03.mp3
+msg,1,<outline width=2 color=black>「还有，我也看了很多书。关于会有什么摊位，\n都有什么意义……越了解就越感到兴趣深厚……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_04.mp3
+msg,1,<outline width=2 color=black>「说起来，之前听说找到了一个像日本夏祭的场所，\n如果有机会的话，我想去看看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_05.mp3
+msg,1,<outline width=2 color=black>「――诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_06.mp3
+msg,1,<outline width=2 color=black>「和布里吉特姐姐一起去，那……等、等一下！？\n这难道是说，可以和姐姐一起去夏祭吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_07.mp3
+msg,1,<outline width=2 color=black>「怎么可能，姐姐会陪我去夏祭……真的吗……？\n但、但是，你这么说的话……哇、哇哇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「先冷静下来」,选项2　「虽然只是顺带一提」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_08.mp3
+msg,1,<outline width=2 color=black>「好、好的……对了，首先深呼吸……嘶——哈——。\n好、好的冷静下来――不行！　完全没有效果……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_09.mp3
+msg,1,<outline width=2 color=black>「因为，和那个姐姐一起去夏祭……她会陪我一起去，\n这种事……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_10.mp3
+msg,1,<outline width=2 color=black>「顺带一提的想索……对、对啊，姐姐肯定不可能无缘无故就\n去参加祭典……但是，想索结束后一起去夏祭……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_11.mp3
+msg,1,<outline width=2 color=black>「这种事我完全无法相信……不、不过这是真的吧？\n如果现在告诉我这是假的，我可能会情不自禁地拔出克劳索拉斯……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_12.mp3
+msg,1,<outline width=2 color=black>「首、首先得确认这不是梦……在这种时候应该捏捏脸颊——啊，疼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_13.mp3
+msg,1,<outline width=2 color=black>「不、不是梦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_14.mp3
+msg,1,<outline width=2 color=black>「布里吉特姐姐离开家的那天……那天我深深地伤害了姐姐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_15.mp3
+msg,1,<outline width=2 color=black>「也许，再也没有和姐姐开心笑过的日子了。\n我一直都是这么想的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_16.mp3
+msg,1,<outline width=2 color=black>「因为我做了那么不可原谅的事情，但是现在，\n我和姐姐的距离正在慢慢接近……姐姐正在看向这边」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_17.mp3
+msg,1,<outline width=2 color=black>「各种感情交织在一起，无法用言语表达出来……。\n我想，能带领我们到现在的，一定是你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_18.mp3
+msg,1,<outline width=2 color=black>「所以……谢谢你。谢谢你连结了我们的未来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_19.mp3
+msg,1,<outline width=2 color=black>「对了，这件事还没告诉霍莉吧？\n这么重要的事情，不能让霍莉感到被排挤」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100701/adv/atlas/stand_a,body:smile,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100753/adv/sound/fav100753_01_20.mp3
+msg,1,<outline width=2 color=black>「霍莉肯定会非常高兴的，我们快点去告诉她。\n来吧，快点儿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

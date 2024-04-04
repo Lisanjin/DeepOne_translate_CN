@@ -1,0 +1,189 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11410300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:sad,zizel,650,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_048.mp3
+anm,move,zizel,-650_-20,2,0
+endwait
+wait,0.2
+anm,move,zizel,0_-20,2,0
+endwait
+
+
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_01.mp3
+msg,1,<outline width=2 color=black>「呜……这里，是哪儿呢……我从没见过的地方……。\n这些玩具和书，家里都没有」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:normal,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_02.mp3
+msg,1,<outline width=2 color=black>「啊……那边的洋娃娃，\n好可爱呀……还有个小房子……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:sad,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_03.mp3
+msg,1,<outline width=2 color=black>「啊……但是，不能随便摸别人的东西对吧……。\n呜呜……得忍住」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:surprise,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_04.mp3
+msg,1,<outline width=2 color=black>「――诶？　啊……谁、谁啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,zizel,0.45_0.45,0.5,0
+anm,move,zizel,0_0,0.5,0
+endwait
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:sad,zizel,0,0,0.45,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_05.mp3
+msg,1,<outline width=2 color=black>「啊、呜……对、对不起……我就这样闯进来了……我、\n等我回过神来，就已经在这里了……那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:sad,zizel,0,0,0.45,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_06.mp3
+msg,1,<outline width=2 color=black>「那个，呃呃……在陌生的地方，遇到陌生的男人……难道、\n我……被绑架了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:sad,zizel,0,0,0.45,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_07.mp3
+msg,1,<outline width=2 color=black>「「、救命啊……布丽吉特姐姐……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「喊破喉咙也没人会来的」」,选项2　「我是布丽吉特的朋友」」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:sad,zizel,0,0,0.45,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_08.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「咿呀……呜、呜呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:anger,zizel,0,0,0.45,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_09.mp3
+msg,1,<outline width=2 color=black>「没、没有那种事……姐姐一定会、\n来救我的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:anger,zizel,0,0,0.45,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_10.mp3
+msg,1,<outline width=2 color=black>「所以，你这个人什么的……\n我、不、怕……呜……咕噜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:anger,zizel,0,0,0.45,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_11.mp3
+msg,1,<outline width=2 color=black>「――诶？　开玩笑……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:anger,zizel,0,0,0.45,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_12.mp3
+msg,1,<outline width=2 color=black>「我、我才不信呢……不可以相信陌生人，\n布丽吉特姐姐都说了的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:surprise,zizel,0,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_13.mp3
+msg,1,<outline width=2 color=black>「别、别靠近我…………诶？　糖果？\n那个……是要给我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:normal,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_14.mp3
+msg,1,<outline width=2 color=black>「那么，我、我就不客气了……嗝……啊，好吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:normal,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_15.mp3
+msg,1,<outline width=2 color=black>「嗯、呜……那个，难道你真的、\n并没有绑架我吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:sad,zizel,0,0,0.45,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_16.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「是布丽吉特姐姐的、朋友……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:normal,zizel,0,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_17.mp3
+msg,1,<outline width=2 color=black>「但、但是……姐姐，她并不怎么和人交谈的……。\n像哥哥你这样的朋友，我觉得她应该是没有的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:normal,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_18.mp3
+msg,1,<outline width=2 color=black>「但是……为什么呢……听着哥哥你的声音，\n感觉很奇妙……好像可以相信你一样，有这种感觉涌上心头……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:normal,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_19.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「但是，如果我没有被绑架的话，\n我为什么会在这样的地方呢……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:normal,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_20.mp3
+msg,1,<outline width=2 color=black>「那个，这里是什么地方呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:sad,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_21.mp3
+msg,1,<outline width=2 color=black>「幻梦境？　宅基地……？\n那个……对不起。我不太明白……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:normal,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_22.mp3
+msg,1,<outline width=2 color=black>「但是，姐姐和霍莉一定很快就会来接我的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100757/adv/atlas/stand_a,body:smile,zizel,0,-20,0.5,0,,,,
+playvoice,1,download/character/100757/adv/sound/fav100757_01_23.mp3
+msg,1,<outline width=2 color=black>「布丽吉特姐姐，即使我迷路了，\n也一定会马上找到我的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

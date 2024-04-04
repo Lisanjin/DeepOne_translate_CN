@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm120.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_01.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「每当提起海，我就会想起主人和姐姐小时候随父亲出差的情景。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_02.mp3
+msg,1,<outline width=2 color=black>「父亲在和交易伙伴会谈的时候，附近正好有个著名的旅游海滩，于是他们两个就决定在那片海里玩耍……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_03.mp3
+msg,1,<outline width=2 color=black>「他们一离开保镖的视线，就发生了溺水事件。准确来说，是主人溺水后，姐姐在试图救他的过程中也被卷入了进去。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_04.mp3
+msg,1,<outline width=2 color=black>「幸运的是霍莉立刻发现并及时救援，所以他们两个并没有出大事，但这件事被父亲知道后……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「责备保镖？」,选项2 「责备他们两个？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_05.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「嗯……但是说到底，原因还是主人和姐姐违背了保镖们的嘱咐，跑到了较远的地方。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_06.mp3
+msg,1,<outline width=2 color=black>「考虑到这样的情况，最后并没有给予严厉的惩罚……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_07.mp3
+msg,1,<outline width=2 color=black>「……反而对于保镖们来说，如果当时能直接给予严厉惩罚可能会让他们更加心安吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:unique,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_08.mp3
+msg,1,<outline width=2 color=black>「即使被那种面带凶气的人原谅了，也不会有安心的感觉吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_09.mp3
+msg,1,<outline width=2 color=black>「当然，那位的愤怒不仅包含对保镖们的责备，也有对自己在关键时刻无法帮助女儿们的自责。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_10.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「如果能直接表达责备的话，家庭关系就不会变得如此紧张了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_11.mp3
+msg,1,<outline width=2 color=black>「尽管他接到消息后立刻中断工作赶来，但在看到他们两个愧疚的样子后，却无言以对。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:unique,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_12.mp3
+msg,1,<outline width=2 color=black>「真是的……如果他们两个安然无恙让他感到安慰的话，只需简单地说出来就好了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:unique,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_13.mp3
+msg,1,<outline width=2 color=black>「因为这个原因，他们两个以为父亲非常生气，从那以后在旅行时都只在室内度过。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_14.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「虽然我作为魔导书不应该随便评论人类的事情……但是看着父亲和芭德薇家族的血统，我想这可能是原因吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_15.mp3
+msg,1,<outline width=2 color=black>「我清楚地知道最近主人和姐姐之间是如何努力互相理解，以及这对他们来说有多么困难。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_16.mp3
+msg,1,<outline width=2 color=black>「虽然他们仍然很笨拙，但至少现在已经能偶尔将真实的感情化为言语了，这是一个巨大的进步。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_17.mp3
+msg,1,<outline width=2 color=black>「如果有一天父亲能像彼此一样坦诚面对自己的心情就好了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:unique,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_18.mp3
+msg,1,<outline width=2 color=black>「……不过这可能很难。毕竟那位也是个顽固且老派的笨拙者。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104009/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104009/adv/sound/fav104009_03_19.mp3
+msg,1,<outline width=2 color=black>「真是让人头疼的一族啊，这个芭德薇家族。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

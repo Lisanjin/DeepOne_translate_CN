@@ -1,0 +1,212 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm105.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_01.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「神子大人？　难道你觉得冷吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_02.mp3
+msg,1,<outline width=2 color=black>「非常抱歉。我在你身边，却没有注意到这一点。\n这个区域的温度确实偏低，我应该考虑到的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_03.mp3
+msg,1,<outline width=2 color=black>「我还真是不行呢……看来，我对人类的理解\n还是太浅了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_04.mp3
+msg,1,<outline width=2 color=black>「神子大人，如果你愿意的话，请来这边」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-180,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,clau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104007/adv/sound/fav104007_02_05.mp3
+msg,1,<outline width=2 color=black>「请让我握住你的手臂」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-180,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_06.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「……？　神子大人，发生什么了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_07.mp3
+msg,1,<outline width=2 color=black>「啊，这样抱着你的手臂，可能会让你觉得不方便吧？\n但是，请忍耐一下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:sad,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_08.mp3
+msg,1,<outline width=2 color=black>「啊，不是这个？　难道……我以为人在冷的时候，为了不让身体变冷会靠近对方\n难道我哪里搞错了……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「并没有错」,选项2　「并不是那么冷」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_09.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「是吗……那我们就再这样待一会儿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_10.mp3
+msg,1,<outline width=2 color=black>「啊，不。我说错了……说起来，\n在这种时候，直接接触皮肤效果更好是吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:smile,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_11.mp3
+msg,1,<outline width=2 color=black>「我失礼了。我马上脱衣服——什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:sad,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_12.mp3
+msg,1,<outline width=2 color=black>「现在就足够了，是吗……但是，既然要做，\n不应该追求更好的方法吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:sad,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_13.mp3
+msg,1,<outline width=2 color=black>「即使效率低也没关系……不，如果神子大人这么说的话，\n我也会遵从的……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:sad,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_14.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「但是神子大人，你的指尖有些颤抖，\n我觉得你不必过于忍耐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:sad,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_15.mp3
+msg,1,<outline width=2 color=black>「人类的身体是脆弱的……多做些防备没有坏处。\n反而本来的话，应该更加温暖才对——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_16.mp3
+msg,1,<outline width=2 color=black>「神子大人，如果愿意的话可以进入附近的建筑物里面，我们互相靠近一些\n如果肌肤直接接触的话，热度也会——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:sad,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_17.mp3
+msg,1,<outline width=2 color=black>「……不行吗？　嗯……我以为这样很有效呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_18.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「那么，至少让我们更紧密地靠在一起吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,clau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104007/adv/sound/fav104007_02_19.mp3
+msg,1,<outline width=2 color=black>「神子大人？　为什么要离开呢？　还有，你看起来有点犹豫不决的样子……我认为更紧密地接触会更好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-300,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104007/adv/sound/fav104007_02_20.mp3
+msg,1,<outline width=2 color=black>「啊，对了。把手臂这样，夹在胸部之间怎么样？\n从衣服的结构来看，你把手臂插进这里……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-180,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_21.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「……？　你说'可以吗'，是在确认什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:normal,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_22.mp3
+msg,1,<outline width=2 color=black>「当然，如果这样能让神子大人感到温暖，我无论如何都愿意让神子大人\n使用我的身体」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104007/adv/atlas/stand_a,body:smile,clau,0,-180,0.7,0,,,,
+playvoice,1,download/character/104007/adv/sound/fav104007_02_23.mp3
+msg,1,<outline width=2 color=black>「请吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_01.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「神子大人？这么深夜出来走动，\n发生了什么事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_02.mp3
+msg,1,<outline width=2 color=black>「――原来如此。人有时会遇到难以入睡的夜晚，\n对于神子大人来说，今天就是这样一天吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_03.mp3
+msg,1,<outline width=2 color=black>「如果是这样，散步或许也不错，\n或者阅读一本书如何呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_04.mp3
+msg,1,<outline width=2 color=black>「因为我不需要睡眠，所以最近我也在阅读各种书籍\n就像现在这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「……又是色情的那种吗」,选项2　「你刚刚在读什么书？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_05.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「神子大人……那是偏见」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_06.mp3
+msg,1,<outline width=2 color=black>「确实，为了理解我主的爱好，我确实有很多机会接触到\n那类东西，但我对其他事物也感兴趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_07.mp3
+msg,1,<outline width=2 color=black>「再次强调一下，我并没有性欲之类的权能\n所以请注意哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_08.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「我刚才读的是关于历史的书籍」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_09.mp3
+msg,1,<outline width=2 color=black>「我对东洋历史的了解并不多，\n所以最近我正在重点学习这方面的知识」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_10.mp3
+msg,1,<outline width=2 color=black>「虽然通过历代主人，我对世界和时代的变迁有了一定的了解，\n但是接触书籍后，我发现自己需要重新认识这些事物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_11.mp3
+msg,1,<outline width=2 color=black>「我所知道的东西，在广大世界中只是一握之数。\n人类编织的历史越了解越觉得有趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_12.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「那么，神子大人怎么决定呢。\n如果你不介意，我可以借给你我手头的书」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_13.mp3
+msg,1,<outline width=2 color=black>「据说阅读文字会让人感到困倦，\n这也是常有的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_14.mp3
+msg,1,<outline width=2 color=black>「如果你在阅读过程中睡着了，我会把你送回房间，\n请放心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_15.mp3
+msg,1,<outline width=2 color=black>「――啊。那么在神子大人的房间阅读可能是最好的选择了\n这样当你困了就可以直接睡觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_16.mp3
+msg,1,<outline width=2 color=black>「居然没有注意到这么简单的事情……和神子大人一起阅读书籍，\n看来我心里也有些慌乱了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_17.mp3
+msg,1,<outline width=2 color=black>「神子大人。我会把书借给你的——……嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:surprise,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_18.mp3
+msg,1,<outline width=2 color=black>「在神子大人的房间里一起阅读书籍……？虽然这对我来说是个高兴的提议，\n但是不需要睡眠的我在房间里会不会打扰到你……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_19.mp3
+msg,1,<outline width=2 color=black>「……不。既然神子大人这么邀请我，拒绝也是失礼的……那么，我很乐意陪您一起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_20.mp3
+msg,1,<outline width=2 color=black>「但是，如果您感到困倦，尽管在我面前放心睡觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_21.mp3
+msg,1,<outline width=2 color=black>「如果愿意，可以把我当做枕头或者垫子，\n随便使用也没关系」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104001/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104010/adv/sound/fav104010_02_22.mp3
+msg,1,<outline width=2 color=black>「那么我们走吧，神子大人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

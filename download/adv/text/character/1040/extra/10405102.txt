@@ -1,0 +1,226 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm049.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_01.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「――你是说这只猴子在我肩膀上？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_02.mp3
+msg,1,<outline width=2 color=black>「这是构建这个领域的思维的末端……嗯，如果说是吉祥物，\n可能会更容易理解吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_03.mp3
+msg,1,<outline width=2 color=black>「<ruby>虚像|虚像</ruby>和<ruby>失想者|失想者</ruby>都不同，它是幻梦境创造出来的存在呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_04.mp3
+msg,1,<outline width=2 color=black>「它的脸真可爱呢――等等，什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm124.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,clau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:surprise,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-470,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104051/adv/sound/fav104051_02_05.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「哇……啊，猴、猴子突然跑进我的浴衣里……嗯、呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,clau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:surprise,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104051/adv/sound/fav104051_02_06.mp3
+msg,1,<outline width=2 color=black>「这样乱动……啊、不可以、那里、是……啊、嗯、\n敏感的……嗯、呜呜……呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:surprise,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_07.mp3
+msg,1,<outline width=2 color=black>「它应该……嗯、啊、没有恶意……但为什么突然……啊、\n那里，尖端是……嗯嗯呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「看起来它没有恶意……！」,选项2 「这只淫贼猴子不能原谅！」
+if,select_===_1,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,clau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:shy,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-470,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104051/adv/sound/fav104051_02_08.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「神、神子大人……呜，为什么你要握紧拳头看着我……啊、\n跑进我胸口了……啊啊、嗯嗯呜……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:anger,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-470,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104051/adv/sound/fav104051_02_09.mp3
+msg,1,<outline width=2 color=black>「啊、啊、真是的！　你给我停下来……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_10.mp3
+msg,1,<outline width=2 color=black>「哈……真是的，居然搞这种恶作剧……真是麻烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_11.mp3
+msg,1,<outline width=2 color=black>「……神子大人，你看起来有些失望的样子。\n难道你在享受看我被猴子羞辱的情景吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_12.mp3
+msg,1,<outline width=2 color=black>「如果是这样的话……比起看，直接触碰，\n不是更能享受吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,clau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104051/adv/sound/fav104051_02_13.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「嗯嗯呜，神、神子大人也……啊，那样、手、伸进来，抓住……呜、\n啊啊，不是的，那里、猴子已经不在了……嗯、嗯嗯呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_14.mp3
+msg,1,<outline width=2 color=black>「哈、啊……神、神子大人，请冷静一下。\n看，猴子已经从浴衣里出来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_15.mp3
+msg,1,<outline width=2 color=black>「呵呵……不过神子大人这么生气还真是少见。\n难道你讨厌我被这样的家伙随意摆布吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_16.mp3
+msg,1,<outline width=2 color=black>「如果是这样的话……再次，请用你的触感\n覆盖我的肌肤也无妨……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_17.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「来吧，神子大人……请随意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_18.mp3
+msg,1,<outline width=2 color=black>「啊，但即便是幻梦境，在这样的走廊里也\n稍微有些缺乏气氛吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_19.mp3
+msg,1,<outline width=2 color=black>「请放心神子大人。这里是温泉旅馆，只要到客房\n就能立即准备床铺」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104051/adv/sound/fav104051_02_20.mp3
+msg,1,<outline width=2 color=black>「那么，神子大人，我们走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
