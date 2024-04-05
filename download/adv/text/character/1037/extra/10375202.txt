@@ -1,0 +1,186 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm070.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「祭日啊，总觉得，挺好的。\n只是这样走着，就感到兴奋……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「有各种各样的小店……会有什么呢，之类的。\n能不能好好看完所有的，之类的……有点坐立不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「但是……肯定真正的祭日，会更热闹。\n人也会很多……热热闹闹的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「……有一天，能去真正的祭日吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「那个时候……希望可以一起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「和大家一起？」,选项2　「当然了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark12,em1,default,animation,0,120,150,0.65,0.9,0.5,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「当然，如果和大家一起，我会很开心……但是，刚才那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「……没什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark6,em2,default,animation,0,130,150,0.65,0.9,0.5,
+msg,1,<outline width=2 color=black>「说没什么就是没什么嘛。哼，就是这样。\n这种事情，叫做透明的撒娇哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯……那个时候，再去捞金鱼，吃棉花糖，\n还有，很多，各种各样的事情要做呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「还有呢，我也想再穿一次浴衣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「那个时候，我会让你看的。\n……如果你觉得我很可爱，我会很开心的。嘿嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+flash,100,200,50,1,0.7,0.5
+playse,/download/character/102305/se/se_c02305_skill_04.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+flash,253,184,109,1,1,1
+playse,/download/character/102305/se/se_c02305_skill_04.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0.5,,,,
+spine,download/adv/spine/Mark11,em1,default,animation,0,130,150,0.65,0.9,0.5,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「――啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「啊……这是……烟花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「好大的声音……吓了我一跳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+flash,255,255,187,1,0.5,0.5
+playse,/download/character/102305/se/se_c02305_skill_04.mp3
+endwait,,,,,,,,,,,
+flash,100,200,50,1,0.5,0.5
+playse,/download/character/102305/se/se_c02305_skill_04.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+flash,80,104,249,1,1,1
+playse,/download/character/102305/se/se_c02305_skill_04.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「但是，真美啊……各种颜色，闪耀着，扩散开来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「……如果以后也能，这样子，一起\n看各种各样的事情，我会很开心的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「如果能那样的话……我肯定会，感到幸福的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「那个……不要去任何地方，不要消失。\n我希望你，能以笑容，留在这里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「这是，什么感情呢……非常温暖，\n我想，更加深入地，去感知它」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「虽然现在还不明白……但是，总有一天会明白的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「那个时候，我也会告诉你的。\n这个感情，是什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「嗯，约定了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

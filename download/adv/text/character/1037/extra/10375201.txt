@@ -1,0 +1,221 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm070.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0.5,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,130,170,0.65,0.9,0.5,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯，嗯，下一个，我们去那边看看吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+anm,move,frau,-1200_-120,1.5,0
+endwait
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,frau,0_-120,1.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「这是什么呢……好多小球在水里流动着……是不是捞球游戏？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「用这个来捞？叫做捞网……但是，这个是纸做的，对吧？\n湿了会不会破掉呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「要不试试看？」,选项2 「我先试试看吧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯……我试试看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「我会加油的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「嗯……那个，我想要大一点的……唔唔唔—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「――……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯。给你示范一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「――……哇，哇，哇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「好厉害……一下子就捞起来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「我也试试看。嗯，慢慢放进水里……――啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「……破了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「唔……可惜了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「嗯。我还想再玩一会儿……但是，还是算了吧\n没关系的。我们去别的地方看看？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「毕竟，这里有很多东西可以玩。而且……我们在一起。\n只在这里就太浪费了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「我想要和你一起看更多的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「所以下一个……嗯，这边是……食物，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「这是棉花糖。看起来好软绵绵的，很可爱呢。\n我们一起吃吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,1,<outline width=2 color=black>「――嗯，啊姆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「哇……这个，好甜，好好吃哦。\n一放进嘴里就融化了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「啊……稍微别动一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+endwait
+anm,scale,frau,0.7_0.7,1,0
+endwait
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.7,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+anm,scale,frau,0.5_0.5,1,0
+endwait
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「你脸颊上，有点粘在上面了……啊姆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「……？我不该吃掉的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「嗯—……那么，我也在脸颊上涂一些……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+msg,1,<outline width=2 color=black>「好了。我吃掉的部分，回馈给你。请享用」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100604/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark10,em1,default,animation,0,130,150,0.65,0.9,0.5,
+msg,1,<outline width=2 color=black>「……哎？有什么不对吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

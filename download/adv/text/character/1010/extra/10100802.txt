@@ -1,0 +1,190 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10030300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_01.mp3
+name,<outline width=2 color=black>洁美拉·吉普莉尔</outline>,
+msg,1,<outline width=2 color=black>「话说回来，我有个请求想请你帮忙，\n可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_02.mp3
+msg,1,<outline width=2 color=black>「其实最近，伊莉娜——那个背叛者的行为让人无法忍受」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_03.mp3
+msg,1,<outline width=2 color=black>「或许是误以为卡蒂亚大人很慈祥，\n所以一而再再而三地表现出粗鲁和不顾他人的言行……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:anger,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_04.mp3
+msg,1,<outline width=2 color=black>「就在前几天，尽管被卡蒂亚大人邀请参加茶会，\n她竟然在那个场合对卡蒂亚大人亲自泡的红茶挑剔——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:unique,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_05.mp3
+msg,1,<outline width=2 color=black>「啊，一想起这件事我就无法抑制住要惩罚那个女人的\n冲动……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:unique,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_06.mp3
+msg,1,<outline width=2 color=black>「那个女人似乎也对你很放心。\n所以，请你协助我暗杀她……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「…………」,选项2　「冷静点」
+if,select_===_1,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:unique,jamila,0,-170,0.4,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_07.mp3
+name,<outline width=2 color=black>洁美拉·吉普莉尔</outline>,
+msg,1,<outline width=2 color=black>「你怎么了？　怎么后退了这么多……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:unique,jamila,0,-170,0.4,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_08.mp3
+msg,1,<outline width=2 color=black>「并不是什么难办的请求。\n我只是想让你给她喝点药而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,jamila,0.5_0.5,0.5,0
+anm,move,jamila,0_-180,0.5,1
+endwait
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:unique,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_09.mp3
+msg,1,<outline width=2 color=black>「那是味淡无香的麻醉药。可以混在食物里，也可以溶解在饮料中。\n以你的能力来说，这不会太难吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,jamila,0.6_0.6,0.5,0
+anm,move,jamila,0_-200,0.5,1
+endwait
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:unique,jamila,0,-200,0.6,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_10.mp3
+name,<outline width=2 color=black>洁美拉·吉普莉尔</outline>,
+msg,1,<outline width=2 color=black>「最后的处理我会亲自来做的，所以不用担心……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_11.mp3
+name,<outline width=2 color=black>洁美拉·吉普莉尔</outline>,
+msg,1,<outline width=2 color=black>「你在说什么，我是很冷静的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_12.mp3
+msg,1,<outline width=2 color=black>「保持冷静，我想到了超过一百种的暗杀方法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_13.mp3
+msg,1,<outline width=2 color=black>「然而，让人烦恼的是那个女人竟然也有一定的能力。\n半吊子的手段是无法对付她的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,jamila,0.6_0.6,0.5,0
+anm,move,jamila,0_-200,0.5,1
+endwait
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:unique,jamila,0,-200,0.6,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_14.mp3
+msg,1,<outline width=2 color=black>「所以，我希望你能协助我。对于能帮助卡蒂亚大人清除害虫的\n工作，你应该会感到光荣吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+anm,scale,jamila,0.5_0.5,0.5,0
+anm,move,jamila,0_-180,0.5,1
+endwait
+
+
+name,<outline width=2 color=black>洁美拉·吉普莉尔</outline>,
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_15.mp3
+msg,1,<outline width=2 color=black>「——……这只是个玩笑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:smile,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_16.mp3
+msg,1,<outline width=2 color=black>「呵呵，当然了。虽然我真的很讨厌那个女人，\n但是卡蒂亚大人也绝不会希望我真的动手吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_17.mp3
+msg,1,<outline width=2 color=black>「毕竟，我还是有那么点分寸的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_18.mp3
+msg,1,<outline width=2 color=black>「我想请你的事情是，告诫那个女人。\n要她谨慎对待轻视卡蒂亚大人的行为」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:anger,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_19.mp3
+msg,1,<outline width=2 color=black>「即使对那个女人来说，严肃地面对卡蒂亚大人也是一种方式，\n但总得有个度吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:sad,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_20.mp3
+msg,1,<outline width=2 color=black>「……嗯，这种方式我做不到，\n虽然我也承认它有一定的必要性……——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_21.mp3
+msg,1,<outline width=2 color=black>「——不，没什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101008/adv/atlas/stand_a,body:normal,jamila,0,-180,0.5,0,,,,
+playvoice,1,download/character/101008/adv/sound/fav101008_02_22.mp3
+msg,1,<outline width=2 color=black>「总之，如果是你说的话那个女人也许会听进去一些，\n所以请务必帮帮忙好吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

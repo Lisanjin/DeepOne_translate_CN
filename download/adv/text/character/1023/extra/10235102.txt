@@ -1,0 +1,202 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11370300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_01.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「这附近的雪比较多，所以请小心走路哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_02.mp3
+msg,1,<outline width=2 color=black>「虽然我认为这种程度的雪量不会让你绊倒，\n但地面可能会冻住，所以非常容易滑倒」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_03.mp3
+msg,1,<outline width=2 color=black>「请尽量让脚底全接触地面，步幅也尽量小一些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_04.mp3
+msg,1,<outline width=2 color=black>「呵呵……如果是走雪地的话就交给我吧。我在雪多的地方\n生活过，所以那些经验很有用」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_05.mp3
+msg,1,<outline width=2 color=black>「那么，就按照这样慢慢前进——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:surprise,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102351/adv/sound/fav102351_02_06.mp3
+msg,1,<outline width=2 color=black>「啊！ 呜！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「抓住她的手」,选项2 「抱住她」
+if,select_===_1,,,,,,,,,
+
+
+shake,0.2,2,10,10
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:shy,weat,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_07.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「啊……对、对不起。脚下有个小台阶……我刚刚还在\n提醒别人要注意，结果自己却这样，真是没面子啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:shy,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_08.mp3
+msg,1,<outline width=2 color=black>「谢谢你救了我。\n虽然事情发生得很突然，但你还是迅速的抓住了我的手……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:shy,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_09.mp3
+msg,1,<outline width=2 color=black>「这样紧紧地握着手，怎么说呢……我有点心跳加速\n了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:surprise,weat,0,-290,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_10.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「诶……那、那个……这个，脸，近――啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:shy,weat,0,-290,0.6,0,,,,
+endwait,,,,,,,,,,,
+shake,0.2,2,10,10
+anm,scale,weat,0.5_0.5,0.3,0
+anm,move,weat,0_-240,0.3,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:shy,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_11.mp3
+msg,1,<outline width=2 color=black>「对不起，让你扶住我了……！\n那个，我、我没很重吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:shy,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_12.mp3
+msg,1,<outline width=2 color=black>「我、我没事的……因为你抱住了我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:shy,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_13.mp3
+msg,1,<outline width=2 color=black>「啊、嗯、唔……脸好近……近到能感觉到呼吸……。\n心脏的跳动变得好快……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_14.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「真的非常对不起。平时应该没问题的，\n但是现在穿着不太习惯的高跟鞋所以……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_15.mp3
+msg,1,<outline width=2 color=black>「…………那个，你的手是？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:shy,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_16.mp3
+msg,1,<outline width=2 color=black>「虽然确实如果牵着手走应该不会摔倒，\n但那样就像是在依赖你，有点害羞呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:shy,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_17.mp3
+msg,1,<outline width=2 color=black>「……那个，真的可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_18.mp3
+msg,1,<outline width=2 color=black>「那么，就失礼了……嗯，果然你的手很大呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_19.mp3
+msg,1,<outline width=2 color=black>「这样连着的话，我会感到很安心……其实，我\n应该更要坚强的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_20.mp3
+msg,1,<outline width=2 color=black>「但是，像这样依赖重要的人，让他们陪伴我，\n也是一件很开心的事情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_21.mp3
+msg,1,<outline width=2 color=black>「那个……能不能稍微再紧一点握住我的手……？\n我想更深入地……感受你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102351/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102351/adv/sound/fav102351_02_22.mp3
+msg,1,<outline width=2 color=black>「――好的。那就，紧紧地握住吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

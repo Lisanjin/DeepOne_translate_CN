@@ -1,0 +1,189 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_01.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「海风真的很舒服……这样慢慢地在海边散步\n感觉很惬意呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_02.mp3
+msg,1,<outline width=2 color=black>「因为我并不熟悉海边，\n所以只是走走就有很多新鲜的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_03.mp3
+msg,1,<outline width=2 color=black>「踩在沙滩上的感觉，还有波浪拍打着脚的声音……还有，你看，\n漂亮的贝壳……对我来说都是新鲜的体验」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_04.mp3
+msg,1,<outline width=2 color=black>「但是……游泳可能还需要一些时间去适应。\n有点尴尬，我担心会被浪冲走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_05.mp3
+msg,1,<outline width=2 color=black>「啊，当然，如果你想游泳的话，不用管我\n就去吧。光是走路可能会觉得无聊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「我们来做其他可以玩的游戏」,选项2 「只要和你在一起，就算只是走路也很开心」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_06.mp3
+msg,1,<outline width=2 color=black>「其他的游戏，是吗……呃，抱歉。我不太清楚，\n现在也想不出来，比如说什么样的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,3,0.2,0.5
+shake,0.2,2,10,10
+playse,/download/sound/se/se_070.mp3
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:surprise,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_07.mp3
+msg,1,<outline width=2 color=black>「哇！ 哼、呜哼……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_08.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「为、为什么突然泼我水……哇、好、好冷……！\n哼、如果你这么做，我也不会放过你的……哼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,3,0.2,0.5
+shake,0.2,2,10,10
+playse,/download/sound/se/se_070.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_09.mp3
+msg,1,<outline width=2 color=black>「呵呵，我会把受到的都还给你的。\n你就做好心理准备吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,3,0.2,0.5
+shake,0.2,2,10,10
+playse,/download/sound/se/se_070.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_10.mp3
+msg,1,<outline width=2 color=black>「还没完……哇！ 你做到了？ 那么，来更多的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,3,0.2,0.5
+shake,0.2,2,10,10
+playse,/download/sound/se/se_070.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_11.mp3
+msg,1,<outline width=2 color=black>「呼、呵呵呵……真是的，这只是互相泼水，\n怎么会这么有趣呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_12.mp3
+msg,1,<outline width=2 color=black>「虽然可能有点像小孩子，但这样的度过方式也很美好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_13.mp3
+msg,1,<outline width=2 color=black>「……真是的。你这么说，我都要误会了，\n以为你是在说我——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:shy,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_14.mp3
+msg,1,<outline width=2 color=black>「――啊，没、没有什么……。\n请忘掉刚才的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_15.mp3
+name,<outline width=2 color=black>失想者</outline>,
+msg,1,<outline width=2 color=black>「失想者居然会……想象未来，这样的事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_16.mp3
+msg,1,<outline width=2 color=black>「…………但是，就像现在这样，把自己交给这一刻的感情\n也不错吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_17.mp3
+msg,1,<outline width=2 color=black>「只要和你在一起，无论在哪里，无论做什么，\n我的内心都会充满喜悦和幸福……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_18.mp3
+msg,1,<outline width=2 color=black>「每一个积累起来的回忆，\n对我来说都是无法替代的宝物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_19.mp3
+msg,1,<outline width=2 color=black>「――或许有一天，这个梦会醒来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102309/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102309/adv/sound/fav102309_02_20.mp3
+msg,1,<outline width=2 color=black>「但现在，我只想和你多度过一些这样的时光，\n我就是这么想的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

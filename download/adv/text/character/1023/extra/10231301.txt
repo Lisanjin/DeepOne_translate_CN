@@ -1,0 +1,222 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11630300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_01.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「呵呵。你觉得这身打扮如何呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_02.mp3
+msg,1,<outline width=2 color=black>「看来这身打扮，是学校里负责保护学生健康的保健教师——也就是\n保健室的老师的装扮」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_03.mp3
+msg,1,<outline width=2 color=black>「白大褂……还有听诊器之类的，怎么说呢，\n给人一种有些能干的女性的感觉，不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_04.mp3
+msg,1,<outline width=2 color=black>「我平时总是受到泽诺先生和你们的照顾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_05.mp3
+msg,1,<outline width=2 color=black>「但是，既然穿上了这么重要职位的装扮，借此机会，\n我感觉我应该更多地帮助他人，让自己变得更有责任感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_06.mp3
+msg,1,<outline width=2 color=black>「当然，我并不是医生，所以不能诊断疾病或者\n治疗伤口……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:normal,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_07.mp3
+msg,1,<outline width=2 color=black>「但即使如此，我认为穿上这身服装肯定有其意义」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:smile,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_08.mp3
+msg,1,<outline width=2 color=black>「所以，如果你有什么问题，尽管告诉我哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　『……其实我感觉有点发热』,选项2　『感觉胸口有些闷……？』
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_09.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「是、是吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,weat,0.7_0.7,0.5,0
+anm,move,weat,0_-370,0.5,0
+endwait
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:normal,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_10.mp3
+msg,1,<outline width=2 color=black>「对不起，我要摸摸你的额头，失礼了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:normal,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102313/adv/sound/fav102313_01_11.mp3
+msg,1,<outline width=2 color=black>「嗯……确实，感觉有点热……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-370,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_12.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「你感觉怎么样，有没有不舒服？\n不要强忍，如果不舒服就要告诉我哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:surprise,weat,0,-240,0.5,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_13.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「胸部，那……那、那不是很严重吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,weat,0.7_0.7,0.5,0
+anm,move,weat,0_-370,0.5,0
+endwait
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_14.mp3
+msg,1,<outline width=2 color=black>「嗯、嗯……这种时候应该怎么办……首、首先，\n我试试摸摸看会不会好一些……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_15.mp3
+msg,1,<outline width=2 color=black>「嗯，你觉得难受的地方是这里吗……？\n感觉心跳也变大了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_16.mp3
+msg,1,<outline width=2 color=black>「那么，边摸边……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:normal,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_17.mp3
+msg,1,<outline width=2 color=black>「疼疼飞走吧、疼疼飞走吧。疼疼飞走吧、疼疼飞走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_18.mp3
+msg,1,<outline width=2 color=black>「……怎、怎么样……有没有感觉好一些？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_19.mp3
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,1,<outline width=2 color=black>「你、你的脸比刚才更红了……难道，\n你可能患上了什么严重的疾病……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_20.mp3
+msg,1,<outline width=2 color=black>「啊，嗯、嗯，生病的时候……生病的时候是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:shy,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_21.mp3
+msg,1,<outline width=2 color=black>「这、这样紧紧抱住你，让你感觉温暖，\n这样会不会好一些呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:shy,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_22.mp3
+msg,1,<outline width=2 color=black>「……你的脸色看起来舒服一些了，\n是不是有一些效果了呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:normal,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_23.mp3
+msg,1,<outline width=2 color=black>「如果是这样的话，我就再抱你一会儿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat,0,-370,0.7,0,,,,
+playvoice,1,download/character/102313/adv/sound/fav102313_01_24.mp3
+msg,1,<outline width=2 color=black>「啊，你的身体又变热了一些……这个情况下，\n我应该抱得更紧一些吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102313/adv/atlas/stand_a,body:sad,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-540,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102313/adv/sound/fav102313_01_25.mp3
+msg,1,<outline width=2 color=black>「紧紧抱住」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

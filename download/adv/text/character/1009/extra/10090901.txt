@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11100302.jpg,0.5,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm037.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_01.mp3
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「最近、我总有些想法。\n我为何会在这里呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_02.mp3
+msg,1,<outline width=2 color=black>「一直以来，我都在为了对夺走我父母的圣奠教复仇而战斗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_03.mp3
+msg,1,<outline width=2 color=black>「并且，为了阻止那些想要得到纳克特原书的人的野心，\n我来到了拉莱耶……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_04.mp3
+msg,1,<outline width=2 color=black>「然而，不知为何。在这里——和你们共度时光，\n我的复仇之火渐渐熄灭」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_05.mp3
+msg,1,<outline width=2 color=black>「并不是因为我明白了复仇无法带来任何东西，那只是美言。\n只是……可能是因为理由变得模糊了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_06.mp3
+msg,1,<outline width=2 color=black>「一直假装没发现也已经到了极限。\n我其实并不是因为父母被夺走而愤怒」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_07.mp3
+msg,1,<outline width=2 color=black>「――那天，我无法接受看着父母为了信仰而自愿献出生命的背影」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_08.mp3
+msg,1,<outline width=2 color=black>「无法让父母回头看我的自己……无法阻止父母的自己的无力感，我只想逃避……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_09.mp3
+msg,1,<outline width=2 color=black>「多么卑鄙。我把这样的感情称为复仇，\n伤害了很多人，夺走了无数生命」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「也一定有被你救助的人」,选项2　「你想接受惩罚吗」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_10.mp3
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「确实，我可能救了一些被圣奠教欺骗的人。\n但是……那又算什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_11.mp3
+msg,1,<outline width=2 color=black>「我并不是出于想救他们的心情去救他们的。那不是值得骄傲的\n事情，也不能因此就说我做了什么伟大的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_12.mp3
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「……惩罚，是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_13.mp3
+msg,1,<outline width=2 color=black>「我不知道。我知道我很糟糕，但这并不意味着，\n我对圣奠教是一群下流之徒的看法有所改变」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_14.mp3
+msg,1,<outline width=2 color=black>「我并不后悔对他们挥剑。\n只是……如果失去了理由，我应该怎么做……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_15.mp3
+msg,1,<outline width=2 color=black>「……也许，我只是因为不知所措，感到不安吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_16.mp3
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「尽管如此，但就算如此，我也不想低头、沮丧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_17.mp3
+msg,1,<outline width=2 color=black>「那时候，无知地笑着的卡蒂亚，\n现在已经开始向前进了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_18.mp3
+msg,1,<outline width=2 color=black>「……我不能让像妹妹一样的她，\n把我抛在后头」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_19.mp3
+msg,1,<outline width=2 color=black>「所以……如果你能稍微帮我一下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_20.mp3
+msg,1,<outline width=2 color=black>「…………算了，其实没什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:anger,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_21.mp3
+msg,1,<outline width=2 color=black>「等等。你在笑什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100909/adv/atlas/stand_a,body:shy,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100909/adv/sound/fav100909_01_22.mp3
+msg,1,<outline width=2 color=black>「……哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

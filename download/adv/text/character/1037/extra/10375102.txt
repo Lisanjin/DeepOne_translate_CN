@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯……对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「明明在一起玩得好好的……突然就有点晕……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「嗯……但是，我现在已经好多了……毕竟是来海边的。\n就这样静静地待着，太浪费了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「优先考虑」,选项2「如果角色互换呢？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「但是……我还想和你一起玩」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「我还有很多想做的事情哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「我不太擅长游泳，希望你能教我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「去寻找贝壳也很有趣……还有，\n其他的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:surprise,frau,0,-140,0.7,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「诶……互换角色是什么意思……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「那样的话……可能会因为担心而想哭……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「但是……即便如此，我还是……既然来了，我想要更多更多的，\n回忆……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:surprise,frau,0,-140,0.7,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「――……再一起来？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:surprise,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「你愿意和我一起再来海边吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「原来如此……今天不行也没关系，我们还可以再一起玩。\n那我明白了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:shy,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「这是个约定哦，如果你违背了，就要受到针扎的惩罚呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:smile,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「嗯……我相信你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「啊，但是……我不会再勉强自己了。就这样再待一会儿，\n可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「虽然不能一起玩耍……但就算只是这样一起看海，\n我也会感到有些开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「也许，是因为这种开心的情绪太过于充盈，\n才会让我感到有些晕眩吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:sad,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「……你呢？虽然时间很短，但你开心吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:smile,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「――……嗯。能和你在一起，真好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:normal,frau,0,-140,0.7,0,,,,
+msg,1,<outline width=2 color=black>「你能稍微……再靠近我一点吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,frau,0.8_0.8,0.5,0
+anm,move,frau,0_-160,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:shy,frau,0,-160,0.8,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯……嘻嘻。这样感觉到你离我这么近，\n我会更更开心……会感到更更幸福的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100603/adv/atlas/stand_a,body:shy,frau,0,-160,0.8,0,,,,
+msg,1,<outline width=2 color=black>「我们再某一天……一起来海边吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
