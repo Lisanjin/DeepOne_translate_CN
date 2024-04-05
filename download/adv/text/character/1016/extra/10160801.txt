@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11120300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:unique,patrisia,0,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_01.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「……那个，我有点在意的事情，可以问你吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_02.mp3
+msg,1,<outline width=2 color=black>「我觉得这个地方一定是为了重现圣诞的景色而设的。\n灯光装饰很漂亮，我觉得非常好看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:unique,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_03.mp3
+msg,1,<outline width=2 color=black>「但是，我的这身打扮是怎么回事？虽然有点像圣诞老人的\n元素在里面，但是不觉得哪里有些奇怪吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:unique,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_04.mp3
+msg,1,<outline width=2 color=black>「一般来说，圣诞老人并不会露出这么多胸部和腿部……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_05.mp3
+msg,1,<outline width=2 color=black>「就算是受到你的力量影响衣服发生了改变，\n但这样还是让人感到害羞……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「这样的圣诞老人也没关系」,选项2 「我感到非常抱歉」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_06.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「怎么可能没关系呢！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:unique,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_07.mp3
+msg,1,<outline width=2 color=black>「如果有这样穿着的圣诞老人，像你这样的人肯定会\n忘记礼物，只看着她吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:unique,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_08.mp3
+msg,1,<outline width=2 color=black>「……我要说一下，无论你怎么否认，\n只看着胸部的话可没有说服力哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_09.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「那个，你一边看着我的胸部一边道歉，我反而不知道该怎么回应」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_10.mp3
+msg,1,<outline width=2 color=black>「虽然我多少理解了男性的性格……但是，\n被你这么直勾勾地看着，我还是会感到害羞」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_11.mp3
+msg,1,<outline width=2 color=black>「如果能少看一点就……呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_12.mp3
+msg,1,<outline width=2 color=black>「……不行吗。是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:unique,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_13.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「虽然可以说这已经是常事了，但为什么你给我穿的\n衣服总是这么暴露呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_14.mp3
+msg,1,<outline width=2 color=black>「至少，给我穿点普通可爱的衣服就……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_15.mp3
+msg,1,<outline width=2 color=black>「没、没有，我不是那个意思，刚才只是说话的口误……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_16.mp3
+msg,1,<outline width=2 color=black>「等回到拉莱耶后穿可爱的圣诞老人服，……我不是在说这个\n话题啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_17.mp3
+msg,1,<outline width=2 color=black>「总之，像我这样的人穿可爱的东西并不合适，\n你也知道的对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_18.mp3
+msg,1,<outline width=2 color=black>「咦……啊、呜……为、为什么，要给像我这样的人穿上\n可爱的衣服呢……呜、呜呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_19.mp3
+msg,1,<outline width=2 color=black>「……你并不是为了笑话我对吧……虽然我本来就不认为你\n会有这样的想法……但是……但是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_20.mp3
+msg,1,<outline width=2 color=black>「………………我、我知道了。既然你都说到这个份上，\n我也会稍微，尽力一试的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101608/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101608/adv/sound/fav101608_01_21.mp3
+msg,1,<outline width=2 color=black>「但是，你绝对不能笑出来哦！？ 这是承诺哦！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

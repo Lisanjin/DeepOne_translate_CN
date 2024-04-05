@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11200300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:normal,patrisia,0,-200.0,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_01.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「话说回来，我听说这个领域的樱花会影响人的精神……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:unique,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_02.mp3
+msg,1,<outline width=2 color=black>「貌似以前达娜小姐就成了受害者——不，应该说是遭受了影响……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:sad,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_03.mp3
+msg,1,<outline width=2 color=black>「我大致听说了发生了什么……精神会回到过去的自我……这怎么说呢，真是令人恐惧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:sad,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_04.mp3
+msg,1,<outline width=2 color=black>「我认为每个人都有想要忘记的记忆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:sad,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_05.mp3
+msg,1,<outline width=2 color=black>「达娜小姐在恢复后，因为受到了打击，好像一直在房间里闭门不出……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:sad,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_06.mp3
+msg,1,<outline width=2 color=black>「如果这种效果也出现在我身上……那真是太可怕了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:sad,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_07.mp3
+msg,1,<outline width=2 color=black>「虽然对达娜小姐感到非常抱歉，但老实说，我真心觉得还好这种事情没有发生在我身上」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「有你不想回忆的事吗？」,选项2 「潘多莉西亚也会有那样的感觉吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:sad,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_08.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「这个嘛，怎么说呢……相对来说，可能比其他人有更多这样的回忆……也许吧。是的，相对来说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:surprise,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_09.mp3
+msg,1,<outline width=2 color=black>「——想看看我……别、别说傻话了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:unique,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_10.mp3
+msg,1,<outline width=2 color=black>「如果「那个时候」的我被伙伴们……被你看到的话……光是想象\n就让我心寒……真的，为什么我会那样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:surprise,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_11.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「什……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:shy,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_12.mp3
+msg,1,<outline width=2 color=black>「那、那个，不，我是说，比起内心，我只是在外表上稍微放纵了一点，没有达娜小姐那么痛苦……——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:surprise,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_13.mp3
+msg,1,<outline width=2 color=black>「…………啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:sad,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_14.mp3
+msg,1,<outline width=2 color=black>「不、不是的……？ 我刚才并不是想说达娜小姐很痛苦之类的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:sad,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_15.mp3
+msg,1,<outline width=2 color=black>「……这件事情，请千万不要告诉达娜小姐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:sad,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_16.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「好、好了，我们不谈这个了！为什么一定要讨论这种，\n自己把自己逼入绝境的事情呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:anger,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_17.mp3
+msg,1,<outline width=2 color=black>「总之，人总是有些不愿回忆的过去，\n随便翻出来是不对的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:anger,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_18.mp3
+msg,1,<outline width=2 color=black>「不行，绝对不可以。无论你说什么我都不会说出来的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101609/adv/atlas/stand_a,body:normal,patrisia,0,-200.0,0.5,0,,,,
+playvoice,1,download/character/101609/adv/sound/fav101609_02_19.mp3
+msg,1,<outline width=2 color=black>「痛苦的回忆，连做酒的下酒菜都不够格。\n这次请你放弃吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_01.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「说起来……我突然想起了一些关于哥哥的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_02.mp3
+msg,1,<outline width=2 color=black>「每次向达娜小姐询问关于哥哥的事情时，她总是频繁地提到他喝醉的事情\n……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_03.mp3
+msg,1,<outline width=2 color=black>「但实际上，我几乎没有见过我哥哥喝醉的样子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_04.mp3
+msg,1,<outline width=2 color=black>「虽然在哥哥离家之前，我从他的朋友那里听到过这样的事情，\n但我直接看到的可能只有一次或两次」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_05.mp3
+msg,1,<outline width=2 color=black>「也许，这是哥哥在保持他的形象吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_06.mp3
+msg,1,<outline width=2 color=black>「虽然我记不太清楚，但我感觉喝醉的哥哥，\n怎么说呢……有点麻烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_07.mp3
+msg,1,<outline width=2 color=black>「虽然只是我的感觉，但达娜小姐喝醉后的样子可能和他很像。\n比如喝多后精神变好，对周围的人显得有些烦躁，特别是这点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「……嗯，可能就是这样吧」,选项2　「我觉得这种喝醉的方式不好」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_08.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「你真是宽容啊。那天被喝醉的达娜小姐强迫\n喝酒的人不就是你吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_09.mp3
+msg,1,<outline width=2 color=black>「虽然达娜小姐看起来很高兴你陪着她，\n但我觉得你偶尔也可以疏远她一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_10.mp3
+msg,1,<outline width=2 color=black>「否则的话，事情可能会升级，那样的话，你也会\n困扰，我想达娜小姐也并不是故意要让你困扰的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_11.mp3
+msg,1,<outline width=2 color=black>「当然，这种平衡感或者说是判断力，并不是我能做的，\n我想这还是由你来决定吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_12.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「嗯，这就是典型的酒鬼行为呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_13.mp3
+msg,1,<outline width=2 color=black>「拉莱耶里面有很多善于照顾人、心胸宽广的人，不管是喝酒的还是不喝酒的\n他们都会包容她……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_14.mp3
+msg,1,<outline width=2 color=black>「但我还是有点担心达娜小姐有一天会因为喝酒而做出什么大错\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_15.mp3
+msg,1,<outline width=2 color=black>「或许应该找个机会好好谈谈这个问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_16.mp3
+msg,1,<outline width=2 color=black>「――所以，这件事就交给你了好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_17.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「相比于我或者其他人说，达娜小姐可能更愿意接受\n你的话语」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_18.mp3
+msg,1,<outline width=2 color=black>「――啊？　为什么，你问……难道非得我明说你才能明白吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_19.mp3
+msg,1,<outline width=2 color=black>「啊，确实……达娜小姐在你在和你不在的时候，\n喝醉的样子确实有些不同，这一点我看得很清楚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_20.mp3
+msg,1,<outline width=2 color=black>「但对于你来说，这两者是没有比较的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_21.mp3
+msg,1,<outline width=2 color=black>「……你问她的喝醉的样子有什么不同？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101611/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101611/adv/sound/fav101611_02_22.mp3
+msg,1,<outline width=2 color=black>「那个――呵呵。让我们把它当作秘密吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

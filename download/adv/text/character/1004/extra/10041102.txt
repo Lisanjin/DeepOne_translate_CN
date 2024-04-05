@@ -1,0 +1,156 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_01.mp3
+name,<outline width=2 color=black>达娜·达雷尔·道明寺</outline>,
+msg,1,<outline width=2 color=black>「我有时候真的觉得，潘多莉西亚小姐，她就像金的妹妹一样。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_02.mp3
+msg,1,<outline width=2 color=black>「比如有时候，她看着大家热闹地玩耍，眼神里充满了温柔。还有，为了朋友而握紧剑的那双眼睛……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_03.mp3
+msg,1,<outline width=2 color=black>「……啊，但是，确实有一个地方完全不同。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_04.mp3
+msg,1,<outline width=2 color=black>「看着我喝醉的潘多莉西亚小姐的眼神，我想，应该和当时看着金喝酒的我的眼神一样吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「既然你知道……」,选项2 「为什么会变得像她……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_05.mp3
+name,<outline width=2 color=black>达娜·达雷尔·道明寺</outline>,
+msg,1,<outline width=2 color=black>「等一下！我知道你想说什么，我知道……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_06.mp3
+msg,1,<outline width=2 color=black>「……金曾经说过。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:anger,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_07.mp3
+msg,1,<outline width=2 color=black>「'酒是生命的汽油'——这样。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_08.mp3
+msg,1,<outline width=2 color=black>「等等，请停止那种从心底里发出的叹息！开玩笑！只是开玩笑而已……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_09.mp3
+name,<outline width=2 color=black>达娜·达雷尔·道明寺</outline>,
+msg,1,<outline width=2 color=black>「金，他是我的目标之一……所以追逐他的背影，这并不奇怪，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_10.mp3
+msg,1,<outline width=2 color=black>「——我这么向潘多莉西亚小姐表达过，但她用非常冷淡的眼神看着我。那真是吓人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_11.mp3
+msg,1,<outline width=2 color=black>「但是，潘多莉西亚小姐也能通过我看到金的影子……——啊，好的，没什么。我闭嘴。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_12.mp3
+name,<outline width=2 color=black>达娜·达雷尔·道明寺</outline>,
+msg,1,<outline width=2 color=black>「说实话，我自己也不知道为什么会这么迷恋酒……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_13.mp3
+msg,1,<outline width=2 color=black>「但是，你不觉得因为能喝酒才能有更多的交流吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_14.mp3
+msg,1,<outline width=2 color=black>「平时不爱说话的人喝了酒就会变得话多起来。而且，你应该也不讨厌喝酒吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:normal,dana,0,-180,0.5,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_15.mp3
+msg,1,<outline width=2 color=black>「比如说，布里吉特小姐，平时有点冷淡，但如果她喝了酒可能就会变得更直率——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+shake,0.2,4,15,15
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:surprise,dana,0,-250,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_16.mp3
+msg,1,<outline width=2 color=black>「——哎？不行吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-250,0.6,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_17.mp3
+msg,1,<outline width=2 color=black>「为什么你要那么严肃地……哦，好的，我明白了。我会注意不让布里吉特小姐喝酒的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-250,0.6,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_18.mp3
+msg,1,<outline width=2 color=black>「确实布里吉特小姐平时就公开表示她不喝酒，但是有什么特别的原因吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:smile,dana,0,-250,0.6,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_19.mp3
+msg,1,<outline width=2 color=black>「啊，难道说，她喝醉后的表现比我还要糟糕？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100411/adv/atlas/stand_a,body:sad,dana,0,-250,0.6,0,,,,
+playvoice,1,download/character/100411/adv/sound/fav100411_02_20.mp3
+msg,1,<outline width=2 color=black>「啊，好的，我明白了。我们不再谈这个话题了。我会停止的。所以，请别再用那种严肃的表情看着我了，那真的很吓人……好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

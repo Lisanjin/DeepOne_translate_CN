@@ -1,0 +1,166 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_01.mp3
+name,<outline width=2 color=black>达娜·达雷尔·道明寺</outline>,
+msg,1,<outline width=2 color=black>「……真烦人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_02.mp3
+msg,1,<outline width=2 color=black>「今天就全权交给你了，嗯……那个女人，脑袋有问题吗？\n为什么我要参与这种猜想呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_03.mp3
+msg,1,<outline width=2 color=black>「话说回来……那家伙……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_04.mp3
+msg,1,<outline width=2 color=black>「――只是因为宿醉难受想逃跑吧……！\n猜想的前一天就不该喝那么多酒，真是个笨蛋……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「肯定有深层次的原因……」,选项2　「……等会儿，我会生气的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_05.mp3
+name,<outline width=2 color=black>达娜·达雷尔·道明寺</outline>,
+msg,1,<outline width=2 color=black>「你觉得有吗？真的吗？你真心相信这个女人说的话吗？\n不，即使那是真的也无所谓了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_06.mp3
+msg,1,<outline width=2 color=black>「我希望你能感受到一个与绝望不同的未来――这种漂亮的理由，\n挂在嘴边应该很简单吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_07.mp3
+msg,1,<outline width=2 color=black>「但是，如果是从一个在宴会上大闹一通，然后在走廊里睡着被年轻人带回房间的人那里听到的，\n还带着酒气呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:unique,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_08.mp3
+msg,1,<outline width=2 color=black>「――告诉我。这话有什么说服力呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_09.mp3
+name,<outline width=2 color=black>达娜·达雷尔·道明寺</outline>,
+msg,1,<outline width=2 color=black>「哼……我竟然开始同情你了。\n你，一直都在应付那个女人吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_10.mp3
+msg,1,<outline width=2 color=black>「一直在应付她……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:unique,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_11.mp3
+msg,1,<outline width=2 color=black>「…………嗯，挺辛苦的吧。加油啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:sad,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_12.mp3
+name,<outline width=2 color=black>达娜·达雷尔·道明寺</outline>,
+msg,1,<outline width=2 color=black>「哎……头好痛。不仅是宿醉，还有那个笨女人竟然\n和我是同一个存在，我实在无法相信，也不想相信」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_13.mp3
+msg,1,<outline width=2 color=black>「这个世界抓住了与绝望不同的幸福，\n嗯，好吧，这次我承认了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_14.mp3
+msg,1,<outline width=2 color=black>「对我来说，选择了非复仇之路的世界都没有价值，\n但对你们来说的幸福无疑就在这里吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_15.mp3
+msg,1,<outline width=2 color=black>「微小的差异，稍微的相遇，极微小的偏差累积起来，\n这个世界得到了奇迹般的现在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:unique,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_16.mp3
+msg,1,<outline width=2 color=black>「所以……在幸福的世界中的我会沉溺于酒精并抛弃女性――也就是说，\n变成一个抛弃人类尊严的生物吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:unique,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_17.mp3
+msg,1,<outline width=2 color=black>「这简直无法接受……这比任何绝望都更不能接受<ruby>幸福|ぜつぼう</ruby>」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_18.mp3
+msg,1,<outline width=2 color=black>「……你至少应该稍微掌握一下那个女人的节奏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_19.mp3
+msg,1,<outline width=2 color=black>「我所知道的世界和这个世界最大的区别就是\n你这个存在是否在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_20.mp3
+msg,1,<outline width=2 color=black>「也就是说，这边的我变成那样，或多或少\n你也有责任。那么你应该承担责任」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_21.mp3
+msg,1,<outline width=2 color=black>「你的脸上写满了「这太不公平了」。嗯，确实不公平。\n但是，世界就是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_22.mp3
+msg,1,<outline width=2 color=black>「无论如何，至少你得改善一下那个女人的生活习惯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s,0,-180,0.5,0,,,,
+playvoice,1,download/character/100480/adv/sound/fav100480_02_23.mp3
+msg,1,<outline width=2 color=black>「如果再有我因为宿醉被强迫接受这种身体的\n情况出现，那时候……你可要做好准备？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,162 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11390300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm055.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_01.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「这次的服装……可以说是很普通了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_02.mp3
+msg,1,<outline width=2 color=black>「如果我穿这种低调的装束，就不用担心你的目光了，\n稍微放心了些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_03.mp3
+msg,1,<outline width=2 color=black>「——别那么尴尬，我只是开个玩笑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_04.mp3
+msg,1,<outline width=2 color=black>「话说回来，我也有想说这是咎由自取的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_05.mp3
+msg,1,<outline width=2 color=black>「就算现在你一副尴尬的样子……如果我真的穿暴露的\n衣服，你肯定会看过来吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_06.mp3
+msg,1,<outline width=2 color=black>「你这样躲闪视线，就像在坦白一样。\n被看到那样的我，真的很害羞呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_07.mp3
+msg,1,<outline width=2 color=black>「不过，如果对方是你……被你这样注意，\n并不讨厌……或者说……反而」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_08.mp3
+msg,1,<outline width=2 color=black>「——等等，我到底在说什么……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_09.mp3
+msg,1,<outline width=2 color=black>「话、话说回来，请看这个区域……！\n像是故事里的糖果城市呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「有点太强势了吧……？」,选项2 「我更关心潘多莉西亚」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_10.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「什、什么强势了？\n我觉得刚才的对话很自然啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_11.mp3
+msg,1,<outline width=2 color=black>「——唔，呜呜……没办法嘛。如果不换话题的话，\n我可能会说出更奇怪的话给你听……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_12.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「诶，那个，你突然说这些……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:shy,patrisia,0,-340,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/101653/adv/sound/fav101653_01_13.mp3
+msg,1,<outline width=2 color=black>「等一下，你离得太近了……今天的衣服很普通好吗！？\n几乎没有露肤，你到底在关心什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101653/adv/sound/fav101653_01_14.mp3
+msg,1,<outline width=2 color=black>「啊，哦……？ 你为什么突然离开了……难、难道是在\n开我玩笑吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:shy,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_15.mp3
+msg,1,<outline width=2 color=black>「真是的！ 不要这样欺负我，专心想想吧！\n……这样一来，像我这样紧张的人不就像个傻瓜吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_16.mp3
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,1,<outline width=2 color=black>「真是的，总是被你牵着走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_17.mp3
+msg,1,<outline width=2 color=black>「……但是，可能正因为你这种不做作的态度，我才能放松下来，\n觉得和你在一起的时间很愉快吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_18.mp3
+msg,1,<outline width=2 color=black>「不过，并不是说因为这样就可以随便做什么哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:sad,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_19.mp3
+msg,1,<outline width=2 color=black>「……如果你能少一点摆弄我就好了。\n否则，我这边可受不了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:normal,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_20.mp3
+msg,1,<outline width=2 color=black>「但是说了也没用，你肯定不会听的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101653/adv/atlas/stand_a,body:smile,patrisia,0,-200,0.5,0,,,,
+playvoice,1,download/character/101653/adv/sound/fav101653_01_21.mp3
+msg,1,<outline width=2 color=black>「真是的，你这个让人头疼的家伙……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
