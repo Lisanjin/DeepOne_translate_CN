@@ -1,0 +1,214 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm120.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_01.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「互相泼水，冷冷的感觉真舒服呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_02.mp3
+msg,1,<outline width=2 color=black>「而且，被泼了就泼回去……这样简单的重复，\n也挺有趣的——对吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Water,em1,default,animation,0,0,-300,2,1.0,0
+playse,/download/sound/se/se_050.mp3
+flash,255,255,255,1,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_03.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「啊……对、对不起！\n我刚才是不是太用力了，你没事吧――哇！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Water,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait,,,,,,,,,,,
+wait,1.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_04.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「咕……突然袭击，你还真是斗志昂扬啊……！\n看来，我没必要手下留情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Water,em1,default,animation,0,0,-300,2,1.0,0
+playse,/download/sound/se/se_050.mp3
+flash,255,255,255,1,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_05.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「嘻嘻……真是的，为什么这么简单的事情会这么有趣。\n真是不可思议」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_06.mp3
+msg,1,<outline width=2 color=black>「虽然在幻梦境中这么放松其实不应该……但我知道，\n和你在一起，即使做这样的事情，我的心也会欢快跳动……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_07.mp3
+msg,1,<outline width=2 color=black>「……一直以来，我都在掩饰自己的弱点，以免被抛弃\n但现在我可以做回自己——真实的姬莉叶·桐原」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_08.mp3
+msg,1,<outline width=2 color=black>「我有这样的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「不要逞强，好好休息一下」,选项2　「看到你这样子我很开心」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_09.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「是啊……不能总是保持紧张。\n我知道这一点……不过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_10.mp3
+msg,1,<outline width=2 color=black>「总的来说，我从小就不擅长放松和休息」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_11.mp3
+msg,1,<outline width=2 color=black>「虽然说是担心过多听起来好一些，\n但实际上，我只是不擅长切换状态而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_12.mp3
+msg,1,<outline width=2 color=black>「但现在……我完全沉浸在和你的时间里，甚至没有时间去考虑其他的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_13.mp3
+msg,1,<outline width=2 color=black>「和你度过的时间，对我来说……可能就是充实和满足吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_14.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「听你说看到我无需掩饰的样子很开心，我感到有些复杂，\n也挺害羞的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_15.mp3
+msg,1,<outline width=2 color=black>「因为，这其实是我不想让任何人看到的一面」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_16.mp3
+msg,1,<outline width=2 color=black>「但是……如果是你的话……或许让你看到这样的我也没关系，\n我有这样的感觉……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_17.mp3
+msg,1,<outline width=2 color=black>「说着说着，我又说出了让自己害羞的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_18.mp3
+msg,1,<outline width=2 color=black>「总、总之……我能享受这个时间，\n都是因为你……谢谢你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_19.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「你觉得呢……和我一起度过的这段时间，\n你觉得开心吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_20.mp3
+msg,1,<outline width=2 color=black>「或许问这个问题还有些早……毕竟，\n我们还有很多时间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:smile,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_21.mp3
+msg,1,<outline width=2 color=black>「今天我决定彻底放松，所以我想尽可能地\n享受这个时间，也希望你能享受」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_22.mp3
+msg,1,<outline width=2 color=black>「所以――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,kirie,0.6_0.6,0.5,0
+anm,move,kirie,0_-140,0.5,1
+endwait
+
+
+spriteatlas,download/character/101153/adv/atlas/stand_a,body:smile,kirie,0,-140,0.6,0,,,,
+playvoice,1,download/character/101153/adv/sound/fav101153_03_23.mp3
+msg,1,<outline width=2 color=black>「我们接下来要不要去海里游泳呢？\n关于接下来的事情，我们可以一边在波浪中摇晃一边一起考虑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

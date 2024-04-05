@@ -1,0 +1,136 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11180301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_01.mp3
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,1,<outline width=2 color=black>「话说回来，你……莉泽洛特不能自己解决吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:anger,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_02.mp3
+msg,1,<outline width=2 color=black>「不论怎样，她对这个世界的魔术很感兴趣，\n每次有事就会向我提问……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_03.mp3
+msg,1,<outline width=2 color=black>「我也稍微了解了一下那边的魔术，但由于世界不同\n我们彼此都无法正常使用对方世界的魔术」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_04.mp3
+msg,1,<outline width=2 color=black>「不过我不知道是因为求知欲还是什么，她对我们这边的魔术\n似乎进行了非常热心的研究」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_05.mp3
+msg,1,<outline width=2 color=black>「尽管如此，我还是无法理解为什么她要向我咨询。\n明明还有其他魔术师……唉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「因为你很会照顾人」,选项2　「我也对那边的魔术感兴趣」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_06.mp3
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哈……真是个有趣的笑话啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:anger,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_07.mp3
+msg,1,<outline width=2 color=black>「要我帮你把眼睛打瞎吗？用玻璃珠代替的话，\n应该比现在看得更清吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_08.mp3
+msg,1,<outline width=2 color=black>「真是的……也该适可而止地取笑人了。\n会照顾人什么的，真是太可笑了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_09.mp3
+msg,1,<outline width=2 color=black>「嗯，莉泽洛特似乎充满了血腥的气息，\n可能是和其他天真的人合不来吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_10.mp3
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,1,<outline width=2 color=black>「啊……你，对这边的魔术完全不行。\n如果是那边的魔术，也许……这就是你的想法吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_11.mp3
+msg,1,<outline width=2 color=black>「虽然有希望是自由的，但事情真的会那么顺利吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_12.mp3
+msg,1,<outline width=2 color=black>「但是，如果那样的话，正好。你去陪莉泽洛特吧。\n即使实际上不能使用，但是你应该积累了一些魔术知识吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_13.mp3
+msg,1,<outline width=2 color=black>「如果她对你感兴趣，她来找我的频率也会降低，\n这就是所谓的一举两得」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_14.mp3
+msg,1,<outline width=2 color=black>「不过，我还是建议你小心一点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_15.mp3
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,1,<outline width=2 color=black>「莉泽洛特那家伙，在原来的世界里似乎为所欲为。\n听说她甚至以消灭人类为目标」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_16.mp3
+msg,1,<outline width=2 color=black>「真正想要做到这一点的人，肯定不是好人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_17.mp3
+msg,1,<outline width=2 color=black>「虽然现在她似乎没有这个打算，但人性本质并不会那么轻易改变。\n你也别太放松警惕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101253/adv/atlas/stand_a,body:smile,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101253/adv/sound/fav101253_02_18.mp3
+msg,1,<outline width=2 color=black>「虽然对于像你这样天真无邪的人说这些可能没什么意义，\n但还是想提醒你一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

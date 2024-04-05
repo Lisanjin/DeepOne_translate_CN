@@ -1,0 +1,201 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm130.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「嘻嘻。你觉得这身打扮如何？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_02.mp3
+msg,1,<outline width=2 color=black>「这是日本的和服。这种叫做礼服吧？\n是在新年或者庆典时穿的对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_03.mp3
+msg,1,<outline width=2 color=black>「颜色和图案都非常漂亮，真是太好看了……呐，我穿上合适吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_04.mp3
+msg,1,<outline width=2 color=black>「――啊，等等。不用回答」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_05.mp3
+msg,1,<outline width=2 color=black>「我希望你能用行动而不是语言来告诉我，可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_06.mp3
+msg,1,<outline width=2 color=black>「你想对穿上礼服的我做些什么……我希望你能告诉我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_07.mp3
+msg,1,<outline width=2 color=black>「好吗，可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　摸摸头,选项2　犹豫不决
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-130,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+shake,0.5,3,12,0,milva
+playvoice,1,download/character/101358/adv/sound/fav101358_01_08.mp3
+msg,1,<outline width=2 color=black>「哎呀……嘻嘻，被你这样摸头，\n我、我喜欢哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-130,0.6,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_09.mp3
+msg,1,<outline width=2 color=black>「你的手指在我头发间滑过的感觉，还有手的温柔力度……\n这些……虽然我不太会描述，但我觉得我想要更多」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-130,0.6,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_10.mp3
+msg,1,<outline width=2 color=black>「不，或许这样说并不完全准确」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:smile,milva,0,-130,0.6,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_11.mp3
+msg,1,<outline width=2 color=black>「虽然我希望你能多做一些……但同时，我也感到有些不满足」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_12.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哎呀，你是在烦恼吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_13.mp3
+msg,1,<outline width=2 color=black>「我本来还期待着会被你做些什么呢。\n结果有点让人失望呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_14.mp3
+msg,1,<outline width=2 color=black>「既然是你，那么比如说……。\n――我以为你会做这样的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva,0.6_0.6,0.6,0
+anm,move,milva,0_-130,0.6,0
+endwait
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva2,0,0,0,0,,,,
+imgconf,milva2,milva1,0,-350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101358/adv/sound/fav101358_01_15.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「――啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:smile,milva,0,-130,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_16.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「嘻嘻。你一脸惊讶的样子……偶尔来个突然袭击也不错呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-130,0.6,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_17.mp3
+msg,1,<outline width=2 color=black>「顺便说一下，吻在脸颊上是表示亲爱的意思哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-130,0.6,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_18.mp3
+msg,1,<outline width=2 color=black>「不过，对于你来说，或许吻在耳朵上\n比吻在脸颊上更好呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-130,0.6,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_19.mp3
+msg,1,<outline width=2 color=black>「耳朵上的吻代表什么意思呢？嘻嘻，哎呀，我记不起来了。\n唔，真的想不起来呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-130,0.6,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_20.mp3
+msg,1,<outline width=2 color=black>「如果你亲我一下，我可能就记得了哦？\n在哪都可以哦？脸颊也好，头发也好，当然耳朵也可以」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-130,0.6,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_21.mp3
+msg,1,<outline width=2 color=black>「如果是些特别的地方，比如说大腿上的吻，\n也许也符合我的口味……嘻嘻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-130,0.6,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_22.mp3
+msg,1,<outline width=2 color=black>「啊啊，不过穿着和服的话，在大腿上亲吻可能会有些困难呢。\n可能首先得解开带子才行吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva,0.7_0.7,0.6,0
+anm,move,milva,0_-160,0.6,0
+endwait
+
+
+spriteatlas,download/character/101358/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101358/adv/sound/fav101358_01_23.mp3
+msg,1,<outline width=2 color=black>「告诉我……你想在哪里，亲一下？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

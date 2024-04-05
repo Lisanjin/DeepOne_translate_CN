@@ -1,0 +1,197 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11380300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「这里，真的好闪亮，看起来像是个非常有趣的地方呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_02.mp3
+msg,1,<outline width=2 color=black>「再加上，这身打扮……这不就是偶像的装扮吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_03.mp3
+msg,1,<outline width=2 color=black>「其实呢，以前卡蒂亚小姐曾经推荐过我，\n一起看过偶像的现场演唱会录像」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_04.mp3
+msg,1,<outline width=2 color=black>「说实话，我对偶像之类的并不太了解，\n也没有太大的兴趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_05.mp3
+msg,1,<outline width=2 color=black>「但是，卡蒂亚小姐如此热情地邀请我，让我也开始感兴趣了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_06.mp3
+msg,1,<outline width=2 color=black>「于是，看了录像之后，我有些惊讶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_07.mp3
+msg,1,<outline width=2 color=black>「和我没什么两样的女孩们在大家面前唱歌、跳舞。\n观众们也都沉浸在其中……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_08.mp3
+msg,1,<outline width=2 color=black>「虽然对偶像只有模糊的认识，但实际看到之后，\n原来它是如此美好的事物啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_09.mp3
+msg,1,<outline width=2 color=black>「……说说看。你觉得现在的我怎么样。\n看起来像个偶像了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「你已经是个出色的偶像了」,选项2 「比任何偶像都要可爱」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_10.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「嘻嘻，你这么说我很开心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_11.mp3
+msg,1,<outline width=2 color=black>「那样的话，如果我做更多像偶像一样的事情，\n你会更高兴吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:shy,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_12.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「嗯哼，嗯哼哼……偶像们都是集结了大量人气，非常厉害的孩子们\n即便如此，你还是觉得我比任何偶像都要好？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_13.mp3
+msg,1,<outline width=2 color=black>「不知为何。当你这么说的时候，我更想得到你的赞美，\n这种感觉就越来越强烈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_14.mp3
+msg,1,<outline width=2 color=black>「我想让你更加、更加地迷恋我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_15.mp3
+msg,1,<outline width=2 color=black>「只有现在，我也是个偶像……所以想要吸引人心，\n这种想法一定不是什么奇怪的事情吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_16.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「话说回来，上次看到的录像里，偶像们对着粉丝们飞吻呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_17.mp3
+msg,1,<outline width=2 color=black>「但是……对于你来说，那样好像还不够呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_18.mp3
+msg,1,<outline width=2 color=black>「现在，在这里只有我和你……所以我是、\n只属于你的偶像……给你特别的粉丝服务吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_19.mp3
+msg,1,<outline width=2 color=black>「快点，低下头。然后，闭上眼睛……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:shy,milva2,0,0,0,0,,,,
+imgconf,milva2,milva1,0,-350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101313/adv/sound/fav101313_01_20.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「——啾，啾，啪……嗯，啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11380300.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_21.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「呵呵，怎么样。在舞台上和偶像接吻这种事，\n平常是做不到的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_22.mp3
+msg,1,<outline width=2 color=black>「既然有机会，再来一次，试试看？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101313/adv/atlas/stand_a,body:smile,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101313/adv/sound/fav101313_01_23.mp3
+msg,1,<outline width=2 color=black>「嗯……如果你想要的话，再低下头，闭上眼睛好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

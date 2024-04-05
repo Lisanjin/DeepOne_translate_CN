@@ -1,0 +1,195 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s2,0,0,0,0,,,,
+imgconf,milva_s2,milva_s1,0,-350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101380/adv/sound/fav101380_01_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「――嘿嘿，找到了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_02.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「啊啊，突然叫出声，吓到你了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_03.mp3
+msg,1,<outline width=2 color=black>「哎……？怎么了，为什么后退呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_04.mp3
+msg,1,<outline width=2 color=black>「――哦，不好。说起来，我忘记控制自己的气息了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_05.mp3
+msg,1,<outline width=2 color=black>「接近我，大部分人都会感到不安或者恐惧，\n这种感觉会变得更强烈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_06.mp3
+msg,1,<outline width=2 color=black>「艾蒂尔是――啊啊，不是这个世界的艾蒂尔，而是我的世界的艾蒂尔，\n她说我身上散发的绝望味道太重了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_07.mp3
+msg,1,<outline width=2 color=black>「所以通常我都会控制自己，但来到这个世界后，\n我似乎稍微放松了一些。对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「没什么」,选项2　「不觉得不方便吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_08.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「……哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_09.mp3
+msg,1,<outline width=2 color=black>「这样啊……你真的没事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva_s,0.7_0.7,0.7,0
+anm,move,milva_s,0_-160,0.7,0
+endwait
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:unique,milva_s,0,-160,0.7,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_10.mp3
+msg,1,<outline width=2 color=black>「那么，我现在就抱住你，也没问题吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-160,0.7,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_11.mp3
+msg,1,<outline width=2 color=black>「――开玩笑的，别当真」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva_s,0.5_0.5,0.7,0
+anm,move,milva_s,0_-120,0.7,0
+endwait
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_12.mp3
+msg,1,<outline width=2 color=black>「你是在顾虑我吧，但是对这种反应我已经习惯了，\n你不用硬撑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_13.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「不方便……应该没有吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_14.mp3
+msg,1,<outline width=2 color=black>「本来就很少有和别人亲近的时候。\n在我身边的，也只有艾蒂尔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_15.mp3
+msg,1,<outline width=2 color=black>「但是艾蒂尔也说我阴沉、烦人。\n所以才会尽量控制自己，虽然确实有些闷闷不乐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_16.mp3
+msg,1,<outline width=2 color=black>「啊啊。但是，不用在意……现在，我更想和你聊聊天\n这种感觉要强得多」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_17.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「我对你非常感兴趣呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_18.mp3
+msg,1,<outline width=2 color=black>「你这样关心我，还有……最重要的是，\n不管我怎么惊慌失措，你都没有从我眼前逃走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_19.mp3
+msg,1,<outline width=2 color=black>「对于这个世界的我和姐姐来说，你是一个带有特殊意义的人。\n原本只是这样的兴趣，但现在……似乎不仅仅如此了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_20.mp3
+msg,1,<outline width=2 color=black>「你能告诉我，关于你和这个世界的我们的事情吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_21.mp3
+msg,1,<outline width=2 color=black>「这个世界的我，知道了一种与绝望不同的甜蜜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_22.mp3
+msg,1,<outline width=2 color=black>「虽然到最后我都没能完全明白，\n但如果和你交谈，或许我能稍微理解一些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_23.mp3
+msg,1,<outline width=2 color=black>「虽然现在知道这些已经没什么用了……但即使如此，\n当我知道这些时，我会有什么感觉，又会想些什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101380/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101380/adv/sound/fav101380_01_24.mp3
+msg,1,<outline width=2 color=black>「我想确认一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,166 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11650300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm064.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_01.mp3
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,1,<outline width=2 color=black>「这个地方，总觉得过于华丽……让人有些不安。\n我本不适合在这样的地方漫步」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_02.mp3
+msg,1,<outline width=2 color=black>「而且，敌人也没怎么出现……有点无聊呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_03.mp3
+msg,1,<outline width=2 color=black>「想让你给我讲个有趣的故事来打发时间……但我觉得你可能没有那么好的幽默感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:unique,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_04.mp3
+msg,1,<outline width=2 color=black>「……对了。虽然不情愿，但既然已经被迫扮演神职人员的角色了。你就在这里忏悔吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_05.mp3
+msg,1,<outline width=2 color=black>「作为主人，我一直觉得你缺乏反思。\n借此机会，让你反省一下自己的行为如何？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_06.mp3
+msg,1,<outline width=2 color=black>「你总是为所欲为。别告诉我，你没什么需要反省的，\n不要开这种玩笑好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「其实是关于米露瓦的事――」,选项2　「我想不起来」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:unique,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_07.mp3
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:unique,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_08.mp3
+msg,1,<outline width=2 color=black>「米露瓦和你做了什么呢？ 我可没有宽恕一切的善良哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:unique,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_09.mp3
+msg,1,<outline width=2 color=black>「看情况，可能需要进行一些惩罚……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:surprise,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_10.mp3
+msg,1,<outline width=2 color=black>「――哈？ 一起偷吃？ 在厨房里？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_11.mp3
+msg,1,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_12.mp3
+msg,1,<outline width=2 color=black>「真是的……你应该有更多的事情需要忏悔，\n而不是这种无聊的小恶作剧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:surprise,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_13.mp3
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,1,<outline width=2 color=black>「你是认真的吗？\n……我都快要佩服你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_14.mp3
+msg,1,<outline width=2 color=black>「拉莱耶的人们或许对你太宽容了……你也是，\n是不是太过于得寸进尺了……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_15.mp3
+msg,1,<outline width=2 color=black>「我觉得你也该学习一些正常的价值观和常识了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_16.mp3
+msg,1,<outline width=2 color=black>「……没想到会有一天我要向别人讲解常识」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_17.mp3
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,1,<outline width=2 color=black>「唉……本来只是想找点事做打发时间，但和你聊天总让我感到疲倦\n不知道该怎么形容……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_18.mp3
+msg,1,<outline width=2 color=black>「……但是，没想到会和你这样聊天。\n仔细想想，真是奇怪呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_19.mp3
+msg,1,<outline width=2 color=black>「至少到目前为止，没有像你这样随便和我说话的好心人……我也从未想过要回应这种人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_20.mp3
+msg,1,<outline width=2 color=black>「但现在……虽然不愿承认，但看来我受到了好心人的坏影响。真是麻烦啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:sad,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_21.mp3
+msg,1,<outline width=2 color=black>「这么一想，你应该向我忏悔的，不就是让我们变得如此吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_22.mp3
+msg,1,<outline width=2 color=black>「真是的……真的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:smile,ridia,0,-120,0.5,0,,,,
+playvoice,1,download/character/101255/adv/sound/fav101255_02_23.mp3
+msg,1,<outline width=2 color=black>「――你真的给我添了不少麻烦。我们本不该遇见你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

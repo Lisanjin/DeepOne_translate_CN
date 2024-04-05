@@ -1,0 +1,156 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11530300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「这里，怎么看都像是从童话书里走出来的城堡啊……不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_02.mp3
+msg,1,<outline width=2 color=black>「一看就觉得有些诡异的气氛……\n里面的情况会是怎样的呢――呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_03.mp3
+msg,1,<outline width=2 color=black>「嗯……一直模仿小猫咪可能会让说话变得有些困难。\n如果一直刻意地去做，感觉会变得很奇怪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_04.mp3
+msg,1,<outline width=2 color=black>「还是正常说话比较好吧。虽然模仿小猫咪很有趣，\n但是如果不能和你顺畅地聊天我会觉得不开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_05.mp3
+msg,1,<outline width=2 color=black>「不过，当我想要撒娇的时候我还是会模仿小猫咪\n给你看的，所以你可以放心了哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_06.mp3
+msg,1,<outline width=2 color=black>「那么，关于那个建筑物……在童话书里，像那样的城堡\n通常都是公主在住的对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_07.mp3
+msg,1,<outline width=2 color=black>「但是有时候也会住着任性的国王，或者是恶意的女王\n这样的人物呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_08.mp3
+msg,1,<outline width=2 color=black>「你说，如果那个城堡里真的住着什么人，\n你觉得那会是什么样的人呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「可爱的公主」,选项2　「恶毒的魔法师」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_09.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哦……你喜欢可爱的公主吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:unique,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_10.mp3
+msg,1,<outline width=2 color=black>「你说的公主，会是什么样的人呢？\n我有点好奇呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「像米露瓦这样的可爱公主」
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_11.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哎……我？　原来。你是这样看待我\n的啊……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_12.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「魔法师啊……可能是用魔法夺取了国王或公主\n居住的城堡吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_13.mp3
+msg,1,<outline width=2 color=black>「城堡地下有个牢房，公主被囚禁在那里，\n这也是常有的情节呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:shy,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_14.mp3
+msg,1,<outline width=2 color=black>「被夺走了居住的地方，还被恶魔法师囚禁，\n肯定会非常痛苦吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:shy,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_15.mp3
+msg,1,<outline width=2 color=black>「呵呵，公主的心情，一定非常甜蜜吧。\n光是想象就让人感到激动不已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_16.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「实际上，在幻梦境的城堡里应该不会有人住着吧……啊，对了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_17.mp3
+msg,1,<outline width=2 color=black>「我们现在就假装两个人住在这座城堡里怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_18.mp3
+msg,1,<outline width=2 color=black>「我扮演公主的角色……\n你想扮演什么角色呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_19.mp3
+msg,1,<outline width=2 color=black>「无论你扮演什么角色我都觉得好。无论是酷酷的王子，\n还是恶意的魔法师……或者，那个……色色的国王，什么的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_20.mp3
+msg,1,<outline width=2 color=black>「呵呵，最后一个纯粹是开玩笑的，不用想得太复杂。\n你想和变成公主的我有什么样的关系，就由这个来决定吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101356/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101356/adv/sound/fav101356_02_21.mp3
+msg,1,<outline width=2 color=black>「那么……你怎么决定呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

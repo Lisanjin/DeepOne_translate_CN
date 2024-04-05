@@ -1,0 +1,251 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11270301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_01.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「浴衣真是的，感觉动起来好不方便。而且，只是用腰带固定\n，感觉随时都会散开……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_02.mp3
+msg,1,<outline width=2 color=black>「还有，这双凉鞋……不，应该说是木屐。\n这也很不方便移动，完全不适合战斗。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:sad,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_03.mp3
+msg,1,<outline width=2 color=black>「——呃，那个，虽然被夸配起来很好看也会感到困扰。\n现在并不是在谈这个话题……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_04.mp3
+msg,1,<outline width=2 color=black>「嗯……并不是说我不高兴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_05.mp3
+msg,1,<outline width=2 color=black>「啊，哇！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,scale,kirie,0.7_0.7,0.7,0.5
+anm,move,kirie,0_-180,0.5,0
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+endwait
+wait,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie,0,-180,0.7,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_06.mp3
+msg,1,<outline width=2 color=black>「啊……对、对不起。因为穿着不习惯的衣服所以摔了一跤。\n谢谢你扶住我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,kirie,0.5_0.5,0.5,0.5
+anm,move,kirie,0_-120,0.5,0
+endwait
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:surprise,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_07.mp3
+msg,1,<outline width=2 color=black>「……？ 那个，你怎么了。为什么那么认真地看着我。\n我身上，有什么奇怪的地方吗……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_08.mp3
+msg,1,<outline width=2 color=black>「「——啊，浴、浴衣散开了……！？ 请、请朝另一边看！\n别看我……！」 </outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「……没看见」,选项2 「没事的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_09.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「刚才，你明明就在盯着看吧？\n你在看我的胸部，看得那么明显！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_10.mp3
+msg,1,<outline width=2 color=black>「为什么要说出那么容易被识破的谎言！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_11.mp3
+msg,1,<outline width=2 color=black>「——所以说，就算你诚实地道歉也不一定就能被原谅！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_12.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「那是什么感想。你觉得这样就算是补救了吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_13.mp3
+msg,1,<outline width=2 color=black>「话说回来，什么叫做没事！　到底哪里没事了！\n即使要补救，也应该有更合适的话可以说吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_14.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「呜……总之，请不要转过来，我要重新穿好……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101109/adv/sound/fav101109_01_15.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「……啊，这个，怎么重新系好带子呢……呃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101109/adv/sound/fav101109_01_16.mp3
+msg,1,<outline width=2 color=black>「啊啊！？　怎、怎么反而更散了……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,kirie1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie2,0,0,0,0,,,,
+imgconf,kirie2,kirie1,0,-480,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101109/adv/sound/fav101109_01_17.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「啊！？　等、等一下，我说了不要看我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:surprise,kirie2,0,0,0,0,,,,
+imgconf,kirie2,kirie1,0,-480,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101109/adv/sound/fav101109_01_18.mp3
+msg,1,<outline width=2 color=black>「诶……你会系浴衣吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie2,0,0,0,0,,,,
+imgconf,kirie2,kirie1,0,-480,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101109/adv/sound/fav101109_01_19.mp3
+msg,1,<outline width=2 color=black>「…………在这种情况下也不能自己去想办法，没有别的选择了\n虽然有些不愿意，但我能请你帮忙吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11270301.jpg,1,255
+endwait
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_20.mp3
+name,<outline width=2 color=black>姬莉叶・桐原</outline>,
+msg,1,<outline width=2 color=black>「……没想到，你真的会系浴衣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:normal,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_21.mp3
+msg,1,<outline width=2 color=black>「我知道你学了很多东西，\n但没想到连这个也……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:anger,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_22.mp3
+msg,1,<outline width=2 color=black>「话说回来，你……刚才，虽然是为了系浴衣，但那个……奇怪的\n地方，你没有碰到吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_23.mp3
+msg,1,<outline width=2 color=black>「……看你那一脸茫然的样子，看来真的没有意识到呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101109/adv/atlas/stand_a,body:shy,kirie,0,-120,0.5,0,,,,
+playvoice,1,download/character/101109/adv/sound/fav101109_01_24.mp3
+msg,1,<outline width=2 color=black>「只有我一个人在意着，心跳加速……啊，真是的。\n我果然还是不擅长穿浴衣……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

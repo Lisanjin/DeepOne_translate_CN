@@ -1,0 +1,141 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11400300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哎呀？这个牌子上写着入学仪式……从今天开始我也是这个学校的学生了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_02.mp3
+msg,1,<outline width=2 color=black>「嘻嘻，不仅能穿上可爱的制服，还能去上学，感觉会很有趣呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_03.mp3
+msg,1,<outline width=2 color=black>「你也穿着制服，难道我们可以一起入学？如果是的话，希望我们能成为同一个班级的同学呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「入学仪式都做些什么？」,选项2 「你的制服很可爱」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_04.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「那个……被问到具体做什么，我也不太清楚。应该是为了向新入学的孩子们传达欢迎的目的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_05.mp3
+msg,1,<outline width=2 color=black>「虽然我知道这些知识，但我从来没有参加过入学仪式，所以具体做什么我也不清楚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_06.mp3
+msg,1,<outline width=2 color=black>「以前姐姐因为工作要去上学，那时候她说要听一堆无聊的话很痛苦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_07.mp3
+msg,1,<outline width=2 color=black>「虽然我也想尝试一下，但在这里好像没有会长篇大论的人呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_08.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哎呀……嘻嘻，谢谢你，我很开心。我也觉得这件制服非常可爱呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:sad,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_09.mp3
+msg,1,<outline width=2 color=black>「但是……可爱的，只是指制服吗？难道你不觉得我也很可爱吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_10.mp3
+msg,1,<outline width=2 color=black>「这样说的话，就像是在逼你说出口。既然这样，我更希望听到你用你的话语来夸奖我，刚才那个不算」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_11.mp3
+msg,1,<outline width=2 color=black>「比起这个，快看。我们去看看这个领域吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_12.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「虽然只是在幻梦境里，但既然有机会，我想去看看各种各样的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_13.mp3
+msg,1,<outline width=2 color=black>「我对学校生活有点好奇。因为学校就像是普通生活的象征一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_14.mp3
+msg,1,<outline width=2 color=black>「普通的孩子们在那里进行普通的学习，成为普通的大人。那些过着学校生活的孩子们，他们每天都过得怎么样呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_15.mp3
+msg,1,<outline width=2 color=black>「虽然这里没有其他人，但如果和你一起去参观，或许我也能感受到些什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_16.mp3
+msg,1,<outline width=2 color=black>「对了，刚才我开玩笑说如果我们能成为同一个班级就好了。但是在这里的时候，真的抱着彼此都是学生的心态过日子也不错呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva,0.7_0.7,0.7,0
+anm,move,milva,0_-150,0.7,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:normal,milva,0,-150,0.7,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_17.mp3
+msg,1,<outline width=2 color=black>「看，我还给你挽了挽手。既然有机会，不仅仅是同班同学，带点恋人的感觉会更有趣吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101310/adv/atlas/stand_a,body:smile,milva,0,-150,0.7,0,,,,
+playvoice,1,download/character/101310/adv/sound/fav101310_01_18.mp3
+msg,1,<outline width=2 color=black>「那我们开始探索学校吧……嘻嘻，真期待呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

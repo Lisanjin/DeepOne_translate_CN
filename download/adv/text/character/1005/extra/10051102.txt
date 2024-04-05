@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11380300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_01.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「嘿，假设一下……如果我真的成为了偶像，你会来支持我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_02.mp3
+msg,1,<outline width=2 color=black>「哎呀，这种提问方式不太好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_03.mp3
+msg,1,<outline width=2 color=black>「好好想想看，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_04.mp3
+msg,1,<outline width=2 color=black>「如果艾蒂尔加德纳小姐冲击性地以偶像身份出道了呢？那样的话，我的魅力就会被全世界共享了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_05.mp3
+msg,1,<outline width=2 color=black>「这是艾蒂尔加德纳小姐啊？肯定是势如破竹地增长人气，转眼间就成为明星，这是肯定的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:sad,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_06.mp3
+msg,1,<outline width=2 color=black>「那样的话，私人时间就会减少，可能也没法和哥哥见面了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_07.mp3
+msg,1,<outline width=2 color=black>「当然，因为是偶像所以肯定禁止触手可及……。即便如此，你还能赞同我成为偶像吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「……当然」,选项2 「还是有点困难」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_08.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「喂喂。你这副好像嚼碎了十只苦虫的表情说出来的话，可没有说服力哟—？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_09.mp3
+msg,1,<outline width=2 color=black>「真是的，别再坚持那些意气用事了，直接说你想和艾蒂尔加德纳小姐在一起不就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_10.mp3
+msg,1,<outline width=2 color=black>「难道这也是男人的意气之战吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_11.mp3
+msg,1,<outline width=2 color=black>「——在这种时候，对女人说些容易理解的话就好了。那样的话，可能会轻易就让她屈服哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_12.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「哦……如果你能这么明确地撤回之前的话，反而感觉挺痛快的，甚至有点舒服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_13.mp3
+msg,1,<outline width=2 color=black>「嘛？如果你想独占艾蒂尔加德纳小姐，我倒不会觉得不舒服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_14.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「我问了个无聊的问题。本来就知道你不是那种会忍耐的类型」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_15.mp3
+msg,1,<outline width=2 color=black>「总的来说，压抑自己的感情……我也不喜欢那种高尚的态度」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:smile,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_16.mp3
+msg,1,<outline width=2 color=black>「如果有自己想要做的事情，无论有什么理由，都不放弃。我们彼此都更喜欢这样吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:sad,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_17.mp3
+msg,1,<outline width=2 color=black>「从这个意义上说，我绝对没法成为偶像」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:sad,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_18.mp3
+msg,1,<outline width=2 color=black>「如果因为保持体形或是对皮肤有影响而禁止熬夜和吃垃圾食品，我有自信三天就坚持不住了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_19.mp3
+msg,1,<outline width=2 color=black>「所以，模仿一下就刚刚好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_20.mp3
+msg,1,<outline width=2 color=black>「嘛，虽然是模仿，但为了让哥哥满意，我会好好提供粉丝服务的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100511/adv/atlas/stand_a,body:smile,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100511/adv/sound/fav100511_02_21.mp3
+msg,1,<outline width=2 color=black>「嘿，你这个脸色怎么突然变得紧张了，笨蛋。你在期待什么，这个色色的家伙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

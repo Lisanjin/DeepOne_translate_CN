@@ -1,0 +1,145 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11260300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:sad,edel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_01.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「啊……好热……想回家……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:anger,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_02.mp3
+msg,1,<outline width=2 color=black>「这个地方到底是怎么回事，完全就是夏天的感觉啊。\n我不喜欢冷也不喜欢热」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:sad,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_03.mp3
+msg,1,<outline width=2 color=black>「啊，真想念开着空调的房间……现在就想回去\n喝一口冰冷的可乐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:sad,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_04.mp3
+msg,1,<outline width=2 color=black>「唯一值得庆幸的是，这套衣服的透气性还算可以。\n但就这样下去，我似乎要变成汗流浃背、味道重的煮熟了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_05.mp3
+msg,1,<outline width=2 color=black>「哎呀，虽然我不讨厌穿裤子，\n但在这种时候，我开始觉得穿裙子也不错……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_06.mp3
+msg,1,<outline width=2 color=black>「不过，我自己知道裙子对我来说并不合适。\n但是裙子通风好，应该不会闷热吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_07.mp3
+msg,1,<outline width=2 color=black>「顺便问一下……作为平时对艾蒂尔加德纳小姐身体充满好奇的\n哥哥，你更喜欢裙子还是裤子呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「裙子」,选项2 「裤子」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_08.mp3
+msg,1,<outline width=2 color=black>「啊，果然是这样啊。对啊，艾蒂尔加德纳小姐的大腿，\n甚至可能看到隐藏在其中的女孩秘密呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:smile,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_09.mp3
+msg,1,<outline width=2 color=black>「作为富有想象力的哥哥，自然会期待那一面。\n嗯，遗憾的是，这次你的愿望并没能实现」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_10.mp3
+msg,1,<outline width=2 color=black>「这说明你的热情不够。如果你对裙子的感情更强烈，\n我可能会换一种打扮呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:unique,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_11.mp3
+msg,1,<outline width=2 color=black>「……我再强调一遍，裤子不是内裤好吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_12.mp3
+msg,1,<outline width=2 color=black>「哈，我开玩笑的。我以为你这个喜欢看女生裙底的色色男生肯定会选裙子，\n所以就……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:smile,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_13.mp3
+msg,1,<outline width=2 color=black>「作为对你怀疑我的道歉，要不要让你看看艾蒂尔加德纳小姐的胸部？\n这件衣服，只要拉下胸部的拉链就能看到深深的乳沟了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_14.mp3
+msg,1,<outline width=2 color=black>「还是说，你更喜欢下面？但很遗憾。\n这次艾蒂尔加德纳小姐迷人的美腿就得等等了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_15.mp3
+msg,1,<outline width=2 color=black>「如果你非要看，下次我可以试试穿超短短裤……开玩笑的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:surprise,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_16.mp3
+msg,1,<outline width=2 color=black>「说着说着，下次真的让我穿上了怎么办。\n你到底有多色啊——真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_17.mp3
+msg,1,<outline width=2 color=black>「……嗯，如果你非要看的话，我也不介意哪天给你看看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:smile,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_18.mp3
+msg,1,<outline width=2 color=black>「笨蛋，别再问了。太过于渴望反而让人退步」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_19.mp3
+msg,1,<outline width=2 color=black>「我说过了，「某一天」，某一天」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100508/adv/atlas/stand_a,body:smile,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100508/adv/sound/fav100508_01_20.mp3
+msg,1,<outline width=2 color=black>「所以，在那一天来临之前，就先满足于摸摸胸部吧。\n对你，我可以提供这个服务……怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

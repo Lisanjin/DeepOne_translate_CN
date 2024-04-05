@@ -1,0 +1,194 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_01.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「哎呀，所以石板路的尽头是通向河流的啊。\n星星也看得很清楚，这地方氛围还真不错」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_02.mp3
+msg,1,<outline width=2 color=black>「啊，但是我记得牵着织女和牛郎的应该是银河吧。\n那么这个，难道是那种预兆吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_03.mp3
+msg,1,<outline width=2 color=black>「你想怎么办呢，哥哥。如果就这样和艾蒂尔加德纳小姐分开了\n怎么办。你能一个人回家吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:surprise,edel,0,-160,0.7,0.5,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_04.mp3
+msg,1,<outline width=2 color=black>「哇……突然抱过来是怎么回事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_05.mp3
+msg,1,<outline width=2 color=black>「真是的，是想说要和艾蒂尔加德纳小姐一直在一起吗？\n真可爱的家伙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:smile,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_06.mp3
+msg,1,<outline width=2 color=black>「但是，如果只有这点程度的话还不够啊。\n必须更强烈一些，否则我无法被留住」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_07.mp3
+msg,1,<outline width=2 color=black>「――就像这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_08.mp3
+msg,1,<outline width=2 color=black>「怎么样哥哥。如果强烈到这种程度，艾蒂尔加德纳小姐\n的柔软感觉也能更好地传达出来，感觉棒极了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_09.mp3
+msg,1,<outline width=2 color=black>「看，心跳得好快啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「我也是艾蒂尔加德纳」,选项2 「感觉有点不安」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:shy,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_10.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「笨蛋……即使知道是女生，也别说出这种话。\n这种事情可不是男女平等能解决的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:shy,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_11.mp3
+msg,1,<outline width=2 color=black>「真是的……只是这样相拥而已就紧张，\n你是个纯情无暇的孩子吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:unique,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_12.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「难道你在想着胸部的感觉然后想些什么色情的事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_13.mp3
+msg,1,<outline width=2 color=black>「反倒是我，感觉有点安心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_14.mp3
+msg,1,<outline width=2 color=black>「这样紧紧抱在一起，可以感受到彼此的心跳和温暖，\n就像我们正在变成一个整体……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_15.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「……嘛，偶尔这样也不错」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_16.mp3
+msg,1,<outline width=2 color=black>「这样的话，我想保护的东西就在我身边，\n我能感觉到它们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_17.mp3
+msg,1,<outline width=2 color=black>「所以和你在一起的时候……我心里可能会变得温暖」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:smile,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_18.mp3
+msg,1,<outline width=2 color=black>「说出这种话，真不像我呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_19.mp3
+msg,1,<outline width=2 color=black>「但是……偶尔这样也不错吧。这样的坦率的艾蒂尔加德纳小姐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_20.mp3
+msg,1,<outline width=2 color=black>「看，你的手臂松开了哦？要紧紧地抱住我。\n再低下点头。没关系的……――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,edel1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:shy,edel2,0,0,0,0,,,,
+imgconf,edel2,edel1,0,-340,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100510/adv/sound/fav100510_03_21.mp3
+msg,1,<outline width=2 color=black>「嗯……吸……吸，啪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:smile,edel,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_22.mp3
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,1,<outline width=2 color=black>「……哈哈。为什么眼睛瞪得那么大，我只是把你平时做的事情\n反过来做了一遍而已？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100510/adv/atlas/stand_a,body:normal,edel,0,-160,0.7,0,,,,
+playvoice,1,download/character/100510/adv/sound/fav100510_03_23.mp3
+msg,1,<outline width=2 color=black>「这种大服务，只有你一个人能享受……要感谢我哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
