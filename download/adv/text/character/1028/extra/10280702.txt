@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11390300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_01.mp3
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「那个……话说，今天是情人节对吧？所以，嗯，\n……其实我也试着做了巧克力……要吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_02.mp3
+msg,1,<outline width=2 color=black>「……等等，为什么你那么开心……难道，\n你会因为收到我给的巧克力而感到高兴吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_03.mp3
+msg,1,<outline width=2 color=black>「那、那样啊……那么，等你思考完后我就给你，\n一定要收下哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_04.mp3
+msg,1,<outline width=2 color=black>「啊，但是……那个，这是我第一次给别人巧克力……有点害羞，\n关于我给你巧克力的事情……不要告诉任何人好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「……我会妥善处理」,选项2　「我想炫耀」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_05.mp3
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「你得承诺我哦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_06.mp3
+msg,1,<outline width=2 color=black>「如果你不答应我，我就不会给你巧克力了哦？\n那样也可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_07.mp3
+msg,1,<outline width=2 color=black>「……其实，我很不愿意无法把专门为你做的巧克力送出去\n但是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_08.mp3
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「绝对不能这样做！？如果被做出这么害羞的事情，以后\n我该怎么以正常的面孔去维持治安工作啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_09.mp3
+msg,1,<outline width=2 color=black>「总的来说，我做的巧克力并不值得自豪。\n和亚纱花的比起来，根本就不算什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_10.mp3
+msg,1,<outline width=2 color=black>「……但是，如果你能因此感到很开心，\n那么我特意做巧克力也算是有价值了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_11.mp3
+msg,1,<outline width=2 color=black>「但是，绝对不能向别人炫耀。\n如果你那样做了，下次我就不会再做了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_12.mp3
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「……虽然这么说，其实已经有几个人\n知道了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_13.mp3
+msg,1,<outline width=2 color=black>「比如亚纱花和路易斯……因为我向她们请教了怎么做巧克力，\n所以她们甚至知道我做了什么样的巧克力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_14.mp3
+msg,1,<outline width=2 color=black>「即便如此，害羞的事情还是会让人害羞\n这没办法的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_15.mp3
+msg,1,<outline width=2 color=black>「而且，从我的立场来看，原则上这种轻浮的活动可能会导致风气混乱，\n我应该是要管制的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_16.mp3
+msg,1,<outline width=2 color=black>「但是，如果没有一点儿休息的话，反而大家都可能会没有余裕，\n所以我想……还是不要说太严厉的话吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_17.mp3
+msg,1,<outline width=2 color=black>「于是，我想既然如此我也参加吧。\n我也认为这是一个和大家一样向你传达感情的机会――啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_18.mp3
+msg,1,<outline width=2 color=black>「我、我先说好，所谓的感情只是平日里的感谢之类的、\n那种亲爱的东西哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102807/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102807/adv/sound/fav102807_02_19.mp3
+msg,1,<outline width=2 color=black>「别……别那么傻笑，如果你想要巧克力就\n好好进行思考哦！真是的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

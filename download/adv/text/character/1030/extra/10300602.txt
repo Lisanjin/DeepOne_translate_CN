@@ -1,0 +1,164 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm070.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_01.mp3
+name,<outline width=2 color=black>安娜・露丝卡莉达</outline>,
+msg,1,<outline width=2 color=black>「不过摊位真的有好多种啊。光是吃的就已经挺多了，\n这下可有完全征服的价值了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_02.mp3
+msg,1,<outline width=2 color=black>「嗯？哎呀，这个写着烤鱿鱼的东西，\n居然用了一整只鱿鱼……这也太摇滚了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:surprise,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_03.mp3
+msg,1,<outline width=2 color=black>「嗯，那边是……猫形蛋糕？ 哦，哦哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:smile,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_04.mp3
+msg,1,<outline width=2 color=black>「这、这个……画着猫的脸……什么鬼，这！ 这么小\n每个圆滚滚的蛋糕上都有一只猫……太、太可爱了——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:surprise,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_05.mp3
+msg,1,<outline width=2 color=black>「啊，不……现、现在的我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_06.mp3
+msg,1,<outline width=2 color=black>「不、不是那样的……我并没有因为猫可爱就\n激动得失态……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「我还没说什么」,选项2 「我什么都没看见」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_07.mp3
+name,<outline width=2 color=black>安娜・露丝卡莉达</outline>,
+msg,1,<outline width=2 color=black>「讨、讨厌啦！那副得意洋洋的表情，肯定误会了什么吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_08.mp3
+msg,1,<outline width=2 color=black>「我告诉你，我对那种只会可爱的生物\n一点兴趣都没有哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_09.mp3
+name,<outline width=2 color=black>安娜・露丝卡莉达</outline>,
+msg,1,<outline width=2 color=black>「真、真的吗？ 你没有看到我对那个，猫形蛋糕有所反应\n的情况吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_10.mp3
+msg,1,<outline width=2 color=black>「你、你这个笑得合不拢嘴的样子！ 你肯定\n看到了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_11.mp3
+msg,1,<outline width=2 color=black>「你这个……要掩饰就好好掩饰！\n再不老实点我就揍飞你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_12.mp3
+name,<outline width=2 color=black>安娜・露丝卡莉达</outline>,
+msg,1,<outline width=2 color=black>「我是摇滚歌手好吗？ 对这种可爱的猫，\n还有甜腻的蛋糕怎么可能会感兴趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_13.mp3
+msg,1,<outline width=2 color=black>「只是，要想征服这里所有的摊位，就算是这个猫形蛋糕也\n不能避开而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_14.mp3
+msg,1,<outline width=2 color=black>「所以，我只是无奈地要吃这个而已！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,anna,-300_-100,0.5,0
+endwait
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:smile,anna,-300,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_15.mp3
+msg,1,<outline width=2 color=black>「嘿嘿，呼呼呼……每一个都是不同的猫……该死，每一只都\n太可爱了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:smile,anna,-300,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_16.mp3
+msg,1,<outline width=2 color=black>「那么，我就从这只猫开始——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:surprise,anna,-300,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_17.mp3
+msg,1,<outline width=2 color=black>「――哈！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:sad,anna,-300,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_18.mp3
+msg,1,<outline width=2 color=black>「这、这是……我发现了一个无法置信的事实……我做不到。\n吃掉这些可爱的小猫，我怎么可能做得到……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:sad,anna,-300,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_19.mp3
+msg,1,<outline width=2 color=black>「就算是为了征服摊位，我也不想成为那种无情无义\n的人……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,anna,0_-100,0.5,0
+endwait
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_20.mp3
+msg,1,<outline width=2 color=black>「告、告诉我……我该怎么办？\n我想征服摊位，但是我做不到这种冷酷无情的事情……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103006/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103006/adv/sound/fav103006_02_21.mp3
+msg,1,<outline width=2 color=black>「该死，没想到会变成这样……我小看了摊位征服的难度……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

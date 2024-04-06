@@ -1,0 +1,172 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11180300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「话说回来，这个地方一直都是商店排列着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_02.mp3
+msg,1,<outline width=2 color=black>「如果是现实的话，我想这样的地方一定会有很多人，\n一定非常热闹」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_03.mp3
+msg,1,<outline width=2 color=black>「我家里钱不多，也没有特意去过这样的地方，\n所以这是我第一次来这样的地方，感觉有点新鲜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我们要好好享受以前错过的」,选项2　「我们以后在现实中也要去看看」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_04.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_05.mp3
+msg,1,<outline width=2 color=black>「但是，这样的地方，是不是就该随便走走，看到喜欢的店就进去呢？\n是这种感觉吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_06.mp3
+msg,1,<outline width=2 color=black>「我对购物不太了解……所以接下来就\n交给你了。请带领我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_07.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「……嗯。如果有那样的一天，我也会很高兴的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_08.mp3
+msg,1,<outline width=2 color=black>「如果家里再富裕一些就会有很多钱。\n到时候，我会大方地请你吃饭的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_09.mp3
+msg,1,<outline width=2 color=black>「而且……如果能和爸爸、妈妈，还有这个孩子一起在这样的地方走走，那一定非常幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_10.mp3
+msg,1,<outline width=2 color=black>「虽然我不确定那时候我们能不能在一起……但是，\n提前做一下预演也不坏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_11.mp3
+msg,1,<outline width=2 color=black>「爸爸和妈妈可能也不习惯这样的地方。\n如果我能当导游，他们一定会很开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_12.mp3
+msg,1,<outline width=2 color=black>「所以，首先今天我需要和你在这里好好享受一下……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_13.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「我之前在书上看到过。这样的地方是约会的常规场所。\n所以，和你一起逛这里，我有点期待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,100,300,,,0,1.3,1.3,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102708/adv/sound/fav102708_02_14.mp3
+msg,1,<outline width=2 color=black>「不知道这个孩子是否也有同样的感觉呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_15.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「我和这个孩子今天都穿得很可爱……所以，你\n真是太幸运了。两边都有花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_16.mp3
+msg,1,<outline width=2 color=black>「等等，但是因为这个孩子在我的怀里，所以两边都有花的是我吗……？\n唔……算了，细节问题就先不管了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_17.mp3
+msg,1,<outline width=2 color=black>「……虽然这是理所当然的事情，但是这个孩子在情人节并没有给你巧克力\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_18.mp3
+msg,1,<outline width=2 color=black>「但是，她总是很努力……所以我希望你也能给她\n回礼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_19.mp3
+msg,1,<outline width=2 color=black>「所以，从现在开始我们三个人一起约会」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_20.mp3
+msg,1,<outline width=2 color=black>「能和两个人一起约会真是太幸福了，\n所以期待白色情人节的回礼会更上一层楼。我非常期待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102708/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102708/adv/sound/fav102708_02_21.mp3
+msg,1,<outline width=2 color=black>「――呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

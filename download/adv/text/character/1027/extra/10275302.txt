@@ -1,0 +1,178 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11040300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「其实，我有个请求想请你……可以听我说吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_02.mp3
+msg,1,<outline width=2 color=black>「我希望你能去劝劝亚纱花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_03.mp3
+msg,1,<outline width=2 color=black>「我前几天突然发现了一件非常棒的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_04.mp3
+msg,1,<outline width=2 color=black>「如果我自己也能做巧克力糖果，那么就可以有很多种玩法了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_05.mp3
+msg,1,<outline width=2 color=black>「所以，我找到亚纱花，让她教我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_06.mp3
+msg,1,<outline width=2 color=black>「但是，完全没能成功……最后连亚纱花都放弃了我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「你是不是做出了什么黑暗物质」,选项2　「你是不是搞了什么恶作剧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_07.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「我又不是布里吉特，怎么会做那种事。\n话说回来，那种东西也不是想做就能做出来的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_08.mp3
+msg,1,<outline width=2 color=black>「我也知道你在想什么。既然连亚纱花都放弃了，\n你肯定认为我做出了什么过分的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_09.mp3
+msg,1,<outline width=2 color=black>「我也承认，我确实犯了错误……但那个事情我真的无能为力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_10.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「我做巧克力糖果的时候绝对不会搞恶作剧。\n那对巧克力来说是一种亵渎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_11.mp3
+msg,1,<outline width=2 color=black>「反而，这次的事情可以说是因为我太爱巧克力，才酿成了悲剧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_12.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「其实……我把亚纱花准备做糖果的所有巧克力，\n全都吃完了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_13.mp3
+msg,1,<outline width=2 color=black>「我也想忍住不吃，等糖果做好再吃……但是，\n手就是不听使唤……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_14.mp3
+msg,1,<outline width=2 color=black>「趁亚纱花不注意的时候，我就吃了一点点，一口口地吃，\n等我反应过来的时候，材料已经没有了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_15.mp3
+msg,1,<outline width=2 color=black>「因为材料都没了，所以只好停止制作糖果，\n但这个故事并没有就此结束」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_16.mp3
+msg,1,<outline width=2 color=black>「亚纱花指责我一开始就是想偷吃巧克力，\n冤枉我了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_17.mp3
+msg,1,<outline width=2 color=black>「当然我没有那个意思……我也想吃到做好的\n巧克力糖果」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_18.mp3
+msg,1,<outline width=2 color=black>「但话说回来，无法抵挡住巧克力这种诱人食物的诱惑也是事实\n……虽然很遗憾，但无论我怎么解释，亚纱花肯定都不会相信我的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_19.mp3
+msg,1,<outline width=2 color=black>「这就轮到你出场了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_20.mp3
+msg,1,<outline width=2 color=black>「我希望你能去劝劝亚纱花，给我再一次机会」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_21.mp3
+msg,1,<outline width=2 color=black>「……让你监督我不偷吃？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_22.mp3
+msg,1,<outline width=2 color=black>「…………我觉得那样会分散我的注意力，不需要」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_23.mp3
+msg,1,<outline width=2 color=black>「不，不是……我绝对没有想要偷吃的意思」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_24.mp3
+msg,1,<outline width=2 color=black>「只是，被你看着，我有点不好意思。\n等到真正的糖果做好之前……那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:shy,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_02_25.mp3
+msg,1,<outline width=2 color=black>「――因为被看着，有点害羞，所以不行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

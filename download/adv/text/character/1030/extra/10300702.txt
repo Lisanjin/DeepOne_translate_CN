@@ -1,0 +1,187 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm088.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,anna1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna2,0,0,0,0,,,,
+imgconf,anna2,anna1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103007/adv/sound/fav103007_02_01.mp3
+name,<outline width=2 color=black>安娜・露丝卡莉达</outline>,
+msg,1,<outline width=2 color=black>「嘿、嘿嘿……呼嘿嘿……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna2,0,0,0,0,,,,
+imgconf,anna2,anna1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103007/adv/sound/fav103007_02_02.mp3
+msg,1,<outline width=2 color=black>「果然拉莱耶的数据库最棒了……这是什么图片啊\n居然有这么多的相册数据」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna2,0,0,0,0,,,,
+imgconf,anna2,anna1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103007/adv/sound/fav103007_02_03.mp3
+msg,1,<outline width=2 color=black>「啊啊啊，这只三花猫，超级可爱的吧……！\n好的，接下来看这边的相册——哈！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,anna,0_-100,0.6,0
+endwait
+
+
+playvoice,1,download/character/103007/adv/sound/fav103007_02_04.mp3
+name,<outline width=2 color=black>安娜・露丝卡莉达</outline>,
+msg,1,<outline width=2 color=black>「你、你在看什么呢……！\n话说，从什么时候开始的……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_05.mp3
+msg,1,<outline width=2 color=black>「我、我才没有得意呢！　话说回来，你看，那个，就是那个！\n你说我得意其实你更得意！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_06.mp3
+msg,1,<outline width=2 color=black>「另外，我顺便说一下，我才没有……看猫的图片\n所以别误会了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:surprise,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_07.mp3
+msg,1,<outline width=2 color=black>「哈？　我在看什么……那个就是，那个那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「是不是色情图片……」,选项2 「又在听摇滚乐？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_08.mp3
+name,<outline width=2 color=black>安娜・露丝卡莉达</outline>,
+msg,1,<outline width=2 color=black>「你、你、你在说什么呢！？　我才不会去看那种东西！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_09.mp3
+msg,1,<outline width=2 color=black>「我才不是那种会看这种图片的色狼呢！\n如果有人看这种的话，那他就是个大色狼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_10.mp3
+name,<outline width=2 color=black>安娜・露丝卡莉达</outline>,
+msg,1,<outline width=2 color=black>「哦、哦，就是那样……我正觉得摇滚音乐最棒\n就在那个时候」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_11.mp3
+msg,1,<outline width=2 color=black>「果然还是那样，光是看吉他就能让人兴奋起来\n嗯，大概，就是这种感觉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:surprise,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_12.mp3
+name,<outline width=2 color=black>安娜・露丝卡莉达</outline>,
+msg,1,<outline width=2 color=black>「——你为什么在笑！　肯定是误会了吧！\n我根本没有看猫的图片」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:surprise,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_13.mp3
+msg,1,<outline width=2 color=black>「我才没有觉得猫可爱之类的……！\n虽然拉莱耶的数据库里确实有很多猫的照片——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:smile,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_14.mp3
+msg,1,<outline width=2 color=black>「——嘿嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:surprise,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_15.mp3
+msg,1,<outline width=2 color=black>「啊……不、不是！　刚才并不是想起了那个图片\n所以，别笑得那么开心……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:shy,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_16.mp3
+msg,1,<outline width=2 color=black>「唔、呜呜――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_17.mp3
+msg,1,<outline width=2 color=black>「对了，我就是在看那个图片！　有问题吗！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:anger,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_18.mp3
+msg,1,<outline width=2 color=black>「没办法啊，因为它太可爱了！\n如果对那种可爱毫无反应，那才真的没有人性呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:sad,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_19.mp3
+msg,1,<outline width=2 color=black>「但是，如果让人知道一个摇滚乐手在疯狂收集猫的图片\n那我的形象不就毁了吗！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_20.mp3
+msg,1,<outline width=2 color=black>「但是，既然已经被你发现了，也没办法。\n从现在开始，我要让你也成为猫的粉丝！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:normal,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_21.mp3
+msg,1,<outline width=2 color=black>「这样我们就是同道中人了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103001/adv/atlas/stand_a,body:smile,anna,0,-100,0.5,0,,,,
+playvoice,1,download/character/103007/adv/sound/fav103007_02_22.mp3
+msg,1,<outline width=2 color=black>「既然决定了，那就快点到我的房间来。我会花大量的时间，\n教你猫的魅力，所以期待一下吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

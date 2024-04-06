@@ -1,0 +1,236 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010102.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm055.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「……说起来，我有些事想请你帮忙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_02.mp3
+msg,1,<outline width=2 color=black>「说是帮忙……其实是想让你成为实验的对象……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:unique,maruta,0,-80,0.45,0.5,,,,
+endwait
+playvoice,1,download/character/102712/adv/sound/fav102712_02_03.mp3
+msg,1,<outline width=2 color=black>「并不是像希尔薇那样让你冒险……\n我不会做危险的事。我自己也试过了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102712/adv/sound/fav102712_02_04.mp3
+msg,1,<outline width=2 color=black>「我只是想对你施展一点微不足道的魔术……可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「来吧！」,选项2　「……知、道了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_05.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「哦，这表情充满了坚定的决心。这就是男子气概」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_06.mp3
+msg,1,<outline width=2 color=black>「看来我也得施展全力才行。我会全力以赴的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_07.mp3
+msg,1,<outline width=2 color=black>「可能会因为施展得过于全力，稍微做过头了一点，\n但这也算是一种风情吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:unique,maruta,0,-80,0.45,0.5,,,,
+endwait
+playvoice,1,download/character/102712/adv/sound/fav102712_02_08.mp3
+msg,1,<outline width=2 color=black>「――这只是开玩笑，不用那么紧张」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_09.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「你的表情就像是即将赴死的士兵……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_10.mp3
+msg,1,<outline width=2 color=black>「我说了很多次，我不会做危险的事。即使失败了，也不会威胁到生命，\n也不会留下后遗症――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_11.mp3
+msg,1,<outline width=2 color=black>「――…………应该，不会」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-80,0.45,0.5,,,,
+endwait
+playvoice,1,download/character/102712/adv/sound/fav102712_02_12.mp3
+msg,1,<outline width=2 color=black>「这是个笑话，一个充满机智的小巧思」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102712/adv/sound/fav102712_02_13.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「那么马上开始……咻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_044.mp3
+flash,255,255,255,1,0.6,1.0
+endwait
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_14.mp3
+msg,1,<outline width=2 color=black>「怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_15.mp3
+msg,1,<outline width=2 color=black>「啊……看你那惊讶的表情，看来成功了。\n你的口里是不是有巧克力的味道？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_16.mp3
+msg,1,<outline width=2 color=black>「这就是能让你品尝到巧克力味道的魔法。\n仅此而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_17.mp3
+msg,1,<outline width=2 color=black>「虽然效率非常低，完成一个法术需要花费大量时间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_18.mp3
+msg,1,<outline width=2 color=black>「……感觉你有点无语？难道你在想，\n「这家伙竟然为了尝到巧克力的味道费尽心思？」吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_19.mp3
+msg,1,<outline width=2 color=black>「我要说清楚，这并不是为我自己准备的魔术……如果是我，\n直接吃真正的巧克力就好了。我不会特意去构建法术」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:smile,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,50,400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102712/adv/sound/fav102712_02_20.mp3
+msg,1,<outline width=2 color=black>「这是……为了这个孩子准备的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_044.mp3
+flash,255,255,255,1,0.6,1.0
+endwait
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_21.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「这个孩子不能感觉到味道。和普通人在各方面都不同。\n所以，即使用这个魔术，他可能也无法理解巧克力的味道」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_22.mp3
+msg,1,<outline width=2 color=black>「即使如此……只要有一点点可能性，\n能让这个孩子感受到……我就想试试」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_02_23.mp3
+msg,1,<outline width=2 color=black>「……如果能传达给他，那就太好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,50,400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

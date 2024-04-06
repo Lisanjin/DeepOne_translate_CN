@@ -1,0 +1,164 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11040300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「这衣服，我好像见过……是花音店的制服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,100,350,,,0,1.3,1.3,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102753/adv/sound/fav102753_01_02.mp3
+msg,1,<outline width=2 color=black>「而且，今天这孩子也穿了一样的……真是太可爱了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_03.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「如果这么可爱的孩子在店里，绝对能当招牌妹妹。我可以肯定地说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「确实埃尔塔很可爱」,选项2　「是在说妹妹吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_04.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「不是，不是那样的。我现在说的是，这个孩子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_05.mp3
+msg,1,<outline width=2 color=black>「虽然我不讨厌你夸奖我，\n但今天这个孩子比我还要可爱，这是肯定的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_06.mp3
+msg,1,<outline width=2 color=black>「所以，你应该多多夸奖这个孩子。\n然后，如果你也夸奖我就更好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_07.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「嗯。就是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_08.mp3
+msg,1,<outline width=2 color=black>「特别是要注意这顶帽子……就是做糕点的人会戴的那种」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_09.mp3
+msg,1,<outline width=2 color=black>「试想一下……这孩子正在做糕点的情景。\n肯定非常可爱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_10.mp3
+msg,1,<outline width=2 color=black>「如果有这么可爱的孩子，无论对顾客还是同事都会非常受欢迎，\n绝对能当招牌妹妹」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_11.mp3
+msg,1,<outline width=2 color=black>「啊，但是可能因为太可爱了，会引发围绕这个孩子的争端。\n比如顾客们之间的争吵，或者是职场上的三角关系……热闹的恋爱情节」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_12.mp3
+msg,1,<outline width=2 color=black>「呜……真是个魔性的女人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_13.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「说起来，看到这制服我就想起了，花音的店里有一款\n莎朵蛋糕作为招牌」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_14.mp3
+msg,1,<outline width=2 color=black>「莎朵蛋糕……也就是巧克力蛋糕……！\n看来不管怎样我都得去花音的店一趟」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_15.mp3
+msg,1,<outline width=2 color=black>「但是，怎样才能去到那个世界呢……即使用你的力量也\n似乎不行……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_16.mp3
+msg,1,<outline width=2 color=black>「看来只能由我来开发穿越世界的魔术了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_17.mp3
+msg,1,<outline width=2 color=black>「虽然我以前从没听说过这种魔术……但是，因为我很厉害，\n应该能做到」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_18.mp3
+msg,1,<outline width=2 color=black>「有那么好吃到成为招牌的莎朵蛋糕在等着我……只要这么想，\n再大的努力都不算什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_19.mp3
+msg,1,<outline width=2 color=black>「一旦我完成了魔术，我会带你一起去的。\n因为和你在一起，蛋糕肯定会更好吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102753/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102753/adv/sound/fav102753_01_20.mp3
+msg,1,<outline width=2 color=black>「所以，期待那个时刻吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

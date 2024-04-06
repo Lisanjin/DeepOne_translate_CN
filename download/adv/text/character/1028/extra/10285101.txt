@@ -1,0 +1,163 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_01.mp3
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「真是美丽的海洋啊。稍微不注意，就快要忘记这里其实是幻梦境了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_02.mp3
+msg,1,<outline width=2 color=black>「……你那一副似乎有话要说的眼神是什么意思」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_03.mp3
+msg,1,<outline width=2 color=black>「我知道的。你是在失望，为什么我会穿这种既不华丽也不可爱的泳衣，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_04.mp3
+msg,1,<outline width=2 color=black>「对不起。你是希望我穿更加炫目，露出更多的泳衣吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_05.mp3
+msg,1,<outline width=2 color=black>「但是，也没办法。对我来说，泳衣并不是为了给别人看或者装饰自己而穿的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_06.mp3
+msg,1,<outline width=2 color=black>「首先，虽然其他人都觉得很奇怪……但无论多么宁静，这里还是幻梦境中啊？　所以，泳衣需要可爱这种事情吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_07.mp3
+msg,1,<outline width=2 color=black>「……嗯，如果是在游泳池还好说，但在海里穿这样的泳衣，\n有点过于保守……我自己也知道有些格格不入」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_08.mp3
+msg,1,<outline width=2 color=black>「现在去拉莱耶的仓库找泳衣会比较好吗。\n或者，用你的力量来解决……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「这样也很适合你」,选项2　「换成更暴露的泳衣」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_09.mp3
+msg,1,<outline width=2 color=black>「诶，啊……是，是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:sad,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_10.mp3
+msg,1,<outline width=2 color=black>「……总觉得，被说这种泳衣很适合我，\n好像就是在说我一点也不可爱似的，不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:smile,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_11.mp3
+msg,1,<outline width=2 color=black>「开玩笑的，开玩笑的。总是被你戏弄，这次算是回报了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_12.mp3
+msg,1,<outline width=2 color=black>「而且，被你夸奖……其实很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:surprise,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_13.mp3
+msg,1,<outline width=2 color=black>「等等，你在想象什么样的泳衣！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_14.mp3
+msg,1,<outline width=2 color=black>「难道是只有绳子的那种，或者贝壳……！？\n就、就算只有我们两个人，那种装扮我也绝对……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:anger,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_15.mp3
+msg,1,<outline width=2 color=black>「无论如何都要否决！　如果你再说些奇怪的话，我会让你写检讨书的！\n如果不想这样，就别再有奇怪的想法。明白了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_16.mp3
+msg,1,<outline width=2 color=black>「…………嘛、如果你非要这样说的话……也不是不能考虑一下，可能吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_17.mp3
+msg,1,<outline width=2 color=black>「呃……没、没有什么。我什么都没说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_18.mp3
+msg,1,<outline width=2 color=black>「话、话说回来，没想到在幻梦境中会去海滩浴……啊、\n现在说这些已经太晚了吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_19.mp3
+msg,1,<outline width=2 color=black>「自从你出现以后，关于幻梦境的那些常识都不知去哪了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_20.mp3
+msg,1,<outline width=2 color=black>「我没想到今天你会说要去游泳，就带我来到了幻梦境中……以前，这种随意的潜水是不可能的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_21.mp3
+msg,1,<outline width=2 color=black>「但是……你带我来这个领域，\n是你用你的方式在关心我，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_22.mp3
+msg,1,<outline width=2 color=black>「在拉莱耶，我总是作为治安维持班的一员而忧心忡忡……所以你希望我能忘记那些事情，对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102851/adv/atlas/stand_a,body:smile,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102851/adv/sound/fav102851_01_23.mp3
+msg,1,<outline width=2 color=black>「虽然你真的超出了常识……但我很高兴你有这份心意，\n既然都来到了这里。我会坦然接受你的好意的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

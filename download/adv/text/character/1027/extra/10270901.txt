@@ -1,0 +1,210 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,-40,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102709/adv/sound/fav102709_01_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「――已经到达目标点。根据我掌握的信息，这里应该\n储备了巧克力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:anger,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,-250,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102709/adv/sound/fav102709_01_02.mp3
+msg,1,<outline width=2 color=black>「那么，按照计划，开始执行任务……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:anger,maruta,0,1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,maruta,0_-90,0.5,0
+endwait
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_03.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「咚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_04.mp3
+msg,1,<outline width=2 color=black>「…………啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_05.mp3
+msg,1,<outline width=2 color=black>「为、为什么你会在这里……呼，这个任务，\n是绝对不能被任何人看到的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_06.mp3
+msg,1,<outline width=2 color=black>「所以我特意通过空调管道过来……没想到，\n在这种地方任务失败……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「……任务？」,选项2　「又在偷吃？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_07.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「啊……不是，我不知道什么任务」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_08.mp3
+msg,1,<outline width=2 color=black>「我通过管道过来只是在玩一下间谍游戏罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_09.mp3
+msg,1,<outline width=2 color=black>「绝不是我已经掌握了这个仓库有巧克力的信息，\n所以你可以放心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_10.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「我、我才不会做那种事……关于这个备用仓库有巧克力的信息，\n我根本就没有掌握」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_11.mp3
+msg,1,<outline width=2 color=black>「只是，我对那个仓库有点事情，\n如果你能让我独自待会儿，我会很高兴的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_12.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「啊，为什么要拿出终端……要向亚纱花报告……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_13.mp3
+msg,1,<outline width=2 color=black>「等、等一下……我还没有偷吃呢，\n就这么突然报告，实在是过分……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_14.mp3
+msg,1,<outline width=2 color=black>「前科什么的，都不重要……每个人都可以改变内心重新开始。\n你也是这么认为的，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_15.mp3
+msg,1,<outline width=2 color=black>「但是，只因为过去的错误就被当作坏人一样对待……\n我真的很受伤」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_16.mp3
+msg,1,<outline width=2 color=black>「所以，作为赔偿，希望你能承诺不对任何人\n透露你在这里看到我的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_17.mp3
+msg,1,<outline width=2 color=black>「最近，他们甚至在我不知情的情况下移动了储存巧克力的地方，\n管理越来越严格了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_18.mp3
+msg,1,<outline width=2 color=black>「如果被亚纱花知道了，她又会把巧克力藏到其他地方去，\n那样我就不能偷吃一段时间了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_19.mp3
+msg,1,<outline width=2 color=black>「……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_20.mp3
+msg,1,<outline width=2 color=black>「刚、刚才的是诱导性提问……手段真是狡猾……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_21.mp3
+msg,1,<outline width=2 color=black>「即使你说我自己引爆了也没用，想推卸责任是不可能的。\n你需要负起责任」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_22.mp3
+msg,1,<outline width=2 color=black>「所以，你要在这里，即使亚纱花或者其他人来了也\n不能让他们进仓库」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_23.mp3
+msg,1,<outline width=2 color=black>「如果你愿意帮忙，我可以分给你一些巧克力。\n这样的好事不常有……你是特例」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_01_24.mp3
+msg,1,<outline width=2 color=black>「拜托……请帮帮我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

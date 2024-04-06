@@ -1,0 +1,223 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010102.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:anger,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,-40,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102712/adv/sound/fav102712_01_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「——终于」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm132.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:anger,maruta,0,-100,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Line_center,em1,default,animation,1,0,0,1,1.0,0
+playvoice,1,download/character/102712/adv/sound/fav102712_01_02.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「终于，这一天到来了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spineoff,em1,0.2
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/102712/adv/sound/fav102712_01_03.mp3
+msg,1,<outline width=2 color=black>「很长。到今天为止，真的很长」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_04.mp3
+msg,1,<outline width=2 color=black>「其实，因为吃太多巧克力，我被亚纱花和米莉亚姆禁止了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_05.mp3
+msg,1,<outline width=2 color=black>「当然，我进行了抗议。最糟糕的是，我甚至考虑过使用物理手段……但是在那两个人面前使用武力显然是不明智的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_06.mp3
+msg,1,<outline width=2 color=black>「当然，我并没有打算在关于巧克力的圣战中失败，\n但我是一个理性的人。我试图通过谈判寻找双方的妥协点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_07.mp3
+msg,1,<outline width=2 color=black>「结果，我成功地缩短了禁令的期限」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_08.mp3
+msg,1,<outline width=2 color=black>「就这样，巧克力被禁止了整整三天。\n没错。禁令就在今天，这一天，情人节解除……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「只有三天……？」,选项2　「冷静下来」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_09.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「只有？你说的是只有吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_10.mp3
+msg,1,<outline width=2 color=black>「对我来说，被禁止吃巧克力三天，就像是让被冲上岸的鱼\n继续活着三天一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_11.mp3
+msg,1,<outline width=2 color=black>「发出这样禁令的亚纱花和米莉亚姆，实在是太残忍了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_12.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「我已经足够冷静了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_13.mp3
+msg,1,<outline width=2 color=black>「是的，我正在冷静地考虑如何将拉莱耶所有的巧克力都变成我的\n财产」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_14.mp3
+msg,1,<outline width=2 color=black>「既然是情人节，肯定会有很多人想送你巧克力。\n我会全部收走它们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_15.mp3
+msg,1,<outline width=2 color=black>「首先，我打算把你当作人质。\n受到如此不公正的禁令的我应该有报复的权利」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm055.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_16.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「——哦，巧克力？给我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_17.mp3
+msg,1,<outline width=2 color=black>「哦……这难道是，亚纱花特制的……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_18.mp3
+msg,1,<outline width=2 color=black>「禁令解除的今天，她居然准备了这样的东西，\n亚纱花还真是机敏……原来是个策士？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_19.mp3
+msg,1,<outline width=2 color=black>「嗯，我明白了。鉴于这块巧克力，我愿意收起我的怒火。\n这块巧克力值得我这么做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_20.mp3
+msg,1,<outline width=2 color=black>「所以，给我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_21.mp3
+msg,1,<outline width=2 color=black>「——为什么要手递过来？\n我说的给我，并不是这个意思」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102712/adv/sound/fav102712_01_22.mp3
+msg,1,<outline width=2 color=black>「喂给我吃？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:shy,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,-40,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102712/adv/sound/fav102712_01_23.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「啊——嗯，嗯……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102712/adv/atlas/stand_a,body:shy,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,-40,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102712/adv/sound/fav102712_01_24.mp3
+msg,1,<outline width=2 color=black>「好，好吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,219 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010500.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,mamiya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:smile,mamiya2,0,0,0,0,,,,
+imgconf,mamiya2,mamiya1,0,-720,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103107/adv/sound/fav103107_01_01.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「嘿嘿，长得还不错呢。\n差不多再过两天就好了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya2,0,0,0,0,,,,
+imgconf,mamiya2,mamiya1,0,-720,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103107/adv/sound/fav103107_01_02.mp3
+msg,1,<outline width=2 color=black>「那么这边怎么样呢……差不多该把泡菜捞出来了\n我觉得――哎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya,0,-800,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,mamiya,0_-180,1,0
+endwait
+
+
+playvoice,1,download/character/103107/adv/sound/fav103107_01_03.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「你来厨房，感觉还挺新鲜的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_04.mp3
+msg,1,<outline width=2 color=black>「我？看，这个。我是来看看泡菜的情况的。因为之前\n准备了新的，所以也得搅拌一下才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_05.mp3
+msg,1,<outline width=2 color=black>「那你呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_06.mp3
+msg,1,<outline width=2 color=black>「训练完了肚子饿了，是吗……嘿嘿，听你这么说\n真的感觉你是个男孩子呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:unique,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_07.mp3
+msg,1,<outline width=2 color=black>「既然这样，对于努力的你，姐姐我要不要\n给你一个奖励呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「那我就不客气了」,选项2 「舞夜的奖励……」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:surprise,mamiya,0,-300,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_08.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「诶，等、等一下！？你为什么手舞足蹈地\n靠近过来……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:shy,mamiya,0,-300,0.7,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_09.mp3
+msg,1,<outline width=2 color=black>「我、我说了不是那样的，奖励并不是什么淫秽的东西……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:shy,mamiya,0,-300,0.7,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_10.mp3
+msg,1,<outline width=2 color=black>「再说了，在厨房做这种事情，如果被人发现了\n你要怎么办……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,mamiya,0.5_0.5,0.8,0
+anm,move,mamiya,0_-180,0.8,0
+endwait
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:shy,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_11.mp3
+msg,1,<outline width=2 color=black>「总、总之，这种事情绝对不行，禁止……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,mamiya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:shy,mamiya2,0,0,0,0,,,,
+imgconf,mamiya2,mamiya1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_12.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「嘿嘿，突然看向我的胸部……难道你在期待「那种」奖励\n吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_13.mp3
+msg,1,<outline width=2 color=black>「嗯，如果被这样的青春洋溢的姐姐说要给奖励，\n期待一下也没什么，但遗憾的是你猜错了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:sad,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_14.mp3
+msg,1,<outline width=2 color=black>「等、等一下，你不用那么真心地感到失望啊！？\n感觉好像是我做错什么似的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_15.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「你、你刚刚完成训练对吧？\n那我这里正好有合适的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:unique,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_16.mp3
+msg,1,<outline width=2 color=black>「这是姐姐特制的黄瓜和茄子泡菜。\n还有，因为你说肚子饿，所以还有豆腐泡菜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_17.mp3
+msg,1,<outline width=2 color=black>「黄瓜和茄子都有消除疲劳的效果，对于训练后来说\n简直就是最佳选择」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_18.mp3
+msg,1,<outline width=2 color=black>「还有，豆腐是个新口味，我也是第一次尝试泡制，\n味道像奶酪一样很美味，你要不要试试看？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:unique,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_19.mp3
+msg,1,<outline width=2 color=black>「对了，既然这样，要不我喂你吃吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,mamiya,0.7_0.7,0.8,0
+anm,move,mamiya,0_-300,0.8,0
+endwait
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:smile,mamiya,0,-300,0.7,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_20.mp3
+msg,1,<outline width=2 color=black>「来，尝尝看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:unique,mamiya,0,-300,0.7,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_21.mp3
+msg,1,<outline width=2 color=black>「怎么样？好吃吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103101/adv/atlas/stand_a,body:smile,mamiya,0,-300,0.7,0,,,,
+playvoice,1,download/character/103107/adv/sound/fav103107_01_22.mp3
+msg,1,<outline width=2 color=black>「好了好了，别急，还有的。来，张大嘴巴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

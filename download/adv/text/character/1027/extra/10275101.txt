@@ -1,0 +1,198 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11250300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「这衣服……虽然很可爱，但有点神秘的气氛。\n这里是教堂……是修女风格的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_02.mp3
+msg,1,<outline width=2 color=black>「突然换衣服我已经习惯了，这没问题……但除此之外\n还有一件事让我感到困扰」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102751/adv/sound/fav102751_01_03.mp3
+msg,1,<outline width=2 color=black>「那就是，这孩子的衣服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_04.mp3
+msg,1,<outline width=2 color=black>「为什么，是婚纱……？\n婚纱，是新娘的衣服……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_05.mp3
+msg,1,<outline width=2 color=black>「……呼！ 难道说……你在盯着这孩子，\n受到了，影响……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_06.mp3
+msg,1,<outline width=2 color=black>「如果是这样的话，你就是需要注意的人物……可能是个对妹妹有恶意的坏虫」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_07.mp3
+msg,1,<outline width=2 color=black>「这孩子，是我重要的妹妹。不会轻易地……让她出嫁的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_08.mp3
+msg,1,<outline width=2 color=black>「――……呵呵。你不用那么激动地摇头，我明白的。\n刚才那个只是玩笑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_09.mp3
+msg,1,<outline width=2 color=black>「但即使如此，我也没想到会穿上像修女一样的衣服\n我对宗教之类的，并不太了解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_10.mp3
+msg,1,<outline width=2 color=black>「在法国的时候也没有去过教堂。\n比起那个，有学习魔术等需要做的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_11.mp3
+msg,1,<outline width=2 color=black>「所以，即使我这样打扮，我也不知道修女是什么样的。\n修女，都做些什么事情呢……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我想是服务活动」,选项2　「祈祷给神吧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_12.mp3
+msg,1,<outline width=2 color=black>「服务活动……要为谁，做什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:shy,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_13.mp3
+msg,1,<outline width=2 color=black>「这里只有你一个人……是为你，服务？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_14.mp3
+msg,1,<outline width=2 color=black>「祈祷……？ 但我不知道应该祈求什么。\n如果我有愿望，我会用自己的力量来实现」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_15.mp3
+msg,1,<outline width=2 color=black>「必须依赖神的事情，是什么呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_16.mp3
+msg,1,<outline width=2 color=black>「……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_17.mp3
+msg,1,<outline width=2 color=black>「……让这孩子能够……说话，这样的事吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_18.mp3
+msg,1,<outline width=2 color=black>「嗯嗯……感觉有点不对。\n对我来说，修女是个充满谜团的存在……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_19.mp3
+msg,1,<outline width=2 color=black>「但是，我明白一点。修女们相信神，\n她们将自己奉献给信仰」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_20.mp3
+msg,1,<outline width=2 color=black>「那种感情……有些东西值得我全身心地奉献，\n这种感觉，我有点理解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_21.mp3
+msg,1,<outline width=2 color=black>「我们也是为了一个目标而活着的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_22.mp3
+msg,1,<outline width=2 color=black>「……但是，最近有点不同。\n为了塔拉斯克——为了家人努力，本来是我的角色」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_23.mp3
+msg,1,<outline width=2 color=black>「完成这个任务是唯一重要的事情……虽然应该是这样，但最近的我\n除了这个之外的事情……也想把大家当作重要的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_24.mp3
+msg,1,<outline width=2 color=black>「这样的感情……父亲也告诉我要抛弃多余的东西\n但现在我不想抛弃，开始迷茫了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_25.mp3
+msg,1,<outline width=2 color=black>「相信神的人会迷茫吗？\n还是说，他们也会迷茫呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102751/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102751/adv/sound/fav102751_01_26.mp3
+msg,1,<outline width=2 color=black>「……回到拉莱耶后，我要去查一下关于修女的信息。\n可能会去问问卡蒂亚或者其他大家……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

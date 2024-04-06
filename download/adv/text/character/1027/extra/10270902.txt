@@ -1,0 +1,192 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010300.jpg,1,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「你来得正好。其实我有些关于房间的事情，想要跟你商量一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_02.mp3
+msg,1,<outline width=2 color=black>「在我来到拉莱耶之前，我一直在进行训练，\n对其他的事情并没有太多的兴趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_03.mp3
+msg,1,<outline width=2 color=black>「但是，在拉莱耶我看到了很多东西，发现了许多有趣的事物\n……当我开始收集这些东西时，房间就变得越来越狭小了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_04.mp3
+msg,1,<outline width=2 color=black>「我觉得是时候拆掉墙壁，把隔壁的房间连起来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_05.mp3
+msg,1,<outline width=2 color=black>「拉莱耶非常宽敞，空闲的房间也很多，所以应该不会有问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_06.mp3
+msg,1,<outline width=2 color=black>「当然，如果告诉别人的话，他们可能会阻止我。但是……如果等到做完了\n再说，那么无论他们说什么都已经来不及了。胜者为王」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_07.mp3
+msg,1,<outline width=2 color=black>「顺便说一下，我看过拉莱耶的规定，没有说不能拆墙扩大房间\n这一条款」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_08.mp3
+msg,1,<outline width=2 color=black>「因此，这个『宽敞房间计划』并没有什么问题……为了得到一个宽敞的房间，\n牺牲一堵墙也是无可奈何的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「米莉亚姆会生气」,选项2　「并非无可奈何」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_09.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「我也考虑过这个可能性。即使规则里没有，我想米莉亚姆一定会\n露出恶魔般的表情……但是，没关系。我已经有了完美的应对策略」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_10.mp3
+msg,1,<outline width=2 color=black>「我会给米莉亚姆一些巧克力作为贿赂……这样她一定会\n睁一只眼闭一只眼的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_11.mp3
+msg,1,<outline width=2 color=black>「能抵挡住巧克力魅力的人，应该是很少见的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_12.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_13.mp3
+msg,1,<outline width=2 color=black>「但是，请你想一下。如果我的房间里的东西继续增多，\n那会发生什么事情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_14.mp3
+msg,1,<outline width=2 color=black>「甚至没有地方落脚，人都无法进入，最后可能因为承重超标\n而导致墙壁崩溃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_15.mp3
+msg,1,<outline width=2 color=black>「如果现在就拆掉它，至少可以避免意外发生，这样更安全」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_16.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「……限度？整理整顿？打扫？这些都是我不知道的词汇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_17.mp3
+msg,1,<outline width=2 color=black>「但是，如果你非要清理的话，\n我也不是不能帮忙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_18.mp3
+msg,1,<outline width=2 color=black>「――……嗯。既然你都这么说了，那就没办法了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_19.mp3
+msg,1,<outline width=2 color=black>「那么，我们马上开始清理吧……首先从地板开始？\n请你先处理那边」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_20.mp3
+msg,1,<outline width=2 color=black>「你突然惊讶了，发生什么事了吗……是不是找到了什么奇怪的东西？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_21.mp3
+msg,1,<outline width=2 color=black>「啊，那个……那是我的胸罩。\n因为尺寸不合适了，所以我就随便放在那里了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_22.mp3
+msg,1,<outline width=2 color=black>「你的眼睛一直盯着胸罩看……你喜欢吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_23.mp3
+msg,1,<outline width=2 color=black>「如果你想要的话，可以带回去。反正我也穿不上了，当作是感谢你帮我整理房间\n的礼物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_24.mp3
+msg,1,<outline width=2 color=black>「……你不要？真的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_25.mp3
+msg,1,<outline width=2 color=black>「但是，如果你想要的话，随时告诉我就行。\n我还有其他一些小了的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_26.mp3
+msg,1,<outline width=2 color=black>「那么，我们继续清理吧。\n在过程中找到的内衣，你可以当作战利品带走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102709/adv/sound/fav102709_02_27.mp3
+msg,1,<outline width=2 color=black>「让我们开始清理时间吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
