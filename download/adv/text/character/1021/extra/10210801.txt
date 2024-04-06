@@ -1,0 +1,176 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11380300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_01.mp3
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「没想到纳克特原书的力量应用在术式上，会变异成这样，\n而且还固定在这种状态……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_02.mp3
+msg,1,<outline width=2 color=black>「我预见到了，越接近幻梦境的深层，我施加在自己身上的时忘术式就会\n受到影响」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_03.mp3
+msg,1,<outline width=2 color=black>「……虽然我预见到了，但这样的情况实在是出乎意料」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_04.mp3
+msg,1,<outline width=2 color=black>「无论如何，对术式的影响太强了……简直就像是，\n不只跨出一步，而是一下子靠近了三步纳克特原书……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:normal,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_05.mp3
+msg,1,<outline width=2 color=black>「――不，也许想着推测出七大原书所有事情才是\n错误的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:normal,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_06.mp3
+msg,1,<outline width=2 color=black>「否定实际发生的现象是最愚蠢的。\n我们需要的是，去探究它，并把它运用到下次」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:normal,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_07.mp3
+msg,1,<outline width=2 color=black>「而且最重要的是……必须要想办法解决现在这种状态」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:anger,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_08.mp3
+msg,1,<outline width=2 color=black>「就算要变得年轻些也有个限度啊！\n这种稚气未脱的小妞样子，哪有什么威严可言啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「但是，非常可爱」,选项2　「并没有那么大变化」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:unique,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_09.mp3
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「――哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:shy,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_10.mp3
+msg,1,<outline width=2 color=black>「什、什么可爱啊……你以为我会因为这种庸俗的赞美\n而高兴吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:shy,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_11.mp3
+msg,1,<outline width=2 color=black>「如果你以为我会像其他小姑娘一样，只因为这样的话就高兴的话，\n那你就大错特错了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ulusura1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:shy,ulusura2,0,0,0,0,,,,
+imgconf,ulusura2,ulusura1,0,-130,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102108/adv/sound/fav102108_01_12.mp3
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「…………说，你是在看哪儿说的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:shy,ulusura2,0,0,0,0,,,,
+imgconf,ulusura2,ulusura1,0,-130,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102108/adv/sound/fav102108_01_13.mp3
+msg,1,<outline width=2 color=black>「顺便说一句，虽然现在这个状态也还算可以，\n但之前的尺寸要大一些哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_14.mp3
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「不过，如果要感到震惊，也请对除胸部以外的部分也好好感到震惊。\n真是的，你是不是傻？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:shy,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_15.mp3
+msg,1,<outline width=2 color=black>「……但是，对你来说，无论是现在的身体还是以前的身体，\n都一样有魅力……对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:smile,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_16.mp3
+msg,1,<outline width=2 color=black>「如果是这样的话，那么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:unique,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_17.mp3
+msg,1,<outline width=2 color=black>「――……呜、为什么我会感到放松……没、没什么！\n刚才那个没什么啦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_18.mp3
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「呜……这是怎么回事。\n好像无法很好地控制自己的情绪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_19.mp3
+msg,1,<outline width=2 color=black>「这么容易就动摇，\n简直就像真的变成了一个不成熟的小姑娘……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_20.mp3
+msg,1,<outline width=2 color=black>「不，绝对不可能……这只是因为面对意料之外的情况，\n稍微有些动摇而已……就这样。肯定是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102108/adv/atlas/stand_a,body:shy,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102108/adv/sound/fav102108_01_21.mp3
+msg,1,<outline width=2 color=black>「否则的话……我怎么可能会因为你的话，\n而被摇动得如此之大……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

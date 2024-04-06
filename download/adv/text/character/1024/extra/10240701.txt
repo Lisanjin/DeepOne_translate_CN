@@ -1,0 +1,145 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11260300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_01.mp3
+name,<outline width=2 color=black>泽诺・娜扎莉</outline>,
+msg,1,<outline width=2 color=black>「又是一个陌生的地方啊……和你一起踏入新领域，我已经习惯了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_02.mp3
+msg,1,<outline width=2 color=black>「为了和失忆者们交谈，我走过了各种领域，\n在这种时候，我才感觉到我所知道的只是幻梦境的一小部分」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_03.mp3
+msg,1,<outline width=2 color=black>「然后，就在这个时候，可能又有新的领域和失忆者诞生了……\n肯定没有人能够知道幻梦境的全部吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_04.mp3
+msg,1,<outline width=2 color=black>「说到习惯……我已经完全习惯了因为你的力量而改变衣服的样子……\n但是没想到这个影响会延伸到头发上」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_05.mp3
+msg,1,<outline width=2 color=black>「嗯……啊，我并不是不舒服，只是暂时的，\n所以不要做出那么担心的表情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_06.mp3
+msg,1,<outline width=2 color=black>「失忆者是在幻梦境中诞生的模糊存在……现在我因为这个领域和你的力量\n而变成了这样，但如果离开这里，大概会恢复原状吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_07.mp3
+msg,1,<outline width=2 color=black>「虽然说……我对这种短发不太习惯，感觉有些不安。\n特别是空气触碰到脖子后面的感觉……总感觉有点奇怪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「短发也很适合你」,选项2 「还是喜欢你原来的样子」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:shy,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_08.mp3
+msg,1,<outline width=2 color=black>「是、是吗……？ 如果是这样的话，嗯……至少可以说我的外表并不奇怪，\n这让我稍微安心了些</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:surprise,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_09.mp3
+msg,1,<outline width=2 color=black>「啊……但、但是别误会」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:surprise,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_10.mp3
+msg,1,<outline width=2 color=black>「我并不是在担心你是否会接受我，\n只是不想因为太过难看而被轻视。只是在意这个」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_11.mp3
+msg,1,<outline width=2 color=black>「我并不在乎你的喜好……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_12.mp3
+msg,1,<outline width=2 color=black>「但是，有点意外。我以为因为你希望看到和平时不同的我，\n所以才会以这样的形式显现出来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_13.mp3
+msg,1,<outline width=2 color=black>「如果说和平时不同的话，这身衣服才更明显。\n这种随便的打扮……如果被其他失忆者看到会怎么样呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_14.mp3
+msg,1,<outline width=2 color=black>「我是失忆者的领导者……所以也必须注意自己的仪表，\n否则就无法树立榜样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_15.mp3
+msg,1,<outline width=2 color=black>「当然，并不是说只要装饰外表就可以了，如果要站在别人面前，\n那么相应的仪容和行为就是理所当然的要求」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_16.mp3
+msg,1,<outline width=2 color=black>「所以我不能在同胞们面前表现出随便的样子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_17.mp3
+msg,1,<outline width=2 color=black>「虽然……像现在这样和你这个想索者一起走在一起，\n可能已经是个奇怪的景象了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_18.mp3
+msg,1,<outline width=2 color=black>「不，刚刚那句话有点过分了。忘记它吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_19.mp3
+msg,1,<outline width=2 color=black>「正因为立场不同，你是我能放松的少数对象……\n这个对话，对我来说也是宝贵的时间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:smile,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_01_20.mp3
+msg,1,<outline width=2 color=black>「所以，现在开始做出笨拙的矜持可就不好了哦？\n那样的举动，对于平时毫不客气的你来说可不合适」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

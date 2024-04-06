@@ -1,0 +1,157 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11260300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_01.mp3
+name,<outline width=2 color=black>泽诺・娜扎莉</outline>,
+msg,1,<outline width=2 color=black>「然而，这个区域的热度实在是让人难以忍受……就像是夏季的高峰期一样。\n真是的……既然是夏天，我希望能在有海的地方。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_02.mp3
+msg,1,<outline width=2 color=black>「这个区域似乎也有湖泊……但无论如何，钓鱼还是以海洋为最。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_03.mp3
+msg,1,<outline width=2 color=black>「特别是在夏天的海钓中，很容易就能钓到大鱼。\n只要从堤防上放下线，就能钓到鲈鱼、牙鳅。还有……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:surprise,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_04.mp3
+msg,1,<outline width=2 color=black>「啊，不……！我，并不是特别喜欢钓鱼什么的？\n只是想要确认一下这里是否也复制了各个季节的生态系统而已——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_05.mp3
+msg,1,<outline width=2 color=black>「——哈。但话说回来，在你面前我也没必要再掩饰这件事了。\n只是，别把这件事告诉其他失想者好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_06.mp3
+msg,1,<outline width=2 color=black>「看到自己沉迷于爱好的人，会让人感到不安的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_07.mp3
+msg,1,<outline width=2 color=black>「钓鱼的乐趣并不是每个人都能理解的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_08.mp3
+msg,1,<outline width=2 color=black>「实际上，你刚才听我说话时也没有反应过来吧？\n你对钓鱼和鱼类几乎一无所知吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_09.mp3
+msg,1,<outline width=2 color=black>「但这真是可惜。鲈鱼和牙鳅非常美味，\n在某些地区甚至被当作高级食材对待呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「希望你教我钓鱼」,选项2　「泽诺吃过这些鱼吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:unique,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_10.mp3
+msg,1,<outline width=2 color=black>「听说好吃就立刻上钩了……真是个现实的家伙。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_11.mp3
+msg,1,<outline width=2 color=black>「但是，无论动机是什么，只要你对钓鱼感兴趣，我就不会拒绝。\n对我来说，有更多的人知道钓鱼的乐趣也是一件值得高兴的事情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_12.mp3
+msg,1,<outline width=2 color=black>「不过……虽然我说得挺大声，\n但我其实还没有钓过这些鱼。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_13.mp3
+msg,1,<outline width=2 color=black>「这些鱼主要在夜晚容易钓到。我以前\n并没有尝试过夜钓。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:unique,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_14.mp3
+msg,1,<outline width=2 color=black>「首先，我都不确定幻梦境里真的有这些鱼存在。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_15.mp3
+msg,1,<outline width=2 color=black>「但是，如果有机会，可能会尝试一下也不错。\n那个时候，你也一起来试试怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:smile,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_16.mp3
+msg,1,<outline width=2 color=black>「――啊啊。增加钓鱼伙伴是件好事。让我们一起瞄准未知的大鱼\n挥动钓竿吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_17.mp3
+msg,1,<outline width=2 color=black>「但是，如果你发现了钓鱼的乐趣，\n或许其他人也会开始对钓鱼感兴趣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_18.mp3
+msg,1,<outline width=2 color=black>「你的行为，就有这么大的影响力。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_19.mp3
+msg,1,<outline width=2 color=black>「从我的角度来看，对于想索者们来说，你已经成为了一个比你自己想象中\n要大得多的存在，这是毫无疑问的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_20.mp3
+msg,1,<outline width=2 color=black>「旁观者清，这话说得真好。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_21.mp3
+msg,1,<outline width=2 color=black>「但是，如果因为喜欢钓鱼的人增多了导致钓鱼场地被争夺\n那就麻烦了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102407/adv/sound/fav102407_02_22.mp3
+msg,1,<outline width=2 color=black>「所以，请把钓鱼的事情当作我和你之间的秘密。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

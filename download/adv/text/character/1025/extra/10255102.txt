@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11400301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_01.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「顺便问一下，你有没有对什么学科特别感兴趣呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_02.mp3
+msg,1,<outline width=2 color=black>「没什么，只是我既然扮演了教师的角色，\n这是个好机会，如果能为你做点什么……我就想了下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_03.mp3
+msg,1,<outline width=2 color=black>「我知道你是个努力的人，但作为年长者，\n我偶尔也希望你能依赖我一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_04.mp3
+msg,1,<outline width=2 color=black>「当然，你想要学习的东西、想要知道的东西，并不一定要局限于学校的课堂。有什么想法吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_05.mp3
+msg,1,<outline width=2 color=black>「不用客气。现在的我是你的老师嘛。\n我会尽可能地满足你的愿望，这个我可以保证」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我想学习剑术」,选项2　「那就教我体育保健吧……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:surprise,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_06.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「剑术……？当然可以，但那不就和平常一样吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:sad,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_07.mp3
+msg,1,<outline width=2 color=black>「难道说，除了剑术以外，你觉得从我这里无法学到其他东西吗？\n是这样的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_08.mp3
+msg,1,<outline width=2 color=black>「呵呵，不用那么慌张。只是开个小玩笑罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_09.mp3
+msg,1,<outline width=2 color=black>「虽然说，只有剑术的话，我也会觉得有些寂寞，\n如果你想到了其他的事情，希望你能随时跟我说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:sad,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_10.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「体育保健……？嗯…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_11.mp3
+msg,1,<outline width=2 color=black>「抱歉，我对学校教育的课程并不是很了解。\n从名字上猜测，应该是关于健康和运动的课程吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_12.mp3
+msg,1,<outline width=2 color=black>「那就是我的专长了。放心交给我。\n首先我们从跑步等基础体力训练开始吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_13.mp3
+msg,1,<outline width=2 color=black>「无论何时，如果没有体力就什么都开始不了。\n在这方面，锻炼身体绝对不会有损失的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:surprise,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_14.mp3
+msg,1,<outline width=2 color=black>「……嗯？怎么了，你看起来有点失望？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:sad,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_15.mp3
+msg,1,<outline width=2 color=black>「是我想太多了？嗯，是吗……如果有什么困扰你的事情\n就直接告诉我吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_16.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「顺便说一下，我个人更希望教授理论知识，\n这是我的真心话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_17.mp3
+msg,1,<outline width=2 color=black>「毕竟当提到学校老师时，大家首先想到的应该是那种形象吧？\n既然如此，我也想尽可能地符合这个形象」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_18.mp3
+msg,1,<outline width=2 color=black>「呵呵，所以你没必要显得那么愧疚。我已经说过了吧？\n我会尽量满足你的愿望的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_19.mp3
+msg,1,<outline width=2 color=black>「而且，我也不讨厌和你一起运动。你很诚实，\n学习能力也很强，和你一起锻炼，我也会觉得很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_20.mp3
+msg,1,<outline width=2 color=black>「如果你能保持这种诚实的态度并继续努力，总有一天，\n可能会轻易地超过我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102551/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102551/adv/sound/fav102551_02_21.mp3
+msg,1,<outline width=2 color=black>「但话说回来，作为老师，我也不能轻易地输给你，\n我也要努力提升自己，以免输给你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

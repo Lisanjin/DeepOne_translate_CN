@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11390300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_01.mp3
+name,<outline width=2 color=black>唯</outline>,
+msg,1,<outline width=2 color=black>「说起来，我听亚纱花说，「情人节」这个活动就要到了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_02.mp3
+msg,1,<outline width=2 color=black>「那是一个女孩子向男孩子赠送糖果的日子，不是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:unique,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_03.mp3
+msg,1,<outline width=2 color=black>「当我听说的时候，我以为又是男人从女人那里榨取利益的事情，\n但仔细一听，女孩子送糖果是为了表达好感，不是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_04.mp3
+msg,1,<outline width=2 color=black>「给喜欢的人送礼物，并不是什么奇怪的事情。\n如果这是一个鼓励这种行为的活动，那我就没必要大惊小怪了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_05.mp3
+msg,1,<outline width=2 color=black>「而且，现代的情人节已经不再只限于性别，任何人都可以向他们喜欢的人赠送糖果。\n也就是说，我也可以收到糖果了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_06.mp3
+msg,1,<outline width=2 color=black>「亚纱花似乎真的要给我「巧克力」。\n她之前问我是否可以接受洋式糕点，应该就是为了这个准备吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_07.mp3
+msg,1,<outline width=2 color=black>「亚纱花做的糖果无论如何都是美味的。\n既然如此，我没有拒绝情人节的理由了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「唯不会做巧克力吗？」,选项2「………亚纱花的巧克力」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_08.mp3
+name,<outline width=2 color=black>唯</outline>,
+msg,1,<outline width=2 color=black>「你突然说出这样的话……为什么我要做那么麻烦的事情呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_09.mp3
+msg,1,<outline width=2 color=black>「我专门接收礼物。如果你想送，也可以给我带糖果来哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_10.mp3
+msg,1,<outline width=2 color=black>「啊，但是别因为吃不完女孩子送的糖果就把它们带给我哦？那样太不诚实了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_11.mp3
+msg,1,<outline width=2 color=black>「当然，我也觉得没必要对你说这些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:sad,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_12.mp3
+name,<outline width=2 color=black>唯</outline>,
+msg,1,<outline width=2 color=black>「有什么好羡慕的呢。\n在我看来，你才是真正值得羡慕的人哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_13.mp3
+msg,1,<outline width=2 color=black>「是关于亚纱花的事情。她说她会为每个人做巧克力，\n但她送给你的肯定会特别的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_14.mp3
+msg,1,<outline width=2 color=black>「能品尝到亚纱花特别制作的巧克力，你没有必要羡慕别人，\n更不必向我索要巧克力了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_15.mp3
+name,<outline width=2 color=black>唯</outline>,
+msg,1,<outline width=2 color=black>「……即便如此，我居然会被这种流行的活动所打动，真是意外啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_16.mp3
+msg,1,<outline width=2 color=black>「如果我还是刚出生的失忆者，\n恐怕对情人节这种事一点也不感兴趣吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_17.mp3
+msg,1,<outline width=2 color=black>「啊，正是在这种时候才会深感。由于泽诺、贝阿特和你们的相遇，\n我已经改变了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:unique,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_18.mp3
+msg,1,<outline width=2 color=black>「并不是说我在抱怨什么。我并不认为现在的自己有什么不好。\n毕竟，我现在过得很快乐呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102252/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+playvoice,1,download/character/102252/adv/sound/fav102252_02_19.mp3
+msg,1,<outline width=2 color=black>「我希望以后也能一直过着这样愉快的时光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,175 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11070300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm004.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_01.mp3
+name,<outline width=2 color=black>泽诺・娜扎莉</outline>,
+msg,1,<outline width=2 color=black>「最近，除了唯和贝托丽萨之外的失想者们也都说，\n我变了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_02.mp3
+msg,1,<outline width=2 color=black>「我自己并没有觉得有什么大的变化，\n你呢，对我有什么新的印象吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1：「知道你喜欢钓鱼」,选项2：「发现你的可爱之处」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:surprise,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_03.mp3
+msg,1,<outline width=2 color=black>「你……竟然随便就说出来……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:anger,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_04.mp3
+msg,1,<outline width=2 color=black>「唔，被你抓住了我的弱点。\n那可是我最大的一个秘密……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_05.mp3
+msg,1,<outline width=2 color=black>「被这样轻浮的男人知道，真是一生的疏忽。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:surprise,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_06.mp3
+msg,1,<outline width=2 color=black>「可爱……你说的是？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_07.mp3
+msg,1,<outline width=2 color=black>「你在说什么……虽然我自己说出来有些不好意思，但我和可爱这个词\n可是相去甚远……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:shy,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_08.mp3
+msg,1,<outline width=2 color=black>「…………什么！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:shy,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_09.mp3
+msg,1,<outline width=2 color=black>「等、等一下，你……那副没规矩的脸是怎么回事。\n你在想什么说出「可爱之处」来的！？难道……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:shy,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_10.mp3
+msg,1,<outline width=2 color=black>「唔，……停止你那些奇怪的想象！你这个变态！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_11.mp3
+msg,1,<outline width=2 color=black>「哼。确实，也许我真的变了。\n如果是以前的话，现在我早就对你挥剑了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_12.mp3
+msg,1,<outline width=2 color=black>「……被说要砍下去，你怎么还笑着。\n真是的，这个男人……真麻烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:smile,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_13.mp3
+msg,1,<outline width=2 color=black>「真的很麻烦啊。都是你害的，让我觉得像这样聊天也不错。\n尽管知道我们终究会走散……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_14.mp3
+msg,1,<outline width=2 color=black>「只要你们还在寻找纳克特原书，我们失想者和你们的道路必然\n会分开……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_15.mp3
+msg,1,<outline width=2 color=black>「……或者，在实现你们的目标后，去寻找一个能保护幻梦境和\n居住在那里的失想者们安宁的道路呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_16.mp3
+msg,1,<outline width=2 color=black>「这也太过分了吧，太过于理想化了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_17.mp3
+msg,1,<outline width=2 color=black>「纳克特原书绝不会是什么温柔的存在，也不可能理解我们的处境。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_18.mp3
+msg,1,<outline width=2 color=black>「这种事情我明白得很清楚……但是为什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_19.mp3
+msg,1,<outline width=2 color=black>「和你在一起，我开始相信那样的未来可能性。\n明知道理想总是会被打破的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:sad,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_20.mp3
+msg,1,<outline width=2 color=black>「我只想保护自己能够触及的范围……这是微不足道的我能做到的事情，\n但在你面前，我却如此轻易地动摇了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_21.mp3
+msg,1,<outline width=2 color=black>「告诉我……你会承担让我有这样梦想的责任吗？\n如果你能答应我，那么我——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_22.mp3
+msg,1,<outline width=2 color=black>「……不，这对你来说太过分了。太无责任了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:normal,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_23.mp3
+msg,1,<outline width=2 color=black>「当需要做出选择的时候，\n我必须自己做出决定。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:smile,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_24.mp3
+msg,1,<outline width=2 color=black>「呵……这是秘密，我才不会告诉你呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102408/adv/atlas/stand_a,body:smile,xeno,0,-120,0.5,0,,,,
+playvoice,1,download/character/102408/adv/sound/fav102408_03_25.mp3
+msg,1,<outline width=2 color=black>「我也被你搞得团团转。你也好好烦恼一下吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

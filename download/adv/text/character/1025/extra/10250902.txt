@@ -1,0 +1,224 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_01.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「顺便问一下……我想问你，从你的角度看，\n我的装扮有没有什么奇怪的地方？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:sad,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_02.mp3
+msg,1,<outline width=2 color=black>「嗯……当然我也有穿过泳衣的经验，但那都是在我小时候，\n或者是用来训练的，这种露肤的衣服对我来说还是第一次」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:sad,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_03.mp3
+msg,1,<outline width=2 color=black>「如果有什么奇怪的地方，我自己可能不容易察觉。\n所以我想请你也帮我确认一下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「……我觉得很好」,选项2　「外套是个好的点睛之笔」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:sad,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-700,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102509/adv/sound/fav102509_02_04.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「嗯……虽然你的赞美让我很开心，但是你，是不是应该努力把视线转向别处呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+shake,0.2,4,8,8
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:unique,yoshino,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_05.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「真是的。就算你这样慌张地转移视线，也瞒不过我的眼睛哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_06.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「虽然我不太清楚……但是在泳衣上面再加上这种薄薄的东西，\n真的那么好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_07.mp3
+msg,1,<outline width=2 color=black>「确实可以覆盖住皮肤，也可以防止阳光和割伤，\n但如果这样的话，一开始就穿露得少的衣服不就好了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:unique,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_08.mp3
+msg,1,<outline width=2 color=black>「虽然我不明白，但可能有各种各样的原因吧。\n看来泳衣这东西还真是深奥啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_09.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「但是，如果你觉得没有什么奇怪的地方，那我就放心了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:shy,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_10.mp3
+msg,1,<outline width=2 color=black>「而且……就像我刚才说的，这种泳衣对我来说还是第一次。\n虽然还有些不安，但如果你喜欢的话，那就最好不过了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_11.mp3
+msg,1,<outline width=2 color=black>「那么……今天是休闲日，我们具体要做什么\n已经决定了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_12.mp3
+msg,1,<outline width=2 color=black>「如果没有特别的事情，那么……嗯，我们去找点东西吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,yoshino,0_-1200,1.2,0
+endwait
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1000,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102509/adv/sound/fav102509_02_13.mp3
+msg,1,<outline width=2 color=black>「可能，在这个浅水区域有…………哈哈，果然找到了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:surprise,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1000,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102509/adv/sound/fav102509_02_14.mp3
+msg,1,<outline width=2 color=black>「嗯……而且，这是――……呃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:surprise,yoshino,0,-1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,yoshino,0_-240,1,0
+endwait
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_15.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「快看！这条河里果然有贝壳。\n只找了一会儿就找到这么多」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:unique,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_16.mp3
+msg,1,<outline width=2 color=black>「不过，都是我没见过的贝壳……巨大的螺贝，还有漂亮的双壳贝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,60,179,113,3,0.3,1.0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:surprise,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_17.mp3
+msg,1,<outline width=2 color=black>「哦……！？这个贝壳吐出了绿色的液体……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:unique,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_18.mp3
+msg,1,<outline width=2 color=black>「……………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_19.mp3
+msg,1,<outline width=2 color=black>「――好的。首先，我们试试煮一下。没问题的，只要煮熟了没有融化\n或者发出奇怪的味道，大部分东西都是可以吃的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:smile,yoshino,0,-240,0.5,0,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_20.mp3
+msg,1,<outline width=2 color=black>「那么，先准备热水——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.4,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.4,right
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102509/adv/sound/fav102509_02_21.mp3
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,1,<outline width=2 color=black>「嗯？你这么慌张要去哪里——等等，你不打算吃这个贝壳吗？\n停下来，你听得到我说话吧……为什么要逃跑！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,217 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11100302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm131.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_01.mp3
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「雪这东西，光是走路就得耗费体力，根本没什么好处。\n听说世界上还有人会因为下雪而感到高兴，我实在是无法理解。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_02.mp3
+msg,1,<outline width=2 color=black>「虽然已经稍微习惯了一些，但是还是——咿呀！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_020.mp3
+flash,255,255,255,1,0.3,1.0
+anm,move,ulusura,0_-1200,0.7,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ulusura1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:surprise,ulusura2,0,0,0,0,,,,
+imgconf,ulusura2,ulusura1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102109/adv/sound/fav102109_03_03.mp3
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:unique,ulusura,0,-1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,ulusura,0_-130,0.5,0
+endwait
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_04.mp3
+msg,1,<outline width=2 color=black>「我、我并没有摔倒哦？　刚才那个，对，我只是看到雪中似乎\n有什么东西，所以去确认一下而已哦！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:shy,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_05.mp3
+msg,1,<outline width=2 color=black>「唔、呜、呜呜呜……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_06.mp3
+msg,1,<outline width=2 color=black>「没、没有办法嘛……我平时哪有机会在\n这种积满雪的地方走路……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:sad,ulusura,0,-130,0.5,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_07.mp3
+msg,1,<outline width=2 color=black>「总的来说，这双鞋本来就不是用来在雪山上走路的\n吧。这样的情况下，谁都会摔倒的——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:surprise,ulusura,0,-150,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_08.mp3
+msg,1,<outline width=2 color=black>「……咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:shy,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_09.mp3
+msg,1,<outline width=2 color=black>「等等，你、你为什么突然握住我的手？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:unique,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_10.mp3
+msg,1,<outline width=2 color=black>「哈、哈啊？　我才没有害羞呢！？\n像我这样的人怎么可能因为这种事变得脸红，那根本不可能嘛！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「那就这样吧」,选项2　「如果不喜欢我就放手」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:shy,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_11.mp3
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「……哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:shy,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_12.mp3
+msg,1,<outline width=2 color=black>「嘛，万一我真的滑倒了，\n这样的话，或许可以保证我的安全……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_13.mp3
+msg,1,<outline width=2 color=black>「好吧。如果你非要和我手牵手的话，\n就再这样下去一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:smile,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_14.mp3
+msg,1,<outline width=2 color=black>「到了关键时刻，你可以当垫背，保护我。\n感到荣幸吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:surprise,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_15.mp3
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「等、等一下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:shy,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_16.mp3
+msg,1,<outline width=2 color=black>「…………我并没有说不喜欢啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:shy,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_17.mp3
+msg,1,<outline width=2 color=black>「唔、如果现在放开手的话，就好像我真的害羞了一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_18.mp3
+msg,1,<outline width=2 color=black>「如果继续牵着手的话，也可以证明我并没有害羞\n……所以，再这样下去一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_19.mp3
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「――话说回来，你突然握住我的手，\n是不是有点得意忘形了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_20.mp3
+msg,1,<outline width=2 color=black>「虽然你是你，我就原谅你了。如果是其他男人的话，我肯定会让他\n尝尝一两种魔法的威力的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_21.mp3
+msg,1,<outline width=2 color=black>「……怎么了，一脸惊讶的表情。\n我已经说过很多次了，你对我来说是特别的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:smile,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_22.mp3
+msg,1,<outline width=2 color=black>「你的力量，对我来说是有用的……这个意思」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:shy,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_23.mp3
+msg,1,<outline width=2 color=black>「还有……和你在一起时，我会感到奇怪的情绪波动，\n这种感觉反而并不让人不舒服……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:shy,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_24.mp3
+msg,1,<outline width=2 color=black>「唔……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:anger,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_25.mp3
+msg,1,<outline width=2 color=black>「总、总之……既然你被我特别对待了，\n就应该更加感谢我，全心全意地侍奉我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:smile,ulusura,0,-150,0.6,0,,,,
+playvoice,1,download/character/102109/adv/sound/fav102109_03_26.mp3
+msg,1,<outline width=2 color=black>「首先，要确保我不会摔倒，好好地照顾我。\n明白了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
