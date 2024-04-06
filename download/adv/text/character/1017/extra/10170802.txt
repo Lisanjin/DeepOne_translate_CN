@@ -1,0 +1,208 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_01.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「湿润的草地上其实很容易滑倒，所以请小心不要摔倒\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_02.mp3
+msg,1,<outline width=2 color=black>「我也要小心点……如果摔倒了，\n衣服会弄脏的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_03.mp3
+msg,1,<outline width=2 color=black>「我特意打扮得这么漂亮，如果因为我自己的失误而弄脏了，\n感觉有点浪费……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_04.mp3
+msg,1,<outline width=2 color=black>「这么可爱的衣服弄脏了……果然还是不好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_05.mp3
+msg,1,<outline width=2 color=black>「……虽然是我自己说的，但感觉说出了一些奇怪的话\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_06.mp3
+msg,1,<outline width=2 color=black>「我这个人，突然说出这样的话真是奇怪……以前从来没在意过自己的打扮，现在却突然……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_07.mp3
+msg,1,<outline width=2 color=black>「比起这个，还是要专心探索才行……快点走吧――啊哇！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0,,,,
+anm,scale,quinecy,0.7_0.7,0.5,0
+anm,move,quinecy,0_-140,0.5,1
+endwait
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,10,10
+endwait
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:sad,quinecy,0,-140,0.7,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_08.mp3
+msg,1,<outline width=2 color=black>「啊，谢谢你……刚说完就滑倒了，真是太粗心了……对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「这种感觉是……」,选项2　「摔倒真是罕见」
+if,select_===_1,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,quinecy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:sad,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-70,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101708/adv/sound/fav101708_02_09.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「咿，嗯嗯……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101708/adv/sound/fav101708_02_10.mp3
+msg,1,<outline width=2 color=black>「啊，那个，虽然你扶住我很开心，但是\n你的手……嗯，在我的胸部……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:shy,quinecy,0,-140,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/101708/adv/sound/fav101708_02_11.mp3
+msg,1,<outline width=2 color=black>「你，听到了吧……？　啊，嗯……别那么用力，\n我说不要这样……啊，嗯嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:shy,quinecy,0,-140,0.7,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_12.mp3
+msg,1,<outline width=2 color=black>「探索还没结束呢，不行的……嗯嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:shy,quinecy,0,-140,0.7,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_13.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「是，是吗……？　总之，我现在已经没事了，\n可以先离开我一下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:shy,quinecy,0,-140,0.7,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_14.mp3
+msg,1,<outline width=2 color=black>「呀……！　为、为什么突然摸我的额头……没、没有事的，\n我没有发热什么的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:shy,quinecy,0,-140,0.7,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_15.mp3
+msg,1,<outline width=2 color=black>「我、我脸红是因为，那个……不好意思的地方被你看到了\n还有就是你帮助我的样子很可靠……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:shy,quinecy,0,-140,0.7,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_16.mp3
+msg,1,<outline width=2 color=black>「所以，心、心跳加速了，可以这么说吧……啊，唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:shy,quinecy,0,-140,0.7,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_17.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「总、总之，现在这样我无法冷静下来，\n请先离开我一下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101708/adv/sound/fav101708_02_18.mp3
+msg,1,<outline width=2 color=black>「哈，啊……对、对不起，让你看到了我狼狈的样子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_19.mp3
+msg,1,<outline width=2 color=black>「刚才只是因为我不小心滑了一下，\n所以……能忘记那些就最好了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_20.mp3
+msg,1,<outline width=2 color=black>「那个，我好像有点得意忘形了……在这么美丽的\n地方，打扮得这么漂亮地散步……就像是在约会一样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_21.mp3
+msg,1,<outline width=2 color=black>「但是，却让你看到我那么丢人的样子，\n我真是的，为什么会这样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/101708/adv/sound/fav101708_02_22.mp3
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_23.mp3
+msg,1,<outline width=2 color=black>「确、确实如果这样牵着手的话，即使我要摔倒也\n可能没事……可、可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101708/adv/sound/fav101708_02_24.mp3
+msg,1,<outline width=2 color=black>「――我知道了。如果你觉得好的话，我也……希望我们能这样，\n一起走一段路」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,162 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11180300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_01.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「――应该差不多可以结束这附近的调查了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_02.mp3
+msg,1,<outline width=2 color=black>「我对这种地方并不熟悉，想尽快回到拉莱耶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_03.mp3
+msg,1,<outline width=2 color=black>「你也知道的。我和哥哥总是被周围的人疏远，只能彼此依赖着生活」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_04.mp3
+msg,1,<outline width=2 color=black>「在这种店铺林立的地方愉快地购物，这种无忧无虑的事情，我们是无法做到的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_05.mp3
+msg,1,<outline width=2 color=black>「而且，哥哥一直身体虚弱，无法来到这种人多的地方……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_06.mp3
+msg,1,<outline width=2 color=black>「即使是再热闹再开心的地方，如果没有哥哥在就毫无意义。所以我也从未想过要去访问这种地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_07.mp3
+msg,1,<outline width=2 color=black>「即使是在幻梦境中，待在这样的地方，我还是感到不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「既然来了就好好享受吧」,选项2　「现在可以和哥哥一起享受了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_08.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「你……说这些话，不过是想再多看看这个领域吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_09.mp3
+msg,1,<outline width=2 color=black>「看，你都不敢看我。是不是我说中了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_10.mp3
+msg,1,<outline width=2 color=black>「真是的……你是不是忘了这里是幻梦境」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_11.mp3
+msg,1,<outline width=2 color=black>「我说过……我对这种地方并不熟悉。所以……即使你让我去享受，我也不知道怎么做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_12.mp3
+msg,1,<outline width=2 color=black>「如果你非要这么说……那就教教我怎么享受吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:surprise,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_13.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「和哥哥一起……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_14.mp3
+msg,1,<outline width=2 color=black>「原来如此……现实中，带着哥哥公开出门确实困难，但现在我们可以无视他人的目光，随心所欲地逛逛喜欢的地方……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:smile,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_15.mp3
+msg,1,<outline width=2 color=black>「……呵呵，你还挺会说话的嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:smile,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_16.mp3
+msg,1,<outline width=2 color=black>「哥哥也说他还想多看看这里，那就顺便陪你一起吧。你应该感谢我才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_17.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「嗯……什么嘛，那个表情。别乱想了好吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_18.mp3
+msg,1,<outline width=2 color=black>「……真是的，自从遇到你后，我的节奏全都乱了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_19.mp3
+msg,1,<outline width=2 color=black>「但是……我并不讨厌这样……甚至，还有点期待……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_20.mp3
+msg,1,<outline width=2 color=black>「呃……没、没什么！比起这个，我们是要看看这附近吧？那就赶紧走吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_21.mp3
+msg,1,<outline width=2 color=black>「你在发什么呆呢。快点，做好你的陪伴任务！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:smile,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_03_22.mp3
+msg,1,<outline width=2 color=black>「你最好让我和哥哥感到开心，别让我们觉得无聊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,249 @@
+
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11370300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_01.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「这个雪雕，做得真是细致入微啊。\n快看看，真的很厉害哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_02.mp3
+msg,1,<outline width=2 color=black>「哥哥！既然积了这么多雪，\n我也想试试做雪雕！一起做吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「好啊」,选项2　「一起小心地玩吧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_03.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「太好了！虽然我比较笨手笨脚的，做不出太细致的雪雕，\n所以我打算做个雪人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_04.mp3
+msg,1,<outline width=2 color=black>「我们要做一个毫不逊色于这里的雪雕的优秀雪人！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_05.mp3
+msg,1,<outline width=2 color=black>「首先，要收集雪来制作核心的球体……那个，\n要把雪紧紧地……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,2,0.5,1.0
+endwait
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_06.mp3
+msg,1,<outline width=2 color=black>「啊……我用力过猛，雪都散开了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_07.mp3
+msg,1,<outline width=2 color=black>「好，再来一次！嗯……要细心……温柔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_08.mp3
+msg,1,<outline width=2 color=black>「哎呀，好冷……！？ 雪飞溅到胸口了……！？\n啊呜，湿湿的感觉好奇怪～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin2,0,0,0,0,,,,
+imgconf,rin2,rin1,0,-150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101852/adv/sound/fav101852_02_09.mp3
+msg,1,<outline width=2 color=black>「嗯，嘶……嗯嗯……啊，谢谢你，哥哥。\n帮我擦掉真是太感谢了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_13.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「这样下去，我可能不适合做雪雕呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_10.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「好的！那我就小心点——哇哇！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,rin,80_-730,0.5,0
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin2,0,0,0,0,,,,
+imgconf,rin2,rin1,0,-380,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101852/adv/sound/fav101852_02_11.mp3
+msg,1,<outline width=2 color=black>「呼吸！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,0,-730,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,rin,0_-120,1.2,1
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_12.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「啊呜……明明刚被提醒，我就立刻摔倒了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_13.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「这样下去，我可能不适合做雪雕呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_14.mp3
+msg,1,<outline width=2 color=black>「不过不过，除了做雪雕，还有很多可以在雪地里玩的游戏呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_15.mp3
+msg,1,<outline width=2 color=black>「不管怎么摔倒，雪都不会破碎，就算稍微失败了也\n可以重新来……可以随心所欲地玩耍，这让我有点开心！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_16.mp3
+msg,1,<outline width=2 color=black>「对了，哥哥，要不要试试打雪仗？\n这样就可以和哥哥两个人一起玩了……嘿嘿，我可不会轻易输的哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_17.mp3
+msg,1,<outline width=2 color=black>「那我稍微远离一点……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rin,0.35_0.35,0.7,0
+anm,move,rin,0_-90,0.7,0
+endwait
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-90,0.35,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_18.mp3
+msg,1,<outline width=2 color=black>「……这个距离应该可以吧。好的，哥哥，我要开始了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-90,0.35,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_02_19.mp3
+msg,1,<outline width=2 color=black>「嘿！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+playse,/download/sound/se/se_055.mp3
+endwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+playse,/download/sound/se/expA.mp3
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,up
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_11370300.jpg,bg1,0,0,-1.2,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,up
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101852/adv/sound/fav101852_02_20.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「太好了，打中了——等等，啊！？ 哥哥倒下了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101852/adv/sound/fav101852_02_21.mp3
+msg,1,<outline width=2 color=black>「对不起，我可能用力过猛了！\n你没事吧，哥哥！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

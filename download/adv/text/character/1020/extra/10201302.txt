@@ -1,0 +1,158 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11720301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:sad,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_01.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「我想我和埃尔塔一定有些相似吧。\n虽然我并不太愿意承认和那个呆头呆脑的家伙有什么相似。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「相、相似……？」,选项2「比如说喜欢玩偶这一点？」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,tabasa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa2,0,0,0,0,,,,
+imgconf,tabasa2,tabasa1,0,-80,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102013/adv/sound/fav102013_02_02.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「——嘿，你在看哪里，头偏得这么厉害？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:shy,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_03.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「真是胆子不小，只会想着胸部的\n胸部星人……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_04.mp3
+msg,1,<outline width=2 color=black>「谁在说身材的事啊！再不收敛我就要发飙了哦！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:smile,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_05.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「你在说什么呢？埃尔塔并不是喜欢玩偶，\n而只是珍视他的妹妹罢了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_06.mp3
+msg,1,<outline width=2 color=black>「你连这点都不明白，还真是初级啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_07.mp3
+msg,1,<outline width=2 color=black>「……哎、哎，刚才那个，并不是说我懂埃尔塔，\n就想以此来显示优越感什么的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_08.mp3
+msg,1,<outline width=2 color=black>「所以说，别笑了好吗！即使你想藏起来，\n但你嘴角上扬的样子还是没能藏住呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_09.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「我说的相似，并不是那种表面的事情，\n而是像是行走的方式……或者说，情感的寄托……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_10.mp3
+msg,1,<outline width=2 color=black>「……即使没有人认同，即使没有人接受，\n也要为了重要的家人，用自己的力量前进」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_11.mp3
+msg,1,<outline width=2 color=black>「我是在说这种地方相似」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_12.mp3
+msg,1,<outline width=2 color=black>「坦白说，听他们的话，我并不能完全理解埃尔塔为了那些利用他的父母\n而想要恢复家族荣耀的想法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_13.mp3
+msg,1,<outline width=2 color=black>「但是……我能理解他想要证明妹妹出生的意义、她存在的价值这种情感，\n因为我也有过同样的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_14.mp3
+msg,1,<outline width=2 color=black>「我也一样，为了证明最先认同我的哥哥所说的话\n是正确的、是真实的，我才一直走到现在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_15.mp3
+msg,1,<outline width=2 color=black>「所以，嗯……如果能顺便实现埃尔塔的目标就更好了，\n我也有这样的想法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:smile,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_16.mp3
+msg,1,<outline width=2 color=black>「当然，如果要问谁更厉害一点，\n那肯定是我啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:smile,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_17.mp3
+msg,1,<outline width=2 color=black>「但即便如此，你至少要达到能让我承认你很厉害的程度，\n否则我白白地认可你就没面子了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_18.mp3
+msg,1,<outline width=2 color=black>「……虽然，并不是很担心这个」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:smile,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_02_19.mp3
+msg,1,<outline width=2 color=black>「因为……我的直觉告诉我，埃尔塔肯定能做到的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

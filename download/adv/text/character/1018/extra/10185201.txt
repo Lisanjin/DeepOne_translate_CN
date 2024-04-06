@@ -1,0 +1,167 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11370300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_01.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「嘿嘿嘿……这次的衣服设计得像猫咪呢。\n我平时不会穿这样的衣服，感觉非常新鲜！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_02.mp3
+msg,1,<outline width=2 color=black>「快看，哥哥！ 这个衣服还有耳朵和尾巴。\n――哈欠」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,3,7,7,rin
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_03.mp3
+msg,1,<outline width=2 color=black>「啊呜……打了个喷嚏……这个衣服虽然可爱，\n但可能有点冷……周围都是雪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「是因为胸口开得太大吗？」,选项2 「是因为裙子太短吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_04.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「是的，就是这样。胸口被冷风吹到，\n身体都要颤抖了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:shy,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_05.mp3
+msg,1,<outline width=2 color=black>「……虽然可以拉上衣服的话就好了，\n但是……胸部太紧，拉不上拉链……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:shy,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_06.mp3
+msg,1,<outline width=2 color=black>「等等，为什么你要盯着我的胸部看。\n啊呜……我都不知道该怎么办了，你这个哥哥……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_07.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「就是这样。裙子太短了，\n一阵风吹过来腿就冷得要跳起来。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_08.mp3
+msg,1,<outline width=2 color=black>「但是，这点寒冷算不了什么！\n为了时尚需要忍耐，而且我穿的这件衣服可爱极了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_09.mp3
+msg,1,<outline width=2 color=black>「我希望哥哥能看到我最可爱的一面……\n嘿嘿……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+anm,scale,rin,0.6_0.6,0.4,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,0,-120,0.6,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_10.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「哇哇……你、你怎么了，哥哥……突然牵我的手」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.6,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_11.mp3
+msg,1,<outline width=2 color=black>「当然，并不讨厌……和哥哥牵手的话，\n会感觉很暖和，胸口都变得暖洋洋的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.6,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_12.mp3
+msg,1,<outline width=2 color=black>「难道说，是为了让我不觉得冷吗？\n嘿嘿，原来是这样啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,0,-120,0.6,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_13.mp3
+msg,1,<outline width=2 color=black>「确实，和哥哥紧贴在一起的话，就会忘记寒冷呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-120,0.6,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_14.mp3
+msg,1,<outline width=2 color=black>「啊，我想到一个好方法！ 那就这样做吧……抱住你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rin,0.7_0.7,0.5,0
+anm,move,rin,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,0,-140,0.7,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_15.mp3
+msg,1,<outline width=2 color=black>「这样会更暖和吧……这样抱着你，\n可以非常清楚地感受到哥哥的体温」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,0,-140,0.7,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_16.mp3
+msg,1,<outline width=2 color=black>「啊……哥哥？ 你的脸怎么红了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,0,-140,0.7,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_17.mp3
+msg,1,<outline width=2 color=black>「莫、莫非是感冒发热了吗……！\n那、那可不行，更应该保暖才对！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,0,-140,0.7,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_18.mp3
+msg,1,<outline width=2 color=black>「我会更紧地抱住你的……！ 抱住你，抱住你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,0,-140,0.7,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_19.mp3
+msg,1,<outline width=2 color=black>「――等等，啊，哥哥你的眼睛翻白了……！？\n难道说我是不是用力过猛了！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,0,-140,0.7,0,,,,
+playvoice,1,download/character/101852/adv/sound/fav101852_01_20.mp3
+msg,1,<outline width=2 color=black>「对、对不起！ 哥哥，请你醒醒！\n在这种地方睡着的话会死掉的！ 哥哥――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

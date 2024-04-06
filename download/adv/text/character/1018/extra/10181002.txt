@@ -1,0 +1,164 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11630300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_01.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「我听说过，但是学校里真的有很多教室\n呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_02.mp3
+msg,1,<outline width=2 color=black>「难道这就意味着需要这么多教室来容纳大量的人\n吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_03.mp3
+msg,1,<outline width=2 color=black>「我在养育我的设施里也有很多孩子，\n但我想这和那里相比肯定是天差地别的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_04.mp3
+msg,1,<outline width=2 color=black>「而且，学校不只有一个或两个，\n在大城市里甚至有好几个呢？真是太厉害了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_05.mp3
+msg,1,<outline width=2 color=black>「啊，对了，亚纱花小姐说过，不同的学校制服设计也会不同\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_06.mp3
+msg,1,<outline width=2 color=black>「比如说，有些学校会区分水手服和西装制服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:shy,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_07.mp3
+msg,1,<outline width=2 color=black>「……顺便问一下，你觉得我\n穿的这套制服怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「很适合凛」,选项2 「……看起来有点紧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_08.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「是吗？谢谢你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_09.mp3
+msg,1,<outline width=2 color=black>「我有点不安，但是听到哥哥你这么说，\n我真的很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_10.mp3
+msg,1,<outline width=2 color=black>「对了，前段时间我在拉莱耶的仓库里发现了类似制服的衣服，\n如果你愿意，我可以试穿给你看？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_11.mp3
+msg,1,<outline width=2 color=black>「像学校的制服、女仆装……还有各种各样的衣服\n都准备得很齐全……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_12.mp3
+msg,1,<outline width=2 color=black>「但是……为什么拉莱耶的仓库会有这样的衣服呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_13.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「嗯……其实就是这样……胸部稍微有点紧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:sad,rin2,0,0,0,0,,,,
+imgconf,rin2,rin1,0,-150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101810/adv/sound/fav101810_02_14.mp3
+msg,1,<outline width=2 color=black>「啊，那个哥哥……你如果一直这么盯着看，\n我会有点害羞的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:shy,rin,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_15.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「我并不介意哥哥你看我，只是这是我第一次穿学校制服，\n所以如果可能的话，希望你也能看看除了胸部以外的地方……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:surprise,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_16.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「……话说回来，我们不能一直只谈论衣服。\n现在我们正在进行探索，必须要好好调查这个地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_17.mp3
+msg,1,<outline width=2 color=black>「毕竟在拉莱耶那里我已经给大家添了不少麻烦，\n所以至少在探索方面我要尽量发挥作用才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_18.mp3
+msg,1,<outline width=2 color=black>「而且……虽然只是幻梦境，但这是我第一次来学校，\n所以能看到各种东西，其实我有点期待……就这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:normal,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_19.mp3
+msg,1,<outline width=2 color=black>「那个，哥哥你也没有上过学吧？那么在探索的同时，\n不妨试着体验一下学生的感觉如何呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101810/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101810/adv/sound/fav101810_02_20.mp3
+msg,1,<outline width=2 color=black>「――嘿嘿，那我们就马上出发吧，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

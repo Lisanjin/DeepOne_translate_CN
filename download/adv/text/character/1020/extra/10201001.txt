@@ -1,0 +1,164 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11180300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_01.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「看起来这里有好几家店铺……这是什么地方？\n而且，这身孩子气的打扮……总让我感觉自己被取笑了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_02.mp3
+msg,1,<outline width=2 color=black>「你是不是觉得这种设计很适合我\n所以才会拿出这样的衣服来？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_03.mp3
+msg,1,<outline width=2 color=black>「我要说一下，我更喜欢成熟稳重\n的设计」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_04.mp3
+msg,1,<outline width=2 color=black>「总的来说，这种明亮的颜色并不适合我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「更可爱的设计也可以」,选项2　「很适合你」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_05.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「更可爱，你……你究竟想象的是什么样的东西。\n只是想象一下都让人感到厌烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_06.mp3
+msg,1,<outline width=2 color=black>「我不是玩偶。如果你敢让我穿那样的东西。\n可别以为就此了事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_07.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「哼。真会说些讨好人的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_08.mp3
+msg,1,<outline width=2 color=black>「你以为随便说几句话，就能让我的心情好起来？\n我告诉你，我和其他人不同，头脑里可没有那么多花花草草」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_09.mp3
+msg,1,<outline width=2 color=black>「就算是你赞美我，我也一点都不会感动。\n我不可能为了迎合你的口味而改变自己的喜好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_10.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「嘛，你是个铁杆的萝莉控，可能看到我穿这样的衣服\n就会非常满足吧，但是我不在乎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_11.mp3
+msg,1,<outline width=2 color=black>「如果你明白了，就收敛一下那毫无顾忌的眼神。\n话说回来，这身衣服到底是――啊，哥哥？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,tabasa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:surprise,tabasa2,0,0,0,0,,,,
+imgconf,tabasa2,tabasa1,0,-220,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102010/adv/sound/fav102010_01_12.mp3
+msg,1,<outline width=2 color=black>「适合……我吗？\n这样的衣服真的适合塔芭莎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:smile,tabasa2,0,0,0,0,,,,
+imgconf,tabasa2,tabasa1,0,-220,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102010/adv/sound/fav102010_01_13.mp3
+msg,1,<outline width=2 color=black>「那个……如果哥哥这么说的话，我也……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_14.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「――哼。既然哥哥喜欢，那我在这段时间里就乖乖\n保持这样的打扮吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_15.mp3
+msg,1,<outline width=2 color=black>「还有……哥哥对你表示了感谢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_16.mp3
+msg,1,<outline width=2 color=black>「他说让我穿上可爱的衣服……感谢你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:surprise,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_17.mp3
+msg,1,<outline width=2 color=black>「……哥、哥哥？　请、请别笑……哥、哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_18.mp3
+msg,1,<outline width=2 color=black>「呜、呜呜……话说回来，为什么你也在笑！　被哥哥笑没关系，但被你笑让人很不舒服――听着！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102010/adv/atlas/stand_a,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102010/adv/sound/fav102010_01_19.mp3
+msg,1,<outline width=2 color=black>「――啊，真是的，好了，我要去看看周围！\n如果你还要继续笑的话，我就把你丢在这里……哼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

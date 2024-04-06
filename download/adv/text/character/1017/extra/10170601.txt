@@ -1,0 +1,175 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11340300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_01.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「……咦？ 这衣服……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_02.mp3
+msg,1,<outline width=2 color=black>「啊，那个，对不起。能不能稍等一下，我有点在思考\n这件衣服的问题……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_03.mp3
+msg,1,<outline width=2 color=black>「不，没什么大不了的。\n总之，稍等一会儿……嗯，稍……嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_04.mp3
+msg,1,<outline width=2 color=black>「呜……为什么，卡住了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_05.mp3
+msg,1,<outline width=2 color=black>「……其实，那个……这件运动衫的拉链在胸部位置卡住了\n没法完全拉上去」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_06.mp3
+msg,1,<outline width=2 color=black>「但是，我觉得强行拉应该可以解决。\n我马上就搞定，嗯……请等一下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「这样也挺好的」,选项2 「需要我帮忙吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_07.mp3
+msg,1,<outline width=2 color=black>「咦？ 好东西是指……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,quinecy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-70,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101706/adv/sound/fav101706_01_08.mp3
+msg,1,<outline width=2 color=black>「果然，你是这个意思吧。\n毕竟这样看起来比平时更突出了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:unique,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_09.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「但是……果然，被这么盯着看还是会害羞的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_10.mp3
+msg,1,<outline width=2 color=black>「帮忙是怎么帮呢……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_11.mp3
+msg,1,<outline width=2 color=black>「如果要你帮我压住胸部，那就意味着，你会大大方方地摸到我的胸部，\n就连拉拉链也会碰到我的手……对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_12.mp3
+msg,1,<outline width=2 color=black>「……呃，为什么你边摇手边靠近我？\n不、不行哦？ 在这种地方做这种……啊，呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_13.mp3
+msg,1,<outline width=2 color=black>「……咦……你在开玩笑吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_14.mp3
+msg,1,<outline width=2 color=black>「是、是吧……真是的，\n都快要让我心跳加速到不行了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_15.mp3
+msg,1,<outline width=2 color=black>「哈啊……为什么我的胸部\n会变得这么大呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_16.mp3
+msg,1,<outline width=2 color=black>「在狙击的时候也会碍事，要是小一点就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_17.mp3
+msg,1,<outline width=2 color=black>「……对了，如果我减肥的话，胸部会不会变小呢？\n毕竟胸部是由脂肪组成的，一定有办法的――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,quinecy,0.7_0.7,0.4,0
+endwait,,,,,,,,,,,
+shake,0.2,3,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.7,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_18.mp3
+msg,1,<outline width=2 color=black>「啊！？ 那、那个，突然这么逼近的话……\n请、请冷静一下……你这么紧张的表情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.7,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_19.mp3
+msg,1,<outline width=2 color=black>「呜哇，啊！？ 停、停下……请停下，\n你列举出这么多我胸部的优点……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.7,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_20.mp3
+msg,1,<outline width=2 color=black>「我已经明白你很喜欢我的胸部了！\n既然你这么说，那我就暂时不考虑减肥了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.7,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_01_21.mp3
+msg,1,<outline width=2 color=black>「所以，请不要再说了……太害羞了，所以请停下……！\n啊，呜……感觉脸都要冒火了……呜呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

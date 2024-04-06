@@ -1,0 +1,179 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11340300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm004.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_01.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「我以前从未有机会慢慢地欣赏这样的地方\n所以感觉挺新鲜的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_02.mp3
+msg,1,<outline width=2 color=black>「我不能参加真正的运动会，也不能成为学生，\n但是，可以稍微体验一下那种感觉……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_03.mp3
+msg,1,<outline width=2 color=black>「……如果我们是普通的学生，会过着怎样的学校生活，\n又会以怎样的方式相遇呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_04.mp3
+msg,1,<outline width=2 color=black>「我可能不会像其他人那样引人注目，\n那样的话，可能也就没有机会遇到你了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「不会这样的」,选项2　「可能会变成引人注目的学生」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_05.mp3
+msg,1,<outline width=2 color=black>「但是，现在这个样子，不觉得有点迟钝吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,quinecy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-70,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101706/adv/sound/fav101706_03_06.mp3
+msg,0,<outline width=2 color=black>「……那个，你在看哪儿呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_07.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「难、难道是因为……胸部大所以引人注目吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_08.mp3
+msg,1,<outline width=2 color=black>「哼。就算你现在转移视线也掩饰不了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_09.mp3
+msg,1,<outline width=2 color=black>「……但是，无论如何，如果我能和你一起作为学生生活，\n参加像运动会这样的活动……那会是一件很开心的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_10.mp3
+msg,1,<outline width=2 color=black>「话说回来……亚纱花说过，日本的学生似乎有\n「高中初体验」和「大学初体验」这样的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_11.mp3
+msg,1,<outline width=2 color=black>「也许我也会在某个地方开始我的学生生活，戴上饰品，\n比现在更努力化妆呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_12.mp3
+msg,1,<outline width=2 color=black>「虽然有点难以想象，但如果是那样的我，\n也许会主动和你打招呼……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_13.mp3
+msg,1,<outline width=2 color=black>「……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_14.mp3
+msg,1,<outline width=2 color=black>「啊……对不起，突然笑出来了。\n自己在说这种话，感觉有点奇怪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_15.mp3
+msg,1,<outline width=2 color=black>「以前的我，可能不会想象自己变成学生的样子，\n因为根本没有那个余裕……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_16.mp3
+msg,1,<outline width=2 color=black>「但是，和你在一起的时间很快乐……所以不由自主地想到。\n如果能和你度过平静的时光，那该多好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_17.mp3
+msg,1,<outline width=2 color=black>「……所以我才会感到困扰」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_18.mp3
+msg,1,<outline width=2 color=black>「像我这样杀了很多人的人，现在还希望过平静的日子，\n或者变得幸福，这是不应该发生的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_19.mp3
+msg,1,<outline width=2 color=black>「明明知道这一点，但是无法改变我的感情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,quinecy,0.7_0.7,0.5,0
+endwait,,,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.7,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_20.mp3
+msg,1,<outline width=2 color=black>「你、你干嘛，突然拉我的手……啊？\n不，参加运动会的比赛什么的，我不行……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.7,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_21.mp3
+msg,1,<outline width=2 color=black>「……你真狡猾。准备了「只是现在」这样的借口。\n被你这么说的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101706/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.7,0,,,,
+playvoice,1,download/character/101706/adv/sound/fav101706_03_22.mp3
+msg,1,<outline width=2 color=black>「我也……想要握住你的手了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

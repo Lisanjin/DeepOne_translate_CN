@@ -1,0 +1,239 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11200300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:normal,rin,0,-120.0,0.5,0.5,,,,
+spine,download/adv/spine/Mark1,em1,default,animation,0,120,150,0.65,0.9,0.5,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_01.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「哇……这是我第一次见到这么多樱花盛开的地方！\n虽然是在幻梦境中，但真的太美了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:smile,rin,0,-120.0,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_02.mp3
+msg,1,<outline width=2 color=black>「哇，哇，快看，哥哥。风一吹，\n花瓣就像雨一样……太棒了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:normal,rin,0,-120.0,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_03.mp3
+msg,1,<outline width=2 color=black>「嗯，我刚才一直在说「太棒了」……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:normal,rin,0,-120.0,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_04.mp3
+msg,1,<outline width=2 color=black>「这种时候，其他人可能会用更美丽的词语来表达，\n但我，我不擅长这样的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「只要有心就好」,选项2 「试试看？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:surprise,rin,0,-120.0,0.5,0,,,,
+spine,download/adv/spine/Mark12,em2,default,animation,0,120,150,0.65,0.9,0.5,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_05.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「有心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:smile,rin,0,-120.0,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_06.mp3
+msg,1,<outline width=2 color=black>「那我也不会输的！\n我的心里充满了觉得美丽的感觉！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:sad,rin,0,-120.0,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_07.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「嗯……就算你这么说……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:sad,rin,0,-120.0,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_08.mp3
+msg,1,<outline width=2 color=black>「嗯，飘落的花瓣就像在跳舞一样，然后，额，\n啊—嗯—……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:shy,rin,0,-120.0,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_09.mp3
+msg,1,<outline width=2 color=black>「啊，果然还是不行！哥哥，别笑我！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:sad,rin,0,-120.0,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_10.mp3
+msg,1,<outline width=2 color=black>「唉……果然我不适合这样的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:normal,rin,0,-120.0,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_11.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「啊……哥哥，稍微静一静。\n你头上落了花瓣。我帮你取下来。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rin,0.6_0.6,0.5,0
+anm,move,rin,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:sad,rin,0,-130,0.6,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_12.mp3
+msg,1,<outline width=2 color=black>「嗯……啊，够不到……这个……哎呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rin,0.7_0.7,0.5,0
+anm,move,rin,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:surprise,rin,0,-140,0.7,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_13.mp3
+msg,1,<outline width=2 color=black>「啊，哇哇哇！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:surprise,rin2,0,0,0,0,,,,
+imgconf,rin2,rin1,0,-150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101809/adv/sound/fav101809_01_14.mp3
+msg,1,<outline width=2 color=black>「哎呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101809/adv/sound/fav101809_01_15.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「呜、呜呜，对不起，我用力过猛摔倒了。\n你没事吧？我把你压在下面了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101809/adv/sound/fav101809_01_16.mp3
+msg,1,<outline width=2 color=black>「咿！？那个，哥哥，如果你在胸部间摸来摸去的话，\n呀、啊……嗯嗯……好痒……不行、的喔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101809/adv/sound/fav101809_01_17.mp3
+msg,1,<outline width=2 color=black>「嗯嗯嗯……啊、那个，哥哥，你在挣扎什么……等等，啊！\n对不起，是因为我压着你让你喘不过气来吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:surprise,rin,200,-1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,rin,0_-120,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:shy,rin,0,-120,0.5,0,,,,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_18.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「真的很对不起，哥哥！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:sad,rin,0,-120,0.5,0,,,,
+spine,download/adv/spine/Mark11,em3,default,animation,0,120,150,0.65,0.9,0.5,
+playvoice,1,download/character/101809/adv/sound/fav101809_01_19.mp3
+msg,1,<outline width=2 color=black>「——哇哇哇！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,rin,-250_-1200,0.7,0
+endwait
+
+
+shake,0.2,4,15,15
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101809/adv/atlas/stand_a,body:sad,rin2,0,0,0,0,,,,
+imgconf,rin2,rin1,0,670,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101809/adv/sound/fav101809_01_20.mp3
+msg,1,<outline width=2 color=black>「咿！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101809/adv/sound/fav101809_01_21.mp3
+name,<outline width=2 color=black>凛・洛温</outline>,
+msg,1,<outline width=2 color=black>「啊、啊啊，对不起，哥哥！花瓣积在脚下，\n我好像是滑到了……这、这次是用屁股坐上去了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101809/adv/sound/fav101809_01_22.mp3
+msg,1,<outline width=2 color=black>「对不起，我马上就起来……咿！？等等，哥、哥，\n你在裙子里面说话……！呜、嗯嗯……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101809/adv/sound/fav101809_01_23.mp3
+msg,1,<outline width=2 color=black>「温暖的呼吸在大腿上，还有……嗯、啊、啊，那个，\n我已经没有力气了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101809/adv/sound/fav101809_01_24.mp3
+msg,1,<outline width=2 color=black>「我、我想起来但是……咿！？嗯嗯……！\n啊、啊呜呜，为什么我总是……对、对不起—！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

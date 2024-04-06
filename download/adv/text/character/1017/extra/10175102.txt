@@ -1,0 +1,177 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm034.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_01.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「呼……风真舒服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_02.mp3
+msg,1,<outline width=2 color=black>「记得以前在海上工作时，设备因海风侵蚀需要维护，那种环境真是让人头疼……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_03.mp3
+msg,1,<outline width=2 color=black>「很奇妙，明明都是海风，感觉却完全不同。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_04.mp3
+msg,1,<outline width=2 color=black>「当然，以昆西的身份工作和随意度假，感受肯定会有所不同。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_05.mp3
+msg,1,<outline width=2 color=black>「啊，看那里。这片区域的贝壳和漂浮的珊瑚碎片很漂亮。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_06.mp3
+msg,1,<outline width=2 color=black>「……那时候，我对这些东西都视而不见。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「工作很辛苦吧」,选项2　「能享受就好」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_07.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「当然，工作并不轻松。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_08.mp3
+msg,1,<outline width=2 color=black>「在波涛汹涌的船上对准目标并非易事，炽热的阳光也不断削弱我的体力……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_09.mp3
+msg,1,<outline width=2 color=black>「但是，今天改变了我对海的印象，原来海这么有趣。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_10.mp3
+msg,1,<outline width=2 color=black>「我想要更多的海洋记忆。比如……这个海如此美丽，或许可以试试游泳。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_11.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「是的……能了解到我之前未知的海洋，真是有趣。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_12.mp3
+msg,1,<outline width=2 color=black>「而且，和你一起在海边散步，感觉就像……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_13.mp3
+msg,1,<outline width=2 color=black>「呃――没、没什么！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_14.mp3
+msg,1,<outline width=2 color=black>「我、我……我要说什么来着……啊，脸好热……那个……对、对了！既然来了，我们去海里吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_15.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「……啊。但是，实际上我并不擅长游泳。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_16.mp3
+msg,1,<outline width=2 color=black>「就像被什么东西拉着，上半身总是漂浮在水面上……是平衡感不好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_17.mp3
+msg,1,<outline width=2 color=black>「……顺便问一下，如果可以的话，一起练习游泳怎么样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_18.mp3
+msg,1,<outline width=2 color=black>「啊――好的，让我们一起掌握游泳技巧吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_19.mp3
+msg,1,<outline width=2 color=black>「但是，不用那么兴奋也没关系哦？就像扩展游戏一样，轻轻松松地就好。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_20.mp3
+msg,1,<outline width=2 color=black>「……这一定也会成为无法替代的回忆吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101751/adv/sound/fav101751_02_21.mp3
+msg,1,<outline width=2 color=black>「呵呵……如果能和你一起创造更多回忆，那将会是非常、非常……――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,quinecy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101751/adv/atlas/stand_a,body:normal,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-370,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101751/adv/sound/fav101751_02_22.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「――我想，那一定是幸福的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

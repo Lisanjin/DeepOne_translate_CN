@@ -1,0 +1,172 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11180300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_01.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「说起来，我在情人节的时候也收到了亚纱花和其他人的\n友情巧克力呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_02.mp3
+msg,1,<outline width=2 color=black>「如果白色情人节是回赠情人节的礼物的日子，\n那我也得考虑给大家回赠些什么了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_03.mp3
+msg,1,<outline width=2 color=black>「话虽如此，白色情人节到底应该送什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_04.mp3
+msg,1,<outline width=2 color=black>「比如说情人节的话，定番就是巧克力，\n那白色情人节有没有类似这样的定番呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_05.mp3
+msg,1,<outline width=2 color=black>「而且，肯定每个人都有自己喜欢和不喜欢的东西，\n这个也得考虑进去……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_06.mp3
+msg,1,<outline width=2 color=black>「我想请教一下……你觉得回赠巧克力应该送什么好呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_07.mp3
+msg,1,<outline width=2 color=black>「啊，当然不一定要是实际会送的东西。\n毕竟这种事你可能想保密吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_08.mp3
+msg,1,<outline width=2 color=black>「只是希望能多了解一些关于白色情人节的一般知识」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_09.mp3
+msg,1,<outline width=2 color=black>「你可能会送很多回礼，所以我想你可能也在收集这方面的知识吧……怎么样呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「……棉花糖」,选项2 「像猫脸形状的饼干怎么样？」
+if,select_===_1,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,quinecy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-70,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101707/adv/sound/fav101707_02_10.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「棉花糖吗？难道是因为白色情人节，所以送白色的东西\n是定番吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-70,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101707/adv/sound/fav101707_02_11.mp3
+msg,1,<outline width=2 color=black>「棉花糖又软又好吃，\n一旦开始吃就好像永远停不下来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-70,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101707/adv/sound/fav101707_02_12.mp3
+msg,1,<outline width=2 color=black>「……呃，你是不是一直在看我下面，有什么事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_13.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「如果没什么事就好了……如果你不舒服的话，\n请不要客气，告诉我哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_14.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「这个猫脸饼干……我明白了，这真是个好主意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_15.mp3
+msg,1,<outline width=2 color=black>「只看着它就很开心了，\n如果还好吃的话，那就更完美了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_16.mp3
+msg,1,<outline width=2 color=black>「可以把巧克力或可可粉混入面团做成黑猫款式，制作出各种类型的\n猫脸饼干，我觉得这是个非常好的主意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_17.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「谢谢你。我会参考你给我的建议，\n去准备礼物的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_18.mp3
+msg,1,<outline width=2 color=black>「那个，虽然这是作为感谢的礼物，如果你愿意的话，我想在白色情人节之外\n也给你送个礼物……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101707/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101707/adv/sound/fav101707_02_19.mp3
+msg,1,<outline width=2 color=black>「――好的，谢谢你。呵呵，如果你也期待的话，我就得更加努力了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

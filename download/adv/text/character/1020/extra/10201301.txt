@@ -1,0 +1,165 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11720301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:sad,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_01.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「一个不同的可能性世界，是吗……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_02.mp3
+msg,1,<outline width=2 color=black>「说实话，即使亲眼看到那些从不同世界掉下来的影子们，\n我也无法理解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_03.mp3
+msg,1,<outline width=2 color=black>「在这里不存在的某个地方，有着各种……甚至可以说是无限的可能性。\n昨天做出不同的选择，得出不同的结果的我存在着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_04.mp3
+msg,1,<outline width=2 color=black>「……这太过于方便了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_05.mp3
+msg,1,<outline width=2 color=black>「我的选择永远只有一个……所以才会\n全力以赴……为了不犯错，我会拼命努力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_06.mp3
+msg,1,<outline width=2 color=black>「然而，如果后来提出了其他可能性……感觉就像是\n轻视了我的选择」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_07.mp3
+msg,1,<outline width=2 color=black>「至少我是不想看到，也不想知道自己的其他可能性的\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「你有想要重来的事情吗？」,选项2　「真像塔芭莎」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_08.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「这样的人，应该不存在吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_09.mp3
+msg,1,<outline width=2 color=black>「因为犯过错误，所以才能在下次中吸取教训，努力不再失败。\n因为知道痛苦，所以才能去追求力量」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_10.mp3
+msg,1,<outline width=2 color=black>「如果有人回首过去一切都是顺风顺水的，那他要么是被人极度溺爱过，\n要么就是他自己是个不自省的大傻瓜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_11.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「哼。像你这样的人，能懂我什么呢。\n别再用那种了解的口吻说话了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:shy,tabasa,0,-120,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,tabasa
+playvoice,1,download/character/102013/adv/sound/fav102013_01_12.mp3
+msg,1,<outline width=2 color=black>「……等一下。为什么突然摸我的头呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,0,-120,0.6,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_13.mp3
+msg,1,<outline width=2 color=black>「难道，你是在夸我？我可不是孩子哦！\n而且，就算被你这样做，我也不会高兴的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_14.mp3
+msg,1,<outline width=2 color=black>「本来，我并没有说什么特别的话。\n对这种事情，不要做出奇怪的反应」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_15.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「当然，这只是我的想法，并没有打算对那些从其他世界掉下来的影子们说什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_16.mp3
+msg,1,<outline width=2 color=black>「……埃尔塔能遇到玛利亚，肯定也是好事吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_17.mp3
+msg,1,<outline width=2 color=black>「你在那傻笑什么呢。看着别人的脸，到底在想些什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_18.mp3
+msg,1,<outline width=2 color=black>「算了，还是不要说了。反正你这人，\n肯定不会是什么好事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,0,-120,0.6,0.5,,,,
+endwait
+shake,0.5,3,12,0
+playvoice,1,download/character/102013/adv/sound/fav102013_01_19.mp3
+msg,1,<outline width=2 color=black>「啊，真是的，别再摸我的头了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:shy,tabasa,0,-120,0.6,0,,,,
+playvoice,1,download/character/102013/adv/sound/fav102013_01_20.mp3
+msg,1,<outline width=2 color=black>「你这是怎么了……哼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
