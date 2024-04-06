@@ -1,0 +1,170 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11390300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm106.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_01.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「……虽然在这样的地方，但是我和男人并肩走着，\n仔细一想，还真有点不习惯呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_02.mp3
+msg,1,<outline width=2 color=black>「是因为快到情人节了吗……总觉得有些特别在意……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_03.mp3
+msg,1,<outline width=2 color=black>「你也知道，无论是情人节、感恩节还是圣诞节，\n我都忙于工作，根本没时间约会」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_04.mp3
+msg,1,<outline width=2 color=black>「…………等一下。算了，刚才的话收回」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_05.mp3
+msg,1,<outline width=2 color=black>「我、我为什么会突然说起约会呢……我自己都\n觉得莫名其妙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「约会也不错」,选项2　「只是工作上的交往？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_06.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「等、等一下，你也别说些奇怪的话……你这么说\n会让我更在意的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_07.mp3
+msg,1,<outline width=2 color=black>「这、这只是我的想象而已……就算没有敌人，\n就算是个悠闲的区域，也不应该……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_08.mp3
+msg,1,<outline width=2 color=black>「……但是，如果你非要说这就是约会的话，\n那我也可以答应你……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_09.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「这种提问方式不公平吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_10.mp3
+msg,1,<outline width=2 color=black>「如果真的只是工作上的交往，我根本就不会说这些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_11.mp3
+msg,1,<outline width=2 color=black>「……话说回来，你问这种恶意的问题……难道是想让我\n说出是约会，对吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_12.mp3
+msg,1,<outline width=2 color=black>「呵呵，我猜中了吗？你在这种时候很容易读懂呢。\n如果你一直这样就好了，我也不会被你牵着走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_13.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「……但是如果说是约会的话，不仅仅是普通地走路，\n应该有更像约会的距离吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_14.mp3
+msg,1,<outline width=2 color=black>「…………瞥一眼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_15.mp3
+msg,1,<outline width=2 color=black>「……瞥一眼…………瞥一眼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_16.mp3
+msg,1,<outline width=2 color=black>「――喂！　等一下！　你为什么完全无视我！？\n我刚才其实已经很努力了哦！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_17.mp3
+msg,1,<outline width=2 color=black>「哼、嗯……没、没关系，如果你这么想的话，\n我也有我的想法……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,ruiez,0.7_0.7,0.6,0
+anm,move,ruiez,0_-130,0.6,0
+endwait
+
+
+playvoice,1,download/character/103409/adv/sound/fav103409_03_18.mp3
+msg,1,<outline width=2 color=black>「看、看吧……像这样挽着手臂，感觉更像是在约会对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:shy,ruiez,0,-130,0.7,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_19.mp3
+msg,1,<outline width=2 color=black>「我、我才没有害羞呢？\n在晚宴或者社交场合，这样的距离很正常好吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:normal,ruiez,0,-130,0.7,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_20.mp3
+msg,1,<outline width=2 color=black>「啊……你的颈部也稍微红了一点吧？\n难道，你也在紧张……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:smile,ruiez,0,-130,0.7,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_21.mp3
+msg,1,<outline width=2 color=black>「呵呵，原来如此……是这样啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:normal,ruiez,0,-130,0.7,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_22.mp3
+msg,1,<outline width=2 color=black>「那么，别一直站在那里……我们，继续走吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103409/adv/atlas/stand_a,body:smile,ruiez,0,-130,0.7,0,,,,
+playvoice,1,download/character/103409/adv/sound/fav103409_03_23.mp3
+msg,1,<outline width=2 color=black>「你让我做到这个地步……一定要让我度过一个愉快的约会\n否则可不行哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

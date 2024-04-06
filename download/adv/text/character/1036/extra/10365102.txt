@@ -1,0 +1,163 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_01.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「话说回来，每次我告诉拉莱耶的大家我在家里穿和服的事情，\n总有大约一半的人会问我穿和服的时候内衣怎么办呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_02.mp3
+msg,1,<outline width=2 color=black>「可能是因为大家都听说过穿和服不穿内衣的事情，\n所以都特别好奇吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_03.mp3
+msg,1,<outline width=2 color=black>「咦咦？哥哥，你的眼神是不是变得有点色色了？\n难道你在想莉瀬穿浴衣时下面会是什么样子吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:shy,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_04.mp3
+msg,1,<outline width=2 color=black>「真是的，你就是个色色的大色狼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_05.mp3
+msg,1,<outline width=2 color=black>「不过没关系，莉瀬会接受哥哥这个色狼的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_06.mp3
+msg,1,<outline width=2 color=black>「顺便问一下……莉瀬现在\n是穿了内衣呢，还是没穿呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「穿了」,选项2 「没穿」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_07.mp3
+msg,1,<outline width=2 color=black>「哦……答对了。\n但是，你怎么知道的呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_08.mp3
+msg,1,<outline width=2 color=black>「……刚才交叉双臂时的触感？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_09.mp3
+msg,1,<outline width=2 color=black>「原来如此，也就是说哥哥其实已经充分\n感受到了我的胸罩的触感了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_10.mp3
+msg,1,<outline width=2 color=black>「哔哔，答错啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_11.mp3
+msg,1,<outline width=2 color=black>「看来哥哥也是认为穿和服不穿内衣的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_12.mp3
+msg,1,<outline width=2 color=black>「虽然有点遗憾，但现实并不是那么甜蜜的哦，哥哥。\n现在的世界，神佛习合，中西合璧，穿和服里面也穿内衣已经是很正常的事情了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_13.mp3
+msg,1,<outline width=2 color=black>「顺便说一下，之所以有穿和服不穿内衣的说法，\n主要是因为原来日本并没有像现在这样的内衣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_14.mp3
+msg,1,<outline width=2 color=black>「还有就是浴衣的布料比较薄，如果穿内衣会看得出来，\n这也是一个原因」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_15.mp3
+msg,1,<outline width=2 color=black>「但那都是过去的事情了，现在即使穿和服下面也有专门设计\n不会显露线条的和服专用内衣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_16.mp3
+msg,1,<outline width=2 color=black>「无论过去的人怎么样，现在穿和服的人基本上都是\n穿着内衣的，你可以这么认为」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_17.mp3
+msg,1,<outline width=2 color=black>「说到这里，哥哥会不会有点失望呢？\n好像完全否定了男人的梦想……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_18.mp3
+msg,1,<outline width=2 color=black>「嗯……如果哥哥真的很喜欢这个话题的话，\n那莉瀬以后就不穿内衣好了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_19.mp3
+msg,1,<outline width=2 color=black>「……哦，真的可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_20.mp3
+msg,1,<outline width=2 color=black>「我以为色色的哥哥会想要玩一些像是拿着没有穿内衣的莉瀬的腰带，\n然后转来转去的游戏呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_21.mp3
+msg,1,<outline width=2 color=black>「啊哈哈，我开玩笑的。虽然哥哥是个大色狼，\n但他不会把自己的观点或兴趣强加给别人的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_22.mp3
+msg,1,<outline width=2 color=black>「但正因为是这样的哥哥，莉瀬才会\n忍不住想要满足他」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103651/adv/atlas/stand_a,body:shy,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103651/adv/sound/fav103651_02_23.mp3
+msg,1,<outline width=2 color=black>「所以，如果你有什么想做的事情，尽管告诉我\n不用客气哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

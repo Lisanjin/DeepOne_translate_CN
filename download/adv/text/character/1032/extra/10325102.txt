@@ -1,0 +1,159 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11010300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_01.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「啊……这里，就是上次莉迪亚姐姐身着婚纱的地方啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_02.mp3
+msg,1,<outline width=2 color=black>「纯白的莉迪亚姐姐比以往任何时候都要美丽……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_03.mp3
+msg,1,<outline width=2 color=black>「仅仅看见如此的姐姐，艾尔玛就感到无比的喜悦和幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_04.mp3
+msg,1,<outline width=2 color=black>「啊，不好……每次来到这个地方，那个时候的姐姐的身影就自然而然浮现在我的脑海中……那美丽的身影已经深深刻在我的眼中，我的脑海里，我的灵魂里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_05.mp3
+msg,1,<outline width=2 color=black>「……虽然你这个讨厌鬼在我美丽的姐姐身边的事实让我非常不愉快，气愤得我甚至想要忘记」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「艾尔玛也想站在她旁边吗？」,选项2 「那真是太棒了」
+if,select_===_1,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_06.mp3
+msg,1,<outline width=2 color=black>「怎么可能呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_07.mp3
+msg,1,<outline width=2 color=black>「能与莉迪亚姐姐并肩站立的，除了米露瓦姐姐之外，别无他人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_08.mp3
+msg,1,<outline width=2 color=black>「她们两人都坚持着彼此之间不需要任何其他人的高尚存在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_09.mp3
+msg,1,<outline width=2 color=black>「然而，居然有人敢插足……这本来是不应该被允许的。\n只要姐姐们同意，我就能立刻把你排除出去」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_10.mp3
+msg,1,<outline width=2 color=black>「说着说着我都开始烦躁起来了……我得赶紧把你从那时的记忆中抹去……这样留下的就只有幸福的画面了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:unique,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_11.mp3
+msg,1,<outline width=2 color=black>「哈？什么啊，你在得意什么呢？\n如果你那么想受罪的话，我可以满足你哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_12.mp3
+msg,1,<outline width=2 color=black>「……哼，最棒当然是理所当然的。毕竟我离莉迪亚姐姐美丽的婚纱之姿如此之近」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_13.mp3
+msg,1,<outline width=2 color=black>「如果被允许的话，我也想更近一些……呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_14.mp3
+msg,1,<outline width=2 color=black>「如果再要求理想的话，还是希望米露瓦姐姐也能像莉迪亚姐姐一样穿上婚纱并肩站立」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:smile,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_15.mp3
+msg,1,<outline width=2 color=black>「米露瓦姐姐是那么可爱，她肯定会非常适合婚纱的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:shy,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_16.mp3
+msg,1,<outline width=2 color=black>「如果这样的场景真的实现了，那一刻一定会成为我人生中最高峰！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:shy,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_17.mp3
+msg,1,<outline width=2 color=black>「如果我能用我的眼睛铭记住两位穿着婚纱的姐姐相互凝视的瞬间，我就……我就……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_18.mp3
+msg,1,<outline width=2 color=black>「啊啊，如果米露瓦姐姐能穿上可爱的衣服，她一定会很高兴的，而且如果是我亲手准备婚纱……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_19.mp3
+msg,1,<outline width=2 color=black>「不，但我去干预姐姐们的生活方式……那是绝对不会被允许的……虽然我很焦急……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_20.mp3
+msg,1,<outline width=2 color=black>「……我告诉你，你也要铭记在心。\n姐姐们的意愿，是任何人都不应该触碰的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:unique,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_21.mp3
+msg,1,<outline width=2 color=black>「如果有人伤害了姐姐们的心情，或者试图扭曲她们的意愿\n做出那种无礼的事情的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103251/adv/atlas/stand_a,body:unique,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103251/adv/sound/fav103251_02_22.mp3
+msg,1,<outline width=2 color=black>「那时候，我会调教你那愚蠢的性格。\n你可要做好准备了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

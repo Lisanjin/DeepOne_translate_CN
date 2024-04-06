@@ -1,0 +1,170 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11260300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_01.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「不过话说回来，纳克特原书的力量真是太惊人了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_02.mp3
+msg,1,<outline width=2 color=black>「能够在这个世界与追寻不同可能性的另一个世界之间来回，\n这对人类来说绝对是无法实现的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_03.mp3
+msg,1,<outline width=2 color=black>「但是，在不同的世界里，三国志的英雄们都变成了美少女……\n即使讲出这样的故事，恐怕也没有人会相信吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_04.mp3
+msg,1,<outline width=2 color=black>「也许还有其他各种各样的世界存在呢。\n比如……你所在的女孩子的世界？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「那路易斯是男性？」,选项2 「都是女孩子……」
+if,select_===_1,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_05.mp3
+msg,1,<outline width=2 color=black>「啊……啊，确实可能会有反转的情况发生。\n我变成男性，你变成女性，那么……比如说――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,ruiez,0.7_0.7,0.5,0
+anm,move,ruiez,0_-120,0.5,0
+endwait
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:anger,ruiez,0,-120,0.7,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_06.mp3
+msg,1,<outline width=2 color=black>「成为我的人吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,ruiez,0.5_0.5,0.3,0
+anm,move,ruiez,0_-100,0.3,0
+endwait
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_07.mp3
+msg,1,<outline width=2 color=black>「――像我主动追求你这样的情况，也是有可能发生的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_08.mp3
+msg,1,<outline width=2 color=black>「嗯……总是被追求也挺烦的，\n换个方式也不错……就这么说吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_09.mp3
+msg,1,<outline width=2 color=black>「都是女孩子……这……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_10.mp3
+msg,1,<outline width=2 color=black>「……啊！你、你……在想什么啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_11.mp3
+msg,1,<outline width=2 color=black>「那种，女孩子之间的事情应该不会发生的……不过，但是……。\n…………咦，感觉意外地并不讨厌？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_12.mp3
+msg,1,<outline width=2 color=black>「难、难道我也是，那边的……不、不可能吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_13.mp3
+msg,1,<outline width=2 color=black>「真是的……我到底在说什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_14.mp3
+msg,1,<outline width=2 color=black>「但是，这样的世界存在的可能性并不是零。\n有一天真的，像这样的我们出现了怎么办」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_15.mp3
+msg,1,<outline width=2 color=black>「但是，如果真成了那样就麻烦了。无论是男性还是女性，\n你变成两个人我都不知道会做出什么事情来……我也……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_16.mp3
+msg,1,<outline width=2 color=black>「…………如果我也变成两个人，发生的意外事件也\n会开始二倍增量活动吗……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_17.mp3
+msg,1,<outline width=2 color=black>「我自己都觉得，这实在是太危险了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_18.mp3
+msg,1,<outline width=2 color=black>「停、停止这个话题吧。感觉有点害怕了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_19.mp3
+msg,1,<outline width=2 color=black>「虽然我觉得这确实是过于担心了。\n毕竟那种事情，实际上发生的可能性――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_20.mp3
+msg,1,<outline width=2 color=black>「――啊，Flag？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_21.mp3
+msg,1,<outline width=2 color=black>「啊，不、不是！刚才那个不是那种、预示性的东西\n所以……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_03_22.mp3
+msg,1,<outline width=2 color=black>「不行哦！？那种情况，绝对不行的哦！？\n拜托了，神啊佛啊纳克特原书啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

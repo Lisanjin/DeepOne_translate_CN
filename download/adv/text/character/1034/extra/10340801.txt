@@ -1,0 +1,165 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:smile,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-390,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103408/adv/sound/fav103408_01_01.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「晴空万里！蔚蓝的海！洁白的沙滩！还有——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_02.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「——完全忽视功能性，全力追求设计感的泳装！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_03.mp3
+msg,1,<outline width=2 color=black>「没想到我会在非工作的时候来到海边……还穿上了如此享受感满满的\n泳装……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_04.mp3
+msg,1,<outline width=2 color=black>「至今为止，我对海的记忆都不是很好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_05.mp3
+msg,1,<outline width=2 color=black>「调查潜藏在海底的巨大怪物，\n探索被诅咒的海底遗迹中沉睡的秘宝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_06.mp3
+msg,1,<outline width=2 color=black>「和活跃在现代的大海盗进行海战，\n在即将沉没的豪华客船上与黑暗组织决战」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_07.mp3
+msg,1,<outline width=2 color=black>「每次，海都给我带来麻烦事……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_08.mp3
+msg,1,<outline width=2 color=black>「――啊，这么一想我突然有点不安。嗯，这种轻便装备\n真的可以吗？不需要穿潜水服之类的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_09.mp3
+msg,1,<outline width=2 color=black>「谁知道会发生什么呢，至少可以带上潜水服吧？\n那种内置推进装置和机械臂的那种」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「那也一定很适合你」,选项2　「现在这样最好了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_10.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「诶，你在夸我吗？\n说防水压潜水服适合我，这不是在骂我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_11.mp3
+msg,1,<outline width=2 color=black>「说那种连脸都看不见的装扮适合我，难道不就是在说\n看不见我更好吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_12.mp3
+msg,1,<outline width=2 color=black>「现在再解释已经晚了。我的少女心已经受到伤害了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_13.mp3
+msg,1,<outline width=2 color=black>「……但是，嗯，也是……那个……如果你能再多夸夸我现在的打扮，\n或许我会原谅你的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_14.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「不过，无论如何看，这套装备都是最弱级别的。\n并没有进行魔法强化……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_15.mp3
+msg,1,<outline width=2 color=black>「……或者，难道……对你来说效果超好，是这样吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_16.mp3
+msg,1,<outline width=2 color=black>「啊……嗯、嗯——哼……原来如此……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_17.mp3
+msg,1,<outline width=2 color=black>「既然你都这么说了，那我就不穿潜水服了……。\n但是你要好好赞美我的泳装哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_18.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「我、我先声明一下，不是什么奇怪的意思……就像刚才说的\n这种泳装，我几乎从来不穿……所以，那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_19.mp3
+msg,1,<outline width=2 color=black>「啊，就是那样。如果你好好夸我一下，我就会安心了，不是吗？\n至少，我没有穿得很奇怪……就只是这样而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_20.mp3
+msg,1,<outline width=2 color=black>「别误会了！我可不是那种只要你夸一下就会高兴的\n轻浮的女人哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103408/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103408/adv/sound/fav103408_01_21.mp3
+msg,1,<outline width=2 color=black>「――啊，真是的！快把你那傻笑的脸收起来，笨蛋！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,172 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11510300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm100.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_01.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「话说回来，这个赌场的区域，果然有各种各样的游戏啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_02.mp3
+msg,1,<outline width=2 color=black>「既然来了就想试试玩一下什么，但是有这么多选择，真不知道该从哪个开始呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_03.mp3
+msg,1,<outline width=2 color=black>「虽然也考虑过要全部都试试看，但是记住每个游戏的规则似乎很麻烦，可能有点困难……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_04.mp3
+msg,1,<outline width=2 color=black>「哎呀，你有没有什么推荐的游戏，或者说如果是你的话，你会选择哪个游戏呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「骰子怎么样？」,选项2 「还是轮盘赌」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_05.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「骰子，难道是丁半博弈？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_06.mp3
+msg,1,<outline width=2 color=black>「嗯……那种只在时代剧里见过，肯定不会在这种地方摇壶子吧…？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_07.mp3
+msg,1,<outline width=2 color=black>「诶，掷骰子？赌场也有使用骰子的游戏？哦……你真了解啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_08.mp3
+msg,1,<outline width=2 color=black>「确实如果是骰子的话应该没有复杂的规则，可能比较容易上手」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_09.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「说到轮盘赌，总是会想到它就像是赌场的标志一样。嗯，还是从这种经典的游戏开始比较好吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_10.mp3
+msg,1,<outline width=2 color=black>「好的，那我们就去轮盘赌的地方看看吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_11.mp3
+msg,1,<outline width=2 color=black>「啊，轮盘赌需要有人去转，那我们就轮流做转动和下注的人吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_12.mp3
+msg,1,<outline width=2 color=black>「看看谁会赢，这是一场比赛嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_13.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「……呵呵，感觉有点奇怪啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_14.mp3
+msg,1,<outline width=2 color=black>「我这样打扮，和男人一起玩得开心，过去是无法想象的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_15.mp3
+msg,1,<outline width=2 color=black>「过去的我总是觉得男人就是一种没有能力却爱炫耀、喜欢瞧不起女性的生物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_16.mp3
+msg,1,<outline width=2 color=black>「但是……自从遇到你，我知道你不同于他们，我开始想要待在你身边……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_17.mp3
+msg,1,<outline width=2 color=black>「……如果紫阳花看到这样的我，会有什么反应呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_18.mp3
+msg,1,<outline width=2 color=black>「会笑吗？肯定会笑的。肯定会指着我大笑出声来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_19.mp3
+msg,1,<outline width=2 color=black>「所以……我觉得她会很开心我能遇到你，然后一起和我分享这份喜悦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_20.mp3
+msg,1,<outline width=2 color=black>「——哎呀，不对不对！差点就变得有些伤感了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_21.mp3
+msg,1,<outline width=2 color=black>「明明是在这么愉快的地方，不能谈这种话题呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_22.mp3
+msg,1,<outline width=2 color=black>「肯定的，紫阳花也会说，不要因为她的事情而让气氛变得沉闷」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_23.mp3
+msg,1,<outline width=2 color=black>「我应该做的不是回忆她而感到沉痛，而是要代替她尽情享受现在。否则紫阳花会生气的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103606/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103606/adv/sound/fav103606_03_24.mp3
+msg,1,<outline width=2 color=black>「所以，哥哥！我们走吧！我要让你看看莉瀬的好运气，你准备好了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

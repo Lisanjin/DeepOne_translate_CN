@@ -1,0 +1,195 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11650300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm064.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_01.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「哈？ 你问我状态怎么样……突然问这个干嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_02.mp3
+msg,1,<outline width=2 color=black>「啊……难道说，你是在关心另一个我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alma_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103280/adv/atlas/stand_a,body:anger,alma_s2,0,0,0,0,,,,
+imgconf,alma_s2,alma_s1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,0.5,,,,,,,,
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11650300.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_03.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「那个走过不同可能性的世界的艾尔玛·莉丝菲尔特……虽然是同一个人\n但她走过的道路和这个世界完全不同，可以说她就像是另一个人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_04.mp3
+msg,1,<outline width=2 color=black>「如果考虑到这样的存在在自己身体里，\n有时会觉得有些不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_05.mp3
+msg,1,<outline width=2 color=black>「但话说回来，平时还是很安静的。她似乎也并不打算过多干涉我，\n如果不去刻意注意的话，其实也没什么大不了的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_06.mp3
+msg,1,<outline width=2 color=black>「而且……即使是不同可能性的我，对姐姐们的感情\n和我并无二致」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_07.mp3
+msg,1,<outline width=2 color=black>「所以，嗯，至少在守护这个世界——守护生活在这个世界中的姐姐们这一点上，\n我觉得可以给她留一个位置」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_08.mp3
+msg,1,<outline width=2 color=black>「那个我也从心底里希望姐姐们能幸福。\n因为我们共享同一个身体，我能清楚地感受到这一点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「艾尔玛的幸福是？」,选项2　「两个人的幸福是？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_09.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「我的……这不是早就明了的吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_10.mp3
+msg,1,<outline width=2 color=black>「我的幸福，就是姐姐们幸福。\n为此而活。这就是，我的幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_11.mp3
+msg,1,<outline width=2 color=black>「是的。这是显而易见的。这点，绝对不会动摇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_12.mp3
+msg,1,<outline width=2 color=black>「――本应如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_13.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「姐姐们能够持续互相爱着对方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_14.mp3
+msg,1,<outline width=2 color=black>「――如果能这么说就好了。\n但是，我想那也包含了我的愿望」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_15.mp3
+msg,1,<outline width=2 color=black>「你们两个人的幸福形态……我并不知道」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_16.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「在另一个世界……在只有绝望可能性的未来中，米露瓦姐姐夺走了\n莉迪亚姐姐的生命……然而，那里确实存在着爱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_17.mp3
+msg,1,<outline width=2 color=black>「但我……我觉得那样不行。无论那里有多少爱，\n如果你们两个不能在一起的世界……我无法接受」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_18.mp3
+msg,1,<outline width=2 color=black>「我知道我这样想可能有些冒昧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_19.mp3
+msg,1,<outline width=2 color=black>「…………哈啊。我怎么会在你面前说出这样的抱怨呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_20.mp3
+msg,1,<outline width=2 color=black>「有空抱怨，我还不如去想一想怎么能为姐姐们做点什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:anger,alma,0,-120,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,alma
+playvoice,1,download/character/103209/adv/sound/fav103209_02_21.mp3
+msg,1,<outline width=2 color=black>「咦，等、等一下，你干嘛，别随便摸我的头啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:anger,alma,0,-120,0.6,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_22.mp3
+msg,1,<outline width=2 color=black>「这个，人家的话都……啊，真是的！ 你摸个没完……咕，\n别在那里傻笑了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103209/adv/atlas/stand_a,body:anger,alma,0,-120,0.6,0,,,,
+playvoice,1,download/character/103209/adv/sound/fav103209_02_23.mp3
+msg,1,<outline width=2 color=black>「果然我还是很讨厌你这种地方……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

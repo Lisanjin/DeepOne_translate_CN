@@ -1,0 +1,151 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11080300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm126.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_01.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「这个地方，花儿盛开，风儿舒适，真是好地方呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_02.mp3
+msg,1,<outline width=2 color=black>「虽然是在幻梦境中，但能和哥哥来到这样的地方，\n莉瀬真的很满足」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_03.mp3
+msg,1,<outline width=2 color=black>「看看哥哥觉得怎么样？像莉瀬这样可爱的女孩子和\n美丽的花田，不觉得很搭吗？觉得吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_04.mp3
+msg,1,<outline width=2 color=black>「如果是这样，是不是有什么想说的？有吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「很配你」,选项2　「虽然看起来像大小姐……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_05.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「嗯嗯，就是这样。呵呵呵，莉瀬穿上这种高雅的洋装也能完全驾驭得了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_06.mp3
+msg,1,<outline width=2 color=black>「但是……我更希望听到哥哥用自己的话来夸奖我，\n而不只是一些没有冒犯性的评论呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:unique,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_07.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「哦……虽然是大小姐，但是什么呢？到底是什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:unique,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_08.mp3
+msg,1,<outline width=2 color=black>「哥哥说这话的意图，莉瀬\n非常非常感兴趣呢？有吗？有吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「觉得很亲切，我喜欢」
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_09.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「嗯嗯。那就是说，哥哥对于亲切的莉瀬已经\n忍不住了，是这个意思吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_10.mp3
+msg,1,<outline width=2 color=black>「就是这样啊。我还以为你\n在想些不礼貌的事情，所以有点担心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:unique,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_11.mp3
+msg,1,<outline width=2 color=black>「如果万一真是那样的话……――呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_12.mp3
+msg,1,<outline width=2 color=black>「嗯―，哥哥？刚才你是不是突然紧张了一下？\n为什么呢―，莉瀬很好奇呢―？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:anger,rise,0,-120,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+shake,0.5,3,12,0,rise
+playvoice,1,download/character/103608/adv/sound/fav103608_01_13.mp3
+msg,1,<outline width=2 color=black>「嗯。就算莉瀬在哥哥面前很好骗，\n但是只是被轻轻摸摸头，也不能就这样被糊弄过去的哦―？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:normal,rise,0,-120,0.6,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_14.mp3
+msg,1,<outline width=2 color=black>「那、那、个……唔！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rise,0.7_0.7,0.5,0
+anm,move,rise,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:smile,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_15.mp3
+msg,1,<outline width=2 color=black>「像这样紧紧相依，在花田中约会多浪漫啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:normal,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_16.mp3
+msg,1,<outline width=2 color=black>「既然来到了这样的地方，不好好享受的话就太浪费了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:normal,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_17.mp3
+msg,1,<outline width=2 color=black>「而且在这次约会中，我要让哥哥明白莉瀬到底有多么可爱、\n多么迷人才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103608/adv/atlas/stand_a,body:smile,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103608/adv/sound/fav103608_01_18.mp3
+msg,1,<outline width=2 color=black>「哥哥，你做好心理准备了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,216 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11250300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rise1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103654/adv/sound/fav103654_01_01.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「美丽的教堂，精致的装饰，新娘走过的金色道路……这简直就是\n幸福的两人交换誓言的神圣场所本身」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,-410,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+playvoice,1,download/character/103654/adv/sound/fav103654_01_02.mp3
+msg,1,<outline width=2 color=black>「――然·而·是！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+playvoice,1,download/character/103654/adv/sound/fav103654_01_03.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「为什么莉瀬酱不是新娘呢！？\n我完全不明白！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_04.mp3
+msg,1,<outline width=2 color=black>「呜呜，哥哥，为什么我没有穿婚纱。\n莉瀬酱好伤心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「你现在穿的这套也很合适」,选项2 「怎么样才能让你振作起来？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_05.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「啊，是吗？ 其实莉瀬酱也觉得，这套衣服也挺好的。\n能得到哥哥的夸奖……嘻嘻嘻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_06.mp3
+msg,1,<outline width=2 color=black>「哥、哥哥。你说我穿这个好看，到底有多好看？\n可爱到让你忍不住想要攻击我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rise,0.7_0.7,1.0,0
+anm,move,rise,0_-130,1,0
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:shy,rise,0,-130,0.7,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_07.mp3
+msg,1,<outline width=2 color=black>「如果是被哥哥攻击的话……莉瀬酱可以接受哦？\n而且，在这样的地方偷偷地……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_08.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「如果你亲我一下，我就会振作起来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_09.mp3
+msg,1,<outline width=2 color=black>「——开玩笑的……诶？ 哎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rise,0.7_0.7,1.0,0
+anm,move,rise,0_-130,1,1
+endwait
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:surprise,rise,0,-130,0.7,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_10.mp3
+msg,1,<outline width=2 color=black>「那个，哥哥？ 你怎么，这么近……啊，啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rise1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:shy,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103654/adv/sound/fav103654_01_11.mp3
+msg,1,<outline width=2 color=black>「嗯，呃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:shy,rise,0,-130,0.7,0.5,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_12.mp3
+msg,1,<outline width=2 color=black>「……哦、哥哥，你好狡猾。这么强行靠近，\n最后只在脸颊上亲一下……真是太狡猾了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:shy,rise,0,-130,0.7,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_13.mp3
+msg,1,<outline width=2 color=black>「嘿，接下来，更多的――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+anm,scale,rise,0.5_0.5,1.0,0
+anm,move,rise,0_-100,1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_14.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「——诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_15.mp3
+msg,1,<outline width=2 color=black>「啊，那个，为什么你要离开……难道说，就这样结束了？ 没有接下来了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_16.mp3
+msg,1,<outline width=2 color=black>「……――就算是哥哥，也不能这样玩弄少女的纯情吧！？\n这样绝对不行的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_17.mp3
+msg,1,<outline width=2 color=black>「呜！ 呜呜呜！ 哥哥你笨蛋！\n把我的心跳还给我！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_18.mp3
+msg,1,<outline width=2 color=black>「既、既然如此……我就要攻击哥哥！\n让你无法抵抗，然后做这样那样的事情给你看！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:unique,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_19.mp3
+msg,1,<outline width=2 color=black>「嘿嘿嘿……你想逃跑也是没用的。\n你以为你的速度能比得过我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:unique,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_20.mp3
+msg,1,<outline width=2 color=black>「现在道歉也是没用的——……诶？ 今晚？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:shy,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_21.mp3
+msg,1,<outline width=2 color=black>「当、当然我有空啊，不管是今天、明天还是后天，只要是为了哥哥，\n我随时都能抽出时间……那个，难道说……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:shy,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_22.mp3
+msg,1,<outline width=2 color=black>「真是的，没办法啊，哥哥。稍微恶作剧一下，\n我可以睁一只眼闭一只眼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:shy,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_01_23.mp3
+msg,1,<outline width=2 color=black>「不过作为交换……今晚你一定要，\n来莉瀬酱这里哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

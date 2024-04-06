@@ -1,0 +1,138 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11260300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_01.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「中国历史悠久，国土辽阔，\n除了三国时代，还有许多其他的轶事和文化呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_02.mp3
+msg,1,<outline width=2 color=black>「旅游景点也非常多……比如万里长城就非常有名」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_03.mp3
+msg,1,<outline width=2 color=black>「我也实际上去看过，但是想到二千多年前就能\n建造出那么大的建筑物，真的有点难以置信呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「我也想去看看」,选项2 「还有其他值得一看的地方吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_04.mp3
+msg,1,<outline width=2 color=black>「当然了。到时候，我可以特别做你的旅行导游」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_05.mp3
+msg,1,<outline width=2 color=black>「我几乎走遍了中国的大江南北，从只有当地人才知道的\n绝美风景点到隐藏的美食店铺，你都可以放心交给我！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_06.mp3
+msg,1,<outline width=2 color=black>「有很多。如果是建筑物，那就是故宫；如果是自然风光，那就是九寨沟……啊，对了\n说到中国，还不能忘记熊猫呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_07.mp3
+msg,1,<outline width=2 color=black>「还有很多，如果都列出来的话根本停不下来。\n当然，普通人要想把所有这些都看个遍可能有点难度」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_08.mp3
+msg,1,<outline width=2 color=black>「不过，离开拉莱耶之后，我还是建议你至少去中国玩一次」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_09.mp3
+msg,1,<outline width=2 color=black>「啊……不过，旅游的时候也要注意。\n历史悠久意味着可能会有很多麻烦的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_10.mp3
+msg,1,<outline width=2 color=black>「如果不小心，可能会遇到神秘生物栖息的地下洞穴，或者被强大诅咒\n附着的剑这样的意外事件……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_11.mp3
+msg,1,<outline width=2 color=black>「……等等，你那是什么表情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_12.mp3
+msg,1,<outline width=2 color=black>「就像是在说『我又不是贝雷斯福德』一样。\n就这么掉以轻心，小心脚下被绊倒哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_13.mp3
+msg,1,<outline width=2 color=black>「我要说一件事……确实我似乎比较容易\n遇到这种意外事件」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_14.mp3
+msg,1,<outline width=2 color=black>「但是你也差不多了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_15.mp3
+msg,1,<outline width=2 color=black>「为什么你看起来那么惊讶……难道你自己都没意识到？\n明明平时就经常被卷入各种麻烦中？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_16.mp3
+msg,1,<outline width=2 color=black>「而且，你现在正在拉莱耶被困，\n已经卷入了一件大麻烦中了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_17.mp3
+msg,1,<outline width=2 color=black>「但是你放心好了……我已经经历过无数次的困难，\n我会给你最好的建议。你要仔细听好……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,ruiez,0.7_0.7,0.2,0
+anm,move,ruiez,0_-120,0.2,0
+endwait
+
+
+spriteatlas,download/character/103452/adv/atlas/stand_a,body:anger,ruiez,0,-120,0.7,0,,,,
+playvoice,1,download/character/103452/adv/sound/fav103452_02_18.mp3
+msg,1,<outline width=2 color=black><resize=30>「――只要你拼命去做，总会有办法的！」</resize></outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

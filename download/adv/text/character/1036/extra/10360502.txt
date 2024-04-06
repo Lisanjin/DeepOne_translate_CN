@@ -1,0 +1,137 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11070300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_01.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「话说回来，这里的月亮真美啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103605/adv/sound/fav103605_02_02.mp3
+msg,1,<outline width=2 color=black>「虽然在家里的时候我常常抬头看月亮，\n但是很少有机会看到这么清晰的月亮」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103605/adv/sound/fav103605_02_03.mp3
+msg,1,<outline width=2 color=black>「我的房间在一处僻静的地方，所以非常安静，\n在可以看到月亮的日子里，我总是和侍女一起看着夜空聊天」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103605/adv/sound/fav103605_02_04.mp3
+msg,1,<outline width=2 color=black>「我记得……那个女孩很喜欢赏月，和我聊天的时候\n她的视线总是不离月亮」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103605/adv/sound/fav103605_02_05.mp3
+msg,1,<outline width=2 color=black>「我也觉得月亮很美，\n但并不至于能一直看下去，所以我问她为什么会觉得有趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_06.mp3
+msg,1,<outline width=2 color=black>「你猜她怎么回答我的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_07.mp3
+msg,1,<outline width=2 color=black>「她说我没有淑女风度，像个孩子，不能理解风情，\n感性贫乏……简直是恶毒的批评！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_08.mp3
+msg,1,<outline width=2 color=black>「所以，当然不可能让她这么说了事，\n我们就用拳头来决定胜负了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「你输了吧」,选项2「你挺努力的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_09.mp3
+msg,1,<outline width=2 color=black>「……呼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_10.mp3
+msg,1,<outline width=2 color=black>「我全力出的右直拳被躲开了，然后她在我的腹部猛踢一脚，\n接着又打出了一记漂亮的上勾拳……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_11.mp3
+msg,1,<outline width=2 color=black>「啊……但是，当我被击飞的时候看到的月亮，\n感觉比平时还要美丽呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_12.mp3
+msg,1,<outline width=2 color=black>「喂喂，你为什么假设我会输就开始安慰我了。\n……虽然，确实我输了。而且被打得一塌糊涂」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103605/adv/sound/fav103605_02_13.mp3
+msg,1,<outline width=2 color=black>「即使这样，你还是认为我肯定会输，\n这让我有点受伤！感觉好像不信任我的实力一样，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_14.mp3
+msg,1,<outline width=2 color=black>「所以，我要求你为伤害我的行为道歉！\n具体来说，就是回到拉莱耶后和我一起吃蛋糕，并喂我吃！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_15.mp3
+msg,1,<outline width=2 color=black>「……虽然有过这样暴力的赏月经历，但最后\n我还是不能像那个女孩一样享受看月亮的乐趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103605/adv/sound/fav103605_02_16.mp3
+msg,1,<outline width=2 color=black>「但是，在这里和你一起看那个大大的月亮，我终于\n稍微明白了为什么我不能享受其中的乐趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_17.mp3
+msg,1,<outline width=2 color=black>「我无意识地接受了被那个最糟糕的家庭束缚的事实。\n所以看到外面世界的月亮时，总感觉那是一个与自己无关的世界……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103605/adv/sound/fav103605_02_18.mp3
+msg,1,<outline width=2 color=black>「无论多么美丽，都与自己无关吧，\n我想我可能是以这种冷淡的态度在看待它的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103605/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103605/adv/sound/fav103605_02_19.mp3
+msg,1,<outline width=2 color=black>「但是，当我离开那个家，这样看着月亮的时候，\n感觉它非常美丽，我想一直看下去……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103605/adv/sound/fav103605_02_20.mp3
+msg,1,<outline width=2 color=black>「所以……我还想再多待一会儿，和你一起赏月，\n可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

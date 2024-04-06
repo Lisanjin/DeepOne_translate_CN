@@ -1,0 +1,211 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:surprise,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_01.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:sad,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_02.mp3
+msg,1,<outline width=2 color=black>「我是因为在附近感觉到了战斗的气息才过来看看，\n你为什么会一个人在这种地方？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:surprise,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_03.mp3
+msg,1,<outline width=2 color=black>「――是走丢了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:surprise,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_04.mp3
+msg,1,<outline width=2 color=black>「……啊，不，抱歉。这事儿太离谱，\n我一时半会儿都没反应过来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:sad,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_05.mp3
+msg,1,<outline width=2 color=black>「话说回来，不知道你是被<ruby>虚像|虚像</ruby>的群体攻击了，还是陷入了陷阱，\n但你的伙伴们是不是太过于大意了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:sad,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_06.mp3
+msg,1,<outline width=2 color=black>「在幻梦境中，失去你就等于所有<ruby>想索者|diver</ruby>都因负荷而全灭」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:sad,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_07.mp3
+msg,1,<outline width=2 color=black>「出现在这里的是我，还算是好的……。\n要是换个情况，可能就没法笑出来了，懂吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我一个人也能应付」,选项2　「但七羽你来了就好」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_08.mp3
+msg,1,<outline width=2 color=black>「我知道你一直在锻炼自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_09.mp3
+msg,1,<outline width=2 color=black>「我知道你这番话并不是在哀叹自己不能使用魔术的无力，而是出于你想要尽全力去做到最好的崇高情操。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_10.mp3
+msg,1,<outline width=2 color=black>「面对困难的决心，我确实很欣赏。\n但是……无论内心多么坚强，有些距离我们始终无法拉近。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+msg,0,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash3_Red,em1,default,animation,0,0,200,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+bg,download/bg/bg_10050300.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_b,body:unique,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_11.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「――你的刘海有点长了。嗯，现在这样看起来更帅气。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_12.mp3
+msg,1,<outline width=2 color=black>「如果连刚才那一下都躲不开，你还有很长的路要走啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_13.mp3
+msg,1,<outline width=2 color=black>「……不要再逞强了。你已经够高了。\n再长高的话，突然亲你一下也会变得麻烦起来，明白吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:sad,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_14.mp3
+msg,1,<outline width=2 color=black>「不过那只是后见之明罢了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_15.mp3
+msg,1,<outline width=2 color=black>「……但是，吸引这种气运也算是\n你的一种能力吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_16.mp3
+msg,1,<outline width=2 color=black>「话虽如此，我还是希望你不要再让这种事情发生了。\n实在是让人心疼。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_17.mp3
+msg,1,<outline width=2 color=black>「你现在安全吗，此刻是否陷入危机之中……如果这样的不安\n始终挥之不去，你打算怎么办？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_18.mp3
+msg,1,<outline width=2 color=black>「如果真成那样……我恐怕会无法离开你哪怕一刹那？\n当然，我倒也不介意这样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_19.mp3
+msg,1,<outline width=2 color=black>「――咯咯。何慌张个什么。被人低语爱意就脸红，\n就连未经世事的少女也不会有这样的反应吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_20.mp3
+msg,1,<outline width=2 color=black>「看来你虽然擅长夺走女人的心，但对被夺走心却不太习惯。\n真是的……这可不行。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,nanaba,0.7_0.7,0.5,0
+endwait
+
+
+playvoice,1,download/character/103803/adv/sound/fav103803_02_21.mp3
+msg,1,<outline width=2 color=black>「如果你表现得这么可爱，\n别人误以为你在诱惑他们，你也没法抱怨了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,nanaba1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:shy,nanaba2,0,0,0,0,,,,
+imgconf,nanaba2,nanaba1,0,-270,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103803/adv/sound/fav103803_02_22.mp3
+msg,1,<outline width=2 color=black>「嗯……吻，……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_23.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「呵呵……你的嘴唇都干了。难道说，其实你还是害怕的吗？\n真是的，啊，真是可爱透了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.7,0,,,,
+playvoice,1,download/character/103803/adv/sound/fav103803_02_24.mp3
+msg,1,<outline width=2 color=black>「好了好了，我会保护你直到我们与其他人汇合。\n尽管依赖我，任性一点吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

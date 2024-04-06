@@ -1,0 +1,164 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11020300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_01.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「哥哥，要一起牵手吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_02.mp3
+msg,1,<outline width=2 color=black>「虽然还在思考中，不过这个程度应该没关系吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rise,0.6_0.6,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_03.mp3
+msg,1,<outline width=2 color=black>「嗯……果然哥哥的手很大啊。像这样，感觉被紧紧地\n包裹住，我很喜欢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:surprise,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_04.mp3
+msg,1,<outline width=2 color=black>「——诶？啊，不是，我并没有什么不安或者烦恼之类的。\n只是真的想和哥哥牵手罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_05.mp3
+msg,1,<outline width=2 color=black>「还是说，你觉得烦了？如果是的话我就放开手……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「那就放开吧」,选项2 「就这样挺好」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_06.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「啊啦……哥哥，你真是个坏蛋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_07.mp3
+msg,1,<outline width=2 color=black>「真是的。明明有这么可爱的莉瀬酱和你牵着手，\n你应该更坦率地高兴才对呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:anger,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_08.mp3
+msg,1,<outline width=2 color=black>「如果你继续这么欺负我，我会用莉瀬酱的力量\n紧紧地握住这只手的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_09.mp3
+msg,1,<outline width=2 color=black>「——啊，不，我是开玩笑的，你不用做出那么吓人的表情。别当真了。\n哥哥，你不会一直觉得我是个暴力无度的狂战士吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_10.mp3
+msg,1,<outline width=2 color=black>「真是的，太失礼了……失礼先生的手，我就不放开了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:smile,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_11.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「啊咧—？ 啊咧啊咧的啊咧—？ 难道哥哥其实\n很高兴能和莉瀬酱牵手吗—？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_12.mp3
+msg,1,<outline width=2 color=black>「呵呵，这么坦率的哥哥的手，让莉瀬酱来好好握握吧……握握～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:smile,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_13.mp3
+msg,1,<outline width=2 color=black>「啊哈哈，痒吗？ 对不起对不起。\n我不再做奇怪的事情了，我们正常地牵手吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_14.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「……但是，真奇怪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_15.mp3
+msg,1,<outline width=2 color=black>「我以前在家里的时候，总觉得男人怎么怎么样。虽然弱小却总爱装强，\n从来不听别人说话，只会想些淫秽的事情之类的生物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_16.mp3
+msg,1,<outline width=2 color=black>「嘛，哥哥也很爱装强，有时候我说你别冒险也不听我的……色色的地方也挺多的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:smile,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_17.mp3
+msg,1,<outline width=2 color=black>「……但是，真是奇怪啊。以前我觉得那些东西很烦人\n但如果是关于哥哥的话，我就没办法讨厌了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:smile,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_18.mp3
+msg,1,<outline width=2 color=black>「我是被哥哥改变了呢……\n这样深深感叹着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_19.mp3
+msg,1,<outline width=2 color=black>「啊……但是，我并不讨厌哥哥那样的地方，\n不过，也不能说是喜欢吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:normal,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_20.mp3
+msg,1,<outline width=2 color=black>「我希望哥哥能多些向我诉苦和依赖我。\n也希望你不要再那么冒进了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:smile,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_21.mp3
+msg,1,<outline width=2 color=black>「这一点，我希望你能记住」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:shy,rise,0,-100,0.6,0,,,,
+playvoice,1,download/character/103654/adv/sound/fav103654_02_22.mp3
+msg,1,<outline width=2 color=black>「——顺便说一下，稍微有点色色的地方，就保持现状就好了哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

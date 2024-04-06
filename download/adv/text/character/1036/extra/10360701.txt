@@ -1,0 +1,172 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_01.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「嘿，哥哥喜欢长发的女孩还是短发的女孩呢？\n有没有这样的喜好呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_02.mp3
+msg,1,<outline width=2 color=black>「啊，像「只要适合那个人就好」这种答案是绝对不行的哦！\n我想听听哥哥真正的喜好。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_03.mp3
+msg,1,<outline width=2 color=black>「所以，快告诉我答案吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「喜欢长发的」,选项2「喜欢短发的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_04.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「啊，原来如此。嗯……长发啊……虽然我也是女生，\n但看到有漂亮头发的人，也会不由自主地跟随视线看过去……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_05.mp3
+msg,1,<outline width=2 color=black>「这种感觉，是不是因为可以感觉到女性的优雅，\n所以才会觉得好呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_06.mp3
+msg,1,<outline width=2 color=black>「顺便说一下，哥哥。莉瀬酱是个大和抚子，也已经完全掌握了优雅，\n如果有心的话，随时都可以展现出来哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_07.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「啊，原来如此……嘿，原来如此。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_08.mp3
+msg,1,<outline width=2 color=black>「喜欢短发的是不是因为更显活泼、随和、\n或者说更符合哥哥你的喜好呢……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_09.mp3
+msg,1,<outline width=2 color=black>「嗯嗯……也可以走运动风，这样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_10.mp3
+msg,1,<outline width=2 color=black>「啊啊，突然好想动一动身体。\n我去找莉音酱一起做体操怎么样呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_11.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「――哥哥，你为什么笑呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_12.mp3
+msg,1,<outline width=2 color=black>「嗯……我很认真地想知道哥哥的喜好，\n难道你在随便说说吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_13.mp3
+msg,1,<outline width=2 color=black>「哥哥就喜欢把我当玩具玩。\n这样可不行哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_14.mp3
+msg,1,<outline width=2 color=black>「不过，被哥哥玩弄也不是不可以吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_15.mp3
+msg,1,<outline width=2 color=black>「开玩笑的……啊，我说一下，我只对哥哥这么好哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_16.mp3
+msg,1,<outline width=2 color=black>「这点你要记住哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:shy,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_17.mp3
+msg,1,<outline width=2 color=black>「……顺便问一下，哥哥觉得我的发型怎么样呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:shy,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_18.mp3
+msg,1,<outline width=2 color=black>「毕竟头发是女性的一种武器……我想确认一下\n对于哥哥来说有多少效果……怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_19.mp3
+msg,1,<outline width=2 color=black>「我其实挺注重头发护理的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_20.mp3
+msg,1,<outline width=2 color=black>「啊，要不要摸摸看？如果你愿意的话，嗯，闻闻香味也是可以的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:shy,rise,0,-120,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,rise
+playvoice,1,download/character/103607/adv/sound/fav103607_01_21.mp3
+msg,1,<outline width=2 color=black>「哎……？啊，哥哥？在这里摸摸头，\n感觉有点不够吧？你可以更好好享受一下的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:shy,rise,0,-120,0.6,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_22.mp3
+msg,1,<outline width=2 color=black>「嗯……不过，我也喜欢被哥哥摸头，\n所以你继续这样也没关系……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103601/adv/atlas/stand_a,body:smile,rise,0,-120,0.6,0,,,,
+playvoice,1,download/character/103607/adv/sound/fav103607_01_23.mp3
+msg,1,<outline width=2 color=black>「但是，之后你一定要告诉我你摸了我的头后的感想哦，\n一定要告诉我……呵呵。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

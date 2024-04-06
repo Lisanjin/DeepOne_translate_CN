@@ -1,0 +1,172 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10040200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm096.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_01.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「……这种场面，看久了真会让人心情沉重……。\n赶快看完，我们就回拉莱耶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_02.mp3
+msg,1,<outline width=2 color=black>「你这副惊讶的表情是怎么回事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_03.mp3
+msg,1,<outline width=2 color=black>「我告诉你，我并不是想反对战争或战斗，或者说出什么毛骨悚然的博爱主义的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_04.mp3
+msg,1,<outline width=2 color=black>「只是，我不喜欢随便就开炮的做法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_05.mp3
+msg,1,<outline width=2 color=black>「那种充满血腥和硝烟味道的战场，只有过时的战斗狂才会说出来。消耗战这种东西早就不流行了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_06.mp3
+msg,1,<outline width=2 color=black>「在战斗真正开始之前就打击敌人的指挥系统和维持战斗能力所需的补给网，或者是兵器供应源……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_07.mp3
+msg,1,<outline width=2 color=black>「硬要从正面开火，真是太愚蠢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_08.mp3
+msg,1,<outline width=2 color=black>「……而且，那种只需要远距离发射炮弹的战斗，根本不算什么。那种连杀人感觉都没有的杀人行为，简直让人笑不出来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「你说得跟莉迪亚一样」,选项2　「你说得跟米露瓦一样」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_09.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「……像莉迪亚姐姐那样，对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_10.mp3
+msg,1,<outline width=2 color=black>「我不知道你为什么会有这样的印象……但可能确实是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_11.mp3
+msg,1,<outline width=2 color=black>「莉迪亚姐姐其实也不喜欢疯狂的战斗――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_12.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「是的。对米露瓦姐姐来说，战场就是一个可以尽情体验他人痛苦的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_13.mp3
+msg,1,<outline width=2 color=black>「所以米露瓦姐姐……还有莉迪亚姐姐，总是在战场上徘徊，为了满足内心的饥渴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_14.mp3
+msg,1,<outline width=2 color=black>「……最后，彼此来到了拉莱耶，对彼此来说，这是好事还是――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_15.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「――不，没什么。这种事情，我不应该说出来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_16.mp3
+msg,1,<outline width=2 color=black>「我这样的人，怎么能揣测姐姐们的内心……这种事情，我根本没有资格做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_17.mp3
+msg,1,<outline width=2 color=black>「我只是在她们身边，为她们服务……我能做的就只有这些，因为我曾经被她们拯救过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_18.mp3
+msg,1,<outline width=2 color=black>「现在的自由、生命、尊严……这一切都是她们给予我的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_19.mp3
+msg,1,<outline width=2 color=black>「即使现在的日子并不坏……如果有一天姐姐们想要放弃这一切，我会……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.6,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,alma
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_20.mp3
+msg,1,<outline width=2 color=black>「……等等。为什么突然把手放在我的头上？\n别摸我！你这个，……突然做什么，变态！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:shy,alma,0,-120,0.6,0,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_21.mp3
+msg,1,<outline width=2 color=black>「啊……不，我说的「不坏」只是一种说法，并不是说我对和你们在一起的时间有什么特别的感情或者什么的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.6,0,0,,,,
+shake,0.5,3,12,0,alma
+playvoice,1,download/character/103208/adv/sound/fav103208_03_22.mp3
+msg,1,<outline width=2 color=black>「呃，我说了！别摸我的头！\n如果你再继续，就做好失去一只手的准备吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103202/adv/atlas/stand_a,body:anger,alma,0,-120,0.6,0,0,,,,
+playvoice,1,download/character/103208/adv/sound/fav103208_03_23.mp3
+msg,1,<outline width=2 color=black>「呜、呜呜……别笑！你这个笨蛋！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
