@@ -1,0 +1,200 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10100100.jpg,0.5,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「――接下来，只要巡视一下这附近就结束了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_02.mp3
+msg,1,<outline width=2 color=black>「话虽如此，分工进行思索的范围是好的，\n但为什么你的保护者是我呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_03.mp3
+msg,1,<outline width=2 color=black>「并不是因为讨厌你，所以不想靠近你。\n只是，你也会对只有我一个人在一起的这种情况感到不安吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_04.mp3
+msg,1,<outline width=2 color=black>「我虽然是强化魔术师，也是纳克特写本的使用者，\n但在这个框架内，我可能是最弱的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_05.mp3
+msg,1,<outline width=2 color=black>「你和爱花在一起，比和我在一起更安心吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「爱花那么强吗？」,选项2 「对自己没有自信？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_06.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「那当然……连洛夫克拉夫特财团都称她为\n最强最高呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_07.mp3
+msg,1,<outline width=2 color=black>「身体能力、魔术才能当然包括在内，对纳克特写本的适应性，\n无论从哪个方面看她都是最高峰。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_08.mp3
+msg,1,<outline width=2 color=black>「虽然因为实战经验的缺乏而显得不成熟，\n但那也很快就会被弥补上的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_09.mp3
+msg,1,<outline width=2 color=black>「真的……爱花是个了不起的孩子。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_10.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「并不是我想贬低自己。\n这只是事实罢了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_11.mp3
+msg,1,<outline width=2 color=black>「我并没有爱花或想花那样出色的身体和适应性。\n但我也没有像达芙妮那样，为了欲望而偏离人性。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_12.mp3
+msg,1,<outline width=2 color=black>「虽然有一些实战经验，现在还能跟得上爱花她们，\n但总有一天会被甩开，被抛在后面吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:surprise,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_13.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「――……啊？　看起来很高兴，是说……我？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:surprise,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_14.mp3
+msg,1,<outline width=2 color=black>「那个……呃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:shy,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_15.mp3
+msg,1,<outline width=2 color=black>「呃……无所谓，我的妹妹们都这么厉害，\n稍微有点自豪感也不会被罚的吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:shy,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_16.mp3
+msg,1,<outline width=2 color=black>「这个……对。因为我感到骄傲，所以才有这样的表情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_17.mp3
+msg,1,<outline width=2 color=black>「啊，真是的。把那松散的嘴角收紧点。\n我们现在在幻梦境里面呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_18.mp3
+msg,1,<outline width=2 color=black>「总之，我才不想被你在这种事情上指责呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_19.mp3
+msg,1,<outline width=2 color=black>「你不也是，每当提到她的时候，总是显得很自豪，\n满脸骄傲，还露出宠溺的表情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_20.mp3
+msg,1,<outline width=2 color=black>「……如果你这么平静地承认，我也没什么好说的了。\n这个痴兄痴弟……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_21.mp3
+msg,1,<outline width=2 color=black>「兄妹关系好是好事，但总要有点节制吧。\n真是的，你们两个，真是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_22.mp3
+msg,1,<outline width=2 color=black>「能看到你们这样的场景，我也很开心，但是——啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_23.mp3
+msg,1,<outline width=2 color=black>「…………我刚才说了什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_24.mp3
+msg,1,<outline width=2 color=black>「呃……我们不能一直在这里聊天。\n快点继续前进。快点。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104304/adv/sound/fav104304_04_25.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「这种感觉是什么……刚才那句话，并不是我说的……呃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

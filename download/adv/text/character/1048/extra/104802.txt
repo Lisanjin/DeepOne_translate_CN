@@ -1,0 +1,210 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010700.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya2,0,0,0,0,,,,
+imgconf,sasya2,sasya1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104803/adv/sound/fav104803_02_01.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「嗯……我、我……还、还好……记得的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_02.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「——嗯，谁！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:surprise,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_03.mp3
+msg,1,<outline width=2 color=black>「你是……为什么会在这种地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_04.mp3
+msg,1,<outline width=2 color=black>「找东西……啊，真是的。什么啊，这个时机真差。\n能不能请你走开？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_05.mp3
+msg,1,<outline width=2 color=black>「——哈？ 我的脸色怎么了。能不能不说奇怪的话？\n我一点也没变，像往常一样。健康而且没有受伤」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:smile,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_06.mp3
+msg,1,<outline width=2 color=black>「如果要说的话，我比普通人还要强壮。\n作为异端者，也试过各种身体强化」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_07.mp3
+msg,1,<outline width=2 color=black>「所以……我没事，不用做多余的担心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「看起来你在强装坚强」,选项2 「记得的，是什么意思？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_08.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「……就算我在强装坚强又怎样？\n你这样毫无顾忌地插手别人的感情，你以为自己是谁？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_09.mp3
+msg,1,<outline width=2 color=black>「算了。如果你不离开的话，我就出去——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-140,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/104803/adv/sound/fav104803_02_10.mp3
+msg,1,<outline width=2 color=black>「嗯，等、等一下，你干嘛！ 突然抓住我的手臂……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:shy,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_11.mp3
+msg,1,<outline width=2 color=black>「别、别那么盯着我……啊，什么？\n突然这样，我、我会困扰的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:shy,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_12.mp3
+msg,1,<outline width=2 color=black>「嗯……我、我知道了！ 我会解释的，所以放开我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/104803/adv/sound/fav104803_02_16.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「……哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_13.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「……偷听别人的对话，真是恶趣味」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_14.mp3
+msg,1,<outline width=2 color=black>「本来以为在这里就不会被人发现的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_15.mp3
+msg,1,<outline width=2 color=black>「别做出一副非听我解释不可的表情。\n你这个人，就是这点真麻烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_16.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「……哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_17.mp3
+msg,1,<outline width=2 color=black>「这是我的<ruby>魔导书|Old One</ruby>——「<ruby>悲狂戮葬|エツェル·アントラム</ruby>」的代价」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_18.mp3
+msg,1,<outline width=2 color=black>「有时，我能感觉到自己内心的某些东西正在破碎……那种绝对\n不能失去的东西，从本该在的地方掉落，消失的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_19.mp3
+msg,1,<outline width=2 color=black>「为了得到力量，我正在一点一点地失去自己的生命……以及，\n和我所爱的人们的记忆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_20.mp3
+msg,1,<outline width=2 color=black>「――最近，除了玛丽娜以外的家人的名字，我已经记不起来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_21.mp3
+msg,1,<outline width=2 color=black>「但是，请不要误解。我并不想被怜悯。\n这是我自愿获得的力量，也是我做好准备要付出的代价」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_22.mp3
+msg,1,<outline width=2 color=black>「为了结束失去玛丽娜带来的悲伤，\n我需要这种力量」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_23.mp3
+msg,1,<outline width=2 color=black>「所以，我没有后悔……但是……即使如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_24.mp3
+msg,1,<outline width=2 color=black>「我想一直记住玛丽娜……。\n所以，我拼命地抵抗这个代价……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104803/adv/sound/fav104803_02_25.mp3
+msg,1,<outline width=2 color=black>「……就这样。这全都是我的问题。\n所以，请别再多此一举地担心我了……那样真让人不舒服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

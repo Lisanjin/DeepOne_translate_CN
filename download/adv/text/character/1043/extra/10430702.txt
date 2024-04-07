@@ -1,0 +1,180 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm129.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「……这个小鸡形状的包包，好可爱啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_02.mp3
+msg,1,<outline width=2 color=black>「不过，这边的青蛙帽子也……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_03.mp3
+msg,1,<outline width=2 color=black>「真是难以选择啊……虽然说是要选礼物，但是这个区域，\n有各种各样的店铺……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_04.mp3
+msg,1,<outline width=2 color=black>「刚才那家店里的企鹅图案大衣也不错呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_05.mp3
+msg,1,<outline width=2 color=black>「……话说，你怎么一直保持着严肃的表情呢？\n有什么想说的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「你、你的品味……」,选项2　「这个花朵耳环怎么样？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_06.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「品味……？　什么意思，难道你想说我的品味很差？\n怎么会这样呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_07.mp3
+msg,1,<outline width=2 color=black>「…………诶，不会吧，我的品味很差吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_08.mp3
+msg,1,<outline width=2 color=black>「我、我到现在为止，都没有做过这种挑选礼物的事情，\n所以完全没有注意到……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_09.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「啊，这个不错啊……不过，感觉有点普通？\n说实话，有点像是批量生产的商品……缺乏个性……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_10.mp3
+msg,1,<outline width=2 color=black>「……你为什么要垂下肩膀。我完全不明白」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_11.mp3
+msg,1,<outline width=2 color=black>「哎……既然这样，我更希望能听到一些真正有用的意见，或者对我有参考价值的建议\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_12.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「这样下去，我什么时候才能找到好的礼物呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:surprise,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_13.mp3
+msg,1,<outline width=2 color=black>「等、等一下，你那是什么眼神。\n我告诉你，我可没有故意找茬拖延时间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_14.mp3
+msg,1,<outline width=2 color=black>「我也是，如果不能逃出幻梦境就很麻烦了……其实如果只能在爱花和\n想花之间选择的话，我宁愿都不选……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_15.mp3
+msg,1,<outline width=2 color=black>「――要送给哪一个呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:surprise,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_16.mp3
+msg,1,<outline width=2 color=black>「诶，你说什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_17.mp3
+msg,1,<outline width=2 color=black>「……诶？　你说什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_18.mp3
+msg,1,<outline width=2 color=black>「切。既然你装作没听见就当作没事吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_19.mp3
+msg,1,<outline width=2 color=black>「如果先决定要送给谁，挑选礼物也会更容易。\n这种事我也是知道的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_20.mp3
+msg,1,<outline width=2 color=black>「但是，既然我无法做决定，那也没办法呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_21.mp3
+msg,1,<outline width=2 color=black>「没关系的，我并没有说我不选。\n我是在看着礼物，寻找答案呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_22.mp3
+msg,1,<outline width=2 color=black>「如果送了礼物，爱花和想花会有什么反应呢。\n如果一边想象这些，一边挑选礼物的话，我相信总有一天会有灵感的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_23.mp3
+msg,1,<outline width=2 color=black>「一、一定会没问题的……我觉得……应该……没问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_24.mp3
+msg,1,<outline width=2 color=black>「……可能吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104307/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104307/adv/sound/fav104307_02_25.mp3
+msg,1,<outline width=2 color=black>「快、快看，可能还有其他好东西呢，\n我们再多看看周围的店吧！　走吧，我们走！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

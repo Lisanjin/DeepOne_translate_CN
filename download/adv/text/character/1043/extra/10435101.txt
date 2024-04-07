@@ -1,0 +1,239 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11210300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zakuro1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro2,0,0,0,0,,,,
+imgconf,zakuro2,zakuro1,0,270,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「……什么，这里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,0,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_02.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「等我回过神来，竟然在一个不认识的地方，和一个不认识的人单独相处……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「你没有必要感到不安」,选项2　「你是变年轻了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:anger,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_03.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「……不，那个，能不能不要靠得那么近？\n你的态度似乎太过随意了……你到底是谁？ 变态？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:anger,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_04.mp3
+msg,1,<outline width=2 color=black>「我，难道被绑架了……？ 财团的保安是怎么回事。\n难道我不是重要的实验品吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_05.mp3
+msg,1,<outline width=2 color=black>「――啊，或者说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_06.mp3
+msg,1,<outline width=2 color=black>「因为这样的实验品他们并不需要，\n所以被他们抛弃了吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:surprise,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_07.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「哈……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_08.mp3
+msg,1,<outline width=2 color=black>「嗯，等等……你在说什么呢？\n突然开始说一些像是失去理智的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_09.mp3
+msg,1,<outline width=2 color=black>「不，现在这种情况下，突然出现一个说这种话的人\n难道是我出问题了……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_10.mp3
+msg,1,<outline width=2 color=black>「是梦，还是幻觉……还是实验让我脑袋出问题了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:smile,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_11.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「啊……但是，如果真是这样也没关系吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:smile,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_12.mp3
+msg,1,<outline width=2 color=black>「比起以后也许会被无情地摧毁的实验和强化\n一直陪伴下去，可能还更好一些……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:surprise,zakuro,0,-50,0.8,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_13.mp3
+msg,1,<outline width=2 color=black>「啊啊……！ 别、突然抱住我，喂、什么！？\n为什么要摸我的头……哼……，放、放开我，变态！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:anger,zakuro,0,-50,0.8,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_14.mp3
+msg,1,<outline width=2 color=black>「啊，真是的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Wind1,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_046.mp3
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,up
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+slideoutblack,0.5,up
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zakuro1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:anger,zakuro2,0,0,0,0,,,,
+imgconf,zakuro2,zakuro1,0,270,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104351/adv/sound/fav104351_01_15.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「你到底是什么人！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,down
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11210300.jpg,0,255
+endwait
+slideoutblack,0.5,down
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:anger,zakuro,0,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_16.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「我告诉你，如果你再靠近的话，下次就不会手下留情了——等等」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:surprise,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_17.mp3
+msg,1,<outline width=2 color=black>「为、为什么你会露出那么伤心的表情呢……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_18.mp3
+msg,1,<outline width=2 color=black>「真是的，完全不明白……你到底是谁……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_19.mp3
+msg,1,<outline width=2 color=black>「……好吧，我明白了。\n你，看起来并不像坏人……算了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_20.mp3
+msg,1,<outline width=2 color=black>「虽然突然被抱住是有点那什么。\n我不会再说不许你靠近了，所以别再那副表情了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:surprise,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_21.mp3
+msg,1,<outline width=2 color=black>「――咦，头？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:shy,zakuro,0,-20,0.5,0,,,,
+playvoice,1,download/character/104351/adv/sound/fav104351_01_22.mp3
+msg,1,<outline width=2 color=black>「嘛……只是摸摸头的话，也没关系吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:shy,zakuro,0,-20,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,zakuro
+playvoice,1,download/character/104351/adv/sound/fav104351_01_23.mp3
+msg,1,<outline width=2 color=black>「……真是的，算了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,290 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_01.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「……早安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,maria,0.6_0.6,0.5,0
+anm,move,maria,0_-150,0.5,0
+endwait
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:anger,maria,0,-150,0.6,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_02.mp3
+msg,1,<outline width=2 color=black>「…………静静地待着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,maria,0.7_0.7,0.5,0
+anm,move,maria,0_-170,0.5,0
+endwait
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:anger,maria,0,-170,0.7,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_03.mp3
+msg,1,<outline width=2 color=black>「没关系，就静静地待着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:normal,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104903/adv/sound/fav104903_02_04.mp3
+msg,1,<outline width=2 color=black>「嗅、嗅嗅……嗯，呼——…嗅嗅嗅……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/104903/adv/sound/fav104903_02_05.mp3
+msg,1,<outline width=2 color=black>「――昨天，姐姐一直到晚上也没回房间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_06.mp3
+msg,1,<outline width=2 color=black>「然后……你身上，有姐姐的味道……明明才早上。\n有姐姐的味道……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_07.mp3
+msg,1,<outline width=2 color=black>「难、难难难、难道，昨晚，\n你和姐姐在一起了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_08.mp3
+msg,1,<outline width=2 color=black>「难、难难、难道，你们在同一张床上睡觉了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_09.mp3
+msg,1,<outline width=2 color=black>「我、我希、我希望你说没有……你穿着衣服，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「怎么，样呢……」,选项2　「你想多了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_10.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「看着我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_11.mp3
+msg,1,<outline width=2 color=black>「不是那样吧？　真的不是那样吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_12.mp3
+msg,1,<outline width=2 color=black>「你没有……对姐姐做出超过必要的接触，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_13.mp3
+msg,1,<outline width=2 color=black>「――……为什么你一言不发？　你在欺负我吗？\n是因为我偶尔说脏话所以要报复我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_14.mp3
+msg,1,<outline width=2 color=black>「对不起请原谅我我会道歉我会做任何事\n请告诉我真相……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_15.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「――脱掉衣服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,maria,0.6_0.6,0.5,0
+anm,move,maria,0_-150,0.5,0
+endwait
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:anger,maria,0,-150,0.6,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_16.mp3
+msg,1,<outline width=2 color=black>「就脱掉吧。至少把衣服拉起来，露出胸口……啊，算了。\n我来做吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,scale,maria,0.7_0.7,0.5,0
+anm,move,maria,0_-170,0.5,0
+endwait
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:surprise,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104903/adv/sound/fav104903_02_17.mp3
+msg,1,<outline width=2 color=black>「嗅嗅嗅嗅嗅，呼——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/104903/adv/sound/fav104903_02_18.mp3
+msg,1,<outline width=2 color=black>「衣服里面都是姐姐的味道……而且，\n胸口有吻痕啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_19.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「果然，昨晚姐姐和你……啊、啊、啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_20.mp3
+msg,1,<outline width=2 color=black>「姐姐和男人……彼此的气味深深地渗透其中，好多好多……做、做了很多……啊、呜、啊、啊啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_21.mp3
+msg,1,<outline width=2 color=black>「怎、怎么办，明明讨厌的……明明讨厌的……想象姐姐会怎么做，感觉好奇怪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_22.mp3
+msg,1,<outline width=2 color=black>「啊、头脑变得奇怪了……脑子像变成浆糊一样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_23.mp3
+msg,1,<outline width=2 color=black>「哈、哈、哈……姐姐，姐姐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104903/adv/sound/fav104903_02_24.mp3
+msg,1,<outline width=2 color=black>「我、我要回房间了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,maria,-1200_-120,0.7,0
+endwait
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+playbgm,/download/sound/bgm/bgm005.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:shy,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104903/adv/sound/fav104903_02_25.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「为什么，为什么我……身体好热……嗯嗯，呜……快点，房间……房间里面……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

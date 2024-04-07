@@ -1,0 +1,159 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm101.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「……没想到，我会和你两个人，\n被关在这样的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_02.mp3
+msg,1,<outline width=2 color=black>「有温泉的大旅馆……还有这身打扮……。\n感觉就像是在无忧无虑地观光一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_03.mp3
+msg,1,<outline width=2 color=black>「嘛，像你和持有写本的我这样的人才能保持冷静，\n对于普通人来说，被长时间关起来这样的陷阱可是致命的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_04.mp3
+msg,1,<outline width=2 color=black>「被关在这种轻松的地方，再加上幻梦境的负担而倒下，\n如果是我，我可不想这么死」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_05.mp3
+msg,1,<outline width=2 color=black>「那么……虽然很想赶快逃出去，但该怎么做呢。\n这种情况下，通常区域的特性会成为逃脱的关键」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_06.mp3
+msg,1,<outline width=2 color=black>「顺便问一下，你有什么头绪吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「一起去温泉」,选项2　「留宿一晚」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_07.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「……哎呀，为什么你总是那么色情？\n不能稍微认真一点吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_08.mp3
+msg,1,<outline width=2 color=black>「就算我们对幻梦境的负荷有抵抗力，也并不是说完全没有影响\n……虽然没必要着急，但也请稍微收紧点心吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_09.mp3
+msg,1,<outline width=2 color=black>「真是的……大家，真不知道你们觉得这种男人哪里好。\n我实在是想不明白」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_10.mp3
+msg,1,<outline width=2 color=black>「你也是，如果总是说这些话，\n小心我会烦透你。你自己要注意点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_11.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「嗯。我可是真的很讨厌呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_12.mp3
+msg,1,<outline width=2 color=black>「……为什么你听到这个就露出那么震惊的表情。\n难道你以为我会说『哦，那还不错』之类的答案吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_13.mp3
+msg,1,<outline width=2 color=black>「和你一起过夜，我可不知道会发生什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_14.mp3
+msg,1,<outline width=2 color=black>「而且虽然穿着浴衣感觉轻松自在，但正因为如此，\n各种各样都感觉不妙，比如只用腰带固定的地方让人感到不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:shy,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_15.mp3
+msg,1,<outline width=2 color=black>「还有，浴衣下面……这个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_16.mp3
+msg,1,<outline width=2 color=black>「……算了，没什么。总之，我们赶紧逃出去吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_17.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「光是开玩笑也没用，\n我们先四处看看，找找线索吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_18.mp3
+msg,1,<outline width=2 color=black>「如果靠近和逃脱有关的东西的话，我想应该能通过魔力反应来察觉到」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_19.mp3
+msg,1,<outline width=2 color=black>「因为不知道会发生什么，所以你最好不要离我太远」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:unique,zakuro,0,-160,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/104305/adv/sound/fav104305_01_20.mp3
+msg,1,<outline width=2 color=black>「但那并不意味着你需要靠得那么近。能别粘人吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104305/adv/atlas/stand_a,body:unique,zakuro,0,-160,0.7,0,,,,
+playvoice,1,download/character/104305/adv/sound/fav104305_01_21.mp3
+msg,1,<outline width=2 color=black>「真是的，你这个人……真希望你能稍微有点\n紧张感就好了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

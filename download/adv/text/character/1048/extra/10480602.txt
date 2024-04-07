@@ -1,0 +1,179 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11570301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm107.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:surprise,sasya2,0,0,0,0,,,,
+imgconf,sasya2,sasya1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104806/adv/sound/fav104806_02_01.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「嗯——啊姆……嗯嗯，中华包子，好吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:unique,sasya,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_02.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「咕噜……话说回来，这个区域到底是怎么回事……非得边吃边走才能出去，根本就不明白意思……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:unique,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_03.mp3
+msg,1,<outline width=2 color=black>「如果说，这些食物是陷阱，里面还下了毒的话，我倒是能接受一些……但它们只是普通的好吃而已……咕噜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:unique,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_04.mp3
+msg,1,<outline width=2 color=black>「……等等。你也吃点吧。难道你打算只让我一个人吃？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「吃得真香」,选项2 「节食该怎么办……」
+if,select_===_1,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_05.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「诶……啊，诶！？ 等等！ 我现在吃的，是第几个了！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_06.mp3
+msg,1,<outline width=2 color=black>「啊，啊，啊啊……好、好好吃，不知不觉就多吃了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_07.mp3
+msg,1,<outline width=2 color=black>「难、难道幻梦境里的食物，是零卡路里的么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:surprise,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_08.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「诶……？ 那个，是说……哈！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_09.mp3
+msg,1,<outline width=2 color=black>「莫、莫非，我正在节食！？\n又失去记忆了！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_10.mp3
+msg,1,<outline width=2 color=black>「哦、哦哦……呕……卡路里……体重……肉嘟嘟……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_11.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「呜、呜、呜呜……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_12.mp3
+msg,1,<outline width=2 color=black>「已、已经不在乎了！ 不再在意了！ 眼前有好吃的我就要吃！ 是卡路里的错，食物没有罪过！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_13.mp3
+msg,1,<outline width=2 color=black>「什么眼神啊那是！ 再说无聊的话，我就扁你哦，笨蛋！ 笨笨笨笨蛋！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_14.mp3
+msg,1,<outline width=2 color=black>「哼……吃了就做相应的运动就好了。嗯……咕噜，嗯哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_15.mp3
+msg,1,<outline width=2 color=black>「呜呜呜，这个中华包子好好吃啊……肉包子也好吃，\n这边的披萨包也好吃啊……披萨啊，肉嘟嘟……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_16.mp3
+msg,1,<outline width=2 color=black>「为什么人类一吃东西就会变胖呢……哈。\n咕噜……咕噜，嗯姆……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:unique,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_17.mp3
+msg,1,<outline width=2 color=black>「…………等等，别用那种眼神看我。那种温和的、\n「啊这家伙意志力真弱」那样的眼神停止——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_18.mp3
+msg,1,<outline width=2 color=black>「我自己也知道。但、但是，在这个区域里，不吃东西就无法离开，\n这是无法抵抗的力量……所、所以……没关系的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_19.mp3
+msg,1,<outline width=2 color=black>「不管了，你也快吃吧，来，来！ 一起肉嘟嘟！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104806/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104806/adv/sound/fav104806_02_20.mp3
+msg,1,<outline width=2 color=black>「嗯姆，咕噜……呃呃，好好吃啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

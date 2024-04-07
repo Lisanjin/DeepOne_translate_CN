@@ -1,0 +1,156 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10080100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_01.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「……打扮起来，就能得到他人更高的评价。\n人们会整理外表，注意身上的服装，就是出于这个原因吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_02.mp3
+msg,1,<outline width=2 color=black>「对于女性来说，大多数情况下，这是为了吸引异性的注意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_03.mp3
+msg,1,<outline width=2 color=black>「我也一直在观察你们，大概了解了在这种时候应该如何表现」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_04.mp3
+msg,1,<outline width=2 color=black>「也就是说——接下来，你应该会对我发起攻击」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:surprise,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_05.mp3
+msg,1,<outline width=2 color=black>「……为什么会感到困扰？我的打扮的变化，在很大程度上是受你的认知影响的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_06.mp3
+msg,1,<outline width=2 color=black>「也就是说，让我打扮起来，不就是想用女性的魅力来诱惑自己的暗示吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_07.mp3
+msg,1,<outline width=2 color=black>「除此之外，我认为你没有其他理由要求我打扮」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「欲望并非一切」,选项2 「如果我希望，你会答应我吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_08.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「那么，你看到我打扮起来，\n这本身就是你的目标吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_09.mp3
+msg,1,<outline width=2 color=black>「我理解人类拥有欣赏美的造诣的感性。\n是类似的感觉吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:surprise,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_10.mp3
+msg,1,<outline width=2 color=black>「――不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_11.mp3
+msg,1,<outline width=2 color=black>「一如既往，人类的感觉真是模糊而难以理解……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_12.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「拒绝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_13.mp3
+msg,1,<outline width=2 color=black>「……你没必要那么慌张。虽然并不是因为讨厌你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_14.mp3
+msg,1,<outline width=2 color=black>「我认识到男女关系是一种博弈。\n容易得到的东西价值相对较低」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_15.mp3
+msg,1,<outline width=2 color=black>「比起只是索求就得到的东西，应该在强烈渴望之后得到的东西\n才有更高的价值」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_16.mp3
+msg,1,<outline width=2 color=black>「虽然我对别人赋予的价值并无兴趣，但我希望避免你把我的价值定得太低……不知为何，我就是这么想的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_17.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「……但即便这样说，持续抑制欲望也\n很困难吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_18.mp3
+msg,1,<outline width=2 color=black>「特别是你，回顾你过去与女性相关的行为，\n我并不能认为你在这方面有什么忍耐力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_19.mp3
+msg,1,<outline width=2 color=black>「所以，当你无法控制那种冲动的时候——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104705/adv/atlas/stand_a,body:smile,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104705/adv/sound/fav104705_02_20.mp3
+msg,1,<outline width=2 color=black>「——我可以成为你的伴侣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
