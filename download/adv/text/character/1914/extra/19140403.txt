@@ -1,0 +1,136 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_01.mp3
+name,<outline width=2 color=black>アリス</outline>,
+msg,1,<outline width=2 color=black>「ちょっと！　なんなのよ、あのブリジットって……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:unique2,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_02.mp3
+msg,1,<outline width=2 color=black>「どうしたもこうしたもないわよ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_03.mp3
+msg,1,<outline width=2 color=black>「さっきお茶に誘われてついていったら、お菓子が出されたんだけど、\nなんなの“アレ”……本人はクッキーって言ってたけど、絶対違うわよね！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,
+
+
+select,選択肢1　「う……吐き気が」,選択肢2　「本当に申し訳ない……！」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:surprise,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_04.mp3
+name,<outline width=2 color=black>アリス</outline>,
+msg,1,<outline width=2 color=black>「え、えぇぇ？　なんで急に口元抑えてるのよ。\nというか、顔色最悪だし、身体震えてるし……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_05.mp3
+msg,1,<outline width=2 color=black>「も、もしかして……アンタって、アレ、食べたことあるの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:surprise,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_06.mp3
+msg,1,<outline width=2 color=black>「わ、わぁああっ！？　身体の震えがすごいことに……！\nい、いいっ、思い出さなくていいから……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_07.mp3
+msg,1,<outline width=2 color=black>「アンタって、意外と勇気あったのね……あんなのを口に入れるなんて」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:surprise,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_08.mp3
+name,<outline width=2 color=black>アリス</outline>,
+msg,1,<outline width=2 color=black>「ちょ……そんな土下座しそうな勢いで謝られても……いや、本気で\n土下座しようとしないでよ！　立ちなさいって！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_09.mp3
+msg,1,<outline width=2 color=black>「というか、アンタのその反応……やっぱりアレって、\n食べちゃいけないヤツだったのね……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:normal,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_10.mp3
+name,<outline width=2 color=black>アリス</outline>,
+msg,1,<outline width=2 color=black>「たまたま、一緒にミッドウェーも誘われてたから、\nアイツの口に全部詰め込んで処理したんだけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_11.mp3
+msg,1,<outline width=2 color=black>「……そんな責めるような目で見ないでよ。さすがにアタシも、\nちょっとアイツに優しくしてやろうかなって思ったし、反省もしてるから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_12.mp3
+msg,1,<outline width=2 color=black>「だって……アレ食べて、白目向いて泡吹いた後に爆発したのよ。\n比喩表現じゃなく、ほんとに」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_13.mp3
+msg,1,<outline width=2 color=black>「戦神を爆発させるクッキーってなんなの？\nどうやったらそんな物質が作れるわけ……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_14.mp3
+msg,1,<outline width=2 color=black>「と、とりあえず、ブリジットにはアンタからしっかり言っておいてよ！\n変なものを人に出すな、って」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_15.mp3
+msg,1,<outline width=2 color=black>「今回はミッドウェーだけだったからよかったものを、\n万が一にもジャンヌがアレの犠牲になったら……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_16.mp3
+msg,1,<outline width=2 color=black>「か、考えるだけでも恐ろしいわ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_17.mp3
+msg,1,<outline width=2 color=black>「とにかく、いいわねっ！？　あの危険物が二度とアタシたちの前に\n出てこないよう、アンタがしっかりと責任をもって管理しなさいよ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_03_18.mp3
+msg,1,<outline width=2 color=black>「もしまたアレが出てきたら、次はアンタの口に突っ込むから！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

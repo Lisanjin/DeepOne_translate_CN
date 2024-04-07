@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_01.mp3
+name,<outline width=2 color=black><ruby>比奈森|ひなもり</ruby><ruby>沙耶|さや</ruby></outline>,
+msg,1,<outline width=2 color=black>「おはようございます、お早いのですね……と言っても、ここではあまり\n時間の流れや日の巡りを感じることはできませんが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_02.mp3
+msg,1,<outline width=2 color=black>「ここは、拙目たちの暮らす時代よりも少し未来と聞いておりますが、\n地上の光も一切届かない海の底にまで、人の<ruby>灯|ひかり</ruby>が届くとは……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_03.mp3
+msg,1,<outline width=2 color=black>「拙目には、想像もできないことです……はたして、人という生き物は\nどこまで行ってしまうのだろうのかと考えてしまいます」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「それは不安？」,選択肢2　「それは期待？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_04.mp3
+name,<outline width=2 color=black><ruby>比奈森|ひなもり</ruby><ruby>沙耶|さや</ruby></outline>,
+msg,1,<outline width=2 color=black>「……そうですね。情けない話ですが、自分の理解の及ばぬ技術を前に、\n少しだけ恐ろしさのようなものを感じているのかもしれません」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_05.mp3
+msg,1,<outline width=2 color=black>「もっとも、そんな思いを抱くのは、拙目が新しい流れについていけない\n古い人間だからなのかもしれませんが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_06.mp3
+msg,1,<outline width=2 color=black>「これから先、世界の流れはどんどん早くなっていくのでしょう。\nその一端を目の当たりにして、自分の器の小ささを改めて思い知ります」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_07.mp3
+name,<outline width=2 color=black><ruby>比奈森|ひなもり</ruby><ruby>沙耶|さや</ruby></outline>,
+msg,1,<outline width=2 color=black>「正直に言えば期待よりも、不安の方が勝っています」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_08.mp3
+msg,1,<outline width=2 color=black>「ですが……もしかしたら、ここにご宗主さまがいらっしゃれば、\nあるいは拙目とは違う意見を持たれたかもしれません」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_09.mp3
+msg,1,<outline width=2 color=black>「きっと、あなたもなのでしょうが……未知へと進んでいく浪漫とは、\nやはり男性の方が強く感じられるものなのではないかと」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_10.mp3
+msg,1,<outline width=2 color=black>「そういう方たちこそが、いつの世も未来を切り開き、\n新しい流れを作っていくのでしょうね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_11.mp3
+name,<outline width=2 color=black><ruby>比奈森|ひなもり</ruby><ruby>沙耶|さや</ruby></outline>,
+msg,1,<outline width=2 color=black>「ですが、せめてその流れの中で、我が主のための刀として、\nこの矮小な身命の全てを捧げてお力になりたいと思うのでございます」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_12.mp3
+msg,1,<outline width=2 color=black>「もとよりこの身が生きる意味は、ご宗主さまの敵を断ち切り、\n御護りすることのみですから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_13.mp3
+msg,1,<outline width=2 color=black>「ふふ……なにやら、少し難しい顔をしていらっしゃいますね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_14.mp3
+msg,1,<outline width=2 color=black>「自分を捨てるほどの覚悟で、自分の全てを誰かに捧げる……あなたには、\nその行いが歪に映りますか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_15.mp3
+msg,1,<outline width=2 color=black>「別に責めようというわけではないのです」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_16.mp3
+msg,1,<outline width=2 color=black>「ですが、このことに関しては是非もございません。\n比奈森の女として、この誓いは絶対のものですから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:smile,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_17.mp3
+msg,1,<outline width=2 color=black>「それに、捧げることで示す想いの形もあるのでございますよ。\nこればかりは、女でないと分からないことなのかもしれませんね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_18.mp3
+msg,1,<outline width=2 color=black>「きっと、あなたの傍にも、拙目と同じような想いを抱いている方が\nいらっしゃると思いますよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:smile,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_01_19.mp3
+msg,1,<outline width=2 color=black>「それが誰か、など……そこまで無粋なことは拙目にはとても申せません。\nどうか、ご自身でお気付きくださいませ……ふふふ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

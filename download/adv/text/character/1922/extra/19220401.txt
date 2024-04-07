@@ -1,0 +1,199 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+sprite,download/adv/image/black.jpg,upber,0,0,0,0.5
+sprite,download/adv/image/black.jpg,bottomber,0,0,0,0.5
+imgconf,upber,,0,-360,1280,100,1,1,1,0
+imgconf,bottomber,,0,360,1280,100,1,1,1,0
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:sad,usio,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_01.mp3
+name,<outline width=2 color=black><ruby>朝霞|あさか</ruby><ruby>汐|うしお</ruby></outline>,
+msg,1,<outline width=2 color=black>「えっと……人工農園は、このあたりだよね……あ、あった」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:sad,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_02.mp3
+msg,1,<outline width=2 color=black>「あ、あれ……？　なんでドア開かないの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:sad,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_03.mp3
+msg,1,<outline width=2 color=black>「ええと、確か生体認証で開くんだよね……おかしいなあ。\n私のデータも登録しておいた、って言ってたのに……なんでだろう？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:sad,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_04.mp3
+msg,1,<outline width=2 color=black>「そういえば生体認証って、指紋とかじゃないみたいだけど、\nなにで認証してるのかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:normal,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_05.mp3
+msg,1,<outline width=2 color=black>「あ……あれってカメラかな……じゃあもしかして、\n顔認証とか、網膜認証とかなのかな……ハイテクだなぁ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:surprise,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_06.mp3
+msg,1,<outline width=2 color=black>「って、あのカメラの位置、私の身長じゃ……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,jump,usio,0_-120_40_2,2,1
+endwait
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:unique1,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_07.mp3
+msg,1,<outline width=2 color=black>「んー！　んーんー！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:surprise,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_08.mp3
+msg,1,<outline width=2 color=black>「届かない……！　農園の果物、ケーキ作りに使っていいって聞いて、\nどんなのがあるか楽しみにしてたのにぃ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,upber,0.5
+spriteoff,bottomber,0.5
+endwait,,,,,,,,,,,
+
+
+select,選択肢1　見守り続ける,選択肢2　助ける
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:sad,usio,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_09.mp3
+name,<outline width=2 color=black><ruby>朝霞|あさか</ruby><ruby>汐|うしお</ruby></outline>,
+msg,1,<outline width=2 color=black>「はっ、視線……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:normal,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_10.mp3
+msg,1,<outline width=2 color=black>「あ……あなたは……ええと、こんなところで会うなんて、奇遇だね？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:sad,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_11.mp3
+msg,1,<outline width=2 color=black>「――ところで、なんでそんなニヤニヤしてるわけ？\nまさか、今の見てた？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:unique1,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_12.mp3
+msg,1,<outline width=2 color=black>「ちょっと！　人が困ってるのを見て笑うなんて失礼だよ！\nそういう時はさりげなく助けに入ってくれるのが男の子じゃないの！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:unique1,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_13.mp3
+msg,1,<outline width=2 color=black>「もう……意外と意地が悪いよね、あなたって」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:normal,usio,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_14.mp3
+name,<outline width=2 color=black><ruby>朝霞|あさか</ruby><ruby>汐|うしお</ruby></outline>,
+msg,1,<outline width=2 color=black>「え……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:normal,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_15.mp3
+msg,1,<outline width=2 color=black>「あ。あなたは……もしかして、代わりに開けてくれるの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:shy,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_16.mp3
+msg,1,<outline width=2 color=black>「あはは……なんか、恥ずかしいとこ見られちゃったね。\nその、忘れてくれると助かるんだけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:surprise,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_17.mp3
+msg,1,<outline width=2 color=black>「って、なんで親指立てるの！？　それ、どういう意味なの！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:unique1,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_18.mp3
+name,<outline width=2 color=black><ruby>朝霞|あさか</ruby><ruby>汐|うしお</ruby></outline>,
+msg,1,<outline width=2 color=black>「――かわいかったからオッケーって、なにそれ理由になってないから！\nそもそも、それってもしかしなくても私のこと子供扱いしてるよね！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:anger,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_19.mp3
+msg,1,<outline width=2 color=black>「これでも私、花音とかよりも年上で、お姉さんなんだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:anger,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_20.mp3
+msg,1,<outline width=2 color=black>「あなたたちにはお世話になってるけど、\nそこの認識だけはきちんと改めてもらわないと」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:sad,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_21.mp3
+msg,1,<outline width=2 color=black>「まあ、あなたのまわりにはスタイルのいい子ばっかりだし、\nそれと比べたら私なんて……って感じなのかもしれないけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:anger,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_22.mp3
+msg,1,<outline width=2 color=black>「別に怒ってません。いいですよーだ、私には、\nちゃんと私のことをいいって思ってくれる人がいるし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:anger,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_23.mp3
+msg,1,<outline width=2 color=black>「彼が一緒にルルイエに来てたら、こういう時にカッコよく\n庇ってくれ――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:sad,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_24.mp3
+msg,1,<outline width=2 color=black>「……いや、なんか悪ノリしてきそうな気も？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:unique1,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_25.mp3
+msg,1,<outline width=2 color=black>「…………と、とにかくっ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192204/adv/atlas/stand_a,body:anger,usio,0,-120,0.5,0,,,,
+playvoice,1,download/character/192204/adv/sound/fav192204_01_26.mp3
+msg,1,<outline width=2 color=black>「私のこと、子ども扱いは禁止！　わかった？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

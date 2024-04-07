@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:normal,rusa,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_01.mp3
+name,<outline width=2 color=black>ルサルカ・シュヴェーゲリン</outline>,
+msg,1,<outline width=2 color=black>「ルルイエには、ナコト原書を手に入れて願いを叶えたい……って\n思ってる子もいるみたいだけど、そう上手くいくものかしらね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:normal,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_02.mp3
+msg,1,<outline width=2 color=black>「これはまあ、嫌味とかじゃなく、先人としての忠告というか、\n一足はやい同情というか……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:normal,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_03.mp3
+msg,1,<outline width=2 color=black>「私もね、願い事を叶えるために、怪物みたいな存在に従ってたの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:normal,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_04.mp3
+msg,1,<outline width=2 color=black>「詳しい話は省くけど……ま、永遠の命っていうか、不老不死が欲しくて\n悪魔に魂を売った、みたいに思っておけばいいわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:sad,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_05.mp3
+msg,1,<outline width=2 color=black>「そしたらさあ、結果どうなったと思う？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「叶った」,選択肢2　「叶わなかった」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:anger,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_06.mp3
+name,<outline width=2 color=black>ルサルカ・シュヴェーゲリン</outline>,
+msg,1,<outline width=2 color=black>「なーんで今の会話の流れでそう思ったかなぁ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:sad,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_07.mp3
+msg,1,<outline width=2 color=black>「いやまあ、エイヴィヒカイトで魂を燃料にし続ければ、\nなかば不死身みたいなものではあったけども……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:normal,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_08.mp3
+msg,1,<outline width=2 color=black>「でも、それだって同格以上の相手に害されたら終わっちゃうもの。\n私が欲しかったのは、そんな中途半端じゃなく、もっと完璧な形」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:smile,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_09.mp3
+msg,1,<outline width=2 color=black>「永遠が欲しい――それって、多かれ少なかれ、誰だって思っている\nことでしょう？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:smile,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_10.mp3
+msg,1,<outline width=2 color=black>「人の身には過ぎた願い、なんて言われたらそれまでだけれどね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:normal,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_11.mp3
+name,<outline width=2 color=black>ルサルカ・シュヴェーゲリン</outline>,
+msg,1,<outline width=2 color=black>「ま、そうゆうことね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:sad,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_12.mp3
+msg,1,<outline width=2 color=black>「今となっては、むしろ叶わなくてよかったとも思うわ。\nあんなの詐欺よ詐欺。曲解にもほどがあるっての」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:sad,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_13.mp3
+msg,1,<outline width=2 color=black>「……まあ、振り返って考えれば、そもそも願っていた時点で、\n本当に求めていたものからはズレてたのかもしれないけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:sad,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_14.mp3
+name,<outline width=2 color=black>ルサルカ・シュヴェーゲリン</outline>,
+msg,1,<outline width=2 color=black>「でも、それにしたってあれは酷かったわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:sad,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_15.mp3
+msg,1,<outline width=2 color=black>「不老不死がいいっていってるのに、死んだ後も死者の軍勢のひとりに\nなって、永遠に戦い続ける……って、そんな永遠はごめんよ、まったく」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:sad,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_16.mp3
+msg,1,<outline width=2 color=black>「蓮くんたちがハイドリヒ卿をなんとかしてくれて、ほんとによかったわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:normal,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_17.mp3
+msg,1,<outline width=2 color=black>「――なんて言ってたら、どこからか必中の炎でも飛んできそうね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:smile,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_18.mp3
+msg,1,<outline width=2 color=black>「それより、こっちの話もしてあげたんだから、そっちの話も聞かせてよ。\nほら、これまでいろいろ面白いこととかあったんでしょ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:normal,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_19.mp3
+msg,1,<outline width=2 color=black>「夢幻の世界の冒険譚なんて、ロマンあるじゃない。\n私、案外そういうの嫌いじゃないわよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:smile,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_20.mp3
+msg,1,<outline width=2 color=black>「そうだ。お酒でも飲みながら話す？\nダナのところから美味しそうなの一本くすねておいたのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:smile,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_21.mp3
+msg,1,<outline width=2 color=black>「あら。なにかしら、その目は。私は彼女がお酒の飲みすぎで身体を\n壊さないようにと気を遣ってあげただけなんだから。優しさよ、優しさ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191904/adv/atlas/stand_a,body:unique,rusa,0,-100,0.5,0,,,,
+playvoice,1,download/character/191904/adv/sound/fav191904_02_22.mp3
+msg,1,<outline width=2 color=black>「ま、秘蔵の一本がなくなったことに気づいたダナの反応は、\n結構楽しみだけどね？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

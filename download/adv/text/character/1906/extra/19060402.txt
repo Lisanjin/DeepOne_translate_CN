@@ -1,0 +1,257 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_01.mp3
+name,<outline width=2 color=black><ruby>雛|ひな</ruby></outline>,
+msg,1,<outline width=2 color=black>「ねーねー、いま、ちょっといい？　いいよねー？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:surprise,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_02.mp3
+msg,1,<outline width=2 color=black>「ありゃ……なんで後ずさるのー？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_03.mp3
+msg,1,<outline width=2 color=black>「別になんにも怖いことないよー。痛くないよー。\nほんのちょーっと、渡したいものがあるだけなんだー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「嘘だ！」,選択肢2　「本当に……？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:sad,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_04.mp3
+msg,1,<outline width=2 color=black>「もー、なんでそんな疑うのかなー……まるで常日頃から、\n誰かに騙されて酷いことをされているみたいだよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,silvy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101901/adv/atlas/stand_a,body:smile,silvy2,0,0,0,0,,,,
+imgconf,silvy2,silvy1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+name,
+msg,0,
+endwait
+bg,download/bg/bg_10010100.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:sad,hina,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_05.mp3
+name,<outline width=2 color=black><ruby>雛|ひな</ruby></outline>,
+msg,1,<outline width=2 color=black>「んー……？　なんで震えてるのー？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_06.mp3
+msg,1,<outline width=2 color=black>「ほんとほんと。雛がそんなひどいことをするような人間に見える？\nほら、見てよ、この純粋無垢な目を」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,hina1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina2,0,0,0,0,,,,
+imgconf,hina2,hina1,0,-530,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/190604/adv/sound/fav190604_02_07.mp3
+msg,1,<outline width=2 color=black>「ふふー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:anger,hina,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_08.mp3
+name,<outline width=2 color=black><ruby>雛|ひな</ruby></outline>,
+msg,1,<outline width=2 color=black>「――って、ちょっとー、なんでまた後ずさったのー？\n雛の綺麗な目を見て、一体なにを感じたのかなー？　失礼だよー？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_09.mp3
+msg,1,<outline width=2 color=black>「雛はただ、このお薬をあなたに飲んでほしいなー、と思っただけで……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,255
+endwait
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,1200,-100,0.5,0.5,0,,,,
+anm,jump,hina,0_-100_80_1,0.6,0
+endwait
+
+
+
+playvoice,1,download/character/190604/adv/sound/fav190604_02_10.mp3
+name,<outline width=2 color=black><ruby>雛|ひな</ruby></outline>,
+msg,1,<outline width=2 color=black>「もー、なんで逃げるのー？\n別にこれ、怪しい薬じゃないよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_11.mp3
+msg,1,<outline width=2 color=black>「ほら、あなたっていつも頑張ってるから、疲れてるんじゃないかなー、って。\nそれで雛特製の滋養強壮のお薬を作ってきたんだー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_12.mp3
+msg,1,<outline width=2 color=black>「身体に悪いものとか入れてないし、安心してぐいっといっちゃってよー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:sad,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_13.mp3
+msg,1,<outline width=2 color=black>「それとも、余計な気遣いだった？　雛のお薬なんて飲めない？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:surprise,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_14.mp3
+msg,1,<outline width=2 color=black>「あっ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_15.mp3
+msg,1,<outline width=2 color=black>「おー、いい飲みっぷり。一気飲みだー。\n味はちょっとクセあるけど、そこまで悪くないでしょー？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_16.mp3
+msg,1,<outline width=2 color=black>「ふふー、ねえねえ、どぉー？　元気になった？\nといっても、そんなすぐには効かないかなー？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:surprise,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_17.mp3
+msg,1,<outline width=2 color=black>「ん？　あれ、なんか息が荒く……それに顔も赤くなってるけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:sad,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_18.mp3
+msg,1,<outline width=2 color=black>「あれー……もしかして、もう効果が出てきちゃったの？\nここまで強力なものじゃないはずなんだけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_19.mp3
+msg,1,<outline width=2 color=black>「んー……もしかして、シルヴィちんに手伝ってもらったせいかな。\n確か、ちょっとアレンジするって言ってたようなー……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_20.mp3
+msg,1,<outline width=2 color=black>「えっとー……元々、三日三晩寝てない人でも元気百倍になっちゃう\nお薬だから、それがさらに効果が強くなった、って考えると……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,hina,50_-100,0.5,0
+endwait
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,50,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_02_21.mp3
+msg,1,<outline width=2 color=black>「……これは、こっから一晩二晩は眠れない、かもー？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,hina,1200_-100,0.5,0
+playse,/download/sound/se/se_016.mp3
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,hina1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:sad,hina2,0,0,0,0,,,,
+imgconf,hina2,hina1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/190604/adv/sound/fav190604_02_22.mp3
+name,<outline width=2 color=black><ruby>雛|ひな</ruby></outline>,
+msg,1,<outline width=2 color=black>「ひ、雛は悪くないよー！　悪いのはシルヴィちんだから！\n怒るならシルヴィちんだけにしてよねー！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

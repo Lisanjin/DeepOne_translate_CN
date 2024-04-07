@@ -1,0 +1,119 @@
+
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:normal,arisu,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_01.mp3
+name,<outline width=2 color=black><ruby>鳥海|とりうみ</ruby><ruby>有栖|ありす</ruby></outline>,
+msg,1,<outline width=2 color=black>「やーどうもどうも。あらためまして、ただ者ではない美少女、\n有栖ちゃんでーす。いえーい、ぱちぱちぱちー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:normal,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_02.mp3
+msg,1,<outline width=2 color=black>「ふふふふふ、ミステリアスさが溢れちゃってるし、\nただ者じゃないな、というのはお察しかと思いますが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「どういう風にただ者じゃないの？」,選択肢2　「ミステリアス……？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:smile,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_03.mp3
+name,<outline width=2 color=black><ruby>鳥海|とりうみ</ruby><ruby>有栖|ありす</ruby></outline>,
+msg,1,<outline width=2 color=black>「よく聞いてくれました！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:anger,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_04.mp3
+msg,1,<outline width=2 color=black>「いやもう、皆揃って全然ミステリアスじゃないとか、\nアホだとかドジだとか、元気と見た目しか取り柄がないとか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:anger,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_05.mp3
+msg,1,<outline width=2 color=black>「肝心な時に役に立ったことがないよね？　とか\n普段から周りに好き勝手に言われたりしてる訳ですがっ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:anger,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_06.mp3
+msg,1,<outline width=2 color=black>「そうじゃないって所をちゃーんと証明してみせましょう！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:normal,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_07.mp3
+name,<outline width=2 color=black><ruby>鳥海|とりうみ</ruby><ruby>有栖|ありす</ruby></outline>,
+msg,1,<outline width=2 color=black>「そうだよ？　あ、なんかよく分かんないって顔してるー！\nどこからどうみてもミステリアスな美少女でしょー！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:normal,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_08.mp3
+msg,1,<outline width=2 color=black>「正体不明の謎の美少女……。有栖、一体何者なんだ？\nみたいな、ミステリーって意味で！　神秘的でもいいけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:normal,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_09.mp3
+name,<outline width=2 color=black><ruby>鳥海|とりうみ</ruby><ruby>有栖|ありす</ruby></outline>,
+msg,1,<outline width=2 color=black>「悪い夢を見ている人を助けにどこからともなく現れる\n正体不明の『いい子』……それが、あたし。有栖ちゃんです！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:unique1,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_10.mp3
+msg,1,<outline width=2 color=black>「……えっと、そんな感じで自己紹介してみたものの、\n本当にそれでいいのか、みたいな感じといいますか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:sad,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_11.mp3
+msg,1,<outline width=2 color=black>「いや、こういう話を新しく会った人にするのが久々というか、\n自分でもそういえばそうだった、みたいな部分がちょっとあって？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:normal,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_12.mp3
+msg,1,<outline width=2 color=black>「一応、このハサミで悪い夢をチョキーンって切り落としておしまいに\n出来るのはホントなんだけどね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:smile,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_13.mp3
+msg,1,<outline width=2 color=black>「よっし。細かい話はべつにいっか。\nその辺はあんまり大事な話じゃないと思うし、うんうん」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:normal,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_14.mp3
+msg,1,<outline width=2 color=black>「ここがどこで、どうしてあたし達が来てて、透も有子もいないけど\n弥生と舞亜はいるし、どうにかなるでしょう。きっと、多分」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193604/adv/atlas/stand_a,body:smile,arisu,0,-120,0.5,0,,,,
+playvoice,1,download/character/193604/adv/sound/fav193604_01_15.mp3
+msg,1,<outline width=2 color=black>「というわけで、しばらくよろしくねー♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

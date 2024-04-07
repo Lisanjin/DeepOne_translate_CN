@@ -1,0 +1,174 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102101/adv/atlas/stand_a,body:normal,ulusura,300,-200,0.5,0.5,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:smile,rotte,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_01.mp3
+name,<outline width=2 color=black>リーゼロッテ・ヴェルクマイスター</outline>,
+msg,1,<outline width=2 color=black>「私の話で役に立てるのであれば、何でも。私も楽しかったわ。\nそれでは、ごきげんよう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:surprise,rotte,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_02.mp3
+name,<outline width=2 color=black>リーゼロッテ・ヴェルクマイスター</outline>,
+msg,1,<outline width=2 color=black>「――あら、見ていたのね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_03.mp3
+msg,1,<outline width=2 color=black> 「私がルルイエの魔術師たちとコミュニケーションを取っているのが、\nそんなに不思議かしら？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「ルルイエに慣れてきたようで嬉しい」,選択肢2　「そういうタイプには見えなかった」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:smile,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_04.mp3
+name,<outline width=2 color=black>リーゼロッテ・ヴェルクマイスター</outline>,
+msg,1,<outline width=2 color=black>「ふふふ……確かに慣れてはきているかもしれないわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_05.mp3
+msg,1,<outline width=2 color=black>「このルルイエにどんな魔術師たちがいて、それぞれがどういう意図を\n持っているのか。だいたい把握できてきたから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_06.mp3
+msg,1,<outline width=2 color=black>「こう見えて私は、人の渇望や欲望を読み取るの、とっても得意なの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:anger,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_07.mp3
+name,<outline width=2 color=black>リーゼロッテ・ヴェルクマイスター</outline>,
+msg,1,<outline width=2 color=black>「タイプ？　どう思っていたか知らないけれど、\n私の何を知っているというのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:anger,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_08.mp3
+msg,1,<outline width=2 color=black>「特に女は見た目で判断したら、痛い目に合うわよ？\nその考え方は改めておいた方がいいわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:smile,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_09.mp3
+name,<outline width=2 color=black>リーゼロッテ・ヴェルクマイスター</outline>,
+msg,1,<outline width=2 color=black>「ふふふ……私が単純にルルイエの魔術師たちと交流を持っていると\n思ったら大間違いよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_10.mp3
+msg,1,<outline width=2 color=black>「私は以前、名を馳せた六人の魔術師たちと同盟を組んで、\n『<ruby>禁書目録聖省|インデックス</ruby>』と渡り合うほどの結社を作り上げたことがあるの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:unique,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_11.mp3
+msg,1,<outline width=2 color=black>「……禁書目録聖省を知らない？\nそう。世界が違えば、存在する組織も変わってくるのね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_12.mp3
+msg,1,<outline width=2 color=black>「簡単に言えば、世界に覇を唱えるほどの強力な魔術結社を\n作った経験があるということよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_13.mp3
+msg,1,<outline width=2 color=black>「そして、このルルイエには様々な魔術師が集まっている」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_14.mp3
+msg,1,<outline width=2 color=black>「魔道に堕ちたと思えないほど善良な子も多いけれど、\n私好みの曰く付きの魔術師も多いわよね？　リンドマン姉妹とか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:smile,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_15.mp3
+msg,1,<outline width=2 color=black>「大樹に育つであろう魔術師たちを選抜して、新しい『トゥーレ』を組織し、\n再び世界に覇を唱えるのも一興だと思わない？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:smile,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_16.mp3
+msg,1,<outline width=2 color=black>「……フフフ……あははは。\nあなた、ずいぶんと神妙な顔をしているわよ？　ふふ、冗談よ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_17.mp3
+msg,1,<outline width=2 color=black>「冗談に聞こえなかった？　それはそうね。出来ないわけではないと、\n私自身が思っているから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:smile,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_18.mp3
+msg,1,<outline width=2 color=black>「ほんの戯れ。戯言だと思って流しなさい。本気にすることはないわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:smile,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_19.mp3
+msg,1,<outline width=2 color=black>「今、ここに私がいること自体が、ナコト原書の……あるいは、\n運命とやらを弄ぶ何者かの戯れのようなもの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_20.mp3
+msg,1,<outline width=2 color=black>「私が戯れに振る舞っても、それほど目くじらを立てないで欲しいものね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:normal,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_21.mp3
+msg,1,<outline width=2 color=black>「それに……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191704/adv/atlas/stand_a,body:smile,rotte,0,-100,0.5,0,,,,
+playvoice,1,download/character/191704/adv/sound/fav191704_02_22.mp3
+msg,1,<outline width=2 color=black>「私の戯れ程度の揺さぶりで、内側から壊れてしまうような組織なら、\n魔導書の叡智を手に入れるに値しないと思うわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

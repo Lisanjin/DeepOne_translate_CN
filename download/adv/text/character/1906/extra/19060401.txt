@@ -1,0 +1,178 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,1200,-100,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,hina,650_-100,0.8,1
+endwait
+
+
+playvoice,1,download/character/190604/adv/sound/fav190604_01_01.mp3
+name,<outline width=2 color=black><ruby>雛|ひな</ruby></outline>,
+msg,1,<outline width=2 color=black>「さっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,hina,-1200_-100,0.5,0
+endwait
+wait,0.3
+endwait,,,,,,,,,,,,
+
+
+anm,move,hina,-640_-100,0.8,1
+endwait,,,,,,,,,,,,,
+
+
+playvoice,1,download/character/190604/adv/sound/fav190604_01_02.mp3
+msg,1,<outline width=2 color=black>「さささっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,-640,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_03.mp3
+msg,1,<outline width=2 color=black>「じー……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「……なにをしているんだ？」,選択肢2　「あんなところに奇妙な生き物が！」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:surprise,hina,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_04.mp3
+name,<outline width=2 color=black><ruby>雛|ひな</ruby></outline>,
+msg,1,<outline width=2 color=black>「おー……ばれてる。雛の尾行に気づくとは、なかなか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_05.mp3
+msg,1,<outline width=2 color=black>「なにかなー、その呆れた顔はー。\nまあ確かに、ほんとは隠れるつもりはあんまりなかったんだけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_06.mp3
+msg,1,<outline width=2 color=black>「なんとなく、いつ反応してくれるかなー、って」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:surprise,hina,0,-100,0.5,0.5,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_07.mp3
+msg,1,<outline width=2 color=black>「え、なになに？　なに見つけたの……んー？　なんにもいなくない？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:anger,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_08.mp3
+msg,1,<outline width=2 color=black>「……もしかして、嘘？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:anger,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_09.mp3
+msg,1,<outline width=2 color=black>「なんという策士。雛をおびき出すために、こんな巧妙な罠を張るとは。\n忍を騙すなんてとんだ極悪人だー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_10.mp3
+msg,1,<outline width=2 color=black>「え、尾行してた理由？　うーん……暇だったから？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_11.mp3
+msg,1,<outline width=2 color=black>「あとあと、ほらこれ、キリエちんに貰ったんだー。\nじゃじゃーん、でじたるかめらー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_12.mp3
+msg,1,<outline width=2 color=black>「ここのボタンを押すと本物みたいな絵が撮れて……いめーじふぁいる、\nとかいったっけ。それがこの機械の中に記録されるんだって」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_13.mp3
+msg,1,<outline width=2 color=black>「それで、いつでも見返すことが出来てねー……って、\nこっちの世界のものだし、いちいち説明しなくても知ってるかー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_14.mp3
+msg,1,<outline width=2 color=black>「ん？　あなたも触ったことないの？　ふうん、そういうものなんだ。\nそれなら一緒になにか撮ってみる？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_15.mp3
+msg,1,<outline width=2 color=black>「けっこう楽しんだよー。雛も、もういっぱい撮ったんだよー。\nほらほら、これ見て」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_16.mp3
+msg,1,<outline width=2 color=black>「これが、昨日の夜遅くにカティアちんの部屋から出てきたあなた。\nそしてこっちが早朝にあなたの部屋に入っていくマルタちん」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_17.mp3
+msg,1,<outline width=2 color=black>「こっちはあなたにフラウちんが“あーん”ってしてるとこで、\nそれからえっと――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:unique,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_18.mp3
+msg,1,<outline width=2 color=black>「んー……？　どうしたのかなー、なんだか、ちょっと汗かいてるけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:unique,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_19.mp3
+msg,1,<outline width=2 color=black>「この写真？　うーん、どうしようかなー、せっかく撮ったんだし、\nいろんな人に見て欲しいけどー……どう思う？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_20.mp3
+msg,1,<outline width=2 color=black>「えー、お菓子くれるのー？　嬉しいなー、やさしいねー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:unique,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_21.mp3
+msg,1,<outline width=2 color=black>「それならお礼に、このカメラをちょっとだけ貸してあげるから、\n見られたらまずいものはコッソリ消しちゃってねー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:normal,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_22.mp3
+msg,1,<outline width=2 color=black>「ただまあ、雛の見た感じ、それくらいの写真でルルイエのみんなが\n怒るとは思わないけど……男の人的には、やっぱり気まずいものなのかなー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190604/adv/atlas/stand_a,body:smile,hina,0,-100,0.5,0,,,,
+playvoice,1,download/character/190604/adv/sound/fav190604_01_23.mp3
+msg,1,<outline width=2 color=black>「まあ、雛的にはお菓子も貰えるし、どうでもいっかー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

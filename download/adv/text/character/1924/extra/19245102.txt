@@ -1,0 +1,300 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:normal,sasa2,0,0,0,0,,,,
+imgconf,sasa2,sasa1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/192451/adv/sound/fav192451_02_01.mp3
+name,<outline width=2 color=black><ruby>皇鈴|みすず</ruby><ruby>紗々|ささ</ruby></outline>,
+msg,1,<outline width=2 color=black>「ふっふっふ、まさかこんなところで私の特技が活かされる時が\n来るとは思いませんでした」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,255
+endwait
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:normal,sasa2,0,0,0,0,,,,
+imgconf,sasa2,sasa1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/192451/adv/sound/fav192451_02_02.mp3
+name,<outline width=2 color=black><ruby>皇鈴|みすず</ruby><ruby>紗々|ささ</ruby></outline>,
+msg,1,<outline width=2 color=black>「狭くてじめじめした物陰を見つけるのは得意……それはつまり、\n人目につかずに移動ができるということなのです」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010407.jpg,0,255
+endwait
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:normal,sasa2,0,0,0,0,,,,
+imgconf,sasa2,sasa1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/192451/adv/sound/fav192451_02_03.mp3
+name,<outline width=2 color=black><ruby>皇鈴|みすず</ruby><ruby>紗々|ささ</ruby></outline>,
+msg,1,<outline width=2 color=black>「このルルイエ大かくれんぼ大会……いただきました！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,255
+endwait
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:normal,sasa2,0,0,0,0,,,,
+imgconf,sasa2,sasa1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/192451/adv/sound/fav192451_02_04.mp3
+name,<outline width=2 color=black><ruby>皇鈴|みすず</ruby><ruby>紗々|ささ</ruby></outline>,
+msg,1,<outline width=2 color=black>「ふむ……どうやらすでに参加者は半分程度になっているようですね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　声をかける,選択肢2　ついていく
+if,select_===_1,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:normal,sasa,0,-1200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+anm,jump,sasa,0_-130_600_1,1.2,1
+endwait
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique1,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_05.mp3
+name,<outline width=2 color=black><ruby>皇鈴|みすず</ruby><ruby>紗々|ささ</ruby></outline>,
+msg,1,<outline width=2 color=black>「ぴゅい！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique1,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_06.mp3
+msg,1,<outline width=2 color=black>「あ、あれ！？　なんでバレて！？　完璧に隠れていたはずなのに……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:sad,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_07.mp3
+msg,1,<outline width=2 color=black>「そんな……私の最大の特技といっても過言ではない\nジメジメ物陰潜伏スキルが見破られてしまうなんて……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:sad,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_08.mp3
+msg,1,<outline width=2 color=black>「あ、あなたはいったい、何者なんですか……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:smile,sasa,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_09.mp3
+name,<outline width=2 color=black><ruby>皇鈴|みすず</ruby><ruby>紗々|ささ</ruby></outline>,
+msg,1,<outline width=2 color=black>「これで、スペシャルケーキは私のものですね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:anger,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_10.mp3
+msg,1,<outline width=2 color=black>「っとと、油断はいけません。最後まで気を抜かず、葉っぱの後ろに\nしがみつくアブラムシのように……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:surprise,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_11.mp3
+msg,1,<outline width=2 color=black>「――あれ、なんだか視線を感じるような……いや、まさかまさか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique1,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_12.mp3
+msg,1,<outline width=2 color=black>「…………え」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique1,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_13.mp3
+msg,1,<outline width=2 color=black>「な、な、な……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:surprise,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_14.mp3
+msg,1,<outline width=2 color=black>「なんで真後ろにいるんですかぁぁぁ！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:sad,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_15.mp3
+name,<outline width=2 color=black><ruby>皇鈴|みすず</ruby><ruby>紗々|ささ</ruby></outline>,
+msg,1,<outline width=2 color=black>「そんなぁ……まさかこの私が見つかるなんて……これじゃあ、\nスペシャルケーキが……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:sad,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_16.mp3
+msg,1,<outline width=2 color=black>「かくれんぼ優勝者に贈られるマシュマロツリーと亜紗花さんの\nコラボケーキがぁぁ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique1,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_17.mp3
+msg,1,<outline width=2 color=black>「ああ、やっぱり私なんかがみなさんを出し抜いて勝とうなんて考えが\nおこがましかったんです」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique1,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_18.mp3
+msg,1,<outline width=2 color=black>「こんな食物連鎖最底辺のミジンコに食べさせるケーキは\nないってことですよね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique1,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_19.mp3
+msg,1,<outline width=2 color=black>「私なんてリンさんのズッコケアタックで紗々百パーセントハンバーグ、\nあるいはマルタさんの指差しビームでお星様になるのがお似合いなんです」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique1,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_20.mp3
+msg,1,<outline width=2 color=black>「それともブリジットさんのスペシャル☆クッキーでドキドキワクワクな\n夢の旅に出るほうが相応しいでしょうか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:surprise,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_21.mp3
+msg,1,<outline width=2 color=black>「――え？　あれ。あなたって、かくれんぼに参加してないんですか？\nということは……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique2,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_22.mp3
+msg,1,<outline width=2 color=black>「セ、セーフ！　セーフ！　まさかこんなあっさり見つかるのは\n驚きでしたが、どうにか首の皮一枚繋がってました！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique2,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_23.mp3
+msg,1,<outline width=2 color=black>「そうと分かれば、ずっと立ち話をしているわけにもいきません」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique2,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_24.mp3
+msg,1,<outline width=2 color=black>「私は虫さんたちと仲良くジメジメとした物陰を移動しながら、\nかくれんぼ優勝をもぎとってきますので！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192451/adv/atlas/stand_a,body:unique2,sasa,0,-130,0.5,0,,,,
+playvoice,1,download/character/192451/adv/sound/fav192451_02_25.mp3
+msg,1,<outline width=2 color=black>「それでは！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,sasa,-1200_-130,0.7,0
+endwait
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

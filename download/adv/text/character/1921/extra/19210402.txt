@@ -1,0 +1,219 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_01.mp3
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+msg,1,<outline width=2 color=black>「いいなぁ……羨ましいなぁ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:anger,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_02.mp3
+msg,1,<outline width=2 color=black>「なんか、ノルンちゃんやフラウちゃんを見てると、\n私も妹が欲しくなっちゃうなぁ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:smile,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_03.mp3
+msg,1,<outline width=2 color=black>「ノルンちゃんは、話していると楽しくて、ついつい時間を忘れちゃうし、\nフラウちゃんはかわいくて、なんていうかもう毎日一緒に寝てあげたい！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:shy,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_04.mp3
+msg,1,<outline width=2 color=black>「……ねーえ？　ふたりのこと、もらっちゃダメかなぁ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「ダメ」,選択肢2　「お兄ちゃんはどうですか」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:unique3,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_05.mp3
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+msg,1,<outline width=2 color=black>「あはは、だよねー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:anger,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_06.mp3
+msg,1,<outline width=2 color=black>「あーあ。妹……いいなあ。私も妹に甘えてもらったり\n甘やかしてあげたりしたいよー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:surprise,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_07.mp3
+msg,1,<outline width=2 color=black>「え？　汐ちゃん？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:surprise,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_08.mp3
+msg,1,<outline width=2 color=black>「んー、たしかに汐ちゃんとは幼馴染で、小さい頃からずっと一緒だけど、\nどっちかと言うとお姉ちゃん、って感じかなあ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:surprise,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_09.mp3
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+msg,1,<outline width=2 color=black>「わぁ、なんかすごい力強いアピールだね……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_10.mp3
+msg,1,<outline width=2 color=black>「お兄ちゃんかー……うーん。\nたしかに、お兄ちゃんって頼りになりそうだけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:smile,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_11.mp3
+msg,1,<outline width=2 color=black>「でも、それなら私には汐ちゃんがいるから、いいかなぁ。\n昔から一番近くで助けてくれる、頼りがいのあるお姉ちゃん代わりなんだよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:unique2,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_12.mp3
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+msg,1,<outline width=2 color=black>「お姉ちゃんが汐ちゃんで、妹にノルンちゃんとフラウちゃん。\nそれが私的完璧な布陣だよ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:unique1,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_13.mp3
+msg,1,<outline width=2 color=black>「よーし、そうと決まれば、ふたりに私の妹にならないか\n聞いてみよっと」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:sad,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_14.mp3
+msg,1,<outline width=2 color=black>「――むむ。邪魔をする気かな？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_15.mp3
+msg,1,<outline width=2 color=black>「なるほど、妹をひとりじめしておきたいんだね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_16.mp3
+msg,1,<outline width=2 color=black>「でも、選ぶのはふたりだよ！　私とあなた、どっちの妹になりたいか、\n聞いちゃうもんね！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,kanon,-1200_-130,0.8,0
+endwait
+spriteoff,kanon,0
+endwait
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,-1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,kanon,0_-130,1.2,0
+endwait
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:unique3,kanon,0,-130,0.5,0,,,,
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_17.mp3
+msg,1,<outline width=2 color=black>「一瞬で断られちゃった」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:sad,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_18.mp3
+msg,1,<outline width=2 color=black>「うう……ふたりとも、お兄ちゃんだけの妹なんだって」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_19.mp3
+msg,1,<outline width=2 color=black>「すーっごく残念だけど、兄妹の仲がいいのって素敵なことだし、\n仕方ないかぁ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:smile,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_20.mp3
+msg,1,<outline width=2 color=black>「あ、顔、赤くなってるよ？　照れてるんだー？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_21.mp3
+msg,1,<outline width=2 color=black>「あーあ……やっぱり羨ましいなぁ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:sad,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_22.mp3
+msg,1,<outline width=2 color=black>「……こっちの世界に亮くんも来てたら、\n私だってたくさん甘えたり、イチャイチャしたり……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:surprise,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_23.mp3
+msg,1,<outline width=2 color=black>「――あっ！　う、ううん、なんでもないっ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:shy,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_02_24.mp3
+msg,1,<outline width=2 color=black>「その、こっちの話だから……えへへ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

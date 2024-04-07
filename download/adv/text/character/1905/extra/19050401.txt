@@ -1,0 +1,157 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_01.mp3
+name,<outline width=2 color=black><ruby>詩乃|しの</ruby></outline>,
+msg,1,<outline width=2 color=black>「あ……ええと、こんにちは……ではなく、こんばんはと言うべき\n時間でしょうか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_02.mp3
+msg,1,<outline width=2 color=black>「このルルイエという場所は常に明るくて、\n時間の流れが曖昧になってしまいますね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_03.mp3
+msg,1,<outline width=2 color=black>「海の底にある、というのも驚きですが、こういった様々な技術には\n目を見張ります」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「目を……」,選択肢2　「案内しようか？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:unique4,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_04.mp3
+msg,1,<outline width=2 color=black>「……ちゃんと目が見えているのか、とでも言いたげな顔ですね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:unique5,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_05.mp3
+msg,1,<outline width=2 color=black>「そのように慌てる必要はありませんよ。\nそう言われても仕方のないことだと自覚はしておりますので」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_06.mp3
+msg,1,<outline width=2 color=black>「元々、あまり目立つのが好きではなく……いつからか前髪を伸ばす\nようになって、今ではこれが一番落ち着くようになってしまいました」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_07.mp3
+msg,1,<outline width=2 color=black>「別に悪し様に言われたなどとも感じておりませんし、お気になさらず」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_08.mp3
+msg,1,<outline width=2 color=black>「ふふ、そこまで申し訳なさそうにするのであれば、\n最初から口になさらなければよろしかったのに……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_09.mp3
+msg,1,<outline width=2 color=black>「ありがとうございます。ですが、それには及びません。\nお借りした、この……携帯端末、でしたか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_10.mp3
+msg,1,<outline width=2 color=black>「この不思議な機械に地図が入っておりますので」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:unique3,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_11.mp3
+msg,1,<outline width=2 color=black>「ところで……普通、自分たちの城で私のような部外者が好き勝手を\nするのは面白くないことなのでは、と心配もしていたのですが……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:unique4,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_12.mp3
+msg,1,<outline width=2 color=black>「……もう仲間、とは……そのように簡単に信じてもよいのですか？\n多少は警戒したり、見張りをつけるとか……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:unique3,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_13.mp3
+msg,1,<outline width=2 color=black>「……ええと、そのような不思議そうな顔で首を傾げられると、私の方が\n困ってしまうのですが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_14.mp3
+msg,1,<outline width=2 color=black>「……そういう素直で真っ直ぐなところは、\n少し剣丞さまに似ているかもしれませんね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_15.mp3
+msg,1,<outline width=2 color=black>「剣丞さまも真っすぐにお気持ちを伝えてくださる方ですから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_16.mp3
+msg,1,<outline width=2 color=black>「初めてお会いした時も、私が欲しいから攫うと、そのように\n言ってくださったのですよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:unique5,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_17.mp3
+msg,1,<outline width=2 color=black>「ふふ、これだけ聞けば驚きますよね……ですが、そこにはいろいろな事情も\nあったのです」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_18.mp3
+msg,1,<outline width=2 color=black>「なにより私は……それまで、強く誰かに求められるという\n経験がありませんでしたから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:smile,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_19.mp3
+msg,1,<outline width=2 color=black>「とても、嬉しくて……だから私は、あの御方のために全てを捧げようと――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:unique4,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_20.mp3
+msg,1,<outline width=2 color=black>「あ……こほん」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_21.mp3
+msg,1,<outline width=2 color=black>「すみません、つい喋り過ぎてしまいました。\nなぜここまで話してしまったのか……大変、失礼いたしました」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190504/adv/atlas/stand_a,body:normal,shino,0,-110.0,0.5,0,,,,
+playvoice,1,download/character/190504/adv/sound/fav190504_01_22.mp3
+msg,1,<outline width=2 color=black>「……その、少し恥ずかしいので、今の話は他の方には黙っておいて\nいただければ、と……どうか、よろしくお願いいたします」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

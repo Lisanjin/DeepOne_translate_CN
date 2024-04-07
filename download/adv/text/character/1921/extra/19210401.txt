@@ -1,0 +1,176 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/192104/adv/sound/fav192104_01_01.mp3
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+msg,1,<outline width=2 color=black>「あっ！　おーい！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:sad,kanon,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_02.mp3
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+msg,1,<outline width=2 color=black>「よかったぁ……人が見つかったよぉ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:shy,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_03.mp3
+msg,1,<outline width=2 color=black>「えへへ……実は、ルルイエの中を散歩してみようかなー、と思ったら、\nどこにいるか分からなくなっちゃって」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:sad,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_04.mp3
+msg,1,<outline width=2 color=black>「あなたに会えなかったら、きっと迷子になって、誰とも出会えないまま\n食べるものもなく行き倒れちゃうところだったよぉ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「大げさな……」,選択肢2　「お腹減ってるの？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:anger,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_05.mp3
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+msg,1,<outline width=2 color=black>「大げさなんかじゃないよ！　まだ少ししか見てないけど、ルルイエって\nすっごく広いし……右に行っても左に行っても同じような通路ばっかりで」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:sad,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_06.mp3
+msg,1,<outline width=2 color=black>「それにそれに、海の底だっていうから、水族館みたいにお魚さん\n見れるかなって思ったのに、窓の外は真っ暗だから、なんだか怖いし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:sad,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_07.mp3
+msg,1,<outline width=2 color=black>「ただでさえ異世界に来ちゃったりとか、とんでもない状況なんだもん。\n不安になっちゃうよ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:shy,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_08.mp3
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+msg,1,<outline width=2 color=black>「えっと……うん、ちょっとだけ……実はお散歩も、\nお菓子とかないかなぁ、って探すためだったり……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:shy,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_09.mp3
+msg,1,<outline width=2 color=black>「あ！　でも、私そんな食いしん坊じゃないからね！？\n今日はたまたま！　たまたまだから……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:shy,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_10.mp3
+msg,1,<outline width=2 color=black>「うぅぅ、女の子は、無性に甘いものを食べたくなる時があるんだよぅ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:surprise,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_11.mp3
+name,<outline width=2 color=black><ruby>春日部|かすかべ</ruby><ruby>花音|かのん</ruby></outline>,
+msg,1,<outline width=2 color=black>「――え？　チョコ、くれるの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:smile,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_12.mp3
+msg,1,<outline width=2 color=black>「わーい！　いただきまーす！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:unique2,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_13.mp3
+msg,1,<outline width=2 color=black>「んぅー、優しさの味がするよー！\nいろいろ不安だったけど、全部溶けちゃう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_14.mp3
+msg,1,<outline width=2 color=black>「このチョコ、すっごく美味しいね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_15.mp3
+msg,1,<outline width=2 color=black>「私も、お菓子作りでチョコはよく使うけど、これ、とっても甘いけど、\n全然しつこくなくて、気づいたら口の中からなくなっちゃう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_16.mp3
+msg,1,<outline width=2 color=black>「もしかしてこれ、すごい高級なチョコレートなんじゃ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:surprise,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_17.mp3
+msg,1,<outline width=2 color=black>「――え、亜紗花ちゃんの手作り？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:unique2,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_18.mp3
+msg,1,<outline width=2 color=black>「亜紗花ちゃんって、お菓子作りが得意なんだ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:unique2,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_19.mp3
+msg,1,<outline width=2 color=black>「魔法……じゃなくて、魔術、だっけ？　不思議な力も使えてお菓子作りまで\n出来ちゃうなんて、すごいなあ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:unique2,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_20.mp3
+msg,1,<outline width=2 color=black>「ねえねえ、亜紗花ちゃんって他にどんなお菓子作るのかな？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:unique2,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_21.mp3
+msg,1,<outline width=2 color=black>「こんなにおいしいチョコが作れるんだもん。\nきっと、他のお菓子もおいしいよね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:normal,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_22.mp3
+msg,1,<outline width=2 color=black>「あのね、亜紗花ちゃんとお話ししてみたいんだけど……よかったら、\n案内とかしてくれると嬉しいなぁって……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192104/adv/atlas/stand_a,body:smile,kanon,0,-130,0.5,0,,,,
+playvoice,1,download/character/192104/adv/sound/fav192104_01_23.mp3
+msg,1,<outline width=2 color=black>「――えへへ、ありがとう！\nそれじゃあ、案内よろしくお願いしますっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

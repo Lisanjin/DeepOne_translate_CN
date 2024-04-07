@@ -1,0 +1,175 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_01.mp3
+name,<outline width=2 color=black><ruby>久遠|くおん</ruby></outline>,
+msg,1,<outline width=2 color=black>「ん……ああ、貴様か。ちょうどいいところに通りがかったではないか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_02.mp3
+msg,1,<outline width=2 color=black>「実は頼みがあってな。よいだろうか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「道案内？」,選択肢2　「なんでも言ってくれ」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:anger,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_03.mp3
+msg,1,<outline width=2 color=black>「む……まさか貴様、我が迷子になったと思っておらぬか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:anger,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_04.mp3
+msg,1,<outline width=2 color=black>「よもや、この織田久遠が子供のような扱いを受けるとはな。\nいい度胸ではないか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0.35,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_05.mp3
+msg,1,<outline width=2 color=black>「……というのは冗談だ。そう困った顔をするでない。\nつい図星をつかれて、意地の悪いことを言ってしまったな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:unique,kuo,0,-100.0,0.5,0.35,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_06.mp3
+msg,1,<outline width=2 color=black>「ほう、なんでも……か？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:unique,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_07.mp3
+msg,1,<outline width=2 color=black>「そのようなことを言ってよいのか？\nでは、我が無理難題を要求した時、貴様はどうするのだ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0.35,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_08.mp3
+msg,1,<outline width=2 color=black>「そういった不用意な発言をするものではないぞ。\n気を付けねば、いつか後悔することになる」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_09.mp3
+msg,1,<outline width=2 color=black>「世の中は善人ばかりではない。時として、人の言葉や心の隙に\n付け入ろうとする性根の腐った人間もおるのだからな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0.35,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_10.mp3
+msg,1,<outline width=2 color=black>「……もっとも、こんなことは、これから頼みごとをしようという\n人間の言えたことではないか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_11.mp3
+msg,1,<outline width=2 color=black>「この場所は、我からすれば未知の塊だ。\nそれで、色々と見て回りたくなってな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:sad,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_12.mp3
+msg,1,<outline width=2 color=black>「間借りしている部屋を出たはいいが、似たような景色ばかり\n続くものだから方向感覚が狂ってしまった……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:sad,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_13.mp3
+msg,1,<outline width=2 color=black>「まったく情けない話だが、道を教えてくれると助かる」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:anger,kuo,0,-100.0,0.5,0.35,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_14.mp3
+msg,1,<outline width=2 color=black>「む……なんだ、貴様。そのように笑いおって。\n我が迷子になったのがそんなにもおかしいのか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_15.mp3
+msg,1,<outline width=2 color=black>「違うと言うのならば、どう違うのか説明してみせろ。\nもし答えに我が満足できなければ、その時は――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_16.mp3
+msg,1,<outline width=2 color=black>「――なに？　貴様も、迷子になったことがあるのか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0.35,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_17.mp3
+msg,1,<outline width=2 color=black>「それは……なんというか、安心する話ではないか。\nなるほど、我と貴様は同類というわけだ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_18.mp3
+msg,1,<outline width=2 color=black>「うむ、やはりこのような場所で、最初から\nきちんと道筋を見極められる方が特殊なのだな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_19.mp3
+msg,1,<outline width=2 color=black>「では迷子仲間として、道案内をよろしく頼むぞ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0.35,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_20.mp3
+msg,1,<outline width=2 color=black>「……寄り道？　もちろん、我は構わんが、どこに寄っていくのだ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:sad,kuo,0,-100.0,0.5,0.35,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_21.mp3
+msg,1,<outline width=2 color=black>「人工庭園？　機関室？　それに、きっちんに……ええい、待て待て。\nそれらがどのような場所かは知らんが、なぜそんなあちこちに……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0.35,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_22.mp3
+msg,1,<outline width=2 color=black>「あ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_23.mp3
+msg,1,<outline width=2 color=black>「もしかして、我に見せるために……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0.35,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_24.mp3
+msg,1,<outline width=2 color=black>「なるほど、そういうことか……ありがたい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_01_25.mp3
+msg,1,<outline width=2 color=black>「では、貴様の寄り道、存分に付き合わせてもらうとしよう。\nよろしく頼むぞ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

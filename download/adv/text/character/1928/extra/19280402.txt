@@ -1,0 +1,235 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:normal,ria,-1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_048.mp3
+anm,move,ria,0_-120,2.3,0
+endwait
+
+
+playvoice,1,download/character/192804/adv/sound/fav192804_02_01.mp3
+name,<outline width=2 color=black><ruby>僧間|そうま</ruby><ruby>理亜|りあ</ruby></outline>,
+msg,1,<outline width=2 color=black>「……よし、誰もいないな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+playse,/download/sound/se/se_048.mp3
+anm,move,ria,1200_-120,2.3,0
+endwait
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010500.jpg,0,255
+endwait
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:normal,ria,-1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_048.mp3
+anm,move,ria,0_-120,2.3,0
+endwait
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:smile,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_02.mp3
+name,<outline width=2 color=black><ruby>僧間|そうま</ruby><ruby>理亜|りあ</ruby></outline>,
+msg,1,<outline width=2 color=black>「確かこの冷蔵庫の中に……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　声をかける,選択肢2　黙って見守る
+if,select_===_1,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:surprise,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_03.mp3
+name,<outline width=2 color=black><ruby>僧間|そうま</ruby><ruby>理亜|りあ</ruby></outline>,
+msg,1,<outline width=2 color=black>「うあぉっ！？　なんだテメェいきなりオレの後ろに立つんじゃねえ\nブッとばすぞ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:unique1,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_04.mp3
+msg,1,<outline width=2 color=black>「って、なんだよ、お前か。チッ……せっかく人目を盗んで来たってのに、\nまさか見つかっちまうなんてな……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:normal,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_11.mp3
+msg,1,<outline width=2 color=black>「あん？　なにしてる、って……見たらわかるだろ。冷蔵庫あさってたんだよ。\nちょっと小腹すいたから、冷凍食品とかないかなー、って」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:normal,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_05.mp3
+name,<outline width=2 color=black><ruby>僧間|そうま</ruby><ruby>理亜|りあ</ruby></outline>,
+msg,1,<outline width=2 color=black>「それにしても、でっけぇ冷蔵庫だな……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:smile,ria2,0,0,0,0,,,,
+imgconf,ria2,ria1,0,-330,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/192804/adv/sound/fav192804_02_06.mp3
+msg,1,<outline width=2 color=black>「ええと……お、あったあった。へえ、こういうのもあるのか。\nそれじゃあ、これと……これもいいな……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:smile,ria2,0,0,0,0,,,,
+imgconf,ria2,ria1,0,-330,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/192804/adv/sound/fav192804_02_07.mp3
+msg,1,<outline width=2 color=black>「よし……んじゃ電子レンジ、電子レンジ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:normal,ria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_08.mp3
+msg,1,<outline width=2 color=black>「なあ、電子レンジってどこ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:smile,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_09.mp3
+msg,1,<outline width=2 color=black>「あ、あそこか。サンキュー……って」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,scale,ria,0.4_0.4,0.5,0
+anm,move,ria,0_-100,0.5,0
+endwait
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:surprise,ria,0,-100,0.4,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_10.mp3
+msg,1,<outline width=2 color=black>「うぉっ！？　あ、あんまりにも自然に隣にいるから\n普通に話かけちゃったじゃねーか、驚かせんな！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+anm,scale,ria,0.5_0.5,0.5,0
+anm,move,ria,0_-120,0.5,0
+endwait
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:normal,ria,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_11.mp3
+name,<outline width=2 color=black><ruby>僧間|そうま</ruby><ruby>理亜|りあ</ruby></outline>,
+msg,1,<outline width=2 color=black>「あん？　なにしてる、って……見たらわかるだろ。冷蔵庫あさってたんだよ。\nちょっと小腹すいたから、冷凍食品とかないかなー、って」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:sad,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_12.mp3
+msg,1,<outline width=2 color=black>「……いや、まあ、勝手によそ様のところの冷蔵庫をあさったのは謝るけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:normal,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_13.mp3
+msg,1,<outline width=2 color=black>「でも、仕方ねーだろ？　だってお前ら、こんなこと言ったら\n簡単な料理くらい今から作ってあげる、とか言い出しそうだし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:normal,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_14.mp3
+msg,1,<outline width=2 color=black>「それはそれで、居候の側からしたら肩身が狭いんだわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:sad,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_15.mp3
+msg,1,<outline width=2 color=black>「それにさ……オレは料理を作ってもらっても、\nちゃんと味の感想とか言えないし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:normal,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_16.mp3
+msg,1,<outline width=2 color=black>「細かいことは省くけど、味覚がにぶいんだよ、オレ。\nだから、小腹を満たすくらいなら冷食で十分なわけ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:smile,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_17.mp3
+msg,1,<outline width=2 color=black>「つーか、ルルイエって冷食もすごいのな。見てみろよ、これ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:smile,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_18.mp3
+msg,1,<outline width=2 color=black>「なんだよ、世界三大珍味入り餃子とか、最高級和牛100％使用の\nミートボールとか。それ絶対普通に調理したほうが美味いだろ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:smile,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_19.mp3
+msg,1,<outline width=2 color=black>「無駄に高級志向のクセして滑ってる感じが絶妙に興味をひくよな。\nなに考えてこの商品開発したんだよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192804/adv/atlas/stand_a,body:smile,ria,0,-120,0.5,0,,,,
+playvoice,1,download/character/192804/adv/sound/fav192804_02_20.mp3
+msg,1,<outline width=2 color=black>「そういや、お前もここにいるってことは、もしかしてオレのお仲間？\nもし腹減ってるなら一緒にどうよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

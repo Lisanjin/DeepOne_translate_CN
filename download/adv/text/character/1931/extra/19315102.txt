@@ -1,0 +1,252 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:sad,elu,0,-230,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_01.mp3
+name,<outline width=2 color=black>エル</outline>,
+msg,1,<outline width=2 color=black>「……はあ。これは、どうしたものか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:sad,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_02.mp3
+msg,1,<outline width=2 color=black>「既にこもりはじめてはや数時間……邪魔をするなと言われてはいるものの、\n夜も深くなってしまいましたし、そろそろお止めすべきなのだろうが……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:sad,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_03.mp3
+msg,1,<outline width=2 color=black>「あんな楽しそうにしていたシルヴィ様の邪魔をするというのは、\nどうにも心苦しい……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:sad,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_04.mp3
+msg,1,<outline width=2 color=black>「そもそも、この入り口の結界というものは、どうすれば突破できるのか……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「おやすみー」,選択肢2　「どうかしたの？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:anger,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_05.mp3
+name,<outline width=2 color=black>エル</outline>,
+msg,1,<outline width=2 color=black>「お待ちください。ここで素知らぬふりで通り過ぎるのは、\n少々人道にもとるのでは？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:normal,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_06.mp3
+msg,1,<outline width=2 color=black>「もちろん、あなたならば手を貸してくださいますね？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:smile,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_07.mp3
+msg,1,<outline width=2 color=black>「あなたがどれほど人のよい性格で、他者への優しさを忘れない人物かは\nルルイエの皆様からもうかがっております」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:normal,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_08.mp3
+msg,1,<outline width=2 color=black>「私相手ならばともかく、よもや皆様の信頼に背を向けたりはしませんね？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:normal,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_09.mp3
+name,<outline width=2 color=black>エル</outline>,
+msg,1,<outline width=2 color=black>「あなたは……これが巡り合わせというものでしょうか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:normal,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_10.mp3
+msg,1,<outline width=2 color=black>「ノルン殿について、妹だけあってあなたはよくご存じでしょう？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:normal,elu,1200,-230,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,elu,0_-230,0.7,0
+endwait
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:unique2,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_11.mp3
+name,<outline width=2 color=black>エル</outline>,
+msg,1,<outline width=2 color=black>「妹の名前が出た途端に逃げようとする兄というのは、いかがなものかと」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:unique2,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_12.mp3
+msg,1,<outline width=2 color=black>「ですが、その様子からして、ノルン殿がなにかをしでかしたというのは\n察したようで……さすが、よくわかっていらっしゃる」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:unique1,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_13.mp3
+msg,1,<outline width=2 color=black>「兄として、妹のしたことの責任をとるべきでは？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:normal,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_14.mp3
+name,<outline width=2 color=black>エル</outline>,
+msg,1,<outline width=2 color=black>「――と、少々意地の悪いことを言いましたが、\nそれだけ私も困窮しているのだとご理解いただければ幸いです」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:sad,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_15.mp3
+msg,1,<outline width=2 color=black>「実は、かなり前からシルヴィ様とノルン殿がキッチンにこもって\nおりまして……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:sad,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_16.mp3
+msg,1,<outline width=2 color=black>「なんでも、自分たちの手で至高のメロンパンを作り出すのだ、とか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:sad,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_17.mp3
+msg,1,<outline width=2 color=black>「しかも、邪魔が入らないように、とノルン殿がキッチンの入り口に\n魔術による結界を張っており……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:sad,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_18.mp3
+msg,1,<outline width=2 color=black>「なんとかしていただけませんか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:surprise,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_19.mp3
+msg,1,<outline width=2 color=black>「――おや、妙案でもおありなのですか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,elu1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:normal,elu2,0,0,0,0,,,,
+imgconf,elu2,elu1,0,-840,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193151/adv/sound/fav193151_02_20.mp3
+msg,1,<outline width=2 color=black>「ふむ……ふむ……なるほど、その台詞を口にすればよろしいのですね？ \n理由はわかりませんが、あなたがそう言うのであれば試してみましょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:normal,elu,0,-230,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_21.mp3
+name,<outline width=2 color=black>エル</outline>,
+msg,1,<outline width=2 color=black>「それでは、私はこれからフラウ殿と仲良く眠ることにします。\n今夜の目的は、フラウ殿にお姉ちゃんと呼んでいただくことです」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:surprise,elu,0,-230,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_22.mp3
+name,<outline width=2 color=black>エル</outline>,
+msg,1,<outline width=2 color=black>「……！？　キッチンの中で、なにやら騒ぎが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,150,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,150,1280,200,0.5,,,,
+spriteatlas,download/character/101400/adv/atlas/stand_a,body:anger,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0
+mask,black3,0,-50,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black4,0,0,0,0,,,,
+imgconf,black4,black3,0,0,,,0,1,1,0.5
+mask,sylvia1,0,-50,1280,200,0.5,,,,
+spriteatlas,download/character/192704/adv/atlas/stand_a,body:sad,sylvia2,0,0,0,0,,,,
+imgconf,sylvia2,sylvia1,0,-740,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+wait,0.5
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,1,255
+endwait
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:surprise,elu,0,-230,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_23.mp3
+name,<outline width=2 color=black>エル</outline>,
+msg,1,<outline width=2 color=black>「……どうやら、気配からして慌ててパン作りを切り上げようとしている\nようですね……キッチン入り口の結界も消えたようですし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193151/adv/atlas/stand_a,body:normal,elu,0,-230,0.5,0,,,,
+playvoice,1,download/character/193151/adv/sound/fav193151_02_24.mp3
+msg,1,<outline width=2 color=black>「なぜ急にパン作りを中断したのかはわかりませんが、さすがですね。\nご協力、感謝します」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

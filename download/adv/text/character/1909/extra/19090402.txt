@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_01.mp3
+name,<outline width=2 color=black><ruby>比奈森|ひなもり</ruby><ruby>沙耶|さや</ruby></outline>,
+msg,1,<outline width=2 color=black>「困りました……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:surprise,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_02.mp3
+msg,1,<outline width=2 color=black>「あ……つい気が緩んで、要らぬことを口にしてしまいました。\nお耳汚しをしてしまい申し訳ございません」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「どうしたの？」,選択肢2　「困ってるなら手を貸す」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_03.mp3
+name,<outline width=2 color=black><ruby>比奈森|ひなもり</ruby><ruby>沙耶|さや</ruby></outline>,
+msg,1,<outline width=2 color=black>「いえ、ご心配いただくほどのことではございません。\n困ったと言っても、実害のあるようなことではないので、お気になさらず」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_04.mp3
+msg,1,<outline width=2 color=black>「……そのように心配そうな顔をしないでくださいませ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_05.mp3
+msg,1,<outline width=2 color=black>「気にするなと言われても、納得いきませんか……分かりました、\n本当につまらない事ですが、お話いたします」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_06.mp3
+name,<outline width=2 color=black><ruby>比奈森|ひなもり</ruby><ruby>沙耶|さや</ruby></outline>,
+msg,1,<outline width=2 color=black>「あらあら……なにも聞かずにそのようなことを言っては、\n後々後悔することになるかもしれませんよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:smile,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_07.mp3
+msg,1,<outline width=2 color=black>「ふふふ……そこで胸を張って任せろと言えてしまうのは、美徳でも\nありますが、いつかご自身の首を絞めることになるかもしれませんよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_08.mp3
+msg,1,<outline width=2 color=black>「もしかしたら拙目の抱えている問題がとんでもない内容かもしれません。\nそれでもあなたは……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:smile,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_09.mp3
+msg,1,<outline width=2 color=black>「……いえ、あなたならどんな困難であっても、それに苦しむ人がいれば\n手を差し伸べるのでしょうね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_10.mp3
+msg,1,<outline width=2 color=black>「まるで試すような物言いになってしまいました、申し訳ございません」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_11.mp3
+msg,1,<outline width=2 color=black>「ただ、今回に関してはあなたのお手を煩わせるようなことではないのです。\nむしろ、拙目の手をお貸ししたいくらいと言いますか……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_12.mp3
+name,<outline width=2 color=black><ruby>比奈森|ひなもり</ruby><ruby>沙耶|さや</ruby></outline>,
+msg,1,<outline width=2 color=black>「実は、ただお世話になる一方というのも心苦しいので、\nお掃除などのお手伝いをさせていただこうと思ったのです」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_13.mp3
+msg,1,<outline width=2 color=black>「ルルイエには自動清掃の機械などもあるようですが、\nそれでも人の手が必要なところはあるように見受けられましたので」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_14.mp3
+msg,1,<outline width=2 color=black>「ところが、先ほどハーグリーブス様やジブリール様に\n止められてしまったのです。客人の手を煩わせるわけにはいかない、と」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_15.mp3
+msg,1,<outline width=2 color=black>「特に拙目はご覧の通りの体躯でございますから……どこか子供扱いに\n近い雰囲気も感じまして……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_16.mp3
+msg,1,<outline width=2 color=black>「とはいえ、ひととき宿を借りているだけの拙目としては、\nお二人にそう言われては、引き下がるほかなく」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_17.mp3
+msg,1,<outline width=2 color=black>「お世話になっているぶん、なにかしらお返しをさせて\n頂きたいのですが……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:surprise,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_18.mp3
+msg,1,<outline width=2 color=black>「――……剣の指導、ですか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:normal,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_19.mp3
+msg,1,<outline width=2 color=black>「なるほど。それでしたら、拙目でも多少はお力になれるやもしれません」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:sad,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_20.mp3
+msg,1,<outline width=2 color=black>「なんだか、役目を頂くことを催促してしまったかのようで、\n少しばかり心苦しいですが……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190904/adv/atlas/stand_a,body:smile,saya,0,-100,0.5,0,,,,
+playvoice,1,download/character/190904/adv/sound/fav190904_02_21.mp3
+msg,1,<outline width=2 color=black>「しかし、こうして望んでくださるのであれば、まだ未熟な身で恐縮では\nございますが、誠心誠意お力添えさせて頂きます」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

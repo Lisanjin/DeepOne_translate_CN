@@ -1,0 +1,196 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010600.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_01.mp3
+name,<outline width=2 color=black>ユズリハ・サーバル</outline>,
+msg,1,<outline width=2 color=black>「……この、カレーって料理、美味しいね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_02.mp3
+msg,1,<outline width=2 color=black>「こっちの世界は、食べ物がおいしくて少し羨ましい。改めて実感した\nけれど、わたしたちの世界は、どうやら食文化がイマイチみたい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_03.mp3
+msg,1,<outline width=2 color=black>「さっき、少しだけ亜紗花に話を聞いたけれど、\nこのカレーには、いくつもの香辛料が使われているらしい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_04.mp3
+msg,1,<outline width=2 color=black>「いくつもの味や香りが重なった結果がこれなのだと思うと、奥が深い」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_05.mp3
+msg,1,<outline width=2 color=black>「わたしたちの世界の食文化がこれに追いつくのはいつになるんだろう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_06.mp3
+msg,1,<outline width=2 color=black>「……カレー料理はせちがれー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Ice1,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_040.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010600.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:smile,yuzuriha,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_07.mp3
+name,<outline width=2 color=black>ユズリハ・サーバル</outline>,
+msg,1,<outline width=2 color=black>「ふふふっ……カレーで、世知辛い……なんちゃって」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「はは、ははは、は」,選択肢2　「どうぞ、ニンジンです」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:unique1,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_08.mp3
+name,<outline width=2 color=black>ユズリハ・サーバル</outline>,
+msg,1,<outline width=2 color=black>「……なんだか、すごく乾いた感じの笑い方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:unique1,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_09.mp3
+msg,1,<outline width=2 color=black>「どうやら、あなたにとっては面白くなかったらしい。残念」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:unique1,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_10.mp3
+msg,1,<outline width=2 color=black>「…………けっこう、自信あったのに」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_11.mp3
+name,<outline width=2 color=black>ユズリハ・サーバル</outline>,
+msg,1,<outline width=2 color=black>「え？　なんで急にニンジンを……食べられないの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:surprise,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_12.mp3
+msg,1,<outline width=2 color=black>「……はっ！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:surprise,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_13.mp3
+msg,1,<outline width=2 color=black>「隣の人から、ニンジンを貰う……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:surprise,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_14.mp3
+msg,1,<outline width=2 color=black>「――隣人の、ニンジン」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:smile,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_15.mp3
+msg,1,<outline width=2 color=black>「ふ、ふふ、ふふふっ……すごい返し。これは負けを認めざるを得ない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_16.mp3
+name,<outline width=2 color=black>ユズリハ・サーバル</outline>,
+msg,1,<outline width=2 color=black>「わたしもまだまだ……もっと腕を磨かないと」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:smile,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_17.mp3
+msg,1,<outline width=2 color=black>「とりあえず、元の世界に帰るまでに、あなたのお腹がよじれるくらい\nいっぱい笑わせることを目標にしようと思う」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_18.mp3
+msg,1,<outline width=2 color=black>「そういえば、ルルイエにはいろんな書物や映像なんかの作品が\n保存されているライブラリっていうのがあるんでしょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_19.mp3
+msg,1,<outline width=2 color=black>「コメディ作品とかもあるの？　それなら、ぜひ、見せて欲しい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:unique1,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_20.mp3
+msg,1,<outline width=2 color=black>「違う世界のコメディを知れば、おそらく、わたしはさらなる高みに\n辿り着けるはず……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_21.mp3
+msg,1,<outline width=2 color=black>「とういうわけで、このカレーを食べ終わった後は、猛特訓」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:smile,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_22.mp3
+msg,1,<outline width=2 color=black>「きっと、元の世界に帰ったら、大きく成長したわたしにコウキも驚くはず。\n今から楽しみ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:sad,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_23.mp3
+msg,1,<outline width=2 color=black>「……？　どうしてそんな頬を引きつらせてるの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:unique2,yuzuriha,0,-100,0.5,0,,,,
+playvoice,1,download/character/194004/adv/sound/fav194004_03_24.mp3
+msg,1,<outline width=2 color=black>「わたし、すごく前向きで良い話をしてたと思うんだけど……。\nその反応は、なんだか、ちょっと釈然としない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

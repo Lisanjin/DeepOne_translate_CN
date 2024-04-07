@@ -1,0 +1,222 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ayaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:shy,ayaka2,0,0,0,0,,,,
+imgconf,ayaka2,ayaka1,0,-660,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193251/adv/sound/fav193251_02_01.mp3
+name,<outline width=2 color=black><ruby>城ヶ崎|じょうがさき</ruby><ruby>絢華|あやか</ruby></outline>,
+msg,1,<outline width=2 color=black>「……ルルイエって、すごいのね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:shy,ayaka2,0,0,0,0,,,,
+imgconf,ayaka2,ayaka1,0,-660,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193251/adv/sound/fav193251_02_02.mp3
+msg,1,<outline width=2 color=black>「倉庫なら、ちょうどいいサイズのものがあるかと思ったけれど、\nまさか、あんな物陰に、あんな自販機があるなんて……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:shy,ayaka2,0,0,0,0,,,,
+imgconf,ayaka2,ayaka1,0,-660,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193251/adv/sound/fav193251_02_03.mp3
+msg,1,<outline width=2 color=black>「ルルイエは閉鎖空間ですし、生活の中でストレスもたまるのでしょうから、\nこういったものを置いて発散の機会を……といったところかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:shy,ayaka2,0,0,0,0,,,,
+imgconf,ayaka2,ayaka1,0,-660,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193251/adv/sound/fav193251_02_04.mp3
+msg,1,<outline width=2 color=black>「一応、理解はできるけれど、まさかこんなものが手に入るとは、\n運がい――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:shy,ayaka,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:surprise,ayaka,0,-180,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_05.mp3
+name,<outline width=2 color=black><ruby>城ヶ崎|じょうがさき</ruby><ruby>絢華|あやか</ruby></outline>,
+msg,1,<outline width=2 color=black>「ひゃうわっ！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:unique2,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_06.mp3
+msg,1,<outline width=2 color=black>「ちょ、い、いきなり後ろから話しかけないでくださるっ！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:unique2,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_07.mp3
+msg,1,<outline width=2 color=black>「というか、こんな不意打ちのように迫ってきたりして、\nなにか不埒なことを考えているのではないでしょうねっ！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:unique2,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_08.mp3
+msg,1,<outline width=2 color=black>「わたくしには央路という人がいるんですからっ！\n私のお尻を好きにしていいのは、央路だけなのよ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「お尻……？」,選択肢2　「今、なにか持ってなかった？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:surprise,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_09.mp3
+name,<outline width=2 color=black><ruby>城ヶ崎|じょうがさき</ruby><ruby>絢華|あやか</ruby></outline>,
+msg,1,<outline width=2 color=black>「あ……い、いえ、今のは……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:anger,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_10.mp3
+msg,1,<outline width=2 color=black>「とっ、とにかく！　あなたのように、頭の中に邪な欲求ばかり\n詰め込んでいそうな男性が、わたくしに近づかないでください！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:anger,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_11.mp3
+msg,1,<outline width=2 color=black>「こちらの品格まで損なわれてしまいそうで不愉快です！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:surprise,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_12.mp3
+name,<outline width=2 color=black><ruby>城ヶ崎|じょうがさき</ruby><ruby>絢華|あやか</ruby></outline>,
+msg,1,<outline width=2 color=black>「なっ……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:unique2,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_13.mp3
+msg,1,<outline width=2 color=black>「ななな、なんのことですか！？　別に、自販機で玩具を買ったとか、\nそんなことは――……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:surprise,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_14.mp3
+msg,1,<outline width=2 color=black>「あ、いえ、いまの玩具というのは……そ、そう、お風呂に浮かべる\nアヒルの玩具ということです！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:anger,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_15.mp3
+msg,1,<outline width=2 color=black>「なんですか、その顔！　わたくしがアヒルの玩具を持っているのは\nいけませんか！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:shy,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_16.mp3
+name,<outline width=2 color=black><ruby>城ヶ崎|じょうがさき</ruby><ruby>絢華|あやか</ruby></outline>,
+msg,1,<outline width=2 color=black>「とにかく、こうしてルルイエで保護していただいている以上、最低限の\n礼儀くらいは守りますが、必要以上に仲良くするつもりはありません！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:anger,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_17.mp3
+msg,1,<outline width=2 color=black>「言っておきますが、本来であれば、こうしてわたくしがあなたとの会話に\n応じることだってないのですからね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:anger,ayaka,0,-180,0.5,0,,,,
+playvoice,1,download/character/193251/adv/sound/fav193251_02_18.mp3
+msg,1,<outline width=2 color=black>「そのあたりは、よくよく理解しておいてください。それでは！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,ayaka,-1200_-120,0.9,0
+endwait
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ayaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:shy,ayaka2,0,0,0,0,,,,
+imgconf,ayaka2,ayaka1,0,-660,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193251/adv/sound/fav193251_02_19.mp3
+name,<outline width=2 color=black><ruby>城ヶ崎|じょうがさき</ruby><ruby>絢華|あやか</ruby></outline>,
+msg,1,<outline width=2 color=black>「っ、バレて、ないわよね……？　わたくしが、こんな、お尻の……、\nこんなものを持ち歩いていたこと……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:shy,ayaka2,0,0,0,0,,,,
+imgconf,ayaka2,ayaka1,0,-660,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193251/adv/sound/fav193251_02_20.mp3
+msg,1,<outline width=2 color=black>「とりあえず、部屋に戻って……央路に会えない寂しさの分だけ、\nこれを使って……あ、やだ……想像しただけで、熱く……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193251/adv/atlas/stand_a,body:shy,ayaka2,0,0,0,0,,,,
+imgconf,ayaka2,ayaka1,0,-660,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193251/adv/sound/fav193251_02_21.mp3
+msg,1,<outline width=2 color=black>「それにしても、これ……この形……いれたら、どんな感じなのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

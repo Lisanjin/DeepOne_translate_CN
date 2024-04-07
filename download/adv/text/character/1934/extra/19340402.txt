@@ -1,0 +1,189 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:smile,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+wait,1
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,youka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka2,0,0,0,0,,,,
+imgconf,youka2,youka1,0,-550,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193404/adv/sound/fav193404_02_01.mp3
+name,<outline width=2 color=black><ruby>長南|おさなみ</ruby><ruby>陽佳|ようか</ruby></outline>,
+msg,1,<outline width=2 color=black>「――それくらい全然いいって。また時間取れたら声かけてくれる？\nその時までにあたしも準備しとくから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka,-1200,-140,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,youka,0_-140,2,0
+endwait
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:surprise,youka,0,-140,0.5,0,,,,
+name,<outline width=2 color=black><ruby>長南|おさなみ</ruby><ruby>陽佳|ようか</ruby></outline>,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_02.mp3
+msg,1,<outline width=2 color=black>「――あ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:sad,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_03.mp3
+msg,1,<outline width=2 color=black>「もしかして……さっきの赤井さんとの話、聞いてた？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:sad,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_04.mp3
+msg,1,<outline width=2 color=black>「いや、悪いことしてるわけじゃないし、見られて困るものでもないけどさ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_05.mp3
+msg,1,<outline width=2 color=black>「まあ、キミもそのうちわかると思うから、今日のところは\n見なかったことにして――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:unique2,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_06.mp3
+msg,1,<outline width=2 color=black>「って、めちゃくちゃ気になるって顔してるわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「そ、そんなことないし？」,選択肢2　「実際気になる」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:unique2,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_07.mp3
+name,<outline width=2 color=black><ruby>長南|おさなみ</ruby><ruby>陽佳|ようか</ruby></outline>,
+msg,1,<outline width=2 color=black>「いや、誤魔化そうとするならせめてもうちょっと誤魔化す努力を\nしなさいよ。むしろ、わざとそんな大げさな反応してない？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:sad,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_08.mp3
+msg,1,<outline width=2 color=black>「それにしても、見られたのがよりによってキミとはね……\n赤井さんも不運というかなんというか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:sad,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_09.mp3
+name,<outline width=2 color=black><ruby>長南|おさなみ</ruby><ruby>陽佳|ようか</ruby></outline>,
+msg,1,<outline width=2 color=black>「素直に認めればいいってもんじゃないから。\nたまには見て見ぬふりをするのも必要だから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_10.mp3
+msg,1,<outline width=2 color=black>「……まあ、キミがそうやって気にするっていうのは、\n赤井さんにとっては嬉しいことなんだろうけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_11.mp3
+name,<outline width=2 color=black><ruby>長南|おさなみ</ruby><ruby>陽佳|ようか</ruby></outline>,
+msg,1,<outline width=2 color=black>「はあ……仕方ないわね。教えてあげるけど、本人が話したときには\nちゃんと知らなかったフリしなさいよね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_12.mp3
+msg,1,<outline width=2 color=black>「赤井さん、あたしのネイル見て、ちょっと気になってたんだって」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_13.mp3
+msg,1,<outline width=2 color=black>「けど彼女、毎日料理してるし、そういうのは避けてたみたいで。\nさっきはそれについて相談されてたの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:unique1,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_14.mp3
+msg,1,<outline width=2 color=black>「でも、あたしと同じジェルネイルだったら料理とかをしてる最中に\n取れたりしないから、今度ネイルしてあげることになったのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_15.mp3
+msg,1,<outline width=2 color=black>「……家事やってくれるうえにおしゃれにも気を遣ってくれるとか、\nキミも果報者よね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:unique2,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_16.mp3
+msg,1,<outline width=2 color=black>「ちょっと、なんでここで不思議そうな顔してるのよ。\nなんでネイルをしたがってるのか、まったく想像できないわけ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:sad,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_17.mp3
+msg,1,<outline width=2 color=black>「はあ……そんな調子じゃいつか愛想尽かされても知らないからね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_18.mp3
+msg,1,<outline width=2 color=black>「――まあ、そんなことはたぶんないんだろうけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:normal,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_19.mp3
+msg,1,<outline width=2 color=black>「さっきネイルしてあげるって言ったときの赤井さんの顔見たら、\n誰だって、そんな心配はムダだって思うわよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:smile,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_20.mp3
+msg,1,<outline width=2 color=black>「どんな顔だったか？　それは……――ふふ、秘密♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193404/adv/atlas/stand_a,body:unique1,youka,0,-140,0.5,0,,,,
+playvoice,1,download/character/193404/adv/sound/fav193404_02_21.mp3
+msg,1,<outline width=2 color=black>「そんな慌てなくても、すぐにわかるわよ。だからキミは、\nちゃんと赤井さんの変化に気づいて、褒めてあげること。わかった？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

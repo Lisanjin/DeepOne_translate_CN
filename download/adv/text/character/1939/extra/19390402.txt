@@ -1,0 +1,197 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010800.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_075.mp3
+shake,0.2,4,15,15
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,akina1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina2,0,0,0,0,,,,
+imgconf,akina2,akina1,0,-430,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/193904/adv/sound/fav193904_02_01.mp3
+name,<outline width=2 color=black>アキナ・ランドール</outline>,
+msg,1,<outline width=2 color=black>「――ちょっと、大丈夫？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_02.mp3
+name,<outline width=2 color=black>アキナ・ランドール</outline>,
+msg,1,<outline width=2 color=black>「全力で手合わせしたいっていうから、魔法なしの全力でいったけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_03.mp3
+msg,1,<outline width=2 color=black>「受け身とか上手だったし、大きな怪我とかはないわよね？\nほら、問題なく動ける？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:smile,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_04.mp3
+msg,1,<outline width=2 color=black>「――うん、大丈夫そうね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_05.mp3
+msg,1,<outline width=2 color=black>「それにしても、あなたは魔術も使えないし、戦う力もないって\n聞いてたんだけど、動き自体はかなりいいのね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_06.mp3
+msg,1,<outline width=2 color=black>「魔法なしだと、ちょっとひやっとさせられる部分もあったし……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_07.mp3
+msg,1,<outline width=2 color=black>「……どうせなら、元の世界に帰れたら、コウキも魔法の勉強だけじゃなく\n剣も学んでもらおうかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_08.mp3
+msg,1,<outline width=2 color=black>「そうしたら、コウキとも一緒に、こんな感じで訓練とか\n出来るわけだし……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「いいと思う」,選択肢2　「無理はさせない方が……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:smile,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_09.mp3
+name,<outline width=2 color=black>アキナ・ランドール</outline>,
+msg,1,<outline width=2 color=black>「そうよね！　よし、それならあっちに戻ったら、いっそうちに連れていって、\n母様とふたりでたっぷりしごいてあげようかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_10.mp3
+msg,1,<outline width=2 color=black>「母様も、相手がコウキなら、きっと乗り気になってくれるだろうし……。\nうん、それがいいわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_11.mp3
+name,<outline width=2 color=black>アキナ・ランドール</outline>,
+msg,1,<outline width=2 color=black>「そうかしら……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_12.mp3
+msg,1,<outline width=2 color=black>「んー……でも、たしかにいきなり無理をさせて、\n嫌われたりはしたくないし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:smile,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_13.mp3
+msg,1,<outline width=2 color=black>「わかったわ。無理じゃない程度のギリギリをせめてみるわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:surprise,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_14.mp3
+name,<outline width=2 color=black>アキナ・ランドール</outline>,
+msg,1,<outline width=2 color=black>「……？　あの、なんでいきなり宙に向かって手を合わせてるの？\nまるで、なにか祈ってるみたいな仕草だけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:unique1,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_15.mp3
+msg,1,<outline width=2 color=black>「武運長久……？　えっと、なんだったかしら、その言葉。\nどこかで聞いたことあるような、ないような……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_16.mp3
+msg,1,<outline width=2 color=black>「というか、結局それって誰に祈ってたの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_17.mp3
+msg,1,<outline width=2 color=black>「……？　なんでそこで言いよどむのよ。私には言えないことなわけ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_18.mp3
+msg,1,<outline width=2 color=black>「…………よし、決めたわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_19.mp3
+msg,1,<outline width=2 color=black>「言いたくないことを無理矢理聞き出すのはどうかと思うし、\nもう一度手合わせをしましょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_20.mp3
+msg,1,<outline width=2 color=black>「あなたにハンデをあげるから、それでもあなたが負けたら、\n今思っていることを素直に全部話してもらうわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:smile,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_21.mp3
+msg,1,<outline width=2 color=black>「あら、これは無理矢理なんかじゃないわ。正当な勝負よ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_22.mp3
+msg,1,<outline width=2 color=black>「それとも、逃げる？　それならそれで、私は構わないけれど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_23.mp3
+msg,1,<outline width=2 color=black>「――ふふ、構えたわね。いい度胸だわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:smile,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_24.mp3
+msg,1,<outline width=2 color=black>「それじゃあ、ハンデはどうする？　あなたの意気込みに免じて、\nある程度なら飲んであげるわよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,0,-120,0.5,0,,,,
+playvoice,1,download/character/193904/adv/sound/fav193904_02_25.mp3
+msg,1,<outline width=2 color=black>「もちろん、ランドールの騎士として、それでも負けるつもりは\nこれっぽっちもないけれどね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

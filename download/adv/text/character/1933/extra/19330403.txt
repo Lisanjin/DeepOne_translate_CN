@@ -1,0 +1,176 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010700.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:normal,tanomi,-1200,-100,0.4,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,tanomi,0_-100,1.5,0
+endwait
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-100,0.4,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_01.mp3
+name,<outline width=2 color=black><ruby>田寄|たより</ruby><ruby>多乃実|たのみ</ruby></outline>,
+msg,1,<outline width=2 color=black>「こ、ここなら誰もこないだろうし、きっと大丈夫、だよね……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-120,0.5,0.5,,,,
+endwait
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:surprise,tanomi,0,-120,0.5,0,,,,
+anm,jump,tanomi,0_-120_50_1,0.4,0
+playvoice,1,download/character/193304/adv/sound/fav193304_03_02.mp3
+msg,1,<outline width=2 color=black>「ひゃああぁぁ！？　誰っ！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_03.mp3
+msg,1,<outline width=2 color=black>「あ、ああ……君かぁ、よかったあ……。\nまさかこんなところに先客がいるなんて思ってなかったよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_04.mp3
+msg,1,<outline width=2 color=black>「実は今ちょっと、身を隠してると言いますか……あ、別に悪いことをして\n逃げてるとかじゃないんだけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_05.mp3
+msg,1,<outline width=2 color=black>「……ルルイエって、怖いところだったんだね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:surprise,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_06.mp3
+msg,1,<outline width=2 color=black>「だって、いつもみたいに廊下をあるいてたら、いきなり目の前の部屋で\n爆発が起きて、扉が吹き飛んできたんだよ……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:surprise,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_07.mp3
+msg,1,<outline width=2 color=black>「しかも、部屋の中もすごい燃えてたし……それなのに中にいた\nスオマライネンさんは笑ってて、他の人も全然騒ぐ様子もなくて……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:surprise,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_08.mp3
+msg,1,<outline width=2 color=black>「他にも、なにかを思い切りぶつけたみたいに壁がへこんでたり、\nその近くにはひしゃげた扉があったり……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_09.mp3
+msg,1,<outline width=2 color=black>「あと、すごいゴツいロボットみたいなのが高速で通路を走ってて……。\nさすがに怖くなって、思わず隠れようとしたわけです……はい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「いつものことだから」,選択肢2　「毒ガス騒ぎに巻き込まれなくてよかった」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:surprise,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_10.mp3
+name,<outline width=2 color=black><ruby>田寄|たより</ruby><ruby>多乃実|たのみ</ruby></outline>,
+msg,1,<outline width=2 color=black>「爆発が日常……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_11.mp3
+msg,1,<outline width=2 color=black>「もし巻き込まれたら、魔術士でもなんでもない普通の人間の私じゃ、\n絶対に無事じゃ済まないよ……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:surprise,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_12.mp3
+name,<outline width=2 color=black><ruby>田寄|たより</ruby><ruby>多乃実|たのみ</ruby></outline>,
+msg,1,<outline width=2 color=black>「ど、毒ガスって大丈夫なの！？　ここ、海の底だよね、\n密室なんだよねっ……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:surprise,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_13.mp3
+msg,1,<outline width=2 color=black>「なんだか君の顔、すごく青くなってないっ？\n足も震えてるみたいだし……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_14.mp3
+msg,1,<outline width=2 color=black>「大丈夫って……そんな状態で言われても全然安心できないよっ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_15.mp3
+name,<outline width=2 color=black><ruby>田寄|たより</ruby><ruby>多乃実|たのみ</ruby></outline>,
+msg,1,<outline width=2 color=black>「どうしよう……そんな話聞くと余計にここから出たくなくなっちゃうよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:surprise,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_16.mp3
+msg,1,<outline width=2 color=black>「――え、倉庫でもよく事件があるの？　ここは安全だと思ったのに！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:sad,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_17.mp3
+msg,1,<outline width=2 color=black>「チョコの消失……荷物が雪崩を起こして生き埋め……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:surprise,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_18.mp3
+msg,1,<outline width=2 color=black>「そんな……もうルルイエに安住の地はないんじゃ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:normal,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_19.mp3
+msg,1,<outline width=2 color=black>「で、でも、だからっていつまでも部屋に引きこもってるなんて\n勿体ないし……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:normal,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_20.mp3
+msg,1,<outline width=2 color=black>「……その、もしよかったら、ルルイエの危険スポット、\nもっと教えてもらってもいいかな？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:anger,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_21.mp3
+msg,1,<outline width=2 color=black>「散歩のときとか、そこには絶対近づかないようにするから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193304/adv/atlas/stand_a,body:normal,tanomi,0,-120,0.5,0,,,,
+playvoice,1,download/character/193304/adv/sound/fav193304_03_22.mp3
+msg,1,<outline width=2 color=black>「というか、時間があるならむしろ案内までお願いできちゃうと\nすっごく嬉しいんだけど……お願いしちゃっても、いいかな？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

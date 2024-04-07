@@ -1,0 +1,112 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:sad,an,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_01.mp3
+name,<outline width=2 color=black><ruby>桜田|さくらだ</ruby><ruby>杏|あん</ruby></outline>,
+msg,1,<outline width=2 color=black>「あー、お前か。今ちょっと時間あるか？\n実はこっち来てから、ずーっと気になってることがあってな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:sad,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_02.mp3
+msg,1,<outline width=2 color=black>「たいしたことじゃ……いや、たいしたことなんだけど、\n偶然の一致って可能性も割とあるし、そうであって欲しいけどな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:sad,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_03.mp3
+msg,1,<outline width=2 color=black>「……うちらのいるここの名前、ルルイエだろ？\n一応聞いておくんだけど、ヤバいやつが封印されてたりするか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:sad,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_04.mp3
+msg,1,<outline width=2 color=black>「大いなる闇とか、超古代文明とか、ガタノなんとか、とか。\nあとはゾイなんとかみたいな名前に聞き覚えとか関係とか無いよな！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「そっちの世界にもルルイエがあるの？」,選択肢2　「詳しい人を呼ぼうか？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:sad,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_05.mp3
+name,<outline width=2 color=black><ruby>桜田|さくらだ</ruby><ruby>杏|あん</ruby></outline>,
+msg,1,<outline width=2 color=black>「あるようなないような、いや無いはずなんだけどな？\nうちが気にしてるのは無いほうの話というか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:sad,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_06.mp3
+msg,1,<outline width=2 color=black>「いあいあして、うんぐるいしてる神話の方じゃなくて、\n光の力で、子供達の希望が奇跡を起こした方というか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:smile,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_07.mp3
+msg,1,<outline width=2 color=black>「いいよなー、やっぱ新世代の一作目っていうのもあるけど、\n次作にちゃんとつなげるだけのパワーがあると思う――じゃなくて」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:surprise,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_08.mp3
+name,<outline width=2 color=black><ruby>桜田|さくらだ</ruby><ruby>杏|あん</ruby></outline>,
+msg,1,<outline width=2 color=black>「お、おう。詳しいヤツなんているのか！？\nいや、まて。待ってくれ、うちの話はそこまで真面目に聞かなくていい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:surprise,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_09.mp3
+msg,1,<outline width=2 color=black>「ちょっと偶然似た感じのワードが多いだけで、\nそれはそれこれはこれというか、そういうのだと思ってるから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:unique2,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_10.mp3
+msg,1,<outline width=2 color=black>「たまたまだよな！？　もし本当にいるとかいわれたら、\nうちのメンタルじゃ耐えきれないからな！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:shy,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_11.mp3
+name,<outline width=2 color=black><ruby>桜田|さくらだ</ruby><ruby>杏|あん</ruby></outline>,
+msg,1,<outline width=2 color=black>「えっと……つまりな。うちは偶然同じ名前の古代都市に\n世界を滅ぼす神様がいるって創作を見たことがあるって話でな？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:shy,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_12.mp3
+msg,1,<outline width=2 color=black>「ただ、異世界に来て魔術とか使ってるのを実際に見て、\n万が一があるような気がしただけで、真面目に聞かなくていい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:anger,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_13.mp3
+msg,1,<outline width=2 color=black>「というわけで、忘れろ。というか答えを聞くのが怖い。\n知らなければ正気が削られることはないんだ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/192604/adv/atlas/stand_a,body:anger,an,0,-130,0.5,0,,,,
+playvoice,1,download/character/192604/adv/sound/fav192604_02_14.mp3
+msg,1,<outline width=2 color=black>「この話はこれで終わりだ。他のやつにも言わないでいいから、\n忘れてくれ。わかったな？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

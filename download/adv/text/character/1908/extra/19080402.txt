@@ -1,0 +1,148 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:sad,kasumi,0,-150,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_01.mp3
+name,<outline width=2 color=black><ruby>佑姫|ゆうき</ruby>カスミ</outline>,
+msg,1,<outline width=2 color=black>「ルルイエのデータベースを軽く調べたけれど、どうやらここは、\nアタシが認識している時代より少し未来の世界みたいね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:sad,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_02.mp3
+msg,1,<outline width=2 color=black>「まあ、納得よね……海の底にこんな施設を作り上げるなんて、\nアタシが言うのもなんだけどSFだし……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:sad,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_03.mp3
+msg,1,<outline width=2 color=black>「――ああ、でも一世紀も待たずしてここまでたどり着くってことでも\nあるのか……現実は小説より奇なりってことなのかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:sad,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_04.mp3
+msg,1,<outline width=2 color=black>「なんにせよ、神秘を目指す人間が口にすべき言葉ではないわね、これは」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:sad,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_05.mp3
+msg,1,<outline width=2 color=black>「それに、この状況も……時間跳躍か、あるいはアタシの魂の記録を持って\nきて意識を複製したのか……どちらにせよ、人間に許される<ruby>業|わざ</ruby>じゃない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:sad,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_06.mp3
+msg,1,<outline width=2 color=black>「こんなデタラメをあっさりと引き起こすなんて、\n流石は七大原書のひとつといったところかしら」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「未来のことを知るチャンス」,選択肢2　「何年前から来たの？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_07.mp3
+name,<outline width=2 color=black><ruby>佑姫|ゆうき</ruby>カスミ</outline>,
+msg,1,<outline width=2 color=black>「宝くじの当選番号か万馬券の番号でも覚えて帰ったら大金持ちって？\nこれ、そんな簡単な話だと思う？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_08.mp3
+msg,1,<outline width=2 color=black>「アタシがここで未来を知ってから過去に戻ったとして、本来とは違う\n結果を残していくことが世界にどんな影響を及ぼすかも分からない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_09.mp3
+msg,1,<outline width=2 color=black>「あるいは、宝くじに当選した瞬間に歴史の矛盾によって、\nアタシの存在が消し飛ばされる……なんてこともあるかもしれない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_10.mp3
+msg,1,<outline width=2 color=black>「アタシはそんなリスクを抱えるのはごめんだわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_11.mp3
+name,<outline width=2 color=black><ruby>佑姫|ゆうき</ruby>カスミ</outline>,
+msg,1,<outline width=2 color=black>「さあ……すぐに調べるのをやめたから、\n具体的にどれほどの時間の差があるかは分からないわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_12.mp3
+msg,1,<outline width=2 color=black>「詳しく調べたって、きっとろくなことがないもの。\n未来のことを知るのは、決していいことなんかじゃない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_13.mp3
+msg,1,<outline width=2 color=black>「仮に未来の自分が成功していると知ったら、努力を忘れるかもしれない。\n逆に失敗していると知ったら、努力を捨てるかもしれない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_14.mp3
+msg,1,<outline width=2 color=black>「明日のことなど分からないから人間は懸命に生きるのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_15.mp3
+name,<outline width=2 color=black><ruby>佑姫|ゆうき</ruby>カスミ</outline>,
+msg,1,<outline width=2 color=black>「もっとも、それはアタシが時間跳躍をしてここに来たのならば、という\n前提での話だけどね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_16.mp3
+msg,1,<outline width=2 color=black>「さっきも言ったように、アタシが佑姫カスミという人間を模して\nナコト原書によって作り出された偽物じゃないとは言えないのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_17.mp3
+msg,1,<outline width=2 color=black>「元の世界に戻ろうとする行為が、今ここにいるアタシという存在を\n消しさってしまう結果になるかもしれない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_18.mp3
+msg,1,<outline width=2 color=black>「でも、だからってそれを理由に一歩を踏み出すことを恐れたりはしないわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_19.mp3
+msg,1,<outline width=2 color=black>「進まなければなにも変わらない。\nだから、どんな不安があろうとも迷わない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190804/adv/atlas/stand_a,body:normal,kasumi,0,-150,0.5,0,,,,
+playvoice,1,download/character/190804/adv/sound/fav190804_02_20.mp3
+msg,1,<outline width=2 color=black>「そうじゃないとアタシは、佑姫カスミと名乗ることも\nできなくなってしまうのだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

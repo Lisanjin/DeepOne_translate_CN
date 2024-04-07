@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_01.mp3
+name,<outline width=2 color=black>アリス</outline>,
+msg,1,<outline width=2 color=black>「なんかさ……アンタって、ろくでもないヤツよね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_02.mp3
+msg,1,<outline width=2 color=black>「なんでそこで不思議そうな顔してんのよ。ルルイエにいる人たちの話を\n聞けば聞くほど危ない感じがするけど……自覚ないわけ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「ない」,選択肢2　「もしかして……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_03.mp3
+name,<outline width=2 color=black>アリス</outline>,
+msg,1,<outline width=2 color=black>「あのね……堂々と胸張って言うことじゃないから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_04.mp3
+msg,1,<outline width=2 color=black>「アンタ、少しは自分の今までの行動とかを振り返ってみたら？\nそしたら答えが出るんじゃないの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_05.mp3
+msg,1,<outline width=2 color=black>「……わかった、ああ、うん、完全に無自覚なのはわかったわよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_06.mp3
+name,<outline width=2 color=black>アリス</outline>,
+msg,1,<outline width=2 color=black>「そうそう、そうよ。いっつも戦闘の時に後ろから見てるだけなんて\n男として情けな……――って違う！　それじゃない！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:unique2,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_07.mp3
+msg,1,<outline width=2 color=black>「アンタは戦う力がないんでしょ！　だったら、それは仕方ないことじゃない！\nそんなことじゃなくてもっと別にあるでしょ！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:shy,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_08.mp3
+msg,1,<outline width=2 color=black>「ほら、このルルイエで男はアンタがひとりだけで、幻夢境の負荷を\nどうこうするためにあーだこーだのやつよ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_09.mp3
+name,<outline width=2 color=black>アリス</outline>,
+msg,1,<outline width=2 color=black>「はぁ……すっとぼけた奴ね、ほんと……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:normal,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_10.mp3
+msg,1,<outline width=2 color=black>「ルルイエって、つまるところあんたのハーレムで、\n好き勝手やってるんでしょ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:normal,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_11.mp3
+msg,1,<outline width=2 color=black>「そーゆーのを、ろくでもない、って言ってるの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_12.mp3
+msg,1,<outline width=2 color=black>「ちょっと……まるで意味が分かりません、みたいな顔してんじゃないわよ。\n他の子からいろいろぜーんぶ聞いてるんだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:surprise,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_13.mp3
+msg,1,<outline width=2 color=black>「え、話の内容……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:sad,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_14.mp3
+msg,1,<outline width=2 color=black>「んー……それは、あの子たちが言わないことを、勝手にあたしが言うって\nことでしょ？　それって、あんたよりひどい奴になるじゃない……秘密よ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_15.mp3
+msg,1,<outline width=2 color=black>「あ……先に言っておくけど、ジャンヌのことは変な目でみないでよね？\n一応、手助けしてくれた奴の目玉を抉るのは遠慮したいから……ね？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:unique1,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_16.mp3
+msg,1,<outline width=2 color=black>「よし……そこで迷わず頷いたのはいいわね。信じてあげるわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_17.mp3
+msg,1,<outline width=2 color=black>「しっかし……アンタ無自覚で節操なしなとこは、どこぞのオッサンと\n似てるわね……女の子が望んだら誰でも……ってところ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:anger,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_18.mp3
+msg,1,<outline width=2 color=black>「うーん……信じられないような顔してるけど、いるんだなぁ……これが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:normal,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_19.mp3
+msg,1,<outline width=2 color=black>「まあ、どっちかといえば、女の子からぐいぐい押されることのほうが多い\n感じだし、きちんと気持ちも通ってるから“ちょっとアウト”くらいだけどね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:unique1,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_20.mp3
+msg,1,<outline width=2 color=black>「――それに、大切に想ってくれてるのが伝わってくるから、\n嫌いになんてなれないのよ……アイツはさ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:unique1,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_21.mp3
+msg,1,<outline width=2 color=black>「きっとルルイエのみんなも、そういう感じなんでしょうね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191404/adv/atlas/stand_a,body:smile,arice,0,-100,0.5,0,,,,
+playvoice,1,download/character/191404/adv/sound/fav191404_02_22.mp3
+msg,1,<outline width=2 color=black>「つまり……アンタも、アタシの荷物持ちと同じくらいのろくでなしって\nことね。全員にそういう気持ちを向けるなら、しっかりやりなさいよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

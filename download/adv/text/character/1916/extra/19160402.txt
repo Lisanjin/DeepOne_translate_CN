@@ -1,0 +1,229 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:smile,rize,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_01.mp3
+name,<outline width=2 color=black>リゼット</outline>,
+msg,1,<outline width=2 color=black>「あ、こんにちは！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:smile,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_02.mp3
+msg,1,<outline width=2 color=black>「これですか？　亜紗花さんがハーブティーを淹れてくださったんです。\nこんな素敵なティーセットまで貸していただいてしまって……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:smile,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_03.mp3
+msg,1,<outline width=2 color=black>「とっても美味しくてリラックスできますよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「だいぶルルイエにも慣れてきたみたいだね」,選択肢2　「一杯もらえる？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:smile,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_04.mp3
+name,<outline width=2 color=black>リゼット</outline>,
+msg,1,<outline width=2 color=black>「はい。皆さんが優しく接してくれるお陰で、\nすぐに慣れることができたんだと思います」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:normal,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_05.mp3
+msg,1,<outline width=2 color=black>「特にあなたにはお世話になりっぱなしで。\n何かのお返しができたらいいんですけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:smile,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_06.mp3
+name,<outline width=2 color=black>リゼット</outline>,
+msg,1,<outline width=2 color=black>「どうぞ！\n……といっても私が淹れたものではないですけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:smile,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_07.mp3
+msg,1,<outline width=2 color=black>「うふふ、どうですか？　ハーブの香りが芳醇ですよね。\nあなたのお口にも合ったなら、嬉しいです」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:normal,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_08.mp3
+name,<outline width=2 color=black>リゼット</outline>,
+msg,1,<outline width=2 color=black>「故郷のベゼルスでは、<ruby>薬草|ハーブ</ruby>を摘んだり、\n歴史や信仰の話を語り聞かせる仕事をしていたんですが」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:sad,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_09.mp3
+msg,1,<outline width=2 color=black>「ここでは、皆さんのお役に立てる仕事がなくて。\nそれだけが少しだけ寂しいですね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:normal,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_10.mp3
+msg,1,<outline width=2 color=black>「……町を守ってくださった騎士さまを、\nずっと語り継ぐことが、私の使命だと思っています」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:surprise,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_11.mp3
+msg,1,<outline width=2 color=black>「え？　騎士さまのお話をここで？\n私は構いませんけれど……では……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:normal,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_12.mp3
+msg,1,<outline width=2 color=black>「これは祝福された<ruby>詩|うた</ruby>。\n天より現われ、地に花咲かした者の名を残すもの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:normal,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_13.mp3
+msg,1,<outline width=2 color=black>「……彼方まで伝う、勇ましき物語」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:normal,rize,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_14.mp3
+name,<outline width=2 color=black>リゼット</outline>,
+msg,1,<outline width=2 color=black>「……いかがでしたか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:shy,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_15.mp3
+msg,1,<outline width=2 color=black>「そんなに褒めないでください……！\n語り部としては、これぐらいは普通なので」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:surprise,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_16.mp3
+msg,1,<outline width=2 color=black>「え？　特に騎士さまの描写が細かくて、\n敬い慕っている感情が溢れている？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:shy,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_17.mp3
+msg,1,<outline width=2 color=black>「……あぅう……。\nいえ、そんな風に見えていたなんて、恥ずかしい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:shy,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_18.mp3
+msg,1,<outline width=2 color=black>「もしかして……語り聞かせていた子どもたちにも、\nそんな風に見えていたのかしら……はぅう……やだ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:shy,rize,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_19.mp3
+name,<outline width=2 color=black>リゼット</outline>,
+msg,1,<outline width=2 color=black>「……ふぅ。ハーブティーを飲んだら、だいぶ落ち着きました……\nけど、まだ顔が熱いです……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:normal,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_20.mp3
+msg,1,<outline width=2 color=black>「でも、あなたが私の話を楽しんでくれるのは嬉しいです。\nこれで皆さんのお役に立てるとは思えませんけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:surprise,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_21.mp3
+msg,1,<outline width=2 color=black>「え？　人工農園？\nルルイエにも農園があるんですか？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:smile,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_22.mp3
+msg,1,<outline width=2 color=black>「そこで<ruby>薬草|ハーブ</ruby>も育てているんですね！\n拙い知識ではありますが、私でもお役に立てるかも！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191604/adv/atlas/stand_a,body:smile,rize,0,-100,0.5,0,,,,
+playvoice,1,download/character/191604/adv/sound/fav191604_02_23.mp3
+msg,1,<outline width=2 color=black>「あなたはまるで、私のことを教え導いてくれる\n<ruby>完徳者|パルフェクティ</ruby>さまのようです……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

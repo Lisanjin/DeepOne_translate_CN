@@ -1,0 +1,155 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_01.mp3
+name,<outline width=2 color=black>ジャンヌ</outline>,
+msg,1,<outline width=2 color=black>「え……パパのこと、知りたいの……？\nんー……いいけど……うん、ジャンヌが教えてあげゆ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_02.mp3
+msg,1,<outline width=2 color=black>「ジャンヌのパパはね、みーんなのパパなの。\nミナシゴを守ってくれる、サンサン園の園長さんなんだゆ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_03.mp3
+msg,1,<outline width=2 color=black>「サンサン園には、どこにも行けないミナシゴがたくさんいて、\nパパといっしょに、いろんなシゴトをしてゆの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:smile,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_04.mp3
+msg,1,<outline width=2 color=black>「魔民……えっと、お兄ちゃんが知ってるモンスターみたいなの。\nそれを退治するシゴトをする子もいゆけど、パパはいちばん強いんだゆ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_05.mp3
+msg,1,<outline width=2 color=black>「だから、ジャンヌたちの国は、大陸で一番平和だった。\nパパがいゆから、壊れちゃった国からもたくさんの人が来たの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_06.mp3
+msg,1,<outline width=2 color=black>「魔王反逆の英雄……人類守護の旗印……ミナシゴの守護者。\nそんな風に呼ばれてゆのが、ジャンヌたちのパパなんだゆ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「憧れる」,選択肢2　「どれくらい？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:surprise,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_07.mp3
+name,<outline width=2 color=black>ジャンヌ</outline>,
+msg,1,<outline width=2 color=black>「そーなの？　お兄ちゃんも……強くなりたいの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_08.mp3
+msg,1,<outline width=2 color=black>「お兄ちゃんはみんなから愛されてて……お兄ちゃんも、みんなを愛してゆ。\nだから強くなくても、戦えなくても……みんなのことを助けてゆのに……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:smile,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_09.mp3
+msg,1,<outline width=2 color=black>「ジャンヌのパパも、魔王と戦ったときの傷のせいでもう戦えないの。\nそれでも、ジャンヌたちはパパに救われてゆ……それでいいんだよ……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_10.mp3
+name,<outline width=2 color=black>ジャンヌ</outline>,
+msg,1,<outline width=2 color=black>「んー……すっごく……きっと、世界でいちばん」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:sad,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_11.mp3
+msg,1,<outline width=2 color=black>「でも、パパはケガをしてゆから、あんまり戦っちゃダメで、\nだからその分は、ジャンヌたちが頑張ゆの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:sad,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_12.mp3
+msg,1,<outline width=2 color=black>「だから……パパと離れてゆのは、ちょっと不安だゆ。\nパパって、ミナシゴを守ゆためなら倒れるまで戦っちゃうの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-140,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_13.mp3
+msg,1,<outline width=2 color=black>「心配だから……はやく、パパのところに帰りたいゆ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-250,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_14.mp3
+name,<outline width=2 color=black>ジャンヌ</outline>,
+msg,1,<outline width=2 color=black>「んゆ……どーして頭撫でゆの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:smile,jan,0,-250,0.7,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_15.mp3
+msg,1,<outline width=2 color=black>「よくわかんないけど……うれしーけど、でも、\nパパが泣いちゃうかもしれないから、ちょっとだけだゆ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_16.mp3
+msg,1,<outline width=2 color=black>「えへへ……だいじょうぶ、パパはお兄ちゃんみたいな人は怒らないゆ。\nそれに、さいきょーのパパでも、ぜったいに勝てないものがあるんだゆ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:unique2,jan,0,-130,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_17.mp3
+msg,1,<outline width=2 color=black>「貧乏とジャンヌだゆ……パパね、いっつもミナシゴと遊んでて、\nお小遣いが足りなくなっちゃうから、ジャンヌが貸してあげてゆの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:smile,jan,0,-130,0.5,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_18.mp3
+msg,1,<outline width=2 color=black>「だから、パパがお兄ちゃんにしっとしても、\nジャンヌがダメってゆったらだいじょーぶだゆ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:normal,jan,0,-250,0.7,0.5,,,,
+endwait,,,,,,,,,,,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_19.mp3
+msg,1,<outline width=2 color=black>「んゅ……おにいちゃん、どうしたの？　なんだか泣きそうな顔してゆ？\n撫でてもいいけど……あ……その顔、しょんぼりしたパパに似てゆ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191304/adv/atlas/stand_a,body:smile,jan,0,-250,0.7,0,,,,
+playvoice,1,download/character/191304/adv/sound/fav191304_02_20.mp3
+msg,1,<outline width=2 color=black>「んぅ……ジャンヌは、パパが情けない方が安心すゆから、いーんだけど。\nパパのことをあんまり知らないと、やっぱりへんてこに思うのかなぁ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

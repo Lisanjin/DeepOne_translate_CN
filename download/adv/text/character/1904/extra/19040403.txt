@@ -1,0 +1,200 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10960102.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100101/adv/atlas/stand_a,body:anger,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100201/adv/atlas/stand_a,body:anger,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-661,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+wait,1.0
+endwait
+spineoff,em1,0
+spine,download/adv/spine/Slash4_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+bg,download/bg/bg_10960102.jpg,1,255
+endwait
+flash,255,255,255,4,0.3,1.0
+endwait
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_01.mp3
+name,<outline width=2 color=black><ruby>久遠|くおん</ruby></outline>,
+msg,1,<outline width=2 color=black>「ふむ。あの者たちの扱う力……魔術といったか。\nやはり何度見ても驚かされるな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_02.mp3
+msg,1,<outline width=2 color=black>「最初に見た時は、それぞれのお家流かとも勘違いしたが、\nそれと比べれば汎用性に優れているし、実に羨ましい力だ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:sad,kuo,0,-100.0,0.5,0.35,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_03.mp3
+msg,1,<outline width=2 color=black>「惜しむらくは、我にそれを使う才がない、と断言されてしまったことか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:sad,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_04.mp3
+msg,1,<outline width=2 color=black>「単純に向かないのか、あるいは違う世界の人間だからか……。\nどちらにせよ残念なことだ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「自分と同じ」,選択肢2　「魔術がなくても久遠は強い」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0.35,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_05.mp3
+msg,1,<outline width=2 color=black>「そういえば、貴様も魔術が扱えんのだったか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_06.mp3
+msg,1,<outline width=2 color=black>「心苦しいであろうな……後ろから、誰かの戦いを見ていることしか\n出来んのは。特に、貴様のような誰かを想う心の強い者であれば、尚更に」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_07.mp3
+msg,1,<outline width=2 color=black>「しかし、戦いとはなにも武器を持ち敵と相対することばかりではない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_08.mp3
+msg,1,<outline width=2 color=black>「己の無力に思い詰めて、腐るな。\n貴様には貴様にしか出来んこともあるはずだ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0.35,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_09.mp3
+msg,1,<outline width=2 color=black>「我は尾張、織田の棟梁なのだ。当然、弱くはいられんさ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0.35,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_10.mp3
+msg,1,<outline width=2 color=black>「だが、それでも支えられてばかりだ。我ひとりの強さで\nどうにかできることなど、本当にわずかなことだけだろう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_11.mp3
+msg,1,<outline width=2 color=black>「誰かと……仲間と共に力をあわせることこそが、道を切り開く。\n貴様もそれは知っておるのではないか？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_12.mp3
+msg,1,<outline width=2 color=black>「しかし、それでも力を求めてしまうのが、人のどうしようもないさがだな。\nそういうものに振り回されても、いいことにはなるまい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_13.mp3
+msg,1,<outline width=2 color=black>「我も、無理なものは無理と、いい加減に諦めをつけるとしよう。\n惜しんだところで何も変わらんのだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_14.mp3
+msg,1,<outline width=2 color=black>「それに……ある意味ではよかったのかもしれん。魔術などというものを\n我らの世界に持ちこめば、戦場の在り方が変わってしまう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_15.mp3
+msg,1,<outline width=2 color=black>「ともすれば、戦乱の世にさらに大きな波を起こすことになるだろう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_16.mp3
+msg,1,<outline width=2 color=black>「大きな力は人を魅了するが、同時に、扱いきれない力というのは危険だと\n己に戒めねばならん」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_17.mp3
+msg,1,<outline width=2 color=black>「でなければ己も、大切な者たちも、\nそして無辜の民草までをも不幸にしてしまう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_18.mp3
+msg,1,<outline width=2 color=black>「小狡い真似などせず、高みを目指す歩みは一歩一歩\n踏みしめてゆかねばなるまい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_a,body:normal,kuo,0,-100.0,0.5,0,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_19.mp3
+msg,1,<outline width=2 color=black>「逆を言えば、一歩を大事にして積み重ねていけば、いずれは必ず\n目指す高みに辿り着けよう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/190404/adv/atlas/stand_b,body:smile,kuo,0,-100.0,0.5,0.35,,,,
+playvoice,1,download/character/190404/adv/sound/fav190404_03_20.mp3
+msg,1,<outline width=2 color=black>「貴様も、そのことをよくよく覚えておくがいい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
