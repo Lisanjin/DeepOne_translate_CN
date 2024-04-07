@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11020300.jpg,0.5,255
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:normal,rafin,0,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_01.mp3
+name,<outline width=2 color=black>拉芬</outline>,
+msg,1,<outline width=2 color=black>「你是说这只胳膊吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:normal,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_02.mp3
+msg,1,<outline width=2 color=black>「人的手，本就是为了抓住东西而存在的……所以，我觉得让自己的胳膊无法动弹反而能让我平静下来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:normal,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_03.mp3
+msg,1,<outline width=2 color=black>「我，没有任何欲求和欲望。请将这看作是这种情感的表现」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:sad,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_04.mp3
+msg,1,<outline width=2 color=black>「之前，我也束缚了自己的脚……但是被熟人告诫不要那么做了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「熟人……」,选项2 「不觉得不方便吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:normal,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_05.mp3
+name,<outline width=2 color=black>拉芬</outline>,
+msg,1,<outline width=2 color=black>「我有熟人，让你感到意外了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:normal,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_06.mp3
+msg,1,<outline width=2 color=black>「啊，我并不是在责难什么。我自己也意识到自己很特别，你这么想也没有错」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:normal,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_07.mp3
+msg,1,<outline width=2 color=black>「即使是这样，我也算是在幻梦境中待了相当长的时间的失想者了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:normal,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_08.mp3
+name,<outline width=2 color=black>拉芬</outline>,
+msg,1,<outline width=2 color=black>「如果是人类倒也罢了，作为失想者基本上并不需要进食，所以并没有什么不方便的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:normal,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_09.mp3
+msg,1,<outline width=2 color=black>「而且，我并不讨厌安静地蜷缩着度过时间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:sad,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_10.mp3
+msg,1,<outline width=2 color=black>「所以，我被一个熟人称作『芋虫』，这种称呼也就这么沿用下来了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:sad,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_11.mp3
+msg,1,<outline width=2 color=black>「虽然我希望被人视作无尊严的存在，但是被称作芋虫还是让我有些不好受……这就是我放松束缚的主要原因」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:sad,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_12.mp3
+msg,1,<outline width=2 color=black>「……不过那个人，到最后也没有改掉叫我芋虫的习惯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:surprise,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_13.mp3
+name,<outline width=2 color=black>拉芬</outline>,
+msg,1,<outline width=2 color=black>「啊……你真的想见见他们吗？我自己说出来都觉得有点那个，我的熟人们都是些有点强烈个性的人……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:sad,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_14.mp3
+msg,1,<outline width=2 color=black>「比如说，那位总是全力肯定一切却又总是胡言乱语的剑士，或者那位被狂热信徒围绕的霸王，还有那位绝对不会记住名字的风之化身……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:surprise,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_15.mp3
+msg,1,<outline width=2 color=black>「……看你的表情。难道说，你已经认识他们了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:sad,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_16.mp3
+msg,1,<outline width=2 color=black>「那就，怎么说呢……辛苦你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:normal,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_17.mp3
+msg,1,<outline width=2 color=black>「那个，有没有什么我能为你做的事呢？如果有什么需要我做的事情，请随时告诉我好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:smile,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_18.mp3
+msg,1,<outline width=2 color=black>「请不要客气。如果能通过奉献自己的身体来减轻你心中的疲惫，那对我来说就没有更大的快乐了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180804/adv/atlas/stand_a,body:smile,rafin,0,-140,0.5,0,,,,
+playvoice,1,download/character/180804/adv/sound/fav180804_02_19.mp3
+msg,1,<outline width=2 color=black>「来吧，不要客气，无论是什么事情都可以告诉我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

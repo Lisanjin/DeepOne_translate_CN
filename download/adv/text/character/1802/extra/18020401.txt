@@ -1,0 +1,198 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:anger,sofas,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_01.mp3
+name,<outline width=2 color=black>索法斯・阿什特雷德</outline>,
+msg,1,<outline width=2 color=black>「――大约八百年前，有一位魔术师为了获得强大的力量，将自己与纳克特原书融合，试图从内部接管它」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:anger,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_02.mp3
+msg,1,<outline width=2 color=black>「他的计划失败了……试图对纳克特原书进行如此微小的操作，本就不可能成功」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:anger,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_03.mp3
+msg,1,<outline width=2 color=black>「结果那位魔术师灭亡了，而且不仅没有得到纳克特原书的力量，反而被重构为绝对服从纳克特原书命令的奴隷」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:sad,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_04.mp3
+msg,1,<outline width=2 color=black>「――是的，那就是我。那个不知道自己身份地开始了八百年奴隶生活的愚蠢者，就是现在站在主人面前的这个卑微的奴隶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:shy,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_05.mp3
+msg,1,<outline width=2 color=black>「现在回想起来真是太羞愧了。我为什么会觉得我能做到呢？我是笨蛋吗？傻瓜吗？自负过头了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:unique,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_06.mp3
+msg,1,<outline width=2 color=black>「而且，在纳克特原书看来，我的行动就像尘土一般微不足道。它甚至没有意识到把我变成了奴隷……结果，我被遗弃了八百年……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:smile,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_07.mp3
+msg,1,<outline width=2 color=black>「所以！　当我看到与纳克特原书相连的主人时，我震惊了。我确信我是为了成为您的奴隷而生的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「太夸张了吧……」,选项2　「如果你是伙伴而不是奴隶……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:normal,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_08.mp3
+msg,1,<outline width=2 color=black>「我也明白主人您想说什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:sad,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_09.mp3
+msg,1,<outline width=2 color=black>「但是，如果我是为了成为奴隶而被创造出来，并且被放置了八百年，\n当我找到可以侍奉的人时，我自然会变成这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:smile,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_10.mp3
+msg,1,<outline width=2 color=black>「现在的我兴奋得不得了。真的很兴奋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:normal,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_11.mp3
+msg,1,<outline width=2 color=black>「对您充满关怀的话语，我表示感谢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:normal,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_12.mp3
+msg,1,<outline width=2 color=black>「但是，我是奴隶，这不仅仅是一个头衔或者称号，\n可以说这就像我的种族……我生来就是奴隶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:normal,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_13.mp3
+msg,1,<outline width=2 color=black>「如果你否认这一点，我就不知道该怎么做了\n我会变得迷茫」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:smile,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_14.mp3
+msg,1,<outline width=2 color=black>「所以，请尽情地使用我这个身体，作为您的奴隶\n请随意指使我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:smile,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_15.mp3
+msg,1,<outline width=2 color=black>「请下达任何命令。\n无论什么事情，我都会服从、尽力、侍奉您」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:normal,sofas,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_16.mp3
+msg,1,<outline width=2 color=black>「有没有什么你想让我做的事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,sofas,0.6_0.6,0.5,0
+endwait
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:smile,sofas,0,-100,0.6,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_17.mp3
+name,<outline width=2 color=black>索法斯・阿什特雷德</outline>,
+msg,1,<outline width=2 color=black>「快快说吧，不要客气」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,sofas,0.7_0.7,0.5,0
+endwait
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:smile,sofas,0,-100,0.7,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_18.mp3
+name,<outline width=2 color=black>索法斯・阿什特雷德</outline>,
+msg,1,<outline width=2 color=black>「看我的，我会加油的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sofas1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:smile,sofas2,0,0,0,0,,,,
+imgconf,sofas2,sofas1,-50,-50,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:surprise,sofas,0,-100,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_19.mp3
+name,<outline width=2 color=black>索法斯・阿什特雷德</outline>,
+msg,1,<outline width=2 color=black>「……？主人，你在看……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,sofas,0.5
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:shy,sofas2,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_20.mp3
+msg,1,<outline width=2 color=black>「抱，抱歉。我把这么无聊的东西强加给您了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:shy,sofas2,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_21.mp3
+msg,1,<outline width=2 color=black>「……那，那个，主人？虽然我确实是奴隶，并且不能违背主人的命令\n但是……我并不是那种奴隶，我想……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:shy,sofas2,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_22.mp3
+msg,1,<outline width=2 color=black>「但是那个嗯……这个身体确实是作为绝对服从的奴隶而制造的。\n如果主人真的有那个意思，并且说出了那样的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180204/adv/atlas/stand_a,body:shy,sofas2,0,-100,0.5,0,,,,
+playvoice,1,download/character/180204/adv/sound/fav180204_01_23.mp3
+msg,1,<outline width=2 color=black>「……我可能会无法反抗，那该怎么办呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

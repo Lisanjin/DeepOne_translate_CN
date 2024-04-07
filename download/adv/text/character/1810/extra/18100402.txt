@@ -1,0 +1,212 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_01.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「嗯——做了运动呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_02.mp3
+msg,1,<outline width=2 color=black>「当初被邀请一起训练的时候，我还在想为什么呢——，\n但是和别人一起活动身体，感觉意外的还不错呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_03.mp3
+msg,1,<outline width=2 color=black>「话说回来，你真的很厉害呢——……就算没有魔术，单纯的身体能力也达到了很高的水平。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_04.mp3
+msg,1,<outline width=2 color=black>「嘛，虽然还是没能赢过我呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「下次不会输的」,选项2 「平时就一直在锻炼吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_05.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「啊……那样的话，有一个你马上就能赢的比赛哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_06.mp3
+msg,1,<outline width=2 color=black>「在床上——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:smile,you,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+wait,0.5
+endwait
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,you1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:sad,you2,0,0,0,0,,,,
+imgconf,you2,you1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181004/adv/sound/fav181004_02_07.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「咕……嗯唔——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:surprise,you,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_08.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「哈……其实并不用那么着急嘛。\n只是稍微逗你玩一下而已哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:smile,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_09.mp3
+msg,1,<outline width=2 color=black>「你突然捂住嘴，我还以为不在床上而是\n在这里开始比赛了呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_10.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「是呢。我希望尽可能的优秀才好。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_11.mp3
+msg,1,<outline width=2 color=black>「你看，普通的父母和孩子之间，并不是只有好的部分才会遗传下来对吧？但我就不一样了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_12.mp3
+msg,1,<outline width=2 color=black>「我是被设计成能让孩子继承优秀能力和素质的，所以我越优秀，孩子也会越优秀。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_13.mp3
+msg,1,<outline width=2 color=black>「而且如果父亲也同样优秀或者特别，那就更棒了——所以，怎么样，我们就这样一起上床——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:unique,you,0,-110,0.4,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_14.mp3
+msg,1,<outline width=2 color=black>「……我只是开个玩笑，你不用那么远离我吧？即使是我也会有些受伤哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_15.mp3
+msg,1,<outline width=2 color=black>「但是，和我生孩子真的那么讨厌吗？虽然这么说有些不好意思，\n但我觉得我的外貌还算不错的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_16.mp3
+msg,1,<outline width=2 color=black>「如果你担心抚养孩子的问题，其实没必要哦？\n那部分我会全部负责的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_17.mp3
+msg,1,<outline width=2 color=black>「嗯……即便如此还是不行吗？关于爱情、感情之类的事情——\n如果是这样的话，可能我还是无法理解呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_18.mp3
+msg,1,<outline width=2 color=black>「现在我的计划被冻结了，所以我相对自由。\n但如果计划重新启动了，结果就不可知了哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_19.mp3
+msg,1,<outline width=2 color=black>「可能会被随便安排一个男人呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_20.mp3
+msg,1,<outline width=2 color=black>「或者只是为了利用我作为母体的能力，\n把别人的受精卵放进我的肚子里呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_21.mp3
+msg,1,<outline width=2 color=black>「相比这些，我更希望和自己选择的人，自然地生孩子。\n这并不是什么奇怪的想法吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:sad,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_22.mp3
+msg,1,<outline width=2 color=black>「……其实，我并不是想让你露出那种困扰的表情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181004/adv/atlas/stand_a,body:sad,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181004/adv/sound/fav181004_02_23.mp3
+msg,1,<outline width=2 color=black>「算了，没什么。我要走了……刚才的话就当做没听过吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

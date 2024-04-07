@@ -1,0 +1,176 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10970102.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:surprise,jiru,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_01.mp3
+name,<outline width=2 color=black>基尔瓦拉</outline>,
+msg,1,<outline width=2 color=black>「――哎哟喂！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,3,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:surprise,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_02.mp3
+name,<outline width=2 color=black>基尔瓦拉</outline>,
+msg,1,<outline width=2 color=black>「哦，吓了我一跳……不，其实并没吓到。\n我是吸血鬼，这点事情不会让我惊讶的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:normal,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_03.mp3
+msg,1,<outline width=2 color=black>「嗯……咳咳。你为什么会在这种地方？\n因为你突然从阴影中跳出来，所以我吓了一跳――虽然并没有」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_04.mp3
+msg,1,<outline width=2 color=black>「……陷阱？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_05.mp3
+msg,1,<outline width=2 color=black>「那就是说，你掉进陷阱里，然后发现自己在这里？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_06.mp3
+msg,1,<outline width=2 color=black>「……那个陷阱，好像是能把人转移到另一个区域的陷阱\n没关系，但如果是关乎生命的事情你怎么办？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_07.mp3
+msg,1,<outline width=2 color=black>「你的伙伴们在做什么？ 是眼瞎了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「因为在战斗中……」,选项2 「因为我太粗心了……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_08.mp3
+msg,1,<outline width=2 color=black>「嗯……如果是那样的话，也许没办法了，\n但如果是那样的话，你自己应该要更小心才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_09.mp3
+msg,1,<outline width=2 color=black>「在伙伴们拼命战斗的背后偷偷掉进陷阱，\n这画面有点太过滑稽了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:anger,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_10.mp3
+msg,1,<outline width=2 color=black>「确实是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:normal,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_11.mp3
+msg,1,<outline width=2 color=black>「话虽如此，魔术隐蔽的陷阱对你来说确实难以察觉。\n其他的<ruby>想索者|diver</ruby>应该保护你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_12.mp3
+msg,1,<outline width=2 color=black>「结果你还算安全，但如果吉尔没有经过，\n你打算怎么办……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_13.mp3
+msg,1,<outline width=2 color=black>「话说回来，我之前就注意到了，你的气息，\n好像融入了幻梦境一样……有点难以捉摸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_14.mp3
+msg,1,<outline width=2 color=black>「因此我才会被吓到――虽然并没有」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:unique,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_15.mp3
+msg,1,<outline width=2 color=black>「什么，那个表情。你以为吉尔在撒谎？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:anger,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_16.mp3
+msg,1,<outline width=2 color=black>「真是失礼。吸血鬼是不会撒谎的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:normal,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_17.mp3
+msg,1,<outline width=2 color=black>「总之，没办法只好带你去想索者们那里。\n虽然我本不想卷入其中，但如果就这么放任不管，会有些不舒服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_18.mp3
+msg,1,<outline width=2 color=black>「……为什么你看起来那么悲伤？\n告诉你吧，不想和人类打交道这种事情，大部分<ruby>失忆者|失忆者</ruby>都会这么想」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:normal,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_19.mp3
+msg,1,<outline width=2 color=black>「想索者们，对于吉尔们这些失忆者失去的一切感到怜悯，时而又蔑视。\n但如果让吉尔来说，你们拥有的太多了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:normal,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_20.mp3
+msg,1,<outline width=2 color=black>「多余的价值观，片面的伦理观，狭隘的道德心以及无尽的野心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:normal,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_21.mp3
+msg,1,<outline width=2 color=black>「和这些东西打交道，肯定不会有好事发生。\n所以吉尔讨厌人类。不想接近他们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_22.mp3
+msg,1,<outline width=2 color=black>「……这大概是吉尔在成为失忆者之前――作为人类最后一次抱有的、\n即使破碎也依然坚持的强烈情感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_23.mp3
+msg,1,<outline width=2 color=black>「不要以为你能改变这个。也不要期待。\n那样做就像是用篮子去舀日子一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180304/adv/atlas/stand_a,body:sad,jiru,0,-120,0.5,0,,,,
+playvoice,1,download/character/180304/adv/sound/fav180304_01_24.mp3
+msg,1,<outline width=2 color=black>「吉尔是吸血鬼……和人类是无法共存的存在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

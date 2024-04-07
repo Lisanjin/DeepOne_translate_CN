@@ -1,0 +1,224 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:surprise,julia,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_01.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「――啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,255
+endwait
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102001/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,255
+endwait
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,julia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:sad,julia2,0,0,0,0,,,,
+imgconf,julia2,julia1,0,-430,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181504/adv/sound/fav181504_01_02.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「呃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_03.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「哇……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_04.mp3
+msg,1,<outline width=2 color=black>「啊……对、对不起，是我突然停下来转身，\n所以才会撞到你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「在避开塔芭莎吗？」,选项2　「你的脸色看起来很僵硬」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_05.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「诶……那、那种事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_06.mp3
+msg,1,<outline width=2 color=black>「……这是明显的谎言呢。我自己也觉得，现在的情况有点，\n勉强了点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_07.mp3
+msg,1,<outline width=2 color=black>「但是……对不起。这只是我的问题。\n希望你不要深究……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_08.mp3
+msg,1,<outline width=2 color=black>「没关系的。这并不是什么大事，所以请不要担心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:surprise,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_09.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「诶……脸色，是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_10.mp3
+msg,1,<outline width=2 color=black>「是这样吗？呃……怎么样呢。\n现在，应该恢复正常了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_11.mp3
+msg,1,<outline width=2 color=black>「――更、更多的笑容？诶，我，平时就经常笑吗？\n那么，那就……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:unique,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_12.mp3
+msg,1,<outline width=2 color=black>「咪咪♡」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:shy,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_13.mp3
+msg,1,<outline width=2 color=black>「……感觉好像被逼得做了一些羞羞的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:surprise,julia,0,-280,0.8,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_14.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:smile,julia,0,-280,0.8,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_15.mp3
+msg,1,<outline width=2 color=black>「呼哟……！？ 嗯，嗯嗯，怎、怎么突然拉我的脸颊，让我笑……嗯，\n就算这样强行让我笑也……哈、哈哈哈好痒」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+anm,scale,julia,0.5_0.5,0.6,0
+anm,move,julia,0_-120,0.6,0
+endwait
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:shy,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_16.mp3
+msg,1,<outline width=2 color=black>「哎呀，突然拉女性的脸颊是不行的哦。\n这种行为，叫做性骚扰哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_17.mp3
+msg,1,<outline width=2 color=black>「……我表情变得那么奇怪，需要你这么强硬地改变吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_18.mp3
+msg,1,<outline width=2 color=black>「明明是我的问题，却让你如此担心，\n真是不应该呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:surprise,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_19.mp3
+msg,1,<outline width=2 color=black>「――诶？接下来，是吗？我倒是有时间……一起，\n喝杯茶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_20.mp3
+msg,1,<outline width=2 color=black>「呵呵……这可真是一句古典的搭讪邀请语」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_21.mp3
+msg,1,<outline width=2 color=black>「但是，现在我也觉得比起独自一人，和别人聊天\n更能分散注意力……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:smile,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_22.mp3
+msg,1,<outline width=2 color=black>「而且，既然你这么邀请我，\n我可以期待你会跟我分享一些有趣的事情吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181504/adv/atlas/stand_a,body:unique,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181504/adv/sound/fav181504_01_23.mp3
+msg,1,<outline width=2 color=black>「我可以期待吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
