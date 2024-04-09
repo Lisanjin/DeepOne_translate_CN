@@ -1,0 +1,438 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11540300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「哎呀……你不需要和他们在一起吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——这个打扮？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呵呵，是想给你看看——这样的理由你能接受吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「就当是这样吧」,选项2 「真相是什么？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「嗯……今天的主角是她们呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「多余的事情，请睁一只眼闭一只眼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「看来已经被你识破了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这个领域是为了迎接那些即使自己消失也无所谓的存在而整备的\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为了亚纱花，我可以消失。\n如果对亚纱花造成困扰，我这样的人不在更好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这是我真实毫无掩饰的想法呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「别做那种表情。亚纱花也一直这么说我。\n要更珍惜自己，对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「既然是亚纱花说的，我想真诚地接受她的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可是……毕竟，有些部分是无法改变的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这也是无法避免的，只要我作为我自己存在\n如果你能接受这一点，我会很高兴的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11230300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm096.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,300,-180,0.5,0.5,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚の影</outline>,
+msg,0,<outline width=2 color=black>「你们真是愚蠢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「和我在一起对你们来说是不幸的。\n相信我的道路，会让你们走向残酷的结局」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为愚蠢理想付出代价的不是抱有这种想法的\n而是试图支持它的你们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果连我都不牵涉进去，洁美拉·吉普莉尔和\n伊莉娜·伊丽莎洛瓦肯定不会变成那样子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那样……悲惨的死法是不会发生的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,300,-180,0.5,0,,,,
+anm,tint,catia_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>洁美拉·吉普莉尔</outline>,
+msg,0,<outline width=2 color=black>「结局什么的，根本无所谓」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,300,-180,0.5,0,,,,
+msg,0,<outline width=2 color=black>「即使那是多么残酷的结局，充满痛苦的结局，\n对我来说，那都毫无意义」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:smile,jamila,300,-180,0.5,0,,,,
+msg,0,<outline width=2 color=black>「对我来说，能在你身边……这才是\n最重要的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,300,-180,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果你走向地狱深渊之路，我也会陪伴你，\n一起迈出那一步」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101002/adv/atlas/stand_a,body:normal,jamila,300,-180,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这份信仰是献给那唯一的主。\n坚守这份信仰才是我的愿望」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+anm,tint,jamila,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚の影</outline>,
+msg,0,<outline width=2 color=black>「……我不明白，你为什么要这样做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,jamila,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,catia_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「问了也白问。那个女人对你的思念，\n根本不需要理由和道理」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「信仰就是这样的东西，虽然说了也就这样了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「即使走向地狱也愿意陪伴。有这样一个人在身边，\n到底是好事还是坏事呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚の影</outline>,
+msg,0,<outline width=2 color=black>「伊莉娜，你是——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+anm,tint,catia_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「我可不是那种狂热分子哦。\n而且，也不是你那个世界的我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「无论卡蒂亚如何回顾过去，\n我都无法相信那种甘美的理想会实现」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「唯一不明白的是，为什么那个世界的我会毫无保留地选择和你走在一起\n但是――……算了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:sad,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……可能是因为沉溺于那种中途半端的互相舔舐吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，那边世界的我的结局，你本来就不需要感到负责任或者\n背负什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且……现在在这里的我，和你认识的那个人是不一样的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我不会承认中途半端，如果是无法追赶现实的理想，\n我也不会和你一起走那条路」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我不会去相信那种东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ilyna1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna2,0,0,0,0,,,,
+imgconf,ilyna2,ilyna1,0,-770,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,0,<outline width=2 color=black>「……这样的人也是需要的，对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100902/adv/atlas/stand_a,body:normal,ilyna,300,-220,0.5,0.5,,,,
+anm,tint,ilyna,150_150_150,0.0001,0
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚の影</outline>,
+msg,0,<outline width=2 color=black>「接受一个不相信自己的人在身边。\n……确实，这可能是我做不到的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不能理解对方……不能与并行的伙伴同步，\n我一直以为这是不好的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那只是用信任这个词装饰起来的……如果用你的话来说，\n可能是那种中途半端的舔舐吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………为什么我会如此不愿意承认呢。\n这个世界的我已经开始走上了与我不同的道路」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「一定是在期待吧……在这个世界」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那个不是我的我能走到我无法到达的地方。\n没有失去那些失去的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「期待着……羡慕着，嫉妒着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>然后……尽管知道那样的未来绝不会是我的，\n但在这个世界的我可能还能感受到那份温暖——这样想</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>这是多么可笑的想法啊。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11230300.jpg,1,255
+endwait
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,catia_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s2,0,0,0,0,,,,
+imgconf,catia_s2,catia_s1,0,0,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>卡蒂亚の影</outline>,
+msg,0,<outline width=2 color=black>「……啊啊，已经够了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s2,0,0,0,0,,,,
+imgconf,catia_s2,catia_s1,0,0,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我本不想意识到这种感情的，可是却意识到了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s2,0,0,0,0,,,,
+imgconf,catia_s2,catia_s1,0,0,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我……虽然说要看到这个世界我的结局，\n但实际上还在渴望自己无法实现的理想……所以……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100381/adv/atlas/stand_a,body:sad,catia_s2,0,0,0,0,,,,
+imgconf,catia_s2,catia_s1,0,0,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「所以，我现在如此地――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11540300.jpg,1,255
+endwait
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alt1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:normal,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「就是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100182/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「你们应该意识到。\n实现自己愿望的恐怖」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

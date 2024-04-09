@@ -1,0 +1,699 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm094.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zizel1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:surprise,zizel2,0,0,0,0,,,,
+imgconf,zizel2,zizel1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「喘……喘、哈、啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alma1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103252/adv/atlas/stand_a,body:surprise,alma2,0,0,0,0,,,,
+imgconf,alma2,alma1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>艾尔玛·莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「哈、哈、咳……呜、呜呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「……这些家伙到底在干什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「明明离开的时间并不长，\n为什么这两个人现在看起来像是快要死了一样疲惫？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「那个，关于这个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「是不是吵架了？」,选项2　「难道是在玩耍？」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:sad,asaka,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「没有吵架啦，但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「没事的，不用担心。\n她们关系很好，就这么说吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103252/adv/atlas/stand_a,body:anger,alma,300,-120,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛·莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「等一下，你以为人家累得动不了就随便说什么啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「那这俩人到底是玩得多拼命啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「请、请让我纠正一下……我和艾尔玛并不是在玩耍……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zizel,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103252/adv/atlas/stand_a,body:anger,alma,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛·莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「就是啊……谁会和这种人……我只是想稍微教训一下她\n教她知道点身份地位……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+anm,tint,alma,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「光是现在这短短的对话，就能大致想象出发生了什么事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「不过，两个人都抓不到鱼，还真是出乎意料的结局呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,yoshino,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103252/adv/atlas/stand_a,body:sad,alma,300,-120,0.5,0.5,,,,
+anm,tint,alma,150_150_150,0.0001,0
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「那、那是因为艾尔玛在河里乱闹所以鱼都跑掉了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103252/adv/atlas/stand_a,body:sad,alma,300,-120,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛·莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「别把责任推给别人……话说回来，我可是被你那讨厌的光\n遮住视线差点淹死好几次哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:anger,zizel,-300,-120,0.5,0,,,,
+anm,tint,alma,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「那是因为你一直黏在我身边！\n你就是想故意妨碍我吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103252/adv/atlas/stand_a,body:anger,alma,300,-120,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛·莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「我只是瞄准了鱼聚集的地方而已！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,300,-120,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「能一直争吵到这个地步，倒是挺了不起的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「确实呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:normal,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「真无所谓……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:normal,tabasa,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说回来，亚纱花也去钓鱼了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100112/adv/atlas/stand_a,body:smile,asaka,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「嗯。在芳乃的指导下……虽然不能说大丰收，\n但对于第一次来说应该算是不错了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「虽然你们怎么玩对我来说都没关系，\n但是钓到的这些鱼要怎么处理呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「还是烤着吃吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「这么多？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:unique,yoshino,-300,-240,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「那个……――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,xeno1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:shy,xeno2,0,0,0,0,,,,
+imgconf,xeno2,xeno1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>泽诺·娜扎莉</outline>,
+msg,0,<outline width=2 color=black>「――哦。钓了不少鱼啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,300,-120,0.5,0.5,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:surprise,yoshino,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「嗯……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>泽诺·娜扎莉</outline>,
+msg,0,<outline width=2 color=black>「出来透透气，没想到会在这里遇到你们啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:unique,xeno,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「在幻梦境里悠哉地享受休闲，是该感叹他一如既往地让人无语，\n还是该佩服他在任何地方都能保持平常心的胆量呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「原来是娜扎莉啊。你也是来透气的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>泽诺·娜扎莉</outline>,
+msg,0,<outline width=2 color=black>「嗯，差不多吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「嗯……这也许是一种缘分吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>泽诺·娜扎莉</outline>,
+msg,0,<outline width=2 color=black>「嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「娜扎莉。如果可以的话――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/100112/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「好了，这样就行……嘿，能帮我把这盘烤鱼拿过去吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「剩下的大概还有三成吧。\n失想者的大家也都很有胃口，要不一次性把它们都烤好吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,1,255
+endwait
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0.5,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,vi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi2,0,0,0,0,,,,
+imgconf,vi2,vi1,0,-980,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「这里，还不错呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「虽然只是把鱼撒上盐烤了一下，但为什么亚纱花做的会这么好吃呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,vi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi2,0,0,0,0,,,,
+imgconf,vi2,vi1,0,-980,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「看起来，她经常调整炭火的位置，\n或许秘诀就在这里？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,weat1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:normal,weat2,0,0,0,0,,,,
+imgconf,weat2,weat1,0,-950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「肯定是，那细致的动作，让这香脆多汁的美味\n得以完美呈现……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:sad,xeno,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>泽诺·娜扎莉</outline>,
+msg,0,<outline width=2 color=black>「抱歉。让你们特意负责做饭……我们一大群人突然来了，\n还让你们做饭，真是不好意思」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,xeno,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「别放在心上。我们也能把鱼处理得不浪费，感激不尽。\n而且做饭也是赤井的兴趣之一……别夺走她的乐趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102407/adv/atlas/stand_a,body:normal,xeno,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>泽诺·娜扎莉</outline>,
+msg,0,<outline width=2 color=black>「……这样啊。那我之后会向她表达感谢的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:normal,zizel,-300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+spriteatlas,download/character/103252/adv/atlas/stand_a,body:sad,alma,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛·莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「用烤鱼来开派对，失想者们也挺悠哉的嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:normal,zizel,-300,-120,0.5,0,,,,
+anm,tint,alma,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「但是，如果因此能加深彼此的友谊，那就是件好事了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,alma,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「嘛，你们倒是什么都没贡献啊。\n都没钓到一条鱼，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，为了弥补这个，我主动提出给亚纱花帮忙做饭……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103252/adv/atlas/stand_a,body:anger,alma,300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛·莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「要是你做的菜端出来，那可真的会引发想索者和失想者之间的\n战争了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:anger,zizel,-300,-120,0.5,0,,,,
+anm,tint,alma,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「这、这是什么意思！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,alma,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「在这件事上，我还是同意艾尔玛的看法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「连塔芭莎都这么说了……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「话说回来……看着「那个」，不知怎么的，\n本来这附近就温度较高，感觉更热了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/100112/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「对了，那边的准备做好了吗？\n我记得量还挺多的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……嗯，做得挺好的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「那么，这个我来拿……哦，对了。\n这个盘子里的是你的份」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「刚才一直看着烤鱼的样子，\n是不是饿了呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「呵呵，当然会注意到了，毕竟你表现得那么明显」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「话说回来，刚才吃过烧烤之后还这样，\n这点真是像男孩子呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「不过，无论如何，能有人吃我的菜我都很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「――嗯，请享用吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,2,255
+endwait
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「真是的。我们到底被逼着看什么啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100711/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「啊、啊哈哈……算了算了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103252/adv/atlas/stand_a,body:sad,alma,300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛·莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「虽然说是老样子了，但还是老样子呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

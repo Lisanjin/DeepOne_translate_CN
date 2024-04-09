@@ -1,0 +1,433 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「我刚才就觉得那边有点吵……又是吉泽尔和艾尔玛啊\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……那俩其实关系挺好的，绝对的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「然后，你是因为受不了他们的打闹而逃过来的，是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那你找亚纱花也行啊？\n我想一个人悠哉地待着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……说起来，其实我本来也没打算参加这种烧烤聚会的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「兄长硬是要我和大家搞好关系。\n而且还特意让自己留在拉莱耶……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……为什么兄长总是这么说呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我根本没有必要和你们搞好关系啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「与伙伴的羁绊很重要」,选项2　「也没有不搞好关系的理由」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「真是俗气的台词。\n不过，倒是挺像你的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，你还是去跟那边吵闹着玩的人说这些吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「什么嘛，居然顶嘴？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说回来，既然无论哪种情况都没有理由，\n那不就是取决于我的心情了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――哈？你想要搞好关系什么的，跟我一点关系都没有」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我又不是特别想要跟你玩亲亲热热的游戏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「如果你不打算去别的地方，那我就去别处。\n拜拜了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「――喂，你是不是傻啊？\n为什么会在这个对话流程里跟过来？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我们在说同一种语言吗？我说了，我想一个人悠哉地待着。\n有你这种人在附近，我怎么能安心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「就你这个萝莉控。肯定是在想些什么不轨的事情\n对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――哼。就是你这种拼命否认的样子才显得可疑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1000,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「没必要那么冷淡地对待他啊，托瓦宁」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:surprise,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「这个声音是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1000,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「既然有这样的机会，不如放轻松一点，放松肩膀。\n总是紧绷着心情也不轻松吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「…………额，那个」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――你在干什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yoshino1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1000,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「嗯？我觉得这种事情不用解释也一目了然啊――嗯！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino2,0,0,0,0,,,,
+imgconf,yoshino2,yoshino1,0,-1000,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这个手感……来了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+flash,255,255,255,2,0.3,1.0
+playbgm,/download/sound/bgm/bgm065.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/102509/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「嘿――抓住了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「真是一条相当不错的鱼。这个看起来很有口感呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「钓鱼这种事好久没有做了，感觉有点生疏，\n但是这附近的鱼还挺多的……简直就是大丰收啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,1,255
+endwait
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「……真的，你在干嘛啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「钓鱼啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「这种事情看得出来啦！\n不是这个意思……我不是那个意思啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……啊，真是的。这里毕竟是幻梦境里吧？\n尽管如此还钓鱼什么的……肯定有问题吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:smile,yoshino,-300,-240,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「放心吧。我刚才已经稍微巡视了一下周围」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:smile,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且，为了在敌人出现时能感知到，\n我用魔法和物理手段设置了各种陷阱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「我不是那个意思……哎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我还以为你是个稍微有点紧张感的人……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「刚才也说过了，总是保持警惕、保持敏锐感觉是很难的。适当的放松是必不可少的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「也有个度吧……居然还意气风发地钓鱼\n不就是在享受休闲嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「嗯……钓鱼技巧在进行生存活动时\n有的话总是好的，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「当然，紧急情况下，比起钓鱼，布置陷阱或者用魔法发电击之类的捕鱼更有效」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:smile,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，托瓦宁。你也试试钓鱼吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「我才不要呢！什么叫「所以」啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:anger,tabasa,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说回来，在幻梦境里钓到的鱼，究竟有什么危险\n我们都不知道吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「关于这个，我教你一个好方法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「把鱼放在舌头上一会儿，如果没有感到麻痹之类的感觉，\n只要煮熟了，大部分都可以吃的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:smile,yoshino,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「顺便说一下，刚才钓到的鱼已经确认过没有麻痹效果了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:sad,tabasa,300,-120,0.5,0,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「关于食物的事情，你和布里吉特、吉泽尔差不多\n都是一个水平」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102509/adv/atlas/stand_a,body:sad,yoshino,-300,-240,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃·伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「托瓦宁……这话说得，我也会受伤的啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,519 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11420300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「哥哥……我有好多话想说……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　道歉,选项2　装傻
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「……这样一来，你一开始就道歉，\n我也没法抱怨了啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真是的……要是知道错了，就别做这种事情嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「哥哥……我跟你说，纳克特抄本的事情我都听说了。\n所以你装傻也没用」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……而且，就算你不掩饰……我也并没有生气」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103707/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「我知道你是为了我，所以并没有什么怨言……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，如果你对我有什么想法的话，\n直接告诉我就好了啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103707/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「我，有点明白哥哥的心情了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:surprise,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103707/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「无论是什么心情，都是因为烦恼很多才决定那样做的……所以当别人说不对的时候，会觉得很痛苦的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103707/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且……我也很固执」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「那种事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102752/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔·塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「我觉得是没法否认的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103707/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「这一点，你和哥哥很像……我想哥哥也是因为知道这一点，所以才把事情交给ASAKA的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「……被你这么说，我已经没法反驳了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103707/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「嗯……能稍微借我一下哥哥吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103510/adv/atlas/stand_a,body:surprise,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103707/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「可以让我和哥哥罗泽特单独待会儿吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,-300,-100,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「明白了。那么，罗泽特我们就先去那边……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102752/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0.5,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔·塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「嗯，走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11230300.jpg,0,255
+endwait
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102752/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「……不知道大人和大人在谈论些什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102752/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔·塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「肯定在说他的坏话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:surprise,rozet,-300,-100,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102752/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔·塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「欺骗妹妹设下陷阱，这种事简直是鬼畜行为。被讨厌也是理所当然的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:sad,rozet,-300,-100,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「啊，那个，虽然埃尔塔大人这么说，但我想两位肯定不会这么想的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:sad,rozet,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「您也不必如此担忧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102752/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔·塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「这次吸取教训，以后就别再骗人了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:sad,rozet,-300,-100,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「那个……恕我冒昧，这次的事情，埃尔塔大人自己也有责任吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102752/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔·塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「唔……说得对。这里暂时撤退」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:surprise,rozet,-300,-100,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,tint,maruta,255_255_255,0.0001,0
+anm,move,maruta,1200_-90,0.5,0
+endwait
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:surprise,rozet,-300,-100,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「啊……她走了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然觉得埃尔塔大人一个人应该没问题，\n但是，需要去追吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,maruta,300_-90,0.5,0
+endwait
+
+
+spriteatlas,download/character/102752/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔·塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「不用。我一个人就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,maruta,1200_-90,0.5,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:surprise,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「…………嗯，好像是这样的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那么，我们就在这里等一会儿……等大人和大人谈话结束吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……虽然还有些担忧，但是您是担心埃尔塔大人说的话吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然罗泽特我的话也许不能让您信服或安心，\n但我认为大人已经明白您的想法和感情了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「首先，我罗泽特根本没能察觉到大人的纠结」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm034.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是你们……果然比我罗泽特看得更清楚更多」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而有人真诚地关注自己，\n肯定是一件无法用任何东西替代的高兴事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「罗泽特我也有很多这样的感触」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――……刚才，有人说我就像寒冷中的一朵花。\n被这样形容」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是……我罗泽特，对此……有点不喜欢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「或许，在寒冷的雪中，有人会发现孤独而坚强地绽放的花\n具有价值，并赞美它的美丽」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我想，「那位」赞美罗泽特就是这个意思吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是……您对我罗泽特来说就像阳光一样温暖。\n而在阳光下，会有许多花儿盛开」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我罗泽特如果要绽放，也想在您的身边……在阳光下的地方\n绽放……是的，这是我的愿望」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「然而，愿望越强烈，恐惧也越强。\n……我罗泽特能让花儿绽放吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我的身体沐浴过很多血液。夺走了很多东西，践踏了很多东西，在\n无数的怨恨中……甚至没有意识到这一点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:sad,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「现在，根已经腐烂，或许已经无法再绽放花儿了――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:surprise,rozet,0,-100,0.7,0.5,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:smile,rozet,0,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「……果然，您就像阳光一样。\n只因轻轻抚摸我的头发，我的心就变得如此温暖」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:smile,rozet,0,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「有了这份温暖……我罗泽特就能鼓起勇气去面对自己和……罪恶……以及，\n痛苦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102911/adv/atlas/stand_a,body:smile,rozet,0,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「――我只有一个请求」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/character/102911/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「可以……牵着我的手吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我想感受您温暖的手心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「今后，当我在路上迷茫时，您的手会引导我罗泽特前进\n请让我相信这一点，好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这样的话……我罗泽特就能毫无迷茫地走下去了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我罗泽特所追求的地方就在前方。\n这正是我罗泽特选择的未来……是的，我可以这么说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,fade,card1,0,1,0
+sprite,download/character/102911/image/main.png,card2,-200,-100,1.5,1,,,,
+endwait,,,,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「――虽然对大人和大人感到抱歉，但像这样\n和您两人相处的时间，我罗泽特觉得很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「肯定……他们两位也想好好谈谈……所以，\n我想再稍微保持这种轻松的时光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「啊，不行呢。说只有一个请求……是假的。\n真是罪恶啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「但如果这个罪能被原谅的话……最后，再多一个请求」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「您……喜欢现在的我罗泽特吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「如果您喜欢的话……虽然很羞愧，但是，\n那个…………想听听您的夸奖」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

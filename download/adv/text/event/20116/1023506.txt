@@ -1,0 +1,402 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm094.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:normal,quinecy,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>昆西</outline>,
+msg,0,<outline width=2 color=black>「看到莉瀬和莉音的互动竟然还有人羡慕，\n真是有点意外呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+anm,tint,quinecy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「不、那个，不是这样的哦？\n绝对不是因为想和谁吵架之类的原因……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「其实是压力太大了吧……」,选项2　「被掌掴倒也可以接受，是吗……？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「也不是那个意思……反而，我一直觉得对你们大家\n总是受到照顾而感到抱歉呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,quinecy,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,300,-60,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「然后，这种抱歉的感觉积累起来，\n最后一圈又回到烦躁和压力上了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,raz,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0.5,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「没关系的拉兹露卡酱。不用掩饰。\n嘛，互相帮助的精神很重要嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rise,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「所以说，不是那样的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:sad,quinecy,300,-120,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>昆西</outline>,
+msg,0,<outline width=2 color=black>「到底哪里可以接受了呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,quinecy,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「……哥哥，想被打吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「呃，呃呃……这种嗜好在这个时代也算\n普通的吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:sad,rlin,300,-60,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「不不，这可真的没有那回事哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,raz,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0.5,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「没想到哥哥竟然有这样的兴趣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:anger,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过莉瀬酱很坚强，虽然有些抵触，\n但如果哥哥想被打的话，也可以答应你哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:unique,rlin,300,-60,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「别闹了。要是被莉瀬的巴掌打到，头和身子可就要分离了\n呢……瞧，哥哥也吓得够呛……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「我才没有那么暴力嘛！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rise,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:normal,raz,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:normal,raz,-300,-110,0.5,0,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「我羡慕的是你们两个能够用自己的方式，\n坦率地把自己的感情传达给对方……这一点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm117.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:normal,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「因为我做不到这样的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,300,-60,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「难道说，这是因为……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:normal,raz,-300,-110,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「嗯……在长眠之前，拥有梦见人之力的我\n曾是人们信仰的对象」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，我绝不是一个值得别人信仰的\n那么伟大的存在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「即使自己明白这一点，却依然受到周围的期待，\n随波逐流地接受了那样的地位，并沾沾自喜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「然后随波逐流……最终走向了悲伤的结局」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果我能再多一点向别人传达自己的感情的话。\n……如果我能有更坚定的意志」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「肯定，仅凭这些……或许连弟弟的事也能保护得了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不仅仅是弟弟。我的过错导致继承了弟弟血脉的历代圣女们\n不得不承受痛苦的原因……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「想到这些，我就忍不住嫉妒起那些能坚定地贯彻自己想法的人。\n……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真是可悲至极呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rlin,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101708/adv/atlas/stand_a,body:sad,quinecy,300,-120,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>昆西</outline>,
+msg,0,<outline width=2 color=black>「这种事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,raz,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0.5,,,,
+anm,tint,quinecy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「――拉兹露卡酱的心情，我也有点明白了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,quinecy,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「莉瀬……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「我也犯过错误，被环境左右，放弃抵抗环境……\n因为这样，失去了重要的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「讨厌自己，羡慕别人，越是羡慕就越是贬低自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:smile,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，如果一直这样沉浸在后悔中，满脸忧郁的话，\n那孩子会揍我一顿的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:smile,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，我决定要向前看……如果拉兹露卡酱觉得我值得羡慕的话，\n那么这种微小的差别并不重要吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:smile,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「无论脚步多么沉重，也要抬头挺胸地走下去……仅仅是这样的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rise,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:normal,raz,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「……真的，莉瀬酱好坚强。做到这一点，\n究竟有多难呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,300,-100,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「只是拼命地逞强罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:smile,rise,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「只是，我不想成为无法面对回忆中那个孩子的自己。\n仅此而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:normal,raz,-300,-110,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,300,-100,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「拉兹露卡酱的弟弟怎么样呢？\n他希望拉兹露卡酱怎样呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:smile,rise,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「回想起过去，或许，\n他会在背后支持你吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:normal,raz,-300,-110,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「――莉瀬酱果然很坚强」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可是，我……果然还是害怕面对回忆中的那个孩子……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rise,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,300,-60,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「即使害怕，也不能从回忆中……从重要的人身边逃跑哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104508/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「莉音酱……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,300,-60,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「虽然在这种地方表示同感会让我觉得和莉瀬有点像\n但这也有点让人不爽」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103907/adv/atlas/stand_a,body:normal,rlin,300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，在这一点上我和莉瀬意见一致。\n我觉得拉兹露卡酱应该好好面对那个重要的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

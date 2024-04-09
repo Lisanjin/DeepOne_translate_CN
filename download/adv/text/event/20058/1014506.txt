@@ -1,0 +1,536 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>罗泽特成为了磨练自己眼力的魔术师，\n为了将这个身体变成打败神敌的工具，进行了各种各样的术式和药物强化。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>然而……尽管是为了目的，但这种行为被判断为亵渎神明，\n结果被防疫修道会驱逐出去。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>从那以后，罗泽特在神父大人的帮助下改善了体质，\n虽然是一点一点地，但开始过上了像人类一样的生活。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>即便如此，罗泽特的身体仍然受到那位魔术师施加的强化影响。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>其中之一就是对炎热和寒冷等感觉迟钝。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>由于反复投药的影响，罗泽特对寒暖产生了抗性。\n就算在极寒的雪山、酷热的沙漠等地，也能击败主的敌人。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>不论身处何处都能发挥性能，对于工具来说是必不可少的。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>但这也意味着对于温暖的感知变得迟钝……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>所以罗泽特想成为一个像人一样的存在，对寒冷和炎热……\n各种温度都能像大家一样感知，这么想着。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11370300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm077.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0.5,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「罗泽特先生，我带来了额外的雪！\n我们用这个来做猫咪的头吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「谢谢你。那么，请把它放在这个躯干上面好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「好的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,rin,-100_-120,1,0
+endwait
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,-100,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呼啊！？ 哎，脚、在雪上滑了……哇、哇哇哇――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,rin,20_-730,0.5,0
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+
+
+spriteoff,rin,0
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:surprise,rozet,300,-100,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「凛大人……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin2,0,0,0,0,,,,
+imgconf,rin2,rin1,0,-380,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「呜……好痛……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0.5,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,-300,-680,0.5,0.5,,,,
+anm,move,rin,-300_-120,1.2,1
+endwait
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「哈啊……突然滑了一下，吓了我一跳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「凛大人，您没有受伤吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「嗯，我没事。谢谢你关心我。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊啊啊啊！ 那、那只猫的雪像消失了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那个，为了确认一下……这是因为我摔倒的时候……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「……是的。那个，散得一塌糊涂。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「对、对不起罗泽特先生……！ 辛辛苦苦做到这一步，\n都是因为我太笨了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:smile,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「请不要介意。\n既然坏了，我们再重新做一次就好了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:surprise,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「罗泽特先生……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那我再去收集一些雪――哎呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呜，不知什么时候，手变得好冰啊……。\n指尖也感觉有些发麻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:smile,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「那么，在这里越俎代庖地让罗泽特我来收集雪并捏成猫的形状吧。\n凛大人在这段时间，请把冰冷的手暖和一下。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「哎，罗泽特先生没关系吗？\n罗泽特先生也一直在摸雪呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:smile,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「请不要担心。罗泽特我的身体对寒冷的感觉迟钝。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:smile,rozet,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为了在任何恶劣环境下都能够击败主人的敌人，\n我的身体就是这样被制造出来的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「……可是，罗泽特先生的手也变红了呢。\n来，把手伸过来。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:surprise,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「嗯，怎么了？ 快点。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「…………这样，可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,-300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「嗯。那么，就这样紧紧握住吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,rin,-120_-120,0.7,0
+anm,move,rozet,120_-100,0.7,0
+endwait
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:surprise,rozet,120,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「啊……凛大人……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,-120,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「果然罗泽特先生的手也变得非常冰冷了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:sad,rozet,120,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「是这样吗……罗泽特我无法感知到」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:normal,rin,-120,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「即使感觉不到冰冷，手还是会冷的。\n我们这样一直牵着手，一定会变暖的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:sad,rin,-120,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊，不过我的手也很冷，紧紧握着\n会不会变暖呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:smile,rozet,120,-100,0.5,0,,,,
+anm,tint,rin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「……不会」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102908/adv/atlas/stand_a,body:smile,rozet,120,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「罗泽特我感觉到了凛大人的手非常温暖。\n如果可以，请让我们再这样待一会儿好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101852/adv/atlas/stand_a,body:smile,rin,-120,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>凛·洛温</outline>,
+msg,0,<outline width=2 color=black>「好的，当然可以。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「……看来你担心的事情是多虑了呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哎呀，什么呀，那个糟糕的口哨声。难道你是在装傻？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「凛和罗泽特，虽然方向有所不同，但都一样笨拙……\n你是担心了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……她们之间的关系复杂，彼此还有很多想法。\n但是，她们克服了这些，现在就这样牵着手。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……有点耀眼呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说，我们只关心这边好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你是不是也对那边感兴趣呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「咕噜――――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「从刚才开始，他就一直那样专注地制作雪像。\n没想到他能如此认真地投入，真是出乎意料。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「其实，我本来想帮忙的……但看他那么专注，\n打扰他也不好呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以……我现在有点无所事事了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哎呀，你为什么要摆出一副烦恼的表情呢？\n难道这个下人连消磨时间的能力都没有吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然说要求下人做这些可能有些过分了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「没办法呢……那我们去四处看看吧。\n其他人都在专心制作雪像，根本无暇顾及我们。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……我可不是在关心你。我说过了，\n我现在无所事事……把时间用得有意义一些不好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且……这里的美丽雪景真是难得一见。\n虽然旁边是个下人有点扣分，但四处看看也不错呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说回来……在这样下雪的地方，指尖总是会冻得很冷，\n该怎么办呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,elica,0.6_0.6,0.5,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:unique,elica,0,-100,0.6,0,,,,
+msg,0,<outline width=2 color=black>「哎呀，我可不记得说过让你牵手的话哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:normal,elica,0,-100,0.6,0,,,,
+msg,0,<outline width=2 color=black>「话虽如此，如果下人非要这么做的话，那就无可奈何地让你\n这样吧。真是的……没办法呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>仅仅是轻轻握住的手掌，我能感受到他的温暖……仅仅是\n这样，就让我忘记了这个地方的寒冷。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>为什么这双手……能如此轻易地从我身上\n带走寒冷。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>而且……为什么我只是这样一点点接触，就立刻\n感到热度呢。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,elica1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103307/adv/atlas/stand_a,body:shy,elica2,0,0,0,0,,,,
+imgconf,elica2,elica1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「让我困惑，让我迷茫……真是的，\n你这个人……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

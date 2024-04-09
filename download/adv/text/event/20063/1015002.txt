@@ -1,0 +1,714 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11260300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「这群杂鱼也敢嚣张成这样！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20020101/adv/image/20020101.png,enemy1,0,-250,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Dark,em1,default,animation,0,0,0,1,0.8,0
+playse,download/character/102002/se/se_c02004_ef_hit.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「――――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,tint,enemy1,0_0_0,0.5,0
+endwait,,,,,,,,,,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:normal,thisa,300,-100,0.5,0.5,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「哼，轻而易举。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:normal,thisa,300,-100,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「嘿，你们还挺有用的嘛。\n蒂萨特意夸奖你们一下。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:unique,tabasa,-300,-120,0.5,0,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「……真是受够她了。可以打飞她吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,-300,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「呃……首先我有很多问题想问。\n你的名字叫蒂萨，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:normal,thisa,300,-100,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「没错。没办法，就让你们叫我蒂萨大人吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,-300,-220,0.5,0,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「……我还是免了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,thisa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「为什么蒂萨逃跑了呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,-300,-220,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「我记得虚像一般不会主动攻击同一个幻梦境产生的失忆者吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:normal,thisa,300,-100,0.5,0.5,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「那些家伙的事情，蒂萨怎么可能知道。\n说不定是因为蒂萨太可爱，所以想搞点事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,-300,-220,0.5,0,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:unique,tabasa,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「真的可以打飞她一次吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,thisa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「吵架可不好哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:sad,tabasa,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「总之虚像也打倒了，应该没问题了吧。\n我实在不想再和她纠缠下去，我们去别的地方吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:sad,thisa,300,-100,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「哈？等等，要是再出现虚像像刚才那样怎么办？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「那你自己想办法解决啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:sad,thisa,300,-100,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「难、难道就不能帮帮忙，至少把我带到其他失忆者那里……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,-300,-120,0.5,0,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「为什么总是居高临下的口气。告诉你，我们也没有空闲到\n能帮助其他失忆者的程度。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:anger,tabasa,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「像你这种不会战斗只会摆架子的人，更是如此。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,-300,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「但是，虽说她是失忆者，看上去她并不擅长战斗，\n把这样的人丢下总觉得不太好呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「不擅长战斗……呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,thisa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「塔芭莎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「我们试试看吧……就这么做！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:surprise,thisa,300,-100,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「…………啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Dark,em1,default,animation,0,0,0,1,0.8,0
+playse,download/character/102002/se/se_c02004_ef_hit.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+spine,download/adv/spine/Water,em2,default,animation,0,0,0,1,1.3,0
+playse,/download/sound/se/se_050.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+endwait,,,,,,,,,,,
+
+
+flash,255,255,255,2,0.3,1.0
+playse,/download/sound/se/conA.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:anger,miliam,-300,-220,0.5,0.5,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+spriteatlas,download/character/180504/adv/atlas/stand_b,body:anger,thisa,300,-100,0.5,0.5,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「突然干什么啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:anger,miliam,-300,-220,0.5,0,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「就是啊，就算生气，也不能突然攻击别人……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「真烦人……我可是有手下留情的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说回来，虽然是手下留情，但你轻易地抵消了我的魔法。\n说自己不能战斗，是不是有点勉强？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:sad,thisa,300,-100,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,-300,-220,0.5,0.5,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「那么，为什么刚才一直在逃跑呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:sad,thisa,300,-100,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「那种事情，和你们没关系嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:normal,tabasa,-300,-120,0.5,0.5,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「我根本不在乎她的理由。根本没必要保护她。\n所以就算把她丢下，我也不会觉得内疚。只要明白这一点就行了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:unique,thisa,300,-100,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「什、啊……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:unique,thisa,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哼，我才不在乎呢？就算没有依靠你们这些弱鸡，\n蒂萨也能过得好好的……反正那样更轻松……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:sad,tabasa,-300,-120,0.5,0,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「怎么说呢，性格和头脑都挺让人失望的家伙呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:anger,thisa,300,-100,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蒂萨</outline>,
+msg,0,<outline width=2 color=black>「什、什么啊，你是在瞧不起蒂萨吗！？\n你也不过是个矮子，别居高临下的好吗！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:unique,tabasa,-300,-120,0.5,0,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「矮子，你说什么……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,thisa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:anger,thisa2,0,0,0,0,,,,
+imgconf,thisa2,thisa1,0,0,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180504/adv/atlas/stand_a,body:anger,thisa,300,-100,0.5,0.5,,,,
+anm,tint,thisa,150_150_150,0.0001,0
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:unique,tabasa,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「你也差不多吧……！就算是同样的失忆者，被唯或者\n贝托丽萨说我还能忍受，可被你说我可受不了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,-300,-220,0.5,0.5,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「啊，呃……吵、吵架可不好……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:normal,miliam,-300,-220,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「确实，这样下去局势会失控的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,vi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi2,0,0,0,0,,,,
+imgconf,vi2,vi1,0,-980,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「哎呀，住手住手！你们听到了吗！\n银翼啊，够了，快放我下来！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:surprise,vi2,0,0,0,0,,,,
+imgconf,vi2,vi1,0,-980,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「啊！？哦、啊，银翼！这个笨蛋！\n就算这么说也不能在空中松手啊……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11260300.jpg,1,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:surprise,vi,300,1500,0.5,0,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_067.mp3
+anm,move,vi,-100_-1500,0.7,0
+endwait
+
+
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,-300,-220,0.5,0.5,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「…………！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102802/adv/atlas/stand_a,body:sad,miliam,-300,-220,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆·莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「什、什么！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:anger,vi,300,-1500,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+anm,move,vi,300_-240,1.0,0
+endwait
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「这个……银翼！你到底在干什么！\n你是想毁了我吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180404/adv/atlas/stand_a,body:normal,ginbane,-300,1500,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+
+anm,move,ginbane,-300_-160,1.0,0
+playse,/download/sound/se/se_046.mp3
+endwait
+anm,move,ginbane,-300_-150,0.1,0
+endwait
+
+
+spriteatlas,download/character/180404/adv/atlas/stand_a,body:unique,ginbane,-300,-150,0.5,0,,,,
+name,<outline width=2 color=black>银翼</outline>,
+msg,0,<outline width=2 color=black>「因为唯让我放她下来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:anger,vi,300,-240,0.5,0,,,,
+anm,tint,ginbane,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「这叫放下来，不叫扔下去！\n而且你，肯定是故意把我的名字说错的吧？对吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180404/adv/atlas/stand_a,body:sad,ginbane,-300,-150,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>银翼</outline>,
+msg,0,<outline width=2 color=black>「我带你在空中散步，为什么还要生气呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:anger,vi,300,-240,0.5,0,,,,
+anm,tint,ginbane,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「所以我说了，一开始就告诉你要控制速度了。\n为什么把音给丢下了！如果是空中散步，就应该慢慢飞啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180404/adv/atlas/stand_a,body:sad,ginbane,-300,-150,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>银翼</outline>,
+msg,0,<outline width=2 color=black>「可我已经很慢了啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:sad,vi,300,-240,0.5,0,,,,
+anm,tint,ginbane,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「哈……你这家伙……嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哦，你们是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,vi,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「你好，唯。银翼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「嗯。今天也没遇到灾祸，真是太好了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180404/adv/atlas/stand_a,body:normal,ginbane,-300,-150,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>银翼</outline>,
+msg,0,<outline width=2 color=black>「你好，哈罗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,vi,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,ginbane,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「对啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102002/adv/atlas/stand_b,body:sad,tabasa,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎·川宁</outline>,
+msg,0,<outline width=2 color=black>「才对上一个字而已……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180404/adv/atlas/stand_a,body:normal,ginbane,-300,-150,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>银翼</outline>,
+msg,0,<outline width=2 color=black>「还有……那边的失忆者是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0.5,,,,
+anm,tint,ginbane,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「哦，不是蒂萨吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/180404/adv/atlas/stand_a,body:normal,ginbane,-300,-150,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>银翼</outline>,
+msg,0,<outline width=2 color=black>「认识的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,ginbane,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「嗯。蒂萨是我们所认识的，最新出现的失忆者。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,387 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>没有愿望的人，肯定是不存在的。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>所以，如果这个领域不接受没有愿望的存在，\n那么那个对方一定是孤独的。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>“她”也许并不在意自己没有愿望。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>但是……这让人感到有些寂寞。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>比如说，希望明天的早餐好吃一点。\n比如说，希望明天能和喜欢的人多聊一会儿。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>或者，不是那么具体的形式，而是更模糊的期望。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>愿望毕竟是在向明天看去时，不经意间浮现出来的东西。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>所以……我不想接受“她”没有愿望这件事。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alt1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:normal,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「非人之物，并不向神祈愿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>就是这样。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>――用这种理由就轻易放弃，怎么可能。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>因为对我来说，你并不是那么微不足道的存在，\n所以不能轻易地放弃。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>即使你不希望，只要有我能为你做的事情，我就会――。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11130301.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+wait,0.5
+endwait
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「看来我们两个被传送时被分开了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+msg,0,<outline width=2 color=black>「真是狼狈……尽管为了不让亚纱花的身体受损而压制了大部分力量，\n但被那样的虚像传送实在是太丢人了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且……居然还把你也牵连进来了……。\n真是的，那一刻为什么要抓住我的手呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「担心你」,选项2　「觉得应该这么做」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「我本以为自己并不是那种需要你担心的脆弱存在呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……话虽如此，在露出这种丑态之后说这些也没有说服力了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「觉得应该这么做，这可真是个含糊的说法。\n你应该更关心自己的安危才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果这次传送到了一个致命的环境，你怎么办？\n就算我能应付，你也未必能承受得住哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「当然，你是亚纱花的重要之人，我会全力保护你，\n但现在我的极限也是有限的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，如果再发生类似的事情，那时请优先考虑自己――虽然说了\n你也不会听进去吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，也许正因为你是这样的人，亚纱花才会被吸引呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「话说回来，亚纱花为什么会做出这么冒失的事情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「刚才那一瞬间，她压制住了我的力量」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我是为了亚纱花而存在的，但我的存在比亚纱花更强大。\n这个肉体的主导权已经被我占据了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「本来亚纱花干涉这样的我是不可能发生的。\n即使为了阻止我也要承受如此强大的压力……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:sad,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………虽然我多少能理解她在想什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「总之，既然已经发生了就没办法，让我们转换心情继续前进吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「看来我们被传送到了相当远的地方，得赶紧汇合才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然不会说卡蒂亚很弱，但毕竟一个人保护大家\n负担还是很大的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:normal,alt,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊……当然，你不用担心途中的安全」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20240206/adv/image/20240206.png,enemy1,0,-170,1.35,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100181/adv/atlas/stand_a,body:smile,alt,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「无论出现什么情况，我都不会让亚纱花的身体和你，\n受到一点伤害的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11130301.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100607/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「真没想到，她竟然被传送走了……。\n在传送之前，她的状况似乎有些不对劲，会不会有问题呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100607/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「嗯……亚纱花好像做了什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:surprise,catia,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100607/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「刚才，ASAKA的动作突然停止了一下，气息变得强烈……。\n我猜可能因为这个原因才被传送走的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「也就是说，亚纱花从内部干扰了她？\n到底是为什么呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「正因为如此，他也被传送走了……在正常情况下，\n真不敢相信亚纱花会做出这样的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100607/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「……我也不知道」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「是吗……关于这件事，看来我们还需要问问亚纱花本人\n才能弄明白」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「她们离开后虚像也消失了，\n我们还是尽快汇合吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100607/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100353/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「……话说回来，她们离开后虚像消失了，\n这难道意味着，在这个领域中没有愿望的人是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100607/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black></outline>,
+msg,0,<outline width=2 color=black>「嗯……没有寻求祈愿的是，ASAKA」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100607/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「ASAKA不祈愿。不看向明天。\n因为对ASAKA来说，全部就是亚纱花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
