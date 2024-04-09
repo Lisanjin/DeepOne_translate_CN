@@ -1,0 +1,504 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+
+
+sprite,download/character/100213/image/main.png,blizit,0,0,2,0,,,,
+anm,fade,blizit,0,0,0
+anm,scale,blizit,1_1,1,0
+anm,fade,blizit,255,1,0
+endwait,,,,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「唔唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「反正，明明总是在逞强，却还是很可怜什么的，\n就是这种感觉吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「没错，我就是那种喝醉了马上就无法保持平静的\n可怜女人……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「尽管如此，还是一直在努力……这样下去真是太糟了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我受够了……酒，再喝一杯……不喝就没法继续了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「不行」,选项2　「喝一杯就够了？」
+if,select_===_1,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「为什么不行啊，欺负人有什么好玩的嘛……呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「那、那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……啊、再、两杯？　三杯、也说不定？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「哼、哼哼，喝多少都是我的事情吧！\n什么嘛，那种嫌弃的表情！　太过分了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,blizit,0.5
+endwait,,,,,,,,,,,
+sprite,download/character/6009/image/600912.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「这个……真是，酒可真是可怕的东西啊。\n暴露出平时隐藏起来的人的本性」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「贝托喝酒后也会突然变得很撒娇，但那边也是相当的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「嘛，平时都在装坚强，压抑的东西\n也多了去了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「嗯……唯桑，只是在说布丽吉特桑的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「这这，我也会照顾贝托的，别拉我的头发了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「感觉有点随便啊—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「唉……真麻烦啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「麻、麻烦这么说了！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「只是你的错觉罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「不是错觉哦！　绝对说了呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「这个……真是的，彼此都是醉鬼，真让人头疼啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+sprite,download/character/100213/image/main.png,blizit,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「让你困扰了……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「明明总是陪着亚纱花什么的，亚纱花什么的，亚纱花什么的，那种感情激烈又麻烦的女人，\n却不愿意陪我……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「就是嘛，陪这么麻烦的女人真的很麻烦呢，既然觉得麻烦那就没办法了\n对不起我这么麻烦呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「唔唔，我受够了，我要喝酒……――啊啊，别把酒拿走嘛……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「喝醉了，让人看到这么丢脸的样子，而且还不能喝酒\n到底是怎么回事，怎么回事啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+sprite,download/character/6009/image/600912.png,card1,0,0,1,0.5,,,,
+endwait,,,,,,,,,,
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「平时的样子完全不见了呢……嗯。果然是时候用法术解酒了吗？　至少这种程度的麻烦我还是能帮忙的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「――……嗯。再让她们保持这样一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「什么嘛。平时那么强势的女人现在这副狼狈模样很可惜吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这里、开玩笑的。我知道的，是想趁这个机会让她们发泄一下\n积压的情绪吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「喝醉了就会不停地抱怨……真是的，\n你这么正直地陪着喝醉的人，还真是个好男人啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「我觉得唯桑应该更多地关注我才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「总是总是，明明约好了见面却总是东躲西藏、\n约定好了却又因为心情不好而爽约……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我偶尔也会生气的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「哎呀，我也被咬了吗……好啦好啦，贝托，喝下一杯酒吧。\n要不然就喝到烂醉如泥然后睡觉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「嗯嗯……又想这样随便听过去就算了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+sprite,download/character/100213/image/main.png,blizit,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「你也喝点嘛……就让我一个人丢脸\n不好啦……我也要看你丢脸的样子……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「嘛，好不好，一起喝吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310301.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm098.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playse,/download/character/103707/se/se_c03707_skill_01.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0.5,,,,
+anm,tint,vi,150_150_150,0.0001,0
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:surprise,blizit,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「――啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「嗯，怎么样？　我觉得酒应该已经解了，话虽如此，之后还是喝了不少酒。一次法术可能还不够彻底解酒呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「啊、啊、啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:unique,vi,300,-240,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「啊啊啊啊啊啊啊啊啊啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「快、杀了我！　现在就把我杀了吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:smile,vi,300,-240,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「哎哟哟。看来醉意已经完全醒了呢。\n而且，还记得喝醉时的事情……真是麻烦啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「麻烦什么――不是啦！！！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「喂，怎么了？　发生什么了？　我做错什么事了吗？\n为什么要让我这么丢脸……啊、啊啊啊……活不下去了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「别做这么夸张的反应。喝酒时的丢脸之事，就让那个\n流水冲走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「要不要把你也冲走！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:sad,vi,300,-240,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「哦哦，这可真可怕……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0.5,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「这次是唯桑不对……欺骗布丽吉特桑让她喝酒……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我是自己喝的，所以还能接受――不，虽然说\n被看到那样的样子确实很丢脸……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「布丽吉特桑肯定也不想让人看到那样的样子……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:unique,vi,300,-240,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「是啊……没想到，布丽吉特会露出那样的姿态……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「如果被人看到那样的样子，也能理解会想发火的心情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:unique,vi,300,-240,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「嘛，那种样子本来就不该让人看见的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,weat,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「那样的姿态那样的姿态，真是烦人！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呜、呜啊……被这样的狐狸骗得团团转，真想揍自己一顿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,blizit,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102302/adv/atlas/stand_a,body:sad,weat,-300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「唯桑，还是道歉吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102202/adv/atlas/stand_a,body:smile,vi,300,-240,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「哎呀，抱歉抱歉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「你明明就是在故意捉弄我对吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「咕、唔唔……总、总之」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,blizit,0.6_0.6,0.5,0
+anm,move,blizit,0_-200,0.5,1
+endwait
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:anger,blizit,0,-200,0.6,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「――你明白了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,blizit,0.7_0.7,0.5,0
+anm,move,blizit,0_-250,0.5,1
+endwait
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:anger,blizit,0,-250,0.7,0,,,,
+msg,0,<outline width=2 color=black>「在这里看到的事情、听到的事情都要忘记，不再回忆，\n永远不提……明白了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,blizit,0.8_0.8,0.5,0
+anm,move,blizit,0_-290,0.5,1
+endwait
+
+
+spriteatlas,download/character/100213/adv/atlas/stand_a,body:smile,blizit,0,-290,0.8,0,,,,
+msg,0,<outline width=2 color=black>「如果违反了承诺――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「――我会杀了你然后自己也死。一起去那个世界好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,656 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11510300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm098.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rise1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:anger,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「──逃不掉啦啊啊啊啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/monster/20190201/adv/image/20190201.png,enemy1,1200,-150,0.8,0,,,,
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:anger,rise,1200,-100,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+anm,move,enemy1,-1200_-180,1.4,0
+wait,0.3
+playse,/download/sound/se/se_016.mp3
+anm,move,rise,-1200_-100,1.4,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:anger,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,-255,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「站住啊啊啊啊啊啊啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20190201/adv/image/20190201.png,enemy1,-1200,-150,0.8,0,,,,
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:anger,rlin,-1200,-60,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,enemy1,1200_-180,1.4,0
+wait,0.3
+playse,/download/sound/se/se_016.mp3
+anm,move,rlin,1200_-60,1.4,0
+wait,0.3
+spine,download/adv/spine/Explosion,em1,default,animation,0,-400,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+wait,0.4
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+wait,0.4
+spine,download/adv/spine/Explosion,em1,default,animation,0,400,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+wait,0.7
+endwait
+spineoff,em1,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:unique,norn,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:unique,asaka,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「好快呢……还有莉音，你是不是对老虎机有什么怨念？\n直接撞上去把它撞得粉碎……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:unique,norn,-300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「因为在躲避老虎机的同时追击很麻烦，所以干脆正面撞上去……\n你的大脑也被肌肉填满了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嘛，不管莉音的头有多少被肌肉占据了，那个虚像似乎通过那枚金币\n被奇怪的力量强化了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:sad,asaka,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「怎么办？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「看起来挺有趣的，不如暂时放任她们如何？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:sad,rlin,300,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「一点也不好玩好吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「你们两个也来帮忙嘛！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rise,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「如果靠得太近，怕是会被莉音吹飞呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rlin,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:anger,rise,300,-100,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「别学我说话嘛！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rise,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:anger,rlin,300,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「才不会把你吹飞呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:smile,norn,-300,-120,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「亚纱花，我还是觉得暂时这样挺好的，挺有趣的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rlin,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:sad,asaka,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「真是的……别说那种话了，老实点──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:sad,rise,-1200,-140,0.7,0,,,,
+endwait,,,,,,,,,,,
+anm,move,rise,-300_-140,0.7,0
+endwait
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「哥哥，诺恩她们欺负我！安慰我一下！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:sad,rlin,1200,-100,0.7,0,,,,
+endwait,,,,,,,,,,,
+anm,move,rlin,300_-100,0.7,0
+endwait
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「只有莉濑才能这样太不公平了！哥哥，我也要我也要！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:anger,rise,-300,-140,0.7,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「啊，喂，别靠近了，你是想把哥哥也炸飞吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:anger,rlin,300,-100,0.7,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「已经逐渐习惯控制力量了，所以不用担心啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:anger,rlin,300,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「话说回来，你们两个的轻松愉快的对话听着太有趣了\n忍不住想笑出声，能不能闭嘴一下？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:anger,rise,-300,-140,0.7,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「你说什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「──你们俩，别靠得太近了。还不去抓那个虚像吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:surprise,rise,-300,-100,0.5,0.5,,,,
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:surprise,rlin,300,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉瀬＆莉音</outline>,
+msg,0,<outline width=2 color=black>「是、是的，对了对了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_018.mp3
+anm,move,rise,-1200_-100,0.7,0
+anm,move,rlin,1200_-60,0.7,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rise1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:sad,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「刚、刚才的笑容好可怕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:sad,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,-255,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「再靠近哥哥的话，在亚纱花面前就会被烧掉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:unique,asaka,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「我才不会因为这点事就烧人呢，真是失礼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「你是不是有点嫉妒了呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:sad,asaka,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「从那个意义上说……那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:anger,asaka,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊，真的！别再调侃我了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:smile,norn,-300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「哈哈哈，我会不会也被烧掉呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:anger,asaka,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「我说了我不会烧人的啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:anger,rlin,300,-60,0.5,0.5,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「亚纱花酱，诺恩酱，完全没有帮忙的意思呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:anger,rlin,300,-60,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「既然这样，没时间吵架了，先暂时合作一下\n解决那个虚像吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20190201/adv/image/20190201.png,enemy1,0,-150,0.8,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「―――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,jump,enemy1,300_-150_60_3,0.5,0
+endwait,,,,,,,,,,,
+wait,0.3
+anm,jump,enemy1,-300_-150_60_5,0.7,0
+endwait,,,,,,,,,,,
+wait,0.3
+anm,jump,enemy1,0_-150_60_3,0.5,0
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:surprise,rise,-300,-100,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:surprise,rlin,300,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:surprise,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「……………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:unique,rlin,300,-60,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「那家伙是在捉弄我们吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:unique,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「捉弄我们呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:smile,rlin,300,-60,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「……………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:smile,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「………………………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,300,-60,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「莉濑，莉濑，尽量强化一下身体吧。\n就算和卡车正面相撞也没事那种程度」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「嗯？为什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,300,-60,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「没事没事♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「嗯哟？那个……不管能不能安然无恙地撞上卡车，\n只要全力做就可以了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,300,-60,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「对对对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「明白了──哼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_019.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:surprise,rlin,300,-60,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「哦哦，厉害。能轻松完成这种高难度的练气，像你这样的内界系魔术师\n可不多见呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:smile,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「哟～没那么厉害啦。那，总之我已经把身体弄得超级坚固了，\n接下来要做什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:smile,rlin,300,-60,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「把手伸出来吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:surprise,rise,-300,-100,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「嗯哟？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,rise,100_-100,0.5,0
+endwait
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:normal,rlin,300,-60,0.5,0,,,,
+imgconf,rlin,,300,-60,,,-1,0.5,0.5,0
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「好，那么接下来──」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:surprise,rise,100,-100,0.5,0,,,,
+playse,/download/sound/se/se_055.mp3
+anm,move,rlin,100_-60,0.3,0
+anm,move,rise,400_-100,0.4,0
+endwait
+
+
+spriteatlas,download/character/103953/adv/atlas/stand_a,body:anger,rlin,100,-60,0.5,0,,,,
+imgconf,rlin,,100,-60,,,-1,0.5,0.5,0
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音·阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「人类火箭莉濑号，发射啊啊啊啊――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:surprise,rise,400,-100,0.5,0,,,,
+playse,/download/sound/se/se_046.mp3
+anm,move,rlin,0_-60,0.2,0
+anm,move,rise,-1200_600,0.6,0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rise1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103655/adv/atlas/stand_a,body:surprise,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,-650,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「嗯哟呜呜呜呜呜――――！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

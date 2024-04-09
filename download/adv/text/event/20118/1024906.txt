@@ -1,0 +1,700 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>聚集在异端的人们大多数并没有什么团队意识。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>尽管如此，奇怪的是，还是有一个地方能让这些人聚集在一起。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>那是一个位于深不可测的森林中，曾经用于某种研究的废墟地下。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>——那里被称作“集会所”或“垃圾场”。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>当我在达芙妮的带领下来到那里时，遇到了莎夏。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「――你这样的人，不应该来这种地方。\n真的，达芙妮到底在想什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>虽然我没有故意反驳她说这话没道理……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>――无论如何都要实现自己的愿望。这种自私自利，\n恐怕和聚集在这个地方的其他人们相差无几。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>相反，我觉得莎夏才是与这个异端集团格格不入的。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>在集会所里，她总是在我身边关心着我。\n这样理所当然的举动，在那个地方显得如此与众不同……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>但是……啊，原来如此。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>我想，肯定是我之前没有察觉到而已。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>关于莎夏的事情，我一点都不了解。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>她也是一个自私自利的人，掉进了垃圾场。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10050100.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm119.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,-200,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+playse,/download/sound/se/slaC.mp3
+flash,240,20,20,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,dana_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100480/adv/atlas/stand_a,body:anger,dana_s2,0,0,0,0,,,,
+imgconf,dana_s2,dana_s1,0,-730,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>达娜的影子</outline>,
+msg,0,<outline width=2 color=black>「咳……咳咳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:sad,soka,300,-110,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「想花……为什么要砍达娜……你在干什么……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:sad,soka,300,-110,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「不是……这不是我的意思……刚才那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:sad,patrisia,-300,-200,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亚·波特曼</outline>,
+msg,0,<outline width=2 color=black>「难道说，想花也被操控了……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:sad,soka,300,-110,0.5,0,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「怎么可能……从一开始，我就对莎夏的魔导书保持警惕。\n并没有被她突然袭击，怎么可能这么容易就被操控了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,patrisia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:normal,sasya,-300,-110,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「想花……最初是什么时候？你在说什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:sad,soka,300,-110,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「诶……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:normal,sasya,-300,-110,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「当你出现的时候，我确实有点吃惊……你和达芙妮一起行动，\n为什么会站在那里，现在这些已经不重要了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:normal,sasya,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「只是，只是……我觉得很高兴你能在这里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:normal,sasya,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「谁知道呢，原来之前为某个时刻准备的陷阱，竟然会如此派上用场。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:normal,sasya,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「想花，在那个垃圾场，轻易地受到我的力量的影响的，\n只有你一个人……真的，你真的不适合异端。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:sad,soka,300,-110,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「难道说……「最初」是指……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:normal,sasya,-300,-110,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「<ruby>悲狂戮葬|エツェル·アントラム</ruby>――染上吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_067.mp3
+flash,0,0,0,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,300,-110,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「啊，这个，从我内心……啊、啊、啊啊啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,sasya,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「想花！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:anger,patrisia,300,-200,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亚·波特曼</outline>,
+msg,0,<outline width=2 color=black>「你……难道不是想花的同伴吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:normal,sasya,-300,-110,0.5,0.5,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「别对异端抱有那种期待。\n首先，现在的想花已经站在你们这边了——也就是说，她是我的敌人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:anger,patrisia,300,-200,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亚·波特曼</outline>,
+msg,0,<outline width=2 color=black>「你……真的这么想要复仇吗……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:anger,sasya,-300,-110,0.5,0,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「就是这样，还要我说多少遍？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:normal,sasya,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「喂，道明寺？被同伴砍伤的感觉如何？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:normal,sasya,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「痛吗？难受吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:anger,sasya,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――但是，这些还远远不够。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:anger,sasya,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你抢走了玛丽娜，我不能满足于让你稍微受点苦。\n我要让你痛苦得更深一些——想花！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,patrisia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:anger,soka,300,-110,0.5,0.5,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,sasya,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101602/adv/atlas/stand_a,body:anger,patrisia,-300,-200,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亚·波特曼</outline>,
+msg,0,<outline width=2 color=black>「想花，不要过去！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,300,-110,0.5,0,,,,
+anm,tint,patrisia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_063.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,patrisia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101405/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「咕……没用的，已经听不到我们的声音了……达娜！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,card1,0,0,1280,250,0.5,,,,
+sprite,download/character/100480/image/main.png,card2,0,0,0,0,,,,
+imgconf,card2,card1,0,180,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>达娜的影子</outline>,
+msg,0,<outline width=2 color=black>「――你们也是，还要让我说多少遍同样的话？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「在这个世界上，只有我一个人有权以玛丽娜为理由挥舞利刃。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「只有我——才能承受这种事情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10050100.jpg,1,255
+endwait
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash4_green,em1,default,animation,0,0,0,-1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+anm,move,soka,1200_-110,0.5,0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:surprise,sasya,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「……什、么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:anger,sasya,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊，你这是怎么回事……为什么被砍了还能如此平静地行动！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:anger,sasya,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「明明那个伤口不是那么浅的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/character/100480/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>达娜的影子</outline>,
+msg,0,<outline width=2 color=black>「难道说――你把我当成普通人类来对待了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「到底，你把我当成什么了？\n现在，因为这个身体被强行容纳，所以看起来像个人类而已。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我是怪物哦？被砍一下就死的可能性是没有的吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「而且，既然把脖子伸到了这样一个怪物面前……肯定已经做好了\n被千刀万剐的觉悟了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:anger,sasya2,0,0,0,0,,,,
+imgconf,sasya2,sasya1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么我的心意――复仇，无法触及这个女人。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>难道说，我的复仇如此脆弱，对这个女人来说，\n根本不值一提？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>我不接受。我无法接受。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+name,
+msg,0,<outline width=2 color=black>那样的话，我的对玛丽娜的感情……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104803/adv/atlas/stand_b,body:anger,sasya2,0,0,0,0,,,,
+imgconf,sasya2,sasya1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「别开玩笑了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm071.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/character/104803/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「为了实现这个愤怒……为了复仇，哪怕是……将我一起烧成灰烬也无所谓。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「用那<ruby>疯狂|爱</ruby>尽情地焚烧吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+msg,0,<outline width=2 color=black>「<ruby>悲狂戮葬|エツェル·アントラム</ruby>！用我唯一剩下的<ruby>幻|爱</ruby>释放出焚烧一切的火焰之花吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,card1,0,0,1280,250,0.5,,,,
+sprite,download/character/100117/image/main.png,card2,0,0,0,0,,,,
+imgconf,card2,card1,0,-120,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>？？？</outline>,
+msg,0,<outline width=2 color=black>「――啊啊，我会再次把你化为灰烬的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>？？？</outline>,
+msg,0,<outline width=2 color=black>「我的心里空荡荡的……好冷，冰冷得让人无法忍受，渴望填补这个空隙。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「<ruby>怪物|你</ruby>燃起的火焰的温度，会给我的心带来温暖吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/character/100117/image/main.png,card1,200,-80,3,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1.4_1.4,1.5,0
+anm,fade,card1,255,1.5,0
+endwait,,,,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「呐――达娜·达雷尔·道明寺。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+sprite,download/character/100480/image/main.png,card1,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,,,,
+name,<outline width=2 color=black>达娜的影子</outline>,
+msg,0,<outline width=2 color=black>「赤井，亚纱花……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,1
+stopbgm,1,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm069.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>在离开家去财团设施的前一天……那个孩子来到了我的房间。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>？？？</outline>,
+msg,0,<outline width=2 color=black>「姐姐……那个，我，没事的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「虽然一个人会有点寂寞。\n但是，这样大家才能好好生活下去。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「而且，你看……我还有姐姐送给我的丝带呢。\n所以，没关系的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「…………不过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「总有一天，我还能……再见到姐姐吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「如果能见到就好了……一个人总是会觉得寂寞的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>当父母被财团提议领养孩子时，第一个说要接受的就是那个孩子本人。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>直到现在，我也不能理解。一个年幼的孩子，为了家人而牺牲自己的选择……这需要多大的勇气。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>那个孩子如此善良、聪明、坚强，以至于能做出这样的选择……所以，作为她的姐姐，我也要尽量表现得坚强。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「没关系的，玛丽娜……当你无法承受地痛苦时，被逼得走投无路时，\n姐姐一定会来救你的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「所以，放心吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

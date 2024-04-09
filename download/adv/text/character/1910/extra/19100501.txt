@@ -1,0 +1,228 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,500,-70,0.4,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_01.mp3
+name,<outline width=2 color=black>朱雀院椿</outline>,
+msg,1,<outline width=2 color=black>「……糟、糟糕了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,500,-70,0.4,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_02.mp3
+msg,1,<outline width=2 color=black>「这下，果然，感觉很糟糕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:sad,tubaki,500,-70,0.4,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_03.mp3
+msg,1,<outline width=2 color=black>「呃呃……那个魔像，一台得多少钱啊。\n话说，训练场的墙和地板之类的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:sad,tubaki,500,-70,0.4,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_04.mp3
+msg,1,<outline width=2 color=black>「修缮费用……朱雀院的财力应该能应付得了……不对，首先在这个世界\n朱雀院什么的都不管用，我们还是寄宿状态的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,500,-70,0.4,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_05.mp3
+msg,1,<outline width=2 color=black>「难、难道说，人生第一次借钱？　异世界转移就开始借钱生活……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「……要我借钱给你吗？」,选项2　「发生了什么事？」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+playvoice,1,download/character/191005/adv/sound/fav191005_01_06.mp3
+name,<outline width=2 color=black>朱雀院椿</outline>,
+msg,1,<outline width=2 color=black>「哇哦！？　你、你是……从哪里听到的……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_07.mp3
+msg,1,<outline width=2 color=black>「话说回来，借、借钱给我，那就是说，果然还是要借钱……！？\n你到底想让我背负多少债务啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_08.mp3
+msg,1,<outline width=2 color=black>「不、不行的哦！？　我已经有了心意相通的人，刀辉君……！\n我的身体和心灵都是，刀辉君的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_09.mp3
+msg,1,<outline width=2 color=black>「唯独可以任性对待我的人，只有刀辉君才行——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:surprise,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_10.mp3
+msg,1,<outline width=2 color=black>「――……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:shy,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_11.mp3
+msg,1,<outline width=2 color=black>「慌、慌乱之际，我好像说了什么极其离谱的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:surprise,tubaki,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_12.mp3
+name,<outline width=2 color=black>朱雀院椿</outline>,
+msg,1,<outline width=2 color=black>「啊、你是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:surprise,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_13.mp3
+msg,1,<outline width=2 color=black>「呃，那个，有没有发生什么事，说是有也对，\n说是没有也对……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_14.mp3
+msg,1,<outline width=2 color=black>「没、没有什么事情发生，会不会行呢……。\n拜托了，请有人告诉我这只是一个梦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:sad,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_15.mp3
+name,<outline width=2 color=black>朱雀院椿</outline>,
+msg,1,<outline width=2 color=black>「唔……失态了，对不起。稍微有点冷静不下来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:sad,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_16.mp3
+msg,1,<outline width=2 color=black>「实、实际上呢……关于我们姐姐们的事情，就是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:sad,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_17.mp3
+msg,1,<outline width=2 color=black>「都子姐姐和抚子姐姐好像进行了一场对决……就是，\n怎么说呢……好像非常兴奋的样子？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_18.mp3
+msg,1,<outline width=2 color=black>「然、然后把训练场给毁掉了啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:unique3,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_19.mp3
+msg,1,<outline width=2 color=black>「顺、顺便，在制止她们时出现的警备用魔像也被破坏了二十台左右\n啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:anger,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_20.mp3
+msg,1,<outline width=2 color=black>「要让谁背债务的话请让我姐姐们背吧！\n我和这事无关！　和这事无关的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:surprise,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_21.mp3
+msg,1,<outline width=2 color=black>「――诶，什么这么淡定的反应。毕竟破坏得挺厉害的哦？\n修理什么的，可能会非常麻烦哦……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:surprise,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_22.mp3
+msg,1,<outline width=2 color=black>「一直以来、都是这样……？　就是破坏设施？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:surprise,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_23.mp3
+msg,1,<outline width=2 color=black>「果、果然拉莱耶……每天都在生死边缘的战斗中挣扎着的\n魔术师真的很厉害。训练也是如此激烈呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101801/adv/atlas/stand_a,body:smile,rin,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:normal,tubaki,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_24.mp3
+name,<outline width=2 color=black>朱雀院椿</outline>,
+msg,1,<outline width=2 color=black>「……？　怎么了，突然眼神变得很遥远」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:normal,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_25.mp3
+msg,1,<outline width=2 color=black>「总之，如果不会引发大问题就先松一口气，\n但话说回来，确实给别人添麻烦了呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:normal,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_26.mp3
+msg,1,<outline width=2 color=black>「如果有什么需要暴力解决的事情或者需要剑士的事情，\n随时叫我就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191004/adv/atlas/stand_a,body:sad,tubaki,0,-100,0.5,0,,,,
+playvoice,1,download/character/191005/adv/sound/fav191005_01_27.mp3
+msg,1,<outline width=2 color=black>「我姐姐们随时都可以借给你……所以，请\n一定要原谅我不要过借钱生活。拜托了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

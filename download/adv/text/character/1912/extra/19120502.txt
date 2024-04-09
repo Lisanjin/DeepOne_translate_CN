@@ -1,0 +1,204 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:normal,miyako,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_01.mp3
+name,<outline width=2 color=black>朱雀院都子</outline>,
+msg,1,<outline width=2 color=black>「我突然意识到，红叶姐姐和抚子姐姐是从学生时代的时间线过来的，\n那现在我应该是年纪最大的了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:normal,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_02.mp3
+msg,1,<outline width=2 color=black>「我可没打算提什么年龄大小之类的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:normal,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_03.mp3
+msg,1,<outline width=2 color=black>「剑士所需的并非活得久，\n而是如何挥剑，只有这一点而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:normal,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_04.mp3
+msg,1,<outline width=2 color=black>「不过，如果是经过修炼的姐姐们倒还好说，\n如果是学生时代尚未成熟的她们两个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,miyako1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:anger,miyako2,0,0,0,0,,,,
+imgconf,miyako2,miyako1,0,-825,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/191205/adv/sound/fav191205_02_05.mp3
+msg,1,<outline width=2 color=black>「──嗯。不过<ruby>爱染|あいぜん</ruby>那时的姐姐……只是那个对手受限\n看来……嘛，不管怎样都不打算输……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:anger,miyako2,0,0,0,0,,,,
+imgconf,miyako2,miyako1,0,-825,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/191205/adv/sound/fav191205_02_06.mp3
+msg,1,<outline width=2 color=black>「嗯……嘛，真想确认的话就切上一刀就好了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:normal,miyako,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_07.mp3
+name,<outline width=2 color=black>朱雀院都子</outline>,
+msg,1,<outline width=2 color=black>「啊，抱歉。稍微想了会儿事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:smile,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_08.mp3
+msg,1,<outline width=2 color=black>「所以说，换句话说，\n现在的我实至名归地成为了姐妹中的顶点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:unique2,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_09.mp3
+msg,1,<outline width=2 color=black>「叫我去买烧面包也没问题——\n这样的任性也是可以为所欲为的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:normal,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_10.mp3
+msg,1,<outline width=2 color=black>「话虽如此，特别想做什么，希望她们做什么，\n这样的内容倒是一时想不出来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「让红叶再振作一点……」,选项2　「抚子挑战谁都不放过……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:unique,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_11.mp3
+name,<outline width=2 color=black>朱雀院都子</outline>,
+msg,1,<outline width=2 color=black>「啊……红叶姐姐，在这个世界没有朱雀院的眼睛，\n看起来就像是彻底放松了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:sad,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_12.mp3
+msg,1,<outline width=2 color=black>「姐姐暴露出丢人的样子，真是对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:normal,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_13.mp3
+msg,1,<outline width=2 color=black>「决定了。让红叶姐姐在拉莱耶地狱跑全马拉松，\n好好教育一下她的性格」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:smile,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_14.mp3
+msg,1,<outline width=2 color=black>「没问题。无论她多么讨厌，只要从后面追上去砍她，\n她也别无选择只能逃跑了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:sad,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_15.mp3
+name,<outline width=2 color=black>朱雀院都子</outline>,
+msg,1,<outline width=2 color=black>「我也忍耐到了一定程度，那个人到底在干什么啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:sad,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_16.mp3
+msg,1,<outline width=2 color=black>「非常抱歉。抚子姐姐就是这样，有点奔放，\n一旦想到什么就像脱缰的野马……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:unique,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_17.mp3
+msg,1,<outline width=2 color=black>「──我要是也被允许的话也想随便挑战别人赢得胜利啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:smile,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_18.mp3
+msg,1,<outline width=2 color=black>「咳咳。不，抱歉。有点杂念」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:normal,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_19.mp3
+msg,1,<outline width=2 color=black>「抚子姐姐的事就交给我吧。\n她既然这么想打比赛，那我就陪她一起吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:smile,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_20.mp3
+msg,1,<outline width=2 color=black>「凭借未来的知识了解姐姐的底细的我，\n和对我一无所知的姐姐……呵呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:smile,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_21.mp3
+msg,1,<outline width=2 color=black>「打败她，看她能站起来多少次……现在就开始期待了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:normal,miyako,0,-190,0.5,0,,,,
+playvoice,1,download/character/191205/adv/sound/fav191205_02_22.mp3
+name,<outline width=2 color=black>朱雀院都子</outline>,
+msg,1,<outline width=2 color=black>「姐姐的事情我会负责到底，好好照顾她的，\n请放心吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,miyako1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/191204/adv/atlas/stand_a,body:smile,miyako2,0,0,0,0,,,,
+imgconf,miyako2,miyako1,0,-825,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/191205/adv/sound/fav191205_02_23.mp3
+name,<outline width=2 color=black>朱雀院都子</outline>,
+msg,1,<outline width=2 color=black>「好了……姐姐，该享受有趣的时光了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
