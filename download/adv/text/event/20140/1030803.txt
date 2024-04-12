@@ -1,0 +1,594 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10970104.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/29080105/adv/image/29080105.png,enemy1,-1200,-50,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+anm,move,enemy1,1200_-50,1.2,0
+wait,0.8
+spine,download/adv/spine/Slash2_purple,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10100200.jpg,0,255
+endwait
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/29080105/adv/image/29080105.png,enemy1,1200,-50,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+anm,move,enemy1,-1200_-50,1.2,0
+wait,0.8
+spine,download/adv/spine/Slash2_purple,em1,default,animation,0,0,0,-1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11680300.jpg,0,255
+endwait
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/29080105/adv/image/29080105.png,enemy1,0,-1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,enemy1,0_1200,1.2,0
+wait,0.8
+spine,download/adv/spine/Dark,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+flash,0,0,0,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「啊啊啊啊！哎呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「那个老鼠到底是什么！　躲躲藏藏地跑来跑去……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「虽然通过诅咒的联系知道了它的位置，但就是追不上它呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「嗯。不愧是老鼠，真是灵活」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:sad,rozet,300,-100,0.5,0.5,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「非常抱歉。都是因为罗泽特我无能……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「如果你说自己无能，那我们大家也都一样了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:smile,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「咯咯。刚才那只老鼠，在逃跑的时候好像在嘲笑我们\n看着呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,nanaba,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「现在可不是觉得好玩的时候！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rozet,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「有点……因为我们给你们添麻烦了，对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:normal,rozet,-300,-100,0.5,0.5,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「哪里哪里……反倒是，我才为自己的无能感到羞愧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:anger,rozet,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「既然如此，下次就让罗泽特我来拖住它，\n用最大火力将罗泽特我一起消灭吧――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:surprise,akina,300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「喂，你在说什么啊……！　那肯定不行的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:anger,rozet,-300,-100,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「那么，罗泽特我就进行自爆攻击吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rozet,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:unique,nanaba,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「这种气概不错。那么我也来，一起拼上性命吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:surprise,akina,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「不是说好啊！　这不是方法问题，\n无论为了回去，也不能用牺牲别人的方法吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:smile,nanaba,-300,-100,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「开玩笑的，别当真了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,nanaba,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102902/adv/atlas/stand_a,body:normal,rozet,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特·萨维尼</outline>,
+msg,0,<outline width=2 color=black>「是的。罗泽特我的身体比普通人更坚强。\n即使进行自爆攻击，也有很大可能保住一命」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,akina,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,300,-100,0.5,0.5,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>让叶·萨贝尔</outline>,
+msg,0,<outline width=2 color=black>「罗泽特的话，感觉不像是开玩笑……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rozet,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:unique,norn,-300,-120,0.5,0.5,,,,
+anm,tint,yuzuriha,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「这就是罗泽特式的笑话。别太在意了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,yuzuriha,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:unique1,akina,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「……虽然觉得这么说也有些过分，\n但是大家都有点奇怪呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:unique,norn,-300,-120,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「哈哈哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,-300,-100,0.5,0.5,,,,
+anm,tint,yuzuriha,150_150_150,0.0001,0
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「今天看来大家都很累了，还是先回去休息一下吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>让叶·萨贝尔</outline>,
+msg,0,<outline width=2 color=black>「嗯……真的自爆攻击就麻烦了，这样似乎更好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:normal,yuzuriha,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……给大家添了这么多麻烦，真是对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+anm,tint,yuzuriha,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「没关系的。最辛苦的是让叶他们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「一定会把你们送回到重要的人身边的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194004/adv/atlas/stand_a,body:smile,yuzuriha,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>让叶·萨贝尔</outline>,
+msg,0,<outline width=2 color=black>「嗯……谢谢。拜托了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010800.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「――从那次交流已经过了好几天了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101400/adv/atlas/stand_a,body:anger,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「那只老鼠，下次一定要狠狠教训它！　彻底教训它！\n绝对不会再原谅它了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_043.mp3
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0.5,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:unique1,akina,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「已经习惯看诺恩在沙袋上发泄了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「嗯。说起来你现在倒是相当冷静了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「我焦躁也没用，看到别人那么激动，\n反而让我变得冷静了一些……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……但是，还是很懊悔的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「如果我能使用普罗米修斯的话，\n也许能做些什么……能帮上忙的，可是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「作为骑士，总是被保护着……说实话，真是不中用呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「哈哈。作为骑士，这是非常高尚而闪耀的信念啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「本应该做得到的事却做不到。总是被保护着真是太丢脸了。\n或者说，想要展示内心的炽热火焰」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我不能说完全理解你所有的想法。\n因为那些都是你独有的想法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是……你心中积压的情感，\n我或许能承担一部分？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:surprise,akina,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「来比试一下吧。\n让我看看你骑士之剑，秋奈·兰德尔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「与其堆砌再多的言辞，挥舞全力的剑\n或许能更好地宣泄内心的郁闷吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「来吧，直到连剑都拿不住为止。\n如果你愿意，我会借给你我的胸膛的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:smile,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「别客气。老人家就是喜欢看年轻人毫无保留地\n向前冲的，这让我们非常高兴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:normal,akina,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「老人、什么……你在说什么呢。七羽到底多少岁啊。\n看起来，你和我也差不多――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:surprise,nanaba,-300,-100,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「――嗯，我没说过吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:unique,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「就算你重复过去的这一生十次，\n也无法达到我所经历的岁月哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:surprise,akina,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「来吧。别管那些了，我们赶紧开始吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这个训练场里准备了各种类型的武器供训练使用。\n应该有适合你手感的武器」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「尽情地来吧。直到你心情好起来。\n然后，教给我你所说的骑士之道吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:smile,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真是……啊，真是令人期待呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:sad,akina,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「……说实话。虽然说了那么多」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:unique1,akina,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「到底你是不是只想和我进行模拟战呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103801/adv/atlas/stand_a,body:smile,nanaba,-300,-100,0.5,0,,,,
+anm,tint,akina,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「那么，我们开始吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/193904/adv/atlas/stand_a,body:unique1,akina,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>秋奈·兰德尔</outline>,
+msg,0,<outline width=2 color=black>「别装作没听见啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,597 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>——每天早晨，看着镜子里的自己的眼睛总让我感到沮丧。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>丑陋的篡夺者之血所携带的自我牺牲诅咒。\n这眼睛的颜色就是证明，让我讨厌，非常讨厌。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>肯定是被诅咒的我，一直都无法向任何人敞开心扉，\n最终会腐朽而亡……这样想过。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>但是……从被夸奖这双眼睛很漂亮以后，就变得贪婪了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>没有依赖这双眼睛的力量，只是因为他夸奖我的眼睛，\n我一定是被拯救了，无法无天地拯救了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>然后，想要听到更多他说的话……就这样想着……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>可是与这样的想法相反，我却无法坦诚面对。\n总是说出与内心相反的话。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>对自己感到无奈。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>所以……我觉得可以顺应她的想法。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>即使是在遥远世界的，不是我的我，全身心投入到成为她的角色中，\n也可以试着顺从一下……就这么想。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11090300.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm125.mp3,0,
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11530300.jpg,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 『逃脱了吗……？』,选项2 『到这里应该没问题了吧』,选项3 『也许还可以再享受一下便宜』,选项4 『……还是回去吧』
+if,select_===_1,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+elseif,select_===_3,,,,,,,,,
+elseif,select_===_4,,,,,,,,,
+endif,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,elica1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica2,0,0,0,0,,,,
+imgconf,elica2,elica1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「——下郎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「哎呀，你为什么这么慌张呢……难道有什么\n见不得人的事情？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊，或者是害怕了呢……今晚似乎真的有很多\n野兽出没呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,elica,0.6_0.6,0.5,0
+endwait
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:unique,elica,0,-100,0.6,0,,,,
+msg,0,<outline width=2 color=black>「怎么了，你紧张成这样……难道以为像房东那样，\n我也会为你神魂颠倒？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:unique,elica,0,-100,0.6,0,,,,
+msg,0,<outline width=2 color=black>「就算我真的是野兽……为什么会觉得我会喜欢上\n像下郎这样的猎物呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,0,-100,0.6,0,,,,
+msg,0,<outline width=2 color=black>「以为自己是高级猎物？真是误会大了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,0,-100,0.6,0,,,,
+msg,0,<outline width=2 color=black>「吃怪物这种事，可算了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,elica,0.7_0.7,0.5,0
+anm,move,elica,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:smile,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「啊，不过……有时候，怪物的味道反而会很好呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:unique,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「呵呵。在这种情况下还能掉以轻心，真是愚蠢呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:unique,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「狼告诉羊不会吃它让它放心，真的有羊会因此松懈吗？\n哪里有这样的羊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:smile,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「或者说，世上还真有那种想被吃掉的奇特羊吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:smile,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「像某个喜欢那可憎恶诅咒之眼的人，\n去想这样奇怪的事情也不奇怪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「呐，下郎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「你今天以及今后，……会一直说我的眼睛很漂亮吗？\n说这种奇怪的话？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「一直……都会这么说吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,elica1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:surprise,elica2,0,0,0,0,,,,
+imgconf,elica2,elica1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:surprise,elica,0,-130,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:shy,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「……突然亲我的脸颊，真是没礼貌。\n真是个无可救药的下郎。太差劲了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:shy,elica,0,-130,0.7,0,,,,
+msg,0,<outline width=2 color=black>「…………我这个傻瓜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,elica,0.5_0.5,0.5,0
+anm,move,elica,0_-100,0.5,0
+endwait
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「算了吧。我已经对下郎感到十分无奈了……去别的地方吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「还是说……你想被那逼近的脚步声追上？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我会帮你拖延一下的……快走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11530300.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0.5,,,,
+anm,tint,elica,150_150_150,0.0001,0
+spriteatlas,download/character/101908/adv/atlas/stand_a,body:unique,silvy,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇·斯沃玛莱恩</outline>,
+msg,0,<outline width=2 color=black>「——怎么了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101908/adv/atlas/stand_a,body:unique,silvy,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你，假装吃饼干，实际上没吃呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「以为我是个会轻易中计的愚蠢女人？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101908/adv/atlas/stand_a,body:smile,silvy,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇·斯沃玛莱恩</outline>,
+msg,0,<outline width=2 color=black>「我倒是觉得你是个需要点契机才能行动的笨拙女性\n呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101908/adv/atlas/stand_a,body:normal,silvy,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，没想到一眼就被识破了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「你是在说饼干的事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:unique,elica,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「还是说，你的那个表演？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101908/adv/atlas/stand_a,body:unique,silvy,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇·斯沃玛莱恩</outline>,
+msg,0,<outline width=2 color=black>「——……真是受够了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm102.mp3,0,
+endwait,,,,,,,,,,,
+
+
+flash,255,255,255,1,1,2
+spriteoff,silvy,0.2
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「为什么会知道呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「你身上的特希尔之眼气息太浓了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「原来如此。虽然世界不同，但我的眼睛给予庇佑的对象\n是不会弄错的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「话说回来，你为什么要搞这种恶作剧呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:smile,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「正值万圣节之夜。像亡灵一样的我搞恶作剧，\n并没有什么奇怪的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这么说是开玩笑的……既然有这个机会，顺便想帮助一下\n笨拙的你，就这么想的而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「这是什么多管闲事啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「因为我偏爱你啊……艾丽卡·露比娅。\n我觉得，为了你，我愿意跟整个世界为敌」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――当然，前提是不背叛布里吉特君」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:sad,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「真是不诚实呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「这只是看法不同。明确告诉你是第二个前提，并且遵守。\n这是我认为的诚意哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:unique,silvy_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「顺便问一下，为什么要让步呢？\n中途还做了那种假装……是不是被吓到了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:unique,silvy_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果是这样，那么下次就算有些强硬，也要让你喝下让你变得诚实的药\n也得考虑一下了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:sad,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「……真是不诚实呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:unique,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「我觉得我比你更了解你的真心哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「既然如此，那就别用这种程度的理解来胡乱揣测。\n以后少搞这种把戏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「还有，把路易斯他们快点恢复原样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「反正放置一会儿，他们就会――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「马上，哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:smile,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「――我猜你会这么说，已经处理好了。\n大家恢复正常，在稍远的地方羞愧地颤抖着呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:sad,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「真是个讨厌鬼……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「话说，亚纱花君去哪了？不是在这边吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:surprise,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「……诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:surprise,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「…………说起来，想花在哪？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「因为觉得自己的饼干是骚乱的一部分原因，\n所以勇敢地决定保护他而先行一步，难道没遇到吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:normal,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「……………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103352/adv/atlas/stand_a,body:normal,elica,-300,-100,0.5,0,,,,
+anm,tint,silvy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡·露比娅</outline>,
+msg,0,<outline width=2 color=black>「我不知道啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101980/adv/atlas/stand_a,body:unique,silvy_s,300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>希尔薇的影子</outline>,
+msg,0,<outline width=2 color=black>「那种状态下的亚纱花君碰上想花君……他也够惨的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

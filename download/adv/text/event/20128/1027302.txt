@@ -1,0 +1,428 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>最初发现爷爷尸体的是我。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>那把他曾经给我看过的、说是从日本带来的刀。\n他紧紧抓住刀身中部，用它剖开了自己的肚子。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>当然，这种丑陋的自刎方式不可能有人来帮忙，\n一定是痛苦了很长时间。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么爷爷会做出这样的事，我很快就明白了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>放在爷爷尸体旁边的一封信。\n里面写着只有一句话。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>看到那句话后，我理解了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>杀死爷爷的人，是我。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310302.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+flash,243,1,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya2,0,0,0,0,,,,
+imgconf,sasya2,sasya1,0,-430,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「――……真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「这已经是第三只熊了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「除了狼和熊，还有蛇和鸟类，\n真是想不到它们会如此毫无迷惘地袭击过来呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+msg,0,<outline width=2 color=black>「本应该森林里的生物会更加胆小才对啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,sasya,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「嗯，大概是受到了从研究所排放出来的污水的影响吧。\n刚才稍微检查了一下这条河，发现里面含有大量的有害药物呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然我们的身体应该不会受到影响，但还是尽量\n不要摄入为好。要小心哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,dahune,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,300,-110,0.5,0.5,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「……什么时候调查的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:unique,metiru,-300,-20,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「嘛，究竟是什么时候呢♪　要多注意观察别人的动作哦♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,300,-110,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,sasya,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「……原来如此，攻击这种级别的设施，还特意叫我来，\n原因就是这个吗。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「过度保护呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:smile,metiru,-300,-20,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「哎呀，你在说什么啊？　我完全不明白♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「……算了，反正对我来说，只要有应该归还给我的成果就\n什么都无所谓。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「呵呵，这种果断的地方，我可不讨厌哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,dahune,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,300,-110,0.5,0.5,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「……在说什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「莎夏不用在意。反正要注意周围警戒。\n就算是狂暴化了，但毕竟还是森林里的野兽……千万不能掉以轻心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:smile,metiru,-300,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「身为小角色和下属的莎夏，保持过度警戒\n才是最合适的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,300,-110,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「我知道了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,sasya,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「……真是个温柔的前辈，不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「现在说这些有什么意义呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「那么，你祖父的研究到底是什么内容？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「本来是一种针对细胞恶性变异进行处理的术式。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但因为必须对每一个细胞进行干预，操作难度太高以至于无法实用，所以被废弃了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「然后不知道哪个谁捡起来，私自乱用。\n虽然不清楚现在的具体情况……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嗯，看这森林里的野兽，顶多是身体强化的魔法药之类的？\n应该就是这种程度吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「真是没什么意思……稍微失控一点的身体强化，\n现在还有必要回收这种东西吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「哎呀哎呀，谁知道发现会在哪里呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「反而，正因为有傻瓜无邪气地乱动别人的研究，\n说不定还能发现一些什么。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「就算是比剪刀还没价值的笨蛋，只要用得好，也能派上用场的，达芙妮。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「……嘛，就当你说得对吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+msg,0,<outline width=2 color=black>「利用你祖父的研究，袭击那些进行着连回收都不值得的研究的愚蠢者们的设施。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+msg,0,<outline width=2 color=black>「本来你一个人就足够了，\n可是还带着拖后腿的莎夏，还叫上了我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+msg,0,<outline width=2 color=black>「结果到头来，让出手笨拙的莎夏去战斗，\n而我和你只是在后面观看。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:normal,dahune,300,-270,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果是带领郊游的话，一开始就说清楚嘛。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:normal,metiru,-300,-20,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「那样达芙妮肯定不会帮忙啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:smile,dahune,300,-270,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「哎呀，真是冤枉啊。毕竟我们之间的关系嘛。\n我已经尽力帮忙了哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:smile,metiru,-300,-20,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「啊哈，达芙妮真是温柔呀♡」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:smile,metiru,-300,-20,0.5,0.5,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「喂，既然有空闲聊天，也可以来帮忙吧？\n离研究所越来越近，袭击我们的野兽越来越多……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:smile,metiru,-300,-20,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露·梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「我－说－过－了，这是下属的工·作·哦·♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:smile,metiru,-300,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「还有，别用太过张扬的魔法。会引人注意。会被发现接近。\n你以为我们为什么要在夜间袭击？要注意隐秘行动。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181604/adv/atlas/stand_a,body:unique,metiru,-300,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「至少要动动脑子嘛，小角色小角色的莎夏酱♡」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,300,-110,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏·奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「啊啊，行了行了，我知道了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_e,body:smile,dahune,0,-270,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,0,<outline width=2 color=black>「呵呵……真是被一个好前辈捡到了呢，莎夏。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
