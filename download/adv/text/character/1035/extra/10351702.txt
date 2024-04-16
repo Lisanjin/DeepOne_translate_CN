@@ -1,0 +1,174 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11410300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「一直以来，我都有个想法，就是从我站在哥哥们面前，以恶意之名挡住他们的那时起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm137.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_02.mp3
+msg,1,<outline width=2 color=black>「我家的妹妹太可爱了。简直像天使。想要好好疼爱芙拉，把她宠上天」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_03.mp3
+msg,1,<outline width=2 color=black>「喂，为什么又叹气了……！哥哥们也能理解这种心情吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_04.mp3
+msg,1,<outline width=2 color=black>「不仅是哥哥们……只要认识芙拉的人都会觉得她很可爱！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_05.mp3
+msg,1,<outline width=2 color=black>「不过……最近我也这么想」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_06.mp3
+msg,1,<outline width=2 color=black>「——被芙拉宠着也不错吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_07.mp3
+msg,1,<outline width=2 color=black>「想象一下天使般的芙拉宠着你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_08.mp3
+msg,1,<outline width=2 color=black>「被芙拉夸奖、摸头……还有膝枕……反正就是想让她一次满足我所有的愿望！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「让她宠你呗」,选项2　「她宠过你吗」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_09.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「这么轻松地说出口，哥哥们当然好了。如果向芙拉提出，她肯定会答应的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_10.mp3
+msg,1,<outline width=2 color=black>「可是，最近芙拉对待我的方式好像越来越像对待哥哥们一样，变得随便了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_11.mp3
+msg,1,<outline width=2 color=black>「在这种情况下，如果我说想被宠爱，感觉就会失去作为可靠姐姐的身份了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_12.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「什么啊，是在炫耀吗，还是宣布胜利？好啊，我接受挑战，出来面对面决斗吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_13.mp3
+msg,1,<outline width=2 color=black>「呜呜呜！为什么只有哥哥们才能被芙拉宠爱、被她疼爱……真不公平，可恶！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_14.mp3
+msg,1,<outline width=2 color=black>「明明我也是个姐姐，也想让芙拉宠着我……咕咕咕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_15.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「不过，其实我知道……问题在于我的日常态度」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_16.mp3
+msg,1,<outline width=2 color=black>「有时候，我会过分关心她，芙拉也会告诉我这点……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_17.mp3
+msg,1,<outline width=2 color=black>「但是这没办法啊……！因为她就是芙拉啊！世界上最可爱的妹妹就在那里……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_18.mp3
+msg,1,<outline width=2 color=black>「要保持冷静才是不可能的事情吧！想要抱抱她，闻闻她的味道啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_19.mp3
+msg,1,<outline width=2 color=black>「我……无法停止这份爱……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_20.mp3
+msg,1,<outline width=2 color=black>「——所以，哥哥们。我有个请求」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_21.mp3
+msg,1,<outline width=2 color=black>「能不能请你们跟芙拉说说，让她也宠宠我呢……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_22.mp3
+msg,1,<outline width=2 color=black>「当然，我会报答你们的。只要是我能做到的，什么都行。为了得到芙拉的宠爱，任何代价都不在乎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_23.mp3
+msg,1,<outline width=2 color=black>「无论是什么不良行为……我都会答应的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_02_24.mp3
+msg,1,<outline width=2 color=black>「所以……可爱的妹妹的请求，哥哥们会答应的对吧♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,261 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11410300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm088.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「嗯……这里摆着小椅子和玩具什么的……看来这里是个\n托儿所呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-170,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103517/adv/sound/fav103517_01_02.mp3
+msg,1,<outline width=2 color=black>「而现在的我是托儿所老师……诺恩老师这么一回事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_03.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「那么哥哥，要我给你读故事书吗？\n还是玩积木呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_04.mp3
+msg,1,<outline width=2 color=black>「啊，不过男孩子可能更喜欢动一动身体的游戏。\n那么玩球类游戏怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_05.mp3
+msg,1,<outline width=2 color=black>「喂喂，你那愣住的表情是怎么回事。现在的我可是托儿所老师，\n托儿所老师就是照顾孩子、照看孩子的职业哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm137.mp3,0,
+endwait,,,,,,,,,,,
+
+
+anm,scale,norn,0.7_0.7,0.3,0
+anm,move,norn,0_-160,0.3,0
+endwait
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:smile,norn,0,-160,0.7,0,,,,
+spine,download/adv/spine/Line_center,em1,default,animation,1,0,0,1,1.0,0
+playvoice,1,download/character/103517/adv/sound/fav103517_01_06.mp3
+msg,1,<outline width=2 color=black>「也就是说，这里一定是让我来照顾哥哥的\n幻梦境的伟大意志！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spineoff,all,0.2
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_07.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「既然我要照顾你，至少在这里待着的时候\n我可以当你的姐姐和老师吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「……哇—，玩耍吧，哇—」,选项2　「好吧，得调查一下这片领域才行……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_08.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「糟糕！咦，什么？为什么那么生硬的说话！？\n而且还听起来有点不情愿！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_09.mp3
+msg,1,<outline width=2 color=black>「这么可爱的美少女托儿所老师诺恩要照顾你哦？\n你对此有什么不满的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_10.mp3
+msg,1,<outline width=2 color=black>「居然受到这样不公平的对待……我要道歉！　并且，要求\n真诚的态度……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:unique,norn,1200,-120,0.5,0,,,,
+endwait
+anm,move,norn,0_-120,1,0
+endwait
+playvoice,1,download/character/103517/adv/sound/fav103517_01_11.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「喂」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_12.mp3
+msg,1,<outline width=2 color=black>「其实我也习惯了被哥哥随意对待了？反而\n觉得这种位置还挺好的，也不是没有这种想法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_13.mp3
+msg,1,<outline width=2 color=black>「可是，无论如何冷落也不行啊冷落……！\n那已经不是随意了，简直就是欺负人吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_14.mp3
+msg,1,<outline width=2 color=black>「哥哥不会是那种欺负妹妹还高兴的糟糕哥哥吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_15.mp3
+msg,1,<outline width=2 color=black>「既然如此，当然要道歉了吧？对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_16.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「所以，在这个领域里待着的时候，\n请叫我诺恩老师」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_17.mp3
+msg,1,<outline width=2 color=black>「……感觉一股不服气的氛围扑面而来啊。\n到底有什么不满的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_18.mp3
+msg,1,<outline width=2 color=black>「这么超级美少女诺恩酱当老师，还可以让你尽情撒娇呢？\n我觉得对哥哥来说也不是坏事啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_19.mp3
+msg,1,<outline width=2 color=black>「……难道是觉得害羞吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_20.mp3
+msg,1,<outline width=2 color=black>「哈哈—？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_21.mp3
+msg,1,<outline width=2 color=black>「那就试着叫一下看看吧。只要度过第一次，\n就不会再觉得害羞了，我觉得」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103517/adv/sound/fav103517_01_22.mp3
+msg,1,<outline width=2 color=black>「快点，叫一下诺恩老师，只要叫一次就好了。\n放弃吧，老实点——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:surprise,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103517/adv/sound/fav103517_01_23.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊，喂，等一下……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103517/adv/atlas/stand_a,body:anger,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-660,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103517/adv/sound/fav103517_01_24.mp3
+msg,1,<outline width=2 color=black>「我不会放过你的……！快点，试着叫一下诺恩老师！\n一次！就算只有一次也行啊—！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

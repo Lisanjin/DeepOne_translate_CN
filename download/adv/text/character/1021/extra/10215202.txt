@@ -1,0 +1,207 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11410300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm088.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_01.mp3
+name,<outline width=2 color=black>乌尔苏拉·阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「话说回来……再看一遍，这里都是玩具啊、绘本啊，\n都是给小孩子玩的东西呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_02.mp3
+msg,1,<outline width=2 color=black>「和魔法无关的小孩子，会在这种地方度过吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:sad,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_03.mp3
+msg,1,<outline width=2 color=black>「……嗯哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_04.mp3
+msg,1,<outline width=2 color=black>「虽然并不感兴趣。只是，在这种地方玩耍度过，\n真是奢侈的时间利用方式呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_05.mp3
+msg,1,<outline width=2 color=black>「话说回来，我什么时候才能回家啊……。\n我可没空在这种地方玩耍啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_06.mp3
+msg,1,<outline width=2 color=black>「我可是一定要成为<ruby>十二针|皇家魔导师</ruby>的。\n为了那个目标，我得努力学习魔法才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:sad,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_07.mp3
+msg,1,<outline width=2 color=black>「所以，对这种地方、这些玩具之类的，兴趣——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,ulusura,-50_-20,0.3,0
+endwait
+wait,0.2
+endwait,,,,,,,,,,,
+anm,move,ulusura,50_-20,0.3,0
+endwait
+wait,0.2
+endwait,,,,,,,,,,,
+anm,move,ulusura,0_-20,0.3,0
+endwait
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:sad,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_08.mp3
+msg,1,<outline width=2 color=black>「……兴趣什么的，才没有呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:unique,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_09.mp3
+msg,1,<outline width=2 color=black>「哈、哈啊？　我才没有在意哦？\n玩具什么的、绘本什么的，我才没看呢……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_10.mp3
+msg,1,<outline width=2 color=black>「……明白了。找茬挑剔，\n其实是你自己想玩吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_11.mp3
+msg,1,<outline width=2 color=black>「一个大男人一个人玩儿也寂寞，所以想把我卷进去，\n搞了个无聊的计划对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「真不愧是乌尔苏拉，看穿了一切」,选项2　「如果你不愿意，我就一个人玩」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:smile,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_12.mp3
+name,<outline width=2 color=black>乌尔苏拉·阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「嘻嘻，当然了。你以为我是谁啊。\n像你这种普通人的想法，我还是知道的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_13.mp3
+msg,1,<outline width=2 color=black>「话说回来，你终于理解到我的厉害了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:shy,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_14.mp3
+msg,1,<outline width=2 color=black>「……那、那么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:shy,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_15.mp3
+msg,1,<outline width=2 color=black>「既然你理解到我有多厉害了，作为奖励，稍微陪你玩一下也可以……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:surprise,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_16.mp3
+name,<outline width=2 color=black>乌尔苏拉·阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:unique,ulusura,-1200,-20,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,ulusura,0_-20,1,0
+endwait
+name,<outline width=2 color=black>乌尔苏拉·阿库哈特</outline>,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_17.mp3
+msg,1,<outline width=2 color=black>「等、等一下啊……为什么变成你一个人玩了？\n这是怎么回事啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:sad,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_18.mp3
+msg,1,<outline width=2 color=black>「不、当然不是因为我想玩啦……！\n但是，只有你玩感觉也不太对吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:sad,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_19.mp3
+msg,1,<outline width=2 color=black>「嘛、嘛嘛？　那个、怎么说呢……就、就是！\n在这种地方待着也不可能学习嘛？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:sad,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_20.mp3
+msg,1,<outline width=2 color=black>「所以，只是消磨时间的话，陪你玩一下也\n没关系吧，这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_21.mp3
+msg,1,<outline width=2 color=black>「而、而且，让我看到你一个人玩得寂寞的样子也\n对我来说挺困扰的……所以，只陪你玩一会儿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_22.mp3
+name,<outline width=2 color=black>乌尔苏拉·阿库哈特</outline>,
+msg,1,<outline width=2 color=black>「我、我可是说好了，只是一会儿哦？\n一有回家的机会，我就立马回去……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:normal,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_23.mp3
+msg,1,<outline width=2 color=black>「在那之前……嘛，我也就当作是稍微放松一下吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:smile,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_24.mp3
+msg,1,<outline width=2 color=black>「快点，要玩就玩吧。赶紧决定要做什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102152/adv/atlas/stand_a,body:smile,ulusura,0,-20,0.5,0,,,,
+playvoice,1,download/character/102152/adv/sound/fav102152_02_25.mp3
+msg,1,<outline width=2 color=black>「既然我都陪你了，你可得好好让我玩得开心哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
