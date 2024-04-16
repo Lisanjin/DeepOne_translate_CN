@@ -14,14 +14,20 @@ def download_file(url, filename):
     download_times = 5
     while download_times > 0:
         try:
+            directory = filename.replace(filename.split('/')[-1], '')
+            if not os.path.exists(directory):
+                os.makedirs(directory)
             urlretrieve(url, filename)
-        except:
+        except Exception as e:
+            print(e)
             print("error downloading : " + filename)
             download_times = download_times - 1
             continue
         else:
             break
     print(f'{filename} downloaded.')
+    
+
 
 def md5_file(file_path):
     md5_hash = hashlib.md5()
@@ -79,12 +85,12 @@ with open("Redirector.json", "r", encoding='utf8') as f:
 
 if new_Redirector != old_Redirector:
     print("更新Redirector.json中……")
-    dl_new_files(new_Redirector)
     with open("Redirector.json", 'w', encoding='utf8') as f:
         json.dump(new_Redirector, f, ensure_ascii=False, indent=4)
 else:
     print("无新剧本")
-
+    
+dl_new_files(new_Redirector)
 #——————————————————————————————————————————————————————
 
 md5_url = server_host +"md5.json"
