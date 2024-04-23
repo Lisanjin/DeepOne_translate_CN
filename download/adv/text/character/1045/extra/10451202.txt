@@ -1,0 +1,183 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,raz1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104512/adv/sound/fav104512_02_01.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「哈啊……真的，贝阿特为什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:surprise,raz,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_02.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_03.mp3
+msg,1,<outline width=2 color=black>「呃……怎么了？\n看起来好像在看我，有什么事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_04.mp3
+msg,1,<outline width=2 color=black>「……难道说，让你担心了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_05.mp3
+msg,1,<outline width=2 color=black>「对不起。在这种地方叹气的话，确实会让人在意的吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_06.mp3
+msg,1,<outline width=2 color=black>「实际上，贝阿特又在拉莱耶的厨房引发了爆炸……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_07.mp3
+msg,1,<outline width=2 color=black>「明明已经重复了好几次同样的事情了，为什么还是不知悔改地要使用厨房呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_08.mp3
+msg,1,<outline width=2 color=black>「爆炸什么的，贝阿特本人也很危险啊……何况，每次都给拉莱耶的人们添麻烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_09.mp3
+msg,1,<outline width=2 color=black>「真的，在奇怪的地方放不下执念啊……作为我来说，\n也实在希望她能放弃那些鲁莽的挑战……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_10.mp3
+msg,1,<outline width=2 color=black>「总之，已经向有关人员道过歉了，\n但是在我不知道的地方，她是不是又搞出什么事来了呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「像个保护者一样」,选项2　「真的辛苦了……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:surprise,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_11.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「……保护者、吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:surprise,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_12.mp3
+msg,1,<outline width=2 color=black>「像我这样的人，有点儿愚蠢呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:surprise,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_13.mp3
+msg,1,<outline width=2 color=black>「……不过，也许在我不自觉的时候，已经有了这样的心情了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:surprise,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_14.mp3
+msg,1,<outline width=2 color=black>「毕竟贝托丽萨的身体里，虽然只是碎片，\n但也残留着那孩子的女儿……对我来说是侄女的感情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_15.mp3
+msg,1,<outline width=2 color=black>「……可是，这样一来对贝阿特来说我就像是……她、她姑……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_16.mp3
+msg,1,<outline width=2 color=black>「算、算了吧。你看，一旦开始深思熟虑，\n事情就变得越来越复杂了……对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_17.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「没、没有什么辛苦啦……实际上给别人添麻烦的并不是我啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_18.mp3
+msg,1,<outline width=2 color=black>「得好好跟贝阿特和大家说清楚，让她们知道这样的事情一再发生，\n给大家带来了多大的困扰……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_19.mp3
+msg,1,<outline width=2 color=black>「可是，如果我说得太过分，变得像个唠叨的大……嗯嗯，年长者\n那样的话，该怎么办呢……哈啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_20.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「并、并不是说我特别在意这个啦？\n嗯嗯，真的……并不是那么、那么在意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_21.mp3
+msg,1,<outline width=2 color=black>「…………其实挺在意的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_22.mp3
+msg,1,<outline width=2 color=black>「虽然我确实是个老人，但因为长时间沉睡，\n所以心灵还没有跟上事实……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:sad,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_23.mp3
+msg,1,<outline width=2 color=black>「……也因为这个原因，七羽经常拿我开玩笑。\n是啊，客观地看我这个年龄……呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104501/adv/atlas/stand_a,body:normal,raz,0,-110,0.5,0,,,,
+playvoice,1,download/character/104512/adv/sound/fav104512_02_24.mp3
+msg,1,<outline width=2 color=black>「没、没关系的，对吧……？ 至少身体还是很年轻的姐姐的样子\n应该能过得去……还算年轻吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

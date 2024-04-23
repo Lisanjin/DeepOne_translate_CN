@@ -1,0 +1,922 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10120100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm097.mp3,0,
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28090110_raiging_in.mp3
+endwait
+name,<outline width=2 color=black>席卷银穹的天翼</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+spriteatlas,download/character/103511/adv/atlas/stand_b,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_11_04_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「可恶……贯穿吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_11_04_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「――碧睡莲！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+slideinblack,0.1,right,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla1,0,0,1,0,,,,
+playse,/download/character/103511/se/se_c03511_ef_hit.mp3
+slideoutblack,0.2,right,
+endwait,
+slideinblack,0.1,right,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+slideinblack,0.1,left,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla2,0,0,1,0,,,,
+anm,scale,sla2,-1_1,0,
+playse,/download/character/103511/se/se_c03511_skill_08.mp3
+slideoutblack,0.2,right,
+endwait,
+slideinblack,0.1,right,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash1_green,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/character/104306/se/se_c04302_def_skill.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0,,,,
+sprite,download/monster/28090110/adv/image/28090110.png,enemy2,0,-50,0.55,0,,,,
+sprite,download/monster/28090110/adv/image/28090110.png,enemy3,0,-50,0.55,0,,,,
+playse,/download/sound/se/se_28090110_raiging_in.mp3
+endwait
+name,<outline width=2 color=black>席卷银穹的天翼</outline>,
+msg,0,<outline width=2 color=black>「―――――――、―――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+playse,/download/sound/se/se_046.mp3
+anm,move,enemy2,200_-50,0.7,0
+anm,move,enemy3,-200_-50,0.7,0
+anm,fade,enemy,0,0.7,0
+anm,fade,enemy2,0,0.7,0
+anm,fade,enemy3,0,0.7,0
+endwait,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_b,body:surprise,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_11_04_02.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「消……失了……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash4_green,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,2,0.3,1.0
+shake,0.2,4,15,15
+anm,move,norn,-1200_-120,0.4,0
+endwait
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_11_04_02.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「咕……速度、变得更快了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash4_green,em1,default,animation,0,0,0,-1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,2,0.3,1.0
+shake,0.2,4,15,15
+anm,move,zakuro,1200_-120,0.4,0
+endwait
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy1,200,-50,0.55,0.5,,,,
+sprite,download/monster/28090110/adv/image/28090110.png,enemy2,-200,-50,0.55,0.5,,,,
+playse,/download/sound/se/se_046.mp3
+anm,move,enemy1,0_-50,0.6,0
+anm,move,enemy2,0_-50,0.6,0
+endwait,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28090110_raiging_in.mp3
+endwait
+name,<outline width=2 color=black>席卷银穹的天翼</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:anger,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_042_11_04_01.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「哈、啊啊啊啊啊啊啊啊啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash1_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_049.mp3
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playse,/download/character/104202/se/se_c04204_skill_06.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_11_04_02.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「――绽放吧、青椿！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Ice1,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_021.mp3
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playse,/download/character/104202/se/se_c04204_skill_02.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+wait,0.2
+bg,download/bg/bg_10120100.jpg,1,255
+endwait
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28090110_raiging_in.mp3
+endwait
+name,<outline width=2 color=black>席卷银穹的天翼</outline>,
+msg,0,<outline width=2 color=black>「―――――、――――――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/character/104202/se/se_c04204_skill_06.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,-1,1.0,0
+playse,/download/character/104202/se/se_c04204_skill_07.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0,,,,
+playse,/download/sound/se/se_28090110_skill_normal.mp3
+endwait
+name,<outline width=2 color=black>席卷银穹的天翼</outline>,
+msg,0,<outline width=2 color=black>「―――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Wind2,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_046.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:sad,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash3_green,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:sad,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_11_04_03.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「咕、呜……这种程度的攻击……还能承受得住……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_11_04_04.mp3
+msg,1,<outline width=2 color=black>「――达芙妮！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,dahune1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:unique,dahune2,0,0,0,0,,,,
+imgconf,dahune2,dahune1,0,-970,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_044_11_04_01.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「就算我没了一只手和眼睛，对我的防备也太弱了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:anger,dahune2,0,0,0,0,,,,
+imgconf,dahune2,dahune1,0,-970,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_044_11_04_02.mp3
+msg,1,<outline width=2 color=black>「你的污秽和力量，就由我收下了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28090110_raiging_in.mp3
+endwait
+name,<outline width=2 color=black>席卷银穹的天翼</outline>,
+msg,0,<outline width=2 color=black>「―――――――――――！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:surprise,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+spriteatlas,download/character/103511/adv/atlas/stand_b,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_11_04_03.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「什、什么……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:surprise,zakuro,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_11_04_03.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「这是……变异体的气息……存在的密度、变稀薄了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_11_04_04.mp3
+msg,1,<outline width=2 color=black>「达芙妮，你做了什么！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:unique,dahune,-300,-270,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_11_04_03.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「别叽叽喳喳地叫唤了。你不应该感谢我吗？\n我可是代替笨手笨脚的你们给了它致命一击」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28090110_raiging_in.mp3
+endwait
+name,<outline width=2 color=black>席卷银穹的天翼</outline>,
+msg,0,<outline width=2 color=black>「――――、――……、――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:unique,dahune,-300,-270,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_11_04_05.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「怪物的力量，流向达芙妮了……？　你，该不会……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:unique,dahune,-300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_11_04_04.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「嗬……你干嘛用那种眼神看着我。事到如今，\n吸收点带毒污秽对我来说根本算不了什么。好了，这样我就」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:anger,dahune,-300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_11_04_05.mp3
+msg,1,<outline width=2 color=black>「咳，呜咕……呃啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+shake,0.2,4,15,15
+anm,move,dahune,-300_-320,0.3,0
+endwait
+spine,download/adv/spine/blood,em1,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+flash,230,20,60,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,300,-110,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_11_04_05.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「达芙妮……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:anger,dahune,-300,-320,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait
+anm,move,dahune,-300_-270,0.4,0
+endwait
+name,<outline width=2 color=black>达芙妮</outline>,
+playvoice,1,download/adv/voice/quest/main_044_11_04_06.mp3
+msg,1,<outline width=2 color=black>「哈啊……哈……它的力量已经被我吸收干净了。\n想花，给它最后一击！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_b,body:anger,soka,300,-110,0.5,0,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_11_04_06.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「嗬……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28090110_raiging_in.mp3
+endwait
+name,<outline width=2 color=black>席卷银穹的天翼</outline>,
+msg,0,<outline width=2 color=black>「――、…………、……――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash4_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/character/104202/se/se_c04204_skill_07.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10120100.jpg,1,255
+endwait
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash1_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_049.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28090110/adv/image/28090110.png,enemy,0,-50,0.55,0,,,,
+playse,/download/sound/se/se_28090110_raiging_in.mp3
+endwait
+name,<outline width=2 color=black>席卷银穹的天翼</outline>,
+msg,0,<outline width=2 color=black>「…………、……………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+anm,tint,enemy,0_0_0,1.2,0
+endwait,,,,,,,,,,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+
+
+stopbgm,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104702/adv/atlas/stand_a,body:normal,terutia,300,-140,0.5,0.5,,,,
+anm,tint,terutia,150_150_150,0.0001,0
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:surprise,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_11_04_04.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「打倒了吗……？　为什么最后……消失的时候连一点痕迹都没留下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104702/adv/atlas/stand_a,body:normal,terutia,300,-140,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_094_11_04_01.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「这些怪物都是幻梦境中游荡的失想者沾染污秽后变异而成的。\n而那些污秽刚刚被她吸收进体内了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,terutia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_11_04_05.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「也就是说，不会吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:normal,dahune,-300,-270,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_11_04_07.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「我播种的种子，我当然有收获的权力……有问题吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,terutia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:normal,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_11_04_06.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「你脑子出问题了吗……把那种东西吸进体内，\n不可能平安无事――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:unique,dahune,-300,-270,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_11_04_08.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「你他妈才是脑子有问题，我可从来没考虑过自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:normal,dahune,-300,-270,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_044_11_04_09.mp3
+msg,1,<outline width=2 color=black>「让那些否定我的王八蛋吃点苦头，这才是我的追求」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,300,-110,0.5,0.5,,,,
+anm,tint,dahune,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_11_04_07.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「不管达芙妮你在追求什么，我都无所谓」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_11_04_08.mp3
+msg,1,<outline width=2 color=black>「重要的是，你要遵守和我的约定」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104402/adv/atlas/stand_g,body:smile,dahune,-300,-270,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_044_11_04_10.mp3
+name,<outline width=2 color=black>达芙妮</outline>,
+msg,1,<outline width=2 color=black>「当然。不过只在你的目标和我的怒火瞄准同一个方向的时候」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alt1,0,0,1280,250,0.5,,,,
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_11_04_01.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「――哎呀。你的怒火准备对着谁倾泻呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10120100.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:smile,alt,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_11_04_02.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「话又说回来，你那所谓的愤怒，不过是无聊的怨恨\n和不讲道理的嫉妒罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:smile,alt,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_099_11_04_03.mp3
+msg,1,<outline width=2 color=black>「失去力量也好，被背叛也好，就连你心中滋生的无力感，\n都不过是你自作自受罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_11_04_06.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「ASAKA……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:smile,alt,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_11_04_04.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「当然，这孩子也来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:normal,aika,-300,-120,0.5,0.5,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_041_11_04_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,alt,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,300,-110,0.5,0.5,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_11_04_09.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「爱花……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,aika,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro,-300,-120,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_11_04_07.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「该说在意料之内吗。帕露菲果然不在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_11_04_05.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「没错，她打算榨干我们的利用价值，\n能多消耗你们一点是一点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_11_04_07.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「你明明清楚，却还是要协助帕露菲吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:normal,alt,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_099_11_04_06.mp3
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,1,<outline width=2 color=black>「嗯。抱歉了，诺恩」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/monster/28050101/adv/atlas/stand_a,body:smile,alt,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_099_11_04_07.mp3
+msg,1,<outline width=2 color=black>「现在的我，没法选择违抗她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_11_04_08.mp3
+name,
+msg,1,<outline width=2 color=black>没错。现在的我，无法贯彻自己的意志。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_11_04_09.mp3
+name,
+msg,1,<outline width=2 color=black>所以，我只能相信你们。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_11_04_10.mp3
+name,
+msg,1,<outline width=2 color=black>虽然这份信赖完全没有道理，但我依然坚信着。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_11_04_11.mp3
+name,
+msg,1,<outline width=2 color=black>你们总有一天能超越我的——甚至超越原书的预料，\n抓住属于自己的未来。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_11_04_12.mp3
+name,
+msg,1,<outline width=2 color=black>所以，努力回应我的信赖吧。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_11_04_13.mp3
+name,
+msg,1,<outline width=2 color=black>向我证明未来是靠人的意志编织的吧。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_099_11_04_14.mp3
+name,
+msg,1,<outline width=2 color=black>这样的话，我也能放心把――……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
