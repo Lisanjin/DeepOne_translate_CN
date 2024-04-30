@@ -25,7 +25,8 @@
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/1.png)
 
 2.在浏览器安装[redirector扩展](https://chromewebstore.google.com/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd)（如果你使用过之前本地版本，即导入过Redirector.json的，请卸载重装）
-![](https://lisanjin.github.io//DeepOne_translate_CN/image/2.png)
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/2.png) 
+手机请下载火狐浏览器后，安装[redirector附加组件](https://addons.mozilla.org/zh-CN/android/addon/redirector/)
 
 3.打开redirector扩展，点击edit redirects，点击import导入在第一步下载的文件
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/3.png)
