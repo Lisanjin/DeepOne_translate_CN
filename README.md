@@ -17,23 +17,26 @@
 主线的第七章及往后，来自上述人员的汉化  
 其余内容使用了GPT4+GPT3.5进行汉化  
 
-该补丁仅供交流学习，不得用于任何盈利行为。请于下载后24小时内删除。   
+该补丁仅供交流学习，不得用于任何盈利行为。请于下载后24小时内删除。
 有问题可以留issue,或者去QQ交流群927910543  
 
-## 使用说明 
+## 使用说明
+
 1.下载重定向字典<https://lisanjin.github.io/DeepOne_translate_CN/Redirector_online.json> (使用你的下载工具下载，或者在浏览器点击[这个链接](Redirector_online.json)后，按ctrl+s保存到本地)
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/1.png)
 
 2.在浏览器安装[redirector扩展](https://chromewebstore.google.com/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd)（如果你使用过之前本地版本，即导入过Redirector.json的，请卸载重装）
-![](https://lisanjin.github.io//DeepOne_translate_CN/image/2.png) 
 手机请下载火狐浏览器后，安装[redirector附加组件](https://addons.mozilla.org/zh-CN/android/addon/redirector/)
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/2.png)
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/2-2.png)
 
 3.打开redirector扩展，点击edit redirects，点击import导入在第一步下载的文件
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/3.png)
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/3-2.png)
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/3-3.png)
 
-4.完成。如果需要切换回日语，打开redirector扩展后，点击disable redirector按钮即可
+4.完成，打开游戏，手机请使用[sp版本的网页端](https://sp-play.games.dmm.co.jp/play/deeponer/)。如果需要切换回日语，打开redirector扩展后，点击disable redirector按钮即可
 
 ## 更新
+
 重复上述1、3步骤即可
