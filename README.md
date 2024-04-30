@@ -23,13 +23,15 @@
 
 ## 使用说明 
 1.下载重定向字典<https://lisanjin.github.io/DeepOne_translate_CN/Redirector_online.json> (使用你的下载工具下载，或者在浏览器点击[这个链接](https://lisanjin.github.io/DeepOne_translate_CN/Redirector_online.json)后，按ctrl+s保存到本地)
-![]()
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/1.png)
 
 2.在浏览器安装redirector扩展（如果你使用过之前本地版本，即导入过Redirector.json的，请卸载重装）
-![]()
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/2.png)
 
 3.打开redirector扩展，点击edit redirects，点击import导入在第一步下载的文件
-![]()
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/3.png)
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/3-2.png)
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/3-3.png)
 
 4.完成。如果需要切换回日语，打开redirector扩展后，点击disable redirector按钮即可
 ![]()
