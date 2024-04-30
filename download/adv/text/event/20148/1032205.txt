@@ -1,0 +1,666 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>界限逐渐变得模糊。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>感觉自己内心混入了一个与自己不同的自己。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>那边的世界和，这边的世界。\n这边的我和，那边的我。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>黑森林的祈愿与玛利亚·塔拉斯库融合在一起，\n变得越来越浓烈。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>在深邃黑暗的森林中，如同夜风摇曳的树叶摩擦声，\n又或者像刺耳的噪音。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>回响着。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么我必须如此努力？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么我会以这样的方式出生？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么我必须忍受如此伤痛？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么只有姐姐——……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11720300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm133.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「啊……对。这就是……这正是，作为玛利亚·塔拉丝库这个人类的\n渺小丑陋心灵的本性」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+slideinblack,0.1,left,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla3,0,0,1,0,,,,
+playse,/download/sound/se/chaA.mp3
+slideoutblack,0.2,left,
+endwait,
+slideinblack,0.1,left,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em1,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1
+endwait
+spineoff,em1,0
+endwait
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「――――咦！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+slideinblack,0.1,right,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla1,0,0,1,0,,,,
+anm,scale,sla1,-1_1,0,
+playse,/download/sound/se/chaA.mp3
+slideoutblack,0.2,right,
+endwait,
+slideinblack,0.1,right,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103715/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0.5,,,,
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,-150,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em1,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1
+endwait
+spineoff,em1,0
+endwait
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「咦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,-150,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「这、是……呃！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:sad,maruta,300,-90,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+spriteatlas,download/character/102980/adv/atlas/stand_a,body:sad,rozet_s,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特的影子</outline>,
+msg,0,<outline width=2 color=black>「玛利亚、大人……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:sad,maruta,300,-90,0.5,0,,,,
+anm,tint,rozet_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「黑森林的祈愿的气息与……玛利亚重叠在一起……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「姐姐，我已经累了。真的很累了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:surprise,maruta,300,-90,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「告诉我，姐姐。为什么会这样呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么我们会如此地诞生？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「甚至无法作为人类诞生，只能无理地献出生命。\n什么都得不到，甚至连追求都不被允许」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么我们必须如此不幸？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:surprise,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「那是因为……玛利亚，你是…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:sad,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你，觉得不幸吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「你觉得，我不不幸吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「我想，我一定不是什么不幸的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「无论以何种形式，在妹妹身边，成为妹妹的力量，\n对我来说，那绝对不是什么不幸的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「或许很痛苦……不，关于痛苦这件事，甚至\n可能根本就没有意识到过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，我想——……与玛利亚·塔拉丝库共同度过，\n直到最后都是幸福的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，正因为如此，才想留给妹妹幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「为什么姐姐如此坚强又温柔呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「人であっても、魔導書であっても、姉さんは姉さん。\nああ……もう……本当に为什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么，姐姐如此之，如此之，如此之，\n与我不同？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我们应该是一样的，不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你为什么……没有这样想过呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「肯定想过了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么不能像个人一样陪在妹妹身边呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么不能用这双眼睛看着妹妹的笑容，\n用这双手抚摸妹妹呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我想，肯定无数次地重复着这样无所谓的质问。\n越是重复越多次，就越相信自己在想念玛利亚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「…………是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，对不起……果然我还是没有姐姐那么坚强。\n没有姐姐那么了不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我无法像你那样美好地思考」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我的“为什么”这样的质问……总是充满了悲叹、嫉妒，\n还有……啊，对……丑陋的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「没关系」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这样也好……我会接受你的一切」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:surprise,maria,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「――…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哈哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊，该死……可恶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我肯定会喜欢上这样的姐姐的，对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，嗯。我也明确地意识到了，\n现在和我有着相同感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「玛利亚――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「为什么、为什么、为什么――重复这样的质问，\n我已经累了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「已经不需要再重复了，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:anger,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「咦……玛利亚，等等！我们好好谈谈――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102980/adv/atlas/stand_a,body:normal,rozet_s,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特的影子</outline>,
+msg,0,<outline width=2 color=black>「玛利亚大人……！这次一定要，至少在您身边直到最后――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rozet_s,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「笨蛋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_b,body:smile,maria,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我已经不需要你了。滚开吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playse,/download/character/103707/se/se_c03707_skill_01.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm138.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>？？？</outline>,
+msg,0,<outline width=2 color=black>「并不是因为想拥抱那样的东西才拥抱的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「但是……毫无疑问，我曾拥抱过那样的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这样的东西……以后再也不用拥抱了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「呢……最后的“为什么”我们两个都是一样的，对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「我讨厌你，非常讨厌」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「但是……是啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「你也曾经是我……这一点，我承认」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11720301.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/102980/adv/atlas/stand_a,body:sad,rozet_s,300,-100,0.5,0.5,,,,
+anm,tint,rozet_s,150_150_150,0.0001,0
+spriteatlas,download/character/102713/adv/atlas/stand_a,body:surprise,maruta,-300,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「――诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102980/adv/atlas/stand_a,body:sad,rozet_s,300,-100,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特的影子</outline>,
+msg,0,<outline width=2 color=black>「这里，是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102013/adv/atlas/stand_b,body:anger,tabasa,-300,-100,0.5,0.5,,,,
+anm,tint,rozet_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「等一下……玛利亚去哪里了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rozet_s,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103715/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「――……玛利亚已经，去到了边界的另一边」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103715/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我们被推回到这边……已经……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101382/adv/atlas/stand_a,body:anger,milva_s,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「……看，那面镜子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_11720301.jpg,bg,600,200,3,1
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「――玛利亚！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+spriteoff,all,1
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11720300.jpg,1,255
+endwait
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「――…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊啊。终于……终于……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「现在，可以结束了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104905/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真的……好累啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
