@@ -21,7 +21,7 @@
 有问题可以留issue,或者去QQ交流群927910543  
 
 ## 使用说明 
-1.下载重定向字典<https://lisanjin.github.io/DeepOne_translate_CN/Redirector_online.json> (使用你的下载工具下载，或者在浏览器点击[这个链接](https://lisanjin.github.io/DeepOne_translate_CN/Redirector_online.json)后，按ctrl+s保存到本地)
+1.下载重定向字典<https://lisanjin.github.io/DeepOne_translate_CN/Redirector_online.json> (使用你的下载工具下载，或者在浏览器点击[这个链接](Redirector_online.json)后，按ctrl+s保存到本地)
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/1.png)
 
 2.在浏览器安装[redirector扩展](https://chromewebstore.google.com/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd)（如果你使用过之前本地版本，即导入过Redirector.json的，请卸载重装）
