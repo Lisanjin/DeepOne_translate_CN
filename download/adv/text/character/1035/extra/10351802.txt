@@ -1,0 +1,214 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11700301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm126.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「感觉到妹力下降了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_02.mp3
+msg,1,<outline width=2 color=black>「妹力。作为妹妹向哥哥展示的可爱和魅力，以及接受这些的度量和宽容。国际大百科全书也是这么记载的\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_03.mp3
+msg,1,<outline width=2 color=black>「最近，总是被哥哥粗鲁地对待，\n看来我的妹力似乎在急剧减弱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_04.mp3
+msg,1,<outline width=2 color=black>「确实，虽然我们是兄妹，但像亲密无间的朋友或者死党那样的关系，并不算坏，我自己也接受了这一点\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_05.mp3
+msg,1,<outline width=2 color=black>「可是，我是妹妹啊！被夸可爱啊、紧紧拥抱啊、像公主一样被抱着都会动摇的妹妹在哪里！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「是累了吗……？」,选项2「不，没有」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_06.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「烦死了！让哥哥随意摆布可是会败坏恶名的！\n善良的恶魔，我才不会轻易让你看到我的害羞脸呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:normal,norn,0,-130,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,norn
+playvoice,1,download/character/103518/adv/sound/fav103518_02_07.mp3
+msg,1,<outline width=2 color=black>「嗯……嘿、嘿嘿。什么嘛，只是稍微被抱紧一下，\n就以为我会动摇可真是大错特错了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:sad,norn,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,norn
+playvoice,1,download/character/103518/adv/sound/fav103518_02_08.mp3
+msg,1,<outline width=2 color=black>「只是、摸摸头发而已，呃、没关系的。这种温柔的手法，\n作为妹妹应该泰然处之才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:shy,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103518/adv/sound/fav103518_02_09.mp3
+msg,1,<outline width=2 color=black>「哎呀！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:shy,norn,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+anm,scale,norn,0.5_0.5,0.5,0
+anm,move,norn,0_-120,0.5,0
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_10.mp3
+msg,1,<outline width=2 color=black>「等、等一下！在鼻子上亲一下这种很独特的举动，\n突然袭击太不公平了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_11.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「没错，不存在的。妹妹就是要堂堂正正地接受哥哥的爱。\n所以，随时都可以向我发起攻击哦，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:shy,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103518/adv/sound/fav103518_02_12.mp3
+msg,1,<outline width=2 color=black>「嗯唔！？吸、嘟、吸呜……啊啊，等――吸贴、\n嗯、嗯嗯……滋、吮……吸溜、吸……吸、嘟、吮呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:shy,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_13.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「突然亲吻跳过了好几个阶段，笨蛋！\n话说回来，不要伸舌头进来啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_14.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「唔唔唔……我的妹力一直在衰退，\n看来哥哥的兄力却在不断提高啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103518/adv/sound/fav103518_02_15.mp3
+msg,1,<outline width=2 color=black>「既然这样就做好觉悟吧！我这个！这个恶意系超绝美少女！\n一定会让你神魂颠倒、软骨无力的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103518/adv/atlas/stand_a,body:shy,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103518/adv/sound/fav103518_02_16.mp3
+msg,1,<outline width=2 color=black>「嗯嗯，啊！？吸、吸嘟、噗……等，犯规……嗯、呜！\n吸、吸呜……吸贴、吸……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
