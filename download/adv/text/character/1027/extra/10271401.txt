@@ -1,0 +1,166 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm141.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「今天这个孩子是青蛙的形象。\n和以往一样，非常可爱，很棒」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_02.mp3
+msg,1,<outline width=2 color=black>「而且，虽然是青蛙，但穿着雨衣的样子也很有反差，得到了高评价。\n想避免被水弄湿的青蛙......真是奇妙无比」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「喜欢青蛙吗？」,选项2 「青蛙不是喜欢湿润的吗……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_03.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「嗯……我不讨厌她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_04.mp3
+msg,1,<outline width=2 color=black>「嗯，如果是活着的状态会觉得滑滑的，所以不太愿意去摸\n但只是看看的话就没什么特别在意的了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_05.mp3
+msg,1,<outline width=2 color=black>「而且，和真正的青蛙比较是没有意义的。\n对于这种事情，不在现实和幻想的界线上吹毛求疵才是礼仪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,100,300,,,0,1.3,1.3,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/102714/adv/sound/fav102714_01_06.mp3
+msg,1,<outline width=2 color=black>「今天的她也非常可爱。只要明白这一点就可以了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_10.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「啊……对了，在拉莱耶也饲养了青蛙，你知道吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_07.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「不拘泥于常识的神秘感也是一种魅力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_08.mp3
+msg,1,<outline width=2 color=black>「如果你不能理解这种魅力，那么你还有很长的路要走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_09.mp3
+msg,1,<outline width=2 color=black>「最重要的是，黄色雨衣非常适合她，非常可爱，\n所以没有任何问题……不对吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_10.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「啊……对了，在拉莱耶也饲养了青蛙，你知道吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+endif,,,,,,,,,,
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_11.mp3
+msg,1,<outline width=2 color=black>「其实青蛙是可以吃的，在法国的一部分地方，\n甚至被当作相当高级的食材来对待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_12.mp3
+msg,1,<outline width=2 color=black>「在拉莱耶饲养的也是食用青蛙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_13.mp3
+msg,1,<outline width=2 color=black>「可能是因为在日本不太常见，所以平时亚纱花做的饭里面\n没有出现过……但其实我对此有点好奇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_14.mp3
+msg,1,<outline width=2 color=black>「你有吃过青蛙吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_15.mp3
+msg,1,<outline width=2 color=black>「――嗯。看你的反应，似乎还没有吃过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_16.mp3
+msg,1,<outline width=2 color=black>「那么，回到拉莱耶后让路易斯给我们做个青蛙料理试试吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_17.mp3
+msg,1,<outline width=2 color=black>「路易斯似乎曾在法国的高级餐厅工作过，\n所以他应该能做出青蛙料理」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_18.mp3
+msg,1,<outline width=2 color=black>「所以，我们快点完成这里的调查，\n然后尽快回到拉莱耶吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102714/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102714/adv/sound/fav102714_01_19.mp3
+msg,1,<outline width=2 color=black>「……我一直想尝试的东西，能和你一起分享，\n真的很期待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

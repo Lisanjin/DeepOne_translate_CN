@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm141.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_01.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「最近，我开始尝试和这边的罗泽特交谈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_02.mp3
+msg,1,<outline width=2 color=black>「说实话，这边的罗泽特还是会说些贬低自己的话，\n让我在和她交谈时偶尔感到恼火」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_03.mp3
+msg,1,<outline width=2 color=black>「但是……她是被我所做的事情牵扯进来的人之一」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_04.mp3
+msg,1,<outline width=2 color=black>「她和我的世界的罗泽特共享身体，可能也有一部分会感到负担\n如果有什么困扰她的事情，我希望能帮助她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_05.mp3
+msg,1,<outline width=2 color=black>「所以，每当我偶尔去找她聊天时……你总是会出现在我们的对话中」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_06.mp3
+msg,1,<outline width=2 color=black>「她总是开心地谈论你，所以我尝试着问了很多关于你的事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_07.mp3
+msg,1,<outline width=2 color=black>「――没、没想到你竟然让罗泽特说出那样的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_08.mp3
+msg,1,<outline width=2 color=black>「即使是不同的世界，罗泽特竟然会对这样的男人……而、而且，还说出那样的话\n乞求你……我、我有点头晕……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「首先冷静下来」,选项2　「……你误会了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_09.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「该冷静下来的是你那下半身，混账！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_10.mp3
+msg,1,<outline width=2 color=black>「不满足于只有姐姐，连罗泽特都落入了你的魔爪，\n你竟然还有脸说出这样的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_11.mp3
+msg,1,<outline width=2 color=black>「哼，我不知道的时候，姐姐也……不，难道说，\n姐姐和罗泽特一起被这个男人……这、这、呜呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+shake,0.2,3,15,0,maria
+playvoice,1,download/character/104906/adv/sound/fav104906_02_12.mp3
+msg,1,<outline width=2 color=black>「光是想象……就、就、脑子都要烧起来了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_13.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「你说什么误会。罗泽特被你……让、让她说出淫秽的话\n她是被你强迫的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:surprise,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_14.mp3
+msg,1,<outline width=2 color=black>「――……罗泽特，是自愿的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_15.mp3
+msg,1,<outline width=2 color=black>「哼，怎、怎么可能，那个罗泽特怎么可能知道那种话……！\n你做了坏事还找借口，真丢人……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_16.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「我无法坐视罗泽特被坏男人欺骗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_17.mp3
+msg,1,<outline width=2 color=black>「也许我没有资格插手这个世界的事情。\n但是，总有一个限度」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_18.mp3
+msg,1,<outline width=2 color=black>「无论如何，我必须继续向罗泽特询问情况……如果我错过了你的\n恶行就糟糕了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_19.mp3
+msg,1,<outline width=2 color=black>「如果罗泽特能主动告诉我就好了。\n虽然看起来还很困难……虽然我不擅长谈话，但也没有办法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_20.mp3
+msg,1,<outline width=2 color=black>「……？　你为什么在笑？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_21.mp3
+msg,1,<outline width=2 color=black>「我说了什么奇怪的话吗？\n反倒是你，现在是在被责备的立场，你明白吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104906/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104906/adv/sound/fav104906_02_22.mp3
+msg,1,<outline width=2 color=black>「…………真是个奇怪的家伙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

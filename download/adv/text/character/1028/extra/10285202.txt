@@ -1,0 +1,188 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11240300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm141.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_01.mp3
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「这附近，看起来刚下过雨呢。\n地面上有积水和泥泞，走路的时候要小心点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_02.mp3
+msg,1,<outline width=2 color=black>「……明明刚被夸配得很好，但我又不想弄脏衣服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_03.mp3
+msg,1,<outline width=2 color=black>「嗯……啊，没、没什么！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_04.mp3
+msg,1,<outline width=2 color=black>「而、而且，你也要注意别被泥泞绊倒了\n要小心点哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_05.mp3
+msg,1,<outline width=2 color=black>「我就算了，如果你摔倒受伤了那就糟糕了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_06.mp3
+msg,1,<outline width=2 color=black>「并不是在贬低自己哦。\n只是，你对我来说很重要，这、这个……――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_07.mp3
+msg,1,<outline width=2 color=black>「――啊，没、没有！？　刚才只是在想象，没有人能替代你\n关于这种重要性的话题——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,move,miliam,-20_-240,0.5,0
+endwait
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:surprise,miliam,-20,-240,0.5,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_08.mp3
+msg,1,<outline width=2 color=black>「哇啊……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,1,0.3,1.0
+endwait
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_020.mp3
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-380,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/102852/adv/sound/fav102852_02_09.mp3
+msg,1,<outline width=2 color=black>「…………啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「你没事吧？」,选项2　「米莉亚姆你也不能受伤」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-380,0.7,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_10.mp3
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「呃、呃呃……虽然有你扶着我，我没受伤……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-380,0.7,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_11.mp3
+msg,1,<outline width=2 color=black>「被看到这么丢脸的一面……而且，怎么的，\n心跳得好厉害……可能我、我根本没那么好……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-380,0.7,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_12.mp3
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「是、是的……如果我现在受伤了，就没人能保护你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-380,0.7,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_13.mp3
+msg,1,<outline width=2 color=black>「呃……别、别说话！　你可能并不是那个意思，\n但现在就当作是那样吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-380,0.7,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_14.mp3
+msg,1,<outline width=2 color=black>「否则我会更紧张……我没有自信能保持平静」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-380,0.7,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_15.mp3
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,1,<outline width=2 color=black>「我、我已经没事了，那个……能放开我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-220,0.5,0.5,,,,
+endwait,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_16.mp3
+msg,1,<outline width=2 color=black>「那个，嗯……谢谢你救了我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:normal,miliam,0,-220,0.5,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_17.mp3
+msg,1,<outline width=2 color=black>「我会小心点，不会再像刚才那样了。\n再也不能让你看到丢脸的一面了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:surprise,miliam,0,-300,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_18.mp3
+msg,1,<outline width=2 color=black>「啊啊……！？　等、为什么要握我的手……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:sad,miliam,0,-300,0.6,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_19.mp3
+msg,1,<outline width=2 color=black>「为了不让我摔倒吗……所以，我说过会小心的\n你没听见吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:sad,miliam,0,-300,0.6,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_20.mp3
+msg,1,<outline width=2 color=black>「……但是，如果是为了防止你摔倒的话……也许也没办法了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-300,0.6,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_21.mp3
+msg,1,<outline width=2 color=black>「……如果是这样，我们可以再这样待一会儿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-300,0.6,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_22.mp3
+msg,1,<outline width=2 color=black>「只、只是无奈而已！　只是无奈而已哦……？　别误会了哦！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102852/adv/atlas/stand_a,body:shy,miliam,0,-300,0.6,0,,,,
+playvoice,1,download/character/102852/adv/sound/fav102852_02_23.mp3
+msg,1,<outline width=2 color=black>「呜、呜呜、呜呜……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
