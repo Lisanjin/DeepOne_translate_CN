@@ -1,0 +1,155 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11570300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm107.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_01.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「我觉得，我可能是个笨拙的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「……应该笑一笑吗？」,选项2「可以帮我清理耳朵吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_02.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「我可不是在开玩笑哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_03.mp3
+msg,1,<outline width=2 color=black>「别开玩笑了，我是在认真说话呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_04.mp3
+msg,1,<outline width=2 color=black>「所谓的笨拙，并不是指技术或技能，\n而是指情感的处理方式……或者说，精神层面的问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_05.mp3
+msg,1,<outline width=2 color=black>「其他人可能会更加得心应手，处理得更好，\n但我却无法妥协，变得固执……这就是我的问题吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:smile,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_06.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「好的，那就请把头放在我的膝盖上吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+shake,0.2,2,8,8
+playvoice,1,download/character/103412/adv/sound/fav103412_02_07.mp3
+msg,1,<outline width=2 color=black>「――才不是那样！我可不是听错了！\n我正认真地说话呢，你能不能好好听！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_08.mp3
+msg,1,<outline width=2 color=black>「真是的……每次和你交谈，\n总会让我感到无力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_09.mp3
+msg,1,<outline width=2 color=black>「……嘛，从某种角度来看，这也许也算你的优点吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_10.mp3
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,1,<outline width=2 color=black>「即使是我自己，也觉得放松肩膀、\n这类事情对我来说也特别困难呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_11.mp3
+msg,1,<outline width=2 color=black>「……你知道的，我知道了另一个世界的我，更想待在艾丽卡身边，\n更想好好地支持艾丽卡」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:normal,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_12.mp3
+msg,1,<outline width=2 color=black>「那个我到最后都没能陪在她身边……所以我想\n成为艾丽卡的力量，弥补那一份遗憾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_13.mp3
+msg,1,<outline width=2 color=black>「……但是，这对艾丽卡来说不是负担吗？\n毕竟，我想要做些什么，完全是我的一厢情愿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_14.mp3
+msg,1,<outline width=2 color=black>「尽量不给对方增加负担，但又尽可能地去帮助她。\n这应该是理想的状态……但是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_15.mp3
+msg,1,<outline width=2 color=black>「想要成为别人的力量……再次考虑起来，\n感觉真的很困难呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:surprise,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_16.mp3
+msg,1,<outline width=2 color=black>「怎么了你那愣住的表情！对，我知道！\n大家都不会因为这种事情而深思熟虑吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_17.mp3
+msg,1,<outline width=2 color=black>「但是没办法啊，一旦开始思考就会陷入深思中！\n所以我说了，我就是那么笨拙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_18.mp3
+msg,1,<outline width=2 color=black>「……为了朋友，应该如何去帮助她。\n连这种事情，我都不知道」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:unique,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_19.mp3
+msg,1,<outline width=2 color=black>「话说回来，一直忙于工作，能称得上朋友的人，\n到现在也只有几个人而已，也没办法吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:sad,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_20.mp3
+msg,1,<outline width=2 color=black>「唉，你真是幸运啊。这种事情你天生就擅长」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103412/adv/atlas/stand_a,body:shy,ruiez,0,-100,0.5,0,,,,
+playvoice,1,download/character/103412/adv/sound/fav103412_02_21.mp3
+msg,1,<outline width=2 color=black>「唔，你这个花心大萝卜！滥情的家伙！色狼！\n把你的技能分一点给我吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

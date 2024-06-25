@@ -1,0 +1,249 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yui1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:shy,yui2,0,0,0,0,,,,
+imgconf,yui2,yui1,0,-190,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105003/adv/sound/fav105003_01_01.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「啊，那个……现在，可以稍微给我一点时间吗……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_02.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「嗯，先说声对不起！对不起！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_03.mp3
+msg,1,<outline width=2 color=black>「――请在那个地方跳一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/slaB.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_04.mp3
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm098.mp3,0,
+endwait,,,,,,,,,,,
+
+anm,jump,yui,0_-90_30_1,0.3,0
+endwait
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_05.mp3
+msg,1,<outline width=2 color=black>「哇、哇、哇！ 钰，你竟然跳起来了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,jump,yui,0_-90_30_2,0.5,0
+endwait
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_06.mp3
+msg,1,<outline width=2 color=black>「钰是你让我跳的，但你自己却跳了起来！\n哇！ 哇哇！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,jump,yui,0_-90_30_3,0.7,0
+endwait
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_07.mp3
+msg,1,<outline width=2 color=black>「等等，那个，怎么回事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,jump,yui,0_-90_30_3,0.6,0
+endwait
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_08.mp3
+msg,1,<outline width=2 color=black>「我停不下来了！求你帮帮我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,jump,yui,0_-90_30_4,0.7,0
+endwait
+
+
+select,选项1 「不用再跳了」,选项2 「再多求我一些」
+if,select_===_1,,,,,,,,,
+
+
+playse,/download/sound/se/slaB.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_09.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_10.mp3
+msg,1,<outline width=2 color=black>「停、停下来了！太棒了，太棒了！钰的话语反弹回来\n钰的力量无法操控你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:shy,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_11.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「求、求你，是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,jump,yui,0_-90_30_2,0.5,0
+endwait
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:shy,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_12.mp3
+msg,1,<outline width=2 color=black>「呃，呃，我……我不想跳了！\n钰，我会听你的话的，让我停下来，请！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,jump,yui,0_-90_20_3,0.6,0
+endwait
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_13.mp3
+msg,1,<outline width=2 color=black>「拜托你了！无论是什么，我都会做的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/slaB.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_14.mp3
+msg,1,<outline width=2 color=black>「啊……真、真的停下来了……果然你是\n不受我的力量影响的人……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_15.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「没想到，竟然有这样的人……我非常、非常高兴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_16.mp3
+msg,1,<outline width=2 color=black>「我的力量总是强行扭曲别人的心，让他们听我的话\n但那种感觉，让我痛苦、悲伤……害怕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_17.mp3
+msg,1,<outline width=2 color=black>「在任何话语都能成真的世界里……感觉没有现实感，\n没有任何东西让我觉得是真实的，我非常、非常害怕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_18.mp3
+msg,1,<outline width=2 color=black>「但是……你是真实的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_19.mp3
+msg,1,<outline width=2 color=black>「――我喜欢你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_20.mp3
+msg,1,<outline width=2 color=black>「你是我的世界里唯一一个……绝对不会被我的话语\n改变的真实存在，值得信赖的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_21.mp3
+msg,1,<outline width=2 color=black>「我喜欢你，非常喜欢你，请、请和我结婚！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_22.mp3
+msg,1,<outline width=2 color=black>「---不行，吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_23.mp3
+msg,1,<outline width=2 color=black>「更多地了解彼此……？\n拒、拒绝了钰的请求……啊，啊呜……呜呜呜……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_24.mp3
+msg,1,<outline width=2 color=black>「你能拒绝我，我真的好喜欢！明白了，我的夫君大人！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105000/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105003/adv/sound/fav105003_01_25.mp3
+msg,1,<outline width=2 color=black>「我会更加努力，让你更了解钰，更喜欢钰的，\n我会加油的！我好喜欢你，夫君大人……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
