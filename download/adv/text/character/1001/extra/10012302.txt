@@ -1,0 +1,275 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11640301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「那个，主人……有没有什么，你想让我做的事情呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_02.mp3
+msg,1,<outline width=2 color=black>「既然我已经成为了女仆，\n我想做一些能让主人高兴的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「跟平时有什么不同？」,选项2 「自己想想看」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_03.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「哎？ 跟平时……不同的事情，那是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_04.mp3
+msg,1,<outline width=2 color=black>「……被这么一问，可能跟平时并没有太大的区别，也说不定？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_05.mp3
+msg,1,<outline width=2 color=black>「但，但是……通常都是我想要做的事情，所以我会去做。\n我认为主人也有在这方面有所顾虑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_06.mp3
+msg,1,<outline width=2 color=black>「所以今天，如果主人有什么想让我做的事情，\n请不要有任何顾虑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_07.mp3
+msg,1,<outline width=2 color=black>「那个……无论什么，都，请命令我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_08.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「自、自己……嗯、嗯嗯……那么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,asaka,0.6_0.6,0.5,0
+anm,move,asaka,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_09.mp3
+msg,1,<outline width=2 color=black>「那、那个，之前在借来的书中，\n有关于女仆和主人的故事……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,asaka,0.7_0.7,0.5,0
+anm,move,asaka,0_-170,0.5,0
+endwait
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_10.mp3
+msg,1,<outline width=2 color=black>「--女仆的服务……这样的怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100123/adv/sound/fav100123_02_11.mp3
+msg,1,<outline width=2 color=black>「――嘟、嘟……嘟」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_12.mp3
+msg,1,<outline width=2 color=black>「啊、呜、呜呜……这、这种事，还是太奇怪了吧！？\n对、对不起，我到底在做什么……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka,0,-130,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/100123/adv/sound/fav100123_02_13.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「哎……那个，主人？ 为什么要靠近……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/100123/adv/sound/fav100123_02_14.mp3
+msg,1,<outline width=2 color=black>「啊，那……主人，您……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka,0,-200,0.75,0.5,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_15.mp3
+msg,1,<outline width=2 color=black>「呃……我、我明、明白了……主人想做的事情，\n我已经完全明白了……所以，请放心交给我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm034.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:sad,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100123/adv/sound/fav100123_02_16.mp3
+msg,1,<outline width=2 color=black>「嘟……嗯、嗯……嘟、嘟、嘟……哈、啊……主人，\n主人啊……嘟……嗯、呼、嘟、嘟……嗯、嘟」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100123/adv/sound/fav100123_02_17.mp3
+msg,1,<outline width=2 color=black>「嘟、呼、嘟、嘟……哈啊，嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:normal,asaka,0,-200,0.75,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_18.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「嗯……怎么样，主人。\n主人想做的事情，这样对吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:normal,asaka,0,-200,0.75,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_19.mp3
+msg,1,<outline width=2 color=black>「或者说，还不够吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:normal,asaka,0,-200,0.75,0,,,,
+playvoice,1,download/character/100123/adv/sound/fav100123_02_20.mp3
+msg,1,<outline width=2 color=black>「因为我是女仆，所以直到让主人满意为止，\n无论如何都会为您服务的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100123/adv/sound/fav100123_02_21.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「嘟，嘟……呼，呼、嘟、嘟......哈啊，啊。\n我爱你...... 嘟...... 嘟，我爱你。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100123/adv/sound/fav100123_02_22.mp3
+msg,1,<outline width=2 color=black>「我爱你，主人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

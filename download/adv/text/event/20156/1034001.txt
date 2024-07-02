@@ -1,0 +1,437 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11490300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「等、等一下……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:shy,sasya,300,-110,0.5,0.5,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「这、这身打扮是什么啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:shy,sasya,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「女、女仆装，对吧……不过，这个裙子……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「绝对太短了……！这、这样的话，\n稍微动一下就会露出来了吧……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,sasya,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102954/adv/atlas/stand_a,body:surprise,rozet,300,-100,0.5,0.5,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「这是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:normal,yoshino,-300,-240,0.5,0.5,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「嗯嗯。之前在幻梦境中也被强行穿上了女仆装，\n没想到还有第二次呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rozet,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:shy,sasya,300,-110,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「等一下！为什么芳乃的裙子是长款的！\n这不公平……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:shy,sasya,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且，罗泽特的装扮也比较和风，露出的地方很少……虽然不知道为什么还长出了耳朵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102954/adv/atlas/stand_a,body:normal,rozet,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「'喵喵'，就是这样的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　'喵喵',选项2　'我想要把这只可爱的猫收养'
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102954/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「'喵喵'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:normal,yoshino,300,-240,0.5,0.5,,,,
+anm,tint,yoshino,150_150_150,0.0001,0
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「你、你们两个有什么默契，好不公平……！\n我、我也可以说'喵喵'，虽然没耳朵！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102507/adv/atlas/stand_a,body:normal,yoshino,300,-240,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芳乃・伊普丝洛</outline>,
+msg,0,<outline width=2 color=black>「那么我也来一发，让我也说个'喵喵'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,yoshino,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:sad,sasya,300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「为什么会变成这样。你们都冷静一点。\n大家都在说'喵喵'，这已经到了另一个恐怖的程度了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/102954/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「是、是这样吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102954/adv/atlas/stand_a,body:shy,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「罗泽特觉得……如果是您的话，我愿意被您养，不，更确切地说\n我希望被您养，就是这种感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102954/adv/atlas/stand_a,body:smile,rozet,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「罗泽特作为您的忠诚的宠物，无论什么事都会――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:sad,sasya,300,-110,0.5,0.5,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+spriteatlas,download/character/100123/adv/atlas/stand_a,body:shy,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「不、不行！如果是那样，那我来当宠物！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:sad,sasya,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「把女人当宠物对待，你这个男人真是最差劲」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「'虽然你穿着迷你裙女仆装说这些话'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:anger,sasya,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「'我并不是因为喜欢才穿成这样的！'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「'没、没关系，非常适合你！'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:unique,sasya,-300,-110,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「什么才叫没关系啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0.5,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「请冷静一下，莎夏小姐。\n虽然确实有些混乱，但首先我们要保持冷静」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:unique,sasya,-300,-110,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「呼……是的。不能被周围的愚蠢情况牵着走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:normal,sasya,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不愧是芭德薇贵族的下一任家主。即使在这种时候也能保持冷静」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「嗯……无论如何，让我们冷静下来，然后谈话吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「首先，莎夏小姐。\n能否请你说一句『欢迎回家，小姐』试试看？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:normal,sasya,-300,-110,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「好的。欢迎回家，小姐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:unique,sasya,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「---……嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「'啊、这就是迷你裙女仆的欢迎回家！\n正宗的萌系王道风格！'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「'对了，莎夏小姐。能否请你也做一次萌萌哒\n好吗？'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「'啊，这个是不是要和手做出心形标志一起做呢'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:sad,sasya,-300,-110,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「完全没有冷静下来……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,sasya,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「吉泽尔，如果是女仆的话，不是有霍莉吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「真正的女仆和迷你裙女仆是完全不同的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:unique,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说回来，如果我在霍莉面前提起迷你裙女仆的话，\n那天就会被教训三个小时……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:unique,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我会被迫正坐着听她讲述真正的女仆、真正的服务精神是什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:unique,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「'我寻求的不是服务，而是萌。从那天开始，\n我发誓再也不在霍莉面前提起迷你裙女仆的事了'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,-300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「'你被教训过啊……'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「――所以，莎夏小姐！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:normal,sasya,-300,-110,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「不要」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「在这个领域里，能否成为我的女仆！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:normal,sasya,-300,-110,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「不要」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「'请成为我的女仆！'」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:normal,sasya,-300,-110,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「不要」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「我需要你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:anger,sasya,-300,-110,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「所以，无论你怎么说，我都不会答应！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0,,,,
+anm,tint,sasya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「没关系的，就一会儿！只需要一会儿就好了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104808/adv/atlas/stand_a,body:anger,sasya,-300,-110,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,0,<outline width=2 color=black>「真是烦人！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
