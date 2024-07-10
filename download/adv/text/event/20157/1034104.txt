@@ -1,0 +1,321 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm110.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>作为讨伐之刃在各地执行净化任务的时候，野营就是家常便饭了。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>搭起帐篷，营造一个便于休息的环境。这跟所谓的露营\n应该没什么区别……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>明明应该是这样的……可当决定要在这个领域和大家一起露营时，\n不知为何，我竟然产生了一种从未在以往的野营中体验过的感觉。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>和那位大人……和大家一起度过的时光，\n到底会是怎样的呢？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>这样的心情……大概就是所谓的兴奋吧。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>就算行为本身并没有太大的不同，只是和谁在一起，\n心情就会发生这么大的变化。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>如果可以的话，真想更加确认一下这种感觉。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>我是这么想的。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm143.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/character/102919/image/main.png,card1,100,0,2,1,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「呼……这里的阳光还真是有点强烈呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+sprite,download/character/102919/image/main.png,card2,0,0,2,0,,,,
+anm,fade,card2,0,0,0
+anm,scale,card2,1_1,1,0
+anm,fade,card2,255,1,0
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「——……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「那个……您怎么了，气喘吁吁的。\n而且，看起来全身都湿透了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「被想花骂了」,选项2　「因为这个领域太热了」
+if,select_===_1,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「是被想花大人骂了吗？\n这个嘛，怎么说呢，感觉有点意外。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「不过，想花大人好像很仰慕您的样子，\n就算稍微生一下气，应该也会很快原谅您吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……不，刚才那番话对我来说太过了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我现在还很不成熟。\n尽管如此，还去代言他人的心意什么的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「实在抱歉，请您忘了吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「阳光确实很强，气温似乎也在逐渐升高呢。\n所以您打湿身体，是为了降低体温……是这样吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「但是，湿透的衣服会比想象中更容易带走体温。\n请您务必当心，别感冒了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「如果感到有什么不舒服的地方，请一定要告诉我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「当然，像我这样的人能做的事情并不多，但如果是您\n所希望的，无论什么事情我都会尽我所能去做。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「……是在找我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我刚才在这里捕鱼。\n想着大家也需要食物。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「但是，这里的鱼实在是太敏捷了……目前捕到的数量还不足以\n让大家满意……我为自己的不称职感到羞愧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「但是，我一定会捕到足够让您和大家满意的\n鱼给您看的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「诶……您也要一起吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「那个……虽然很感谢您的好意，但这里就\n交给我可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「当、当然，并不是说我不愿意和您在一起。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「只是，您已经帮忙搭好了帐篷。\n……而且，我也想为大家尽一点绵薄之力。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……但是，如果您实在放心不下的话，那」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「等我平安捕到很多鱼的时候，\n……您、您能夸奖我的话，我会很开心的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「——好的，非常感谢。我向您保证，\n一定不会辜负您的期望。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「在这期间，请您和大家尽情享受野营的乐趣吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103853/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「怎么，和其他女人的幽会已经结束了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103853/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——不，看你那表情，似乎在盘算着什么。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103853/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「摆出那种表情来找我，就是想让我帮忙，\n没错吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103853/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哼哼……啊啊，当然没问题。只要是你想要的，我会\n尽我所能满足你。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103853/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「和平的露营固然不错，但配合你的计划似乎更有趣啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103853/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那么，你到底在盘算什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103853/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「以你的性格，肯定也会让我尽兴的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm143.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103853/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Line_center,em1,default,animation,1,0,0,1,1.0,0
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「——接下来，要开始宝藏大搜索活动了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:sad,alma,-300,-120,0.5,0.5,,,,
+anm,tint,alma,150_150_150,0.0001,0
+spriteatlas,download/character/102052/adv/atlas/stand_a,body:unique,tabasa,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「怎么突然就开始了啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:sad,alma,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「哈……麻烦事。绝对是麻烦事。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104211/adv/atlas/stand_a,body:normal,soka,300,-110,0.5,0.5,,,,
+anm,tint,alma,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「宝藏搜索……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103853/adv/atlas/stand_a,body:surprise,nanaba,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「唔……？反应比我想象的差啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「这就是你平时的所作所为。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

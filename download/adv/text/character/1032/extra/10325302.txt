@@ -1,0 +1,225 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11100301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm143.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,-1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_016.mp3
+anm,move,alma,1200_-120,2,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,-1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,alma,0_-120,1,0
+endwait
+
+
+playvoice,1,download/character/103253/adv/sound/fav103253_02_01.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「……哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,alma,1200_-120,1,0
+endwait
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,-1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,alma,0_-120,1,0
+endwait
+
+
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_02.mp3
+msg,1,<outline width=2 color=black>「我本以为这个速度你应该能跟上的，没想到你居然能跟得上」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_03.mp3
+msg,1,<outline width=2 color=black>「我还以为你会说要休息一下，或者让我走慢点之类的软弱话呢……有点意外啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_04.mp3
+msg,1,<outline width=2 color=black>「我还以为你这个连魔术都不怎么会用的人，不管怎么训练都是白费功夫，但至少在这种时候不会拖后腿，也算是值得肯定的一点吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我、我还行，不过……」,选项2　「有点吃不消了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_05.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「都上气不接下气了还逞强……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_06.mp3
+msg,1,<outline width=2 color=black>「真是的……我刚想着是不是该稍微认可你一下，你就来这出，真扫兴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:unique,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_07.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「哎呀，我一夸你你就得意忘形了？\n给我打起精神来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_08.mp3
+msg,1,<outline width=2 color=black>「——虽然很想这么说，但你要是晕倒了就更麻烦了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_09.mp3
+msg,1,<outline width=2 color=black>「算了，你每天的努力也就这种程度吧。\n下次再有机会的话，好好努力跟上我的脚步吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_10.mp3
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,1,<outline width=2 color=black>「没办法，我就放慢脚步吧。要心存感激哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_11.mp3
+msg,1,<outline width=2 color=black>「……干嘛，你那副恍惚的表情是怎么回事。\n我做出让步很奇怪吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_12.mp3
+msg,1,<outline width=2 color=black>「先说好，我可不是在关心你或者担心你什么的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:normal,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_13.mp3
+msg,1,<outline width=2 color=black>「要感谢你自己的实力吧。\n说到底，有你这样的实力在，我也不能见死不救不是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_14.mp3
+msg,1,<outline width=2 color=black>「而且……虽然不甘心，但你是米露瓦姐姐的宠儿，\n我也不能随便把你怎么样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_15.mp3
+msg,1,<outline width=2 color=black>「你就好好感谢姐姐吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:sad,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_16.mp3
+msg,1,<outline width=2 color=black>「……而且，嗯，到目前为止你能跟上这个速度，\n也算是扯平了，稍微放慢一点速度也没什么大问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_17.mp3
+msg,1,<outline width=2 color=black>「——喂，你那是什么表情。我刚才就说了，\n这可不是在关心你哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_18.mp3
+msg,1,<outline width=2 color=black>「要是只有我一个人的话，这种山我早就爬完了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_19.mp3
+msg,1,<outline width=2 color=black>「为了配合你的速度，我肯定是慢下来了，\n你应该表现得更抱歉一点才对……哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:anger,alma,0,-120,0.5,0,,,,
+playvoice,1,download/character/103253/adv/sound/fav103253_02_20.mp3
+msg,1,<outline width=2 color=black>「你、你笑什么笑！　既然还有精力笑，那就不用\n放慢速度了吧，快点跟上来……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,alma,1200_-120,1,0
+endwait
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alma1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103253/adv/atlas/stand_a,body:anger,alma2,0,0,0,0,,,,
+imgconf,alma2,alma1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103253/adv/sound/fav103253_02_21.mp3
+msg,1,<outline width=2 color=black>「真是的，不要得意忘形啊……笨蛋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
