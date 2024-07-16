@@ -1,0 +1,166 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11700301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm034.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_01.mp3
+name,<outline width=2 color=black>ゼロ</outline>,
+msg,1,<outline width=2 color=black>「虽然我有些同情斋条柘榴，但比起同情，我更多的是感到惊讶。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_02.mp3
+msg,1,<outline width=2 color=black>「我是某个地方某个「人」留下的心所投射的影子。而她也是由那个「人」的基因信息创造出来的存在。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_03.mp3
+msg,1,<outline width=2 color=black>「就因为我们源自同一个存在，她就完全被我牵着鼻子走……我觉得这本身很可怜。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_04.mp3
+msg,1,<outline width=2 color=black>「但是，如果有所爱的人，就不应该给我这样的存在可乘之机。要更加坚定自我才行。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_05.mp3
+msg,1,<outline width=2 color=black>「连自己一个人都无法站稳脚跟的人，根本不可能向别人伸出援手。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_06.mp3
+msg,1,<outline width=2 color=black>「……虽然我在说别人，但其实自己也是容易露出破绽的类型。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「这是什么意思？」,选项2　「柘榴今后也会有所不同吧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_07.mp3
+name,<outline width=2 color=black>ゼロ</outline>,
+msg,1,<outline width=2 color=black>「我被人抓住破绽，心脏都被某个恶意戳穿了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_08.mp3
+msg,1,<outline width=2 color=black>「当然，我知道那孩子有她自己的想法，也不是在怨恨她。从结果来看，那可能是通往最好未来的选择。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_09.mp3
+msg,1,<outline width=2 color=black>「但那真的吓死我了……不对，我确实死了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_10.mp3
+msg,1,<outline width=2 color=black>「我刚意识到自己作为恶意的角色，心情还很不稳定，这也是原因之一吧……但也太可怕了。戳穿母亲的心脏，很普通吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_11.mp3
+msg,1,<outline width=2 color=black>「我至少要拿这件事再让诺恩困扰十次不可。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_12.mp3
+name,<outline width=2 color=black>ゼロ</outline>,
+msg,1,<outline width=2 color=black>「嗯，也是……经历了这么多，要是还毫无变化的话，那就不只是惊讶了，我会生气的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_13.mp3
+msg,1,<outline width=2 color=black>「她应该为了自己珍视的人更加拼命才对。因为爱就是这么回事。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_14.mp3
+msg,1,<outline width=2 color=black>「我和她有着相同的起源……嗯，就像是姐妹一样。希望她不要总是露出那么窝囊的样子。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_15.mp3
+name,<outline width=2 color=black>ゼロ</outline>,
+msg,1,<outline width=2 color=black>「……不过，能说这样的话也是一种幸福呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_16.mp3
+msg,1,<outline width=2 color=black>「未来并非一片黑暗……我相信明天会一直延续下去，会越来越向着更加幸福的方向前进。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_17.mp3
+msg,1,<outline width=2 color=black>「还有什么能比这更幸福的呢……你也这么觉得吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_18.mp3
+msg,1,<outline width=2 color=black>「今后也要努力不要失去这份幸福哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_19.mp3
+msg,1,<outline width=2 color=black>「哎呀，那是什么表情啊。难道你在期待我的帮助吗？不行哦，不要对那种事抱有期待。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_20.mp3
+msg,1,<outline width=2 color=black>「要靠现在活在这个时代的你们自己的力量，向前迈进。因为到目前为止你们也一直做得到，所以不要撒娇。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_21.mp3
+msg,1,<outline width=2 color=black>「而且，这样做才是通往最大幸福的必经之路。因为不仅要守住现在的幸福，还要伸手去触及更大的幸福。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_22.mp3
+msg,1,<outline width=2 color=black>「为了幸福，就要格外严厉，像斯巴达一样。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104380/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104380/adv/sound/fav104380_02_23.mp3
+msg,1,<outline width=2 color=black>「呵呵……从今天起，这就是我们家的家训了。记住哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
