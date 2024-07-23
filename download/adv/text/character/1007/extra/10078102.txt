@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11570300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm117.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_01.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「……这是我世界里发生过的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_02.mp3
+msg,1,<outline width=2 color=black>「我曾经被人拜托过，希望我能杀死他的妹妹」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_03.mp3
+msg,1,<outline width=2 color=black>「因为被力量所驱使、吞噬，变成了怪物的妹妹，\n唯一能拯救她的办法就是让她解脱，所以——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_04.mp3
+msg,1,<outline width=2 color=black>「……他人的愿望，根本就毫无意义。\n我没有任何理由要听从」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_05.mp3
+msg,1,<outline width=2 color=black>「明明应该是这样的……为什么呢，我当时为什么会听从那个愿望呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_06.mp3
+msg,1,<outline width=2 color=black>「或许……是想让那个愚蠢到恳求我杀死他妹妹的家伙，\n也尝尝我曾经失去家人时所感受到的痛苦吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「是在将自己投射在对方身上吗？」,选项2　「是在将姐姐投射在对方身上吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:unique,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_07.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「将自己……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_08.mp3
+msg,1,<outline width=2 color=black>「……说的也是。虽然不想承认这个荒谬的说法，\n但被你这么一说，说不定还真是那样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_09.mp3
+msg,1,<outline width=2 color=black>「希望有人能让一切结束……只要能结束的话，就能得到解脱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_10.mp3
+msg,1,<outline width=2 color=black>「如果她的妹妹真的怀着这样的心情，\n那我不妨满足她的心愿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_11.mp3
+msg,1,<outline width=2 color=black>「我就是怀着这样的心情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:anger,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_12.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「我不能接受你的说法。我怎么可能会将那个愚蠢的家伙当成姐姐呢？\n我无法理解你为何会得出这样的结论」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_13.mp3
+msg,1,<outline width=2 color=black>「她和姐姐实在是太不一样了。\n无论发生什么，姐姐都绝不会说出让我杀了自己妹妹这种话的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_14.mp3
+msg,1,<outline width=2 color=black>「……不过，我想根本上确实是出于为了妹妹着想这一点，\n这一点应该是毫无疑问的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_15.mp3
+msg,1,<outline width=2 color=black>「…………我什么都没能为姐姐做。\n所以才对那个女人做了补偿之举吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_16.mp3
+msg,1,<outline width=2 color=black>「荒唐……真是荒唐至极……怎么可能。\n这种事……根本不可能发生吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_17.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「……那个时候，如果我采取了什么不同的行动，\n那对姐妹的结局，会有什么改变吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_18.mp3
+msg,1,<outline width=2 color=black>「不，这只是无聊的妄想罢了。即便假设各种可能性，也不会\n有任何改变，就算再来一次，我肯定还是会做出同样的选择」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_19.mp3
+msg,1,<outline width=2 color=black>「——她的妹妹，后来怎么样了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_20.mp3
+msg,1,<outline width=2 color=black>「这……最后会怎样呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_21.mp3
+msg,1,<outline width=2 color=black>「由我来说明那个结局，恐怕是不合适的。\n所以请在该说的时候，从该说的人那里去了解吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100781/adv/sound/fav100781_02_22.mp3
+msg,1,<outline width=2 color=black>「只是，至少……那不是一个幸福的结局。\n这一点，是毫无疑问的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

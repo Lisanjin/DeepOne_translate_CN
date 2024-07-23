@@ -1,0 +1,404 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>为什么会这样呢？\n怎么会变成这样的呢？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>是钰的错吗？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>一定是这样的吧。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>因为……钰践踏了太多人的心，\n让他们变得不幸。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>并非出于本意。并非出于自己的意愿。\n即便如此……这也是无法改变的事实。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>但是，钰总是只顾着自己。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>一切都随心所欲。什么都不缺。生活在只有称心如意的\n褪色的世界里，痛苦不堪，想要逃离……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>觉得如果消失不见的话，会轻松一些……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>但是，遇到了夫君大人。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>钰的力量无法触及，绝对不会变成“人偶”的人。\n在这个世界上，绝对不会褪色的存在。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>毫不犹豫地，依附于那个存在。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>——然而，钰不应该以这种方式得到救赎。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11570302.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,yui1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui2,0,0,0,0,,,,
+imgconf,yui2,yui1,0,-190,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「请、请等一下……请等一下，夫君大人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui2,0,0,0,0,,,,
+imgconf,yui2,yui1,0,-190,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「请放开钰……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「……那个。钰并不清楚现在到底发生了什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是……钰在这里，一定是不好的吧？\n钰一定是在给夫君大人和大家添麻烦吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果是这样的话，钰不能再继续给夫君大人们添麻烦了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我也很担心吉泽尔小姐，还有刚才那个人……艾丽卡小姐，\n没记错的话。我觉得钰应该和那个人谈谈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选择项1　「你打算怎么做？」,选择项2　「钰没有错」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「这个……我不知道」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，那个人……一定是希望钰消失吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「……谢谢您，夫君大人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「钰几乎无法理解现在发生的事情。\n突然变成这样，已经，怎么说呢，脑子里一片混乱……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但有一点我明白……钰没有错这种事，\n根本就不可能」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「我觉得那个人对钰的愤怒和憎恨，就是对钰所犯下罪行的\n惩罚本身」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以钰必须好好接受那个人的话语……那个人的心情，\n不是吗……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「即使结果会变成什么样子——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>？？？</outline>,
+msg,0,<outline width=2 color=black>「真是一番虔诚的话啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11570302.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm144.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/character/100780/se/se_c00780_skill_08.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/character/100781/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>吉泽尔的影子</outline>,
+msg,0,<outline width=2 color=black>「那个女帝，在这里，竟然变成了这样一个愚蠢幼稚的弱女子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「完全感受不到你曾经对我的恶毒嘲笑，或是居高临下的傲慢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这样的话，讨伐你似乎也不是什么难事了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我很同情你啊，女帝的雏鸟。\n你至今为止所犯下的罪行，不过是些可爱的小事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「但是……如果雏鸟展翅高飞的时候到来，就再也无法挽回了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这个世界，可是充满了无数幸福的地方啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我不能让你那悲剧和绝望的翅膀，在这里投下阴影。\n尚未学会飞翔的雏鸟啊，就这样消失吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「至少，与我曾经所知的你相比，\n现在就在这里结束，或许还能得到一些救赎吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「趁着幸福的色彩，还映在你的眼中，去死吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_b,body:normal,zizel_s,300,-120,0.5,0.5,,,,
+anm,tint,zizel_s,150_150_150,0.0001,0
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,-300,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,-300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——别、别过来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/slaB.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_b,body:normal,zizel_s,300,-120,0.5,0,,,,
+anm,tint,yui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔的影子</outline>,
+msg,0,<outline width=2 color=black>「没用的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_b,body:normal,zizel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「对你的力量，需要多少防护，我再清楚不过了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_b,body:normal,zizel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「况且，现在的你不过是个未成熟的雏鸟……区区啼鸣，\n怎么可能捕获我的心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_b,body:normal,zizel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「在你展翅高飞之前，就折断你的翅膀，让你坠落在地吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,-300,-90,0.5,0,,,,
+anm,tint,zizel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「不、要……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_b,body:normal,zizel_s,300,-120,0.5,0,,,,
+anm,tint,yui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔的影子</outline>,
+msg,0,<outline width=2 color=black>「无论结果如何，你不是都说要接受我的心意吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_b,body:normal,zizel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「果然你就只有这种程度……与之不相称的内心，与之不相称的力量。\n在被这种不协调逼疯之前，还是让一切都结束吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm062.mp3,0,
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>？？？</outline>,
+msg,0,<outline width=2 color=black>「真不像你啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,-1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11570302.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/100781/adv/atlas/stand_b,body:anger,zizel_s,0,-120,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playse,/download/sound/se/conA.mp3
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+anm,scale,zizel_s,0.5_0.5,0.5,0
+endwait
+name,<outline width=2 color=black>吉泽尔的影子</outline>,
+msg,0,<outline width=2 color=black>「——………………你是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/character/100216/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「这剑法未免也太过感情用事了吧。\n如果心中有这么多难以承受的事情，就不要用剑，而是用言语表达出来啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「——吉泽尔，你说是吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
