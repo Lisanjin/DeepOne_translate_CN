@@ -1,0 +1,187 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm145.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103717/adv/sound/fav103717_01_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「没什么奇怪的地方吧……嗯，应该没问题的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103717/adv/sound/fav103717_01_02.mp3
+msg,1,<outline width=2 color=black>「那个……那么，哥哥。可以睁开眼睛了哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,1,255
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_03.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「怎么样？我换了一套新泳衣试试」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_04.mp3
+msg,1,<outline width=2 color=black>「我呢，觉得这套泳衣很可爱……要是哥哥也能喜欢的话，我会很开心的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「要注意别晒黑了啊」,选项2　「泳衣超棒的！」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_05.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「——呣。你最先在意的就是这个吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_06.mp3
+msg,1,<outline width=2 color=black>「没事啦，我穿了外套，也好好涂了防晒霜的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_07.mp3
+msg,1,<outline width=2 color=black>「啊……不过背后之类的地方不知道有没有涂好……哥哥，\n一会儿帮我涂一下好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.5,1,0,-15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_08.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「诶嘿嘿，谢谢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_09.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「咦，咦？为什么突然举起手臂……总觉得，\n跟我想象中的反应有点不一样……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_10.mp3
+msg,1,<outline width=2 color=black>「你能高兴我是很开心啦，但再怎么说……还是希望能更心跳加速一点\n那种感觉……嗯，你的情绪好高涨啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_11.mp3
+msg,1,<outline width=2 color=black>「不过，你肯定是喜欢的吧……这套泳衣，\n哥哥你也很中意的样子，这样就好了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_12.mp3
+msg,1,<outline width=2 color=black>「那我努力挑选就值得了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:surprise,frau,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_13.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「哇哇……哥、哥哥，突然抱这么紧会吓到我的\n都说了很多次不行了……真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-160,0.7,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_14.mp3
+msg,1,<outline width=2 color=black>「而且，这个地方，气温也非常高，\n这样黏在一起的话会很热……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_15.mp3
+msg,1,<outline width=2 color=black>「哇，哇哇，用不着这么慌张啦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_16.mp3
+msg,1,<outline width=2 color=black>「我不是讨厌什么的，只是担心哥哥你也会觉得太热，会不会勉强自己……\n你看，中暑什么的也让人担心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_17.mp3
+msg,1,<outline width=2 color=black>「还有，那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_18.mp3
+msg,1,<outline width=2 color=black>「好不容易挑了一套时髦的泳衣，要是被你抱得这么紧，\n不就看不见了嘛……我还想让哥哥多欣赏一下这身泳衣呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_19.mp3
+msg,1,<outline width=2 color=black>「所、所以，今天禁止抱抱……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_20.mp3
+msg,1,<outline width=2 color=black>「作为交换，我们来尽情享受只有在海边才能做的事吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_21.mp3
+msg,1,<outline width=2 color=black>「难得来到这么漂亮的海边，不好好享受大海就太可惜了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_22.mp3
+msg,1,<outline width=2 color=black>「一起坐在游泳圈上漂来漂去，堆沙堡……还有啊，\n试着坐一下橡皮艇之类的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_01_23.mp3
+msg,1,<outline width=2 color=black>「想做的事情，有好多好多呢。\n所以，今天就一起尽情玩吧，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

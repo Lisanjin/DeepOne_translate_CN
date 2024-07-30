@@ -1,0 +1,155 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm120.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「大海啊，阳光折射闪闪发光，真的好漂亮呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_02.mp3
+msg,1,<outline width=2 color=black>「这也许是理所当然的，但即使是同样的大海，从拉莱耶看到的深海也完全不一样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_03.mp3
+msg,1,<outline width=2 color=black>「……从拉莱耶看到的大海又暗又可怕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_04.mp3
+msg,1,<outline width=2 color=black>「这种时候我会尽量不去看窗外，尽可能远离窗户走……但在意的时候又会不由自主地看过去」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_05.mp3
+msg,1,<outline width=2 color=black>「要是偶尔在窗户附近看到有点可怕的鱼，我会吓一大跳的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_06.mp3
+msg,1,<outline width=2 color=black>「呼，平时我都没事的哦？只是偶尔会觉得有点可怕……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「害怕的时候随时叫我」,选项2　「马上把窗户封上吧」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_07.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「你这么说我很开心，有哥哥在身边的话就算害怕也一定没问题，但是呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_08.mp3
+msg,1,<outline width=2 color=black>「像这样害怕黑暗，是不是有点太孩子气了……？我觉得自己也该再努力一点了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_09.mp3
+msg,1,<outline width=2 color=black>「所以我会尽量不依靠哥哥努力的……但是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_10.mp3
+msg,1,<outline width=2 color=black>「要是实在害怕得不行的时候……可以拜托你吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_11.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「不、不用做到那个地步啦，我没事的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_12.mp3
+msg,1,<outline width=2 color=black>「真是的……连哥哥都变得和诺恩一样说些极端的话，我就什么都不能跟你商量了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_13.mp3
+msg,1,<outline width=2 color=black>「请再冷静一点好吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_14.mp3
+msg,1,<outline width=2 color=black>「……你能这么拼命地为我着想，我当然很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_15.mp3
+msg,1,<outline width=2 color=black>「但是，与其封上窗户，其实还有更简单有效的解决办法哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_16.mp3
+msg,1,<outline width=2 color=black>「只要哥哥在我身边……无论什么时候，我一定都不会害怕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_17.mp3
+msg,1,<outline width=2 color=black>「所以……要是实在不安得不行的时候，我会叫哥哥的……你会来吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,0,-130,0.6,0.5,,,,
+endwait
+name,<outline width=2 color=black>芙拉</outline>,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_18.mp3
+msg,1,<outline width=2 color=black>「嗯……嘿嘿。我有一个这么可靠的哥哥真是太好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,0,-130,0.6,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_19.mp3
+msg,1,<outline width=2 color=black>「啊，不过呢……如果能在这里和哥哥一起创造很多快乐的回忆，就算看到阴暗的大海，回想起今天，也会感到安心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,0,-130,0.6,0,,,,
+playvoice,1,download/character/103717/adv/sound/fav103717_02_20.mp3
+msg,1,<outline width=2 color=black>「所以呢，哥哥。今天我们尽情玩吧，创造满满的快乐幸福回忆哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

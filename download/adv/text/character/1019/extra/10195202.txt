@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm145.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_01.mp3
+name,<outline width=2 color=black>希尔薇・斯沃玛莱恩</outline>,
+msg,1,<outline width=2 color=black>「虽然这里的海也很美，但我之前见过一片海，其美丽程度不输于眼前的景色」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_02.mp3
+msg,1,<outline width=2 color=black>「那是我为了增长见识而环游世界的时期，当时我去了一趟地中海」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_03.mp3
+msg,1,<outline width=2 color=black>「我至今仍记得当时亲眼目睹的景色。不仅是大海，美丽的街道也令人难忘」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_04.mp3
+msg,1,<outline width=2 color=black>「那应该就是所谓的“波罗的海蓝”吧。我原本以为自己不是那种会沉浸于旅途情调的人，但那片景色确实令我心驰神往」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:sad,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_05.mp3
+msg,1,<outline width=2 color=black>「只不过，当时我卷入了一场小骚动。没能好好欣赏那片风景」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:sad,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_06.mp3
+msg,1,<outline width=2 color=black>「而且因此，当地人把我当成了瘟神……最后，我只好仓皇逃离了那个地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　“你到底闯了什么祸”,选项2　“又和布里奇特卷入事件了？”
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:sad,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_07.mp3
+name,<outline width=2 color=black>希尔薇・斯沃玛莱恩</outline>,
+msg,1,<outline width=2 color=black>「我还什么都没说，你怎么就断定是我做了什么？我不赞同这种武断的态度」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_08.mp3
+msg,1,<outline width=2 color=black>「因为听说当地黑手党有一本<ruby>魔导书|グリモワール</ruby>，为了确认其真伪，我只是稍微借用了一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:sad,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_09.mp3
+msg,1,<outline width=2 color=black>「潜入很顺利，但拿到手的时候被发现了。之后就是一阵追逐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_10.mp3
+msg,1,<outline width=2 color=black>「在风景秀丽的景点回荡着怒吼和枪声……哎呀。那时候可是尝到了相当刺激的滋味」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_11.mp3
+msg,1,<outline width=2 color=black>「而且，事后查证发现，那根本不是什么魔导书。这就是所谓的竹篮打水一场空吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_12.mp3
+name,<outline width=2 color=black>希尔薇・斯沃玛莱恩</outline>,
+msg,1,<outline width=2 color=black>「呵呵。没想到你把我和布里奇特君说成是一个组合，我很高兴呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_13.mp3
+msg,1,<outline width=2 color=black>「但很遗憾。那个时候我和布里奇特君还没有一起行动」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_14.mp3
+msg,1,<outline width=2 color=black>「如果当时是和他一起的话，和那些黑手党的追逐游戏，说不定会成为更加愉快的回忆呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_15.mp3
+name,<outline width=2 color=black>希尔薇・斯沃玛莱恩</outline>,
+msg,1,<outline width=2 color=black>「呵呵，怎么了，你好像一脸惊讶的样子……被黑手党追捕，很稀奇吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_16.mp3
+msg,1,<outline width=2 color=black>「环游世界的话，被黑手党追捕的经历一两次还是会有的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:normal,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_17.mp3
+msg,1,<outline width=2 color=black>「然后呢，为了逃离黑手党的追捕，我离开了城镇，在不知名的森林里穿行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:unique,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_18.mp3
+msg,1,<outline width=2 color=black>「我记得当时一个人在黑暗的森林里不停地走，感到非常无聊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:smile,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_19.mp3
+msg,1,<outline width=2 color=black>「啊……但是，如果那时候不是一个人，感受肯定会不一样吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:smile,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_20.mp3
+msg,1,<outline width=2 color=black>「如果你对逃离黑手党的追捕感兴趣的话一定要告诉我。我们也叫上布里奇特君，一起玩捉迷藏吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101952/adv/atlas/stand_a,body:smile,silvy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101952/adv/sound/fav101952_02_21.mp3
+msg,1,<outline width=2 color=black>「呵呵，光是想象一下，就觉得无比有趣不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
