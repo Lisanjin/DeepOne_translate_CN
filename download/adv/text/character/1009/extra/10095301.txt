@@ -1,0 +1,186 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm146.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_01.mp3
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「这个领域……这个景象，是日本的夏日祭典吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_02.mp3
+msg,1,<outline width=2 color=black>「稍微看了一下，好像也没什么奇怪的东西，\n也不太需要到处调查吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_03.mp3
+msg,1,<outline width=2 color=black>「……虽然这么说，但对你来说是没用的吧。\n反正你肯定会说想就这样享受祭典的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_04.mp3
+msg,1,<outline width=2 color=black>「你在惊讶什么啊……你以为到现在为止我陪了你多少次了？\n我好歹也知道你会说些什么啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_05.mp3
+msg,1,<outline width=2 color=black>「而且，你来这种领域，也不是第一次了吧。\n更何况是幻梦境的夏日祭典，到底有没有意思呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「和伊莉娜一起是第一次」,选项2　「想怎么玩就怎么玩」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_06.mp3
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「……我也不是对这种祭典很了解或者很感兴趣，\n也不是那个意思。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_07.mp3
+msg,1,<outline width=2 color=black>「卡蒂亚她们可能会对这种感兴趣，\n和那样的人一起逛不是更好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:sad,ilyna,0,-260,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/100953/adv/sound/fav100953_01_08.mp3
+msg,1,<outline width=2 color=black>「——所以说，为什么你一遇到这种事就这么固执啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:sad,ilyna,0,-260,0.6,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_09.mp3
+msg,1,<outline width=2 color=black>「啊，真是的，我知道了……你是想和我一起逛祭典吧？\n我就陪陪你，别再逼我了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_14.mp3
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「在幻梦境待太久也没什么好处，\n玩一会儿就赶紧回去吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_10.mp3
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「就是那样吧。虽然我对日本的祭典不太了解，\n但祭典的小摊什么的，也不会有太大变化吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_11.mp3
+msg,1,<outline width=2 color=black>「……嘛，你觉得可以的话，我倒是无所谓。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_12.mp3
+msg,1,<outline width=2 color=black>「但我先说好，别整什么和谁在一起玩法就不一样，\n之类的啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_13.mp3
+msg,1,<outline width=2 color=black>「我可没打算和你在这个领域玩得开心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_14.mp3
+name,<outline width=2 color=black>伊莉娜·伊丽莎洛瓦</outline>,
+msg,1,<outline width=2 color=black>「在幻梦境待太久也没什么好处，\n玩一会儿就赶紧回去吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_15.mp3
+msg,1,<outline width=2 color=black>「你看，我对小摊没什么兴趣，\n就陪你去你喜欢的地方吧——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:surprise,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_16.mp3
+msg,1,<outline width=2 color=black>「啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_17.mp3
+msg,1,<outline width=2 color=black>「不……也没什么大不了的……就是看到打靶摊位摆的奖品里，\n有个毛绒玩具……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:smile,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_18.mp3
+msg,1,<outline width=2 color=black>「卡蒂亚很喜欢那种设计呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:smile,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_19.mp3
+msg,1,<outline width=2 color=black>「……算了，反正都被你拉来了，那干脆，\n稍微玩一下吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:smile,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_20.mp3
+msg,1,<outline width=2 color=black>「我去玩那个打靶……难得来一次，你也一起……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:sad,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_21.mp3
+msg,1,<outline width=2 color=black>「诶，你那是什么怯懦的表情……哈？暴露？羞耻心？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_22.mp3
+msg,1,<outline width=2 color=black>「虽然不知道你在说什么……嘛，不玩就算了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100953/adv/atlas/stand_a,body:normal,ilyna,0,-220,0.5,0,,,,
+playvoice,1,download/character/100953/adv/sound/fav100953_01_23.mp3
+msg,1,<outline width=2 color=black>「打靶也不是什么很难的东西吧，你就在那看着。\n——我很快就搞定。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
