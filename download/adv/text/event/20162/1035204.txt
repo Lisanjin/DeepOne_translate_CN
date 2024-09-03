@@ -1,0 +1,895 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010407.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.5
+endwait
+bg,download/bg/bg_10010417.jpg,2,255
+endwait
+sprite,download/bg/bg_10010417.jpg,bg,0,0,1.2,0
+endwait,,,,,,,,,,, 
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_015.mp3
+anm,scale,bg,3_3,1.2,0
+anm,move,bg,0_-200,1.2,0
+anm,fade,bg,0,1.2,0
+wait,0.4
+spriteoff,all,1
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10970105.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm003.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,-1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20010101/adv/image/20010101.png,enemy1,0,-170,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「――――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+anm,tint,enemy1,0_0_0,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194404/adv/atlas/stand_a,body:normal,misaki,-300,-140,0.5,0.5,,,,
+anm,tint,misaki,150_150_150,0.0001,0
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:surprise,rain,300,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,0,<outline width=2 color=black>「哼……刚才那个是虚像吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194404/adv/atlas/stand_a,body:normal,misaki,-300,-140,0.5,0,,,,
+anm,tint,rain,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>美咲·九条</outline>,
+msg,0,<outline width=2 color=black>「总之，作为基本的星辰奏者的能力，在这个世界也似乎可以使用」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194404/adv/atlas/stand_a,body:normal,misaki,-300,-140,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然这个世界应该没有星辰体，但还是有点不可思议」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rain,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0.5,,,,
+anm,tint,misaki,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>温黛塔</outline>,
+msg,0,<outline width=2 color=black>「那也是因为我们来到了这个世界的影响吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果就这样放任不管，说不定会引发大灾难」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194404/adv/atlas/stand_a,body:sad,misaki,-300,-140,0.5,0,,,,
+anm,tint,vendetta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>美咲·九条</outline>,
+msg,0,<outline width=2 color=black>「那可真是令人毛骨悚然的事啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,nanaba1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba2,0,0,0,0,,,,
+imgconf,nanaba2,nanaba1,0,-278,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>？？？</outline>,
+msg,0,<outline width=2 color=black>「呵呵，不管有什么困难在等着，都不成问题。只要我们同心协力奋战，就没有什么是跨不过去的障碍」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「你们从不同的世界迷失而来，却依然不迷惘，坚定地走自己的路。啊，你们的身影，你们的心灵，多么令人赞叹的光辉啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「并肩作战，共同持剑，实在是莫大的荣耀。啊，我的灵魂在颤抖，在激昂」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「来吧，让我们出征!我们已经是朋友了!为了朋友，我将以全部的灵魂之力为未来开路!」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0.5,,,,
+anm,tint,vendetta,150_150_150,0.0001,0
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:unique1,rain,-300,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,0,<outline width=2 color=black>「这个……七羽吗?这个人，好像很有热情啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0,,,,
+anm,tint,rain,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>温黛塔</outline>,
+msg,0,<outline width=2 color=black>「她就是诺恩说的那个帮手吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rain,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+anm,tint,vendetta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「嗯，虽然看起来有点那个，但她的实力是真家伙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,vendetta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「那个......七羽虽然有点厉害，但是个好人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:normal,zizel,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「今天比平时更加兴奋呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:unique,nanaba,300,-100,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「嘁，怎么一个个都像看到什么乱七八糟的东西似的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zizel,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:unique,norn,-300,-120,0.5,0.5,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「七羽，能不能再冷静点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:smile,nanaba,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「对这样的美好相遇而不热血沸腾，
+反而是说不过去的话吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「本不应相遇的不同世界的力量。我希望能把这一幕深深地烙印在眼中，
+我自己也希望能留下深刻的印象」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「情不自禁地激动起来。不得不奋发。即使只是一瞬间，为了与我并肩同行的
+朋友们，我也要全力以赴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「......总之，先把七羽放着别管，等敌人出现再说。
+吉泽尔，那个地方就快到了吧?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,nanaba,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「是的。而且......我感觉到了克劳索拉斯的气息」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:sad,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，不知为何......有一种微妙的违和感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「违和感?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zizel,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「我也是......这是......非常强大的光?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194404/adv/atlas/stand_a,body:sad,misaki,-300,-140,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>美咲·九条</outline>,
+msg,0,<outline width=2 color=black>「光......光吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,300,-140,0.5,0.5,,,,
+anm,tint,misaki,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,0,<outline width=2 color=black>「不知为什么，从刚才开始我的背一直在发毛......
+只有我有这种不祥的预感吗?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,-300,-90,0.5,0.5,,,,
+anm,tint,yui,150_150_150,0.0001,0
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:unique2,vendetta,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>温黛塔</outline>,
+msg,0,<outline width=2 color=black>「...............」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,-300,-90,0.5,0,,,,
+anm,tint,vendetta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「那个，您怎么了吗......?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:unique2,vendetta,300,-120,0.5,0,,,,
+anm,tint,yui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>温黛塔</outline>,
+msg,0,<outline width=2 color=black>「没什么......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「既然已经走到这一步了，继续前进就能明白了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10970106.jpg,0,255
+endwait
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,clau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-470,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「——啊，我的主人。您终于来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,-300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「这股力量终于驯服了。
+时机正好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,-300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「克劳索拉斯......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「我的主人，您还好吗?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「来吧，请紧紧握住我的光芒」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:smile,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我的光芒会比以前更加强大，照亮您的道路，
+引导您走向更高的境界」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，请手握我的光芒，我的主人也一起——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194404/adv/atlas/stand_a,body:unique2,misaki,-300,-140,0.5,0.5,,,,
+anm,tint,misaki,150_150_150,0.0001,0
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:anger,rain,300,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,0,<outline width=2 color=black>「一起追求更高的境界......肯定是这种意思吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194404/adv/atlas/stand_a,body:unique2,misaki,-300,-140,0.5,0,,,,
+anm,tint,rain,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>美咲·九条</outline>,
+msg,0,<outline width=2 color=black>「来到这里，我清楚地感受到了......这种气息我再熟悉不过了。
+不过，似乎并不完全一样......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rain,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0.5,,,,
+anm,tint,misaki,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>温黛塔</outline>,
+msg,0,<outline width=2 color=black>「就像我们被投射到这个世界一样......
+看来一些不好的东西也流入了这个世界」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然很不情愿，但正因为我们处于相似的状态，
+所以才能理解“那个”到底是什么东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「曾经光芒的残渣......残留思念或许是最贴切的形容吧。
+它充满了这个地方......也紧紧缠绕着她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,misaki,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:sad,yui,-300,-90,0.5,0.5,,,,
+anm,tint,vendetta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「那个......那是什么意思......?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0,,,,
+anm,tint,yui,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>温黛塔</outline>,
+msg,0,<outline width=2 color=black>「克劳索拉斯，就是这个意思吧。最好不要接触现在的她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「否则的话......会被疯狂的光芒缠住，被卷入英雄的命运」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「做英雄有什么不好吗?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「人应该高尚地活着，追求更美好的明天。
+坚强地、自豪地、无愧于任何人地活着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「英雄?这不是很好吗?如果我的主人也能成为英雄，
+想必也会这样希望的吧?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我会用这份光芒来支持您。
+我的剑身会开辟一切，开创充满更强光芒的明天」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「来吧，我的主人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+spriteoff,clau,0
+endwait,,,,,,,,,,,
+
+
+wait,0.1
+endwait,,,,,,,,,,,
+
+playbgm,/download/sound/bgm/bgm083.mp3,0,
+endwait,,,,,,,,,,,
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「——别开玩笑了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我多少能理解温黛塔她们的意思」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「克劳索拉斯......你的话不就是在命令我“成为英雄”吗。
+你自己的愿望一览无遗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「看来你获得了某种奇怪的力量，比平时更加飘飘然了。
+我明确地说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果你认为我的生存方式由你决定......
+这种傲慢是被允许的，那就太自大了，古籍」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「至少你以前不应该是这种傲慢的。\n快清醒过来吧，克劳索拉斯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zizel,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「……实在遗憾，您无法理解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，只要知晓了我现在的光辉，我的主人也一定会赞同的。\n那么......是啊。要知晓差异的话，比较一下就好了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/character/103707/se/se_c03707_skill_01.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteoff,clau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100702/adv/atlas/stand_a,body:anger,zizel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「咕......!」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+mask,black1,0,0,480,720,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zizel1,0,0,480,720,0.5,,,,
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:normal,zizel2,0,0,0,0,,,,
+imgconf,zizel2,zizel1,500,500,,,0,0.6,0.6,0.5
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10970106.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0.5,,,,
+anm,tint,clau,150_150_150,0.0001,0
+spriteatlas,download/character/100702/adv/atlas/stand_b,body:anger,zizel,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「这是......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「我将我的一部分力量还给了您。那是与我这个追求新的光辉的存在不同，\n只拥有一如既往的光辉的我的剑身」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_a,body:smile,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「请放心，我不会做任何多余的干涉。如果用那种卑鄙的手段陷害我的主人，\n您又怎能赞同呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_063.mp3
+spriteatlas,download/character/104002/adv/atlas/stand_b,body:normal,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「古老的光辉与新的光辉。\n请尽情确认一下它们的区别吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zizel,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0.5,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「嗯......原来如此。\n也就是说，最终还是要战胜你才行，对吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那样的话，我插手吉泽尔与你的对决是否有些不合时宜?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_b,body:smile,clau,300,-130,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「怎么会。我可不会说那种肤浅的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_b,body:normal,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我也承认与人相连的羁绊也是一种光辉。\n如果有一起战斗的伙伴的话，那也是我主人拥有的光芒」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_b,body:normal,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「请大家一起......展现出能超越那份光芒的光辉吧，\n否则我到现在这般大放厥词，就太丢人了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,nanaba,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「真是自信满满啊......那样的话我就不客气了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——钰，替我向兄长和芙拉问好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,clau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105003/adv/atlas/stand_a,body:surprise,yui,300,-90,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>钰</outline>,
+msg,0,<outline width=2 color=black>「啊，是，是的!」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,yui,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「诺恩......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_032.mp3
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:smile,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「嘛，我稍微狠狠教训他一顿，让他清醒过来吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103802/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「那么......你给我展现一下，你那些夸夸其谈绝非虚言。\n作为同样热爱人类光辉的人，我一直想与你一较高下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_073.mp3
+spriteatlas,download/character/103802/adv/atlas/stand_b,body:smile,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呵呵。昨日的友人今日却成了阻挡在面前的敌人，\n这难道不是令人振奋的展开吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103802/adv/atlas/stand_b,body:normal,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「来吧，克劳索拉斯。用你的光辉，灼烧我的眼睛吧!」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:anger,rain,300,-140,0.5,0.5,,,,
+anm,tint,rain,150_150_150,0.0001,0
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:normal,vendetta,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>温黛塔</outline>,
+msg,0,<outline width=2 color=black>「很遗憾，在这种场合我只会成为累赘，\n我还是和他们一起退到后面比较好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:anger,rain,300,-140,0.5,0,,,,
+anm,tint,vendetta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,0,<outline width=2 color=black>「知道了。我会在能力范围内提供支援」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,vendetta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194404/adv/atlas/stand_a,body:unique2,misaki,-300,-140,0.5,0.5,,,,
+anm,tint,rain,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>美咲·九条</outline>,
+msg,0,<outline width=2 color=black>「啊啊，真希望拉格纳在这里就好了。\n要是有拉格纳在的话，就能很好地依靠他了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:unique2,rain,300,-140,0.5,0,,,,
+anm,tint,misaki,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,0,<outline width=2 color=black>「你这么说的话，这边要是有阿修的话......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/194204/adv/atlas/stand_a,body:unique2,vendetta,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>温黛塔</outline>,
+msg,0,<outline width=2 color=black>「别再妄想不可能的事情了。要是我说，\n要是有那只废狗——不对，是泽法在的话，我就能尽情发挥了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194404/adv/atlas/stand_a,body:unique2,misaki,-300,-140,0.5,0.5,,,,
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:unique1,rain,300,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>蕾因＆美咲</outline>,
+msg,0,<outline width=2 color=black>「你说废狗?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_b,body:normal,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「那么，就让我开始吧——希望各位能尽全力发挥，\n好让我也能展现我的光辉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104002/adv/atlas/stand_b,body:smile,clau,0,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「只有在那种情况下，我才能证明我的真正实力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+playse,/download/character/103707/se/se_c03707_skill_01.mp3
+fadeinwhite,2,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,183 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010800.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rain1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain2,0,0,0,0,,,,
+imgconf,rain2,rain1,0,-670,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/194304/adv/sound/fav194304_02_01.mp3
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,1,<outline width=2 color=black>「哎呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:unique1,rain,0,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_02.mp3
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,1,<outline width=2 color=black>「嘿，你没事吧?刚才好像失神了?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_03.mp3
+msg,1,<outline width=2 color=black>「看起来你很累了，我们就此打住吧?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_04.mp3
+msg,1,<outline width=2 color=black>「不对，我已经把你扔到地上十多次了，说实话，我也开始感到内疚了...」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_05.mp3
+msg,1,<outline width=2 color=black>「我们的身体素质本来就不一样，我是说不用手下留情，但这也太过分了。我的能力已经超出了普通人的范畴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:unique1,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_06.mp3
+msg,1,<outline width=2 color=black>「还是说，你是M?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 “输了并不意味着一无所有”,选项2 “你可以更加激烈一些”
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_07.mp3
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,1,<outline width=2 color=black>「啊...我记得，其他人都会使用魔法，但你不会，所以无法参与战斗，对吧?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_08.mp3
+msg,1,<outline width=2 color=black>「所以，你一再勉强自己，想尽一切办法向前迈进，哪怕只是一小步...就是这个意思吗?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_09.mp3
+msg,1,<outline width=2 color=black>「我能理解这种心情，大多数人都会称赞这种精神值得钦佩」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_10.mp3
+msg,1,<outline width=2 color=black>「但是...这不过是与天赋、性格等因素有关的问题吧?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_11.mp3
+msg,1,<outline width=2 color=black>「没有天赋的人就是没有，无论你如何努力，如何坚强，有些事情就是无法做到」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_12.mp3
+msg,1,<outline width=2 color=black>「这话听起来可能有些粗鲁，但你最好还是考虑一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:sad,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_13.mp3
+msg,1,<outline width=2 color=black>「一味地追求自以为是的正确，往往会适得其反」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:unique1,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_14.mp3
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,1,<outline width=2 color=black>「诶诶...果然是这种感觉吗?别逼我迎合你的癖好啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_15.mp3
+msg,1,<outline width=2 color=black>「――开玩笑的，我只是在开玩笑，别那么着急解释，反而显得可疑了?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_16.mp3
+msg,1,<outline width=2 color=black>「你不是想要痛苦，而是想获得通过战胜苦难而获得的力量，对吧?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_17.mp3
+msg,1,<outline width=2 color=black>「作为男人，向往力量是可以理解的，但你也该放松一些了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_18.mp3
+msg,1,<outline width=2 color=black>「你可能讨厌自己的弱小，但如果不接纳这种弱小的自己，迟早会完蛋的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_19.mp3
+name,<outline width=2 color=black>蕾因·珀耳塞福涅</outline>,
+msg,1,<outline width=2 color=black>「不过，你这种想法也不算是像救世主那样的疯狂或极端」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_20.mp3
+msg,1,<outline width=2 color=black>「如果觉得自己缺乏什么，就多向别人求助吧?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_21.mp3
+msg,1,<outline width=2 color=black>「你身边似乎有很多人在关心你，拒绝他们的好意也不对吧?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_22.mp3
+msg,1,<outline width=2 color=black>「如果有人愿意支持你，就接受他们的支持吧。作为回报，你也可以在其他方面支持他们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194304/adv/atlas/stand_a,body:normal,rain,0,-140,0.5,0,,,,
+playvoice,1,download/character/194304/adv/sound/fav194304_02_23.mp3
+msg,1,<outline width=2 color=black>「这就是人的生存之道，不是吗?」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
