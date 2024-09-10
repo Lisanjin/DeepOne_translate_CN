@@ -1,0 +1,168 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11340300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm094.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「运动啊……所谓的身体活动的乐趣，那种东西。\n我真的不太理解那种感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_02.mp3
+msg,1,<outline width=2 color=black>「对我来说，运动……或者说，训练，\n只不过是为了提高自己能力的工作而已……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_03.mp3
+msg,1,<outline width=2 color=black>「应该做，如果做不到就是失败……就像是半强制的一样，\n我从中并没有感受到任何乐趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_04.mp3
+msg,1,<outline width=2 color=black>「如果没有这样的情况，我想我不会去痛苦地锻炼身体\n」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_05.mp3
+msg,1,<outline width=2 color=black>「实际上，来到拉莱耶后有更多自由的时间，\n但老实说我并没有想要做超出最基本训练的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_06.mp3
+msg,1,<outline width=2 color=black>「……这么一想，你真是个特别的人。\n没有必要战斗，也没有人告诉你要这么做，但你每天都坚持锻炼身体」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_07.mp3
+msg,1,<outline width=2 color=black>「仅供参考，你为什么会觉得锻炼身体有趣？\n训练不就是累人的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「看到成果」,选项2「因为辛苦所以有趣」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_08.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「能举起的重量慢慢增加，\n能跑的距离逐渐延长，这种感觉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_09.mp3
+msg,1,<outline width=2 color=black>「从这些小小的成就感中找到价值，从某种意义上说\n也许也是一种才能呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_10.mp3
+msg,1,<outline width=2 color=black>「……但是我还是无法理解这种感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_11.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「……你是受虐狂？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_12.mp3
+msg,1,<outline width=2 color=black>「呵呵……你为什么那么慌张。当然我只是开玩笑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_13.mp3
+msg,1,<outline width=2 color=black>「所以，就是因为辛苦，才能在克服困难时感受到更大的成就感和快乐，\n这就是你的意思吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_14.mp3
+msg,1,<outline width=2 color=black>「嗯，我明白你的意思。\n只是，能否共鸣就是另一回事了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_15.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「我一直以来，对任何事情都有种无所谓的态度。\n像我这样的人，怎么可能体验到你说的那种感觉呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_16.mp3
+msg,1,<outline width=2 color=black>「……但是最近，我开始想要改变自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_17.mp3
+msg,1,<outline width=2 color=black>「爱花和想花也在拉莱耶生活后发生了变化」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_18.mp3
+msg,1,<outline width=2 color=black>「虽然我还不确定这是否是好事。但是，现在的她们\n看起来比以前更快乐……这让我很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_19.mp3
+msg,1,<outline width=2 color=black>「如果只有我没有变化，\n那不就会被她俩抛在后面吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_20.mp3
+msg,1,<outline width=2 color=black>「我想成为她们的支持。如果她们遇到困难，\n我想伸出援手……至少我有这样的感情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_21.mp3
+msg,1,<outline width=2 color=black>「虽然还不清楚具体该怎么做，但至少，\n我想成为能够骄傲地和她们在一起的自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_22.mp3
+msg,1,<outline width=2 color=black>「所以……就像你说的。为了了解我所没有的东西，和你一起训练，\n或者尝试一些运动之类的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104309/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104309/adv/sound/fav104309_02_23.mp3
+msg,1,<outline width=2 color=black>「也许尝试一些与过去不同的体验，\n并不是坏事呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
