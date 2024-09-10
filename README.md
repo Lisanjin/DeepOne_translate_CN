@@ -3,9 +3,10 @@
 汉化方法参考了这个IrisMysteria的仓库[IrisMysteria-Translate](https://github.com/game-reverse/IrisMysteria-Translate)  
 汉化工具使用的[GalTransl](https://github.com/cx2333-gt/GalTransl)
 
-[redirector扩展地址](https://chromewebstore.google.com/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd)
+[redirector扩展地址](https://chromewebstore.google.com/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd)  
+[gooreplacer扩展地址](https://chromewebstore.google.com/detail/gooreplacer/jnlkjeecojckkigmchmfoigphmgkgbip)
 
-[~~视频讲解说明~~](https://www.bilibili.com/video/BV1wt421V7Qb/) 该方法已弃用,请以前使用过本地部署补丁的切换到新版本。本地版本的相关代码依旧保留，想要自己替换文本的可以继续使用，但不负责维护了。
+本地部署方法已弃用,请以前使用过本地部署补丁的切换到新版本。本地版本的相关代码依旧保留，想要自己替换文本的可以继续使用，但不负责维护了。
 
 翻译人员：Atrili、mamomo、刚大木 、SK
 
@@ -15,12 +16,26 @@
 
 汉化文件1周年及以前剧情、角色来自已关服的繁中服  
 主线的第七章及往后，来自上述人员的汉化  
-其余内容使用了GPT4/claude opus+GPT3.5进行汉化  
+其余内容使用了GPT4/claude +GPT3.5进行汉化  
 
 该补丁仅供交流学习，不得用于任何盈利行为。请于下载后24小时内删除。
 有问题可以留issue,或者去QQ交流群927910543  
 
 ## 使用说明
+
+### gooreplacer使用说明(一键更新，推荐)
+1.在浏览器安装[gooreplacer扩展地址](https://chromewebstore.google.com/detail/gooreplacer/jnlkjeecojckkigmchmfoigphmgkgbip)  
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/gooreplacer-1.png)  
+
+2.打开gooreplacer扩展,点击配置规则  
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/gooreplacer-2.png) 
+
+3.点击在线规则，点击配置，输入https://lisanjin.github.io/DeepOne_translate_CN/gooreplacer.json  
+点击确认后，立刻更新  
+![](https://lisanjin.github.io//DeepOne_translate_CN/image/gooreplacer-3.png) 
+
+
+### redirector使用说明(需手动更新)
 
 1.下载重定向字典<https://lisanjin.github.io/DeepOne_translate_CN/Redirector_online.json> (使用你的下载工具下载，或者在浏览器点击[这个链接](Redirector_online.json)后，按ctrl+s保存到本地)
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/1.png)
@@ -39,4 +54,5 @@
 
 ## 更新
 
-重复上述1、3步骤即可
+redirector重复上述1、3步骤  
+gooreplacer重复第3步的立刻更新步骤即可
