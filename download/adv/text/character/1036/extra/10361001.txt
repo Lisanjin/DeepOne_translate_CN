@@ -1,0 +1,183 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11660300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm146.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_01.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「嘿～看看吧哥哥。\n今天的莉瀬酱穿的是稍微有点成熟的和服哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_02.mp3
+msg,1,<outline width=2 color=black>「哎呀，无论从哪个角度看都像是小姐啊！非常优雅的\n和服美少女……就像是大和抚子一样，不是吗！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_03.mp3
+msg,1,<outline width=2 color=black>「能和这样的莉瀬酱约会，哥哥你真是幸运啊～♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「哇～我好开心」,选项2 「大和抚子更贞淑」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_04.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「读得像机器人！呜呜，哥哥怎么这么没精神啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_05.mp3
+msg,1,<outline width=2 color=black>「她是穿着和服的美少女啊？小姐啊？是莉瀬酱啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_06.mp3
+msg,1,<outline width=2 color=black>「难、难道在哥哥看来，比起优雅的小姐，更喜欢\n大胆而性感的女孩子……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_07.mp3
+msg,1,<outline width=2 color=black>「呜呜呜，如果你有那个意思，我也会认真的！\n虽然很可惜，但是这件衣服，我要脱掉了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_08.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「这么大胆只对哥哥一个人，所以没关系的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_09.mp3
+msg,1,<outline width=2 color=black>「大和抚子莉瀬酱，只对哥哥一个人会变得很黏人\n就像小鹿一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:surprise,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_10.mp3
+msg,1,<outline width=2 color=black>「--等等，你为什么有种傻眼的表情！？\n这里应该是高兴的地方啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:unique,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_11.mp3
+msg,1,<outline width=2 color=black>「咕咕……如果哥哥要这么刁难我，\n我也会用实力反击的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+shake,0.2,4,10,10
+playse,/download/sound/se/se_020.mp3
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:surprise,rise,0,-140,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_12.mp3
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:shy,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_13.mp3
+msg,1,<outline width=2 color=black>「真、真是的……哥哥你突然抱紧我……是不是其实\n一直都想这样做，对莉瀬酱的感情，不就是这样的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:shy,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_14.mp3
+msg,1,<outline width=2 color=black>「哎呀，用冷淡的态度来掩饰害羞，\n哥哥你真是可爱啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:sad,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_15.mp3
+msg,1,<outline width=2 color=black>「――……难道，你没想过如果像这样抱住我就能糊弄过去，\n这种事情吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:anger,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_16.mp3
+msg,1,<outline width=2 color=black>「咕。这反应……果然哥哥，你是觉得只要抱住我\n我就会乖乖的，是个很好哄的女孩子吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:anger,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_17.mp3
+msg,1,<outline width=2 color=black>「咕咕咕咕！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:shy,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_18.mp3
+msg,1,<outline width=2 color=black>「……就是这样。只要是对哥哥，我就会\n什么都原谅……笨蛋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:shy,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_19.mp3
+msg,1,<outline width=2 color=black>「即使生气，被哥哥这样抱住也会心跳加速，\n高兴的感觉涌上心头，然后就什么都不在乎了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:shy,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_20.mp3
+msg,1,<outline width=2 color=black>「被哥哥的体温和气味填满脑袋，\n更想要被这样抱着……我就只会想着这些事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:normal,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_21.mp3
+msg,1,<outline width=2 color=black>「――但是！既然是约会，却被随便对待的话\n肯定会不满意的……所以！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:shy,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_22.mp3
+msg,1,<outline width=2 color=black>「直到莉瀬酱说好为止，就一直抱着我好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:normal,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_23.mp3
+msg,1,<outline width=2 color=black>「等到满足为止，让我补充足够的哥哥成分，\n那样的话我就会原谅刚才的事情了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103610/adv/atlas/stand_a,body:smile,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103610/adv/sound/fav103610_01_24.mp3
+msg,1,<outline width=2 color=black>「嗯～呼～呼。把对黏人黏人的莉瀬酱的感激之情\n全都倾注进去，紧紧地抱住我吧♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

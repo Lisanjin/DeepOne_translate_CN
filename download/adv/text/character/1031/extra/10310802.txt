@@ -1,0 +1,203 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11280300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm146.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:sad,mamiya,0,-180,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_01.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_02.mp3
+msg,1,<outline width=2 color=black>「虽然没什么大不了的，但是这件和服，用的布料看起来\n也挺高级的，感觉是好东西……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_03.mp3
+msg,1,<outline width=2 color=black>「唔……总有种奇怪的不安感。\n为什么呢……明明和服我已经穿惯了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「是不是露得不够？」,选项2　「是尺寸的问题吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:surprise,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_04.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「哎……！？　别把人说得像变态一样啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_05.mp3
+msg,1,<outline width=2 color=black>「虽然，我的日常服装可能确实露得多一些，\n但那只是因为进入幻梦境之后衣服被强制改变而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_06.mp3
+msg,1,<outline width=2 color=black>「并不是我自己想要那样打扮的……嗯，嗯，\n如果你看到了，我会觉得有点高兴……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_07.mp3
+msg,1,<outline width=2 color=black>「啊――不，不是那样的哦！　我并没有因为露出来就\n感到高兴什么的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:surprise,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_08.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「尺、尺寸――！？　难道是肚子周围……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_09.mp3
+msg,1,<outline width=2 color=black>「咦？　啊，胸部啊……对、对啊。真是的。\n别再说让人误解的话了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:sad,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_10.mp3
+msg,1,<outline width=2 color=black>「但确实……除了腰带外，领口也扣得很紧，\n胸部有点紧绷绷的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_11.mp3
+msg,1,<outline width=2 color=black>「本来我就讨厌束缚感，有时候甚至都不穿胸罩……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:normal,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_12.mp3
+msg,1,<outline width=2 color=black>「但如果松开了就会敞开来……这种事情，\n只能忍耐吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:surprise,mamiya,0,-240,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/103108/adv/sound/fav103108_02_13.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「诶……等、等一下，为什么要靠近我……难、难道你是想，\n解开我的腰带……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:surprise,mamiya,0,-240,0.6,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_14.mp3
+msg,1,<outline width=2 color=black>「试试看，什么的……我才不需要这种试验呢……！\n况且，你要是真的做了，肯定就停不下来了吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:normal,mamiya,0,-240,0.6,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_15.mp3
+msg,1,<outline width=2 color=black>「嘛、嘛？　对着像姐姐这样的美女，产生不轨的想法\n也许是无可奈何的事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:surprise,mamiya,0,-300,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/103108/adv/sound/fav103108_02_16.mp3
+msg,1,<outline width=2 color=black>「所、所以说！　别悄悄靠近我啦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya,0,-300,0.7,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_17.mp3
+msg,1,<outline width=2 color=black>「肯、肯定是你又在开玩笑，对吧？　你并没有真的要解我的腰带，\n或者想要脱掉我的衣服什么的，对吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya,0,-300,0.7,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_18.mp3
+msg,1,<outline width=2 color=black>「为什么你一言不发地摆弄着手呢，说点什么啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,scale,mamiya,0.5_0.5,0.5,0
+anm,move,mamiya,0_-180,0.5,0
+endwait
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya,0,-180,0.5,0,,,,
+endwait
+playvoice,1,download/character/103108/adv/sound/fav103108_02_19.mp3
+msg,1,<outline width=2 color=black>「总、总之，那种恶作剧，呃……我、我也可能会\n控制不住自己，所以……那个……呜呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya,0,-180,0.5,0,,,,
+playvoice,1,download/character/103108/adv/sound/fav103108_02_20.mp3
+msg,1,<outline width=2 color=black>「不、不行，我说了不可以――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,mamiya,-1200_-180,0.7,0
+endwait
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,mamiya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya2,0,0,0,0,,,,
+imgconf,mamiya2,mamiya1,0,-720,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103108/adv/sound/fav103108_02_21.mp3
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,1,<outline width=2 color=black>「呜呜，为什么我总是被你玩弄得团团转……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103108/adv/atlas/stand_a,body:shy,mamiya2,0,0,0,0,,,,
+imgconf,mamiya2,mamiya1,0,-720,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103108/adv/sound/fav103108_02_22.mp3
+msg,1,<outline width=2 color=black>「有、有一天我一定会用姐姐的诱惑让你狼狈不堪，\n然后反过来欺负你的，记住了哦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
