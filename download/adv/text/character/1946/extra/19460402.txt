@@ -1,0 +1,172 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_01.mp3
+name,<outline width=2 color=black>恋</outline>,
+msg,1,<outline width=2 color=black>「嚼……嚼……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_02.mp3
+msg,1,<outline width=2 color=black>「嗯……这是？是亚纱花做的……哦对，叫做马卡龙？\n好像是这个名字」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_03.mp3
+msg,1,<outline width=2 color=black>「这里的美食很多……吃的东西从来不会缺……\n这样很好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:unique2,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_04.mp3
+msg,1,<outline width=2 color=black>「……海底的世界，真奇妙……不会沉下去，还能呼吸……一开始我还以为被骗了呢……看来在不同的世界，这些都是可能的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:sad,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_05.mp3
+msg,1,<outline width=2 color=black>「……没有阳光，风也不会吹……没有森林，没有山脉。\n缺少自然让人感到有些压抑……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「习惯就好」,选项2　「有人造花园」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:unique1,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_06.mp3
+name,<outline width=2 color=black>恋</outline>,
+msg,1,<outline width=2 color=black>「嗯……但是，我并不想习惯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_07.mp3
+msg,1,<outline width=2 color=black>「我更想回家……担心主人会怎么样。他现在过得怎么样呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:sad,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_08.mp3
+msg,1,<outline width=2 color=black>「……唔嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_09.mp3
+name,<outline width=2 color=black>恋</outline>,
+msg,1,<outline width=2 color=black>「那个我知道……我去过了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:unique1,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_10.mp3
+msg,1,<outline width=2 color=black>「确实有树、草、花……但都是假的。\n都是被人按照自己认为的形状制作出来的……并非自然的产物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_11.mp3
+msg,1,<outline width=2 color=black>「虽然有总比没有好……但我觉得没必要。\n我再也不去那里了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:smile,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_12.mp3
+msg,1,<outline width=2 color=black>「只有农场还不错……有牛、鸡之类的动物。\n那个地方，我还想再去一次」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_13.mp3
+name,<outline width=2 color=black>恋</outline>,
+msg,1,<outline width=2 color=black>「…？换换心情？练习一下？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:unique2,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_14.mp3
+msg,1,<outline width=2 color=black>「你……太弱了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:unique1,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_15.mp3
+msg,1,<outline width=2 color=black>「太弱的话，会受伤……还是不要做那种事情比较好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_16.mp3
+msg,1,<outline width=2 color=black>「我并不是在嘲笑你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_17.mp3
+msg,1,<outline width=2 color=black>「你不能做的事情，恋可以做。\n恋不能做的事情，你也许能做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_18.mp3
+msg,1,<outline width=2 color=black>「就这么简单」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_19.mp3
+msg,1,<outline width=2 color=black>「你的伙伴们也一样……打败敌人的任务，由强者来完成就好。\n能做的人去做……这是理所当然的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_20.mp3
+msg,1,<outline width=2 color=black>「你只需要去做你能做的事情就好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:smile,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_21.mp3
+msg,1,<outline width=2 color=black>「……虽然我在这里的时间不长，但我觉得，你比自己想象中更被你的伙伴们依赖着……大概吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:unique1,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_22.mp3
+msg,1,<outline width=2 color=black>「……这种话题我不擅长……如果是主人在，他肯定能更好地表达。\n对恋来说，这不是我的强项」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:normal,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_23.mp3
+msg,1,<outline width=2 color=black>「……吃马卡龙吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/194604/adv/atlas/stand_a,body:smile,ren,0,-150,0.5,0,,,,
+playvoice,1,download/character/194604/adv/sound/fav194604_02_24.mp3
+msg,1,<outline width=2 color=black>「有时候吃点美味的东西，也能让人振作起来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
