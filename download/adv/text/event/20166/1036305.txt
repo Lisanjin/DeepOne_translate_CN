@@ -1,0 +1,432 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm149.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「不过说起来，这个小球……叫做普奇，对吧。\n挺有趣的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,puti1,0,0,1280,250,0.5,,,,
+playse,/download/sound/se/se_gacha_012.mp3
+sprite,download/character/181504/image/adv1.png,puti2,0,0,0,0,,,,
+imgconf,puti2,puti1,0,0,,,0,1,1,0.5
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「虽然听说这个玩意儿能干各种事，
+没想到竟然有偷女人内衣的癖好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「正因为此，你现在也被追得满城飞」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「唯不生气吗」,选项2　「普奇，出来面对吧」
+if,select_===_1,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「首先，我并没有被偷走内衣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不存在的东西怎么可能被偷呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,puti1,0,0,1280,250,0.5,,,,
+playse,/download/sound/se/se_gacha_012.mp3
+sprite,download/character/181504/image/adv1.png,puti2,0,0,0,0,,,,
+imgconf,puti2,puti1,0,0,,,0,1,1,0.5
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+shake,0.2,4,20,0,puti2
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「嗯……看来它是拒绝了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嘛，如果现在回去那些女人那里会怎么样，
+我想这个小球也明白的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「毕竟那边有贝阿托和拉兹露卡，他们可以让所有机器无理由地故障」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这个小球里面虽然有部分是用魔法驱动的，
+但也并不是说没有机械部件的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「对于这个小球来说，那一定是非常恐怖的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「话说回来……我平时并不穿内衣，
+所以对此并没什么兴趣……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「原来每一件都有特色呢……虽然只是薄薄一片布料，
+却精心细致地刺绣和设计了图案」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你看看，像这个。这里是透明的，没问题吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「何有什么好慌张的。你应该已经习惯看内衣了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，这些内衣到底是谁的呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「像这种透明的内衣，米露瓦穿上也不会奇怪吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，反过来想，人们可能会选择和自己平时性格完全相反的内衣来穿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这样一来，朱莉娅也有可能……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嗯。你知道答案吗？
+非常想确认一下——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「可恶，那个性骚扰魔像到底去哪了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101256/adv/atlas/stand_a,body:unique,ridia,300,-120,0.5,0.5,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「我要立刻找出它，然后把它扔给贝托丽萨和拉兹露卡！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101256/adv/atlas/stand_a,body:unique,ridia,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,0,<outline width=2 color=black>「那个灵活的魔像，就算我们这么多人一起找也没用。
+我们还是分头行动吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,ridia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101315/adv/atlas/stand_a,body:normal,milva,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「那么，第一个找到它的人就算赢了吧。
+赢了的话，奖励是糖果之类的怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:normal,soka,-300,-110,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「那个奖励谁来准备？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101315/adv/atlas/stand_a,body:normal,milva,300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「输掉的人准备就好了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101315/adv/atlas/stand_a,body:smile,milva,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「毕竟这里没有布丽姬特和吉泽尔，
+你可以放心了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「只是想象一下两人准备糖果的可能性就让我浑身发冷，请别再说了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/181507/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,0,<outline width=2 color=black>「唉，真是的……普奇这家伙，给大家添麻烦了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181507/adv/atlas/stand_a,body:anger,julia,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「之后得好好教训一下它才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:unique,soka,-300,-110,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+spriteatlas,download/character/102312/adv/atlas/stand_a,body:sad,weat,300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>贝托丽萨</outline>,
+msg,0,<outline width=2 color=black>「说起来，唯也不知道去哪儿了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:unique,soka,-300,-110,0.5,0,,,,
+anm,tint,weat,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「还有，爸爸也……刚才经过男澡堂的时候没有感觉到他的气息，
+可能已经出来了吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,weat,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101315/adv/atlas/stand_a,body:smile,milva,300,-120,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「其实，偷内衣的不是普奇，而是他吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101315/adv/atlas/stand_a,body:smile,milva,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果真是这样，他直接说就好了，何必偷呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「就算是爸爸，也不会做那种事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,milva,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:unique,norn,300,-120,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「……毕竟是哥哥嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:surprise,soka,-300,-110,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「我、我说了不会的啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「不、虽然我也觉得不太可能，但如果说完全没有可能，
+我还真不能完全确定……嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101256/adv/atlas/stand_a,body:unique,ridia,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,0,<outline width=2 color=black>「即使真的是那样，对我来说只是换个目标罢了。
+我要做的事情并没什么大变化」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101256/adv/atlas/stand_a,body:anger,ridia,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「无论是普奇还是那个男人，都应该找出来抓住。\n这样就能知道谁是罪犯了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「嗯……有人的气息靠近了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这样下去会被追上的，
+也不能就这么待在原地」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:unique,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「'你虽然没有偷，但你却在抱着内衣'这种事实无法改变。
+这就是所谓的情况证据吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:unique,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「特别是莉迪亚她们，谁知道会怎么惩罚你呢？
+在她们冷静下来之前，我们还是先逃一阵子吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:smile,vi,0,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且……那样不是更有趣吗？呐？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
