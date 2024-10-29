@@ -1,0 +1,161 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm126.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,azi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi2,0,0,0,0,,,,
+imgconf,azi2,azi1,0,-480,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181105/adv/sound/fav181105_01_01.mp3
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,1,<outline width=2 color=black>「喂，莉酱。要是太磨蹭，\n时间就浪费了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_02.mp3
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,1,<outline width=2 color=black>「好不容易我们都打扮得这么漂亮，\n今天一定要尽情享受，不要浪费了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:surprise,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_03.mp3
+msg,1,<outline width=2 color=black>「哎呀。怎么了，这么不开心的表情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_04.mp3
+msg,1,<outline width=2 color=black>「难道你在担心这样过日子，\n会被本家的那些人说些什么吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_05.mp3
+msg,1,<outline width=2 color=black>「那方面你可以放心。工作提前一天结束的事，\n我已经安排好了，不会被本家的人发现」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_06.mp3
+msg,1,<outline width=2 color=black>「平时的话，工作一结束就会被催着回去，\n但这次委托我们的人，我稍微有点交情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_07.mp3
+msg,1,<outline width=2 color=black>「有一个能干的侍女在身边，莉酱真是幸福啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_08.mp3
+msg,1,<outline width=2 color=black>「所以今天我们就无拘无束地玩吧。\n偶尔也该有这样的日子，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_09.mp3
+msg,1,<outline width=2 color=black>「来，莉酱。笑一个，笑一个。\n好不容易打扮得这么漂亮，可爱极了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_10.mp3
+msg,1,<outline width=2 color=black>「——虽然比不上我啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「确实今天的紫阳花很可爱呢」,选项2　「莉瀬酱更可爱！」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:surprise,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_11.mp3
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,1,<outline width=2 color=black>「诶！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:shy,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_12.mp3
+msg,1,<outline width=2 color=black>「啊，不，莉酱你平时总是喜欢争强好胜，\n没想到这次会有这样的反应……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:shy,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_13.mp3
+msg,1,<outline width=2 color=black>「那个，谢谢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_14.mp3
+msg,1,<outline width=2 color=black>「不过，莉酱你也很可爱哦。非常适合你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_15.mp3
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,1,<outline width=2 color=black>「呵呵，如果你这么认为，那就一定是这样吧。在莉酱的心里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:surprise,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_16.mp3
+msg,1,<outline width=2 color=black>「不过，今天不许打架哦？\n好不容易穿的漂亮衣服会弄坏的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_17.mp3
+msg,1,<outline width=2 color=black>「首先，如果你要坚持说自己不输的话，至少要笑一笑啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_18.mp3
+msg,1,<outline width=2 color=black>「女孩子笑起来才最可爱嘛。\n莉酱你不开心地笑的话，我就赢定了。耶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_19.mp3
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,1,<outline width=2 color=black>「来吧……莉瀬小姐。这位侍女为您准备了约会计划，\n今天请做好尽情享受的准备哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181105/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+playvoice,1,download/character/181105/adv/sound/fav181105_01_20.mp3
+msg,1,<outline width=2 color=black>「我要让莉酱露出最灿烂的笑容♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

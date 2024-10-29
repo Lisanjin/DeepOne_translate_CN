@@ -1,0 +1,136 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11090300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm075.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「这个魔女的衣服，是万圣节的装扮……感觉帽子好大，\n有点不好动……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_02.mp3
+msg,1,<outline width=2 color=black>「说起来，万圣节好像是收获祭或者死者回来的日子，\n各种由来混合在一起的活动……真是奇怪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_03.mp3
+msg,1,<outline width=2 color=black>「不给糖就捣蛋……不给糖果就要捣乱，什么的。\n为什么会变成那样的活动呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_04.mp3
+msg,1,<outline width=2 color=black>「大家只顾着开心，好像忘记了本来的意思。\n那样不觉得奇怪吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_05.mp3
+msg,1,<outline width=2 color=black>「失去了本来意义的活动，还有价值吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「每个时期意义和价值都会改变」,选项2　「可以看到爱花可爱的样子」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_06.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「在每个时期，最初决定的价值，会变成不同的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_07.mp3
+msg,1,<outline width=2 color=black>「嗯，是这样啊……虽然我对价值这样改变\n有点不适应」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_08.mp3
+msg,1,<outline width=2 color=black>「……但是，如果现在万圣节的价值是，\n大家开心的话，那也许还行吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_09.mp3
+msg,1,<outline width=2 color=black>「万圣节，大家看起来很开心……如果说让人\n笑脸相迎是现在万圣节的价值，那也许还不错吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_10.mp3
+msg,1,<outline width=2 color=black>「老实说，我不太明白这种事情，也不太能共鸣。\n但我觉得这不是坏事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:unique,aika,0,-140,0.6,0.5,,,,
+endwait,
+shake,0.5,3,12,0,aika
+playse,/download/sound/se/se_020.mp3
+playvoice,1,download/character/104153/adv/sound/fav104153_01_11.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「不要突然摸我的头……帽子会歪的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0.5,,,,
+endwait,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_12.mp3
+msg,1,<outline width=2 color=black>「哎，不用那么失落的表情吧……\n你真的那么想摸我的头吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_13.mp3
+msg,1,<outline width=2 color=black>「姐姐啊，柘榴她们也是，我真搞不懂\n做这种事有什么好玩的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_14.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「在那种事情中感受到的乐趣……我还\n不能理解……但我觉得比以前了解多了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_15.mp3
+msg,1,<outline width=2 color=black>「各种事情让我心动，感受到快乐和喜悦。\n这些情感我一直觉得与我无关」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104153/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104153/adv/sound/fav104153_01_16.mp3
+msg,1,<outline width=2 color=black>「但是……如果今后继续这样度过时光……总有一天，\n我也会懂得这样的情感吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
