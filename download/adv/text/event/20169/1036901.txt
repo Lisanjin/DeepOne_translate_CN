@@ -1,0 +1,527 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11640300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm141.mp3,0,
+endwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+playse,/download/sound/se/se_034.mp3
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s2,0,0,0,0,,,,
+imgconf,milva_s2,milva_s1,0,-350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「嗯……果然不行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0.5,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「稍微攻击一下，好像没法打破封闭这个空间的力量」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这样下去，连正常移动都做不到了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「啧……真是开玩笑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「本以为只是帮忙调查，结果还被卷进这种麻烦事……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「更糟的是，居然还得和这家伙一起……真是倒霉透了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:smile,milva_s,300,-120,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「呵呵，艾蒂尔，这件裙子你穿着真合适。胸前那里透着呢，\n大腿上的开叉也很大胆，真是性感得让人心跳加速哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「你能不能稍微注意一下对话的节奏啊。\n别说这种恶心的话啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「喂喂，你觉得怎么样？我的裙子可爱吗？\n你看，我的胸口这里也开得这么大哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+endwait
+msg,0,<outline width=2 color=black>「不过嘛，我可不像艾蒂尔那样胸大。\n但即便如此……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+imgconf,milva_s,,300,-120,,,-1,0.5,0.5,0
+endwait
+anm,move,milva_s,-100_-120,0.6,0
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:smile,milva_s,-100,-120,0.5,0,,,,
+imgconf,milva_s,,-100,-120,,,-1,0.5,0.5,0
+endwait
+msg,0,<outline width=2 color=black>「像这样抱着胳膊贴上去的话，\n还是挺柔软的吧？心跳加速了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「烦死了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:smile,milva_s,-100,-120,0.5,0,,,,
+imgconf,milva_s,,-100,-120,,,-1,0.5,0.5,0
+endwait
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,15,15
+anm,move,milva_s,300_-120,0.6,0
+endwait
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:sad,milva_s,300,-120,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「呀……真是的，突然推开我，太过分了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「烦死了，我凭啥要跟你黏在一起啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「说不定调情才是解除这个空间封锁的条件哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「那我们就永远别想出去吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:smile,milva_s,300,-120,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「那就是说，你愿意永远和我在一起咯？\n如果有你陪着，好像也不会太坏呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「该死……你真是让我火大的天才啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:smile,milva_s,300,-120,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「呵呵，和艾蒂尔聊天果然很开心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm147.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/101383/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「喂，艾蒂尔……来到这个世界，你感觉如何？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「一个充满幸福可能性的世界。一个还未知道绝望的世界」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「或许，我们会抵达一个\n连想象都无法触及的温暖未来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「仅仅是守护着这个世界，我就感到无比激动。\n但同时，也感到一丝不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「“米露瓦·林德曼”这种人早点消失\n对这个世界来说绝对是更好的选择啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/100582/image/main.png,card2,0,0,2,0,,,,
+anm,fade,card2,0,0,0
+anm,scale,card2,1_1,1,0
+anm,fade,card2,255,1,0
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「即便如此，就算是像你这样的废物我也没抛弃，\n所以这个世界才变成现在这个样子吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「无论多麻烦，无论多沉重，都不会舍弃，不会放手。\n重要的东西要自己决定，并坚持自己的信念」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「正因为他们做到了我们做不到的事情，\n这个世界才……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「——不对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「说到底，像我们这种已经陷入绝望的人，\n根本没有资格插嘴，也没资格评头论足，不是很可笑吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「其实我们现在这样现身，本来就是个错误吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/101383/image/main.png,card1,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card2,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「也许是吧……但他们甚至连本该绝望终结的我们\n都救了出来，想让我们看到明天」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「真是麻烦啊……因为我无法否定那份温柔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「而且……在这个世界里，我还能和艾蒂尔一起度过时光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「“其实这不对”——本该这样喊出来的，\n但却因为幸福而心麻木了，喊不出来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「喂，艾蒂尔，你觉得呢？明明我们早该结束了，\n却能在另一个世界再次一起生活」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「对这件事……你怎么想？你有什么感觉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/100582/image/main.png,card2,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「真烦，别问这种问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「而且你说那么多感想，我才不在乎，也不想听」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这种事啊，根本不是要用语言回答的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/101383/image/main.png,card1,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card2,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「喂，艾蒂尔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「——你是我最重要的朋友哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「艾蒂尔呢？你觉得我怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/100582/image/main.png,card2,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「……哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「现在还用得着特地说出来吗，笨蛋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0.5,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「呵呵……真是不坦率呢，艾蒂尔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「闭嘴吧，别在那里唠唠叨叨的，赶紧找脱身的方法啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:sad,milva_s,300,-120,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「我也是很想这么做啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:sad,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「一进入幻梦境就被分开了……\n我也想早点确认大家是否平安……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，着急也没用嘛，\n我们两个一起合作找出解决办法吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:smile,milva_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「喏。难得有机会，要不要牵着手一起找？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:smile,milva_s,300,-120,0.5,0,,,,
+endwait
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_055.mp3
+endwait,,,,,,,,,,,
+anm,move,milva_s,500_-120,0.3,0
+endwait
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,500,-120,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「哎呀，突然就冲上来打人，好可怕哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「啧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,500,-120,0.5,0,,,,
+imgconf,milva_s,,500,-120,,,-1,0.5,0.5,0
+endwait
+anm,move,milva_s,-100_-120,0.6,0
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「……喂」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,-100,-120,0.5,0,,,,
+imgconf,milva_s,,-100,-120,,,-1,0.5,0.5,0
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「怎么了，艾蒂尔♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-300,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「…………混蛋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-100,-120,0.5,0.5,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+spriteatlas,download/character/101383/adv/atlas/stand_a,body:normal,milva_s,100,-120,0.5,0.5,,,,
+imgconf,milva_s,,100,-120,,,-1,0.5,0.5,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦的影子</outline>,
+msg,0,<outline width=2 color=black>「哎呀……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100582/adv/atlas/stand_a,body:anger,edel_s,-100,-120,0.5,0,,,,
+anm,tint,milva_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「……是你啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「艾蒂尔加德纳……米露瓦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

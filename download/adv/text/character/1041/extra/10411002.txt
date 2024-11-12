@@ -1,0 +1,175 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11760300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm126.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「说起来……最近总感觉赤井亚纱花对我有种无言的压力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_02.mp3
+msg,1,<outline width=2 color=black>「倒不是敌意或者恶意之类的……而是一种期待的眼神。\n这感觉一天比一天明显，真的让我很在意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_03.mp3
+msg,1,<outline width=2 color=black>「你看……姐姐叫赤井亚纱花的方式……我觉得她也希望\n我能这样称呼她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「她是怎么叫的来着？」,选项2　「我也想这么叫她」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_04.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「你以为我会被这种故意引导话题的小把戏骗到吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_05.mp3
+msg,1,<outline width=2 color=black>「再说了，你怎么可能忘记姐姐是怎么称呼赤井亚纱花的，\n这说法也太牵强了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_06.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「又是这个话题？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_07.mp3
+msg,1,<outline width=2 color=black>「这个话题不是已经结束了吗？你有时候真的很烦诶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_08.mp3
+msg,1,<outline width=2 color=black>「对芙拉也是，有时候缠着人家被骂。\n……如果我说我也讨厌你，你会停下来吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_09.mp3
+msg,1,<outline width=2 color=black>「如果不想再听到这些话，那就别再提这个话题了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_10.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「你也是……赤井亚纱花也是，为什么都希望我\n用那种方式叫她呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_11.mp3
+msg,1,<outline width=2 color=black>「被那样叫，真的会开心吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_12.mp3
+msg,1,<outline width=2 color=black>「——一定会高兴……你居然这么肯定。\n你真的那么懂赤井亚纱花的心情吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_13.mp3
+msg,1,<outline width=2 color=black>「真厉害啊。能这么理解别人的心情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_14.mp3
+msg,1,<outline width=2 color=black>「不过……原来她会开心啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:shy,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_15.mp3
+msg,1,<outline width=2 color=black>「…………妈，妈……——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_16.mp3
+msg,1,<outline width=2 color=black>「我以为她不在就没事了，可还是不行。\n心里有点慌慌的，喉咙干得像要裂开一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_17.mp3
+msg,1,<outline width=2 color=black>「而且……好像心跳也有点加快了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:anger,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_18.mp3
+msg,1,<outline width=2 color=black>「……笑得太过分了。看你那表情就让我很烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_19.mp3
+msg,1,<outline width=2 color=black>「没想到，自己竟然因为一个称呼就这么慌乱。\n为什么会这样……搞不懂……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_20.mp3
+msg,1,<outline width=2 color=black>「明明不是什么大事……可这种小事竟然也能让我心乱如麻，\n这真的是正常的吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_21.mp3
+msg,1,<outline width=2 color=black>「如果真是这样的话，那“正常”比我想象的要难多了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:unique,aika,0,-140,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+shake,0.5,3,12,0,aika
+playvoice,1,download/character/104110/adv/sound/fav104110_02_22.mp3
+msg,1,<outline width=2 color=black>「嗯……所以，别一边笑得那么恶心，一边摸我头」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104110/adv/atlas/stand_a,body:sad,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104110/adv/sound/fav104110_02_23.mp3
+msg,1,<outline width=2 color=black>「你再不适可而止，我就告诉姐姐和赤井亚纱花你做了什么讨厌的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
