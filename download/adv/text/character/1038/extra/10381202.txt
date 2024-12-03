@@ -1,0 +1,179 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm105.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_01.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「哦，这就是你说想让我看的地方吗？\n这是电饰……不对，应该叫做灯光秀吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_02.mp3
+msg,1,<outline width=2 color=black>「树木闪烁着宛如夜空中星星般的光芒，\n真是美得让人赞叹的景象啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_03.mp3
+msg,1,<outline width=2 color=black>「把树木装饰成这样，\n现代人的创意总是让我叹为观止啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_04.mp3
+msg,1,<outline width=2 color=black>「不过，说真的，被你邀请到这种地方约会，\n还真让我有点心情飘飘然了呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_05.mp3
+msg,1,<outline width=2 color=black>「今天你打算怎么让我开心呢？\n想到这里，我心里都忍不住激动起来了。怎么样，帅哥？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「尽管期待吧」,选项2　「被你这么期待我反而有点难办啊」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_06.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「哦，看起来你很有自信嘛。\n那么，你打算怎么带我玩呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_07.mp3
+msg,1,<outline width=2 color=black>「哼……只是被喜欢的男人牵了手，就觉得这么开心，\n果然是因为陷入了情网吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_08.mp3
+msg,1,<outline width=2 color=black>「可别把我当成随便的女人啊……能这么轻易拨动我心弦的，\n只有你一个人而已。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_14.mp3
+msg,1,<outline width=2 color=black>「嗯……像这样普通地牵着手也不错，不过既然是约会的话，\n是不是应该有更合适的牵手方式呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_09.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「别这么说，我相信你一定能轻松超越我的期待，不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_10.mp3
+msg,1,<outline width=2 color=black>「还是说，被像我这样上了年纪的人示好，让你感到为难了？\n如果真是那样，我可能会有点受伤呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_11.mp3
+msg,1,<outline width=2 color=black>「呵呵。没什么，只是开个小玩笑罢了。\n我知道你不是会有那种想法的人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_12.mp3
+msg,1,<outline width=2 color=black>「别那么紧张。其实只要能像这样待在你身边，\n我就已经感到十分满足了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_13.mp3
+msg,1,<outline width=2 color=black>「至于其他的嘛……如果你愿意再牵着我的手，\n那我可就没有任何不满了哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_14.mp3
+msg,1,<outline width=2 color=black>「嗯……像这样普通地牵着手也不错，不过既然是约会的话，\n是不是应该有更合适的牵手方式呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_15.mp3
+msg,1,<outline width=2 color=black>「——啊，对了。十指交扣，感受彼此的体温，\n紧紧握住……嗯，呵呵。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_16.mp3
+msg,1,<outline width=2 color=black>「仅仅是牵手的方式不同，感觉竟然也会如此不同。\n能一直感受到你就在我身边……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_17.mp3
+msg,1,<outline width=2 color=black>「……怎么了？你看着我的眼神，好像有点炙热的感觉。\n你在想些什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_18.mp3
+msg,1,<outline width=2 color=black>「不行哦，再忍耐一下。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_19.mp3
+msg,1,<outline width=2 color=black>「难得与您共度这次约会，\n我们得再多享受一会儿这样的时光才行。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_20.mp3
+msg,1,<outline width=2 color=black>「我想将这美丽的景色，好好地铭刻在记忆之中。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_21.mp3
+msg,1,<outline width=2 color=black>「之后的话，不管你有什么样的心情，我都会接受的。\n嗯，无论是什么样的事情，我都会接纳。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_02_22.mp3
+msg,1,<outline width=2 color=black>「毕竟……我也这样感受着你的存在，\n和你抱有同样的心情啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

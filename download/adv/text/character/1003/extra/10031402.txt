@@ -1,0 +1,196 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm077.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_01.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「呃、呀……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,1,0.3,0.5
+anm,move,catia,0_-1200,1,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,catia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:sad,catia2,0,0,0,0,,,,
+imgconf,catia2,catia1,0,0,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100314/adv/sound/fav100314_02_02.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「咿啊，好冷……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:sad,catia,0,-1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,catia,0_-100,1.5,0
+endwait
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:shy,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_03.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「呜、呜呜……抱歉，让您看到我这么狼狈的一面了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_04.mp3
+msg,1,<outline width=2 color=black>「从小到大，我大部分时间都待在室内，\n所以不太习惯在深雪中行走……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_05.mp3
+msg,1,<outline width=2 color=black>「而且，即使偶尔外出，也总是有像伊莉娜或洁美拉那样\n愿意伸手帮我的人陪在身边。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_06.mp3
+msg,1,<outline width=2 color=black>「不过，无论走什么样的路，都必须学会独自迈出步伐才行呢……\n如果总是依赖别人，就无法成长了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_07.mp3
+msg,1,<outline width=2 color=black>「话说回来，雪果然还是很冷啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_08.mp3
+msg,1,<outline width=2 color=black>「不过，能感受到这份冰冷，也让我觉得有些开心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_09.mp3
+msg,1,<outline width=2 color=black>「作为圣女生活的时候，几乎没有机会直接接触到雪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「想试试玩雪吗？」,选项2　「去小屋里暖和一下？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_10.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「可以吗？其实我有很多想尝试的事情呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_11.mp3
+msg,1,<outline width=2 color=black>「比如堆雪人……还有滑雪。\n这些冬天的活动我都没有体验过，所以很想试试。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_12.mp3
+msg,1,<outline width=2 color=black>「大家觉得理所当然知道的事情，我也希望能亲身体验，\n然后了解一下。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_13.mp3
+msg,1,<outline width=2 color=black>「而且……如果能和你一起做这些事的话，\n那就再开心不过了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_14.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「对我来说，既然难得有机会，我想再多接触一下雪，\n是这样想的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:surprise,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_15.mp3
+msg,1,<outline width=2 color=black>「啊……不过，如果你觉得冷的话，在感冒之前还是——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:sad,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_16.mp3
+msg,1,<outline width=2 color=black>「——真的没问题吗？真的？\n你不会是为了我在勉强自己吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_17.mp3
+msg,1,<outline width=2 color=black>「…………既然你这么说，那我就相信你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_18.mp3
+msg,1,<outline width=2 color=black>「那我们一起玩雪吧，好不好？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_19.mp3
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「要不，先来堆个雪人试试？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_20.mp3
+msg,1,<outline width=2 color=black>「难得来到这样的地方，一个人堆雪人有点难\n但我觉得和你一起的话一定能堆出一个很棒的雪人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_21.mp3
+msg,1,<outline width=2 color=black>「嗯，首先要先做一个小雪球，\n然后把它滚来滚去，让它慢慢变大，是这样吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_22.mp3
+msg,1,<outline width=2 color=black>「还有，为了做脸部，还得找一些可以用的道具呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:smile,catia,0,-100,0.5,0,,,,
+playvoice,1,download/character/100314/adv/sound/fav100314_02_23.mp3
+msg,1,<outline width=2 color=black>「呵呵，不知道会堆出什么样的雪人呢，真让人期待。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

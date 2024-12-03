@@ -1,0 +1,565 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm129.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-640,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「唔唔唔……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「——嘿！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_055.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,1,0.3,0.5
+anm,move,nanaba,-300_-100,0.3,0,
+endwait
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,-300,-100,0.5,0,,,,
+name,<outline width=2 color=black>供远七羽</outline>
+msg,0,<outline width=2 color=black>「虽然投到了目标位置，但太直白了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「嗯呜……又被躲开了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「明知实力差距还敢挑战，这种态度很值得赞赏。\n不过，只是正面挑战的话，是无法缩小差距的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「有时候需要做好被骂卑鄙的觉悟，从背后偷袭或者设下陷阱\n这些手段也是必要的——对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_055.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,1,255
+endwait
+flash,255,255,255,2,0.5,0.5
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「啊，哥哥……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:sad,catia,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「啊，刚才直接打到脸上了，没事吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「怎么被发现的……」,选项2 「……好冷淡」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「你问为什么……虽然只是打雪仗，但这里可是战场。\n你觉得在这种地方会有人松懈吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「更何况……无论什么时候，我都不可能把目光从你身上移开啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「确实，你藏在雪里移动的动作很出色，\n不过，遇到我算你倒霉了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「呵呵，请稍微别动一下。\n你的头发上沾了雪，我帮你拍掉吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,catia,0.6_0.6,0.5,0
+endwait
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.6,0,,,,
+msg,0,<outline width=2 color=black>「对了，保持体温的术式没问题吧？\n如果觉得有什么不舒服，一定要马上告诉我哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,0,-100,0.6,0,,,,
+msg,0,<outline width=2 color=black>「虽然可能比不上乌尔苏拉小姐，\n但我也会一些调节体温的魔法哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「――嗯，差不多到时间了，雪仗就先到这里吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「嗯……扔了好多雪球，手臂都酸得抬不起来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:anger,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，下次再玩的时候，我一定要打中七羽！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「啊，那我可拭目以待了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,nanaba,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「喂。既然有这么多雪，\n我们试试除了打雪仗以外的玩法吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,0,<outline width=2 color=black>「嗯。当然，我没问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,nanaba,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「那，要不要试着堆个雪人呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「以前，我虽然只是远远地看过，\n但见过孩子们堆雪人的样子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「只是，因为我是圣女的身份，所以没办法参与那样的游戏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「现在这样在雪地里玩耍，就让我想起了那时候的事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「嗯。我也想堆雪人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「一起努力堆个大雪人吧，卡蒂亚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100314/adv/atlas/stand_a,body:smile,catia,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「好的，虽然是第一次，不过如果和芙拉小姐一起的话，我觉得一定能堆出很棒的雪人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103104/adv/atlas/stand_a,body:normal,mamiya,300,-180,0.5,0.5,,,,
+anm,tint,mamiya,150_150_150,0.0001,0
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「打雪仗啊，堆雪人啊……真是的。\n在这种无聊的雪地游戏上浪费体力真是愚蠢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103104/adv/atlas/stand_a,body:normal,mamiya,300,-180,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「好了好了。最低限度的探索已经完成了，\n让她们自由玩耍一下吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103104/adv/atlas/stand_a,body:normal,mamiya,300,-180,0.5,0,,,,
+msg,0,<outline width=2 color=black>「难得有机会，乌尔苏拉小姐也一起来玩玩怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+anm,tint,mamiya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「我拒绝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,ulusura,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/103104/adv/atlas/stand_a,body:surprise,mamiya,300,-180,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「咦，乌尔苏拉小姐你要去哪儿？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,0,-130,0.5,0,,,,
+anm,tint,mamiya,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「我对玩雪一点兴趣都没有，就去那边的小屋打发时间吧。\n外面太冷了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura,0,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「想玩的话，你就去跟那边的人凑热闹吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,ulusura,1200_-130,1,0
+endwait
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ulusura1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:normal,ulusura2,0,0,0,0,,,,
+imgconf,ulusura2,ulusura1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「哼……比我想象中的设施要齐全啊。\n不过，好像也没什么能用来打发时间的东西……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,mamiya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103104/adv/atlas/stand_a,body:normal,mamiya2,0,0,0,0,,,,
+imgconf,mamiya2,mamiya1,0,-720,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「真的耶，啊，还有壁炉呢。\n可以点火吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ulusura1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102109/adv/atlas/stand_a,body:surprise,ulusura2,0,0,0,0,,,,
+imgconf,ulusura2,ulusura1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「嗯……——等等。你怎么跟过来了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,mamiya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103104/adv/atlas/stand_a,body:normal,mamiya2,0,0,0,0,,,,
+imgconf,mamiya2,mamiya1,0,-720,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「因为难得有机会，我想和乌尔苏拉小姐待在一起嘛。\n……反正他好像被芙拉和七羽抢走了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「哒，火点着了哦。\n咱们就在这里悠闲地待一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「真是随心所欲啊……算了，随你吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「诶，可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「诶……——呀！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/6033/image/603311.png,card,-50,-350,2,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「嗯嗯……乌尔苏拉小姐好暖和啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「等、等下，你干嘛贴过来啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「因为你说随我嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「也要有个限度吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「而且，壁炉才刚点着火，在房间暖和起来之前，\n我想着先这样抱着乌尔苏拉小姐暖暖身子嘛。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「真是多管闲事……！这种多余的关心，我可不需要！\n可恶，这个……快放开我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「哎呀，偶尔这样也挺好的嘛……对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「一点都不好——话说回来……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+sprite,download/character/6033/image/603311.png,card1,300,100,2,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「从刚才开始就一直把胸贴过来……你是想炫耀什么吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我可告诉你，要是我的身体再成熟一些的话，\n我也能有这种程度的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「呀咿……我不是那个意思啦，只是抱紧了点，\n结果就碰到了嘛。嗯、乌尔苏拉小姐，不要乱动啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「再说了，现在的乌尔苏拉小姐一点都不小，\n反而很可爱又有弹性……让我都羡慕得不行了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+sprite,download/character/6033/image/603311.png,card,-250,100,2,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「等、等等，干嘛揉……呀、嗯嗯！\n住、住手，对我做这种随便的事……嗯、唔！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>间宫舞夜</outline>,
+msg,0,<outline width=2 color=black>「嗯～果然，真不错啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+sprite,download/character/6033/image/603311.png,card1,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「啊啊，真是的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+spriteoff,all,1
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「哈……要是这样的话，那笨徒弟还更让人省心一点。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「——啊啊，真是的。居然会有一天让我想到这种事情。\n今天果然是个倒霉透顶的日子。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

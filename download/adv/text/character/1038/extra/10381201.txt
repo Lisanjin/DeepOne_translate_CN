@@ -1,0 +1,227 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm104.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,nanaba1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba2,0,0,0,0,,,,
+imgconf,nanaba2,nanaba1,0,-278,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103812/adv/sound/fav103812_01_01.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「――来啊，要是能躲得开就试试看吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+flash,255,255,255,2,0.5,0.5
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm077.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_02.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「呵呵。你居然正面接住了？\n这场雪仗，我赢了，你没意见吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_03.mp3
+msg,1,<outline width=2 color=black>「没什么好垂头丧气的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_04.mp3
+msg,1,<outline width=2 color=black>「胜负乃天意——我可不会这么说。\n我和你之间，实力差距显而易见。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_05.mp3
+msg,1,<outline width=2 color=black>「不过，这并不是永恒不变的。\n人的努力，正是为了超越失败而存在的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_06.mp3
+msg,1,<outline width=2 color=black>「其实，今天你的身手确实有让人眼前一亮的地方。\n你每天的锻炼，确实已经融入了你的血肉之中。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_07.mp3
+msg,1,<outline width=2 color=black>「不过啊，和你，还有拉莱耶的人们一起度过的时间真是让人不觉无聊呢。\n像这样被挑战，也挺不错的嘛。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「不甘心」,选项2 「要不要和其他人也比试一下？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_08.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「我刚才也说了，别太沮丧了。你已经做得很好了。\n其实我还挺佩服你能咬得这么紧的呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_09.mp3
+msg,1,<outline width=2 color=black>「不过啊……虽然我不轻视个人实力的高低，\n但也不觉得这就能决定一切。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_10.mp3
+msg,1,<outline width=2 color=black>「你身边不是有很多志同道合的伙伴吗？\n那份羁绊，应该才是你最大的力量吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_11.mp3
+msg,1,<outline width=2 color=black>「虽然我这么说了，但这样的话\n可能对男人那点可爱的倔强算不上什么安慰吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_12.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「嗯……虽说算不上什么正式的比试，\n但旺华和芳乃倒是经常找我比拼喝酒呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_13.mp3
+msg,1,<outline width=2 color=black>「莉濑有时候会和我比茶道的技艺，\n布丽吉特还曾经希望和我切磋剑术呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_14.mp3
+msg,1,<outline width=2 color=black>「和那些敢于挑战我的人堂堂正正地一战，\n这真是一种充实而愉快的体验啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_15.mp3
+name,<outline width=2 color=black>供远七羽</outline>,
+msg,1,<outline width=2 color=black>「嗯……不过话说回来，看你这表情……\n看来你还没打算放弃啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_16.mp3
+msg,1,<outline width=2 color=black>「好吧，只要你愿意，我随时奉陪。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_17.mp3
+msg,1,<outline width=2 color=black>「不过，你应该明白我们实力有差距吧？\n这样盲目地挑战可不是勇气，而是鲁莽。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,0,-100,0.5,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_18.mp3
+msg,1,<outline width=2 color=black>「以你的性格，肯定有什么策略吧？\n嗯，可以啊。无论用什么手段，尽管放马过来——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm104.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,0,-100,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_19.mp3
+msg,1,<outline width=2 color=black>「嗯？直接正面冲过来？难道你觉得，\n不是用雪球，而是肉搏的话，就能让我屈服吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,0,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_20.mp3
+msg,1,<outline width=2 color=black>「还是说，你另有安排？\n比如故意让我把注意力集中在正面——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,2,0.5,0.5
+anm,move,nanaba,-300_-100,0.3,0
+endwait
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:normal,nanaba,-300,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_21.mp3
+msg,1,<outline width=2 color=black>「——然后趁着对话的空隙，把雪球扔到我头顶，\n算准时间让它砸下来，是这样吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,-300,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_22.mp3
+msg,1,<outline width=2 color=black>「这招倒还不错，可惜啊。我可是一直都在留意着你呢。\n你的每一个动作，我都不会错过的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:unique,nanaba,-300,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_23.mp3
+msg,1,<outline width=2 color=black>「那么，赶紧想出下一步对策吧。\n要是再不行动，可就要被雪堆成雪人了哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103812/adv/atlas/stand_a,body:smile,nanaba,-300,-100,0.6,0,,,,
+playvoice,1,download/character/103812/adv/sound/fav103812_01_24.mp3
+msg,1,<outline width=2 color=black>「哼哼，好了，上吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
