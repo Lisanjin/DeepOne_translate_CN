@@ -1,0 +1,610 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+sprite,download/bg/bg_11770300.jpg,bg,500,0,2.5,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11770300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm153.mp3,0,
+endwait,,,,,,,,,,,
+anm,move,bg,-500_0,30,0
+clickwait,,,,,,,,,,,
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,raz1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:surprise,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「这里是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria,300,-120,0.5,0.5,,,,
+anm,tint,maria,150_150_150,0.0001,0
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:surprise,raz,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「派对会场，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria,300,-120,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「而且，这身打扮……说起来，时间上也很接近，\n这个领域是象征圣诞的地方吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　关注拉兹露卡,选项2　关注玛利亚
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:surprise,raz,-300,-110,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「……？ 那个，怎么了。\n你一直盯着我看……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria,300,-120,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「无非是觉得我穿得少，或者在可惜而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:shy,raz,-300,-110,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「诶，啊……是、是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:shy,raz,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:shy,raz,0,-160,0.7,0.5,,,,
+endwait
+msg,0,<outline width=2 color=black>「可以请你帮个忙吗……在披风里，\n试着伸手进去——嘿呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:shy,raz,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「嗯……你、你明、白吗？其实，只是躲在披风里，\n这套衣服，胸口以上的皮肤露得挺多的……嗯……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:shy,raz,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「因为脱掉披风会很尴尬……那个，\n这样子，会让你失望吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,900,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「……？为什么盯着看。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「啊，不用问了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,-200,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「就算如何，眼神也太直接了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「虽然被看也没什么关系但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「嗯嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嗯嗯嗯嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria,300,-120,0.5,0.5,,,,
+anm,tint,maria,150_150_150,0.0001,0
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:surprise,raz,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「芙拉小姐……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria,300,-120,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「怎么生气了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maria,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「我也是圣诞老人啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「没错哥哥！我很伤心！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「看，这是芙拉可爱的模样！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:sad,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,2200,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「以水蓝色和白色为主题，符合芙拉形象的可爱服装！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:sad,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,900,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「稍微短裙飘动时露出的大腿！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:sad,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「稍稍露出的锁骨又显性感！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「明明有这么可爱的妹妹圣诞，却对其他女人失去理智，兄弟不合格啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:shy,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「诺恩……被夸奖是很高兴，但，有点，那个感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:shy,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:smile,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:shy,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「看的重点有点……嗯……稍微……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「这个，诺恩的眼神有点怪异让芙拉不舒服吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「你想吵架吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+spriteatlas,download/character/102007/adv/atlas/stand_b,body:sad,tabasa,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「哈……吵闹倒是没关系，\n但至少确认一下周围的安全再说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「啊哈哈……但是，这么吵闹却没有敌人出现，\n可能这个领域并不是那么危险的地方呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102007/adv/atlas/stand_b,body:normal,tabasa,300,-120,0.5,0,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「敌人不在并不代表安全，幻梦境」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:normal,raz,300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「是的……实际上，看起来这个领域是封闭的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100307/adv/atlas/stand_a,body:normal,catia,-300,-100,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「封闭，这样说来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,raz,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102007/adv/atlas/stand_b,body:sad,tabasa,300,-120,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「又要做些什么才能逃脱？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,catia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「啊，如果是那样的话，我觉得没必要那么警惕。\n在这个领域里要做的事情，并不是那么困难的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:normal,raz,300,-110,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「你明白吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「这个领域并没有隐藏其条件」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「并不是阻碍成就，或者像试炼一样对待的类型。\n对我和芙拉来说，一目了然吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,raz,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102007/adv/atlas/stand_b,body:sad,tabasa,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「那么，就别拐弯抹角地告诉我们。\n在这个领域里，我们要做些什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「送圣诞礼物——就是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_044.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/102007/adv/atlas/stand_b,body:surprise,tabasa,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,0,<outline width=2 color=black>「嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104514/adv/atlas/stand_a,body:surprise,raz,-300,-110,0.5,0.5,,,,
+anm,tint,tabasa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「这是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,tabasa,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104908/adv/atlas/stand_a,body:normal,maria,300,-120,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「……诺恩手里拿着盒子？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「在这个领域里，自己的心意本身就是礼物。\n然后，只需要把这个交出去就行了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,norn,0.7_0.7,0.5,0
+anm,move,norn,0_-160,0.5,0
+endwait
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:smile,norn,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「——所以，这个是要给哥哥的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:normal,norn,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「收下吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm051.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>『——不管怎么说，对待哥哥总是有点调皮，\n有点取笑，很少直接表达感情』</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>『但是因为相信，即使不用言语，\n哥哥也能完全理解我所想表达的』</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>『或许，这有点太依赖了吧』</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>『明明知道只会一味依赖是不行的。\n总是倾向于熟悉、轻松的一方』</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>『像是避免表达自己的感情一样，\n大概是因为有点不安吧』</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>『不知道自己投入的感情是否会得到回应。这种不安，\n我想任何人都会有』</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>『即使如此……这样一来，就能直接传达心情了。\n所以，既然有这个机会，就算不安，也想要传达』</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>『毕竟，这是无法隐藏的心情。\n真实的、原原本本的心情……能够传达出去』</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>『我爱你，哥哥。如果你也能说你爱我，我会很开心的』</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11770300.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:shy,norn,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「呜啊啊啊啊！？　等、等一下，哥哥，这个实在是相当地、真的\n很尴尬啦，不要突然抱住我！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103508/adv/atlas/stand_a,body:shy,norn,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「被搞得太夸张会更加尴尬的！\n喂，你在听吗！？　嘿，哥哥，你在听吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,168 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11770300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm105.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「顺便说一句，诺恩问我圣诞老人有没有要什么礼物的愿望……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_02.mp3
+msg,1,<outline width=2 color=black>「而且，不只是诺恩，亚纱花等其他大家也问了同样的事情，\n问了好几次……有点困扰」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_03.mp3
+msg,1,<outline width=2 color=black>「我想不出那么多想要的东西，而且如果每个大家都\n为我准备的话，数量会变得惊人……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_04.mp3
+msg,1,<outline width=2 color=black>「……？ 哥哥，你为什么这么慌张……难道，\n你以为我不知道圣诞老人的真实身份？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_05.mp3
+msg,1,<outline width=2 color=black>「我可不是那么小孩子了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_06.mp3
+msg,1,<outline width=2 color=black>「但是，因为知道大家为了我扮演圣诞老人送礼物给我，\n所以就不特意说出来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_07.mp3
+msg,1,<outline width=2 color=black>「但是……正因如此，有点困扰」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_08.mp3
+msg,1,<outline width=2 color=black>「如果告诉大家我知道圣诞老人的真实身份，他们可能会有点困惑的反应……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_09.mp3
+msg,1,<outline width=2 color=black>「所以，我会装作没注意到……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「我知道了」,选项2「圣诞老人，是存在的……！」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_10.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「哥哥是特别的……有些事情不能告诉大家，\n但我会偷偷向哥哥求助」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_11.mp3
+msg,1,<outline width=2 color=black>「所以……这件事情，对大家来说是个秘密哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_12.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「哥哥……有些事情就算勉强也无济于事的哦……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_13.mp3
+msg,1,<outline width=2 color=black>「而且，眼睛游移着说出来也没有说服力啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_14.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「但是，有点奇怪呢……明明是要送礼物的机会，\n为什么要说是圣诞老人送而不是自己送呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:surprise,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_15.mp3
+msg,1,<outline width=2 color=black>「梦想，不想破坏吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_16.mp3
+msg,1,<outline width=2 color=black>「啊……是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_17.mp3
+msg,1,<outline width=2 color=black>「如果我从哥哥和大家那里收到礼物，\n我一定会感到非常高兴……那是绝对的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_18.mp3
+msg,1,<outline width=2 color=black>「但是，如果有一个叫圣诞老人的神秘人，不仅仅是我，\n而是让大家都变得幸福的话……那是一个美好的梦想」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_19.mp3
+msg,1,<outline width=2 color=black>「把这种温柔而温暖的梦想留在孩子们心中\n想要传达的心情……或许你能理解吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_20.mp3
+msg,1,<outline width=2 color=black>「那么，我还要再多做一点点这个梦才行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_21.mp3
+msg,1,<outline width=2 color=black>「但是，如果只有我一个人充满圣诞老人，\n可能会有点困难呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_22.mp3
+msg,1,<outline width=2 color=black>「这方面，我相信哥哥圣诞老人会处理得很好的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103718/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103718/adv/sound/fav103718_03_23.mp3
+msg,1,<outline width=2 color=black>「嘻嘻……请多关照，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
