@@ -1,0 +1,356 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>——并不是说我讨厌米露瓦。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>我确实认为他很危险。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>这从米露瓦的经历就可以明显看出……更何况，偶尔看到他那深不可测\n的黑暗眼神，我都会感到背脊发凉。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>但……说到底，也就那么回事。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>仅此而已。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>性格扭曲的坏人在这个世界上多的是。\n到处都是伤害他人后还能若无其事的人。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>虽然程度有所不同，但可以称为危险的人，在拉莱耶\n也是多的是。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>甚至，我自己也是。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>因为我想要活下去，想要幸福，其他的都无所谓。\n我伤害了他人，也毫不犹豫地触碰了禁忌。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>所以……我不希望米露瓦接近爸爸的真正原因\n并不在这里。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>我真正害怕的是……感到恐惧的，\n不是米露瓦，而是――……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11730300.jpg,1,255
+endwait
+wait,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11710300.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm080.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:surprise,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「――爸爸？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「原来如此，你是跟着我来的啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呃……对不起。我自作主张消失了。\n只是有些事情，我想要单独思考一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.6,0.5,,,,
+endwait
+shake,0.5,3,12,0,soka
+msg,0,<outline width=2 color=black>「――……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:shy,soka,0,-110,0.6,0,,,,
+msg,0,<outline width=2 color=black>「那个……为什么突然摸我的头。\n不问问我在想什么吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.6,0,,,,
+msg,0,<outline width=2 color=black>「……我本以为爸爸是来让我和米露瓦好好相处的\n我还以为他是这么说的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.6,0,,,,
+msg,0,<outline width=2 color=black>「或者，是来生气的吗？\n说些否定别人的话，爸爸不是不喜欢吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「讨厌米露瓦吗？」,选项2　「你感到不安的是什么？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.6,0,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「…………并不是讨厌」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.6,0,,,,
+msg,0,<outline width=2 color=black>「虽然感到害怕，也会保持警惕。但这些都很正常。\n并不是真的讨厌或者感到不舒服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.6,0,,,,
+msg,0,<outline width=2 color=black>「但是……我不希望和爸爸在一起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:smile,soka,0,-110,0.6,0,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「……就是这样，你总是首先表现出关心，这种温柔的地方，\n我非常喜欢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:sad,soka,0,-110,0.6,0,,,,
+msg,0,<outline width=2 color=black>「但是……正因为如此……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.6,0,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「…………呐，爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:normal,soka,0,-110,0.6,0,,,,
+msg,0,<outline width=2 color=black>「我可以提一个请求吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:smile,soka,0,-110,0.6,0,,,,
+msg,0,<outline width=2 color=black>「――刚才，其实我在神社的小卖部发现了这个“东西”」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104214/adv/atlas/stand_a,body:smile,soka,0,-110,0.6,0,,,,
+msg,0,<outline width=2 color=black>「稍微试试看怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm130.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/104214/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「嗯……好吃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「日本酒的味道真的完全取决于品牌呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这种酒，有吟酿的香气，非常好喝……虽然是用米做的，\n却像凛果那样果香四溢……感觉可以无限畅饮」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「呵呵，没事的。我不会喝太多的。就一点点，好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「就算喝很多，我也不会醉的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这可能是这个身体的一个优点吧。\n因为不会醉，所以可以一直真正享受酒的味道」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……或者，也许这是一个缺点。\n有时候可能更希望自己能醉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「坦白说，有时候我真的很想跟你聊聊各种事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我以为喝点酒后，至少会说话容易一些，但看来完全没用」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……爸爸，你知道吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「现在，你就像是在给我依偎一样，\n你总是这样给很多人依偎」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「甚至……对米露瓦也是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我觉得爸爸你并不是不了解米露瓦是什么样的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「相反，你可能比我更深刻地理解米露瓦真正可怕的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「但是……爸爸，你还是会毫不犹豫地向这样的人伸出援手」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「那是，很可怕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「当米露瓦这样的人和爸爸在一起时，我会，\n非常，非常害怕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「其实，我并不是讨厌米露瓦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我……害怕的是爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「如果有一天，米露瓦走到了无可挽回的结局。\n……那时如果米露瓦求助于爸爸，爸爸会怎么做？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「爸爸肯定会握住求助的手。\n就这样被米露瓦拉着……掉进黑暗中」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「所以我不喜欢爸爸和米露瓦在一起。\n因为会想象到那样的未来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……我知道。就算我这么说，爸爸也不会改变。\n会露出为难的表情，但这种事情他肯定不会改变」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我也是，非常喜欢这样的爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「所以这是一个无解的问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……但是，记住这点，爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「如果有一天，爸爸的善良伤害了自己。\n我会否定这样的善良」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「如果不这样做，爸爸会离我而去，\n我绝对会这么做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「即使被爸爸责怪，被讨厌」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「…………啊。可能有点醉了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「喝醉了……这种话可能很快就会忘记。\n这种可能会到来的未来，不是什么有趣的话题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「你看，爸爸……再来一杯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「无聊的话题忘得差不多了，\n你会陪我吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

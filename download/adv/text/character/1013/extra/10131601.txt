@@ -1,0 +1,183 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11130300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm130.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「这个地方有点冷呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva,0.7_0.7,0.5,0
+anm,move,milva,0_-160,0.5,0
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_02.mp3
+msg,1,<outline width=2 color=black>「但是，这样贴在一起，就会暖和了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:smile,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_03.mp3
+msg,1,<outline width=2 color=black>「说起来，这件和服怎么样？\n和服加上褶边和靴子，这种是不是叫做中西合璧呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_04.mp3
+msg,1,<outline width=2 color=black>「明明单独一样就已经成形了，却要把两样东西结合起来，\n真是奇妙呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「很适合你」,选项2　「可以发现新的魅力」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:smile,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_05.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「呵呵，谢谢你。但是，最近你的话，\n可能已经让我不太满足了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_06.mp3
+msg,1,<outline width=2 color=black>「光是言语，是不够的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_07.mp3
+msg,1,<outline width=2 color=black>「嘿……现在，你知道我想要你做什么吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva2,0,0,0,0,,,,
+imgconf,milva2,milva1,0,-350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101316/adv/sound/fav101316_01_08.mp3
+msg,1,<outline width=2 color=black>「嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_09.mp3
+msg,1,<outline width=2 color=black>「呵呵，只是脸颊上的吻，怎么感觉你今天比平时要保守呢？\n其实你可以做更激烈的事情的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_10.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「不同的东西混合在一起，会产生新的魅力……啊，这样的话我或许能稍微\n理解一些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_11.mp3
+msg,1,<outline width=2 color=black>「本不应交融的事物相互接触，\n可以让我们发现全新的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_12.mp3
+msg,1,<outline width=2 color=black>「我比任何人都更深刻地体会到了这一点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_13.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「这样和你在一起，我感觉心里的心跳都快了一些。\n这到底是怎样的感情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_14.mp3
+msg,1,<outline width=2 color=black>「如果我是一个普通女孩，大概就不会对这个答案感到困惑了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_15.mp3
+msg,1,<outline width=2 color=black>「但是……虽然自己这么说可能有点怪，\n你不觉得我也变了很多吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_16.mp3
+msg,1,<outline width=2 color=black>「来到拉莱耶，遇见了你，经历了很多事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_17.mp3
+msg,1,<outline width=2 color=black>「就这样，我现在在这里……我相信不久的将来，我能够真正理解\n这颗心激动的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_18.mp3
+msg,1,<outline width=2 color=black>「这是一件非常美好的事情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:smile,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_19.mp3
+msg,1,<outline width=2 color=black>「嗯嗯，呵呵，呵呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:smile,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_20.mp3
+msg,1,<outline width=2 color=black>「啊。一年结束了，又将开始新的一年」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_21.mp3
+msg,1,<outline width=2 color=black>「再次……新年快乐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101316/adv/atlas/stand_a,body:unique,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101316/adv/sound/fav101316_01_22.mp3
+msg,1,<outline width=2 color=black>「今年也，请多关照？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

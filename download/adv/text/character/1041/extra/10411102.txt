@@ -1,0 +1,201 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10130100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm152.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「——呃，叫法？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_02.mp3
+msg,1,<outline width=2 color=black>「除了叫爸爸，还有什么你想让我叫的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「爸爸」,选项2 「父亲大人」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_03.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「诶诶诶……？ 白樱都这么叫了，那就这样好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_04.mp3
+msg,1,<outline width=2 color=black>「你看，白樱说她补足了我缺少的部分，\n就让她来覆盖这方面吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_05.mp3
+msg,1,<outline width=2 color=black>「……真的想让我这么叫吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_06.mp3
+msg,1,<outline width=2 color=black>「哈……真是的。没办法，就这一次哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_07.mp3
+msg,1,<outline width=2 color=black>「——爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-170,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/104111/adv/sound/fav104111_02_08.mp3
+msg,1,<outline width=2 color=black>「嗯……爸爸，别突然抱我，真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_09.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「为什么要这么叫呢……我又不是什么上品性格，\n这样叫肯定会感觉很奇怪的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_10.mp3
+msg,1,<outline width=2 color=black>「……别笑好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:shy,aika,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_11.mp3
+msg,1,<outline width=2 color=black>「嗯……父亲大人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:anger,aika,0,-170,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_12.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「你刚才笑了。你笑了一下。\n果然觉得很奇怪对吧。我就知道会这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_13.mp3
+msg,1,<outline width=2 color=black>「——因为可爱？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_14.mp3
+msg,1,<outline width=2 color=black>「……哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:sad,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_15.mp3
+msg,1,<outline width=2 color=black>「嘛，这次我不是不信你。\n但是，以后别这么叫了，很尴尬的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:normal,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_16.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「就因为一个称呼，这么在意，我是不太懂。\n不过，如果爸爸高兴的话，那就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:normal,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_17.mp3
+msg,1,<outline width=2 color=black>「……称呼啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:normal,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_18.mp3
+msg,1,<outline width=2 color=black>「爸爸似乎已经习惯了……但她还没有习惯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_19.mp3
+msg,1,<outline width=2 color=black>「——谁的事，你问？这从对话来看应该能明白吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_20.mp3
+msg,1,<outline width=2 color=black>「装傻充愣的……明明是懂的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:shy,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_21.mp3
+msg,1,<outline width=2 color=black>「那个…………嗯，妈妈，的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:unique,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_22.mp3
+msg,1,<outline width=2 color=black>「哼。你那傻笑什么……看你那表情就烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:sad,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_23.mp3
+msg,1,<outline width=2 color=black>「已经……总会习惯的，别管我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:sad,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_24.mp3
+msg,1,<outline width=2 color=black>「……如果妈妈也能像爸爸那样积极一点，\n也许能更快习惯吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:surprise,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_25.mp3
+msg,1,<outline width=2 color=black>「啊……嘘，这是给妈妈的秘密。不用告诉她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104111/adv/atlas/stand_a,body:anger,aika,0,-170,0.7,0,,,,
+playvoice,1,download/character/104111/adv/sound/fav104111_02_26.mp3
+msg,1,<outline width=2 color=black>「如果说出去，爸爸会生气的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

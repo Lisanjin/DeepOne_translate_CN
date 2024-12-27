@@ -1,0 +1,196 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11710300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm146.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_01.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「虽然只是领域的影子响，能穿上这么漂亮的晴装真是太好了。\n可以说是小小的职业福利呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_02.mp3
+msg,1,<outline width=2 color=black>「虽然说是晴装，但这还是我第一次穿，希望穿着方式没有太奇怪。\n不会很奇怪吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_03.mp3
+msg,1,<outline width=2 color=black>「如果你说我穿得很合适，我也会更有自信」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:unique,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_04.mp3
+msg,1,<outline width=2 color=black>「如果我能得到让我心动的赞美，\n我可能会很高兴，不知不觉中提供更多服务呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「很合适，最棒，美丽」,选项2　「果然和服最适合你」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_05.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「那个，你这样前倾的态度让我很高兴，但感觉你是想用气势来推动事情……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_06.mp3
+msg,1,<outline width=2 color=black>「但是，你这么拼命，是不是可以认为我的话对你来说\n是有魅力的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:smile,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_07.mp3
+msg,1,<outline width=2 color=black>「如果那样的话……果然还是不合格。请重新来过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:unique,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_08.mp3
+msg,1,<outline width=2 color=black>「呵呵。这可能有点狡猾，但这样做的话，\n下次您会给我更美妙的话语，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:unique,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_09.mp3
+msg,1,<outline width=2 color=black>「当然……相应地，我会加倍提供服务的。怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_10.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「“果然”……是吗。我明白了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:smile,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_11.mp3
+msg,1,<outline width=2 color=black>「说起来，我听说和服如果不露胸部等部位会看起来更美……但是什么是“果然”呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_12.mp3
+msg,1,<outline width=2 color=black>「真是的……如果您能更直率地赞美我就好了。\n这种有点刻薄的地方，真是典型的诺恩哥哥呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_13.mp3
+msg,1,<outline width=2 color=black>「对这种人，我是不会提供额外服务的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_14.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「所以，请重新来过，好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+playse,/download/sound/se/se_020.mp3
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:surprise,julia,0,-170,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_15.mp3
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:shy,julia,0,-170,0.7,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_16.mp3
+msg,1,<outline width=2 color=black>「呃，突然抱住我，这不算犯规吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:shy,julia,0,-170,0.7,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_17.mp3
+msg,1,<outline width=2 color=black>「这样做的话，我肯定会心跳加速的。\n真不公平……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:shy,julia,0,-170,0.7,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_18.mp3
+msg,1,<outline width=2 color=black>「我们这么紧贴着，你肯定也能感觉到我的心跳了吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-170,0.7,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_19.mp3
+msg,1,<outline width=2 color=black>「虽然确实让我心动了一下，但这明显违反了规则。\n我本希望是用言语让我心动的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-170,0.7,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_20.mp3
+msg,1,<outline width=2 color=black>「所以，我还是不能提供额外的服务」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:normal,julia,0,-170,0.7,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_21.mp3
+msg,1,<outline width=2 color=black>「——那我也来点小狡猾的行为吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,julia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:shy,julia2,0,0,0,0,,,,
+imgconf,julia2,julia1,0,-430,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181509/adv/sound/fav181509_01_22.mp3
+msg,1,<outline width=2 color=black>「啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:unique,julia,0,-170,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_23.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「呵呵，我突然袭击了你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181509/adv/atlas/stand_a,body:smile,julia,0,-170,0.7,0,,,,
+playvoice,1,download/character/181509/adv/sound/fav181509_01_24.mp3
+msg,1,<outline width=2 color=black>「但是，归根结底是你的错……这点事，\n你会原谅我的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
