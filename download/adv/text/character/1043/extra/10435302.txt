@@ -1,0 +1,172 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11780300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm155.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「啊，真是的……所以我才不想坐什么过山车啊。\n头发都乱糟糟的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:unique,zakuro,0,-170,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/104353/adv/sound/fav104353_02_02.mp3
+msg,1,<outline width=2 color=black>「……不，其实我自己可以整理，没必要特意让你帮我弄。\n不过，突然就碰女生的头发，这算什么啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:shy,zakuro,0,-170,0.7,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_03.mp3
+msg,1,<outline width=2 color=black>「真是的……算了，随你吧。反正也不会少块肉。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:shy,zakuro,0,-170,0.7,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_04.mp3
+msg,1,<outline width=2 color=black>「……被别人帮忙整理头发，这得是多久以前的事了啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:unique,zakuro,0,-170,0.7,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_05.mp3
+msg,1,<outline width=2 color=black>「喂，你到底要摸到什么时候啊？差不多该停手了吧。\n快点，离远点！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/104353/adv/sound/fav104353_02_06.mp3
+msg,1,<outline width=2 color=black>「话说回来，我居然会有一天去坐过山车这种东西，还真是想不到。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_07.mp3
+msg,1,<outline width=2 color=black>「像这种充满欢乐的地方，和我没半点关系。我根本不需要去享受什么。\n我只是朝着某一天即将到来的终结……归零的那一刻前进罢了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_08.mp3
+msg,1,<outline width=2 color=black>「——以前的我，大概会这么说吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「但是，现在不一样了」,选项2　「稍微再消极一点会更好……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_09.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「……哼，谁知道呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_10.mp3
+msg,1,<outline width=2 color=black>「现在也许，心底还在想着类似的事情吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_11.mp3
+msg,1,<outline width=2 color=black>「即便如此……想要改变自己的心情是没错的，\n我也想尽力去做些什么来实现这一点。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_12.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「好好好，反正我就是个消极阴暗又负能量的女人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_13.mp3
+msg,1,<outline width=2 color=black>「怎么回事？欸，什么？你这时候还要故意戳我的旧伤口，\n真是性格恶劣啊，你这家伙。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_14.mp3
+msg,1,<outline width=2 color=black>「……哈。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_15.mp3
+msg,1,<outline width=2 color=black>「嘛，也许总有一天能把这些当成笑话来说吧。\n不过现在，我还没办法那么洒脱呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_16.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「……过山车」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_17.mp3
+msg,1,<outline width=2 color=black>「爱花和想花坐上去会是什么反应呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_18.mp3
+msg,1,<outline width=2 color=black>「想花应该会很单纯地享受吧，而爱花果然还是\n不会动摇吗……也许意外地会迷上也说不定呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_19.mp3
+msg,1,<outline width=2 color=black>「以前从来没想过这些事情……正因为这样，\n反而让我有点期待呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_20.mp3
+msg,1,<outline width=2 color=black>「真想和那两个孩子一起在这样的主题公园玩玩看。\n然后积累更多的回忆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_21.mp3
+msg,1,<outline width=2 color=black>「我依然能感受到内心还有一个无法完全改变的自己。\n不过，也确实有一个渴望改变的自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:smile,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_02_22.mp3
+msg,1,<outline width=2 color=black>「从今以后……我想好好面对这样的自己。\n我是这么觉得的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

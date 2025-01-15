@@ -1,0 +1,645 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11780300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm096.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「……你是不是觉得我太不成熟了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,300,-120,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「不管是不是不成熟，我倒是觉得不像你的风格。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我对你并没有多了解。\n不过……我以为你不会做出妨碍亚纱花的事情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「和爱花、想花一起度过的时间，对她来说应该是很重要的。\n可没想到……竟然是你来泼冷水。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「是啊……真的是这样没错。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「只要亚纱花能继续和爱花、想花一起度过愉快的时光就好了。\n虽然白樱有点碍眼，但也不至于非得强行排除不可。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我所做的，只不过是在添乱罢了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……为什么，我会做出这样的事情呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「你是不是心情不好？」,选项2 「无法接受亚纱花的目的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:surprise,alt,-300,-120,0.5,0,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……不，其实是吧。可能确实是这样。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然说心情不好有点夸张，但也许有点类似的感觉吧……\n为什么会这样，你应该很清楚吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「亚纱花有时候会把别人放在自己前面。\n这确实是她很优秀的一面，但也让人觉得无奈。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「就是因为这样……总觉得不太对劲。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,300,-120,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「亚纱花的目的……？那到底是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「是啊，确实如你所说……我有点不爽呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我希望亚纱花能独享自己的幸福。\n然而，她却总想把幸福分给别人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,300,-120,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「喂，虽然你们两个好像聊得很明白的样子，\n但我完全跟不上你们的对话啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「……这本来应该是亚纱花亲自告诉你的事情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:sad,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过她大概不会主动说吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:sad,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「到时候被骂多管闲事的应该是我，而不是他吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,300,-120,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「别用这种话里有话的说法行不行！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「今天安排这个场合，其中也包含了亚纱花的愿望哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「柘榴……这是希望你能和爱花、想花一起度过一些家庭时光。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「今天的这个场合，是他听取了亚纱花的愿望才安排的哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,300,-120,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:normal,alt,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「这样一来，亚纱花不就像个陪衬一样了吗……对我来说，\n这怎么想都觉得不爽，也难以接受啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,300,-120,0.5,0,,,,
+anm,tint,alt,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「等、等一下，这么说的话——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/character/103707/se/se_c03707_skill_01.mp3
+flash,255,255,255,1,1,2
+spriteoff,alt,0.2
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:surprise,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「啊……等、等等，说完就跑也太狡猾了吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「……亚纱花，你……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「呃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那、那个，你是不是觉得我多管闲事了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「叹气！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「没什么，这个叹气不是针对你的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:unique,zakuro,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这是对那个明明知道我和你的心情，却装作若无其事的某个人的叹气。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:surprise,asaka,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「就像你向他提出了请求一样，\n我也向他提出了类似的请求哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「亚纱花和爱花、想花——就是这样。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「也就是说……我们互相提出了相反的请求？\n诶……会有这种事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「好像确实是这么回事呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm155.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「妈妈和柘榴，还挺像的呢。\n两个人都有点奇怪，程度差不多。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「没想到不仅是柘榴，连妈妈也会提出那样的请求……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:surprise,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「诶，什、想花？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「什么时候……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:normal,soka,300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「刚刚回来的哦。你们俩完全没注意到呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:sad,soka,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「看吧，爱花，看看这两个人。如果不把自己的心意\n好好传达清楚，就会像这样产生误会哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104106/adv/atlas/stand_a,body:normal,aika,-300,-120,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「……嗯。我明白了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,aika,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「啊、那个，你们在说什么——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:sad,soka,300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「以她们两个为反面教材，我和爱花要努力把自己的心意\n好好传达出去，就是在说这个啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zakuro,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「诶、诶……反面教材……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「我可不会让你否认哦，妈妈。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:unique,soka,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「还有，其实爸爸早就知道妈妈和柘榴的事情，却放任到现在，我觉得这也有点问题。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——所以，爸爸妈妈，我们得好好聊聊了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:surprise,asaka,-300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「诶……啊，呃，嗯……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「爱花。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104106/adv/atlas/stand_a,body:normal,aika,-300,-120,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「嗯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,300,-110,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「另一个你感受到的那些情感，要好好理解哦。\n然后……包括那些情感在内，去好好教训一下柘榴吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104106/adv/atlas/stand_a,body:normal,aika,-300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「嗯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:sad,zakuro,300,-120,0.5,0.5,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「诶，教训……？什么意思啊……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104106/adv/atlas/stand_a,body:normal,aika,-300,-120,0.5,0,,,,
+endwait
+anm,move,aika,0_-120,0.5,0
+endwait
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「那，我们走吧，柘榴。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,300,-120,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「不，那个，等一下，爱花。你说的教训到底是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104106/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+endwait
+anm,move,aika,-200_-120,0.4,0
+anm,move,zakuro,100_-120,0.5,0
+endwait
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,100,-120,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「喂喂，别这么拉我胳膊啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104106/adv/atlas/stand_a,body:normal,aika,-200,-120,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「嗯。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,100,-120,0.5,0,,,,
+endwait
+playse,/download/sound/se/se_018.mp3
+anm,move,aika,-1200_-120,1.2,0
+anm,move,zakuro,-1200_-120,1.4,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,0,<outline width=2 color=black>「爱花……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,300,-110,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:surprise,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「那么，我们也走吧。妈妈，爸爸。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,soka,-50_-110,0.5,0
+endwait
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:surprise,asaka,-300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「诶，那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,-50,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「嗯，时间宝贵，我们边走边聊吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100115/adv/atlas/stand_a,body:surprise,asaka,-300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「想花……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,-50,-110,0.5,0,,,,
+endwait
+playse,/download/sound/se/se_018.mp3
+anm,move,asaka,1200_-120,1.4,0
+anm,move,soka,1200_-110,1.2,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「这、这是怎么回事……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,alt1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100183/adv/atlas/stand_a,body:sad,alt2,0,0,0,0,,,,
+imgconf,alt2,alt1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>ASAKA</outline>,
+msg,0,<outline width=2 color=black>「……呃。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104182/adv/atlas/stand_a,body:sad,aika_s2,0,0,0,0,,,,
+imgconf,aika_s2,aika_s1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>AIKA</outline>,
+msg,0,<outline width=2 color=black>「这到底会怎么样啊……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

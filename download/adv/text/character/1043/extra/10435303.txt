@@ -1,0 +1,183 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11780300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm155.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「――啊，又找到了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_02.mp3
+msg,1,<outline width=2 color=black>「你看，这个，这里的地面。\n石板的花纹变成了一个奇怪的标记吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_03.mp3
+msg,1,<outline width=2 color=black>「是吉祥物……吗？我也不太清楚，不过从刚才开始，\n像是围栏的一部分啊，或者招牌的角落啊，这些地方都藏着这个标记呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_04.mp3
+msg,1,<outline width=2 color=black>「毕竟形状这么有特点，不可能是偶然吧，\n感觉像是寻宝游戏之类的东西呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_05.mp3
+msg,1,<outline width=2 color=black>「不过，就算找到这个标记，也不会有什么特别的事情发生吧……\n但总觉得，这种东西就是忍不住想去找呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_06.mp3
+msg,1,<outline width=2 color=black>「这已经是第八个了……总共有多少个呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「已经找到九个了」,选项2　「要不要玩点更普通的？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_07.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「啊？欸，不会吧，我是不是漏掉了什么……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_08.mp3
+msg,1,<outline width=2 color=black>「哪、哪里？我到底漏看了哪里……话说回来，刚才那个花坛\n附近，好像有点可疑，是那里吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_09.mp3
+msg,1,<outline width=2 color=black>「还是说，难道是我以为在玩设施的时候不可能有，\n结果其实也有这种情况……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_10.mp3
+msg,1,<outline width=2 color=black>「喂，别笑了，快告诉我！这太让人在意了吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:anger,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_11.mp3
+msg,1,<outline width=2 color=black>「可恶……既、既然这样，那我就把走过的路再走一遍！\n绝对不会输给你的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_12.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「反正，怎么享受是每个人的自由吧。\n这种东西，我还挺喜欢的呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_13.mp3
+msg,1,<outline width=2 color=black>「……刚才，你是不是觉得我有点阴沉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_14.mp3
+msg,1,<outline width=2 color=black>「就算否认，你脸上已经写出来了哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_15.mp3
+msg,1,<outline width=2 color=black>「哼。无所谓啦。反正我就是那种来主题公园，\n盯着石板花纹看的无聊女人嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_16.mp3
+msg,1,<outline width=2 color=black>「接下来我还会盯着地面啊墙壁啊看哦，做好心理准备吧。\n要不然你干脆别管我算了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:surprise,zakuro,0,-140,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/104353/adv/sound/fav104353_03_17.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:shy,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_18.mp3
+msg,1,<outline width=2 color=black>「……真是的。我开玩笑的啦，开玩笑的，所以别握着我的手了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:smile,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_19.mp3
+msg,1,<outline width=2 color=black>「真是服了你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:smile,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_20.mp3
+msg,1,<outline width=2 color=black>「那么，接下来你想玩哪个项目？\n没办法，我就陪你玩到满意为止好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:smile,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_21.mp3
+msg,1,<outline width=2 color=black>「像这样，还特意握住我的手了。\n可要好好带路哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:shy,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_22.mp3
+msg,1,<outline width=2 color=black>「……顺便一提，我只是随口问问而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:shy,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_23.mp3
+msg,1,<outline width=2 color=black>「有没有那种可以一直牵着手玩的项目——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:shy,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_24.mp3
+msg,1,<outline width=2 color=black>「——……呃、算了，没什么。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104353/adv/atlas/stand_a,body:shy,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104353/adv/sound/fav104353_03_25.mp3
+msg,1,<outline width=2 color=black>「没、没什么啦，这话题就到此为止！快点，你要去哪儿！\n赶紧带路啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
