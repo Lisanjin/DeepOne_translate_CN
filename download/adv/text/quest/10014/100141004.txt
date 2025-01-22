@@ -1,0 +1,653 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_046_13_04_01.mp3
+name,
+msg,1,<outline width=2 color=black>人の心というものは、ほんのすこしの力で背中を押せば、\nあっさりと道を踏み外してしまう。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_046_13_04_02.mp3
+msg,1,<outline width=2 color=black>人の心というものは、一度踏み外してしまえば、\nあとは勝手に暗闇に落ち続ける。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_046_13_04_03.mp3
+msg,1,<outline width=2 color=black>だから私は、彼女の中にもともとあって、押し隠されていた感情を\n揺さぶるだけでよかった。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_046_13_04_04.mp3
+msg,1,<outline width=2 color=black>だから私は、そんな感情の揺らぎに付け入って、肉体の制御をほんの数秒、\nたった腕一本の主導権を奪うだけでも十分だった。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_046_13_04_05.mp3
+msg,1,<outline width=2 color=black>それだけのことで、あとは全てがかけ違う。止まれなくなる。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_046_13_04_06.mp3
+msg,1,<outline width=2 color=black>ねえ、そうでしょう？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_046_13_04_07.mp3
+msg,1,<outline width=2 color=black>あなたのことを、少しだけ真似させてもらったわよ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_046_13_04_08.mp3
+msg,1,<outline width=2 color=black>――悪意の受容体。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10130301.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm071.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+flash,240,20,20,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100121/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_13_04_01.mp3
+name,<outline width=2 color=black><ruby>赤井|あかい</ruby><ruby>亜紗花|あさか</ruby></outline>,
+msg,1,<outline width=2 color=black>「っ、ソーカ！　そんな……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,300,-300,0.5,0.3,,,,
+anm,move,soka,300_-110,1.3,0
+wait,0.01
+anm,tint,asaka,150_150_150,0.0001,0
+wait,0.01
+playvoice,1,download/adv/voice/quest/main_042_13_04_01.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「……だい、じょうぶ……少し、身体に穴、あいただけだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100121/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_13_04_02.mp3
+name,<outline width=2 color=black><ruby>赤井|あかい</ruby><ruby>亜紗花|あさか</ruby></outline>,
+msg,1,<outline width=2 color=black>「バカ、そんなの全然平気じゃないっ！　いいから、じっとして！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_04_01.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「――ぁ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_04_02.mp3
+msg,1,<outline width=2 color=black>「こ、れは……肉体を、操られて……ソーカを、傷つけて……ぁ……ぁぁ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_067.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:unique,aika_s,-300,-120,0.5,0.5,,,,
+anm,tint,aika_s,150_150_150,0.0001,0
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_13_04_01.mp3
+name,<outline width=2 color=black>フラウ</outline>,
+msg,1,<outline width=2 color=black>「これは……ざくろの中で、暗い感情が、膨れ上がって……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:unique,aika_s,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_093_13_04_01.mp3
+name,<outline width=2 color=black>愛花</outline>,
+msg,1,<outline width=2 color=black>「ああ、なるほど……今度はそうきたか。ほんと、いろいろ考えるなぁ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:smile,aika_s,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_093_13_04_02.mp3
+msg,1,<outline width=2 color=black>「――お株をとられちゃったね？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,aika_s,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_13_04_01.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「っ、そういうことか……！　みんな、ざくろから離れろ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_13_04_02.mp3
+msg,1,<outline width=2 color=black>「ざくろの<ruby>罪悪感|あくい</ruby>が、あふれ出す……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_067.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_04_03.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「っ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zero1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102601/adv/atlas/stand_a,body:sad,zero2,0,0,0,0,,,,
+imgconf,zero2,zero1,0,-520,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>？？？</outline>,
+playvoice,1,download/adv/voice/quest/main_026_13_04_01.mp3
+msg,1,<outline width=2 color=black>「あのバカ、こんなことして……引っぱたくだけじゃ足りないわよ……っ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10130301.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_04_02.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「ざくろ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100121/adv/atlas/stand_a,body:anger,asaka,-1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,asaka,-50_-120,0.5,0
+endwait
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black><ruby>赤井|あかい</ruby><ruby>亜紗花|あさか</ruby></outline>,
+playvoice,1,download/adv/voice/quest/main_001_13_04_03.mp3
+msg,1,<outline width=2 color=black>「ソーカ、危ないっ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_067.mp3
+flash,0,0,0,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100121/adv/atlas/stand_a,body:sad,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_001_13_04_04.mp3
+msg,1,<outline width=2 color=black>「くっ……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_13_04_03.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「亜紗花、ソーカ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_13_04_02.mp3
+name,<outline width=2 color=black>フラウ</outline>,
+msg,1,<outline width=2 color=black>「ノルン！　ざくろの悪意が広がって……この領域が……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:normal,aika_s,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_093_13_04_03.mp3
+name,<outline width=2 color=black>愛花</outline>,
+msg,1,<outline width=2 color=black>「さっきから散々、みんな揃って好き放題してたからね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:smile,aika_s,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_093_13_04_04.mp3
+msg,1,<outline width=2 color=black>「ここは私が花開くために用意されただけの場所だし、\nさすがに脆くなっちゃってたかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,aika_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_13_04_04.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「なにを呑気に――――く、っ！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_067.mp3
+flash,0,0,0,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:smile,aika_s2,0,0,0,0,,,,
+imgconf,aika_s2,aika_s1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_093_13_04_05.mp3
+name,<outline width=2 color=black>愛花</outline>,
+msg,1,<outline width=2 color=black>「こういう展開は私も予想外だけど、どうなるのかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104180/adv/atlas/stand_a,body:smile,aika_s2,0,0,0,0,,,,
+imgconf,aika_s2,aika_s1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_093_13_04_06.mp3
+msg,1,<outline width=2 color=black>「あなたは、どうしたいの……ざくろ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+slideinblack,0.5,up
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,up
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm026.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_04.mp3
+name,
+msg,1,<outline width=2 color=black>私は、もしかしたら、あの子たちと比べたら\nずっとマシなのかもしれない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_05.mp3
+msg,1,<outline width=2 color=black>過去の優秀な魔術士のクローンとして生み出された私は、\n肉体の維持に限界がある。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_06.mp3
+msg,1,<outline width=2 color=black>それでも――アイカやソーカほどではない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_07.mp3
+msg,1,<outline width=2 color=black>あの子たちは、強化魔術士の最終形として、\nそれに求められる全てを詰め込まれた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_08.mp3
+msg,1,<outline width=2 color=black>タイプ・ヴェナティオは、兵器であって、人ではない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_09.mp3
+msg,1,<outline width=2 color=black>そう……人として経験を積ませることで能力の習熟を目指した\n私たち旧型なんて、強化魔術士の理想からはかけはなれているのだ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_10.mp3
+msg,1,<outline width=2 color=black>優れた能力。ナコト写本を操る適正。\nなにより――促成可能であるということ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_11.mp3
+msg,1,<outline width=2 color=black>壊れたら次を作って補填することができる。\nだから、一個体の耐久限界なんて論ずる必要がない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_12.mp3
+msg,1,<outline width=2 color=black>ほんの数ヶ月もてば、次の個体は生産できるのだから。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_13.mp3
+msg,1,<outline width=2 color=black>どこまでも理不尽で、どこまでも憐れな話。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_14.mp3
+msg,1,<outline width=2 color=black>だから、せめて私くらいは、彼女たちを――……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,color_255_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_15.mp3
+name,
+msg,1,<outline width=2 color=black>――そんな綺麗ごとで、本心を隠した。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_16.mp3
+msg,1,<outline width=2 color=black>タイプ・ヴェナティオはこれまでの強化魔術士すべてを無価値にした。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_17.mp3
+msg,1,<outline width=2 color=black>命の限りが短い？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_18.mp3
+msg,1,<outline width=2 color=black>むしろそれは幸いだろう。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_19.mp3
+msg,1,<outline width=2 color=black>私は見てきた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_20.mp3
+msg,1,<outline width=2 color=black>私と同じ型の強化魔術士は、百人近くいた。\nそれが、今や残るのは私たったひとりだ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_21.mp3
+msg,1,<outline width=2 color=black>研究や実験の過程で死ぬ者も多かったけれど、それ以上に多かったのは、\n寿命だ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_24.mp3
+msg,1,<outline width=2 color=black>昨日挨拶を交わした相手が、ある日、突然いなくなる。\n次は、自分かもしれないと思わずにはいられない、その恐怖。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_25.mp3
+msg,1,<outline width=2 color=black>朽ちていく身体と運命に対して血を吐くように呪いを繰り返しながら\n死んでいく者もいた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_26.mp3
+msg,1,<outline width=2 color=black>逆に、これで終われると、心からの喜びとともに果てる者もいた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_27.mp3
+msg,1,<outline width=2 color=black>そんなみんなの積み重ねたすべてが、タイプ・ヴェナティオの\n陰に消えていく。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_28.mp3
+msg,1,<outline width=2 color=black>生きた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_29.mp3
+msg,1,<outline width=2 color=black>生きてきた。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_30.mp3
+msg,1,<outline width=2 color=black>こんなふざけた世界でも、それでも……生きてきてしまったのだ、私たちは。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_31.mp3
+msg,1,<outline width=2 color=black>なのに“もういらない”と、“型落ちのガラクタだ”と、\nそんなふうに言われる気分がいったい誰に理解できるというのか。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_32.mp3
+msg,1,<outline width=2 color=black>――<ruby>自分|わたし</ruby>の命に価値はない。<ruby>自分|わたし</ruby>の生き方に自由はない。\n主義も信念も希望も期待も、なにひとつだってありはしない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_33.mp3
+msg,1,<outline width=2 color=black>そんな言葉を繰り返して、自分に言い聞かせて、心を騙し続けなければ、\nあふれてしまいそうだった。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_043_13_04_34.mp3
+msg,1,<outline width=2 color=black>この醜い憎悪が。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10110100.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/100121/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_13_04_05.mp3
+name,<outline width=2 color=black><ruby>赤井|あかい</ruby><ruby>亜紗花|あさか</ruby></outline>,
+msg,1,<outline width=2 color=black>「……今のは」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_13_04_03.mp3
+name,<outline width=2 color=black>フラウ</outline>,
+msg,1,<outline width=2 color=black>「ざくろの、記憶……ずっと押し込めていた、悪意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_13_04_05.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「どうやら、ペルフェはざくろの心の悪意をひらいて、\nその隙に付け入って、なにかをしでかすつもりらしい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103507/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_13_04_06.mp3
+msg,1,<outline width=2 color=black>「気を付けて……ざくろの悪意がどんなふうに悪影響を\n及ぼすか、私にも分からない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100121/adv/atlas/stand_a,body:anger,asaka,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_13_04_06.mp3
+name,<outline width=2 color=black><ruby>赤井|あかい</ruby><ruby>亜紗花|あさか</ruby></outline>,
+msg,1,<outline width=2 color=black>「――っ、ソーカたちは！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103705/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_13_04_04.mp3
+name,<outline width=2 color=black>フラウ</outline>,
+msg,1,<outline width=2 color=black>「ここには、わたしたちだけみたい……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100121/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_001_13_04_07.mp3
+name,<outline width=2 color=black><ruby>赤井|あかい</ruby><ruby>亜紗花|あさか</ruby></outline>,
+msg,1,<outline width=2 color=black>「そんな……ソーカは怪我もしているのに……それに、彼だって\n今はテルティアの力が頼れなくて……すぐに見つけないと！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100121/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_001_13_04_08.mp3
+msg,1,<outline width=2 color=black>「無事でいて……みんな……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

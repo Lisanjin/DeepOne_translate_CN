@@ -1,0 +1,637 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10140200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_042_13_05_01.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「っ、く……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,0,-1200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+anm,move,soka,0_-110,1.3,0
+endwait
+playvoice,1,download/adv/voice/quest/main_042_13_05_02.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「ここ、は……ごほっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+select,選択肢1　「大丈夫か……！？」,選択肢2　「じっとして！」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_03.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「そんなに慌てなくても……怪我自体は、もう直りかけてるから。\n今のは、肺に少し血がたまってただけで……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_04.mp3
+msg,1,<outline width=2 color=black>「……まあ、わたしじゃなかったら即死だったけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:surprise,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_05.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「……そんなふうに、声を荒げるんだね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_06.mp3
+msg,1,<outline width=2 color=black>「なんだか、少し嬉しいかも」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_07.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「心配してくれて、ありがとう……おとうさん」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_08.mp3
+msg,1,<outline width=2 color=black>「でも、本当に平気だから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_09.mp3
+msg,1,<outline width=2 color=black>「今は、のんびりしてられない……ここには、わたしとおとうさんしか\nいないのかな……アイカもだけど、ざくろの状況も――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zakuro1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro2,0,0,0,0,,,,
+imgconf,zakuro2,zakuro1,0,30,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+name,<outline width=2 color=black>？？？</outline>,
+playvoice,1,download/adv/voice/quest/main_043_13_05_01.mp3
+msg,1,<outline width=2 color=black>「バカじゃないの、あなた。\n自分の身体に風穴をあけた女の心配をするなんて」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0.5,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:surprise,soka,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_10.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「――……え？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_02.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「いや、散々自分を斬った妹を大切にするのだもの。\nバカなのは、とっくにわかりきっていたわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:surprise,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_11.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「…………か」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_03.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「言っておくけれど、勘違いしないでね。\n私は齊條ざくろそのものではない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:shy,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_12.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「かわいい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_04.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「齊條ざくろの心の一部――は？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:unique,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_05.mp3
+msg,1,<outline width=2 color=black>「――え、いや、なんて？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:shy,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_13.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「な、撫でていい……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:unique,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_06.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「…………あー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_07.mp3
+msg,1,<outline width=2 color=black>「私は齊條ざくろそのものではなく、その心の一部である\n憎しみなのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_14.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「無視された」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:unique,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_08.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「付き合ってられないわよ、このバカ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_15.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「すごくバカって言われる……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_09.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「事実を言っているだけよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_16.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「……でも、ざくろの憎しみって……幻夢境だし、心の一部が映し出される\nこともあるのかも、とは思うけれど……でも、あなたが？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:smile,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_10.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「あら、こんなチビが憎しみだなんだと言い出すのは滑稽？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_11.mp3
+msg,1,<outline width=2 color=black>「でもね、まさにこれは滑稽な話なのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_12.mp3
+msg,1,<outline width=2 color=black>「齊條ざくろの憎しみなんて、子どもの癇癪となにも変わらない。\n自分が、自分が、自分が……そんな、視野の狭い自分勝手な怒り」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_17.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「ここに来るまでに感じた心……あの記憶って……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_13.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「ええ。齊條ざくろのものよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_14.mp3
+msg,1,<outline width=2 color=black>「言っておくけれど、気にしなくていいわよ、あんなの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_15.mp3
+msg,1,<outline width=2 color=black>「変えられなかったのは自分。動き出せなかったのは自分。\n逃げるという選択をしたのも、それを中途半端に曲げたのも自分」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_16.mp3
+msg,1,<outline width=2 color=black>「積み重ねた絶望？　押し込め続けた恐怖？\n完成作品が自分の存在をガラクタに変えた？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_17.mp3
+msg,1,<outline width=2 color=black>「見当外れもいいところだわ。仮に憎しみを向けるべき相手がいたとして、\nそれは財団であり、財団の研究者どもでしょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_18.mp3
+msg,1,<outline width=2 color=black>「なのにあなたたちに憎しみの矛先を向けるのは、\nそれが一番わかりやすくて、安心するから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_19.mp3
+msg,1,<outline width=2 color=black>「曖昧な誰かよりも、顔が見える相手の方が憎しみやすいのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_20.mp3
+msg,1,<outline width=2 color=black>「ほんと、幼稚な憎しみよね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_18.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「えっと……あなたは、ざくろの憎しみ、なんだよね？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_21.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「ええ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:sad,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_19.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「さっきから、その憎しみ……というか、ざくろのことを、\nすごい否定している気がするんだけど……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:smile,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_22.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「あら、当たり前じゃない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:smile,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_23.mp3
+msg,1,<outline width=2 color=black>「だって齊條ざくろは、他でもない、そんな自分自身が一番嫌いで、\n憎いのだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:surprise,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_20.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「――……自分、を」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_21.mp3
+msg,1,<outline width=2 color=black>「………………それでも」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:smile,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_22.mp3
+msg,1,<outline width=2 color=black>「それでも、わたしはざくろのこと、好きだよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_24.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「……バカな子ね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_25.mp3
+msg,1,<outline width=2 color=black>「私を好く理由なんて、あなたにはないでしょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:smile,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_23.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「ざくろからすれば、なにもしてないのかもしれない。\nわたしの見えていたあなたが、全てじゃなかったのかもしれない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:smile,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_24.mp3
+msg,1,<outline width=2 color=black>「それでも……傍にいて、大切にしてくれた。\n裏側にどんな感情があったとしても、そうしようと努力してくれた」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:smile,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_25.mp3
+msg,1,<outline width=2 color=black>「それだけで、理由なんて十分じゃないかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_26.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「……悪いわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_27.mp3
+msg,1,<outline width=2 color=black>「あなたのその言葉は、私には届かない。\n私は、幼稚な憎しみ……齊條ざくろの悪意の一面なのだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:smile,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_28.mp3
+msg,1,<outline width=2 color=black>「だから、その言葉は……その想いは私本人に叩きつけてやりなさい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:surprise,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_26.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「え……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_29.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「今の私は、自分の憎悪よりも、ペルフェがもたらした穢れの力に\n深く侵されている」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_30.mp3
+msg,1,<outline width=2 color=black>「その穢れに押し出された結果、<ruby>憎しみ|わたし</ruby>がこういう形で表出したわけだけど、\nこのままいくと齊條ざくろの全てが穢れにのまれる」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_31.mp3
+msg,1,<outline width=2 color=black>「碧睡蓮だけじゃなく、<ruby>母体錬成術式|バース・オブ・イース</ruby>の礎となった存在の残滓まで\n宿った私が、その結果どんな変異を起こすのか想像もできない」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:normal,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_32.mp3
+msg,1,<outline width=2 color=black>「私を救いたいなら、その前に、なんとかすることね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,0,0,0,4,0.3,1.0
+playse,/download/sound/se/se_011.mp3
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,-300,-110,0.5,0,,,,
+anm,tint,zakuro,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_27.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「っ……あの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:smile,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_28.mp3
+msg,1,<outline width=2 color=black>「あんまり、自分を嫌わないであげて。憎まないであげて。\nざくろの心が自分を呪うなんて、わたしはいやだ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:smile,soka,-300,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_29.mp3
+msg,1,<outline width=2 color=black>「大切な人には……もっと、明るくて、幸せな気持ちでいてほしいよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:surprise,zakuro,300,-20,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_33.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「――…………ああ、もう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104351/adv/atlas/stand_a,body:sad,zakuro,300,-20,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_34.mp3
+msg,1,<outline width=2 color=black>「本当に、あなたという子は、私を困らせるのが上手な子だわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,0,0,0,4,0.3,1.0
+playse,/download/sound/se/se_011.mp3
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_015.mp3
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10130101.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:surprise,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_30.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「……ここは？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:surprise,soka,0,-110,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_31.mp3
+msg,1,<outline width=2 color=black>「あ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zakuro1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro2,0,0,0,0,,,,
+imgconf,zakuro2,zakuro1,0,-470,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_042_13_05_32.mp3
+name,<outline width=2 color=black>ソーカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「ざくろ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_35.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「……来ないで」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_13_05_36.mp3
+msg,1,<outline width=2 color=black>「それ以上、私に、近づかないで……お願いだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
