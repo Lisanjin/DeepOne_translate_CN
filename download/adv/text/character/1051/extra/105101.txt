@@ -1,0 +1,195 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,mari1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:smile,mari2,0,0,0,0,,,,
+imgconf,mari2,mari1,0,-470,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105103/adv/sound/fav105103_01_01.mp3
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,1,<outline width=2 color=black>「哟！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_02.mp3
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,1,<outline width=2 color=black>「初次见面，我叫栖条茉莉。请多关照哦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「突然就抱上来……」,选项2 「你是谁……？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_03.mp3
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,1,<outline width=2 color=black>「诶？不像是传闻中有名的花花公子会说的话呢。\n我还以为你会像“哇，胸部碰到了耶，嘿嘿”那样反应呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:smile,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_04.mp3
+msg,1,<outline width=2 color=black>「怎么样？还挺不错的吧？形状和柔软度都很有自信哦。\n啊，顺便说一下，可是全新的哦，从来没有人碰过呢。嘿嘿。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_05.mp3
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,1,<outline width=2 color=black>「刚才不是自我介绍了吗……不过，应该不是在说这个吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_06.mp3
+msg,1,<outline width=2 color=black>「嘿嘿，这么想了解我吗？\n怎么办呢？要不要告诉你呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:smile,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_07.mp3
+msg,1,<outline width=2 color=black>「开玩笑的啦，开玩笑。我才不会那么小气呢。\n其实没什么好隐瞒的，什么都可以告诉你。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:surprise,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_08.mp3
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,1,<outline width=2 color=black>「——嗯？这身打扮？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_09.mp3
+msg,1,<outline width=2 color=black>「是啊，我是异端出身的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:sad,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_10.mp3
+msg,1,<outline width=2 color=black>「啊，不对，不过说出身好像不太对……应该算是\n财团那边的吧，虽然我不太想承认。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_11.mp3
+msg,1,<outline width=2 color=black>「唉，这里面可是有很复杂的原因呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_12.mp3
+msg,1,<outline width=2 color=black>「我以前是财团的研究体，后来因为生气就和他们闹翻了跑出来。\n之后无处可去，只好逃到异端那边了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:sad,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_13.mp3
+msg,1,<outline width=2 color=black>「你看，上次不是有部分异端成员袭击了拉莱耶吗？\n就在那之后，财团动真格来打压异端了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:sad,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_14.mp3
+msg,1,<outline width=2 color=black>「不知道他们怎么做到的，居然组织起像世界魔术结社全明星一样的\n大军队来攻打我们。异端已经半毁了呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:unique,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_15.mp3
+msg,1,<outline width=2 color=black>「那个真的好可怕……啊，糟了，一想起来就有点想哭。\n有点像心理阴影，现在偶尔还会做噩梦惊醒呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:sad,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_16.mp3
+msg,1,<outline width=2 color=black>「不过在财团看来，我的身体数据什么的，当时可是很珍贵的\n样本呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:sad,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_17.mp3
+msg,1,<outline width=2 color=black>「他们就说，如果我愿意配合研究，就会保护我……这样一来\n其实也没什么选择余地了吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_18.mp3
+msg,1,<outline width=2 color=black>「对我来说，最多也就是，如果对我太过分，我就自杀给他们看！\n只能这么强硬一下。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:smile,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_19.mp3
+msg,1,<outline width=2 color=black>「稍微做了一些身体检查，把我身体里嵌入的术式数据给他们后，\n就允许我有些自由，比想象中待遇还不错呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:surprise,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_20.mp3
+msg,1,<outline width=2 color=black>「——诶？你问是什么术式，你对这种事情感兴趣吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:smile,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_21.mp3
+msg,1,<outline width=2 color=black>「嗯——秘・密。嘿嘿。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_22.mp3
+msg,1,<outline width=2 color=black>「比起那些，我其实更想见见你们呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:smile,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_23.mp3
+msg,1,<outline width=2 color=black>「为什么呢，不用在意这些细节啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:normal,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_24.mp3
+msg,1,<outline width=2 color=black>「我们来聊聊吧。我想多了解你们的事情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105100/adv/atlas/stand_a,body:smile,mari,0,-170,0.7,0,,,,
+playvoice,1,download/character/105103/adv/sound/fav105103_01_25.mp3
+msg,1,<outline width=2 color=black>「关于我的事，我也会一点点告诉你们的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
