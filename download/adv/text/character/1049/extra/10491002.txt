@@ -1,0 +1,190 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11390300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm157.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_01.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「说起来，今天是难得的情人节，\n我一早就去了姐姐的房间。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_02.mp3
+msg,1,<outline width=2 color=black>「因为我想让姐姐第一个吃到我做的巧克力。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_03.mp3
+msg,1,<outline width=2 color=black>「……我努力做了手工巧克力。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_04.mp3
+msg,1,<outline width=2 color=black>「虽然练习了很多次，老实说还不太满意\n但毕竟是情人节……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_05.mp3
+msg,1,<outline width=2 color=black>「所以我想至少让姐姐和我一起吃，\n但那边没有接受。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_06.mp3
+msg,1,<outline width=2 color=black>「但是……巧克力，她非常喜欢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_07.mp3
+msg,1,<outline width=2 color=black>「姐姐笑着说好吃……啊，现在想起来，\n心里还是砰砰跳……哈，哈……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「冷静下来」,选项2　「我的那份呢？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_08.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「哼，你装得这么镇定，其实是在羡慕吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_09.mp3
+msg,1,<outline width=2 color=black>「那个笑容，只属于我……啊，姐姐。无论回想多少次，\n都那么可爱，世界上最可爱的。喜欢喜欢，最喜欢了♡」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_10.mp3
+msg,1,<outline width=2 color=black>「光是姐姐的那个笑容，我就能战斗半年」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_11.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「没有哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_12.mp3
+msg,1,<outline width=2 color=black>「相反，你为什么觉得会有呢？我没有义务\n给你准备巧克力吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:anger,maria,0,-150,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/104910/adv/sound/fav104910_02_13.mp3
+msg,1,<outline width=2 color=black>「等、啊，别这样抱着我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:shy,maria,0,-170,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/104910/adv/sound/fav104910_02_14.mp3
+msg,1,<outline width=2 color=black>「啊、等、嗯、你在摸哪里……这、这个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:shy,maria,0,-170,0.7,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_15.mp3
+msg,1,<outline width=2 color=black>「——啊啊，真是的。我知道了，我知道了，你快放开我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:shy,maria,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/104910/adv/sound/fav104910_02_16.mp3
+msg,1,<outline width=2 color=black>「哈……姐姐做的巧克力有多余的，分给你一点吧。\n真是的，为了这种事拼命，你到底在想什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:shy,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_17.mp3
+msg,1,<outline width=2 color=black>「话说回来，刚才也说了，老实说做得并不满意。\n你别太期待了，不然只会失望的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_18.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「……不过，没想到我居然会做点心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_19.mp3
+msg,1,<outline width=2 color=black>「一直以来，战斗、打倒、破坏……一直都是这些。\n我能为重要的人做的，也就只有这些了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_20.mp3
+msg,1,<outline width=2 color=black>「但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_21.mp3
+msg,1,<outline width=2 color=black>「……现在，不一样了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_22.mp3
+msg,1,<outline width=2 color=black>「姐姐吃了我做的巧克力并对我笑的时候，\n真的，真的非常开心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_23.mp3
+msg,1,<outline width=2 color=black>「从今以后，如果能一点点地像这样让重要的人露出笑容，\n那就太好了呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104910/adv/atlas/stand_a,body:smile,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104910/adv/sound/fav104910_02_24.mp3
+msg,1,<outline width=2 color=black>「真的，连我自己都觉得这话不太适合我……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
