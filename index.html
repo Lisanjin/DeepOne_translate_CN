@@ -37,11 +37,16 @@
         ol li {
             margin-bottom: 15px;
         }
-        ol img {
+        /* 新增图片居中样式 */
+        img {
+            display: block;
+            margin: 0 auto;
             max-width: 100%;
             height: auto;
-            display: block;
-            margin-top: 10px;
+        }
+        /* 保持原有图片间距 */
+        ol img {
+            margin: 10px auto; /* 保持10px上下间距同时居中 */
         }
         h2 {
             color: #333;
@@ -55,10 +60,20 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             margin: 20px 0;
         }
+        /* 特别处理credits中的图片容器 */
+        .credits {
+            text-align: center; /* 作为备用居中方案 */
+        }
     </style>
+    
 </head>
 <body>
     <h1>DeepOne汉化工具</h1>
+    <div class="credits">
+        <p>待获取列表</p>
+        <img src="https://tonofura.wikiru.jp/attach2/E382A4E38399E383B3E383883237395FE5BEA9E588BB5FE5A4A2E683B3E38184E88080E38186E98791E889B2_E7858CE38281E3818FE9BB84E6988FE381AEE58589E588BB2E706E67.png">
+    </div>
+
     <div class="credits">
         <p>项目地址 <a href="https://github.com/Lisanjin/DeepOne_translate_CN">DeepOne_translate_CN</a></p>
         <p>汉化方法参考了这个IrisMysteria的仓库 <a href="https://github.com/game-reverse/IrisMysteria-Translate">IrisMysteria-Translate</a></p>
@@ -66,12 +81,15 @@
         <p><a href="https://chromewebstore.google.com/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd">redirector扩展地址</a></p>
         <p><a href="https://chromewebstore.google.com/detail/gooreplacer/jnlkjeecojckkigmchmfoigphmgkgbip">gooreplacer扩展地址</a></p>
         <p>本地部署方法已弃用,请以前使用过本地部署补丁的切换到新版本。本地版本的相关代码依旧保留，想要自己替换文本的可以继续使用，但不负责维护了。</p>
+        <p>安卓客户端汉化实现请参看仓库 <a href="https://github.com/anosu/DeepOne-Mod" >DeepOne-Mod </a></p>
         <p>翻译人员：Atrili、mamomo、刚大木 、SK、科斯卡特</p>
         <p>补丁制作：某江南的黎三金</p>
         <p>特别鸣谢：518、红凯、anosu</p>
         <p>汉化文件1周年及以前剧情、角色来自已关服的繁中服</p>
         <p>主线的第七章及往后，来自上述人员的汉化</p>
         <p>其余内容使用了GPT4/claude +GPT3.5 +deepseek进行汉化</p>
+        <br/>
+        <p>由于剧本获取接口的变动，导致现在少数氪金剧本无从获得，现在仓库readme页面添加一个待获取剧本列表，如果你有待获取剧本列表中的卡，并且愿意帮助我们，请在项目的issue区留言</p>
     </div>
     <div class="disclaimer">
         <p>该补丁仅供交流学习，不得用于任何盈利行为。请于下载后24小时内删除。<br>有问题可以留issue,或者去QQ交流群927910543</p>

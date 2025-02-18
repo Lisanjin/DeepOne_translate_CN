@@ -1,5 +1,12 @@
 # DeepOne汉化工具
 
+
+> [!待获取列表]  
+>
+>![a](https://tonofura.wikiru.jp/attach2/E382A4E38399E383B3E383883237395FE5BEA9E588BB5FE5A4A2E683B3E38184E88080E38186E98791E889B2_E7858CE38281E3818FE9BB84E6988FE381AEE58589E588BB2E706E67.png)
+
+
+
 汉化方法参考了这个IrisMysteria的仓库[IrisMysteria-Translate](https://github.com/game-reverse/IrisMysteria-Translate)  
 汉化工具使用的[GalTransl](https://github.com/cx2333-gt/GalTransl)
 
@@ -7,6 +14,8 @@
 [gooreplacer扩展地址](https://chromewebstore.google.com/detail/gooreplacer/jnlkjeecojckkigmchmfoigphmgkgbip)
 
 本地部署方法已弃用,请以前使用过本地部署补丁的切换到新版本。本地版本的相关代码依旧保留，想要自己替换文本的可以继续使用，但不负责维护了。
+
+安卓客户端汉化实现请参看仓库 [DeepOne-Mod](https://github.com/anosu/DeepOne-Mod)
 
 翻译人员：Atrili、mamomo、刚大木 、SK、科斯卡特
 
@@ -21,12 +30,15 @@
 该补丁仅供交流学习，不得用于任何盈利行为。请于下载后24小时内删除。
 有问题可以留issue,或者去QQ交流群927910543  
 
-```
-2025.2.4
+
+### 2025.2.4
 更新之后项目改为使用游戏里的project.js重定向，不再需要更新浏览器扩展的规则
 感谢anosu重写的project.js，具体代码参看js/project.js
 从本次更新开始使用deepseek-v3进行翻译
-```
+
+### 2025.2.18
+由于剧本获取接口的变动，导致现在少数氪金剧本无从获得，现在仓库readme页面添加一个待获取剧本列表，如果你有待获取剧本列表中的卡，并且愿意帮助我们，请在issue区留言
+
 
 ## 使用说明
 
