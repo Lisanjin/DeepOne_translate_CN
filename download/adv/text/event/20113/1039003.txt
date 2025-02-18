@@ -1,0 +1,714 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0.5,,,,
+anm,tint,clau,150_150_150,0.0001,0
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「话说回来，这制服真可爱呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「是啊。如果非要谈喜好的话，我觉得再华丽一点\n装饰一下也不错」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「不愧是金闪闪，审美也是那种感觉呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:surprise,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「嗯，没什么啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「比起这个，哥哥……说起来，我穿这身制服的样子，\n还没好好夸过我呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「神子大人觉得如何？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「没想到自己会穿上学生服，所以\n是否合适，我有点不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「嘛，我知道哥哥肯定会夸我穿得合适的。\n不过光是平常那种温柔的话语，可能有点不够呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以呢，哥哥，你告诉我，\n你更喜欢我和克劳索拉斯，哪个地方的哪里呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「两个都不行这种回答可不行哦？嗯呼呼♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「克劳索拉斯的胸部」,选项2　「莉音的裙子」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,clau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-300,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「胸部吗……确实，这件制服的设计，\n可能会让它看起来稍微突出一些呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-300,-60,0.5,0.5,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:smile,clau,300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「如果能让神子大人开心的话，\n不只是看，直接触碰我也没有关系」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「喂喂，别这么急着推进话题啊。\n要是哥哥当真了怎么办啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真是的，这个金光闪闪的胸部」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:unique,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「那个，这种称呼方式实在是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rlin1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin2,0,0,0,0,,,,
+imgconf,rlin2,rlin1,0,600,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「裙子？不对吧。哥哥感兴趣的，\n不是裙子，而是裙子下面吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:surprise,clau,300,-130,0.5,0.5,,,,
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+
+
+shake,0.5,2,30,0,rlin
+endwait
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「来嘛，哥哥，摇啊摇……这样把裙子\n轻轻飘起来的话，说不定能看到哦♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:surprise,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「如果要给神子大人看的话，掀起来不就好了？\n需要的话，我来掀吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,clau,-50_-130,0.5,0
+endwait
+
+
+playse,/download/sound/se/se_057.mp3
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:shy,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「哇啊啊！？等、别抓我的裙子！\n别想把它掀起来！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「克劳索拉斯……这个世界上有一种东西叫若隐若现！\n看不到的地方才有价值啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:sad,clau,-50,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「是、是吗……果然人类的情感，\n对于非人类的魔导书来说，还是有些难以理解的部分呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「啊，哥哥，快看快看，那里。是饰品店吗？\n我们去看看吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,0,-60,0.6,0,,,,
+msg,0,<outline width=2 color=black>「这样挽着手臂，身体紧紧贴在一起，逛街。\n简直就是放学后的约会感觉吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:sad,clau,1200,-130,0.6,0,,,,
+endwait
+anm,move,clau,-100_-150,1.3,0
+wait,1
+anm,move,rlin,-400_-80,0.3,0
+endwait
+wait,0.2
+endwait
+anm,move,rlin,-200_-80,0.6,0
+wait,0.2
+anm,move,clau,200_-150,0.4,0
+endwait
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,200,-150,0.6,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「如果是这样的话，那我也失礼了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-200,-80,0.6,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「唔……哥哥，又在享受克劳的胸部柔软感了。\n呜，真恨自己没有这样的武器」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:anger,rlin,-200,-80,0.6,0,,,,
+msg,0,<outline width=2 color=black>「既然这样，那我就抱得更紧一点！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rlin,0.7_0.7,0.5,0
+anm,move,rlin,-200_-100,0.5,0
+endwait
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,200,-150,0.6,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「原来如此，是要更用力地贴上去吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,clau,0.7_0.7,0.5,0
+anm,move,clau,200_-180,0.5,0
+endwait
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:sad,rlin,-200,-100,0.7,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「呜呜，赢不了，这场比赛，对我来说太不利了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,200,-180,0.7,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+slideinblack,0.5,down
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11730300.jpg,0,255
+endwait
+slideoutblack,0.5,down
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11730301.jpg,2,255
+endwait
+
+
+name,
+msg,0,<outline width=2 color=black>……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,up
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11430301.jpg,0,255
+endwait
+slideoutblack,0.5,up
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm106.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0.5,,,,
+anm,tint,clau,150_150_150,0.0001,0
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,-300,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「嗯～呼呼♪ 和哥哥的放学后约会，真开心啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「逛街、看电影、去游戏厅，我们看了好多地方呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「电影的选择还挺有品味的呢。\n感觉像是经典名作齐聚一堂」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「幻梦境是人们的意识影响的空间，\n所以引用名作之类的事情也是难免的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我觉得挺有意思的。\n让我重新认识到了人类创造的娱乐的价值」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:smile,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过说实话，比起电影，我觉得游戏厅更有趣呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「啊，哥哥玩僵尸射击游戏超厉害的。\n克劳索拉斯一下子就挂了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:sad,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「枪械之类的实在是……如果用剑的话，那种程度的僵尸，\n我一下子就能全部解决掉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「游戏就是这样的，没办法啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——啊，你看，那边。是卖可丽饼的餐车。\n难得的机会，我们去吃吧……咦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「没有店员啊。也是呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊，不过材料和工具都有，干脆自己做好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:surprise,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「莉音大人会做可丽饼啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「嗯……水果也有很多，\n有要求的话可以告诉我哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「嗯……是啊。那我就和神子大人选一样的吧——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「克劳真是笨蛋啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:surprise,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「这种时候，要选不同的口味。\n然后，互相分享对方的味道，这才是标准流程」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:surprise,clau,300,-130,0.5,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:surprise,clau,300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真是深谋远虑啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-300,-60,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「哎呀，夸张了夸张了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-60,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那么？哥哥，克劳，你们要点什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+slideinblack,0.5,down
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11730301.jpg,0,255
+endwait
+slideoutblack,0.5,down
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+slideinblack,0.5,up
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11430301.jpg,0,255
+endwait
+slideoutblack,0.5,up
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:smile,clau,300,-180,0.7,0.5,,,,
+anm,tint,clau,150_150_150,0.0001,0
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,-300,-100,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「所以呢，哥哥。啊——♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「嗯——呼呼♪ 来，莉音亲手做的可丽饼。\n非常好吃吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:smile,clau,300,-180,0.7,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「神子大人，请务必尝尝我的可丽饼……啊——，请」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-180,0.7,0,,,,
+msg,0,<outline width=2 color=black>「呵呵，亲手喂神子大人吃可丽饼，\n怎么说呢，真是让人心里痒痒的感觉呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-100,0.7,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「嗯——，和哥哥的约会，真是享受啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「还想再多一点，度过这样的时光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,-300,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「——虽然很想这么说，但是注意到了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,300,-180,0.7,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「毕竟，还不至于迟钝到没注意到这个」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:smile,clau,300,-180,0.7,0,,,,
+msg,0,<outline width=2 color=black>「在神子大人和莉音大人说之前，\n我还想继续享受这个状况呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,-300,-100,0.7,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「呀——，我也觉得这是个难得的机会，\n但果然还是有点难以忽视啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,-300,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「——从黄昏开始，已经过去四个小时了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:anger,clau,300,-180,0.7,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「虽然是在幻梦境中，但还是有些违和感呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:anger,clau,300,-180,0.7,0,,,,
+msg,0,<outline width=2 color=black>「考虑到从白天到黄昏的时间正常流逝，\n这大概意味着这个领域是静止的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:sad,rlin,-300,-100,0.7,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「永远的黄昏啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:sad,rlin,-300,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「虽然也期待过外界的救援，但已经过了这么长时间，\n可能有点困难吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:anger,clau,300,-180,0.7,0,,,,
+anm,tint,rlin,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「是啊……如果认为这个领域是静止的，\n那么外部和内部的时间流动可能也不同」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:anger,clau,300,-180,0.7,0,,,,
+msg,0,<outline width=2 color=black>「就这样，永远停留在静止的领域里……\n也是有可能的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:sad,rlin,-300,-100,0.7,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「那果然还是得我们自己找到逃脱的条件吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:sad,rlin,-300,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「……不过，怎么说呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:sad,rlin,-300,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「总觉得，可能会说些奇怪的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:sad,rlin,-300,-100,0.7,0,,,,
+msg,0,<outline width=2 color=black>「稍微有点……就这样好像也不错，我竟然会这么想」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
