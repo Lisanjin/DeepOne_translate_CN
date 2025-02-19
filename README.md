@@ -3,8 +3,7 @@
 
 > [!待获取列表]  
 >
->![a](https://tonofura.wikiru.jp/attach2/E382A4E38399E383B3E383883237395FE5BEA9E588BB5FE5A4A2E683B3E38184E88080E38186E98791E889B2_E7858CE38281E3818FE9BB84E6988FE381AEE58589E588BB2E706E67.png)
-
+> 无
 
 
 汉化方法参考了这个IrisMysteria的仓库[IrisMysteria-Translate](https://github.com/game-reverse/IrisMysteria-Translate)  
