@@ -1,0 +1,166 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11630300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:surprise,rlin,0,-60,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_01.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「咦，这制服……是之前从别的世界迷路过来的孩子们的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_02.mp3
+msg,1,<outline width=2 color=black>「是叫诺布尔学园吧。听说有很多名门望族和富豪之类的上流阶级的孩子在那里上学。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_03.mp3
+msg,1,<outline width=2 color=black>「嗯……是因为那些孩子的影响还残留在幻梦境中吗……然后因为某种偶然，以这种形式显现出来了，大概是这样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_04.mp3
+msg,1,<outline width=2 color=black>「嘛，好像也没什么负面影响，应该不用太在意吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_05.mp3
+msg,1,<outline width=2 color=black>「比起这个，哥哥，这制服怎么样？合适吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_06.mp3
+msg,1,<outline width=2 color=black>「制服的设计也挺独特的呢。我之前也有一段时间在日本上学，但那里的制服是更普通的西装款式。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_07.mp3
+msg,1,<outline width=2 color=black>「话说回来，名门学校啊……说实话，感觉有点压抑呢。人际关系好像也很复杂，规章制度也很严格的样子。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_08.mp3
+msg,1,<outline width=2 color=black>「我那时候更看重氛围，那种讲究礼仪的氛围不太适合我，所以选了普通的学校。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「可能是正确答案」,选项2　「感觉在哪里都能做得很好」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_09.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「喂，哥哥？虽然是我说的，但被你这么认同，反而让我心情复杂了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:anger,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_10.mp3
+msg,1,<outline width=2 color=black>「话说，你这么说，是不是觉得我是个没规矩的女孩？诶——真让人意外。太失礼了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:unique,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_11.mp3
+msg,1,<outline width=2 color=black>「……嘛，虽然实际上我也确实没那么乖啦。在之前上的学校里，我也经常翘课睡午觉，或者参加早午餐比赛之类的，干了不少事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_12.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「当然，我也能适应啦？毕竟我也做过情报贩子，面对过各种古怪的客人，多少还是有点经验的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_13.mp3
+msg,1,<outline width=2 color=black>「但是，我觉得轻松有趣才是最重要的。为什么非要特意去上学，让自己感到压抑呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_14.mp3
+msg,1,<outline width=2 color=black>「而且啊……我喜欢普通和平凡。并不是因为特别才能感到幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_15.mp3
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,1,<outline width=2 color=black>「回想起来，学生生活真的很快乐呢。\n虽然只有有限的时间，没能待太久」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_16.mp3
+msg,1,<outline width=2 color=black>「即便如此……即使是短暂的时间，我也清楚地记得那些和我关系很好的同学们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_17.mp3
+msg,1,<outline width=2 color=black>「我现在依然觉得，选择那所学校真是太好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_18.mp3
+msg,1,<outline width=2 color=black>「——不过，话虽如此，那归那，这归这。\n不管怎么说，名校什么的还是会在意的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_19.mp3
+msg,1,<outline width=2 color=black>「正因为了解普通，所以也想知道特别，之类的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_20.mp3
+msg,1,<outline width=2 color=black>「以后有机会的话，找找那样的学校再转学进去也挺有趣的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_21.mp3
+msg,1,<outline width=2 color=black>「当然，到时候哥哥也要一起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:normal,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_22.mp3
+msg,1,<outline width=2 color=black>「和哥哥一起的学生生活，绝对会很有趣的。\n哥哥也是这么想的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103956/adv/atlas/stand_a,body:smile,rlin,0,-60,0.5,0,,,,
+playvoice,1,download/character/103956/adv/sound/fav103956_01_23.mp3
+msg,1,<outline width=2 color=black>「所以啊，总有一天，我们一定要一起去上学哦。嗯——呼呼♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

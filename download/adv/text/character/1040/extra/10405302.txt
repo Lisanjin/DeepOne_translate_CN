@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11630300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_01.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「这件制服，是之前从异世界迷路而来的人们所穿的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_02.mp3
+msg,1,<outline width=2 color=black>「听说其中还有王族，以及担任近卫的骑士呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_03.mp3
+msg,1,<outline width=2 color=black>「现在想来，真想和那位骑士交谈一番」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_04.mp3
+msg,1,<outline width=2 color=black>「我也将这把剑身和忠诚献给了主上。我们之间或许有共通之处，也能学到新的东西……真是遗憾啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_05.mp3
+msg,1,<outline width=2 color=black>「我记得，神子大人见过那位吧？他是怎样的人呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「艾洛伊娜……」,选项2　「有种历经沧桑的感觉」
+if,select_===_1,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_06.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「艾洛伊娜……？那个，神子大人……？突然说什么……对骑士，有什么特别的情欲吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_07.mp3
+msg,1,<outline width=2 color=black>「若是如此，若我这身躯尚可接受，我亦不会推辞……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:surprise,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_08.mp3
+msg,1,<outline width=2 color=black>「——咦？那位大人的名字？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_09.mp3
+msg,1,<outline width=2 color=black>「这真是非常失礼的误会……询问他人的名字，真是……\n向远在异世界的艾洛伊娜大人，献上我的歉意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:surprise,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_10.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「历经沧桑的人……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_11.mp3
+msg,1,<outline width=2 color=black>「——被侍奉的王族大人使唤得团团转，是吗？\n这怎么说呢……我倒是有些感同身受」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:unique,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_12.mp3
+msg,1,<outline width=2 color=black>「我也时常有想对主人的任性行为提出抗议的瞬间……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_13.mp3
+msg,1,<outline width=2 color=black>「前几天，还被当作测量物体长度的尺子使用。\n还有，饮料罐的拉环太硬时，被当作撬开拉环的工具……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:unique,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_14.mp3
+msg,1,<outline width=2 color=black>「……家传的<ruby>魔导书|Old One</ruby>的待遇吗，真是……唉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_15.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「曾几何时，我也想过直接与您交谈一番」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_16.mp3
+msg,1,<outline width=2 color=black>「不过，过于执着于过去也未免显得可笑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_17.mp3
+msg,1,<outline width=2 color=black>「能够与应侍奉的主君一同平安归返应去之地。\n这理应受到尊敬与祝福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104053/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104053/adv/sound/fav104053_02_18.mp3
+msg,1,<outline width=2 color=black>「我也希望能如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
