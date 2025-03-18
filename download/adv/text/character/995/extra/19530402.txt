@@ -1,0 +1,158 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:normal,saika,0,-170,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_01.mp3
+name,<outline width=2 color=black>小仓朝阳</outline>,
+msg,1,<outline width=2 color=black>「……？那个，从刚才开始你好像一直在看我，\n是有什么在意的事情吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「很像……」,选项2　「头发真漂亮啊」
+if,select_===_1,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:surprise,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_02.mp3
+name,<outline width=2 color=black>小仓朝阳</outline>,
+msg,1,<outline width=2 color=black>「啊，炒——炒菜可以让蔬菜的美味不流失，风味更丰富，\n可以更好地享受哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:smile,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_03.mp3
+msg,1,<outline width=2 color=black>「咳咳，失礼了。我在想稍微增加一些蔬菜料理的菜谱呢。\n真是女仆的疏忽」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:normal,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_04.mp3
+msg,1,<outline width=2 color=black>「说到很像，是指一起迷失到这个世界的樱小路露娜大人吧。\n确实，这样的头发、皮肤和眼睛颜色都很罕见呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:unique1,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_05.mp3
+msg,1,<outline width=2 color=black>「不过，据说世界上有三个长得一模一样的人。\n那么，有这样身体特征一致的人存在也不奇怪吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:normal,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_06.mp3
+msg,1,<outline width=2 color=black>「但是，能和樱小路露娜大人这样优秀的人拥有相同的容貌，\n对我来说真是非常高兴的事情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:smile,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_07.mp3
+name,<outline width=2 color=black>小仓朝阳</outline>,
+msg,1,<outline width=2 color=black>「如果是在搭讪的话，那真是抱歉了。如果是纯粹的赞美，那就谢谢你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:normal,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_08.mp3
+msg,1,<outline width=2 color=black>「对我来说，这头发、这皮肤和眼睛……这整个身体，\n都是我最爱的父母赐予的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:smile,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_09.mp3
+msg,1,<outline width=2 color=black>「能得到您的赞美，我真的很高兴。\n开心开心真开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:sad,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_10.mp3
+name,<outline width=2 color=black>小仓朝阳</outline>,
+msg,1,<outline width=2 color=black>「……不过，现在我可以为自己的容貌感到自豪了，\n但小时候并不是这样的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:sad,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_11.mp3
+msg,1,<outline width=2 color=black>「与众不同的容貌。与周围大多数人明显不同的自己。\n曾经因为无法面对这个事实，而逃避自己的容貌」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:normal,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_12.mp3
+msg,1,<outline width=2 color=black>「现在回想起来真是羞愧和遗憾……但是，\n现在我可以为被许多人爱着的自己感到自豪了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:unique1,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_13.mp3
+msg,1,<outline width=2 color=black>「我没有任何理由贬低自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:normal,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_14.mp3
+msg,1,<outline width=2 color=black>「当然，我并不是说自己完美无缺」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:normal,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_15.mp3
+msg,1,<outline width=2 color=black>「例如，这具身体与太阳的关系并不太好，皮肤在强烈的阳光下甚至会晒伤。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:unique1,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_16.mp3
+msg,1,<outline width=2 color=black>「但是，或许正是因为太阳嫉妒我得到了太多的爱，才会对我使坏吧。这也是无可奈何的事情。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:unique1,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_17.mp3
+msg,1,<outline width=2 color=black>「作为得到许多人爱的代价，我愿意欣然接受这份嫉妒之心。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:unique1,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_18.mp3
+msg,1,<outline width=2 color=black>「即使与他人相比存在差异……即使这些差异是缺点或不足，我从出生起就已经得到了比这更多的东西。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195304/adv/atlas/stand_a,body:smile,saika,0,-170,0.5,0,,,,
+playvoice,1,download/character/195304/adv/sound/fav195304_02_19.mp3
+msg,1,<outline width=2 color=black>「因此，无论何时我都为自己感到骄傲，相信自己值得被爱，并且有能力去爱别人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
