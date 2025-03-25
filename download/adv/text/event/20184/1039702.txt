@@ -1,0 +1,744 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm158.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104215/adv/atlas/stand_a,body:sad,soka,300,-110,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+spriteatlas,download/character/104112/adv/atlas/stand_a,body:anger,aika,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「姐姐、爸爸、那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104215/adv/atlas/stand_a,body:sad,soka,300,-110,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「那是……妈妈、还有……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+slideinblack,0.1,left,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla3,0,0,1,0,,,,
+playse,/download/sound/se/chaA.mp3
+slideoutblack,0.2,left,
+endwait,
+slideinblack,0.1,left,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+slideinblack,0.1,right,
+endwait,
+sprite,download/adv/image/sla3.jpg,sla1,0,0,1,0,,,,
+anm,scale,sla1,-1_1,0,
+playse,/download/sound/se/chaA.mp3
+slideoutblack,0.2,right,
+endwait,
+slideinblack,0.1,right,
+endwait,
+spriteoff,all,0,
+fadeoutblack,0.2,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1.5,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1
+endwait
+spineoff,em1,0
+endwait,,,,,,,,,,,,,,
+sprite,download/character/100125/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「呃……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这股力量……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+
+
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「呜、咕……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/105103/image/main.png,card,0,0,2,0,,,,
+anm,fade,card,0,0,0
+anm,scale,card,1_1,1,0
+anm,fade,card,255,1,0
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「对不起啊，亚纱花……能请你让开一下吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「要是敢碍事的话，可能会有点疼哦，不过还是抱歉啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+mask,black1,350,0,400,720,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,perufe1,350,0,400,720,0.5,,,,
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:unique,perufe2,0,0,0,0,,,,
+imgconf,perufe2,perufe1,0,-150,,,0,0.55,0.55,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「没必要勉强自己笑的，茉莉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,tint,perufe2,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「才没呢，我可没勉强自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「你总会想办法帮我的吧？\n让帕露菲按我方便的方式行动」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「既然相信这点，那就没必要摆出苦瓜脸啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「嘛，虽然事后可能会挨骂，不过那个...你看。\n你会陪我一起挨骂的对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:unique,perufe2,0,0,0,0,,,,
+imgconf,perufe2,perufe1,0,-150,,,0,0.55,0.55,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「……哈啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe2,0,0,0,0,,,,
+imgconf,perufe2,perufe1,0,-150,,,0,0.55,0.55,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「说教请独自承受。\n我行为的责任在于身为所有者的你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,tint,perufe2,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「喂——！？这时候抽梯子太狡猾了吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,black1,0.2
+spriteoff,perufe1,0.2
+endwait,,,,,,,,,,,
+sprite,download/character/100125/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+spriteoff,card,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「唔……难道说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「难道说，帕露菲……你竟然对茉莉……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「你似乎有所误解呢，赤井亚纱花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「我确实决定协助茉莉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「但茉莉尚未完成对我的启动程序\n建立连接也是需要准备工作的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「所以现在茉莉展现的力量——本就是她自身拥有的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/105103/image/main.png,card1,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「我没说过吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「本小姐——可是超强的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/character/105103/se/se_c05103_skill_07.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/100125/image/main.png,card,0,0,1,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「唔……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Thunder1_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait
+spine,download/adv/spine/Explosion,em1,default,animation,0,-300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+spine,download/adv/spine/Explosion,em1,default,animation,0,300,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1
+endwait
+spineoff,em1,0
+endwait
+bg,download/bg/bg_11430302.jpg,0,255
+endwait
+spriteoff,all,1
+endwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100125/adv/atlas/stand_a,body:sad,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「——呃、呜……啊啊啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104112/adv/atlas/stand_a,body:anger,aika,-300,-120,0.5,0.5,,,,
+anm,tint,aika,150_150_150,0.0001,0
+spriteatlas,download/character/104215/adv/atlas/stand_a,body:sad,soka,300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「妈妈……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104112/adv/atlas/stand_a,body:anger,aika,-300,-120,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「……茉莉原来这么强吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,0,1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,mari,0_-110,0.4,0
+playse,/download/sound/se/se_055.mp3
+endwait
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「搞定」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:smile,mari,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嘿嘿。虽说有姐姐帮忙\n但现在的水平也足够单枪匹马摧毁财团一个设施了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「厉害吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0.5,,,,
+spriteatlas,download/character/100125/adv/atlas/stand_a,body:sad,asaka,-300,-1200,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,asaka,-300_-120,1.5,0
+endwait
+spriteatlas,download/character/100125/adv/atlas/stand_a,body:anger,asaka,-300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「咳……茉莉。你到底打算怎么做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100125/adv/atlas/stand_a,body:anger,asaka,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「眼前明明有夺回重要之人的方法，也有该被牺牲的对象。\n你却……——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「会这样质问我的亚纱花真是温柔呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100125/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「从刚才的攻击也手下留情了吧。\n虽然不知道你自己有没有意识到......但我隐约能感觉到」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这就是亚纱花的温柔之处吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100125/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「…………你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「亚纱花突然做这种事也让我很违和。\n......帕露菲，这到底是什么展开？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:unique,perufe,-300,-170,0.5,0.5,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「是你姐姐要求的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「她认为只要你与我相遇，就再也停不下来了。一定是这么想的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为了追寻姐姐不惜牺牲现有生命——\n她不愿让你做出这种选择，才接触了亚纱花。大概就是这么回事吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:smile,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真有点可笑呢。你姐姐也完全误会了。\n居然把你当成那么高尚的人类看待」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:sad,mari,300,-110,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「我啊，既没有放弃追求正确，\n也没放弃想要保持美丽心灵的想法哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是……就算不刻意表现那些，帕露菲也会帮我解决的吧？\n所以我才想着不必勉强伪装，直接依靠你就好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:smile,mari,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我这快要剥落的假面，\n可要帮我好好贴回去啊，帕露菲」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:sad,perufe,-300,-170,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「破罐子破摔过头了。\n还是萎靡点更便于我操作」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「这风格不适合我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:sad,perufe,-300,-170,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「……已经开始后悔做出这个选择了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:smile,mari,300,-110,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「别这么冷淡嘛—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,perufe,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104112/adv/atlas/stand_a,body:normal,aika,-300,-120,0.5,0.5,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「茉莉……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,aika,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104215/adv/atlas/stand_a,body:normal,soka,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「你……打算怎么做？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「嗯——总之，我绝不会伤害爱花和想花。\n这点绝对不变」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过……还是想见姐姐呢。有些话必须当面告诉她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「只是……怎么说呢。确实能理解姐姐的顾虑。\n要是姐姐真出现在眼前，我可能会忍不住许愿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「无论用什么方式都好——希望姐姐能回来，能复活。\n就算这个愿望不正确，我也一定会忍不住祈求」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,soka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100125/adv/atlas/stand_a,body:anger,asaka,-300,-120,0.5,0.5,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:surprise,mari,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「哇哇、不用摆出那么可怕的表情戒备我啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……谢谢你，亚纱花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100125/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:smile,mari,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「谢谢你这么拼命地爱护爱花和想花」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「对我来说她们俩也不是外人呢。\n看到妈妈这么重视她们，总觉得有点安心……之类的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:smile,mari,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然我们之间关系有点复杂，可能彼此都有些微妙的心情吧。\n即便如此，还是要谢谢你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100125/adv/atlas/stand_a,body:sad,asaka,-300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「――…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+anm,tint,asaka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「帕露菲」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,asaka,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:unique,perufe,-300,-170,0.5,0.5,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「嗯，茉莉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105103/adv/atlas/stand_a,body:normal,mari,300,-110,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「救救我――<ruby>完全终末缺失|帕露菲クトゥス</ruby>」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:smile,perufe,-300,-170,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「明白了，我不完美的容器」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm160.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_28090126_entry_11.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104215/adv/atlas/stand_a,body:anger,soka,300,-110,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+spriteatlas,download/character/104112/adv/atlas/stand_a,body:surprise,aika,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「这是...」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104215/adv/atlas/stand_a,body:anger,soka,300,-110,0.5,0,,,,
+anm,tint,aika,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「爱花、靠近点……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_28090126_entry_06.mp3
+flash,0,0,05,1,1,2
+spriteoff,soka,0.2
+spriteoff,aika,0.2
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:surprise,soka1,300,-110,0.5,0.5,,,,
+spriteatlas,download/character/104102/adv/atlas/stand_a,body:surprise,aika1,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+anm,tint,soka1,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「诶……这个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104202/adv/atlas/stand_a,body:surprise,soka1,300,-110,0.5,0,,,,
+anm,tint,aika1,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「力量、回来了……从领域中解放了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_28090126_entry_06.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100102/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,0,<outline width=2 color=black>「呃……到底、发生了什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,terutia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104702/adv/atlas/stand_a,body:normal,terutia2,0,0,0,0,,,,
+imgconf,terutia2,terutia1,0,-500,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,0,<outline width=2 color=black>「……这样啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104702/adv/atlas/stand_a,body:smile,terutia2,0,0,0,0,,,,
+imgconf,terutia2,terutia1,0,-500,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「你找到了呢，帕露菲」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinwhite,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
