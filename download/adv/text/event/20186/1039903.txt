@@ -1,0 +1,529 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11790300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:unique,zizel,-300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:unique,clau,300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「没想到，居然又被用来偷窥无缺的黄金术式……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:unique,zizel,-300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「才、才不是呢？这根本不是什么偷窥……只是\n为了看着克劳索拉斯不让他失礼而已……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「老实认罪吧」,选项2　「竟然连芙拉都拉上邪路」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「呜……这、这是作为主人的责任。\n只是看着就被说成犯罪，该怎么说呢，那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,clau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「吉泽尔……老实道歉吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「连、连芙拉都这样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「哥哥和克劳索拉斯也是，偷看你们真是对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「……非常抱歉，都怪我自己缺乏自制力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「正是如此，吾主。监视我倒无妨，\n但把神子大人和芙拉小姐牵扯进来就有些不妥了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zizel,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,-300,-120,0.5,0.5,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「不、不是的……是吉泽尔说要去看情况，\n那个……是我主动要求跟着去的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:surprise,clau,300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「原、原来是这样吗……？但为何要如此？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,-300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「因为我也很好奇……\n哥哥约会时到底是什么样子嘛……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哥哥和克劳索拉斯也是，偷看你们真是对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「……非常抱歉，都怪我自己缺乏自制力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm143.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「虽然有些意犹未尽，但继续约会的氛围\n已经完全被破坏了呢。我就先行告退吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0.5,,,,
+anm,tint,clau,150_150_150,0.0001,0
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:surprise,zizel,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「哎、但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「若总担心被人偷窥的话\n神子大人也无法尽兴吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:unique,zizel,-300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「呜咕……！对、对不起……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「因此神子大人\n下次请务必好好享受与吾主的约会」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,clau1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:smile,clau2,0,0,0,0,,,,
+imgconf,clau2,clau1,0,-470,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「……与神子大人的约会，就留待下次吧。\n我可以期待对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11790300.jpg,1,255
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「那么芙拉大人，我们就去莉濑大人那边吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「嗯。那哥哥，待会见啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+endwait
+anm,move,clau,-1200_-130,1.2,0
+anm,move,frau,-1200_-120,1.3,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……对克劳索拉斯做了些过分的事呢。\n待会儿得好好道歉才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……那个、您为什么笑得这么开心呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「变狡猾了？呃、谁说我……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那个、所以说、就是……虽然闹得有点鸡飞狗跳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:shy,zizel,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……您愿意、和我约会吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,1.0,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,1.0,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「莉濑大人、米莉亚姆大人，二位在这里呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「哎呀，克劳索拉斯酱……芙拉酱也来了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rise,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:normal,miliam,-300,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「为什么你们两个会在一起……吉泽尔呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,300,-130,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「这个嘛……发生了很多事，现在我家主人正在和神子大人约会中」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:normal,rise,-300,-100,0.5,0.5,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「那不如我们四个一起征服水族馆吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,clau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「征服……水族馆？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rise,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:normal,miliam,-300,-220,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「说是趁和他逛之前，先记住水族馆的鱼类知识\n到时候就能展现知性魅力了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:smile,rise,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「总比干等着有趣，还能让欧尼酱看到优秀的一面……\n简直是一箭双雕的作战！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:normal,miliam,300,-220,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「反正等待期间也没别的事做，\n一起逛逛不也挺好？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/104011/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「若是这样的话，请务必允许我们同行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「我也要」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,clau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103604/adv/atlas/stand_a,body:smile,rise,-300,-100,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「好~就这么定了。米莉亚姆酱，\n接下来就继续拜托你解说鱼类知识啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102804/adv/atlas/stand_a,body:normal,miliam,300,-220,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「果然又把活儿全推给我了呢……不过无所谓啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+wait,2
+endwait,,,,,,,,,,,
+sprite,download/character/100713/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm120.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「虽然我实际没去过水族馆，但在文艺作品里\n经常被当作经典约会场所呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「所以我也一直想去看看的。\n……没想到这个愿望实现得比预期要早呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「当然我知道这是在幻梦境里……\n但那种细节无关紧要啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「最重要的是有你在身边」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「呵呵……具体什么意思，就别追问了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「话说回来，这种隧道造型的水族箱\n虽然在影像里见过，但亲身体验时感觉完全不同呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「简直像真的置身海底观景般充满幻想感。\n能和你共赏这样的美景，让我既开心又幸福……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「虽然对克劳索拉斯做了过分的事，后面也还有人在等着\n可我还是忍不住想着——要是这段时光能永远持续下去该多好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……果然我很傲慢吧。\n因为内心深处始终渴望着成为你最重要的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「不过后面还有其他同伴的时间，\n也不能再给大家添麻烦了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「就算是有限的时光，也要尽情享受每一刻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「虽然很舍不得这个水族箱，但还想多看些地方\n我们继续往前走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……要是还想看这个景色的话，\n偷偷再来这个领域也不错呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这样的话，下次就能毫无顾忌地\n独享与你共处的时光了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「——这样的想法，是不是太任性了呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「不过，这也是没办法的事呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「毕竟我天生就是\n这么傲慢又贪心的性格」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

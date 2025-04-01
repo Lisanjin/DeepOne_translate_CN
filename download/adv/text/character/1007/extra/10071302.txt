@@ -1,0 +1,148 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11790300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm152.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_01.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「虽然每条鱼都很小，但这么多鱼成群结队地\n游动，还是让人感到震撼呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_02.mp3
+msg,1,<outline width=2 color=black>「拉莱耶既然难得位于海底，\n要是能看到这样的景色就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_03.mp3
+msg,1,<outline width=2 color=black>「虽然偶尔也能从拉莱耶的窗户看到类似鱼的影子，\n但看不太清楚，而且就算看到了也都是深海鱼……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_04.mp3
+msg,1,<outline width=2 color=black>「深海鱼的外表相当独特，就算盯着看\n也没法像这样享受呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「原来吉泽尔也有不擅长的东西啊」,选项2　「我觉得深海鱼还挺有喜感的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_05.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「这不是理所当然的吗？我也只是个普通人呀？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_06.mp3
+msg,1,<outline width=2 color=black>「前几天也是，看到窗外有诡异的深海鱼，\n差点就要尖叫出来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_07.mp3
+msg,1,<outline width=2 color=black>「不过既然它们不会主动攻击我们\n或许比起深海鱼，更应该警惕<ruby>虚像|虚像</ruby>才对……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:unique,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_08.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「是、是这样吗……？我可能有点无法理解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:unique,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_09.mp3
+msg,1,<outline width=2 color=black>「它们和普通鱼类完全不同，要么长着令人不适的外表\n要么体表总是滑溜溜的——啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:shy,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_10.mp3
+msg,1,<outline width=2 color=black>「难、难道您对黏糊糊或蠕动的东西感兴趣！？\n虽说在创作领域这类元素确实很常见——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:surprise,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_11.mp3
+msg,1,<outline width=2 color=black>「不、不是的！当我没说，真的什么都没说！\n绝对没有想过要尝试接触滑溜溜的东西什么的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:sad,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_12.mp3
+msg,1,<outline width=2 color=black>「啊哈哈……刚才的话，请当作没听见……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_13.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「但果然比起拉莱耶窗外的景色\n我还是更喜欢像水族馆这样能看到五彩斑斓鱼群的地方呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_14.mp3
+msg,1,<outline width=2 color=black>「你看，比如那条鱼……应该是叫霓虹灯鱼吧？\n明亮的鱼群在水中游弋的景象，不觉得很有梦幻感吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_15.mp3
+msg,1,<outline width=2 color=black>「水族馆虽然不错，但总有一天想自己养呢。\n这样的话，不就能随时看到这样的景象了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_16.mp3
+msg,1,<outline width=2 color=black>「当然，可能很难拥有这么完善的设备，\n但我觉得准备个稍大的水槽还是没问题的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:smile,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_17.mp3
+msg,1,<outline width=2 color=black>「一边观赏美丽的鱼儿一边享受下午茶时光，\n您不觉得很美妙吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:normal,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_18.mp3
+msg,1,<outline width=2 color=black>「……下次或许可以找霍莉商量下\n能不能安置个水槽」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:smile,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_19.mp3
+msg,1,<outline width=2 color=black>「如果准备得差不多的话，也会邀请您的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100713/adv/atlas/stand_a,body:smile,zizel,0,-120,0.5,0,,,,
+playvoice,1,download/character/100713/adv/sound/fav100713_02_20.mp3
+msg,1,<outline width=2 color=black>「到时候会准备好珍藏的红茶和点心，\n敬请期待哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
