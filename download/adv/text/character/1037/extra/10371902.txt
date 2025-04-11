@@ -1,0 +1,199 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「啊……哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_02.mp3
+msg,1,<outline width=2 color=black>「那个…有件事想和你商量下，现在有时间吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「当然可以啦我的妹妹」,选项2　「找我也行的话」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_03.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「……突然有点不想商量了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_04.mp3
+msg,1,<outline width=2 color=black>「都怪哥哥不正经……真是的。\n是很正经的商量，请认真听我说啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_05.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「不如说…可能只有哥哥能商量这件事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_06.mp3
+msg,1,<outline width=2 color=black>「因为是我们……家里的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_07.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「要说商量的事呢...是关于诺恩和妈妈的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_08.mp3
+msg,1,<outline width=2 color=black>「那个...我总觉得诺恩和妈妈之间好像有点距离感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_09.mp3
+msg,1,<outline width=2 color=black>「当然，并不是说关系不好...大概吧。\n可能是因为心里怀着某种愧疚感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_10.mp3
+msg,1,<outline width=2 color=black>「你看，诺恩曾经伤害过妈妈...\n可能就是介意这件事，所以不太好主动搭话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_11.mp3
+msg,1,<outline width=2 color=black>「当然，诺恩做过的事不可能当作没发生，\n就算当时是为我们着想，伤害了妈妈的事实也不会改变」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_12.mp3
+msg,1,<outline width=2 color=black>「即便如此...我还是想好好珍惜现在\n这个靠诸多奇迹才能在一起的时光...就算不够普通，也想作为家人一起生活」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_13.mp3
+msg,1,<outline width=2 color=black>「所以虽然知道这样可能多管闲事，但作为家人\n我想做点什么来拉近她们之间的距离」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_14.mp3
+msg,1,<outline width=2 color=black>「但是...具体该怎么做，我完全没头绪...」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_15.mp3
+msg,1,<outline width=2 color=black>「所以也想让哥哥一起帮忙想想办法呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:surprise,frau,0,-130,0.6,0.5,,,,
+endwait
+shake,0.5,3,12,0,frau
+playvoice,1,download/character/103719/adv/sound/fav103719_02_16.mp3
+msg,1,<outline width=2 color=black>「哇…突、突然摸我头干嘛…？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:sad,frau,0,-130,0.6,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_17.mp3
+msg,1,<outline width=2 color=black>「嗯…我又没做什么值得夸奖的事呀？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:surprise,frau,0,-130,0.6,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_18.mp3
+msg,1,<outline width=2 color=black>「——因为重视家人？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-130,0.6,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_19.mp3
+msg,1,<outline width=2 color=black>「这不是理所当然的嘛。就因为这个被夸奖\n真的合适吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-130,0.6,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_20.mp3
+msg,1,<outline width=2 color=black>「……不过这么说的话，哥哥不也很重视家人嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-130,0.6,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_21.mp3
+msg,1,<outline width=2 color=black>「来…稍微蹲下来点？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,
+sprite,download/bg/bg_10010200.jpg,bg,0,200,2,0.5
+imgconf,bg,,0,200,,,-2,2,2,0
+anm,move,frau,0_-110,0.5,0
+endwait
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:smile,frau,0,-110,0.6,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_22.mp3
+msg,1,<outline width=2 color=black>「哥哥也谢谢你愿意和我商量。\n这么重视家人，乖哦乖哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:smile,frau,0,-110,0.6,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_23.mp3
+msg,1,<outline width=2 color=black>「呵呵……哥哥。我们一起来让诺恩和妈妈\n变得更亲密吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:normal,frau,0,-110,0.6,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_24.mp3
+msg,1,<outline width=2 color=black>「等他们俩能多说些话的时候，到时候我也会像这样\n摸摸你的头……哥哥也要夸奖我哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100601/adv/atlas/stand_a,body:smile,frau,0,-110,0.6,0,,,,
+playvoice,1,download/character/103719/adv/sound/fav103719_02_25.mp3
+msg,1,<outline width=2 color=black>「嘿嘿。一起加油吧，哥哥～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
