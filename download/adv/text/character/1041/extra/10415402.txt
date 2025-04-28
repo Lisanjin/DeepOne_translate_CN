@@ -1,0 +1,198 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11410300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm088.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,-40,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「难得有机会，要不要做些孩子气的事情呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,-40,0.5,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_02.mp3
+msg,1,<outline width=2 color=black>「话虽这么说，但完全想不到……\n到底做什么才算是孩子气呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,-40,0.5,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_03.mp3
+msg,1,<outline width=2 color=black>「嗯——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,-40,0.5,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_04.mp3
+msg,1,<outline width=2 color=black>「爸爸，抱抱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,-40,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/104154/adv/sound/fav104154_02_05.mp3
+msg,1,<outline width=2 color=black>「总觉得小孩子被抱着是种固有印象呢。\n而且身体也变小了，抱抱总可以吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,aika,0_40,0.5,0
+endwait
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_06.mp3
+msg,1,<outline width=2 color=black>「唔……原来如此……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:unique,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_07.mp3
+msg,1,<outline width=2 color=black>「小孩子好像会为此开心，但实在搞不懂呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我很开心」,选项2　「还有其他想做的事吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:surprise,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_08.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「……是这样吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_09.mp3
+msg,1,<outline width=2 color=black>「嗯……原来被抱着，爸爸会更开心呢。\n虽然不太明白，但这样就好……了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:smile,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_10.mp3
+msg,1,<outline width=2 color=black>「那我们就再保持这样一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:smile,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_11.mp3
+msg,1,<outline width=2 color=black>「如果爸爸高兴的话，我……也不讨厌这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_12.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「其他的……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_13.mp3
+msg,1,<outline width=2 color=black>「唔——该做什么好呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_14.mp3
+msg,1,<outline width=2 color=black>「…………盯——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,130,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104154/adv/sound/fav104154_02_15.mp3
+msg,1,<outline width=2 color=black>「——啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:smile,aika,0,40,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_16.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「嗯、爸爸的表情超级惊讶呢。呼呼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:smile,aika,0,40,0.6,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_17.mp3
+msg,1,<outline width=2 color=black>「总想亲亲什么的，是不是有点孩子气呀？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:shy,aika,0,40,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/104154/adv/sound/fav104154_02_18.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「唔嗯……爸爸、所以说抱得太用力的话\n会有点难受啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,40,0.7,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_19.mp3
+msg,1,<outline width=2 color=black>「……呐，爸爸。我还想尝试更多事情呢。\n因为我跳过了好多步骤，直接就到了现在这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,40,0.7,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_20.mp3
+msg,1,<outline width=2 color=black>「那些没能经历的事……本来应该和爸爸\n一起做的事……我都想试试」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,40,0.7,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_21.mp3
+msg,1,<outline width=2 color=black>「倒也不是觉得普通的生活有多好，\n我觉得我们保持现在这样就行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:normal,aika,0,40,0.7,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_22.mp3
+msg,1,<outline width=2 color=black>「不过……难得有机会，也想像普通孩子那样\n向爸爸撒撒娇……所以呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104154/adv/atlas/stand_a,body:smile,aika,0,40,0.7,0,,,,
+playvoice,1,download/character/104154/adv/sound/fav104154_02_23.mp3
+msg,1,<outline width=2 color=black>「要多多、多多宠爱我哦，爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
