@@ -39,7 +39,7 @@
 由于剧本获取接口的变动，导致现在少数氪金剧本无从获得，现在仓库readme页面添加一个待获取剧本列表，如果你有待获取剧本列表中的卡，并且愿意帮助我们，请在issue区留言
 
 
-## 使用说明
+## [使用说明](https://lisanjin.github.io/DeepOne_translate_CN/)
 
 ### gooreplacer使用说明
 1.在浏览器安装[gooreplacer扩展地址](https://chromewebstore.google.com/detail/gooreplacer/jnlkjeecojckkigmchmfoigphmgkgbip)  
@@ -66,11 +66,14 @@ url:https://lisanjin.github.io/DeepOne_translate_CN/js/project.js
 
 ### redirector使用说明
 
-1.下载重定向字典<https://lisanjin.github.io/DeepOne_translate_CN/Redirector_online.json> (使用你的下载工具下载，或者在浏览器点击[这个链接](Redirector_online.json)后，按ctrl+s保存到本地)
+1.下载重定向字典<https://lisanjin.github.io/DeepOne_translate_CN/Redirector_online.json> (使用你的下载工具下载，或者在浏览器点击[这个链接](Redirector_online.json)后，按ctrl+s保存到本地)  
+
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/1.png)
 
-2.在浏览器安装[redirector扩展](https://chromewebstore.google.com/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd)（如果你使用过之前本地版本，即导入过Redirector.json的，请卸载重装）
-手机请下载火狐浏览器后，安装[redirector附加组件](https://addons.mozilla.org/zh-CN/android/addon/redirector/)
+2.在浏览器安装[redirector扩展](https://chromewebstore.google.com/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd)（如果你使用过之前本地版本，即导入过Redirector.json的，请卸载重装  
+
+手机请下载火狐浏览器后，安装[redirector附加组件](https://addons.mozilla.org/zh-CN/android/addon/redirector/)  
+
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/2.png)
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/2-2.png)
 
