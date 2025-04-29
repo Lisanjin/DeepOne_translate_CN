@@ -43,15 +43,26 @@
 
 ### gooreplacer使用说明
 1.在浏览器安装[gooreplacer扩展地址](https://chromewebstore.google.com/detail/gooreplacer/jnlkjeecojckkigmchmfoigphmgkgbip)  
-![](https://lisanjin.github.io//DeepOne_translate_CN/image/gooreplacer-1.png)  
 
 2.打开gooreplacer扩展,点击配置规则  
-![](https://lisanjin.github.io//DeepOne_translate_CN/image/gooreplacer-2.png) 
+![](https://lisanjin.github.io/DeepOne_translate_CN/image/gooreplacer-2.png) 
 
-3.点击在线规则，点击配置，输入https://lisanjin.github.io/DeepOne_translate_CN/gooreplacer.json  
+3.点击在线规则，点击配置，输入https:/lisanjin.github.io/DeepOne_translate_CN/gooreplacer.json  
 点击确认后，立刻更新  
-![](https://lisanjin.github.io//DeepOne_translate_CN/image/gooreplacer-3.png) 
+![](https://lisanjin.github.io/DeepOne_translate_CN/image/gooreplacer-3.png)  
 
+**因为gooreplacer更新，上述流程在新版gooreplacer不再可以用，请使用下面的流程**  
+
+1.在浏览器安装[gooreplacer扩展](https://chromewebstore.google.com/detail/gooreplacer/jnlkjeecojckkigmchmfoigphmgkgbip)  
+
+2.在gooreplacer的设置页面点击Edit
+![](https://lisanjin.github.io/DeepOne_translate_CN/image/gooreplacer-4.png)
+
+3.填入以下规则，save  
+```
+^https:\/\/tonofura-r-cdn-client\.deepone-online\.com\/client\/[0-9]+\.[0-9]+\.[0-9]+\/src\/project\.js,regex,redirect
+url:https://lisanjin.github.io/DeepOne_translate_CN/js/project.js
+```
 
 ### redirector使用说明
 
@@ -63,7 +74,8 @@
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/2.png)
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/2-2.png)
 
-3.打开redirector扩展，点击edit redirects，点击import导入在第一步下载的文件
+3.打开redirector扩展，点击edit redirects，点击import导入在第一步下载的文件  
+
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/3.png)
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/3-2.png)
 ![](https://lisanjin.github.io//DeepOne_translate_CN/image/3-3.png)
