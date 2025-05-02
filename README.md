@@ -74,7 +74,8 @@ url:https://lisanjin.github.io/DeepOne_translate_CN/js/project.js
 
 手机请下载火狐浏览器后，安装[redirector附加组件](https://addons.mozilla.org/zh-CN/android/addon/redirector/)  
 
-![](/image/2.png)
+![](/image/2.png)  
+
 ![](/image/2-2.png)
 
 3.打开redirector扩展，点击edit redirects，点击import导入在第一步下载的文件  
