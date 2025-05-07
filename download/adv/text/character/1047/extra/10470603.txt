@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11800300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm117.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_01.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「作为善意的受体，你一直触碰着人们的心灵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_02.mp3
+msg,1,<outline width=2 color=black>「最初你那尚未成熟的心智，\n也在其中逐渐形成更清晰的轮廓，直至此刻此地」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_03.mp3
+msg,1,<outline width=2 color=black>「这绝非稳定之物吧。\n毕竟人类本就是时刻被外物所动摇的存在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_04.mp3
+msg,1,<outline width=2 color=black>「但你从懵懂无知一路走到今天。\n或许比常人承载着更剧烈的动荡」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_05.mp3
+msg,1,<outline width=2 color=black>「若你心中怀揣着什么，就向我倾诉吧。\n我首先渴求的，正是身为凭依之物的你的理解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「与大家的关系」,选项2　「与蒂亚妈妈的相处方式」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_06.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「关系……这莫非是指爱的形态么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_07.mp3
+msg,1,<outline width=2 color=black>「确实，以当前人类的文化与认知而言，\n你的爱之形态或许难以称之为普遍」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_08.mp3
+msg,1,<outline width=2 color=black>「但你是由我诞生的存在，无需追求普遍。\n只需选择属于你的形态——我会认可这份独特」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_09.mp3
+msg,1,<outline width=2 color=black>「说到底，芸芸众生的标准又算什么？你应当明白的。\n重要的是你与对方的心意，那份真挚的情感」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:smile,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_10.mp3
+msg,1,<outline width=2 color=black>「你无需为过往的历程与未来的选择感到不安。\n不仅是我——你所珍视的人们也定会这样说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_11.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「——……就当没听见吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:unique,terutia,0,-200,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_12.mp3
+msg,1,<outline width=2 color=black>「别追问了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_13.mp3
+msg,1,<outline width=2 color=black>「真是……姑且确认下，那个'妈妈'\n该不会是指我吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_14.mp3
+msg,1,<outline width=2 color=black>「让我困扰就这么有趣吗？\n对我说这种话——旁人听了怕要怀疑你的神志」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_15.mp3
+msg,1,<outline width=2 color=black>「若想戏弄人，也该选好对象才是。\n说什么我是母亲之类的，简直……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:sad,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_16.mp3
+msg,1,<outline width=2 color=black>「……荒唐透顶」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:surprise,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_17.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「……？ 为何这样盯着我看。\n若还有话要说——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:surprise,terutia,0,-200,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_18.mp3
+msg,1,<outline width=2 color=black>「呜……突然抱上来做什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:unique,terutia,0,-200,0.7,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_19.mp3
+msg,1,<outline width=2 color=black>「你的心思，我终究难以揣测。\n莫说他人，就连理解你也还差得远呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104706/adv/atlas/stand_a,body:smile,terutia,0,-200,0.7,0,,,,
+playvoice,1,download/character/104706/adv/sound/fav104706_03_20.mp3
+msg,1,<outline width=2 color=black>「……真是个让人头疼的孩子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
