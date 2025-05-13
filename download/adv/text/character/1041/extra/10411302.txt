@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11800300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm100.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「妈妈她啊，真的是超级喜欢爸爸呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_02.mp3
+msg,1,<outline width=2 color=black>「前几天又在洗衣房闻爸爸衣服的味道了\n为了维护妈妈的尊严我就不说是哪件了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_03.mp3
+msg,1,<outline width=2 color=black>「发现我在偷看之后，连衣服都没叠就逃走了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_04.mp3
+msg,1,<outline width=2 color=black>「妈妈一遇到和爸爸有关的事就会变得目光狭隘\n该怎么说呢……智商直线下降」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:shy,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_05.mp3
+msg,1,<outline width=2 color=black>「……不过，妈妈这种心情，我好像也不是完全不能理解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:shy,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_06.mp3
+msg,1,<outline width=2 color=black>「其实我也……剩下的那堆衣服……那个……嗯\n该怎么说呢，也不是不能理解啦，嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「最近衣服总是莫名其妙消失……」,选项2　「差不多该报复回去了……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_07.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「…………嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:anger,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_08.mp3
+msg,1,<outline width=2 color=black>「下次我会准备些适合爸爸的衣服\n当礼物送给你记得穿哦 衣服变少会很困扰吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:anger,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_09.mp3
+msg,1,<outline width=2 color=black>「所以就算衣服不见也不用担心\n今后包括妈妈那份在内的替换衣物都可以继续申请」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_10.mp3
+msg,1,<outline width=2 color=black>「——归还？什么意思？完全听不懂你在说什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_11.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「诶？想要我的衣服？可以呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_12.mp3
+msg,1,<outline width=2 color=black>「那待会送到你房间。先准备一整套够吗？\n需要多备些内衣之类的可以提要求哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_13.mp3
+msg,1,<outline width=2 color=black>「……？爸爸为什么露出那种'完全不是这回事啊'的表情\n为什么要对我无语凝噎……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_14.mp3
+msg,1,<outline width=2 color=black>「啊……原来如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:smile,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_15.mp3
+msg,1,<outline width=2 color=black>「没关系，妈妈的那份我也会一起带过来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_16.mp3
+msg,1,<outline width=2 color=black>「诶、不是这样吗？……唔？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_17.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「不是啦爸爸，不用这么垂头丧气地……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_18.mp3
+msg,1,<outline width=2 color=black>「……顺便说一句，如果以为只有我和妈妈会这样\n那就太冤枉人了，姐姐也是哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_19.mp3
+msg,1,<outline width=2 color=black>「姐姐经常在房间里穿爸爸的衬衫呢。\n我猜她大概偷偷把要洗的衬衫调包轮换着穿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_20.mp3
+msg,1,<outline width=2 color=black>「该怎么说呢，这就是所谓的血脉相承吧？\n是家族的证明啊，证明」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_21.mp3
+msg,1,<outline width=2 color=black>「要不干脆把爸爸的衣服改成家族共用吧？\n我会多准备些衣服的，就这么定啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104113/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104113/adv/sound/fav104113_02_22.mp3
+msg,1,<outline width=2 color=black>「反正现在点头或摇头结果都不会改变就是了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
