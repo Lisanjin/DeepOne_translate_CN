@@ -1,0 +1,522 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11810300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm061.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:sad,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「进入领域的同时，就和大家失散了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「不过，能和爸爸在一起真是太好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「放心吧，爸爸。\n我一定会保护好爸爸的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「全靠你了」,选项2　「比起那个你这身打扮……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「呵呵，被爸爸依赖着真开心呢。\n感觉浑身都涌出了力量」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……呐，爸爸？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「等顺利和大家汇合后……到时候能夸夸我就好了。\n摸摸头之类的……那种的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:surprise,soka,0,-130,0.6,0.5,,,,
+endwait
+shake,0.5,3,12,0,soka
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:shy,soka,0,-130,0.6,0,,,,
+msg,0,<outline width=2 color=black>「真是的……现在就摸头也太早啦。\n爸爸对我有点太宠溺了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-130,0.6,0,,,,
+msg,0,<outline width=2 color=black>「……当然，我很开心就是了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-130,0.6,0,,,,
+msg,0,<outline width=2 color=black>「被爸爸这样抚摸头发，真的非常开心\n也很舒服，但再这样下去会停不下来的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0.5,,,,
+endwait
+msg,0,<outline width=2 color=black>「总之先和大家汇合吧……所以肢体接触就到此为止」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……顺便说下，刚才只是普通的肢体接触哦。\n等我真正保护好爸爸时的奖励，那是另外算的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呵呵……到时候还要让爸爸再摸一次头的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:surprise,soka,0,-110,0.5,0,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「那个……不仅是这个领域的氛围，该怎么说呢，就像是沙漠\n或者干旱地区的舞娘那种感觉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:surprise,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,950,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+wait,0.5
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:surprise,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,200,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+wait,0.5
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:surprise,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-270,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+wait,0.5
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「那个、爸爸……我知道你在意，\n但这样直勾勾地盯着看果然还是有点太过了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……不过爸爸能这么着迷，\n该说是有点开心呢……独占视线也算是种特权吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「开玩笑啦。呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「那么、我们去找大家汇合吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过我觉得不用太着急」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「妈妈和诺恩肯定不需要担心，\n潘多莉西亚也能保护好自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「大家可是很强的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以爸爸……太着急会有危险，\n我们还是慢慢前进吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……才、才不是特别想和爸爸独处什么的——\n这种想法只有……一点点而已哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呵呵，因为是和爸爸在一起嘛。\n这点任性就纵容我嘛？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且这种氛围的场所和服装都是第一次体验。\n难得的机会想和爸爸一起多看看呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过重新打量……这身舞娘装扮真厉害啊。\n装饰虽然华丽，但是……那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……布料也好少」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「姆。爸爸看得太露骨了啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……就这么、对这身打扮的我感兴趣吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「要是这样的话……看看倒也不是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:surprise,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——诶、跳舞？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「难、难道说，想让我穿这身跳舞？\n不、这也太……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:sad,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呜呜……被这样充满期待的眼神盯着……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:sad,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……我完全不懂跳舞哦？\n顶多只在以前某部电影场景里看过一点印象……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「没关系的，很可爱！」,选项2　「就跳一点点……！」
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「……真是的，既然爸爸都说到这份上了……就跳一点点哦？\n就算跳得奇怪也不准笑我哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那么，呃——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,,,
+sprite,download/character/104216/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「这、这样跳可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「记得那部电影里是这样跳的……还有装饰品也要轻轻摇晃\n比较好对吧，嗯，大概是这样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「嗯……爸爸觉得怎么样？\n虽然肯定和专业舞蹈完全不一样啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「不过……既然难得跳舞\n要是能让爸爸觉得好看的话，我会很开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「——呵呵，爸爸看起来很高兴呢\n喜欢看我跳舞吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「那、我再稍微努力跳一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_28070106_stage_05.mp3
+flash,255,255,255,2,1.0,2.0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「——咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「刚才的魔力反应是……怎么回事——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+spriteoff,all,1
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,patrisia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101614/adv/atlas/stand_a,body:sad,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,-860,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,0,<outline width=2 color=black>「和大家走散后，发现这里似乎不是普通空间呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101614/adv/atlas/stand_a,body:sad,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,-860,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「从刚才开始，每次试图移动都会有奇怪的感觉......而且无论怎么走都会回到\n同一个房间，这是空间被封闭了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101614/adv/atlas/stand_a,body:sad,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,-860,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「要想和大家汇合，必须设法突破这个空间封锁才行......\n可是，该怎么做......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_28070106_stage_05.mp3
+flash,255,255,255,2,1.0,2.0
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,patrisia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101614/adv/atlas/stand_a,body:surprise,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,-1090,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「......——咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11810300.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:anger,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「空间在扭曲...难道说，转移——只有我被！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_28070106_stage_05.mp3
+flash,255,255,255,2,0.5,0.5
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104216/adv/atlas/stand_a,body:anger,soka,0,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呜、不行......！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_015.mp3
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「爸爸！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>......。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……......。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………......。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11810300.jpg,1,255
+endwait
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,patrisia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101614/adv/atlas/stand_a,body:surprise,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,800,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+wait,0.5
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,patrisia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101614/adv/atlas/stand_a,body:surprise,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,-150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+wait,0.5
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,patrisia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101614/adv/atlas/stand_a,body:surprise,patrisia2,0,0,0,0,,,,
+imgconf,patrisia2,patrisia1,0,-550,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+wait,0.5
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101614/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>潘多莉西亚・波特曼</outline>,
+msg,0,<outline width=2 color=black>「咦……啊、啊咧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101614/adv/atlas/stand_a,body:surprise,patrisia,0,-200,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么你会……这到底是怎么回事……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
