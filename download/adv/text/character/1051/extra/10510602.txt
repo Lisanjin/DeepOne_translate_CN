@@ -1,0 +1,215 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11490301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_11490301.jpg,bg,200,150,2.5,1
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm163.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:normal,mari,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_01.mp3
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,1,<outline width=2 color=black>「说起来啊，虽然我说过我是怎么看待你的，\n但反过来你怎么看我这件事，我还没问过呢—？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:normal,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_02.mp3
+msg,1,<outline width=2 color=black>「对你来说啊，我给你的感觉是怎样的？\n从初次见面到现在印象有没有变化之类的，告诉我嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:smile,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_03.mp3
+msg,1,<outline width=2 color=black>「嘿嘿，别害羞嘛—，老实说出来就行—。\n甚至“其实我喜欢你”这种答案也可以哦—？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「其实，真的……」,选项2　「比想象中更爱哭」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:surprise,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_04.mp3
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,1,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:shy,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_05.mp3
+msg,1,<outline width=2 color=black>「啊、呃……那、那种认真的表情是怎么回事……被这么直勾勾地盯着看，\n再怎么说也会害羞的……总、总觉得心情变得好奇怪……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:shy,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_06.mp3
+msg,1,<outline width=2 color=black>「诶……难、难道说，是真的？\n真的真的是那种展开吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:shy,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_07.mp3
+msg,1,<outline width=2 color=black>「等、等等！这种话题好歹让我做点心理准备——欸？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:surprise,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_08.mp3
+msg,1,<outline width=2 color=black>「那、那个...为什么突然笑...咦？\n难、难道说...」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:unique,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_09.mp3
+msg,1,<outline width=2 color=black>「——开、开这种玩笑很过分啊！\n人家刚才真的心跳加速慌得大脑一片空白了啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:shy,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_10.mp3
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,1,<outline width=2 color=black>「呜诶！？啊、这、这个...确实...没法否认呢。\n但爱哭是天生的体质我也没办法嘛...」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:unique,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_11.mp3
+msg,1,<outline width=2 color=black>「难、难道说觉得爱哭鬼很烦人！？给你造成困扰了！？\n刚才那些其实是希望我改正的意见吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:unique,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_12.mp3
+msg,1,<outline width=2 color=black>「对不起...也是呢，女生哭哭啼啼的男生都会觉得困扰吧...」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:surprise,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_13.mp3
+msg,1,<outline width=2 color=black>「——咦、不是？只是普通感想？这样啊...太好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:shy,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_14.mp3
+msg,1,<outline width=2 color=black>「不过...以后我会努力尽量不哭的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:sad,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_15.mp3
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,1,<outline width=2 color=black>「呜……随便提起的话题\n没想到会造成这么大的伤害」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:anger,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_16.mp3
+msg,1,<outline width=2 color=black>「唔、不行不行不行\n沉浸在这种情绪里也没用！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:smile,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_17.mp3
+msg,1,<outline width=2 color=black>「所以来转换下心情——咿呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:normal,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_18.mp3
+msg,1,<outline width=2 color=black>「嗯、好了！调整过来了！大概！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:sad,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_19.mp3
+msg,1,<outline width=2 color=black>「话说回来，这雨还真是不停呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:normal,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_20.mp3
+msg,1,<outline width=2 color=black>「干脆冲进雨里试试？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:normal,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_21.mp3
+msg,1,<outline width=2 color=black>「让雨水冲走阴郁的心情——虽然可能不太现实」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:smile,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_22.mp3
+msg,1,<outline width=2 color=black>「浑身湿透地全力奔跑\n听起来不是挺有意思的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:normal,mari,0,-110,0.5,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_23.mp3
+msg,1,<outline width=2 color=black>「所以说——来，把手伸出来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,mari,0.6_0.6,0.5,0
+anm,move,mari,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:normal,mari,0,-140,0.6,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_24.mp3
+msg,1,<outline width=2 color=black>「嗯，乖啦乖啦。那么——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105106/adv/atlas/stand_a,body:smile,mari,0,-140,0.6,0,,,,
+playvoice,1,download/character/105106/adv/sound/fav105106_02_25.mp3
+msg,1,<outline width=2 color=black>「全力冲刺咯——！耶——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,mari,0
+endwait,,,,,,,,,,,
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

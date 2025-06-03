@@ -1,0 +1,189 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11100301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm163.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_01.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「唔——说是绿意盎然听着好听，\n但说实话这森林里啥都没有呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_02.mp3
+msg,1,<outline width=2 color=black>「切——难得穿了可爱衣服和爸爸独处，\n这样总觉得有点不够尽兴啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_03.mp3
+msg,1,<outline width=2 color=black>「要是有时髦的街景啦、漂亮的风景啦。\n能在那种地方约会就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_04.mp3
+msg,1,<outline width=2 color=black>「爸爸也这么想吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「地点很重要？」,选项2　「根本不在意什么景色」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_05.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「嗯……这种问法有点狡猾哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_06.mp3
+msg,1,<outline width=2 color=black>「呵呵。当然啦，只要有爸爸在，什么地方都好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,aika_s,0.7_0.7,0.5,0
+anm,move,aika_s,0_-170,0.5,0
+endwait
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:smile,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_07.mp3
+msg,1,<outline width=2 color=black>「像这样紧紧贴在一起就更棒啦。\n爸爸觉得呢？能和我挽着手散步，开心吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:surprise,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_08.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「嗯……这个意思是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_09.mp3
+msg,1,<outline width=2 color=black>「哼~是说除了我谁都入不了眼之类的？\n啊哈。这种搭讪台词简直像小说里才会出现的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_10.mp3
+msg,1,<outline width=2 color=black>「可能有点肉麻过头了……不过被爸爸这么说\n还是挺开心的。给你打满分哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,aika_s,0.7_0.7,0.5,0
+anm,move,aika_s,0_-170,0.5,0
+endwait
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_11.mp3
+msg,1,<outline width=2 color=black>「作为奖励，来，抱紧——呵呵，像这样身体紧贴的话，\n柔软的触感什么的，能清楚感受到吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:smile,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_12.mp3
+msg,1,<outline width=2 color=black>「可以尽情享受哦，爸~爸♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+endif,,,,,,,,,,
+
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_13.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「呵呵，真神奇。刚才还觉得是平淡无奇的风景，\n但和爸爸紧紧依偎着散步时，看起来就完全不同了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_14.mp3
+msg,1,<outline width=2 color=black>「鲜活的绿意、透过树叶的阳光、风吹过树叶的沙沙声，\n都让人感到无比惬意……这就是幸福的感觉吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:smile,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_15.mp3
+msg,1,<outline width=2 color=black>「……真的、好厉害啊、爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_16.mp3
+msg,1,<outline width=2 color=black>「爱花也是呢，变得越来越喜欢爸爸了。比之前还要、更加喜欢。\n在一起时笑容也变多了对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_17.mp3
+msg,1,<outline width=2 color=black>「这样相处时，就能深深明白。\n对爱花来说爸爸的存在，有多么重要」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_18.mp3
+msg,1,<outline width=2 color=black>「和爸爸在一起，像这样触碰着，然后看着爸爸的眼睛时啊，\n就会莫名地明白……啊啊，这个人深爱着我呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_19.mp3
+msg,1,<outline width=2 color=black>「对现在的爱花来说，能感受到这点比什么都重要。\n从今以后，也要多多多多地疼爱爱花哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:smile,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_20.mp3
+msg,1,<outline width=2 color=black>「你能成为爱花的爸爸真是太好了，我无数次这么想着，\n也想无数次地向你道谢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_21.mp3
+msg,1,<outline width=2 color=black>「……而且」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_22.mp3
+msg,1,<outline width=2 color=black>「呐，爸爸？在爱花之后也好，再之后也好……哪怕只有一点点、也可以哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:unique,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_23.mp3
+msg,1,<outline width=2 color=black>「要是爸爸也能爱着我的话...我会很开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:smile,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_24.mp3
+msg,1,<outline width=2 color=black>「明明不用说这种话...我也知道爸爸同样珍惜着我呢\n我在说什么傻话啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104184/adv/atlas/stand_a,body:normal,aika_s,0,-170,0.7,0,,,,
+playvoice,1,download/character/104184/adv/sound/fav104184_01_25.mp3
+msg,1,<outline width=2 color=black>「但是约定...——这可是约定哦，爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
