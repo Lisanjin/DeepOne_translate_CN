@@ -1,0 +1,379 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11490301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「怎、怎么办啊哥哥……咖啡馆里面变得\n一团糟了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「爱香和茉莉大概把塔芭莎她们\n当成敌人了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「起初只是无法识别我们的存在\n但可能因为一直淋雨导致效果恶化了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「帕露菲……」,选项2　「必须阻止」
+if,select_===_1,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「先说好我可没打算帮忙哦\n至少从我这里得不到援助」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,perufe,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「愚蠢的想法\n你觉得冲进这种局面能有什么作为？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「在茉莉和白樱看来\n大概会觉得敌人又增加了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「现在在咖啡馆里和那两人交战的家伙们虽然还算打得有来有回\n但如果再多几个碍事的会怎样呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:unique,perufe,0,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嘛要是你遇到生命危险\n特尔蒂亚说不定会出手哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但特尔蒂亚过度使用力量的话你的容器很可能会自行崩坏……\n这也是特尔蒂亚不愿看到的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不惜让自己陷入险境就为了逼特尔蒂亚现身……\n你觉得这样值得吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,perufe,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「哥哥……我也不想……\n看到你太勉强自己啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「……话说回来茉莉……\n到底在搞什么名堂」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「还要把那副狼狈相丢人现眼到什么时候……啧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「既然说到这个份上……帕露菲你去帮帮他们不就好了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「这种程度的小事还轮不到我亲自出马」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这个领域带来的效果根本不值一提。\n对普通人而言不过就是场寻常的雨罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「会被这种雨迷惑的人啊都是些连这点雨雾都能让自己迷失方向的\n优柔寡断之辈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「优柔寡断……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「没错」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「只要在倾盆大雨中仍能保持自我轮廓的意志\n只要让自己的声音不被雨声淹没……这样就足够了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「说到底会被这场雨迷惑的人类不过都是些存在感稀薄到\n连自己的存在都会被雨水冲走的可怜虫罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「可是...爱香和茉莉她们的性格本来就不是...」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「不是性格问题 而是存在方式的问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「要强烈确认自我——重视自我。\n或者说称之为强烈的自我意识」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为主人甘愿牺牲的纳克特抄本自不必说。\n但...——连茉莉都露出这般丑态」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「可、可那正是因为她懂得珍视他人...说明茉莉\n是个温柔的好孩子啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「用这种肤浅的说辞袒护别人有什么意义？\n您心里其实也明白的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「珍视他人与不珍视自己 从来都不是同义词」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「茉莉在关键时刻总会选择他人而非自己。\n但那并非源于坚定的意志或觉悟」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「说到底 她只是没有履行对自己的责任罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「自己的出身、自己的身体、自己的所作所为。\n茉莉至今仍在厌恶着自身」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「无可救药......若因不完美的自我而感到羞耻\n本应选择前进而非厌恶才对......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「即便得到我这样的存在 仍要厌恶自己......\n实在是 不可理喻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「帕露菲......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「......人类啊 可不是那么容易就能改变的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我也...明白帕露菲所说的道理。\n珍视自己 确实是至关重要的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是......爱香也好 茉莉也好\n都还没能习惯这样思考啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且啊，珍视自己这种事，虽然理所当然，\n但其实我觉得挺难的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「帕露菲见过的人，比如房东太太，都拥有那种坚强，\n所以你可能没意识到」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是呢......那其实也是种特别的坚强啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,-300,-170,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「…………若真如此，果然无可救药」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:sad,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「人类这种存在，比我想象的还要不完美得多呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「正因如此，才要伸出援手啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「和重要的人携手同行......正因为不完美，才能改变。\n才能变得更强」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:unique,perufe,-300,-170,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「即便如此，我也不会伸出援手」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「人类以超越完美的残缺姿态迈向未来。\n而我在此，正是为了理解这份残缺」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:anger,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「既然如此......人类与生俱来的残缺与软弱，理应由人类自行跨越。\n此刻此地，根本不需要超脱常理的援助」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「帕露菲，你......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:normal,perufe,-300,-170,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,0,<outline width=2 color=black>「——所以」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:unique,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然我不会伸出援手，但若人类彼此扶持，\n共同跨越各自的残缺......对此我倒能认同」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104600/adv/atlas/stand_a,body:sad,perufe,-300,-170,0.5,0,,,,
+msg,0,<outline width=2 color=black>「提供这样的契机，倒也未尝不可」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,perufe,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「帕露菲......！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
