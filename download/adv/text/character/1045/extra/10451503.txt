@@ -1,0 +1,182 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,raz1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104515/adv/atlas/stand_a,body:normal,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_01.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「――这扇门装饰得如此精美，一看就\n非同寻常……我们必须要调查一下前方了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104515/adv/atlas/stand_a,body:normal,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-410,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_02.mp3
+msg,1,<outline width=2 color=black>「毕竟穿着这身打扮也不能太过得意忘形而疏忽思考。\n稍微打起精神来……那么，我要开门了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_255_255_255,2,255
+endwait,,,,,,,,,,,
+sprite,download/character/104515/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm118.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_03.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「这里……真是个美丽的地方呢。莫非\n现代人会在这种地方举行婚礼吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_04.mp3
+msg,1,<outline width=2 color=black>「能穿着婚纱和你来到这么棒的地方，\n真是赚到了呢，呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_05.mp3
+msg,1,<outline width=2 color=black>「要是被别人知道我们来了这种地方，肯定会嫉妒得不得了。\n换作是我站在相反的立场，也会羡慕得要死的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_06.mp3
+msg,1,<outline width=2 color=black>「……所以今天的事，就当作是你和我之间的小秘密吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_07.mp3
+msg,1,<outline width=2 color=black>「呵呵。又能多一个这么美好的秘密，真让人开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「……好想拥抱你」,选项2　「想让这一刻变得特别」
+if,select_===_1,,,,,,,,,
+playvoice,1,download/character/104515/adv/sound/fav104515_03_08.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_09.mp3
+msg,1,<outline width=2 color=black>「啊、这、这样啊……？突然这么说\n让人家心头小鹿乱撞呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_10.mp3
+msg,1,<outline width=2 color=black>「不过……可以哦。当然不会讨厌啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_11.mp3
+msg,1,<outline width=2 color=black>「难得的机会希望你能更近距离观赏我，触碰我。\n不是说过很多次不需要客气吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_12.mp3
+msg,1,<outline width=2 color=black>「现在的我可是你的新娘呀……对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+playvoice,1,download/character/104515/adv/sound/fav104515_03_13.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「这样的话，对我来说已经是无比特别的时光了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_14.mp3
+msg,1,<outline width=2 color=black>「但……如果你渴望更特别的事，就按你期望的做吧。\n无论什么都可以……哪怕是触碰……或是更进一步的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_15.mp3
+msg,1,<outline width=2 color=black>「作为新娘或许该更矜持些才对，但现在\n只有我们两个人……就算想些不该想的事，也没关系吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_16.mp3
+msg,1,<outline width=2 color=black>「夫君大人的一切，我都会全盘接受」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+playvoice,1,download/character/104515/adv/sound/fav104515_03_17.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「呵呵……我比想象中还要兴奋呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_18.mp3
+msg,1,<outline width=2 color=black>「但这也没办法呀。毕竟，我当上了您的新娘嘛。\n当然，我知道这只是扮演游戏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_19.mp3
+msg,1,<outline width=2 color=black>「可光是如此就让我感到这般幸福……要是\n真的成为那种关系，我会变成什么样呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_20.mp3
+msg,1,<outline width=2 color=black>「至少允许我幻想一下，梦到这些场景吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_21.mp3
+msg,1,<outline width=2 color=black>「而且……就现在，让这个梦稍微与现实重叠一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+spriteoff,all,1
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_22.mp3
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,1,<outline width=2 color=black>「嗯——啾、啾……啾、啵……哈啊……嗯……啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104515/adv/sound/fav104515_03_23.mp3
+msg,1,<outline width=2 color=black>「——我爱着您啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

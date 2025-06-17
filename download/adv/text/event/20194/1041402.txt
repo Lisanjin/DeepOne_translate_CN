@@ -1,0 +1,495 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11010300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm164.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rise1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「啊、啊、啊――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「为什么我没有穿礼服啊！这里不是婚礼会场吗？\n那我穿礼服也没什么问题吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说回来，这种剧情之前有过吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:surprise,rise,-300,-100,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:surprise,rozet,300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「非、非常抱歉……让莉濑大人委屈地看着\n我这样打扮……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果让莉濑大人伤心的话，我罗泽特现在\n立刻就把这礼服脱掉――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:surprise,rise,-300,-100,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「不用了！罗泽特酱穿这身超级合适，\n请务必保持原样！不准脱，绝对不行！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:surprise,rozet,300,-100,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「好可爱」,选项2　「太棒了！」
+if,select_===_1,,,,,,,,,
+
+
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:surprise,rozet,300,-100,0.5,0,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「是、是这样吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:smile,rise,-300,-100,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「没错。虽然不能穿礼服我确实有点不满，\n不过这样正好可以好好欣赏新娘罗泽特酱的可爱模样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:shy,rozet,300,-100,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「这种情况该说什么才好呢……\n谢、谢谢您……这样说可以吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「你看，老哥都因为太可爱而\n兴奋得不行了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:shy,rozet,300,-100,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「兴、兴奋……是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:shy,rozet,300,-100,0.5,0,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「能被莉濑大人……还有您\n如此夸奖我这身新娘装扮，真的非常开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:shy,rozet,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然这身华丽礼服对罗泽特来说太过奢侈，\n但若您中意的话，请尽情欣赏便是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:shy,rise,-300,-100,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「呜、呜哇……老哥你平时都是这样被诱惑的吗？\n这该怎么说呢，真是太厉害了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,raz1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104515/adv/atlas/stand_a,body:sad,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「那、那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104515/adv/atlas/stand_a,body:shy,raz,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「罗泽特小姐穿起来非常合适，但我的话，这种服装\n反而像是被衣服穿着一样，感觉好羞耻……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:surprise,rise,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「……………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「莉濑？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「不不不，拉兹露卡你在说什么啊！\n什么被衣服穿着，明明是你把衣服完美驾驭了好吗！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:surprise,rise,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哈？就这样还说自己没自信，是在讽刺我吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104515/adv/atlas/stand_a,body:surprise,raz,300,-110,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「诶、诶？不是的，我没有那个意思……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「啊啊真是的！连罗泽特酱和拉兹露卡酱都漂亮过头了啦！\n太狡猾了，但美得让人根本没法抱怨嘛！太狡猾了狡猾！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,raz,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「你这不就是在抱怨吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「这才不是抱怨是嫉妒啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104515/adv/atlas/stand_a,body:surprise,raz,300,-110,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「莉、莉濑同学穿那身衣服也非常合适哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104515/adv/atlas/stand_a,body:normal,raz,300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「要是莉濑同学穿上婚纱的话，\n肯定比我这种人要合适千百倍吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「怎么办，现在的莉濑酱根本没法坦率接受\n拉兹露卡酱的赞美啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:sad,ridia,-300,-120,0.5,0.5,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+spriteatlas,download/character/101357/adv/atlas/stand_a,body:normal,milva,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「呵呵，我穿的可不是婚纱\n而是修女服呢。有点遗憾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101357/adv/atlas/stand_a,body:smile,milva,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过能感受到莉濑酱甜蜜的心情，\n既美味又愉快呢。诶嘿嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:sad,ridia,-300,-120,0.5,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,0,<outline width=2 color=black>「这么快就遇上麻烦了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――而且，莉音和艾尔玛似乎被分开了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101357/adv/atlas/stand_a,body:normal,milva,300,-120,0.5,0,,,,
+anm,tint,ridia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「嗯，潜入时好像就走散了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,milva,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「――请稍等。\n那边传来声音，似乎是艾尔玛大人？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,ridia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104515/adv/atlas/stand_a,body:normal,raz,-300,-110,0.5,0.5,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「那我们就往那边去吧。目前看来没有危险，\n但能尽快会合总是好的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rozet,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:normal,rozet,300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「明白了……那么各位，请往这边」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11650300.jpg,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:normal,rozet,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「声音似乎是从这个方向传来的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「啊……在那边」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+spriteoff,rozet,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:normal,ridia,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,0,<outline width=2 color=black>「那是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm098.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/character/6043/image/604311.png,aluma,-200,350,2,0.5,,,,
+endwait,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「来吧~乖乖认命吧♪ 现在就要把新娘艾尔玛酱的内衣公诸于世！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「别开玩笑了……！\n话说你差不多该放手了吧……呜、唔……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/6043/image/604311.png,card,0,0,2,0,,,,
+anm,fade,card,0,0,0
+anm,scale,card,1_1,1,0
+anm,fade,card,255,1,0
+endwait,,,,,,,,,,,
+spriteoff,alma,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「哎呀哎呀~有什么关系嘛有什么关系嘛♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>艾尔玛・莉丝菲尔特</outline>,
+msg,0,<outline width=2 color=black>「别说莫名其妙的话了，快放开我！\n呜、力气好大……你前世该不会是猩猩吧……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>莉音・阿尔比蒂露</outline>,
+msg,0,<outline width=2 color=black>「对抓住美少女还说这种话的艾尔玛酱，\n必须处以公开内衣之刑！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+spriteatlas,download/character/102922/adv/atlas/stand_a,body:surprise,rozet,300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗泽特・萨维尼</outline>,
+msg,0,<outline width=2 color=black>「……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103654/adv/atlas/stand_a,body:sad,rise,-300,-100,0.5,0,,,,
+anm,tint,rozet,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>火乃渡莉濑</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rozet,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:unique,frau,300,-120,0.5,0.5,,,,
+anm,tint,rise,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,rise,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101255/adv/atlas/stand_a,body:sad,ridia,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>莉迪亚・林德曼</outline>,
+msg,0,<outline width=2 color=black>「你们俩在这打情骂俏什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
