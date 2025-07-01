@@ -1,0 +1,160 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11760302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_01.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「据说芭德薇家的初代家主，曾被称为嫉妒魔女呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_02.mp3
+msg,1,<outline width=2 color=black>「她夺走了亲姐姐及其恋人的性命，篡夺了克劳索拉斯。\n这便是奠定芭德薇家族至今基业的魔女所为」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_03.mp3
+msg,1,<outline width=2 color=black>「不过芭德薇家并未将这段历史\n作为正史承认呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_04.mp3
+msg,1,<outline width=2 color=black>「对外宣称这是某人杜撰的伪史——\n当然，不过是场面话罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_05.mp3
+msg,1,<outline width=2 color=black>「会做出这种事也不足为奇。\n毕竟那可是高举傲慢镀金圣剑的血脉啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_06.mp3
+msg,1,<outline width=2 color=black>「或者说，我向当事人克劳索拉斯求证过，\n确有其事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_07.mp3
+msg,1,<outline width=2 color=black>「魔女单恋着姐姐的恋人，这份扭曲的感情\n最终导致了那样的结局」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「该说什么好呢……」,选项2　「真是可悲的结局」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_08.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「不必含糊其辞……确实很可笑吧。\n不过，这倒也符合我们祖先的作风」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_09.mp3
+msg,1,<outline width=2 color=black>「因珍视某人的心意而犯下过错。\n这就是芭德薇家的宿命吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:sad,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_10.mp3
+msg,1,<outline width=2 color=black>「初代家主似乎将这份执念贯彻到了极致」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_11.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「我认为这不是悲伤的结局，而是极具芭德薇特色的傲慢终幕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_12.mp3
+msg,1,<outline width=2 color=black>「说到底，魔女渴求的不过是投向自己的爱。独占的爱。\n正是执着于这种爱……才导致满盘皆输」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_13.mp3
+msg,1,<outline width=2 color=black>「她定然无法妥协也无法让步，最终为私欲彻底失控……\n血脉的力量真是可怕呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_14.mp3
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「……想到这里，能与你相遇的我或许还算幸运」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_15.mp3
+msg,1,<outline width=2 color=black>「如何好好传达心意……这件事，是你教会我的。\n如果没有你，或许我也会犯下什么大错」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_16.mp3
+msg,1,<outline width=2 color=black>「……虽然现在说有点迟，也不是什么郑重的事……但我很感谢。\n能与你相遇这件事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:unique,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_17.mp3
+msg,1,<outline width=2 color=black>「干嘛啦，摆出那种看到稀奇东西的表情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:anger,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_18.mp3
+msg,1,<outline width=2 color=black>「哼。反正我说这种话很不合适吧。\n抱歉呢，一直都是个固执又不坦率的别扭鬼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_19.mp3
+msg,1,<outline width=2 color=black>「……不过啊，现在的我，确实想要改变这样的自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_20.mp3
+msg,1,<outline width=2 color=black>「只顾着逞强的话，真正想要的东西永远得不到。\n向重要的人表达珍视之情……其实根本不是什么难事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:normal,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_21.mp3
+msg,1,<outline width=2 color=black>「能让我这么想的契机里，肯定有你的存在。\n所以……真的很感谢你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100219/adv/atlas/stand_a,body:shy,blizit,0,-190,0.5,0,,,,
+playvoice,1,download/character/100219/adv/sound/fav100219_01_22.mp3
+msg,1,<outline width=2 color=black>「……呜、别、别这么直勾勾盯着我看啦！\n还有不准笑！太失礼了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
