@@ -1,0 +1,200 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm094.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103521/adv/sound/fav103521_02_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「——噗哈哈哈！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:smile,norn,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Line_center,em1,default,animation,1,0,0,1,1.0,0
+playvoice,1,download/character/103521/adv/sound/fav103521_02_02.mp3
+msg,1,<outline width=2 color=black>「开～始！从今天起诺恩酱的美少女爆钓物语正式开幕！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_11310303.jpg,bg,0,-250,3,1
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Water,em1,default,animation,0,0,-200,1,1.0,0
+playse,/download/sound/se/se_050.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_03.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「哎呀～大丰收大丰收。没想到诺恩酱意外才能大爆发了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_04.mp3
+msg,1,<outline width=2 color=black>「明明只是树枝绑根绳，居然能连杆到这种程度，\n自己的才能真是可怕。诺恩酱到底有多天才啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_05.mp3
+msg,1,<outline width=2 color=black>「哎呀？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,norn,0.6_0.6,0.5,0
+anm,move,norn,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:smile,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_06.mp3
+msg,1,<outline width=2 color=black>「哎呀呀呀呀，欧尼酱怎么回事呀？\n完全钓不到鱼嘛～状态不佳吗～？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:normal,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_07.mp3
+msg,1,<outline width=2 color=black>「真没办法呢。可爱的妹妹就分几条猎物\n给没出息的哥哥吧。要感恩戴德哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「好不甘心……」,选项2　「是不是作弊了？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:smile,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_08.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「嘛！这就是所谓的天赋啊，你这家伙！嘛！别灰心！\n嘛！好好感谢诺恩酱的慈悲吧！噗哈哈！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103521/adv/sound/fav103521_02_09.mp3
+msg,1,<outline width=2 color=black>「啊哒哒哒！等、哥哥、别抓我脑袋快窒息了\n好痛啊！呜嘎啊啊啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,black1,0.2
+spriteoff,norn2,0.2
+endwait,,,,,,,,,,,
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_10.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「呜……就、就因为输了不甘心就诉诸暴力！\n反对暴力！对妹妹应该用爱温柔相待！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_11.mp3
+msg,1,<outline width=2 color=black>「真是的，哥哥应该对诺恩酱多些兄妹爱才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:smile,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_12.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊哈哈！怎～么可能嘛，因为自己输了\n就找茬可不行哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:unique,norn,0,-130,0.6,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_13.mp3
+msg,1,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0.2
+endwait
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/103521/adv/sound/fav103521_02_14.mp3
+msg,1,<outline width=2 color=black>「……才没有作弊呢。没用魔术什么的啦。\n是错觉错觉。妹妹不说谎。O～K？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_15.mp3
+msg,1,<outline width=2 color=black>「哎呀，细节就别在意啦！啊哈哈～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_16.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「总之先把钓到的鱼烤了吧。\n得去捡些当柴火的树枝才行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_17.mp3
+msg,1,<outline width=2 color=black>「在大自然里烤自己钓的鱼吃，\n该怎么说呢...挺有浪漫情调的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_18.mp3
+msg,1,<outline width=2 color=black>「这样的假日消遣也不赖呢。\n更何况陪在身边的是哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_19.mp3
+msg,1,<outline width=2 color=black>「当然开心又幸福啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_20.mp3
+msg,1,<outline width=2 color=black>「呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103521/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103521/adv/sound/fav103521_02_21.mp3
+msg,1,<outline width=2 color=black>「走吧哥哥，我们去捡柴火」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

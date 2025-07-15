@@ -1,0 +1,194 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm094.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_01.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「说起来现在才问可能有点晚……夫君大人为什么要把钰带到这种地方来呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_02.mp3
+msg,1,<outline width=2 color=black>「那个……虽然自己说这种话有点难为情，但钰总是被夫君大人吸引着……为什么会这样呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_03.mp3
+msg,1,<outline width=2 color=black>「呜、呜呜！自己说着说着，突然觉得胸口好难受……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_04.mp3
+msg,1,<outline width=2 color=black>「难道说……夫君大人其实讨厌钰……？啊、啊啊呜……要是被夫君大人抛弃的话，钰、钰该怎么办才好啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_05.mp3
+msg,1,<outline width=2 color=black>「夫、夫君大人啊啊啊——不要丢下钰一个人嘛呜呜呜——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「因为你求婚的方式太强硬了」,选项2「怎么可能讨厌你」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_06.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「呜咕……明、明明知道的。明明知道的可是……一看到夫君大人，感情就会失控……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_07.mp3
+msg,1,<outline width=2 color=black>「干脆说...只要能待在夫君大人身边，就算是当个随叫随到的女人也好\n奴隶也好炮友也——啊啊啊！夫君大人别躲开呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_08.mp3
+msg,1,<outline width=2 color=black>「骗、骗人的！开玩笑的对不起原谅我嘛啊啊啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_09.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「……！那、那个夫君大人...其实今天我也带着结婚登记表来了——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_10.mp3
+msg,1,<outline width=2 color=black>「啊啊啊等等夫君大人！别躲开，不要推开我\n呀！刚才只是一时鬼迷心窍了啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_11.mp3
+msg,1,<outline width=2 color=black>「因为人家想说让夫君大人开心的话嘛！这份\n喜欢的心情！小鹿乱撞的感觉！把钰都变得不正常了啦...！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm094.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_12.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「呜...对不起失态了...这种地方就是\n钰最糟糕的地方呢...得冷静下来...」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_13.mp3
+msg,1,<outline width=2 color=black>「那、那个...所以夫君大人今天为什么...」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_14.mp3
+msg,1,<outline width=2 color=black>「——只是心血来潮吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:surprise,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_15.mp3
+msg,1,<outline width=2 color=black>「啊、不是的、不是不行。怎么可能不行呢。\n只是……该怎么说才好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_16.mp3
+msg,1,<outline width=2 color=black>「……很开心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_17.mp3
+msg,1,<outline width=2 color=black>「总觉得……没有什么特别的理由，夫君大人就愿意\n和钰一起度过时光了对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_18.mp3
+msg,1,<outline width=2 color=black>「如果是纪念日啊、约定啊之类有特别理由才在一起，\n某种意义上不是理所当然的事吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_19.mp3
+msg,1,<outline width=2 color=black>「但是，没有任何理由，仅仅凭着当下的心情就选择\n和钰在一起……我觉得这是非常、非常令人开心的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_20.mp3
+msg,1,<outline width=2 color=black>「就算没有任何理由，也可以待在夫君大人身边……\n感觉就像是被这样告知了一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_21.mp3
+msg,1,<outline width=2 color=black>「或许这样想有点夸张、只是我一厢情愿的自我满足」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_22.mp3
+msg,1,<outline width=2 color=black>「但至少钰……能被夫君大人这样对待，\n真的非常开心……很幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_23.mp3
+msg,1,<outline width=2 color=black>「啊、夫君大人……夫君大人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_24.mp3
+msg,1,<outline width=2 color=black>「就算对夫君大人来说不算特别也没关系。\n虽然心里还是希望能成为特别的存在……但这只是钰任性的想法罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105007/adv/atlas/stand_a,body:smile,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105007/adv/sound/fav105007_02_25.mp3
+msg,1,<outline width=2 color=black>「但是唯有一件事……求您今后也要永远\n让钰陪伴在身旁……恳请您答应、夫君大人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
