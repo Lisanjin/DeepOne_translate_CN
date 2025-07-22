@@ -3,7 +3,7 @@
 
 > [!待获取列表]  
 >
-> 无
+> 680012_1(アントリ 特典 memoriral)
 
 
 汉化方法参考了这个IrisMysteria的仓库[IrisMysteria-Translate](https://github.com/game-reverse/IrisMysteria-Translate)  
