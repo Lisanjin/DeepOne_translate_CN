@@ -1,0 +1,148 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020400.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm141.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_01.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「您是在询问罗莎莉大人的姐姐吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_02.mp3
+msg,1,<outline width=2 color=black>「我认为她是位极其高尚的贤者」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_03.mp3
+msg,1,<outline width=2 color=black>「她们一族原本就肩负着统率聚居地的职责\n而继承我位置的她更是担任了族长之位」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_04.mp3
+msg,1,<outline width=2 color=black>「她既光明磊落又能体察人心\n必要时甚至能偏离正道作出灵活抉择」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_05.mp3
+msg,1,<outline width=2 color=black>「但绝不会纵容错误\n是位始终忠于本心的纯粹之人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:smile,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_06.mp3
+msg,1,<outline width=2 color=black>「与被誉为历代最具才干的妹妹罗莎莉大人相比\n她的存在无疑也是聚落居民们的心灵支柱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_07.mp3
+msg,1,<outline width=2 color=black>「那虽是个民生多艰的年代但正因为有她们存在\n聚落的人们才能带着笑容度过平静岁月」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_08.mp3
+msg,1,<outline width=2 color=black>「所以当某天造访的骑士坠入爱河时\n想必也是段理所当然的佳话吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「当时的罗莎莉……」,选项2　「那位骑士是怎样的人」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_09.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「罗莎莉大人也曾恋慕那位骑士，并多次主动示好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_10.mp3
+msg,1,<outline width=2 color=black>「但最终骑士并未察觉罗莎莉大人的心意\n反而与她的姐姐结为连理」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_11.mp3
+msg,1,<outline width=2 color=black>「不仅骑士没有察觉\n似乎连姐姐也未曾注意到罗莎莉大人的感情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_12.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「他至死都未透露身世。虽以骑士自称且恪守礼法\n我们推测他应是没落贵族出身」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_13.mp3
+msg,1,<outline width=2 color=black>「凭剑术闯荡江湖的实力确实不凡\n单纯比试剑技时甚至能与罗莎莉大人平分秋色」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_14.mp3
+msg,1,<outline width=2 color=black>「罗莎莉大人被他吸引的契机想必就在于此\n毕竟那位身边从未有过能与自己比肩的强者」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_15.mp3
+msg,1,<outline width=2 color=black>「反倒是那位骑士，被与自己截然不同却坚守正义之心的\n罗莎莉大人的姐姐所吸引……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_16.mp3
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,1,<outline width=2 color=black>「心意未能相通，彼此擦肩而过。\n这故事听起来，真是似曾相识啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:sad,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_17.mp3
+msg,1,<outline width=2 color=black>「……谁都没能在关键时刻将心意说出口。\n想必，这才是最遗憾的事吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_18.mp3
+msg,1,<outline width=2 color=black>「虽非同类之事，但历经漫长岁月后，流淌着相同血脉\n同样曾彼此错过的吾主与其姐姐最终得以坦诚相对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_19.mp3
+msg,1,<outline width=2 color=black>「我再次深感欣慰」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104012/adv/atlas/stand_a,body:normal,clau,0,-130,0.5,0,,,,
+playvoice,1,download/character/104012/adv/sound/fav104012_03_20.mp3
+msg,1,<outline width=2 color=black>「毕竟，重要之人因误会而迎来不幸结局的故事\n已经上演太多太多了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
