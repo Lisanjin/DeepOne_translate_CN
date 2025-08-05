@@ -1,0 +1,223 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm120.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_01.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「我并非像帕露菲那样被逐出梦想王座，\n而是主动离开了那个位置」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_02.mp3
+msg,1,<outline width=2 color=black>「换言之，纳克特原书中仍留存着我的梦想王座。\n终有一日我会重返王座……届时首先要做一件事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_03.mp3
+msg,1,<outline width=2 color=black>「让夏季从这个星球上彻底消失」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_04.mp3
+msg,1,<outline width=2 color=black>「或许取而代之的会是永恒的冰河世纪，\n但比起消灭夏季这种小事根本不值一提」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「别再离开永远留在我身边」,选项2　「你不怕寒冷吗」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_05.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「……这意思是，你想永远和我在一起？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_06.mp3
+msg,1,<outline width=2 color=black>「若你强烈渴望如此，我自然也不反对，\n不过得先从找到让你永生的方法开始呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:smile,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_07.mp3
+msg,1,<outline width=2 color=black>「总之就从清除所有可能妨碍目标达成的组织开始吧。\n第一个就拿财团开刀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:sad,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_08.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「……原来如此，不无道理」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_09.mp3
+msg,1,<outline width=2 color=black>「那干脆毁灭世界好了。\n只要让万物湮灭，就再也不用为气候这种问题烦恼了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:unique,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_10.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「——开玩笑的。别摆出那么严肃的表情嘛。\n我就这么不值得信任吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_11.mp3
+msg,1,<outline width=2 color=black>「我也在尝试理解你们，\n所以希望你们也能稍微理解我一点啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:normal,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_12.mp3
+msg,1,<outline width=2 color=black>「这个世界是你们生存的地方。\n想要珍惜它的心情，我也是有的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:sad,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_13.mp3
+msg,1,<outline width=2 color=black>「即便如此……居然被怀疑到这种地步，\n这就是所谓受伤的感觉吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:smile,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_14.mp3
+msg,1,<outline width=2 color=black>「这种时候，要求道歉也是可以的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:smile,terutia,0,-140,0.5,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_15.mp3
+msg,1,<outline width=2 color=black>「你打算怎么向我赔罪呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:surprise,terutia,0,-200,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/104707/adv/sound/fav104707_02_16.mp3
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,terutia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:shy,terutia2,0,0,0,0,,,,
+imgconf,terutia2,terutia1,0,-500,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104707/adv/sound/fav104707_02_17.mp3
+msg,1,<outline width=2 color=black>「嗯、啾、……啾、啾噗……嗯、啾、啾……呼、呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:unique,terutia,0,-200,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_18.mp3
+name,<outline width=2 color=black>特尔蒂亚</outline>,
+msg,1,<outline width=2 color=black>「……这个吻，真的算是道歉吗？\n说起来这与其说是给我的补偿，不如说是你更占便宜吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:smile,terutia,0,-200,0.7,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_19.mp3
+msg,1,<outline width=2 color=black>「……真是拿你没办法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:smile,terutia,0,-200,0.7,0,,,,
+playvoice,1,download/character/104707/adv/sound/fav104707_02_20.mp3
+msg,1,<outline width=2 color=black>「至少，让我来主导吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,terutia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:shy,terutia2,0,0,0,0,,,,
+imgconf,terutia2,terutia1,0,-500,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104707/adv/sound/fav104707_02_21.mp3
+msg,1,<outline width=2 color=black>「——啾、啾呜……嗯、啵啾、啾噼、啾……哈啊。\n嗯……之后要不要一起下海呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:smile,terutia2,0,0,0,0,,,,
+imgconf,terutia2,terutia1,0,-500,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104707/adv/sound/fav104707_02_22.mp3
+msg,1,<outline width=2 color=black>「这种程度还不够呢……所以\n再多教我些夏天的乐趣吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104707/adv/atlas/stand_a,body:smile,terutia2,0,0,0,0,,,,
+imgconf,terutia2,terutia1,0,-500,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104707/adv/sound/fav104707_02_23.mp3
+msg,1,<outline width=2 color=black>「只要和你在一起的话，就连这讨厌的季节……似乎也能留下\n不算太坏的回忆呢……嗯、啾……啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

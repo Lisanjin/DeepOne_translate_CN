@@ -1,0 +1,197 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_01.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「——嗯，附近没有虚像之类的气息，这一带应该很安全」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_02.mp3
+msg,1,<outline width=2 color=black>「为防万一还是布下探测和陷阱吧，\n这样就能放心享受海水浴了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_03.mp3
+msg,1,<outline width=2 color=black>「就算敌人出现我也会立刻解决掉的请放心。\n我可不允许有人打扰和爸爸难得的相处时光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_04.mp3
+msg,1,<outline width=2 color=black>「话说回来，爸爸。\n您是不是有什么话要对我说呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+shake,0.2,2,10,0,soka
+playvoice,1,download/character/104217/adv/sound/fav104217_01_05.mp3
+msg,1,<outline width=2 color=black>「……坐立不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,soka,-30_-110,0.2,0
+endwait
+anm,move,soka,30_-110,0.3,0
+endwait
+anm,move,soka,-30_-110,0.3,0
+endwait
+anm,move,soka,30_-110,0.3,0
+endwait
+anm,move,soka,0_-110,0.2,0
+endwait
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_06.mp3
+msg,1,<outline width=2 color=black>「……………………坐立、不安」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:sad,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_07.mp3
+msg,1,<outline width=2 color=black>「……那个，爸爸？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「一直以来谢谢你了」,选项2　「泳装很适合你」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_08.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「遗憾、答错啦。为什么现在要说日常感谢的话嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:sad,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_09.mp3
+msg,1,<outline width=2 color=black>「当然、被爸爸道谢也不是不开心啦\n但现在不是说这个的时候呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:anger,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_10.mp3
+msg,1,<outline width=2 color=black>「比起那种事、还有更重要的事情……！\n你看、我现在的打扮。这可是重大提示哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_11.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「啊……嗯、谢谢。嘿嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_12.mp3
+msg,1,<outline width=2 color=black>「该怎么说呢、虽然是我主动要求的\n但真的被夸奖时、还是有点害羞呢……不过超级开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_13.mp3
+msg,1,<outline width=2 color=black>「被爸爸表扬的时候呀、我的心跳就会\n变得特别快、暖暖的情绪不断涌上来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_14.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「这件泳装呢、可是精心挑选的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_15.mp3
+msg,1,<outline width=2 color=black>「拉莱耶的仓库里、有数量惊人的泳装……光是全部看一遍\n就已经够累人的了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_16.mp3
+msg,1,<outline width=2 color=black>「所以爸爸呀、应该再多夸夸这么努力的我才是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-130,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+shake,0.5,3,12,0,soka
+playvoice,1,download/character/104217/adv/sound/fav104217_01_17.mp3
+msg,1,<outline width=2 color=black>「啊……呵呵、果然还是最喜欢被爸爸抚摸的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_18.mp3
+msg,1,<outline width=2 color=black>「……不过、难得穿上泳装、就只是摸摸而已吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_19.mp3
+msg,1,<outline width=2 color=black>「呵呵、开玩笑的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_20.mp3
+msg,1,<outline width=2 color=black>「被爸爸抚摸也好、触碰也好、我都超级喜欢\n喜欢到希望永远持续下去的程度」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_21.mp3
+msg,1,<outline width=2 color=black>「但是、难得来到海边、光是这样有点可惜呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_22.mp3
+msg,1,<outline width=2 color=black>「想和爸爸一起尽情享受大海。\n想在这里创造许许多多独一无二的回忆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_23.mp3
+msg,1,<outline width=2 color=black>「听说能和爸爸一起去海边的时候\n我就想了好多好多想一起做的事呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:smile,soka,0,-130,0.6,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_01_24.mp3
+msg,1,<outline width=2 color=black>「所以不要光是欣赏泳装啦\n和爸爸一起好好享受大海吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

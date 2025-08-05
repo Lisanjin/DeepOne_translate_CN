@@ -1,0 +1,224 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_01.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「这片领域毕竟是夏天的海边，气温高日照强呢。\n补水当然重要，不过偶尔也该在阴凉处休息下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_02.mp3
+msg,1,<outline width=2 color=black>「要是中暑就麻烦了，爸爸\n身体不舒服的话别客气要告诉我哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_03.mp3
+msg,1,<outline width=2 color=black>「虽然想和爸爸创造很多回忆\n但要是因此勉强自己就本末倒置了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:surprise,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_04.mp3
+msg,1,<outline width=2 color=black>「——咦、我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_05.mp3
+msg,1,<outline width=2 color=black>「确实觉得有点热啦，不过这种程度完全——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_06.mp3
+msg,1,<outline width=2 color=black>「……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_07.mp3
+msg,1,<outline width=2 color=black>「果然还是该补充水分了\n就算是强化魔术师也不能大意呢，嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_08.mp3
+msg,1,<outline width=2 color=black>「饮料我都好好带着呢，爸爸能喂我喝吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「你自己能喝吧……？」,选项2　「用嘴喂可以吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:sad,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_09.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「啊、总觉得浑身无力……该不会\n不知不觉就中暑了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_10.mp3
+msg,1,<outline width=2 color=black>「得赶快补充水分才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_11.mp3
+msg,1,<outline width=2 color=black>「呐、爸爸……不行吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:surprise,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_12.mp3
+msg,1,<outline width=2 color=black>「——咦？等等、为什么爸爸在喝水」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_13.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「诶……爸、爸爸、这样有点太大胆了吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_14.mp3
+msg,1,<outline width=2 color=black>「如果爸爸想这么做的话，我倒不是不愿意\n不如说请务必这样做的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_15.mp3
+msg,1,<outline width=2 color=black>「所以……要怎么喂我喝呢，\n就全交给爸爸来决定吧～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:surprise,soka,0,-160,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/104217/adv/sound/fav104217_02_16.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「啊……爸、爸爸……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104217/adv/sound/fav104217_02_17.mp3
+msg,1,<outline width=2 color=black>「嗯呜、嗯嗯～啾、噗啾……嗯、咕嘟、\n咕咚……嗯哈、爸比呀～嗯呣……嗯咕、唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104217/adv/sound/fav104217_02_18.mp3
+msg,1,<outline width=2 color=black>「呀啊、水、洒出来了啦……啾噗、啊～嗯、\n咕咚……嗯咻噜……咕嘟、嗯～哈啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_19.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「爸、爸爸……太、太厉害了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_20.mp3
+msg,1,<outline width=2 color=black>「虽然确实补充了水分，但身体反而更烫了……而且\n感觉脑袋晕乎乎的……差点以为真要中暑了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka,0,-160,0.7,0,,,,
+playvoice,1,download/character/104217/adv/sound/fav104217_02_21.mp3
+msg,1,<outline width=2 color=black>「呐……爸爸也感觉一样吧？这样的话，必须好好补充水分才行。\n这次换我来喂爸爸喝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,soka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:normal,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104217/adv/sound/fav104217_02_22.mp3
+msg,1,<outline width=2 color=black>「嗯、唔…………嗯、啾～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104217/adv/sound/fav104217_02_23.mp3
+msg,1,<outline width=2 color=black>「嗯呜、啾、滋啾……嗯、呼～啾、溜……嗯呣、嗯、啾、\n哈啊、爸比呀～嗯嗯、啾、滋啾、溜呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104217/adv/sound/fav104217_02_24.mp3
+msg,1,<outline width=2 color=black>「嗯啊～又、洒出来了啦……嗯……哈、啊……这样根本、\n完全不够补充水分对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104217/adv/atlas/stand_a,body:shy,soka2,0,0,0,0,,,,
+imgconf,soka2,soka1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104217/adv/sound/fav104217_02_25.mp3
+msg,1,<outline width=2 color=black>「所以……再来一口……乖哦、爸爸。别动～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

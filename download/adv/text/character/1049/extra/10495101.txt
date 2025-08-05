@@ -1,0 +1,173 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11050300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm040.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:anger,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,-650,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104951/adv/sound/fav104951_01_01.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「——为什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_02.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「为什么难得来海边 旁边却是你。\n我明明想和姐姐一起的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_03.mp3
+msg,1,<outline width=2 color=black>「要是和姐姐的话肯定能玩得很开心。本可以尽情享受大海的。\n不，不止是大海……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_04.mp3
+msg,1,<outline width=2 color=black>「在海边欢闹的姐姐……被海水打湿后比平时更性感的姐姐。\n精疲力尽漂浮在海面上的姐姐……啊啊，太可爱了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_05.mp3
+msg,1,<outline width=2 color=black>「光是这么想象着 胸口就传来阵阵绞痛……\n哈、啊……啊啊，心跳加速……身体好像要烧起来了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「……玩得开心就好」,选项2　「下次和埃尔塔三个人一起」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_06.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「哈？姐姐都不在 你从哪看出来玩得开心了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_07.mp3
+msg,1,<outline width=2 color=black>「现在的我 只能妄想姐姐尽情享受大海的样子。\n就这样你凭什么说我玩得开心？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_08.mp3
+msg,1,<outline width=2 color=black>「是在讽刺吗？还是挑衅？\n好啊 这场架我奉陪到底 臭水沟混蛋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_09.mp3
+msg,1,<outline width=2 color=black>「——哼。要是怂到临阵退缩 就别说多余的话。\n我要继续妄想和姐姐一起来海边」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:anger,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_10.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「谁允许你若无其事跟来的。\n把你扔进海里哦 臭水沟混蛋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_11.mp3
+msg,1,<outline width=2 color=black>「……但现实问题是 要在幻梦境游玩确实需要你的力量\n而且姐姐肯定也会说要带你一起……唉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_12.mp3
+msg,1,<outline width=2 color=black>「如果只有我的话靠毅力还能承受负荷\n但绝不能委屈姐姐吃苦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_13.mp3
+msg,1,<outline width=2 color=black>「所以……嘛 允许你远远看着我和姐姐在海边玩\n倒也不是不行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_14.mp3
+msg,1,<outline width=2 color=black>「不过半径二十米内禁止靠近。这是最低限度的让步。\n明白没？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_15.mp3
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「……和姐姐去海边啊。姐姐会想玩些什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_16.mp3
+msg,1,<outline width=2 color=black>「说起来...可恨的是你曾经和姐姐来过海边吧？\n真是可恨啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_17.mp3
+msg,1,<outline width=2 color=black>「你和姐姐在海边一起做了什么？给我点提示\n总有一天我要给姐姐创造更美好的回忆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:normal,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_18.mp3
+msg,1,<outline width=2 color=black>「知道了就别沉默快点——喂，为什么尴尬地\n移开视线？你这种反应的时候通常——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:sad,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_19.mp3
+msg,1,<outline width=2 color=black>「该、该不会...你居然在海边和姐姐\n做、做做、做那种事了吧……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_20.mp3
+msg,1,<outline width=2 color=black>「就是说...把穿泳装的姐姐带到礁石后面\n做、做那种事...！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_21.mp3
+msg,1,<outline width=2 color=black>「啊、啊啊……哈啊、哈啊……这、这种事情……不行\n光是想象就头晕目眩……脑、脑子要煮熟了呜哇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104951/adv/atlas/stand_a,body:unique,maria,0,-120,0.5,0,,,,
+playvoice,1,download/character/104951/adv/sound/fav104951_01_22.mp3
+msg,1,<outline width=2 color=black>「姐姐……啊、啊啊啊，姐姐她……呜呜呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
