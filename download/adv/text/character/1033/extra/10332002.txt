@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm070.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_01.mp3
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,1,<outline width=2 color=black>「日本的夏日祭典，居然有这么多小吃摊呢。\n琳琅满目的摊位景象，该怎么说呢，真是令人雀跃不已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_02.mp3
+msg,1,<outline width=2 color=black>「这么多花样摆在眼前，眼睛都要看花啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_03.mp3
+msg,1,<outline width=2 color=black>「——事实上，旁边那个人从刚才起就特别在意摊位的样子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_04.mp3
+msg,1,<outline width=2 color=black>「真是的。明明我就站在旁边，却只顾着\n惦记吃的，真是个贪嘴的下贱东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_05.mp3
+msg,1,<outline width=2 color=black>「……不过，真搞不懂呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_06.mp3
+msg,1,<outline width=2 color=black>「明明不必特意在幻梦境尝试来历不明的食物，\n只要拜托亚纱花，她肯定会准备类似的料理」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_07.mp3
+msg,1,<outline width=2 color=black>「那样既安全又美味得多。\n这么想想的话稍微忍耐下不就好了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「氛围也很重要」,选项2　「不好意思麻烦她到这种程度」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_08.mp3
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,1,<outline width=2 color=black>「你的心情我能理解，但即便如此\n我也难以赞同你贸然食用幻梦境的食物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_09.mp3
+msg,1,<outline width=2 color=black>「……为什么非要摆出这副沮丧的样子不可呢。\n这样反倒像是我在做什么坏事似的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_10.mp3
+msg,1,<outline width=2 color=black>「真是的……完全拿这个蠢货没办法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_11.mp3
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,1,<outline width=2 color=black>「要是因为顾虑这些而吃了幻梦境的食物，\n导致你遭遇不测的话，亚纱花会怎么想呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_12.mp3
+msg,1,<outline width=2 color=black>「说到底，被你依赖的她怎么可能露出不悦的神情。\n被需要而感到开心——她反而会这么说才对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_13.mp3
+msg,1,<outline width=2 color=black>「——……不过，这并不只适用于亚纱花就是了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_14.mp3
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,1,<outline width=2 color=black>「若有想吃的东西就告诉我。\n就算是我也能用魔术确保安全性」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:unique,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_15.mp3
+msg,1,<outline width=2 color=black>「不过作为交换，既然本小姐都屈尊陪你任性了，\n期待相应的回报也是理所当然的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_16.mp3
+msg,1,<outline width=2 color=black>「比如说……让你要吃的食物先给本小姐尝一口\n这个提议如何？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_17.mp3
+msg,1,<outline width=2 color=black>「我对祭典小吃也有些兴趣呢。不过实在吃不了太多，\n分给我少许正好合适」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_18.mp3
+msg,1,<outline width=2 color=black>「虽说是幻梦境的产物，但总觉得浪费了怪可惜的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_19.mp3
+msg,1,<outline width=2 color=black>「你应该……没意见吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_20.mp3
+msg,1,<outline width=2 color=black>「呵呵……那么，该从哪样开始品尝呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103320/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103320/adv/sound/fav103320_02_21.mp3
+msg,1,<outline width=2 color=black>「就交给你的品味来决定了……这可是责任重大哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
