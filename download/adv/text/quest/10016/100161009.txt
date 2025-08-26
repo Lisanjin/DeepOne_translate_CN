@@ -1,0 +1,820 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10160200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm071.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:sad,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-661,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_002_15_09_01.mp3
+name,<outline width=2 color=black>ブリジット・ボードウィン</outline>,
+msg,1,<outline width=2 color=black>「ごほっ……っ、ぅ……は、ぁ……はぁ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_15_09_01.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「ブリジット……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_15_09_01.mp3
+name,<outline width=2 color=black>フラウ</outline>,
+msg,1,<outline width=2 color=black>「ノルン、ブリジットは……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_15_09_02.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「っ、必死に延命してるけど、これは……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:anger,kukuru,300,-130,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_052_15_09_01.mp3
+name,<outline width=2 color=black>ククル・Y・トレセーナ</outline>,
+msg,1,<outline width=2 color=black>「私も手伝う！　少しなら出来ること、あると思うから。\n止血と酸素の供給は任せて！」 </outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,kukuru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_15_09_03.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「ああ……けど、このままじゃ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:anger,kukuru,300,-130,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_052_15_09_02.mp3
+name,<outline width=2 color=black>ククル・Y・トレセーナ</outline>,
+msg,1,<outline width=2 color=black>「諦めちゃダメだよ、大事な仲間なんでしょ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「ブリジット……！」,選択肢2　「頼む……！」
+if,select_===_1,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:sad,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-661,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_002_15_09_02.mp3
+name,<outline width=2 color=black>ブリジット・ボードウィン</outline>,
+msg,1,<outline width=2 color=black>「っ、ば、か……なんて、かお……ごほっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_15_09_04.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「しゃべっちゃダメだ、ブリジット！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_15_09_05.mp3
+msg,1,<outline width=2 color=black>「どうすれば……どうしたら、ブリジットを助けられる……？\nああ、くそっ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:anger,kukuru,300,-130,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_052_15_09_03.mp3
+name,<outline width=2 color=black>ククル・Y・トレセーナ</outline>,
+msg,1,<outline width=2 color=black>「もちろん、出来る限りのことをするから……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,kukuru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_15_09_05.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「どうすれば……どうしたら、ブリジットを助けられる……？\nああ、くそっ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.3
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0.5,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10160200.jpg,0.5,255
+endwait
+playse,/download/sound/se/se_069.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,-1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,zakuro,0_-120,0.5,0
+endwait
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,0,-120,0.5,0,,,,
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+playvoice,1,download/adv/voice/quest/main_043_15_09_01.mp3
+msg,1,<outline width=2 color=black>「くぅ、っ！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+anm,move,zakuro,0_-170,0.3,0
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,0,-170,0.5,0,,,,
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+playvoice,1,download/adv/voice/quest/main_043_15_09_02.mp3
+msg,1,<outline width=2 color=black>「ぁ、ぐ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_15_09_06.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「ざくろっ！　大丈夫か！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_15_09_02.mp3
+name,<outline width=2 color=black>フラウ</outline>,
+msg,1,<outline width=2 color=black>「血が……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,-300,-170,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_043_15_09_03.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「見た目ほど深い傷じゃないわ。このくらいなら、自分で対処できる。\nあなたたちはブリジットの方に集中しなさい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,-300,-170,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_043_15_09_04.mp3
+msg,1,<outline width=2 color=black>「というか……なにが相手と同等の力よ。話が違うじゃない！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_b,body:anger,nowa,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_053_15_09_01.mp3
+name,<outline width=2 color=black>ノワ・ヴァラード</outline>,
+msg,1,<outline width=2 color=black>「っ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/Slash2_Red,em1,default,animation,0,-200,0,1,1.0,0
+flash,255,255,255,1,0.3,0.5
+playse,/download/sound/se/conA.mp3
+anm,move,nowa,-300_-130,0.3,0
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/105300/adv/atlas/stand_b,body:anger,nowa,-300,-130,0.5,0,,,,
+name,<outline width=2 color=black>ノワ・ヴァラード</outline>,
+playvoice,1,download/adv/voice/quest/main_053_15_09_02.mp3
+msg,1,<outline width=2 color=black>「私だって、わけがわからないわよ！　なんで……いつだって、\nエイボン原書の使徒は相手と同じだけの力を持つはずなのに……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:anger,rinne,300,-120,0.5,0.5,,,,
+anm,tint,nowa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_01.mp3
+name,<outline width=2 color=black>リンネ</outline>,
+msg,1,<outline width=2 color=black>「あなた、調子に乗りすぎなのよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:anger,rinne,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_02.mp3
+msg,1,<outline width=2 color=black>「そんなにエイボン原書が大好きなの？　それとも信仰というやつかしら。\nいえ、この場合は妄信と言うのが一番ふさわしいかもしれないわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_b,body:anger,nowa,-300,-130,0.5,0,,,,
+anm,tint,rinne,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_053_15_09_03.mp3
+name,<outline width=2 color=black>ノワ・ヴァラード</outline>,
+msg,1,<outline width=2 color=black>「妄信、ですって……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:anger,rinne,300,-120,0.5,0,,,,
+anm,tint,nowa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_03.mp3
+name,<outline width=2 color=black>リンネ</outline>,
+msg,1,<outline width=2 color=black>「ここをどこだと思っているの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:anger,rinne,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_04.mp3
+msg,1,<outline width=2 color=black>「幻夢境――七大原書であるナコト原書の存在で満たされた異界よ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:anger,rinne,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_05.mp3
+msg,1,<outline width=2 color=black>「そんな場所で、エイボン原書とやらの加護が十全に機能するわけが\nないでしょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:normal,rinne,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_06.mp3
+msg,1,<outline width=2 color=black>「相手と同等の力？　残念ね。こうしてやり合ってみた感じ、\nいいとこ七割ってところじゃない？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_b,body:anger,nowa,-300,-130,0.5,0,,,,
+anm,tint,rinne,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_053_15_09_04.mp3
+name,<outline width=2 color=black>ノワ・ヴァラード</outline>,
+msg,1,<outline width=2 color=black>「そんな……これまで一度だってエイボン原書の力が不十分だった\nことなんて……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:normal,rinne,300,-120,0.5,0,,,,
+anm,tint,nowa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_07.mp3
+name,<outline width=2 color=black>リンネ</outline>,
+msg,1,<outline width=2 color=black>「これまでは、その程度の相手としか戦ってこなかった\nということでしょう」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spriteatlas,download/character/105300/adv/atlas/stand_b,body:anger,nowa,-300,-130,0.5,0,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash2_Red,em1,default,animation,0,-200,0,-1,1.0,0
+flash,255,255,255,1,0.3,0.5
+playse,/download/sound/se/conA.mp3
+anm,move,nowa,-450_-130,0.3,0
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_b,body:anger,nowa,-450,-130,0.5,0,,,,
+anm,tint,rinne,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>ノワ・ヴァラード</outline>,
+playvoice,1,download/adv/voice/quest/main_053_15_09_05.mp3
+msg,1,<outline width=2 color=black>「ぅ、く……このままじゃ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:normal,rinne,300,-120,0.5,0,,,,
+anm,tint,nowa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_08.mp3
+name,<outline width=2 color=black>リンネ</outline>,
+msg,1,<outline width=2 color=black>「ええ、このままあなたは死ぬのよ。\nエイボン原書の使徒、大したことがなかったわね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10160200.jpg,1,255
+endwait
+
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+flash,240,20,20,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,nowa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105300/adv/atlas/stand_b,body:sad,nowa2,0,0,0,0,,,,
+imgconf,nowa2,nowa1,0,-500,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_06.mp3
+name,<outline width=2 color=black>ノワ・ヴァラード</outline>,
+msg,1,<outline width=2 color=black>「ぐ、かは、っ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru,-300,-130,0.5,0.5,,,,
+anm,tint,kukuru,150_150_150,0.0001,0
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:normal,rinne,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_09.mp3
+name,<outline width=2 color=black>リンネ</outline>,
+msg,1,<outline width=2 color=black>「これで、ふたり」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru,-300,-130,0.5,0,,,,
+anm,tint,rinne,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_052_15_09_04.mp3
+name,<outline width=2 color=black>ククル・Y・トレセーナ</outline>,
+msg,1,<outline width=2 color=black>「ノワちゃん！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:normal,rinne,300,-120,0.5,0,,,,
+anm,tint,kukuru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_10.mp3
+name,<outline width=2 color=black>リンネ</outline>,
+msg,1,<outline width=2 color=black>「あとひとり……それから、あなたたちも無駄なことはやめなさい。\nそんな死にかけの命を繋ごうとしたって意味がないわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:normal,rinne,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_11.mp3
+msg,1,<outline width=2 color=black>「むしろ苦しみを引き延ばすだけよ。\n随分と残酷なことをするのね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,kukuru,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,rinne,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_15_09_07.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「ふざけるな！　これ以上、好き勝手は――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:normal,rinne,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_12.mp3
+name,<outline width=2 color=black>リンネ</outline>,
+msg,1,<outline width=2 color=black>「減らず口は聞き飽きたわ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:anger,rinne,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_13.mp3
+msg,1,<outline width=2 color=black>「目障りよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash1_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_049.mp3
+anm,move,norn,200_-120,0.3,0
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black3,0,-50,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black4,0,0,0,0,,,,
+imgconf,black4,black3,0,0,,,0,1,1,0.5
+mask,norn1,0,-50,1280,200,0.5,,,,
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0
+
+
+mask,black1,0,150,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,frau1,0,150,1280,200,0.5,,,,
+spriteatlas,download/character/100602/adv/atlas/stand_a,body:sad,frau2,0,0,0,0,,,,
+imgconf,frau2,frau1,0,-400,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+playvoice,1,download/adv/voice/quest/main_006_15_09_03.mp3
+name,<outline width=2 color=black>フラウ</outline>,
+msg,1,<outline width=2 color=black>「きゃぁああああっ！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_15_09_08.mp3
+name,<outline width=2 color=black>ノルン</outline>,
+msg,1,<outline width=2 color=black>「くっ、フラウ……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_b,body:anger,zakuro,300,-120,0.5,0.5,,,,
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru,-300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash1_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_049.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+mask,black3,0,-50,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black4,0,0,0,0,,,,
+imgconf,black4,black3,0,0,,,0,1,1,0.5
+mask,kukuru1,0,-50,1280,200,0.5,,,,
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru2,0,0,0,0,,,,
+imgconf,kukuru2,kukuru1,0,-450,,,0,1.5,1.5,0
+
+
+mask,black1,0,150,1280,200,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zakuro1,0,150,1280,200,0.5,,,,
+spriteatlas,download/character/104302/adv/atlas/stand_a,body:anger,zakuro2,0,0,0,0,,,,
+imgconf,zakuro2,zakuro1,0,-470,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+playvoice,1,download/adv/voice/quest/main_043_15_09_05.mp3
+name,<outline width=2 color=black><ruby>齊條|ざいじょう</ruby>ざくろ</outline>,
+msg,1,<outline width=2 color=black>「こ、の……なんて力……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru2,0,0,0,0,,,,
+imgconf,kukuru2,kukuru1,0,-450,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_052_15_09_05.mp3
+name,<outline width=2 color=black>ククル・Y・トレセーナ</outline>,
+msg,1,<outline width=2 color=black>「う、くっ……ノワ、ちゃん……っ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:normal,rinne,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_14.mp3
+name,<outline width=2 color=black>リンネ</outline>,
+msg,1,<outline width=2 color=black>「とりあえず、いつまでも死体遊びを見せられるのも鬱陶しいし、\nきちんとトドメを刺してしまいましょうか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105500/adv/atlas/stand_b,body:normal,rinne,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_055_15_09_15.mp3
+msg,1,<outline width=2 color=black>「才能のない虫けらに、エイボン原書に玩具を与えられてはしゃいでいる\n幼稚な小娘……こんなものに執着するなんて、本当に物好きな連中よね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:anger,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-661,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_002_15_09_03.mp3
+name,<outline width=2 color=black>ブリジット・ボードウィン</outline>,
+msg,1,<outline width=2 color=black>「――……っ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,nowa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105300/adv/atlas/stand_b,body:anger,nowa2,0,0,0,0,,,,
+imgconf,nowa2,nowa1,0,-740,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_07.mp3
+name,<outline width=2 color=black>ノワ・ヴァラード</outline>,
+msg,1,<outline width=2 color=black>「く、そ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm138.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_08.mp3
+name,
+msg,1,<outline width=2 color=black>なんて、無様。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_09.mp3
+msg,1,<outline width=2 color=black>こんなところで、終わりだっていうの？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_10.mp3
+msg,1,<outline width=2 color=black>ふざけるな。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_11.mp3
+msg,1,<outline width=2 color=black>ふざけるな、そんなの、あっていいわけない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_12.mp3
+msg,1,<outline width=2 color=black>このまま終わりなんて……そんなの、なんの意味があるの。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_13.mp3
+msg,1,<outline width=2 color=black>なんの意味があったの。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_14.mp3
+msg,1,<outline width=2 color=black>私の、命に。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_15.mp3
+msg,1,<outline width=2 color=black>いやだ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_16.mp3
+msg,1,<outline width=2 color=black>このまま終わるのは、いやだ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100202/adv/atlas/stand_a,body:anger,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-861,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_17.mp3
+msg,1,<outline width=2 color=black>――なによ、その目。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_053_15_09_18.mp3
+name,
+msg,1,<outline width=2 color=black>あんただって、私と同じで死にかけじゃない。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_19.mp3
+msg,1,<outline width=2 color=black>私よりも弱いくせに、こんな状態なのに、なんでそんな目をしているの。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_20.mp3
+msg,1,<outline width=2 color=black>どうして、諦めてないの。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_15_09_21.mp3
+msg,1,<outline width=2 color=black>なんで……そんな強いのよ。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10160100.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm024.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105400/adv/atlas/stand_a,body:unique,sora,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_054_15_09_01.mp3
+name,<outline width=2 color=black>ソラ</outline>,
+msg,1,<outline width=2 color=black>「――……あれ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105400/adv/atlas/stand_a,body:unique,sora,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_054_15_09_02.mp3
+msg,1,<outline width=2 color=black>「なんだろう、このかんじ……視線？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105400/adv/atlas/stand_a,body:unique,sora,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_054_15_09_03.mp3
+msg,1,<outline width=2 color=black>「おおきな、ちから……もしかしたら、ナコト原書とおなじくらいの……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105400/adv/atlas/stand_a,body:sad,sora,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_054_15_09_04.mp3
+msg,1,<outline width=2 color=black>「あ……もうかんじなくなった……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105400/adv/atlas/stand_a,body:sad,sora,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_054_15_09_05.mp3
+msg,1,<outline width=2 color=black>「うーん、なんだったんだろう……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105400/adv/atlas/stand_a,body:normal,sora,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_054_15_09_06.mp3
+msg,1,<outline width=2 color=black>「……とりあえず、今はそれよりも、先にすることがあるもんね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105400/adv/atlas/stand_a,body:smile,sora,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_054_15_09_07.mp3
+msg,1,<outline width=2 color=black>「ふふ、ふふふっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105400/adv/atlas/stand_a,body:smile,sora,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_054_15_09_08.mp3
+msg,1,<outline width=2 color=black>「ああ。はやく、はやく、生まれてきて――“ミセリア”」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

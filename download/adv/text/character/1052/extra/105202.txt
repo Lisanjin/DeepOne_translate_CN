@@ -1,0 +1,172 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010600.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:surprise,kukuru,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_01.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「――啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_02.mp3
+msg,1,<outline width=2 color=black>「呃、啊、那个……嗯……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「冷静下来」,选项2　「上次谈话的后续？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_03.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「呜……对、对不起。稍微，说了各种让人害羞的话\n一下子想起来了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_04.mp3
+msg,1,<outline width=2 color=black>「……那个，虽然是我任性，但我自己心里也还没整理好心情，\n那件事，如果能暂时当作没听过的话我会很开心的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_05.mp3
+msg,1,<outline width=2 color=black>「――……嗯，谢谢。对不起，说了任性的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_06.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「那个……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_07.mp3
+msg,1,<outline width=2 color=black>「那个…等我能好好整理自己的心情、真正确定是这样想的时候\n再重新…和你谈这件事的话，我会很开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_08.mp3
+msg,1,<outline width=2 color=black>「对不起呢，因为我的心情还没理清楚，害你也得各种\n顾虑…那个，你可以先忘记的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_09.mp3
+msg,1,<outline width=2 color=black>「这毕竟是我自己的心情问题…只要给我点时间\n应该就能好好得出答案的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_10.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「啊、对了……方便的话，要一起喝茶吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:smile,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_11.mp3
+msg,1,<outline width=2 color=black>「是我自己调配的茶，用了花朵和香草，还加了点\n香料哦。算是挺有自信的作品」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_12.mp3
+msg,1,<outline width=2 color=black>「可能有点特别的风味，说不定会挑人…方便的话\n要尝一口我的吗？还很烫要小心哦――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:surprise,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_13.mp3
+msg,1,<outline width=2 color=black>「――……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_14.mp3
+msg,1,<outline width=2 color=black>「这、这算是间接接吻……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:smile,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_15.mp3
+msg,1,<outline width=2 color=black>「呃……怎、怎么样？好喝吗？这、这样啊，太好了。\n那我也给你倒一杯，请喝吧。啊哈，啊哈哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_16.mp3
+msg,1,<outline width=2 color=black>「……这、这种程度，没什么大不了的……没什么大不了的啦。\n冷静点，我……冷静点啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:smile,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_17.mp3
+msg,1,<outline width=2 color=black>「嗯……这、这么说来，来到拉莱耶后重新意识到，\n果然<ruby>想索者|diver</ruby>的大家都很厉害呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_18.mp3
+msg,1,<outline width=2 color=black>「能力方面当然很优秀……但不仅如此，内心也非常强大」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_19.mp3
+msg,1,<outline width=2 color=black>「大家都有各自的目的，有目标，\n有必须完成的使命和责任……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_20.mp3
+msg,1,<outline width=2 color=black>「真让人敬佩呢。我一直过着随心所欲的生活，\n和这些完全无缘」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_21.mp3
+msg,1,<outline width=2 color=black>「但是，在这里的话……在你身边的话，我是不是也能找到些什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:smile,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_22.mp3
+msg,1,<outline width=2 color=black>「……能找到就好了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_23.mp3
+msg,1,<outline width=2 color=black>「呐……等我找到自己想做的事情时，你会听我说吗？\n我想让你听听。就像这样，一边喝着茶，慢慢聊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105200/adv/atlas/stand_a,body:smile,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105204/adv/sound/fav105204_02_24.mp3
+msg,1,<outline width=2 color=black>「呵呵……约定好了哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

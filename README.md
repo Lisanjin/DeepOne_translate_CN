@@ -3,7 +3,7 @@
 
 > [!待获取列表]  
 >
-> 680012_1(アントリ 特典 memoriral)
+> 无
 
 
 汉化方法参考了这个IrisMysteria的仓库[IrisMysteria-Translate](https://github.com/game-reverse/IrisMysteria-Translate)  
@@ -38,20 +38,13 @@
 ### 2025.2.18
 由于剧本获取接口的变动，导致现在少数氪金剧本无从获得，现在仓库readme页面添加一个待获取剧本列表，如果你有待获取剧本列表中的卡，并且愿意帮助我们，请在issue区留言
 
+### 2025.8.20
+添加了一个规则，对dmm版（全年龄版）进行支持
+
 
 ## [使用说明](https://lisanjin.github.io/DeepOne_translate_CN/)
 
 ### gooreplacer使用说明
-1.在浏览器安装[gooreplacer扩展地址](https://chromewebstore.google.com/detail/gooreplacer/jnlkjeecojckkigmchmfoigphmgkgbip)  
-
-2.打开gooreplacer扩展,点击配置规则  
-![](/image/gooreplacer-2.png) 
-
-3.点击在线规则，点击配置，输入https:/lisanjin.github.io/DeepOne_translate_CN/gooreplacer.json  
-点击确认后，立刻更新  
-![](/image/gooreplacer-3.png)  
-
-**因为gooreplacer更新，上述流程在新版gooreplacer不再可以用，请使用下面的流程**  
 
 1.在浏览器安装[gooreplacer扩展](https://chromewebstore.google.com/detail/gooreplacer/jnlkjeecojckkigmchmfoigphmgkgbip)  
 
@@ -61,6 +54,9 @@
 3.填入以下规则，save  
 ```
 ^https:\/\/tonofura-r-cdn-client\.deepone-online\.com\/client\/[0-9]+\.[0-9]+\.[0-9]+\/src\/project\.js,regex,redirect
+url:https://lisanjin.github.io/DeepOne_translate_CN/js/project.js
+
+^https:\/\/tonofura-w-cdn-client\.deepone-online\.com\/client\/[0-9]+\.[0-9]+\.[0-9]+\/src\/project\.js,regex,redirect
 url:https://lisanjin.github.io/DeepOne_translate_CN/js/project.js
 ```
 
