@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10020400.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_01.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「你也真是够不走运的呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_02.mp3
+msg,1,<outline width=2 color=black>「出身如此也就罢了，偏偏还摊上芭德薇这种麻烦血统的姐妹……\n现在又冒出个自称罗莎莉、与她们祖上有渊源的姑娘……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_03.mp3
+msg,1,<outline width=2 color=black>「虽然由我来说不太合适，但芭德薇这家子人啊，\n越是深交就越会惹麻烦的棘手货色」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_04.mp3
+msg,1,<outline width=2 color=black>「越是重要的人越容易产生隔阂，还会因棘手的情感引发问题。\n有时还会因误会而跑偏到完全错误的方向」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_05.mp3
+msg,1,<outline width=2 color=black>「简直就像在人际关系里埋了炸弹」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「你自己又如何？」,选项2　「说得太过分了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:anger,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_06.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「...就不必多言了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:anger,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_07.mp3
+msg,1,<outline width=2 color=black>「失去所有重要之物后，剩下的东西全都毫无意义、一文不值。\n唯有如此坚信才能维持自己的内心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:anger,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_08.mp3
+msg,1,<outline width=2 color=black>「不作任何选择，不获任何所得，只是践踏着他人前行的未来\n傲慢无缺的黄金」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_09.mp3
+msg,1,<outline width=2 color=black>「能对那样的对象做出如此回应，\n您也算得上是相当胆识过人了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_10.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「这是正当评价吧……您至今为止遇到的芭德薇相关事件中，\n可曾有过不麻烦的情况？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_11.mp3
+msg,1,<outline width=2 color=black>「包括这个世界的我在内，我承认确实稍微改善了些许」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:sad,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_12.mp3
+msg,1,<outline width=2 color=black>「即便如此，那些人单纯就是很麻烦吧。\n您居然能如此耐心地相处至今，实在令我佩服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_13.mp3
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,1,<outline width=2 color=black>「麻烦事会聚集到您身边，或许也是因果报应吧。\n想到若自己处在您的立场就令人不寒而栗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:sad,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_14.mp3
+msg,1,<outline width=2 color=black>「……请不要露出那种疑惑的表情。您最好意识到，\n自己对事物评判的各种标准已经失常了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_15.mp3
+msg,1,<outline width=2 color=black>「嘛，或许正是因为您存在这种偏离常理的部分，\n才能与那些家伙保持平衡吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_16.mp3
+msg,1,<outline width=2 color=black>「话虽如此，还请您不要太过勉强自己」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:anger,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_17.mp3
+msg,1,<outline width=2 color=black>「――可别误会了。\n这可不是在担心您才说的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_18.mp3
+msg,1,<outline width=2 color=black>「要是您垮了，您照看的那些麻烦家伙就会失控吧……\n连这边的我也不知会做出什么事来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:normal,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_19.mp3
+msg,1,<outline width=2 color=black>「我只是讨厌那种麻烦的发展罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:anger,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_20.mp3
+msg,1,<outline width=2 color=black>「仅此而已，所以赶紧收起那笑容。\n看着就让人不快」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100782/adv/atlas/stand_a,body:anger,zizel_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/100782/adv/sound/fav100782_01_21.mp3
+msg,1,<outline width=2 color=black>「……哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
