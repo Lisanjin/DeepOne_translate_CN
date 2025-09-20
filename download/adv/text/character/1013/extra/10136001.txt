@@ -1,0 +1,188 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11100304.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm163.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「呵呵。怎么样，这身服装」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_02.mp3
+msg,1,<outline width=2 color=black>「看来，异世界的孩子们到来时，他们的思念在幻梦境中\n留下了一丝痕迹……似乎是受到了这种影响，只有外表发生了变化」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_03.mp3
+msg,1,<outline width=2 color=black>「这个，你不觉得设计有点色情吗？\n你看，胸口也好，腹部也好，都这么暴露……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「胸部啊……」,选项2　「想抚摸腹部」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_04.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「刚才，你觉得有点分量不足对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:anger,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_05.mp3
+msg,1,<outline width=2 color=black>「装糊涂可不行哦。反正你是在想\n要是胸部能更大些就好了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva_s,0.6_0.6,0.5,0
+anm,move,milva_s,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:anger,milva_s,0,-130,0.6,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_06.mp3
+msg,1,<outline width=2 color=black>「总觉得有点受伤呢。我既没有立场去要求别人什么，\n也没有那样的资格……但即便如此，我也是个女孩子啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:shy,milva_s,0,-130,0.6,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_07.mp3
+msg,1,<outline width=2 color=black>「……对于在意的人，还是希望你能多夸夸我呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:sad,milva_s,0,-130,0.6,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_08.mp3
+msg,1,<outline width=2 color=black>「嘛，虽然其他胸部大的女孩子还有很多，相比之下被说分量不足\n我也无法反驳就是了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:normal,milva_s,0,-130,0.6,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_09.mp3
+msg,1,<outline width=2 color=black>「……不过这样的话，让你亲手揉大不就好了吗？\n你看，不是说多摸摸就会变大吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:smile,milva_s,0,-130,0.6,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_10.mp3
+msg,1,<outline width=2 color=black>「所以……呐？来摸摸看，揉一揉，把我养成你喜欢的体型？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:smile,milva_s2,0,0,0,0,,,,
+imgconf,milva_s2,milva_s1,0,-60,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101360/adv/sound/fav101360_01_11.mp3
+msg,1,<outline width=2 color=black>「哈啊、嗯、嗯呜……虽然是我先说的、嗯……但你怎么毫不犹豫\n就揉起胸来了……啊嗯……呼、呜、嗯嗯……哈啊、」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:smile,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_12.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哎呀，你是把我当成小狗还是小猫了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:normal,milva_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_13.mp3
+msg,1,<outline width=2 color=black>「呵呵……这套服装明明更偏向恶魔或者女王大人之类的\n氛围来着……真拿你没办法呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva_s,0.6_0.6,0.5,0
+anm,move,milva_s,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:smile,milva_s,0,-130,0.6,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_14.mp3
+msg,1,<outline width=2 color=black>「来嘛……摸摸肚子？当然啦，不只是肚子……只要是你的话，\n不管哪里都可以让你碰哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:smile,milva_s2,0,0,0,0,,,,
+imgconf,milva_s2,milva_s1,-150,150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101360/adv/sound/fav101360_01_15.mp3
+msg,1,<outline width=2 color=black>「嗯、啊……哈啊……嗯、嗯嗯……呀、嗯……呼、呼呼。明明只是摸摸\n肚子而已，不知为何手法却特别、色情……啊、呼……嗯嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:normal,milva_s,0,-130,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_16.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「嗯……你这人呀，真是够色情的呢……不过，像这样被你\n索求着，我倒也、不讨厌就是了……嗯、呼呼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:normal,milva_s,0,-130,0.6,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_17.mp3
+msg,1,<outline width=2 color=black>「毕竟我总是、给你添麻烦嘛……而且，\n啊、嗯嗯……哈啊、啊……姐姐也、受你照顾了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:normal,milva_s,0,-130,0.6,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_18.mp3
+msg,1,<outline width=2 color=black>「必须得好好、嗯、唔、报答你才行呢……哈啊、啊、嗯嗯、\n呼、呜呜……呼、呼呼……所以说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva_s,0.7_0.7,0.5,0
+anm,move,milva_s,0_-160,0.5,0
+endwait
+
+
+spriteatlas,download/character/101360/adv/atlas/stand_a,body:normal,milva_s,0,-160,0.7,0,,,,
+playvoice,1,download/character/101360/adv/sound/fav101360_01_19.mp3
+msg,1,<outline width=2 color=black>「――可以哦。再更、激烈些也行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
