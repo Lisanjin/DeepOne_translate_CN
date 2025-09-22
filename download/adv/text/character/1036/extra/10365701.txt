@@ -1,0 +1,198 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11340300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_01.mp3
+name,<outline width=2 color=black><ruby>火乃渡|ひのわたり</ruby><ruby>莉瀬|りせ</ruby></outline>,
+msg,1,<outline width=2 color=black>「じゃーん。どうかなおにーさん。\nチアガールな莉瀬ちゃん、すっごくかわいくない？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:shy,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_02.mp3
+msg,1,<outline width=2 color=black>「まあ……さすがにここまでいろいろ見えちゃってるのは、\nちょっとだけ落ち着かないんだけどね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_03.mp3
+msg,1,<outline width=2 color=black>「でもでも、おにーさんの視線はチア莉瀬ちゃんに夢中みたいなので、\nここは照れてる場合じゃないっ、アピールしていかないと……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_04.mp3
+msg,1,<outline width=2 color=black>「いつも横からいらんことばっかり言うリィンちゃんもいないし、\nいまのうちにおにーさんをメロメロのメロにしちゃいます」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_05.mp3
+msg,1,<outline width=2 color=black>「やっぱりチアといえば応援のイメージがあるし、まずは……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,rise,0_-80,0.2,0
+endwait
+anm,move,rise,0_-100,0.2,0
+endwait
+anm,move,rise,0_-80,0.2,0
+endwait
+anm,move,rise,0_-100,0.2,0
+endwait
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_06.mp3
+msg,1,<outline width=2 color=black>「ふれー、ふれー、おにーさん♪\nレッツゴーレッツゴー、おにーさん♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「もっと脚をあげて」,選択肢2　「もっと腕を高く」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_07.mp3
+name,<outline width=2 color=black><ruby>火乃渡|ひのわたり</ruby><ruby>莉瀬|りせ</ruby></outline>,
+msg,1,<outline width=2 color=black>「もー、おにーさん。莉瀬ちゃんのかわいい応援よりも、\nスカートの下のほうが気になっちゃうの？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:sad,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_08.mp3
+msg,1,<outline width=2 color=black>「せっかくチアの格好してるんだからそれっぽいことしたのに、\nおにーさんってば、やっぱりエッチなことばっかり考えちゃうんだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:shy,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_09.mp3
+msg,1,<outline width=2 color=black>「でも、おにーさんが喜んでくれるなら、私、いいよ？\nこうやって、ゆっくりめくって」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rise1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:shy,rise2,0,0,0,0,,,,
+imgconf,rise2,rise1,0,550,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103657/adv/sound/fav103657_01_10.mp3
+msg,1,<outline width=2 color=black>「――ちらっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_11.mp3
+name,<outline width=2 color=black><ruby>火乃渡|ひのわたり</ruby><ruby>莉瀬|りせ</ruby></outline>,
+msg,1,<outline width=2 color=black>「なんちゃって。今は、ここ、おあずけね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_12.mp3
+name,<outline width=2 color=black><ruby>火乃渡|ひのわたり</ruby><ruby>莉瀬|りせ</ruby></outline>,
+msg,1,<outline width=2 color=black>「おにーさん、それっておっぱいが揺れるところが見たいんだよね？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_13.mp3
+msg,1,<outline width=2 color=black>「もう、そんなに動揺しなくていいよ。\nまあ、普通ならそんなこと言ったら怒られちゃうけど……私は違うよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_14.mp3
+msg,1,<outline width=2 color=black>「もちろん、おにーさん以外の人にそんなこと言われたら、\n二度とそんなことが言えないようにはしちゃうかもだけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_15.mp3
+msg,1,<outline width=2 color=black>「でも、おにーさんなら……むしろ、嬉しいかも。\n私のこと、どんな理由でも注目してくれるなら……オッケーだよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:normal,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_16.mp3
+name,<outline width=2 color=black><ruby>火乃渡|ひのわたり</ruby><ruby>莉瀬|りせ</ruby></outline>,
+msg,1,<outline width=2 color=black>「せっかくのかわいいチア衣装なんだもん。\nもっともっと、いっぱい見て欲しい……褒めてくれたら、もっと嬉しい」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:anger,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_17.mp3
+msg,1,<outline width=2 color=black>「だから……莉瀬ちゃん、もーっとおにーさんのこと、\nメロメロにしちゃうんだから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:smile,rise,0,-100,0.5,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_18.mp3
+msg,1,<outline width=2 color=black>「というわけで……ぎゅー」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,rise,0.7_0.7,0.5,0
+anm,move,rise,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:shy,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_19.mp3
+msg,1,<outline width=2 color=black>「えへへ……やっぱりこうやって直接抱き着いた方が、\nおにーさんもドキドキしてくれるでしょ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:shy,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_20.mp3
+msg,1,<outline width=2 color=black>「それにほら、わかる？　この衣装、生地が薄めだから、\nいつもより私の胸の感触、はっきり伝わってこない？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:smile,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_21.mp3
+msg,1,<outline width=2 color=black>「んーふーふー♪　おにーさんってばすっごいデレデレしちゃって。\nこの、幸せ者めー、えいえい、えーいっ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103657/adv/atlas/stand_a,body:normal,rise,0,-140,0.7,0,,,,
+playvoice,1,download/character/103657/adv/sound/fav103657_01_22.mp3
+msg,1,<outline width=2 color=black>「もうしばらく、このまま……莉瀬ちゃんのこと、堪能してね、おにーさん♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

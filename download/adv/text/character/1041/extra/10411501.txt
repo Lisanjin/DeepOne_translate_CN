@@ -1,0 +1,165 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11340300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_01.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「今回はなんか身軽な格好になったね。\nこれって、陸上競技のユニフォームなのかな？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_02.mp3
+msg,1,<outline width=2 color=black>「こういうのって、空気抵抗とか重さを減らして、コンマ一秒でも\nタイムを縮めようとデザインとか素材とか、いろいろ工夫してるんだよね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_03.mp3
+msg,1,<outline width=2 color=black>「なんていうか、すごいよね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_04.mp3
+msg,1,<outline width=2 color=black>「そうやって肉体的な努力だけじゃなく、例えどれだけ小さな差だったと\nしても、少しでも速く走るために突き詰めるって、すごいよ」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_05.mp3
+msg,1,<outline width=2 color=black>「普通の人とは違うわたしが言ったら、皮肉っぽく聞こえちゃうかも\nしれないけれど、純粋にそう思うの」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_06.mp3
+msg,1,<outline width=2 color=black>「わたしは、そこまで一心不乱になにかを求めたりしたこと、\nあんまりなかったから」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_07.mp3
+msg,1,<outline width=2 color=black>「ここは、学校のグラウンドかな……スポーツをする選手って、\n学生時代から、そういうことに一生懸命なんでしょ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_08.mp3
+msg,1,<outline width=2 color=black>「たくさんの時間を、自分の夢とか目標のために積み重ねていく。\n……そういうの、憧れるな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,選択肢1　「学校といえば、体操服もいいな」,選択肢2　「スポーツ選手になりたい？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_09.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「父さん、幻夢境はコスプレ会場じゃないよ？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_10.mp3
+msg,1,<outline width=2 color=black>「まあ、今さらかな……父さんがそういうの好きなの、\nわかりきってるしね」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:smile,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_11.mp3
+msg,1,<outline width=2 color=black>「……それに、わたしも父さんにいろんなわたしを見てもらえるのは、\nきらいじゃないし」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_12.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「ん……そういうわけでは、ないかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_13.mp3
+msg,1,<outline width=2 color=black>「そういう考え方というか……あり方？\nあくまで、憧れるのはそういうものであって、スポーツ選手とかは別に」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:smile,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_14.mp3
+msg,1,<outline width=2 color=black>「スポーツは、たまに楽しむくらいでいいんじゃないかな。\n今みたいに、父さんと一緒に」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_15.mp3
+msg,1,<outline width=2 color=black>「まあ、父さんとだと、スポーツよりも別の運動に発展しそうだけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_16.mp3
+msg,1,<outline width=2 color=black>「さっきから足とかお腹とか、すごく見てるの、気づいてるからね。\n父さんが見たいなら、別にいいけど」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_17.mp3
+name,<outline width=2 color=black>アイカ・ヴェナティオ</outline>,
+msg,1,<outline width=2 color=black>「でも、せっかくこういう場所に来たのに父さんがわたしの格好を\n楽しむだけっていうのは、ちょっと不公平かも」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_18.mp3
+msg,1,<outline width=2 color=black>「どうせなら父さんもスポーツウェアとか……んー。\nこの領域を探してみたら、そういうのも見つかるかな」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:smile,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_19.mp3
+msg,1,<outline width=2 color=black>「もしかしたら、他にもなにか面白いもの、見つかるかもしれないし。\nいろいろ見て回ろっか」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:smile,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_20.mp3
+msg,1,<outline width=2 color=black>「ほら、いこう、父さん」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,aika,0.6_0.6,0.5,0
+anm,move,aika,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:smile,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_21.mp3
+msg,1,<outline width=2 color=black>「きっと今日も、父さんと一緒に過ごす時間の中で、\n新しいなにかを見つけて、新しいなにかを感じて……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104115/adv/atlas/stand_a,body:smile,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104115/adv/sound/fav104115_01_22.mp3
+msg,1,<outline width=2 color=black>「――楽しみだね、父さん」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
