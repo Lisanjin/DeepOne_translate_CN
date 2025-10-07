@@ -1,0 +1,183 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm173.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_01.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「我稍微转了一圈，看来这家旅馆相当大呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_02.mp3
+msg,1,<outline width=2 color=black>「走廊上排满了客房都是相似的景象，\n而且楼层还这么多……想到如果是一个人的话，真让人毛骨悚然」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_03.mp3
+msg,1,<outline width=2 color=black>「如您所知，我在建筑物里就会失去方向感，\n马上就会迷路……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_04.mp3
+msg,1,<outline width=2 color=black>「现在在拉莱耶的通道里走的时候也经常搞不清自己往哪边走，\n只能依赖终端导航」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_05.mp3
+msg,1,<outline width=2 color=black>「还有，也经常得到您和其他人的帮助……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_06.mp3
+msg,1,<outline width=2 color=black>「这样的我……要是独自来到这种地方，肯定会迷路，\n别说逃出去了，绝对会倒毙在路上」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_07.mp3
+msg,1,<outline width=2 color=black>「所以现在有您在真是帮大忙了。\n虽然很没出息，但接下来就拜托您带路了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「尽管依赖我吧」,选项2　「……其实我也迷路了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_08.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「嗯。非常感谢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_09.mp3
+msg,1,<outline width=2 color=black>「……不过真的总是受到您的帮助呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_10.mp3
+msg,1,<outline width=2 color=black>「总是给您添麻烦……――啊，不。\n这种时候，比起道歉更应该表达感谢才对吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_11.mp3
+msg,1,<outline width=2 color=black>「一直以来承蒙相助，非常感谢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_12.mp3
+msg,1,<outline width=2 color=black>「呵呵。像这样重新用语言表达出来，该怎么说呢，\n总觉得有点不好意思呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_13.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「诶……诶！？怎么会……连您也迷路了……？\n那样的话我们岂不是永远出不去了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_14.mp3
+msg,1,<outline width=2 color=black>「不、不要紧。最坏的情况就算把旅馆破坏掉也要出去，总会有办法的。\n用我携带的火力装备应该能解决――咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_15.mp3
+msg,1,<outline width=2 color=black>「那个、为什么笑……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_16.mp3
+msg,1,<outline width=2 color=black>「……该、该不会刚才是在开玩笑吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_17.mp3
+msg,1,<outline width=2 color=black>「这、这种玩笑请别开了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_18.mp3
+msg,1,<outline width=2 color=black>「唔……这种捉弄人的方式，以后可不行了哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_19.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「总之，差不多该开始调查这附近了……\n路线和结构就拜托您来掌握了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_20.mp3
+msg,1,<outline width=2 color=black>「……只是，那个」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_21.mp3
+msg,1,<outline width=2 color=black>「就是说呢？虽然没别的意思，但不知道会发生什么\n我觉得还是不要离太远比较好……之类的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/101752/adv/sound/fav101752_02_22.mp3
+msg,1,<outline width=2 color=black>「——啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_23.mp3
+msg,1,<outline width=2 color=black>「呼、呼呼……是的，像这样牵着手的话，\n就不会轻易走散了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_24.mp3
+msg,1,<outline width=2 color=black>「周围的警戒就交给我吧。\n您要是注意到什么，也请随时告诉我哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:smile,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_02_25.mp3
+msg,1,<outline width=2 color=black>「那么，我们出发吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

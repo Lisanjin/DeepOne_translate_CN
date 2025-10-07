@@ -1,0 +1,223 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm173.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,quinecy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-70,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101752/adv/sound/fav101752_01_01.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「啊……唔、浴衣又变得奇怪了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_02.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「对不起，我马上整理好，能稍微等我一下吗……？\n不知道为什么，总是会这样穿垮掉……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_03.mp3
+msg,1,<outline width=2 color=black>「这种状态行动很不方便……而且，很害羞啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_04.mp3
+msg,1,<outline width=2 color=black>「……？那、那个……有在听我说话吗？\n总觉得你有点恍惚……该怎么说呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,quinecy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-70,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101752/adv/sound/fav101752_01_05.mp3
+msg,1,<outline width=2 color=black>「啊、你的视线，落在胸口……明明说了很害羞，\n为什么还要这么目不转睛地盯着看啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「实在抗拒不了……」,选项2　「在探究松垮的原因」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_06.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「明明可以抗拒的吧……！？\n我觉得是你自己心态的问题……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,quinecy1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy2,0,0,0,0,,,,
+imgconf,quinecy2,quinecy1,0,-70,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101752/adv/sound/fav101752_01_07.mp3
+msg,1,<outline width=2 color=black>「呜……真、完全不肯移开视线呢……我都说到\n这个份上了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_08.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「真、真的很害羞啊……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/101752/adv/sound/fav101752_01_09.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「诶……原、原来如此……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_10.mp3
+msg,1,<outline width=2 color=black>「确实不知道原因的话就算整理好也会重复同样的情况，但真的是\n为了确认原因才……？ 不、不行，怀疑您不太合适呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_11.mp3
+msg,1,<outline width=2 color=black>「那么，弄清楚是什么原因了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_12.mp3
+msg,1,<outline width=2 color=black>「咦？尺寸，是吗……呃，那个难道是——……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_13.mp3
+msg,1,<outline width=2 color=black>「难、难道是胸部的意思吗……！？啊、呜呜…这、这个可能性\n我也有稍微考虑过……但、但是，被您当面说出来……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_14.mp3
+msg,1,<outline width=2 color=black>「呜…已、已经知道原因了，请不要再看了。\n被这样一直盯着的话，我、我会……呜呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.5,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_15.mp3
+name,<outline width=2 color=black>昆西</outline>,
+msg,1,<outline width=2 color=black>「那、那个...你盯着我这种人的胸、胸部看...\n难道会觉得开心吗......如果是这样的话，我、我觉得稍微看一下也不是不行......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:surprise,quinecy,0,-120,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/101752/adv/sound/fav101752_01_16.mp3
+msg,1,<outline width=2 color=black>「欸、欸！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_17.mp3
+msg,1,<outline width=2 color=black>「啊、那个，不用靠这么近也......我、我知道了，我说！\n胸、胸部，那个...稍微看一下也可以的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:sad,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_18.mp3
+msg,1,<outline width=2 color=black>「啊、呜......不用这么凑过来......虽然你愿意看我的身体，\n我、我并不讨厌......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_19.mp3
+msg,1,<outline width=2 color=black>「...可、可以哦...虽然是一时冲动说出来的话，\n但也是我的真心......随你喜欢地看吧......」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:shy,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_20.mp3
+msg,1,<outline width=2 color=black>「但、但是浴衣让我整理一下！\n就算对象是你，直接被看到果然还是会静不下心来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:normal,quinecy,0,-120,0.6,0,,,,
+playvoice,1,download/character/101752/adv/sound/fav101752_01_21.mp3
+msg,1,<outline width=2 color=black>「我马上整理好，请你稍微转过去——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/101752/adv/atlas/stand_a,body:shy,quinecy,0,-140,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/101752/adv/sound/fav101752_01_22.mp3
+msg,1,<outline width=2 color=black>「真是的，完全没打算移开视线嘛......！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
