@@ -1,0 +1,165 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm159.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_01.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「敌对存在的影子也好形态也罢都不存在……真是个相当和平的领域呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_02.mp3
+msg,1,<outline width=2 color=black>「也没看到什么特别的东西，差不多该结束搜索了——咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_03.mp3
+msg,1,<outline width=2 color=black>「……约会？谁？和谁？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:unique,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_04.mp3
+msg,1,<outline width=2 color=black>「突然说些什么啊……难不成，\n该不会是说我和你要约会吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_05.mp3
+msg,1,<outline width=2 color=black>「……哈。虽说你总是说些没头没脑的话\n倒也确实是常态，但为什么突然……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「难得打扮得这么漂亮」,选项2　「不想约会吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_06.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「打扮……是指这身衣服？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_07.mp3
+msg,1,<outline width=2 color=black>「不过，这只是幻梦境界的投影现象，\n并非我刻意打扮成这样的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_08.mp3
+msg,1,<outline width=2 color=black>「……但既然你会这么说，\n说明在你眼里这身打扮还算不错吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:shy,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_09.mp3
+msg,1,<outline width=2 color=black>「当然，这也没什么特别的含义……只是随口一提……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_10.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「要是回答不想去——\n你就会老老实实放弃吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_11.mp3
+msg,1,<outline width=2 color=black>「我可是很清楚你这种时候\n总会蛮不讲理根本听不进人话的，真是的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_12.mp3
+msg,1,<outline width=2 color=black>「每次你都这样随心所欲地摆布我，\n让我见识到从未了解的事物——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:sad,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_13.mp3
+name,<outline width=2 color=black>斋条柘榴</outline>,
+msg,1,<outline width=2 color=black>「……算了，无所谓。反正也没办法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_14.mp3
+msg,1,<outline width=2 color=black>「既然你执意要求，陪你约会倒也不是不行。\n反正也就是在附近随便逛逛对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_15.mp3
+msg,1,<outline width=2 color=black>「不过可别误会了。我才不是想和你约会，\n只是陪你任性一下而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:normal,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_16.mp3
+msg,1,<outline width=2 color=black>「这一点请你务必——咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:surprise,zakuro,0,-120,0.5,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_17.mp3
+msg,1,<outline width=2 color=black>「手？呃、要牵手吗……为什么……啊、如果是约会的话\n这种事也不奇怪……吧……不、但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:shy,zakuro,0,-140,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/104314/adv/sound/fav104314_01_18.mp3
+msg,1,<outline width=2 color=black>「呜……我、我还没允许可以牵手呢。\n你怎么擅自就握上来了啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:sad,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_19.mp3
+msg,1,<outline width=2 color=black>「你还真是奇怪呢……和我这种人牵手，\n到底有什么好开心的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:shy,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_20.mp3
+msg,1,<outline width=2 color=black>「哈……好吧。既然上了贼船就干脆跟到底，\n既然说了要陪你，这种程度就随你便吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:normal,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_21.mp3
+msg,1,<outline width=2 color=black>「不过只允许到这里为止。\n可别再得寸进尺了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104314/adv/atlas/stand_a,body:anger,zakuro,0,-140,0.6,0,,,,
+playvoice,1,download/character/104314/adv/sound/fav104314_01_22.mp3
+msg,1,<outline width=2 color=black>「……先说好，这可不是装样子哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,197 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm159.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊、说起来呢、我试着做了爱花和想花的相册。\n想着要把那两个孩子的各种回忆、都用照片留存下来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_02.mp3
+msg,1,<outline width=2 color=black>「我们虽然不是普通的家庭、\n但正因如此、才想要珍惜每一分每一秒」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_03.mp3
+msg,1,<outline width=2 color=black>「然后呢、等到将来翻看相册时、能聊起'还有过这样的事呢'\n的话……那一定是件非常幸福的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_04.mp3
+msg,1,<outline width=2 color=black>「回到拉莱耶后、你也会看的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「现在大概有多少了？」,选项2　「亚纱花的相册呢？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_05.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「现在？第三本做到一半呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100128/adv/sound/fav100128_02_06.mp3
+msg,1,<outline width=2 color=black>「--……？怎么了、露出那么惊讶的表情。\n我、说了什么奇怪的话吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100128/adv/sound/fav100128_02_07.mp3
+msg,1,<outline width=2 color=black>「诶？你没听错哦。是第三本」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_08.mp3
+msg,1,<outline width=2 color=black>「因为和那两个孩子共度的时光与回忆还很少，\n虽然现在只有这些，但今后想不断增加呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_09.mp3
+msg,1,<outline width=2 color=black>「……那个，你怎么眼神飘忽地望着远方，怎么了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_10.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「我的……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_11.mp3
+msg,1,<outline width=2 color=black>「在来拉莱耶之前，我也不太常拍照，\n相册什么的……大概只有学校的毕业纪念册吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_12.mp3
+msg,1,<outline width=2 color=black>「咦，你想看吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_13.mp3
+msg,1,<outline width=2 color=black>「总觉得让学生时代的自己被看到有点难为情。\n而且那个确实没带来拉莱耶……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_14.mp3
+msg,1,<outline width=2 color=black>「……总有一天」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_15.mp3
+msg,1,<outline width=2 color=black>「总有一天，当我们一起离开拉莱耶的时候……到那时就给你看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_16.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「——诶？你的照片？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_17.mp3
+msg,1,<outline width=2 color=black>「说什么呢。你的相册我早就——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_18.mp3
+msg,1,<outline width=2 color=black>「啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_19.mp3
+msg,1,<outline width=2 color=black>「啊——……不、没什么。真的没什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/100128/adv/sound/fav100128_02_20.mp3
+msg,1,<outline width=2 color=black>「没、真的没什么，别这样凑过来嘛……啊、啊哈、啊哈哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_21.mp3
+msg,1,<outline width=2 color=black>「……没有的哦？就、就算搜我房间也没有的。\n绝对不许找哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:sad,asaka,0,-170,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/100128/adv/sound/fav100128_02_22.mp3
+msg,1,<outline width=2 color=black>「…………只、只是睡颜而已。请放过我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:sad,asaka,0,-220,0.8,0.5,,,,
+endwait
+playvoice,1,download/character/100128/adv/sound/fav100128_02_23.mp3
+msg,1,<outline width=2 color=black>「………………换、换衣服的时候，也稍微、\n偷拍了一点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:sad,asaka,0,-220,0.8,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_24.mp3
+msg,1,<outline width=2 color=black>「……………………以、以前，有一次，就一次……在你睡觉的时候，\n做、做那个的时候，鬼迷心窍……那个，也拍过了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100128/adv/atlas/stand_a,body:shy,asaka,0,-220,0.8,0,,,,
+playvoice,1,download/character/100128/adv/sound/fav100128_02_25.mp3
+msg,1,<outline width=2 color=black>「对、对不起！我道歉！我道歉，求你了！放过我吧！\n别找了！求求你了，原谅我吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

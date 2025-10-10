@@ -1,0 +1,182 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm088.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:normal,ten,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_01.mp3
+name,<outline width=2 color=black>天道</outline>,
+msg,1,<outline width=2 color=black>「呀呀～心情如何呀？嘛，既然都找到我了\n心情肯定超棒的对吧♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_02.mp3
+msg,1,<outline width=2 color=black>「毕竟我可是世间所有欢愉的化身。就像是这概念\n化作人形四处漫步的存在呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:normal,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_03.mp3
+msg,1,<outline width=2 color=black>「也就是说，遇见我的你心里\n正充满着喜悦和开心的事呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_04.mp3
+msg,1,<outline width=2 color=black>「不过……看来你很擅长找到我呢。\n肯定正被满满的欢愉包围着吧！恭喜你！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_05.mp3
+msg,1,<outline width=2 color=black>「那么作为纪念……来，茄子♪ 耶——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_079.mp3
+flash,255,255,255,1,0.2,1
+endwait,,,,,,,,,,,
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:normal,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_06.mp3
+msg,1,<outline width=2 color=black>「嗯嗯，呆萌的表情也超可爱呢♪\n这张照片肯定也能带来很多欢乐吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_07.mp3
+msg,1,<outline width=2 color=black>「那么接下来，要不要摆个帅气点的姿势呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「从刚才开始到底在说什么啊……？」,选项2　「这样感觉可以吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:unique2,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_08.mp3
+name,<outline width=2 color=black>天道</outline>,
+msg,1,<outline width=2 color=black>「喏喏♪ 比起思考不如先感受看看。开心的时候、幸福的时候，\n世界看起来在闪闪发光对吧？也就是说，就是这么回事啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:unique2,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_09.mp3
+msg,1,<outline width=2 color=black>「嗯嗯，完全是一副没搞懂的表情呢！\n这样才是正确答案！因为喜悦不是用语言而是用感情来表达的呀！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_10.mp3
+msg,1,<outline width=2 color=black>「现在只要享受这个瞬间就好啦！\n来，摆个姿势吧……——耶——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_079.mp3
+flash,255,255,255,1,0.2,1
+endwait,,,,,,,,,,,
+elseif,select_===_2,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:shy,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_11.mp3
+name,<outline width=2 color=black>天道</outline>,
+msg,1,<outline width=2 color=black>「哦—，不错嘛！居然能享受当下这个瞬间，\n真是不得了的才能！超赞—！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_079.mp3
+flash,255,255,255,1,0.2,1
+endwait,,,,,,,,,,,
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_12.mp3
+msg,1,<outline width=2 color=black>「嗯嗯，很好哟，那个姿势也很帅气哟！\n棱角分明的脸庞让拉莱耶的大家都神魂颠倒啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_079.mp3
+flash,255,255,255,1,0.2,1
+endwait,,,,,,,,,,,
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:shy,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_13.mp3
+msg,1,<outline width=2 color=black>「哦哟！？连这么性感的姿势都可以拍吗？\n说不定会因为大家的喜悦闹出大动静哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_079.mp3
+flash,255,255,255,1,0.2,1
+endwait,,,,,,,,,,,
+endif,,,,,,,,,,
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:unique3,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_14.mp3
+name,<outline width=2 color=black>天道</outline>,
+msg,1,<outline width=2 color=black>「——好啦，这样准备做开心事的准备就完成啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:normal,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_15.mp3
+msg,1,<outline width=2 color=black>「呵呵呵……好奇我打算做什么吗？\n不好奇？哎呀呀，不用害羞也没关系哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_16.mp3
+msg,1,<outline width=2 color=black>「我呢，是打算向拉莱耶的各位“打个招呼”呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:normal,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_17.mp3
+msg,1,<outline width=2 color=black>「这张照片嘛就是所谓的“不成敬意的小礼物”啦。\n啊，当然不是真的觉得它不值一提哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:normal,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_18.mp3
+msg,1,<outline width=2 color=black>「正相反，正是因为知道大家都会开心才这样准备的。\n因为收到你照片会高兴的孩子，比你以为的要多得多呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_19.mp3
+msg,1,<outline width=2 color=black>「来吧，这世间所有的欢愉，就要去让大家幸福啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_20.mp3
+msg,1,<outline width=2 color=black>「当然，你也会跟着来的对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:normal,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_21.mp3
+msg,1,<outline width=2 color=black>「毕竟，有你在一起肯定会更开心。\n怎么能眼睁睁错过有人欢喜的瞬间呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195751/adv/atlas/stand_a,body:anger,ten,0,-100,0.5,0,,,,
+playvoice,1,download/character/195751/adv/sound/fav195751_01_22.mp3
+msg,1,<outline width=2 color=black>「走，一起去突击女孩子们的房间吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,ten,-1200_-100,0.7,0
+endwait
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

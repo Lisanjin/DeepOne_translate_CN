@@ -1,0 +1,180 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm159.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「说起来，最近发生了件有点可怕的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_02.mp3
+msg,1,<outline width=2 color=black>「——干嘛摆出那种惊讶的表情。我说害怕，有那么奇怪吗？\n我也会有害怕的东西啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_03.mp3
+msg,1,<outline width=2 color=black>「比如芭德薇家做的食物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「那不是恐惧而是生存本能」,选项2　「还有其他的吗……？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_04.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「那这么说，总是规规矩矩吃那些的老爸是有自杀倾向吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_05.mp3
+msg,1,<outline width=2 color=black>「不过老爸真厉害啊。连我都会受打击，\n他前几天吃完那些还保持着笑容呢。虽然身体在抽搐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_06.mp3
+msg,1,<outline width=2 color=black>「而且之后还卧床休息了一整天……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_07.mp3
+msg,1,<outline width=2 color=black>「不过确实，那已经超越恐惧之类的范畴了。\n说是生存本能，嗯，或许确实如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_08.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「要说其他的嘛……突然被这么问可能一时想不起来。\n我也不像妈妈那样害怕恐怖片……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_09.mp3
+msg,1,<outline width=2 color=black>「但要说我什么都不怕——肯定也不是这样。\n大概是因为我还没真正理解，什么才是值得害怕的事物」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_10.mp3
+msg,1,<outline width=2 color=black>「……不过就算是这样的我，这次也真的被吓到了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_11.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「让我害怕的是……姐姐、妈妈和石榴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_12.mp3
+msg,1,<outline width=2 color=black>「最开始是石榴……像往常一样在整理石榴的房间时，\n发现了相册……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_13.mp3
+msg,1,<outline width=2 color=black>「翻开一看，里面全是我的照片……满满都是。\n而且相册本身就不止一两本」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_14.mp3
+msg,1,<outline width=2 color=black>「当时虽然没太在意……但后来去妈妈房间玩的时候……\n在那里也发现了我的相册」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_15.mp3
+msg,1,<outline width=2 color=black>「而且，又是好几本……\n并且里面的照片，好像和石榴收藏的那些不太一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_16.mp3
+msg,1,<outline width=2 color=black>「确实妈妈和石榴是给我拍过照。\n但是……我不记得被拍过那么多数量」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_17.mp3
+msg,1,<outline width=2 color=black>「然后……姐姐也……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_18.mp3
+msg,1,<outline width=2 color=black>「在姐姐房间里……果然也发现了我的相册……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_19.mp3
+msg,1,<outline width=2 color=black>「嗯，我明白的，我确实明白，自己是被人爱着的。正是因为被珍视着\n才会这样为我留下照片。我都明白」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_20.mp3
+msg,1,<outline width=2 color=black>「就算明白，三个人都这样还是有点可怕。\n也许不该说这种话，但老实说有点被吓到了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_21.mp3
+msg,1,<outline width=2 color=black>「……呐，爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_22.mp3
+msg,1,<outline width=2 color=black>「爸爸你，没有相册吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_23.mp3
+msg,1,<outline width=2 color=black>「…………喂？爸爸，为什么移开视线？\n爸爸，难道……不会吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104116/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104116/adv/sound/fav104116_02_24.mp3
+msg,1,<outline width=2 color=black>「………………………………家人的爱，好可怕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
