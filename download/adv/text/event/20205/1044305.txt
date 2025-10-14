@@ -1,0 +1,504 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm049.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「芙拉大人，其他各位的位置应该已经接近了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「嗯。大概继续前进的话，很快就能会合了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「这样啊……那么剩下的问题就是关于从这个领域脱身了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果芙拉大人所言正确，这个领域必须享受这个空间才能脱身」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「难得有机会，不知能否容我提出一个愿望？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「是有什么想做的事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「是的。虽然我未曾亲身到访，但通过书籍对日本温泉旅馆是怎样的场所有着最低限度的认知」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:smile,clau,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「据说这类温泉旅馆既是无法公开关系的男女幽会交欢之处，偶尔也会发生意料之外的性意外」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:smile,clau,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「既然来到了这个模拟旅馆的地方，\n我衷心希望能亲身体验一番这样的经历」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:smile,clau,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我认为这正符合享受这个领域的主旨」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:unique,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「…………克劳索拉斯、你从哪儿知道这些的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「咦？是从我主人收藏的书籍里看到的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「吉泽尔的书不能作为参考」,选项2「……或许确实存在这种情况」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:surprise,clau,-300,-130,0.5,0,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「诶？可是主人书里连人物心理描写都细致入微——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「大概...那本来就不是正常向的内容吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:sad,clau,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「是、是这样的吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「哥哥，请不要放弃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:surprise,clau,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「那个……总之，克劳索拉斯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:surprise,clau,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「今天我们就正常地享受温泉吧？\n先把吉泽尔那本书的事忘掉好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:surprise,clau,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「哈啊……既然您这么说的话……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「对我来说，如果芙拉大人愿意示范温泉的享受方式，\n我将感到万分荣幸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，您竟然说到这个份上……\n芙拉大人对温泉是有什么特别的回忆吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:unique,frau,300,-120,0.5,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「倒也没说得那么夸张啦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……不过，我确实想过哪天能和全家人\n一起去这样的地方呢。偶尔也会想象那种场景」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「因为拉莱耶的大浴场男女使用时段是分开的，\n只有哥哥会被排除在外」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:surprise,frau,0,-160,0.7,0.5,,,,
+endwait
+msg,0,<outline width=2 color=black>「哇……哥、哥哥？怎么了，突然抱得这么紧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0.5,,,,
+imgconf,clau,,-300,-130,,,-1,0.5,0.5,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「想必是因为听到芙拉大人的话语感到欣喜吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:smile,clau,-300,-130,0.5,0,,,,
+imgconf,clau,,-300,-130,,,-1,0.5,0.5,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「就连非人之身的我，也能充分感受到\n芙拉大人有多么珍惜与神子大人共处的时光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+imgconf,clau,,-300,-130,,,-1,0.5,0.5,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「但既然如此，何不趁此机会\n与神子大人共同享受沐浴之乐呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:surprise,frau,0,-160,0.7,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「呃？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:sad,frau,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「但是，克劳索拉斯你们也一起——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:smile,clau,-300,-130,0.5,0,,,,
+imgconf,clau,,-300,-130,,,-1,0.5,0.5,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「还请不必顾虑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+imgconf,clau,,-300,-130,,,-1,0.5,0.5,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「作为尚在摸索学习的我而言，希望能先目睹芙拉大人与神子大人尽兴的模样\n借此好好学习一番」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+imgconf,clau,,-300,-130,,,-1,0.5,0.5,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「当然，绝不会做出直勾勾盯着看的失礼举动。\n绝不会打扰神子大人与芙拉大人的独处时光，还请放心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:normal,clau,-300,-130,0.5,0,,,,
+imgconf,clau,,-300,-130,,,-1,0.5,0.5,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「既然这么定了，不如在和大家会合之前\n我们先悄悄去温泉吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103720/adv/atlas/stand_a,body:sad,frau,0,-160,0.7,0,,,,
+anm,tint,clau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「那个……这样，真的可以吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:smile,clau,-300,-130,0.5,0,,,,
+imgconf,clau,,-300,-130,,,-1,0.5,0.5,0
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克劳索拉斯</outline>,
+msg,0,<outline width=2 color=black>「当然。况且即便发生任何意外\n我也定当以性命守护二位周全」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104051/adv/atlas/stand_a,body:smile,clau,-300,-130,0.5,0,,,,
+imgconf,clau,,-300,-130,,,-1,0.5,0.5,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「所以，来吧。我们出发」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:normal,soka,-250,-110,0.5,0.5,,,,
+anm,tint,soka,150_150_150,0.0001,0
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「若要充分享受这般风雅的旅店，\n温泉自不必说，连氛围也需细细品味」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「从建筑构造到摆设的每一件器具，\n处处都点缀着款待客人的用心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「正是这一切共同营造出了这份惬意」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:normal,soka,-250,-110,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「嗯……虽然说法有点模糊，但我大概能理解。\n这里总让人觉得有种令人安心的氛围呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:smile,vi,300,-240,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「可可，是这样吧？想花倒是有着相当不错的感性呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100707/adv/atlas/stand_a,body:sad,zizel,-600,-120,0.5,0.5,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「喂，吉泽尔为何摆出那般消沉的表情？\n这般模样的话，可是无法从这里脱身的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100707/adv/atlas/stand_a,body:sad,zizel,-600,-120,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「……是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:unique,vi,300,-240,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「唔…对细微之处的理解，果然还是无法立刻领会吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那么，果然还是该去享受旅馆招牌的温泉吧。\n汤殿场就在眼前，不如这就前往？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:sad,soka,-250,-110,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「汤殿场就是浴场对吧？\n虽然还没和爸爸他们会合……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「无妨，在这领域里温泉是避不开的。\n那些男人想必也会立刻来到汤殿场的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:sad,soka,-250,-110,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「是这样吗……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+anm,tint,soka,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>唯</outline>,
+msg,0,<outline width=2 color=black>「正是如此。不必在意细枝末节，现在好好享受眼前之事便好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+msg,0,<outline width=2 color=black>「来，我们走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104253/adv/atlas/stand_a,body:surprise,soka,-250,-110,0.5,0,,,,
+anm,tint,vi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「啊、嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spriteatlas,download/character/102206/adv/atlas/stand_a,body:normal,vi,300,-240,0.5,0,,,,
+endwait
+playse,/download/sound/se/se_048.mp3
+anm,move,vi,1200_-240,1.2,0
+anm,move,soka,1200_-110,1.2,0
+endwait
+spriteoff,vi,0
+spriteoff,soka,0
+endwait
+
+spriteatlas,download/character/100707/adv/atlas/stand_a,body:sad,zizel,-600,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100707/adv/atlas/stand_a,body:anger,zizel,-600,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「--想花小姐、唯小姐，对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,zizel1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100707/adv/atlas/stand_a,body:anger,zizel2,0,0,0,0,,,,
+imgconf,zizel2,zizel1,0,-375,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「看来我果然还是有必须去做的事情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
+
