@@ -1,0 +1,257 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm126.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「该怎么说呢，就是普通街道的感觉呢……虽然没什么人，\n但只看街景的话，都快忘记这里是幻梦境了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_02.mp3
+msg,1,<outline width=2 color=black>「……呐，这附近好像没有敌人或危险，\n稍微……牵下手，可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「不行」,选项2　「只是牵手？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:surprise,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_03.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「欸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_04.mp3
+msg,1,<outline width=2 color=black>「诶……等等，开、开玩笑的吧？虽然知道是玩笑，但有点想哭」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_05.mp3
+msg,1,<outline width=2 color=black>「……是玩笑，对吧？那个，你是不是觉得我很麻烦，\n已经讨厌我这种沉重的女人了，难道说，你是这么想的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_06.mp3
+msg,1,<outline width=2 color=black>「我总是总是依赖着你，会、会被这么想\n或许也是没办法的事……但、但是啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka,0,-130,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/100129/adv/sound/fav100129_01_07.mp3
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_08.mp3
+msg,1,<outline width=2 color=black>「……你的手，好温暖」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_09.mp3
+msg,1,<outline width=2 color=black>「呜……对不起。明明只是这点小事，却这样……我知道你不可能\n那么想的，可还是忍不住感到不安……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_10.mp3
+msg,1,<outline width=2 color=black>「把玩笑当真还做出这么麻烦的反应……这样简直就像是\n不信任你似的……我真是，不行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_11.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「诶……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_12.mp3
+msg,1,<outline width=2 color=black>「啊，那个……那、那么……挽着手臂紧紧贴住。\n这样的也可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,asaka,0.6_0.6,0.5,0
+anm,move,asaka,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:normal,asaka,0,-130,0.6,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_13.mp3
+msg,1,<outline width=2 color=black>「嗯、唔……呵呵，像这样贴在一起的话，我的心跳声\n全都传给你了吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100129/adv/sound/fav100129_01_14.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊……嗯、啾……啾、啾噗……啾唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_15.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「……被这样亲吻的话……我、已经……舒服得\n脑子里一片空白……什么都、无法思考了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_16.mp3
+msg,1,<outline width=2 color=black>「喜欢你这件事……爱着你这件事……除此之外的事情，\n全都无法、去想了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_17.mp3
+msg,1,<outline width=2 color=black>「那个……拜、拜托……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_18.mp3
+msg,1,<outline width=2 color=black>「…………再来一次」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100129/adv/sound/fav100129_01_19.mp3
+msg,1,<outline width=2 color=black>「嗯……啾、……啾、啾……啾、啵……哈、啊……接吻，\n喜欢……心、要融化了……啾呜、嗯、啾噗、啾呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka,0,-170,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_20.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「哈啊、啊啊…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_21.mp3
+msg,1,<outline width=2 color=black>「怎、怎么办……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_22.mp3
+msg,1,<outline width=2 color=black>「那个、我说啊……那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:sad,asaka,0,-170,0.7,0,,,,
+playvoice,1,download/character/100129/adv/sound/fav100129_01_23.mp3
+msg,1,<outline width=2 color=black>「………………再、再来一次」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100126/adv/atlas/stand_a,body:shy,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100129/adv/sound/fav100129_01_24.mp3
+msg,1,<outline width=2 color=black>「嗯嗯……啾、啾噗、啾呜……嗯、呼……啾、啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
