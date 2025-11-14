@@ -1,0 +1,243 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11180302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm159.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_01.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「这一带有很多各式各样的店铺，总觉得好开心呢……这边是\n蛋糕店，那边摆着餐具什么的，是杂货店吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_02.mp3
+msg,1,<outline width=2 color=black>「虽然是在幻梦境里，但难得来逛逛橱窗\n也不错……爸爸有什么在意的店铺吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选择项1　「那边是酒铺啊」,选择项2　「摆着毛绒玩具的店」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_03.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_04.mp3
+msg,1,<outline width=2 color=black>「爸爸，稍微去看一眼吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_11180302.jpg,bg,-500,0,2.5,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11180302.jpg,0,255
+endwait,,,,,,,,,,,
+sprite,download/adv/image/black.jpg,upber,0,0,0,0
+sprite,download/adv/image/black.jpg,bottomber,0,0,0,0
+imgconf,upber,,0,-360,1280,100,1,1,1,0
+imgconf,bottomber,,0,360,1280,100,1,1,1,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_05.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「啊……爸爸，快看。有试饮区呢。\n好像有各种各样的酒」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_06.mp3
+msg,1,<outline width=2 color=black>「稍微尝一点吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_07.mp3
+msg,1,<outline width=2 color=black>「就、就尝一点！真的就尝一点点啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_08.mp3
+msg,1,<outline width=2 color=black>「今天想喝点葡萄酒呢……啊，品种也好多。\n该选哪个好呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_09.mp3
+msg,1,<outline width=2 color=black>「啊……不过威士忌好像也不错……咦，还有金酒什么的……嗯——\n种类太多反而让人纠结呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_10.mp3
+msg,1,<outline width=2 color=black>「稍、稍等一下哦爸爸，我马上就能决定好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_11.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「毛绒玩具……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_12.mp3
+msg,1,<outline width=2 color=black>「虽然不太感兴趣……不过你在意的话，要进去看看吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_11180302.jpg,bg,500,0,2.5,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11180302.jpg,0,255
+endwait,,,,,,,,,,,
+sprite,download/adv/image/black.jpg,upber,0,0,0,0
+sprite,download/adv/image/black.jpg,bottomber,0,0,0,0
+imgconf,upber,,0,-360,1280,100,1,1,1,0
+imgconf,bottomber,,0,360,1280,100,1,1,1,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:surprise,soka,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_13.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「啊……这个，好大一只……原来还有这么大的毛绒玩具呀。\n睡觉的时候抱着它，说不定会很舒服」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:normal,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_14.mp3
+msg,1,<outline width=2 color=black>「……不过果然，我还是不需要毛绒玩具吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_15.mp3
+msg,1,<outline width=2 color=black>「想睡觉时要抱抱的话，我会叫爸爸来的。\n那样的话，爸爸会过来的对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_16.mp3
+msg,1,<outline width=2 color=black>「毛绒玩具可比不过爸爸哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_17.mp3
+msg,1,<outline width=2 color=black>「啊……不过送给爱花她们当礼物或许不错」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:unique,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_18.mp3
+msg,1,<outline width=2 color=black>「抱着毛绒玩具的爱花……嗯，那样绝对超级可爱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_19.mp3
+name,<outline width=2 color=black>想花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「——呵呵。总觉得这样很不错呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_20.mp3
+msg,1,<outline width=2 color=black>「和爸爸一时兴起走进店里，\n像这样看看各种东西，纠结这个纠结那个的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_21.mp3
+msg,1,<outline width=2 color=black>「这样的时光，对某些人来说或许看起来是毫无目的、\n浪费时间的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_22.mp3
+msg,1,<outline width=2 color=black>「但是，即便这段时光没有明确的意义，\n我也觉得很快乐……能感受到这也是幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_23.mp3
+msg,1,<outline width=2 color=black>「因为……爸爸就在我身边呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_24.mp3
+msg,1,<outline width=2 color=black>「呐，爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104254/adv/atlas/stand_a,body:smile,soka,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104219/adv/sound/fav104219_02_25.mp3
+msg,1,<outline width=2 color=black>「我最喜欢你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
