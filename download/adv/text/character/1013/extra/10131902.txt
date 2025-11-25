@@ -1,0 +1,195 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11570300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm107.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_01.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「我、曾经到访过氛围与此地相似的城镇」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_02.mp3
+msg,1,<outline width=2 color=black>「因工作之故去了中国地方的老城区，\n不过工作本身很快就结束了，便和姐姐一起逛了逛街」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_03.mp3
+msg,1,<outline width=2 color=black>「那时虽觉得各种事物都很新奇，\n但很快就腻烦感到无聊了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_04.mp3
+msg,1,<outline width=2 color=black>「可是、现在像这样和你走着，\n心情就与那时完全不同」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_05.mp3
+msg,1,<outline width=2 color=black>「既开心、又有种心飘飘然的感觉。\n想着若是和你、好想再多这样一起走走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_06.mp3
+msg,1,<outline width=2 color=black>「明明走在陌生地方这点和那时一样，\n为何感受会变得如此不同呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「因为米露瓦变了」,选项2　「因为在一起的对方不同了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_07.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「呵呵、听你这么说我就有信心了。毕竟\n给我最大改变契机的正是你的话语啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_08.mp3
+msg,1,<outline width=2 color=black>「我确实能在你们身边\n从你们那里获得些什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_09.mp3
+msg,1,<outline width=2 color=black>「一步一步……慢慢地攀登着这段阶梯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_10.mp3
+msg,1,<outline width=2 color=black>「啊……内心在雀跃不已。每当确认这一步前进\n每当感受到自己正朝着某个方向迈进……每当与你的距离缩短时」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_11.mp3
+msg,1,<outline width=2 color=black>「都会抑制不住地感到欢喜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_12.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「哎呀，那听起来简直像是和姐姐在一起时\n我就不会开心似的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_13.mp3
+msg,1,<outline width=2 color=black>「呵呵，开玩笑的。我明白你\n不是那个意思啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_14.mp3
+msg,1,<outline width=2 color=black>「姐姐总是温柔陪伴着我\n所以待在身边是理所当然的事，非常自然」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_15.mp3
+msg,1,<outline width=2 color=black>「但你总是让我看见新的世界\n我的心中有着唯独渴望你的心情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_16.mp3
+msg,1,<outline width=2 color=black>「这份情感竟如此撼动我的心弦呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_17.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「呵呵、这份心情究竟该如何形容才好呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:smile,milva,0,-120,0.5,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_18.mp3
+msg,1,<outline width=2 color=black>「从今往后也要继续累积与你共处的时光\n当触碰到你时定能迎来真正明了的那天」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,milva,0.7_0.7,0.5,0
+anm,move,milva,0_-160,0.5,0
+endwait
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:smile,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_19.mp3
+msg,1,<outline width=2 color=black>「所以――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,milva1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:shy,milva2,0,0,0,0,,,,
+imgconf,milva2,milva1,0,-350,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/101319/adv/sound/fav101319_02_20.mp3
+msg,1,<outline width=2 color=black>「――啾、」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:smile,milva,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_21.mp3
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,1,<outline width=2 color=black>「呵呵、果然呢。像这样触碰到你心跳就会加速\n喜悦之情无可抑制地敲击着胸膛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_22.mp3
+msg,1,<outline width=2 color=black>「但是还不够啊……仅凭这种程度\n这份心意的轮廓依然朦胧不清」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_23.mp3
+msg,1,<outline width=2 color=black>「所以说啊、再多一些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101319/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+playvoice,1,download/character/101319/adv/sound/fav101319_02_24.mp3
+msg,1,<outline width=2 color=black>「你看……接下来、要不要试着由你主动亲吻我呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
