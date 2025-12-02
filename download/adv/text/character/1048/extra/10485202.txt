@@ -1,0 +1,183 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm175.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_01.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「冬天，大多数人都会觉得烦闷吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_02.mp3
+msg,1,<outline width=2 color=black>「冷是当然的，而且像这样积雪的话行动也会不便，\n交通网也会受影响……比起优点缺点似乎更多呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_03.mp3
+msg,1,<outline width=2 color=black>「……但是呢，只有一个，寒冷的冬天有明确的优点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-170,0.7,0.5,,,,
+endwait
+spine,download/adv/spine/Line_center,em1,default,animation,1,0,0,1,1.0,0
+playvoice,1,download/character/104852/adv/sound/fav104852_02_04.mp3
+msg,1,<outline width=2 color=black>「没错，冬天脂肪容易燃烧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:smile,sasya,0,-110,0.5,0.5,,,,
+endwait
+playvoice,1,download/character/104852/adv/sound/fav104852_02_05.mp3
+msg,1,<outline width=2 color=black>「人的身体在寒冷时基础代谢会提高，\n所以在寒冷中运动能更有效地瘦下来……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:smile,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_06.mp3
+msg,1,<outline width=2 color=black>「呵呵，是的，现在正是好机会……无论如何，都要在这里把至今的负债\n一口气还清……没错，能做到的，我应该能做到的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「听说晚餐有巧克力蛋糕」,选项2　「只要好好运动就行」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_07.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「现在有必要说这个吗！？那是什么情报啊！\n你是恶魔吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_08.mp3
+msg,1,<outline width=2 color=black>「呜……为、为什么呢。一冷下来，不知怎的就会特别想吃甜食……\n难、难道是身体在渴求热量……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_09.mp3
+msg,1,<outline width=2 color=black>「不、不行……不能在这里屈服……要战胜诱惑……！\n再这样下去，可能就不是胖一点那么简单了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_10.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「是啊，没错，你说得对！可是呢，不管我多注意，\n我因为<ruby>魔导书|Old One</ruby>的代价都会忘记的！这也没办法吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_11.mp3
+msg,1,<outline width=2 color=black>「只要我还记得，肯定会好好运动的啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_12.mp3
+msg,1,<outline width=2 color=black>「运动确实又麻烦又累人，能不做当然不想做。\n不过比起忍住不吃美味的东西，这已经好多了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_13.mp3
+msg,1,<outline width=2 color=black>「明明我是这么想的……都怪<ruby>悲狂戮葬|埃策尔·安特拉姆</ruby>不好啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_14.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「总之，必须尽快行动起来。\n……毕竟昨晚也吃了亚纱花做的点心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_15.mp3
+msg,1,<outline width=2 color=black>「喂、你、你那是什么嫌弃的表情啊！这也没办法嘛！\n那可是亚纱花做的点心哦？怎么可能抵抗得了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_16.mp3
+msg,1,<outline width=2 color=black>「再说了，半夜肚子饿这种事也是有的吧！？要是\n这种情况叠加起来……那根本没法忍嘛！谁都没资格责怪我！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_17.mp3
+msg,1,<outline width=2 color=black>「我也在反省啦……所以要从现在开始挽回！\n消耗掉卡路里，把愚蠢的过错一笔勾销！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_18.mp3
+msg,1,<outline width=2 color=black>「这次绝对、绝对不会忘记……要牢记并坚持到底……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_19.mp3
+msg,1,<outline width=2 color=black>「先说好，你也得陪我一起哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_20.mp3
+msg,1,<outline width=2 color=black>「万一我又忘了的时候，你就是最后的防线了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_21.mp3
+msg,1,<outline width=2 color=black>「要是我忘了，你得好好提醒我哦？带我出去运动哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_22.mp3
+msg,1,<outline width=2 color=black>「要是你幸灾乐祸地保持沉默，我可不会原谅你……明白吗？懂了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_23.mp3
+msg,1,<outline width=2 color=black>「这可是约定好的哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_02_24.mp3
+msg,1,<outline width=2 color=black>「——先说清楚，这可不是在开玩笑！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

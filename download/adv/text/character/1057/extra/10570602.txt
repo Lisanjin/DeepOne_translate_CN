@@ -1,0 +1,183 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm105.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_01.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「我有点怕冷呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_02.mp3
+msg,1,<outline width=2 color=black>「一冷起来，手脚指尖就会渐渐刺痛起来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_03.mp3
+msg,1,<outline width=2 color=black>「然后身体就动不了，脑袋也昏昏沉沉的，连寒冷都感觉不到了，\n那样反而会安心下来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_04.mp3
+msg,1,<outline width=2 color=black>「想着‘这下痛苦终于要结束了’」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_05.mp3
+msg,1,<outline width=2 color=black>「因为有好几个罗莎莉都是这样迎接了生命的终点，\n所以一冷起来，就忍不住会想起那些记忆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　握住她的手,选项2　拥抱她
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+playse,/download/sound/se/se_028.mp3
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/105706/adv/sound/fav105706_02_06.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「……诶、诶？怎么突然握住我的手？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_07.mp3
+msg,1,<outline width=2 color=black>「倒、倒也不是讨厌……但我的手，现在应该很冰吧……\n反倒是你，不会觉得不舒服吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_08.mp3
+msg,1,<outline width=2 color=black>「……如果你不介意的话，我、我也没关系」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:unique,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_09.mp3
+msg,1,<outline width=2 color=black>「…………你的手，原来这么温暖啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+playse,/download/sound/se/se_020.mp3
+shake,0.2,4,10,10
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0.5,,,,
+endwait
+playvoice,1,download/character/105706/adv/sound/fav105706_02_10.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「呀啊！？诶、啊、那个、这是要……！？\n突然、这样、抱住……贴得、这么紧……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_11.mp3
+msg,1,<outline width=2 color=black>「嗯……唔……身体、不知怎么的、一下子热起来了……呜。\n虽然怕冷，但也不至于突然就这样的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_12.mp3
+msg,1,<outline width=2 color=black>「……真是的。太强硬了啦……你这个人，总是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:smile,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_13.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「呐……再保持这样一会儿，可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:smile,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_14.mp3
+msg,1,<outline width=2 color=black>「……我都不知道。在寒冷的日子里，仅仅和别人依偎在一起，\n就能变得这么温暖」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:smile,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_15.mp3
+msg,1,<outline width=2 color=black>「痛苦的回忆，确实有很多。在罗莎莉不断重复的轮回中，堆积起来的那些令人煎熬的记忆」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:smile,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_16.mp3
+msg,1,<outline width=2 color=black>「但是……“我”或许会觉得，偶尔有些寒冷的日子也不坏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_17.mp3
+msg,1,<outline width=2 color=black>「啊……好害怕」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_18.mp3
+msg,1,<outline width=2 color=black>「这种事情，在你看来一定微不足道吧。\n只是小小的关怀……但对我来说却不一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_19.mp3
+msg,1,<outline width=2 color=black>「在这个人人都厌恶我的、如此寒冷的世界里，\n能够被触碰、被分享温暖」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_20.mp3
+msg,1,<outline width=2 color=black>「这是多么、多么令人开心的事啊……多么幸福的事啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_21.mp3
+msg,1,<outline width=2 color=black>「今后，这样的事情还会不断累积吗？\n只要和你在一起，这份心情就会不断重复吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_22.mp3
+msg,1,<outline width=2 color=black>「那样的话……真的、非常、非常可怕啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_23.mp3
+msg,1,<outline width=2 color=black>「……因为」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105706/adv/atlas/stand_a,body:shy,rosalie,0,-200,0.7,0,,,,
+playvoice,1,download/character/105706/adv/sound/fav105706_02_24.mp3
+msg,1,<outline width=2 color=black>「这份充盈在心底的情感太过满溢，\n简直快要让我承受不住了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

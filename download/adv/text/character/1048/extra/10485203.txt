@@ -1,0 +1,198 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11550300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm175.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_020.mp3
+flash,255,255,255,1,0.3,1
+sprite,download/bg/bg_11550300.jpg,bg,0,300,2.5,0.5
+endwait,,,,,,,,,,,
+shake,0.2,4,10,10,bg
+endwait,,,,,,,,,,,
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya2,0,0,0,0,,,,
+imgconf,sasya2,sasya1,0,-670,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104852/adv/sound/fav104852_03_01.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「呜哇……摔得可真漂亮呢。这摔倒的姿势实在太精彩了，\n我都忍不住想给你鼓个掌了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_02.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「啊——啊——，浑身是雪可真够呛呢。真是的，你在搞什么呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,sasya,0.6_0.6,0.5,0
+anm,move,sasya,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:normal,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_03.mp3
+msg,1,<outline width=2 color=black>「来，我帮你拍掉，乖乖别动哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:normal,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_04.mp3
+msg,1,<outline width=2 color=black>「要是放着不管的话，衣服会湿透、体温也会流失的吧。\n要是因此害你感冒了可不好办呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「谢谢你」,选项2　「用你的体温温暖我」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:shy,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_05.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「嗯……笨、笨蛋，这点小事才不值得你道谢呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:shy,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_06.mp3
+msg,1,<outline width=2 color=black>「而且，要是你和我在一起的时候感冒了，\n天知道其他人会怎么说我……只是因为这个而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_07.mp3
+msg,1,<outline width=2 color=black>「总之，这种小事可别说什么谢谢啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_08.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「你这人怎么老是说些不着调的话呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:sad,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_09.mp3
+msg,1,<outline width=2 color=black>「真是的，笨死啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_10.mp3
+msg,1,<outline width=2 color=black>「既然还能说这种话，看来是不用担心你受伤了呢。\n啊——总算能松口气啦——太好了太好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:normal,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_11.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「不过话说回来，我一直觉得你好像什么都会呢，\n难道不擅长在雪地上走路吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_12.mp3
+msg,1,<outline width=2 color=black>「——只是碰巧而已，对吧？真的假的呀。\n其实不用在这种事上逞强也可以的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:normal,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_13.mp3
+msg,1,<outline width=2 color=black>「毕竟在拉莱耶生活的话也没什么机会熟悉雪地吧，\n不习惯雪天也不是什么丢人的事呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-140,0.6,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_14.mp3
+msg,1,<outline width=2 color=black>「唉……算了，看你这么摇摇晃晃的也没办法呢。\n来，把手伸出来呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,sasya,0.7_0.7,0.5,0
+anm,move,sasya,0_-170,0.5,0
+endwait
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-170,0.7,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_15.mp3
+msg,1,<outline width=2 color=black>「……什么嘛。平时明明都是你擅自来牵我的手，\n换成我来牵你就不乐意了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:normal,sasya,0,-170,0.7,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_16.mp3
+msg,1,<outline width=2 color=black>「我也是没办法才这么做的啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:unique,sasya,0,-170,0.7,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_17.mp3
+msg,1,<outline width=2 color=black>「还是说，怎么啦……讨厌和我这样牵手吗？\n那松开也可以哦——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+playse,/download/sound/se/se_045.mp3
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:shy,sasya,0,-170,0.7,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_18.mp3
+msg,1,<outline width=2 color=black>「——嗯。喂，突然握得这么用力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:shy,sasya,0,-170,0.7,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_19.mp3
+msg,1,<outline width=2 color=black>「……不过，或许这样紧紧牵着也不错呢。\n我的手也不容易冻着……嗯，就这样吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:shy,sasya,0,-170,0.7,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_20.mp3
+msg,1,<outline width=2 color=black>「暂时就这样待着吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:normal,sasya,0,-170,0.7,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_21.mp3
+msg,1,<outline width=2 color=black>「……没办法呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:smile,sasya,0,-170,0.7,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_22.mp3
+msg,1,<outline width=2 color=black>「呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104852/adv/atlas/stand_a,body:smile,sasya,0,-170,0.7,0,,,,
+playvoice,1,download/character/104852/adv/sound/fav104852_03_23.mp3
+msg,1,<outline width=2 color=black>「好啦。那么，我们走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
