@@ -1,0 +1,189 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010600.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm088.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:smile,sasya2,0,0,0,0,,,,
+imgconf,sasya2,sasya1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104810/adv/sound/fav104810_01_01.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「真是的，为什么今天拉莱耶的饭菜也这么\n好吃呢……啊呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:smile,sasya,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_02.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「嗯……哈啊，果然很好吃。而且，这份幸福的份量，我能感觉到\n卡路里正在我体内积累起来……呜呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:smile,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_03.mp3
+msg,1,<outline width=2 color=black>「搞什么嘛，每天每天都准备这么美味的饭菜……这\n肯定是个想让我变胖的陷阱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_04.mp3
+msg,1,<outline width=2 color=black>「但是，就算知道是陷阱，面对美味还是忍不住伸手……呜。\n利用三大欲望之一的食欲设下的陷阱，太狡猾了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_05.mp3
+msg,1,<outline width=2 color=black>「好吃又低卡，怎么吃都不胖……。\n要是有那么棒的食物就不会有这种烦恼了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「那种东西不存在」,选项2　「你还是老样子啊」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_06.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「不用说得那么绝对吧！？\n让人家做做梦也好嘛！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_07.mp3
+msg,1,<outline width=2 color=black>「我知道的……我当然也知道。这个世界是残酷的，\n那种称心如意的东西根本不存在……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_08.mp3
+msg,1,<outline width=2 color=black>「因为卡路里就是美味本身啊！\n既美味又低卡，这种存在本身就是矛盾的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_09.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「……干嘛啦，那种似笑非笑的眼神」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_10.mp3
+msg,1,<outline width=2 color=black>「这是无聊的妄想，我自己也清楚。\n但是，就是忍不住会这样期盼啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_11.mp3
+msg,1,<outline width=2 color=black>「每天的饭菜、甜点，偶尔还有点心供应？\n而且，都是超高品质的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_12.mp3
+msg,1,<outline width=2 color=black>「身处这种诱惑不断的险恶环境里，\n不依赖点美好的幻想怎么活得下去嘛……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:surprise,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_13.mp3
+name,<outline width=2 color=black>莎夏・奥唐纳</outline>,
+msg,1,<outline width=2 color=black>「——不对。说不定这种想法其实是放弃挣扎了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:normal,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_14.mp3
+msg,1,<outline width=2 color=black>「卡路里和糖分才是美味的本质……所以减肥餐什么的\n既不好吃也不想吃……我一直都是这么认为的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:unique,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_15.mp3
+msg,1,<outline width=2 color=black>「但是，如果是亚纱花的话……凭她那么高超的厨艺，\n说不定能用健康食材做出超乎想象的、梦幻般的美味料理……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_16.mp3
+msg,1,<outline width=2 color=black>「——……不过，果然还是不行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_17.mp3
+msg,1,<outline width=2 color=black>「因为，不管多好吃，那终究是减肥餐……！\n根本比不上那些不用在意卡路里的料理……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_18.mp3
+msg,1,<outline width=2 color=black>「有卡路里的亚纱花料理，和没卡路里的亚纱花料理，\n哪个更好吃？这种问题根本不需要讨论！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:sad,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_19.mp3
+msg,1,<outline width=2 color=black>「大家都在旁边吃着美味佳肴，只有我一个人啃着寒酸的减肥餐，\n这简直是酷刑啊！怎么可能忍得住嘛！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_20.mp3
+msg,1,<outline width=2 color=black>「——喂。你那是什么傻眼的表情啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:anger,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_21.mp3
+msg,1,<outline width=2 color=black>「反正你肯定觉得我很无聊吧！？觉得事不关己就……呜～，\n根本没人能理解我的这份苦恼啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:shy,sasya,0,-110,0.5,0,,,,
+playvoice,1,download/character/104810/adv/sound/fav104810_01_22.mp3
+msg,1,<outline width=2 color=black>「啊啊，真是的，这种时候饭菜还是这么好吃！搞什么啊，真是的～～～！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sasya1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104800/adv/atlas/stand_a,body:shy,sasya2,0,0,0,0,,,,
+imgconf,sasya2,sasya1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104810/adv/sound/fav104810_01_23.mp3
+msg,1,<outline width=2 color=black>「嗯呣，咕嘟……呜～，这简直是罪恶的味道啊……太好吃了～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
