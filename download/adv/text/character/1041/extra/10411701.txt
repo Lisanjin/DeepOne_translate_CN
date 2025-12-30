@@ -1,0 +1,185 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm130.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_01.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「这件衣服，记得是叫晴着来着。\n同样是和服，跟浴衣之类的完全不一样呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_02.mp3
+msg,1,<outline width=2 color=black>「花纹图案是挺漂亮的，不过可能有点重，行动不太方便。\n嘛，倒也不至于说没法战斗啦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_03.mp3
+msg,1,<outline width=2 color=black>「而且……如果爸爸喜欢这身打扮的话，\n稍微行动不便一点，我也能忍」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_04.mp3
+msg,1,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_05.mp3
+msg,1,<outline width=2 color=black>「如果爸爸喜欢这身打扮的话，行动不便一点，我也能忍的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　“嗯？”,选项2　“很适合你”
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:anger,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_06.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「如果爸爸、喜欢、这身打扮的话，行动不便什么的，\n我完全能忍的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_07.mp3
+msg,1,<outline width=2 color=black>「唔……爸爸，你肯定是故意装不懂吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:shy,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_08.mp3
+msg,1,<outline width=2 color=black>「……人家明明是在暗示你夸我呀。\n难道说，你觉得这身衣服不适合我？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_09.mp3
+msg,1,<outline width=2 color=black>「与其这么拼命否认，一开始就别使坏嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_10.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「嗯。虽然很开心……但感觉像是被逼着说出来的，\n心情有点复杂呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:smile,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_11.mp3
+msg,1,<outline width=2 color=black>「我更希望在我做什么之前，你就能多夸夸我。\n扣分哦，爸爸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:smile,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_12.mp3
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,1,<outline width=2 color=black>「——呵呵。不过爸爸的视线太好懂了，\n我早就知道你喜欢这身打扮啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:smile,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_13.mp3
+msg,1,<outline width=2 color=black>「但是，这种话还是希望你能好好说出来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_14.mp3
+msg,1,<outline width=2 color=black>「……不过话说回来，和服确实有点小问题呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:sad,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_15.mp3
+msg,1,<outline width=2 color=black>「脱起来好麻烦。而且穿法也很复杂，一旦脱下来，\n我就没信心能自己好好穿回去了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_16.mp3
+msg,1,<outline width=2 color=black>「唔……你那一脸‘就这啊’的表情。\n爸爸，这可是个大问题哦。你真的明白吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_17.mp3
+msg,1,<outline width=2 color=black>「啊，不过也是呢。爸爸手很巧，说不定连和服的穿法\n都会呢……那，也教教我嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:unique,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_18.mp3
+msg,1,<outline width=2 color=black>「那样的话，之后各方面都会更方便哦。各方面。嗯，各方面啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:smile,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_19.mp3
+msg,1,<outline width=2 color=black>「所以呢……嗯。先帮我脱掉？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:surprise,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_20.mp3
+msg,1,<outline width=2 color=black>「——干嘛僵住不动呀？\n我能学会穿法的话，爸爸也会轻松些吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_21.mp3
+msg,1,<outline width=2 color=black>「啊……不过确实，这里可能不太合适呢。\n难得有机会，我们找个能放松的地方吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-120,0.5,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_22.mp3
+msg,1,<outline width=2 color=black>「我倒是完全没关系，但这种还有残雪的地方\n爸爸会冷的吧，我们找附近合适的建筑物进去好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,aika,0.6_0.6,0.5,0
+anm,move,aika,0_-140,0.5,0
+endwait
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_23.mp3
+msg,1,<outline width=2 color=black>「既然有鸟居，这台阶上面应该也有神社之类的吧。\n总之先上去看看吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:smile,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_24.mp3
+msg,1,<outline width=2 color=black>「想抵抗也是白费力气。爸爸再怎么努力，也赢不过<ruby>强化魔导师|我</ruby>的，\n这种事你应该体验过很多次了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:smile,aika,0,-140,0.6,0,,,,
+playvoice,1,download/character/104117/adv/sound/fav104117_01_25.mp3
+msg,1,<outline width=2 color=black>「来，要开始了哦爸爸。和服穿法练习，还有顺便呢，各种事情。\n嗯，顺便，顺便啦。难得有机会，就顺便做一下嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

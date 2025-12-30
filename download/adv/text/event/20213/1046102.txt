@@ -1,0 +1,578 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11060302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm177.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101320/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「呐，你觉得怎么样？虽然以前也穿过几次和服，\n但这次的设计有点特别呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101320/adv/atlas/stand_a,body:normal,milva,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「你看，肩膀这里都露出来了……你果然还是喜欢\n稍微露出一点肌肤的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101320/adv/atlas/stand_a,body:smile,milva,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「呵呵。还是说，与其这样半遮半掩的，\n不如干脆脱掉更好？那，我们偷偷溜出去吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:unique,norn,-1200,-160,0.7,0,,,,
+endwait
+anm,move,norn,-100_-160,1.2,0
+wait,1
+anm,move,milva,100_-160,0.2,0
+endwait
+
+
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:unique,norn,-100,-160,0.7,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「你凭什么擅自想把我哥哥带走啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101320/adv/atlas/stand_a,body:normal,milva,100,-160,0.7,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「哎呀，诺恩酱刚才不是亲热够了吗。\n稍微让给我一下也没关系吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:anger,norn,-100,-160,0.7,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「你这‘稍微’的程度绝对差太多了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101320/adv/atlas/stand_a,body:normal,milva,100,-160,0.7,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「啊……因为露着肌肤，感觉有点冷呢。\n呐，我可以再靠近你一点吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:anger,norn,-100,-160,0.7,0.,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「别无视我！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,1200,-160,0.7,0,,,,
+endwait,,,,,,,,,,,
+anm,move,aika,0_-160,1.2,0
+wait,0.8
+anm,tint,norn,150_150_150,0.0001,0
+anm,move,milva,-1200_-160,0.8,0
+anm,move,norn,-1200_-160,0.8,0
+endwait
+
+spriteoff,milva,0
+spriteoff,norn,0
+endwait
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-160,0.7,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「爸爸。怎么样，和服。合适吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　“可爱”,选项2　“想抱紧你”
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:smile,aika,0,-160,0.7,0,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「嗯，谢谢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-160,0.7,0,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「没关系哦？我也喜欢被爸爸抱着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「请吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:smile,aika,0,-200,0.8,0.5,,,,
+endwait
+msg,0,<outline width=2 color=black>「嗯……呵呵」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:unique,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「咕……啊、爱花你、太狡猾了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「诺恩刚才不也被哥哥夸了好多次吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「不够啦！芙拉不也想让哥哥再多夸夸你吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:shy,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「那个……呃……当然，是这样没错」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「独占欲也是恶意的特权哦。\n所以说，我可不会让爱花称心如意呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,norn,1200_-120,1,0
+endwait
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:normal,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「我也要加入——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,aika1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika2,0,0,0,0,,,,
+imgconf,aika2,aika1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「唔……诺恩，要是敢捣乱，我就把有的没的都告诉妈妈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「那、那不是耍赖吗……！？\n牵扯到爱花的时候亚纱花可是不知道手下留情的啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,-300,-120,0.5,0.5,,,,
+anm,tint,azi,150_150_150,0.0001,0
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「真是的，诺恩你呀……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「呵呵。像这样盛装打扮，心情比平时更加高涨，\n或许也是没办法的事呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「一定是因为，想让他再多看看我、多夸夸我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,azi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「这个……我能理解……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0.2
+endwait
+
+
+spriteatlas,download/character/101320/adv/atlas/stand_a,body:normal,milva,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「呵呵。这样的互动虽然有趣，不过我们差不多该继续前进了吧？\n难得的机会，要不要去神社参拜一下？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,-300,-120,0.5,0,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「说的也是。虽然在幻梦境里参拜，感觉有点奇怪就是了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,milva,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+anm,tint,azi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「嗯……好啦，诺恩。哥哥和爱花也一起走吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,azi,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「好——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「知道了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/bg/bg_11060302.jpg,bg,0,0,1.2,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11060302.jpg,0,255
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_048.mp3
+anm,scale,bg,2_2,1,0
+anm,move,bg,250_-100,1,0
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:unique,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「咦……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101320/adv/atlas/stand_a,body:sad,milva,300,-160,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米露瓦・林德曼</outline>,
+msg,0,<outline width=2 color=black>「……我们刚才明明在爬楼梯对吧？\n怎么会回到最下面一级台阶了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104117/adv/atlas/stand_a,body:normal,aika,-300,-120,0.5,0.5,,,,
+anm,tint,milva,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>爱花·维纳迪奥</outline>,
+msg,0,<outline width=2 color=black>「楼梯……上不去……？\n难道说，这就是这个区域的特性吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,aika,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「这是……——等等」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:surprise,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+spriteoff,milva,0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/101404/adv/atlas/stand_c,body:surprise,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「……哥哥呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103709/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「而且，紫阳花也……好像不见了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,frau,0.5
+spriteoff,norn,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteoff,bg,1
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11130301.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm130.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:surprise,azi,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「……哎呀？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:surprise,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「请等一下……什么时候开始，就只剩我们两个人了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:sad,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这是……难道说，我们被分开了吗？\n完全没注意到大家是什么时候消失的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:sad,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:sad,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……就剩我们两个人了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:surprise,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊、不、抱歉。没什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那个……虽然我知道在这种状况下，不该想这种事\n但是一想到能和你独处，就忍不住——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「至少现在，可以独占你了呢……什么的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「对、对不起。刚才看到大家和你那么要好……\n我稍微有点羡慕……这样可不行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「总之，我们先沿着来时的路往回走吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:surprise,azi,0,-160,0.7,0.5,,,,
+endwait
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「那、那个，突然这样靠近的话……我会心跳加速的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「……您这是要做什么呢？这样逼近女孩子。\n莫非，是想在我耳边说些甜言蜜语吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「还是说……您想做的，不止是言语呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,azi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:surprise,azi2,0,0,0,0,,,,
+imgconf,azi2,azi1,0,-480,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「呵呵。还以为会是嘴唇，结果亲的是脸颊呢。\n感觉稍微有点吃亏了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「……我竟然说出这么任性的话呢。对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「要是被大家发现的话，肯定会嫉妒我的，\n这件事，就当作我们之间的秘密吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-160,0.7,0,,,,
+msg,0,<outline width=2 color=black>「好啦，我们试着沿原路返回吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
