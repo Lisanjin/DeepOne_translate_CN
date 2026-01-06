@@ -1,0 +1,350 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm110.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>真是不可思议的感觉。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>曾经，我差点失去生命。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>作为勉强幸存下来的代价，我失去了记忆，四处彷徨，\n不断寻找自我……最终才拾起的，鬼桥紫阳花心灵的正中央。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>从那以后，顺着人缘来到这座拉莱耶，\n与理酱重逢……得到了许多相遇。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>真的，是不可思议的感觉。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>从遇见那个人开始，我就确信了。\n因为——只要是理酱喜欢的人，我没有理由不喜欢。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>或许有人会说：这理由真无聊。\n即便如此，我也仅凭这一个理由就深信不疑。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>但并非如此。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>那份确信之上，萌生了更深的情感。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>理由肯定有很多。\n如果想解释的话，可以罗列出许多话语。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>啊。但是，任何理由和解释都不完全正确。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>因为心灵的最深处，大概是无法用言语表达的吧。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11130301.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm130.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「话说……我很少这样盛装打扮。\n这件振袖，你觉得怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果你能夸我穿着合适的话，\n我会非常开心的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　“很可爱”,选项2　“很漂亮”
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:surprise,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊……对、对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我还不习惯被人这样夸奖……\n不知怎的，受到的冲击比自己预想的还要大……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……不，用这种说法来搪塞，\n明明是我自己向你索要话语，却不够真诚呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我真的非常开心。\n开心到一时间，其他什么都无法思考了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「呵呵。我很高兴……不过，总觉得你说得很熟练的样子，\n这一点或许要稍微扣点分呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「原来男性如果太过机灵的话，女性\n也会像这样感到不安啊……我以前都不知道呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:sad,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真是可耻的话呢……明明是自己主动索要话语，得到了美妙的言辞，\n却还要对此表示不满什么的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:sad,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「即便如此……即便心知肚明……还是忍不住会去想象理想的模样，\n忍不住去追求」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这份心情已经强烈到……连自己都无法抑制的地步了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「真是伤脑筋呢……说不定我啊，比自以为的\n还要容易陷入爱河」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「又或者，是你太过迷人了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哎呀，请不要谦虚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「实际上，已经有这么多人对你怀揣着爱慕之情了。\n过分谦虚，可是会否定掉这么多人的心意哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「当然，话虽如此，如果你因此就变成自信满满的情场高手，\n那也多少会让我有些困扰呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呵呵。女人啊，就是会说些任性话的生物呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，还请您谅解……女人的情愫，就是如此强烈的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「在心仪之人面前，被无法平静的心跳所左右，\n理性和道理什么的，早就不知丢到哪里去了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「就是这么一种，无可奈何的东西呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,azi,0.7_0.7,0.5,0
+anm,move,azi,0_-170,0.5,0
+endwait
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-170,0.7,0,,,,
+msg,0,<outline width=2 color=black>「——果然，光是亲吻脸颊还是无法满足」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-170,0.7,0,,,,
+msg,0,<outline width=2 color=black>「明明想着后来突然出现的女人太过主动的话，\n可能会成为你的负担……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-170,0.7,0,,,,
+msg,0,<outline width=2 color=black>「真是的……女人啊，真是无可救药的生物呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,azi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi2,0,0,0,0,,,,
+imgconf,azi2,azi1,0,-480,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「啾……啾噗、啾……嗯、呼……哈、啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi,0,-170,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi,0,-170,0.7,0,,,,
+msg,0,<outline width=2 color=black>「呵呵……还是做了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-170,0.7,0,,,,
+msg,0,<outline width=2 color=black>「会觉得从女人嘴里说出这种话，很不知羞耻吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-170,0.7,0,,,,
+msg,0,<outline width=2 color=black>「但是……这样，可以吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-170,0.7,0,,,,
+msg,0,<outline width=2 color=black>「还是说，果然觉得这样的女人很麻烦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-170,0.7,0,,,,
+msg,0,<outline width=2 color=black>「那样的话……就必须向神明祈祷了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi,0,-170,0.7,0,,,,
+msg,0,<outline width=2 color=black>「请让我更加自制，将这份思念……将这颗心，\n牢牢封闭起来吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,azi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:surprise,azi2,0,0,0,0,,,,
+imgconf,azi2,azi1,0,-480,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:smile,azi2,0,0,0,0,,,,
+imgconf,azi2,azi1,0,-480,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「……呵呵。这个愿望，不行吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:normal,azi2,0,0,0,0,,,,
+imgconf,azi2,azi1,0,-480,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「这样啊……既然您这么说，\n我就不许这样的愿望了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181107/adv/atlas/stand_a,body:shy,azi2,0,0,0,0,,,,
+imgconf,azi2,azi1,0,-480,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「嗯……啾……啾、啾……呵呵……啾♡」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
