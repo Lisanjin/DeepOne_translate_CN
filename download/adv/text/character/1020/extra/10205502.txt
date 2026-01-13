@@ -1,0 +1,166 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11120301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm169.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_01.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「偶尔会有从其他世界误入的人类，\n但拉莱耶那帮人对他们可真是异常热心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_02.mp3
+msg,1,<outline width=2 color=black>「又是帮忙返回原来的世界，\n又是保障他们在这边的生活……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_03.mp3
+msg,1,<outline width=2 color=black>「明明自己这边光是纳克特原书的想索之类的事就够焦头烂额了，\n居然还想着照顾别人……真是，一群怪癖爱好者」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_04.mp3
+msg,1,<outline width=2 color=black>「魔术师净是些执着于自身力量与成就的自私之人。\n……至少，我曾是这么认为的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_05.mp3
+msg,1,<outline width=2 color=black>「但看着现在的拉莱耶，我这种常识正在崩塌呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_06.mp3
+msg,1,<outline width=2 color=black>「说到拉莱耶的<ruby>想索者|diver</ruby>，我曾以为他们是追求伟大纳克特原书之力、\n挑战危险想索的实力者集团……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_07.mp3
+msg,1,<outline width=2 color=black>「看现在这情形，说成怪人集合反而更贴切」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我觉得这并非坏事」,选项2　「那塔芭莎也是怪人吗」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_08.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「向困境中的人伸出援手……嗯，是啊。\n这或许确实是值得称赞的行为」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_09.mp3
+msg,1,<outline width=2 color=black>「但是，这个世界本应是那种天真会要人命的世界。\n残酷之事远比温柔更多……这一点，我再清楚不过了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_10.mp3
+msg,1,<outline width=2 color=black>「不谙世事的你暂且不论，其他人本该都明白这个道理才对。\n可如今却彻底变成了老好人集团」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:smile,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_11.mp3
+msg,1,<outline width=2 color=black>「真是的，到底是受了谁的影响呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_12.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「别把我和他们混为一谈。对我来说最重要的，\n是达成我的目的。这一点，绝对不会改变」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_13.mp3
+msg,1,<outline width=2 color=black>「确实，我不能说完全没有变化。\n我承认自己心里确实有了些和以前不同的想法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_14.mp3
+msg,1,<outline width=2 color=black>「但是，无法接受的事我绝不会接受，如果成为障碍的话，\n无论对方是谁——即便是你我也绝不会留情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_15.mp3
+msg,1,<outline width=2 color=black>「给我重新牢牢记住——\n塔芭莎・川宁绝不会迷失自己的目标，也绝不妥协。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:normal,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_16.mp3
+msg,1,<outline width=2 color=black>「……不过我也明白，\n你们应该不会妨碍我就是了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:smile,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_17.mp3
+name,<outline width=2 color=black>塔芭莎・川宁</outline>,
+msg,1,<outline width=2 color=black>「正因为是那样的家伙们，我才觉得现在这个地方很舒心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_18.mp3
+msg,1,<outline width=2 color=black>「——啊……不、不是！刚才我什么都没说！\n不小心说漏嘴了……忘、忘掉吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_19.mp3
+msg,1,<outline width=2 color=black>「呜……你笑什么笑！\n不准露出那种贼兮兮的笑容，恶心死了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:anger,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_20.mp3
+msg,1,<outline width=2 color=black>「要是总在我眼前碍事的话，后果自负哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:sad,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_21.mp3
+msg,1,<outline width=2 color=black>「……啊真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_22.mp3
+msg,1,<outline width=2 color=black>「我本来不该这么口无遮拦的，为什么会这样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102055/adv/atlas/stand_a,body:shy,tabasa,0,-120,0.5,0,,,,
+playvoice,1,download/character/102055/adv/sound/fav102055_02_23.mp3
+msg,1,<outline width=2 color=black>「都、都说了不准笑！哼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
