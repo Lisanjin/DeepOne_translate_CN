@@ -1,0 +1,216 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11360300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm178.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_01.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「这里……是音乐厅吧。\n观众席也这么多，真是个非常气派的地方呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_02.mp3
+msg,1,<outline width=2 color=black>「说起来，夫君大人去过拉莱耶的音乐堂吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_03.mp3
+msg,1,<outline width=2 color=black>「虽然规模肯定比这里小得多，但各种乐器和设备\n都很齐全，设备的完善程度说不定比这里还要厉害」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_04.mp3
+msg,1,<outline width=2 color=black>「其实，钰偶尔会在音乐堂碰碰乐器。\n……我从小就喜欢音乐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_05.mp3
+msg,1,<outline width=2 color=black>「乐器奏出的声音，不会扭曲任何人的心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_06.mp3
+msg,1,<outline width=2 color=black>「……其实比起那个，我更觉得应该\n和拉莱耶的大家加深交往才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_07.mp3
+msg,1,<outline width=2 color=black>「只是，夫君大人不在身边的话，有时还是鼓不起勇气。\n比如担心自己说错话啦……还会冒出些不好的念头」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「慢慢适应就好」,选项2　「大家都会好好接纳你的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_08.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「谢谢您……但其实我觉得，不该一味依赖夫君大人这份温柔，\n应该更努力些才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_09.mp3
+msg,1,<outline width=2 color=black>「……要是永远都改变不了的话，说不定会让夫君大人失望的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:normal,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_10.mp3
+msg,1,<outline width=2 color=black>「所以，我想一点一点地向前迈进」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_11.mp3
+msg,1,<outline width=2 color=black>「……虽然说得这么了不起，可一到关键时刻胆怯的心情\n就会冒出来……主动接触别人时，总是不由自主地犹豫」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_12.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「是啊……拉莱耶的各位都非常温柔、坚强，\n连这样的钰也不害怕地与我相处……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_13.mp3
+msg,1,<outline width=2 color=black>「我明白不能只是单方面接受这份温柔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_14.mp3
+msg,1,<outline width=2 color=black>「为了回应大家的心意，我也必须\n更主动地迈出步伐。这一点，我很清楚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:sad,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_15.mp3
+msg,1,<outline width=2 color=black>「……即便如此，一到关键时刻还是会被各种不安拖住脚步」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_16.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「呜、对不起对不起！\n为这种事磨磨蹭蹭的，很烦人吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_17.mp3
+msg,1,<outline width=2 color=black>「钰、会好好努力的……！为了能更主动地和夫君大人以外的人\n搭话并成为朋友，我会努力的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:unique,yui,0,-90,0.5,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_18.mp3
+msg,1,<outline width=2 color=black>「所以请不要抛弃我啊，夫君大人啊啊啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:surprise,yui,0,-90,0.6,0.5,,,,
+endwait
+playvoice,1,download/character/105053/adv/sound/fav105053_01_19.mp3
+msg,1,<outline width=2 color=black>「——啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:shy,yui,0,-90,0.6,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_20.mp3
+msg,1,<outline width=2 color=black>「…………被夫君大人的手抚摸着头时，钰不知为何\n感到内心非常平静……很安心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:shy,yui,0,-90,0.6,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_21.mp3
+msg,1,<outline width=2 color=black>「谢谢您，夫君大人。如此这般\n为钰着想……真的、真的很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm112.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:shy,yui,0,-90,0.6,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_22.mp3
+msg,1,<outline width=2 color=black>「……已、已经忍不住了！夫君大人，请和钰结婚吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:shy,yui,0,-80,0.4,0.5,,,,
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105053/adv/sound/fav105053_01_23.mp3
+name,<outline width=2 color=black>钰</outline>,
+msg,1,<outline width=2 color=black>「啊、哎呀、夫君大人、您要去哪里……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:unique,yui,-1200,-80,0.4,0,,,,
+endwait
+anm,move,yui,0_-80,0.7,0
+endwait
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:unique,yui,0,-80,0.4,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_24.mp3
+msg,1,<outline width=2 color=black>「请、请等一下夫君大人……！刚才那个、只是我一时高兴得\n控制不住情绪而已……求、求婚我会忍住的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105053/adv/atlas/stand_a,body:unique,yui,0,-80,0.4,0,,,,
+playvoice,1,download/character/105053/adv/sound/fav105053_01_25.mp3
+msg,1,<outline width=2 color=black>「所以请不要丢下钰啊，夫君大人啊啊啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
