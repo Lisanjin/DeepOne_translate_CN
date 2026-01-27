@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11850300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm179.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:anger,zero,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_01.mp3
+name,<outline width=2 color=black>零</outline>,
+msg,1,<outline width=2 color=black>「……虽然察觉晚了，但看来，我们是被困在这间屋子里了呢。\n门和窗户，都纹丝不动。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_02.mp3
+msg,1,<outline width=2 color=black>「只是被关起来，目前还没有危险的陷阱之类，\n算是不幸中的万幸吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_03.mp3
+msg,1,<outline width=2 color=black>「大概，是设定了什么逃脱条件吧，\n不过看起来能成为线索的东西……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:surprise,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_04.mp3
+msg,1,<outline width=2 color=black>「——嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_05.mp3
+msg,1,<outline width=2 color=black>「喂，你看那个。冰箱那边，好像贴着张便条……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_06.mp3
+msg,1,<outline width=2 color=black>「…………“打扫卫生”？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_07.mp3
+msg,1,<outline width=2 color=black>「难道说，这就是逃脱条件吗……打扫屋子，\n内容还真是相当奇怪呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　“能打扫吗？”,选项2　“要是亚纱花在的话……”
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_08.mp3
+name,<outline width=2 color=black>零</outline>,
+msg,1,<outline width=2 color=black>「我说啊……你这个问题，是不是太小看我了？\n普通程度的家务我还是会做的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_09.mp3
+msg,1,<outline width=2 color=black>「我可不像某个石榴那样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_10.mp3
+msg,1,<outline width=2 color=black>「把房间弄得乱七八糟，还说什么这样用起来最顺手，\n这种借口也太难看了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_11.mp3
+msg,1,<outline width=2 color=black>「按照普通的标准，打扫整理我还是能应付的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_12.mp3
+msg,1,<outline width=2 color=black>「正好趁这个机会证明给你看。\n我可不想在奇怪的地方被和石榴混为一谈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_13.mp3
+name,<outline width=2 color=black>零</outline>,
+msg,1,<outline width=2 color=black>「……我有时候在想，你是不是太依赖亚纱花照顾你的生活起居了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_14.mp3
+msg,1,<outline width=2 color=black>「当然，我知道这是她自愿的。\n能为你做点什么，她一定开心得不得了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_15.mp3
+msg,1,<outline width=2 color=black>「话虽如此……在不知情的人看来，\n简直就像你在把亚纱花当佣人使唤呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_16.mp3
+msg,1,<outline width=2 color=black>「打扫洗衣之类的，偶尔也该自己动手。\n今天不妨就当是练习好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_17.mp3
+name,<outline width=2 color=black>零</outline>,
+msg,1,<outline width=2 color=black>「好啦。总之先开始吧。\n既然要做就别半吊子偷懒，我会认真干的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_18.mp3
+msg,1,<outline width=2 color=black>「不过看起来也没那么脏，\n两个人合作的话，应该很快就能搞定」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:smile,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_19.mp3
+msg,1,<outline width=2 color=black>「……话说回来，没想到会在这种地方和你一起打扫……\n真是世事难料啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_20.mp3
+msg,1,<outline width=2 color=black>「这种平和的共同作业，反倒正合我意呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:smile,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_02_21.mp3
+msg,1,<outline width=2 color=black>「我会好好盯着你有没有认真打扫的，可别偷懒哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

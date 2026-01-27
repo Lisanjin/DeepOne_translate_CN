@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11850300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm179.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_01.mp3
+name,<outline width=2 color=black>零</outline>,
+msg,1,<outline width=2 color=black>「虽然只是栋不起眼的独栋房子，但考虑到这是在幻梦境里，\n总觉得有点诡异呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_02.mp3
+msg,1,<outline width=2 color=black>「对于从醒来就一直住在拉莱耶的你来说，\n这种房子反而很稀奇吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_03.mp3
+msg,1,<outline width=2 color=black>「不过，说这话的我本身，\n也没有在这种房子里住过的经验啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_04.mp3
+msg,1,<outline width=2 color=black>「作为我原型的那个人类，好像是在日式房屋……就是那种\n武士宅邸般的房子里出生成长的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「难道是大小姐？」,选项2　「总觉得有点羡慕」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_05.mp3
+name,<outline width=2 color=black>零</outline>,
+msg,1,<outline width=2 color=black>「谁知道呢……我并没有继承她的全部。\n只是残留着些许记忆而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_06.mp3
+msg,1,<outline width=2 color=black>「不过，虽然只是隐约的感觉，我觉得应该不是那种显赫家世的血统。\n至少，应该没有强烈到那种程度的执念吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:smile,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_07.mp3
+msg,1,<outline width=2 color=black>「毕竟比起那种气势恢宏的大宅邸，\n这种规模的房子反而更让我感到轻松自在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_08.mp3
+msg,1,<outline width=2 color=black>「如果她真的珍视自己出生的家，那么源自她的我的感性，\n应该也会被牵引向那边才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_09.mp3
+name,<outline width=2 color=black>零</outline>,
+msg,1,<outline width=2 color=black>「哎呀，比起这种房子，你更喜欢日式房屋吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_10.mp3
+msg,1,<outline width=2 color=black>「不过我觉得这种房子也挺好的。\n面积也正合适……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_11.mp3
+msg,1,<outline width=2 color=black>「如果要和家人一起生活的话，这种规模反而\n让人觉得彼此更亲近些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_12.mp3
+name,<outline width=2 color=black>零</outline>,
+msg,1,<outline width=2 color=black>「呐，这只是打个比方……如果能在这样的房子里，\n和家人一起生活，你不觉得很美好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:smile,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_13.mp3
+msg,1,<outline width=2 color=black>「——突然说些像梦话一样的事呢。\n抱歉，不知不觉就想到这些了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_14.mp3
+msg,1,<outline width=2 color=black>「和你、诺恩、芙拉……作为家人一起，住在同一屋檐下，\n共度相同的时光……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_15.mp3
+msg,1,<outline width=2 color=black>「如果那样的日子能被允许的话，\n想必会是无比幸福的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:smile,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_16.mp3
+msg,1,<outline width=2 color=black>「呵呵。连我自己都觉得，变得相当任性了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_17.mp3
+msg,1,<outline width=2 color=black>「现在，我能这样待在你身边……这本身就已经是奇迹了，\n却还描绘着这样的梦想，奢求更多，这未免太过奢侈了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_18.mp3
+msg,1,<outline width=2 color=black>「我原以为自己并不是这么爱做梦的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104382/adv/atlas/stand_a,body:smile,zero,0,-120,0.5,0,,,,
+playvoice,1,download/character/104382/adv/sound/fav104382_01_19.mp3
+msg,1,<outline width=2 color=black>「一定是被传染了吧。\n被某个无论何时、无论发生什么都绝不放弃幸福的贪心鬼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
