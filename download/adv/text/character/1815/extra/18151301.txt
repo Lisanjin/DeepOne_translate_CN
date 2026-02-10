@@ -1,0 +1,142 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010102.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm180.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_01.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「拉莱耶居然对情人节这么热衷，我有点惊讶呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_02.mp3
+msg,1,<outline width=2 color=black>「不过，在拉莱耶流行的，\n是女性向心仪之人赠送巧克力的日式情人节呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:unique,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_03.mp3
+msg,1,<outline width=2 color=black>「呵呵。我也得好好把握这次表达心意的机会才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_04.mp3
+msg,1,<outline width=2 color=black>「当然，其他人也会送你巧克力吧，\n但为了不输给她们，我必须加把劲呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_05.mp3
+msg,1,<outline width=2 color=black>「对了，你对巧克力有什么偏好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:smile,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_06.mp3
+msg,1,<outline width=2 color=black>「难得要送礼物，当然希望你能开心呀。\n所以我想尽可能配合你的喜好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:unique,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_07.mp3
+msg,1,<outline width=2 color=black>「不管多任性的要求，都可以告诉我哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「不要太甜的比较好」,选项2　「能收到就很开心了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_08.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「原来如此……不太甜的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_09.mp3
+msg,1,<outline width=2 color=black>「确实，如果会收到很多巧克力的话，\n不太甜的吃起来会更方便呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:smile,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_10.mp3
+msg,1,<outline width=2 color=black>「明白了。难得你告诉我了，我会准备让你满意的\n巧克力的，敬请期待哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_11.mp3
+msg,1,<outline width=2 color=black>「……顺便问一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:unique,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_12.mp3
+msg,1,<outline width=2 color=black>「巧克力的甜度我会控制……不过，用其他方式\n表达甜蜜的心意，应该没问题吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_13.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「你能这么说我很感激，但个人来说，\n我更希望你对我有更多要求呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_14.mp3
+msg,1,<outline width=2 color=black>「既然如此，那就来比试一下吧。\n我突然想让你大吃一惊了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:smile,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_15.mp3
+msg,1,<outline width=2 color=black>「我会准备让你沉迷其中、无比美味的巧克力，\n一定会让你说出'还想要'这种话的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:unique,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_16.mp3
+msg,1,<outline width=2 color=black>「可要做好心理准备哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_17.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「呵呵……既然是礼物，包装和赠送方式也要别出心裁，\n我会打造一个美妙的情人节的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_18.mp3
+msg,1,<outline width=2 color=black>「这么一想，可能时间还挺紧张的呢。\n既要练习制作巧克力，又要准备很多东西……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181513/adv/atlas/stand_a,body:smile,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181513/adv/sound/fav181513_01_19.mp3
+msg,1,<outline width=2 color=black>「我会努力让你开心的，\n你也好好期待情人节吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
