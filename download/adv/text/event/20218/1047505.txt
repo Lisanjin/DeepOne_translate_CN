@@ -1,0 +1,553 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm152.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195904/adv/atlas/stand_a,body:shy,komati,300,-130,0.5,0.5,,,,
+anm,tint,komati,150_150_150,0.0001,0
+spriteatlas,download/character/195804/adv/atlas/stand_a,body:shy,claris,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>克拉丽丝・札茵布鲁格</outline>,
+msg,0,<outline width=2 color=black>「所以说，我和前辈开始交往这件事，该说是有着相当错综复杂的缘由吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/195904/adv/atlas/stand_a,body:shy,komati,300,-130,0.5,0,,,,
+anm,tint,claris,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>四之宫小町</outline>,
+msg,0,<outline width=2 color=black>「要这么说的话，我也……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:unique,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「好啦好啦。差不多该适可而止，别再秀恩爱了。\n记忆也恢复了，接下来就该——嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/29050105/adv/image/29050105.png,enemy,2,0,0,0,0,,,,
+imgconf,enemy,enemy1,400,-900,,,0,2.0,2.0,0.5
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「……、……——————」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm158.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/29050105/adv/image/29050105.png,enemy1,0,-1200,1,0.5,,,,
+endwait,,,,,,,,,,,
+anm,move,enemy1,0_-250,1,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「——————————————！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+playse,/download/sound/se/se_011.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:anger,catia,300,-100,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:surprise,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「什……复活了！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不妙。大家，快散开！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:anger,catia,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「克拉丽丝小姐、小町小姐！请到我身后来……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/29050105/adv/image/29050105.png,enemy1,0,-250,1,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0.3,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Threebeams_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/chaA.mp3
+wait,0.3
+playse,/download/sound/se/chaA.mp3
+wait,0.3
+playse,/download/sound/se/chaA.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11430302.jpg,0.5,255
+endwait
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:surprise,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,0,<outline width=2 color=black>「……呃！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103451/adv/atlas/stand_a,body:anger,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-390,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,0,<outline width=2 color=black>「艾丽卡！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103451/adv/atlas/stand_a,body:anger,ruiez,1200,-100,0.5,0,,,,
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:surprise,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+anm,move,ruiez,0_-100,0.6,0
+endwait,,,,,,,,,,,
+anm,move,elica,-1200_-100,0.6,0
+playse,/download/sound/se/se_043.mp3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103451/adv/atlas/stand_a,body:anger,ruiez,0,-100,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,0,<outline width=2 color=black>「怎么可能让你再夺走记忆第二次！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,elica1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:surprise,elica2,0,0,0,0,,,,
+imgconf,elica2,elica1,0,-600,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,0,<outline width=2 color=black>「路易斯！？不行，快躲开——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0.3,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Threebeams_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/chaA.mp3
+wait,0.3
+playse,/download/sound/se/chaA.mp3
+wait,0.3
+playse,/download/sound/se/chaA.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11430302.jpg,0.5,255
+endwait
+playse,/download/character/102709/se/se_c02709_ef_hit.mp3
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ruiez1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103451/adv/atlas/stand_a,body:sad,ruiez2,0,0,0,0,,,,
+imgconf,ruiez2,ruiez1,0,-390,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,0,<outline width=2 color=black>「咕……啊、呃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_067.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:sad,elica,-300,-100,0.5,0.5,,,,
+anm,tint,elica,150_150_150,0.0001,0
+spriteatlas,download/character/103451/adv/atlas/stand_a,body:sad,ruiez,300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「--……这是……什么……正在流失……呃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:sad,elica,-300,-100,0.5,0,,,,
+anm,tint,ruiez,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,0,<outline width=2 color=black>「路易斯，你没事吧！？对不起，都怪你为了保护我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103451/adv/atlas/stand_a,body:normal,ruiez,300,-100,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,0,<outline width=2 color=black>「没关系。因为……――咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103451/adv/atlas/stand_a,body:surprise,ruiez,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「………………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:sad,elica,-300,-100,0.5,0,,,,
+anm,tint,ruiez,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,0,<outline width=2 color=black>「路易斯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103451/adv/atlas/stand_a,body:surprise,ruiez,300,-100,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>路易斯・贝雷斯福德</outline>,
+msg,0,<outline width=2 color=black>「――你，是谁来着？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:surprise,elica,-300,-100,0.5,0,,,,
+anm,tint,ruiez,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,0,<outline width=2 color=black>「……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:anger,catia,300,-100,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:surprise,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「难道说，路易斯身上关于艾丽卡的记忆被！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100302/adv/atlas/stand_a,body:anger,catia,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「怎么会……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_b,body:anger,elica,-300,-100,0.5,0.5,,,,
+anm,tint,catia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,0,<outline width=2 color=black>「啧、只要打倒那个幻象，路易斯的记忆就会――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/29050105/adv/image/29050105.png,enemy1,0,-250,1,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,
+sprite,download/monster/29050105/adv/image/29050105.png,enemy2,0,-250,1,0,,,,
+sprite,download/monster/29050105/adv/image/29050105.png,enemy3,0,-250,1,0,,,,
+anm,move,enemy2,300_-250,0.7,0
+anm,move,enemy3,-300_-250,0.7,0
+anm,fade,enemy1,0,0.7,0
+anm,fade,enemy2,0,0.7,0
+anm,fade,enemy3,0,0.7,0
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:surprise,elica,300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,0,<outline width=2 color=black>「什……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:anger,elica,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「等等。又想逃跑吗――……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「艾丽卡！盲目追赶的话，连你也会再次被夺走记忆的！\n先重整态势吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:sad,elica,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,0,<outline width=2 color=black>「可是，路易斯他……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,elica,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「为了找回路易斯的记忆，先冷静下来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:sad,elica,300,-100,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,0,<outline width=2 color=black>「……呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103322/adv/atlas/stand_a,body:sad,elica,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……嗯。我明白了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm138.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>出生在露比娅家族的我，\n天生就被注定要成为某人愿望的祭品。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>我的生命将献给谁——我活着的时间，仅止于此。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>一直感到恐惧，对这样的世界感到绝望。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>但是……即便在这样的绝望中，内心深处仍渴望着救赎。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>向我伸出援手的，是路易斯。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>她是从露比娅家族拯救我的恩人。\n也是挚友。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>从她那里，我得到了太多……未来。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>所以如果她遇到困难，我想帮助她、支持她。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>我有太多必须偿还的东西。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>——我一直都是这么想的。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>但是……啊，直到这样被路易斯遗忘才意识到。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>每当她用看陌生人的眼神望向我时，\n胸口就像被紧紧揪住。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>别说偿还了，我至今仍在不断从路易斯那里索取。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>拥有挚友相伴的每一天。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>能够共同欢笑的幸福。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>还有无数的温暖。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>我不想失去。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>絶対に、我不想失去。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
