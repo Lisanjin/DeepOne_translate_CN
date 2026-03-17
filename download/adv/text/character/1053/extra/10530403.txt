@@ -1,0 +1,168 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm088.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,nowa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:unique,nowa2,0,0,0,0,,,,
+imgconf,nowa2,nowa1,0,-500,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105304/adv/sound/fav105304_05_01.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「啊啊真是的，完全拿库库露那家伙没辙……！\n真的，净做些没头没脑的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:surprise,nowa,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_02.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「啊……你是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「刚才在叫库库露吗？」,选项2　「在生什么气吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:normal,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_03.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「倒也不是特意叫她……怎么，你问这个。\n特意做出这种反应是对库库露感兴趣吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:smile,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_04.mp3
+msg,1,<outline width=2 color=black>「这不挺好嘛。尽管去感兴趣，尽管去招惹那个女人吧。\n这样纠缠我的时间也能减少些」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:smile,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_05.mp3
+msg,1,<outline width=2 color=black>「你们这种思虑不周的感觉也挺相配的，\n我支持你们哦。全力支持」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:sad,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_06.mp3
+msg,1,<outline width=2 color=black>「这样的话，像今天这种事发生的频率也能降低些吧。\n……唉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:sad,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_07.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「哼……库库露那个笨蛋又干了蠢事，\n给我添了一大堆麻烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:sad,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_08.mp3
+msg,1,<outline width=2 color=black>「从认识她开始就这样。那个笨蛋总是面不改色地\n做出些超乎想象的荒唐举动……刚才也是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:unique,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_09.mp3
+msg,1,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:sad,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_10.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「……哼。不用摆出那种担心的表情啦。\n又不是什么大不了的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:sad,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_11.mp3
+msg,1,<outline width=2 color=black>「只是刚才训练完想冲个澡洗掉汗水，\n库库露那家伙突然闯进来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:unique,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_12.mp3
+msg,1,<outline width=2 color=black>「说什么要一起洗，明明我不愿意，\n还强行碰了各种地方……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:unique,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_13.mp3
+msg,1,<outline width=2 color=black>「这都第几次了，那家伙不知怎么越来越熟练，\n连我敏感的部位都摸得一清二楚……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:shy,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_14.mp3
+msg,1,<outline width=2 color=black>「……啊、不对！刚才的不算！给我忘掉！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:shy,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_15.mp3
+msg,1,<outline width=2 color=black>「你、你那表情！肯定在想什么奇怪的事情！\n绝对在动歪脑筋对吧！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:shy,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_16.mp3
+msg,1,<outline width=2 color=black>「说不是也完全不可信！你、你回想一下平时的自己！\n难道不觉得毫无可信度吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:unique,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_17.mp3
+msg,1,<outline width=2 color=black>「反、反正，你肯定也幻想过对我为所欲为……呜、啊、呜呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:shy,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_18.mp3
+msg,1,<outline width=2 color=black>「这个变态！色情狂！性欲怪兽！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:shy,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_19.mp3
+msg,1,<outline width=2 color=black>「我才不会让你称心如意……！\n要是觉得能轻易得手，那就大错特错了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:shy,nowa,0,-130,0.5,0,,,,
+playvoice,1,download/character/105304/adv/sound/fav105304_05_20.mp3
+msg,1,<outline width=2 color=black>「不准用那种下流的眼神看我，笨蛋！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,nowa,-1200_-130,0.7,0
+playse,/download/sound/se/se_017.mp3
+endwait
+spriteoff,nowa,0
+endwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
