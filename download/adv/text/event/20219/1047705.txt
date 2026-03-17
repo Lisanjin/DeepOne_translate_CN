@@ -1,0 +1,612 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11460300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm104.mp3,0,
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20210201/adv/image/20210201.png,enemy1,0,-130,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_023.mp3
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「——————————！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105151/adv/atlas/stand_a,body:anger,mari,0,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「——呃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+anm,move,mari,500_-110,0.3,0
+wait,0.2
+spine,download/adv/spine/Explosion,em2,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+wait,0.2
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,450,0,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+anm,move,mari,1200_-110,0.5,0
+wait,0.2
+spine,download/adv/spine/Explosion,em2,default,animation,0,450,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,1
+endwait
+spineoff,em1,0
+spineoff,em2,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105151/adv/atlas/stand_a,body:anger,mari,-1200,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,mari,0_-110,0.7,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105151/adv/atlas/stand_a,body:surprise,mari,0,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「哇。这些家伙，看着不怎么样，动作倒是意外地快嘛。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,julia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181508/adv/atlas/stand_a,body:anger,julia2,0,0,0,0,,,,
+imgconf,julia2,julia1,0,-670,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,0,<outline width=2 color=black>「不过，正因为体型庞大，攻击似乎也更容易命中呢。\n——普奇，进攻！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,puti1,0,0,1280,250,0.5,,,,
+sprite,download/character/181504/image/adv1.png,puti2,0,0,0,0,,,,
+imgconf,puti2,puti1,0,0,,,0,1,1,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_gacha_012.mp3
+name,<outline width=2 color=black>普奇</outline>,
+msg,0,<outline width=2 color=black>「————！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+sprite,download/monster/20210201/adv/image/20210201.png,enemy1,-350,-130,1.35,0.5,,,,
+sprite,download/monster/20210201/adv/image/20210201.png,enemy2,350,-130,1.35,0.5,,,,
+sprite,download/monster/20210201/adv/image/20210201.png,enemy3,0,-130,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Thunder1_purple,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_024.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait
+spineoff,em1,0
+endwait
+
+
+playse,/download/sound/se/se_023.mp3
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「——————————！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/181508/adv/atlas/stand_a,body:sad,julia,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,0,<outline width=2 color=black>「果然，我们的攻击好像不太奏效呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,julia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「梅琪露！你想确认的事情应该已经确认完了吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,julia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:unique,metiru,300,-20,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露・梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「嗯——，什么事呀——？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「别装傻！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105151/adv/atlas/stand_a,body:sad,mari,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「梅琪露，要是能搞定的话就快点啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,300,-20,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露・梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「真是的，没办法呢～」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm182.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露・梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「——我们之间连一次亲吻都没有过，\n跟其他女孩比起来，也没怎么卿卿我我呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「按常理来说，比起点心，\n或许那种事更让人开心吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，和别人比较也没意义」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「因为我和哥哥的关系，和茉莉、朱莉娅、\n诺恩、芙拉……和任何人都不同，是只属于我们俩的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以说啊，收到年轮蛋糕，我其实挺开心的，也挺满足的。\n那么费工夫的东西，还特意为我做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你肯定是费了不少劲才烤出那个年轮蛋糕的吧——之类的。\n一想到这些，嗯，感觉倒也不坏呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:smile,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……真是的，哥哥你也太爱折腾了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过啊……总觉得，听其他女孩子说话的时候，\n哥哥你好像有点过意不去的样子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:unique,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我在想，是不是正因为是哥哥你，才会“那样”觉得呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哎呀？说起来说去，结果那天之后直到冥想时间，\n我们不也就在房间里聊聊天而已嘛？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+msg,0,<outline width=2 color=black>「到头来，我连一个拥抱都没得到呢……\n虽然也不是没这么想过啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，就算把这些都算上，\n我也重新觉得哥哥你真不错呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「朱莉娅和茉莉看起来都那么幸福……像这样让某人幸福，\n毫无疑问是件高尚的事。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「幸福，是人迈向未来不可或缺的东西吧？\n哥哥你理所当然地，正让某人幸福着。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「每次了解到这样的哥哥，我都会更喜欢哥哥一点呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:unique,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「即便如此……哥哥好像还是忍不住和其他女孩比较了。\n所以，我才特意从我这方直白地说出来了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「就是，还不够满足。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「如果是女孩子主动要求的，就有了回应她的大义名分了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:smile,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——呐，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「年轮蛋糕，还没全部吃完呢。\n剩下的，要不今晚一起吃掉吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:unique,metiru,0,-20,0.5,0,,,,
+msg,0,<outline width=2 color=black>「在我的房间里，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20210201/adv/image/20210201.png,enemy1,0,-130,1.35,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「——…………！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,
+spine,download/adv/spine/Explosion,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,,,,
+anm,tint,enemy1,0_0_0,0.5,0
+endwait,,,,,,,,,,,
+spriteoff,all,0.5
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181508/adv/atlas/stand_a,body:surprise,julia,300,-120,0.5,0.5,,,,
+anm,tint,julia,150_150_150,0.0001,0
+spriteatlas,download/character/105151/adv/atlas/stand_a,body:surprise,mari,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「啊，被吹飞了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181508/adv/atlas/stand_a,body:surprise,julia,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,0,<outline width=2 color=black>「看来，攻击也停止了。这是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,julia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103721/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「那个，哥哥和梅琪露……彼此都，对彼此的心意\n真正感到满足了，我想是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,mari,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:sad,norn,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「也就是说，这个领域衡量的并非单方面思念的强弱」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「赠予什么，被赠予什么……其中蕴含的心意，是否好好传达给了彼此，\n彼此是否都感到满足」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「以这次来说，梅琪露说出还不够满足是这样，\n哥哥拿别人比较感到不足的时候就已经不行了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，就用追加承诺的方式弥补了，大概是这么回事吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——话虽如此，居然当着我们的面轻描淡写地约定一起过夜，\n胆子不小啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,300,-20,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露・梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「诶——？没办法嘛？是为了阻止虚像啊。\n这就是所谓的不得已的选择啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「别装傻！你从一开始就大致察觉到了，\n还故意引导成这样的意图早就暴露无遗了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:unique,metiru,300,-20,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露・梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「呵呵，你说什么呀。我完全——听不懂呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:unique,norn,-300,-120,0.5,0,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「你这……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105151/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「嘛、嘛嘛，诺恩。总之现在得优先考虑\n从这个领域脱身才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,metiru,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103721/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「嗯。因为哥哥被当成人质的情况还没有改变……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,mari,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181508/adv/atlas/stand_a,body:normal,julia,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,0,<outline width=2 color=black>「是啊……我和茉莉小姐，还有梅琪露小姐都已经结束了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:normal,metiru,300,-20,0.5,0.5,,,,
+anm,tint,julia,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>梅琪露・梅尔库里</outline>,
+msg,0,<outline width=2 color=black>「剩下的就只有诺恩和芙拉两个人了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,julia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,metiru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「好啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你们这些家伙全都把最爱的妹妹晾在一边为所欲为，\n看来有必要在这里好好证明一下呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「证明哥哥到底有多爱妹妹！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,metiru,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103721/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「诺恩……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「芙拉难道就不觉得不甘心吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103721/adv/atlas/stand_a,body:unique,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「那、那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,norn,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181508/adv/atlas/stand_a,body:normal,julia,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,0,<outline width=2 color=black>「呵呵，既然这样，诺恩你们的恩爱故事，也让我们好好听听吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,julia,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105151/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「你们俩和他关系特别好，就算不说我也知道啦。\n不过果然，这种话题还是很有兴趣呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103721/adv/atlas/stand_a,body:shy,frau,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,mari,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:normal,norn,-300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「哼哼哼。好——那就说给你们听吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103512/adv/atlas/stand_c,body:smile,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我们和哥哥的甜蜜恋爱故事哦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181508/adv/atlas/stand_a,body:sad,julia,-350,-120,0.5,0.5,,,,
+spriteatlas,download/character/105151/adv/atlas/stand_a,body:sad,mari,0,-110,0.5,0.5,,,,
+spriteatlas,download/character/181609/adv/atlas/stand_a,body:sad,metiru,350,-20,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>朱莉娅＆茉莉＆梅琪露</outline>,
+msg,0,<outline width=2 color=black>「甜蜜恋爱故事……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
