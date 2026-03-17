@@ -1,0 +1,412 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_052_16_06_01.mp3
+name,<outline width=2 color=black>？？？</outline>,
+msg,1,<outline width=2 color=black>「这里大概是幻梦境的相当深处吧……嗯——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_052_16_06_02.mp3
+name,<outline width=2 color=black>？？？</outline>,
+msg,1,<outline width=2 color=black>「确实，稍微……虽然算不上问题……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10080200.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:surprise,kukuru,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_03.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「——啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:smile,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_04.mp3
+msg,1,<outline width=2 color=black>「太好了。你醒过来了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_05.mp3
+msg,1,<outline width=2 color=black>「看来，在这里的，似乎只有你和我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　“没受伤吗？”,选项2　“大家会担心的”
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:smile,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_06.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「嗯，没事哦。谢谢你担心我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_07.mp3
+msg,1,<outline width=2 color=black>「呵呵……总觉得，有种不可思议的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_08.mp3
+msg,1,<outline width=2 color=black>「被人担心这件事，原来会让人这么舒服吗。\n胸口深处变得温暖起来，心跳好像也加快了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:smile,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_09.mp3
+msg,1,<outline width=2 color=black>「——不过呢，在财团里我只是个底层人员，诺瓦酱也总是一副冷淡的样子，\n最近都没被人这么坦率地担心过，可能说了些奇怪的话吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_10.mp3
+msg,1,<outline width=2 color=black>「突然被这样诉苦也很困扰吧。忘掉它，忘掉它」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_11.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「是啊……说实话，各种事情都来得太突然了，我还没跟上状况……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_12.mp3
+msg,1,<outline width=2 color=black>「虽然诺瓦酱和布丽姬特没事是很好啦，\n但为什么布丽姬特会获得伊波恩原书使徒的力量呢，还有」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_13.mp3
+msg,1,<outline width=2 color=black>「而且，琳妮……是叫这个名字吧？敌对的那克特原书之梦，以及它的眷属。\n她们的目的也还不太清楚……真是让人有点混乱呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_14.mp3
+msg,1,<outline width=2 color=black>「啊，不过，大家都很强这点是毋庸置疑的，肯定没事的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:smile,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_15.mp3
+msg,1,<outline width=2 color=black>「而且，我至少也有保护自己的能力，\n所以也会好好保护你的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_16.mp3
+msg,1,<outline width=2 color=black>「不过和纳克特原书系谱、伊波恩原书使徒那些人比起来，\n可能还是不太可靠吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_17.mp3
+msg,1,<outline width=2 color=black>「即便如此，关键时刻带你逃跑这种事我还是能做到的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_18.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「总之，我们先去找大家吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,2,7,7,kukuru
+endwait
+anm,move,kukuru,0_-150,0.5,0
+endwait
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:sad,kukuru,0,-150,0.5,0,,,,
+endwait
+playvoice,1,download/adv/voice/quest/main_052_16_06_19.mp3
+msg,1,<outline width=2 color=black>「啊……呃、呃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-150,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_20.mp3
+msg,1,<outline width=2 color=black>「啊、啊哈哈。抱歉，身体有点沉重……\n幻梦境的负荷果然很辛苦呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-150,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_21.mp3
+msg,1,<outline width=2 color=black>「虽然事先做了尽可能多的准备，而且有你在身边\n应该也能减轻一些负荷，但还是有点……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,kukuru,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_22.mp3
+msg,1,<outline width=2 color=black>「我觉得还能承受得住，不用担心。\n好啦好啦，我们抓紧赶路吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm178.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:surprise,kukuru,0,-170,0.6,0.5,,,,
+endwait
+playvoice,1,download/adv/voice/quest/main_052_16_06_23.mp3
+msg,1,<outline width=2 color=black>「呃……那、那个……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0.5,,,,
+endwait
+playvoice,1,download/adv/voice/quest/main_052_16_06_24.mp3
+msg,1,<outline width=2 color=black>「诶、诶诶！？那个，为什么靠这么近……这、这个，稍微\n让人心跳加速该怎么说呢……那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_25.mp3
+msg,1,<outline width=2 color=black>「啊……难、难道说……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_26.mp3
+msg,1,<outline width=2 color=black>「不、不是啦，那个……减轻幻梦境负荷的方法，虽然知道这样\n确实有效啦……不、不是讨厌的意思哦！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_27.mp3
+msg,1,<outline width=2 color=black>「倒不如说，甚至有点开心呢……那个……这样真的可以吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_28.mp3
+msg,1,<outline width=2 color=black>「说是应急处理也好，必要措施也罢，这些我都明白！\n但是呢……呜、呜呜呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_29.mp3
+msg,1,<outline width=2 color=black>「稍微有点，心情复杂呢……以这种流程发展，连半点\n浪漫氛围都没有，从少女心的角度总觉得有点……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_30.mp3
+msg,1,<outline width=2 color=black>「不过不过，算是额外福利吧……说实话确实存在\n感到开心的部分呢……确实存在哦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_31.mp3
+msg,1,<outline width=2 color=black>「嗯、呜……呜呜……唔唔唔呜呜呜呜呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_32.mp3
+msg,1,<outline width=2 color=black>「那、那个……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_33.mp3
+msg,1,<outline width=2 color=black>「请、请多指教了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-210,0.7,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_34.mp3
+msg,1,<outline width=2 color=black>「啊、呜……结束了啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-260,0.8,0.5,,,,
+endwait
+playvoice,1,download/adv/voice/quest/main_052_16_06_35.mp3
+msg,1,<outline width=2 color=black>「——啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,kukuru1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru2,0,0,0,0,,,,
+imgconf,kukuru2,kukuru1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_052_16_06_36.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「嗯……啾、」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-240,0.8,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_37.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「啊……呜……接、接吻了呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-240,0.8,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_38.mp3
+msg,1,<outline width=2 color=black>「这个、非常地……胸口、好难受……总觉得呼吸、变得困难了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+anm,scale,kukuru,0.5_0.5,0.5,0
+anm,move,kukuru,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_39.mp3
+msg,1,<outline width=2 color=black>「啊、不是！不对啦？不是因为负荷啦！多亏了你，负荷已经减轻很多了，但反而各种事情变得很麻烦……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_40.mp3
+msg,1,<outline width=2 color=black>「总、总之，不是有问题啦！没、没事的，不用担心……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_41.mp3
+msg,1,<outline width=2 color=black>「嗯啊……脸、脸，不敢直视啦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_42.mp3
+msg,1,<outline width=2 color=black>「总、总之，我们走吧，殿下！快快快！这种地方可不能悠闲待着啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,nowa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:sad,nowa2,0,0,0,0,,,,
+imgconf,nowa2,nowa1,0,-500,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_16_06_01.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「这种时候了，气氛却莫名地松懈呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:sad,nowa,300,-130,0.5,0.5,,,,
+anm,tint,nowa,150_150_150,0.0001,0
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:surprise,kukuru,-300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_43.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「诶……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:normal,nowa,300,-130,0.5,0,,,,
+anm,tint,kukuru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_053_16_06_02.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「看来平安无事呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,-300,-130,0.5,0,,,,
+anm,tint,nowa,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_06_44.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「诺瓦酱！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:anger,nowa,300,-130,0.5,0,,,,
+anm,tint,kukuru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_053_16_06_03.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「所以，别再用‘酱’来称呼我了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
