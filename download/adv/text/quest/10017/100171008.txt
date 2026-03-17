@@ -1,0 +1,969 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10080100.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm170.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Slash3_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「呃……啊，真是的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_02.mp3
+msg,1,<outline width=2 color=black>「突然放出这种东西，也太不留情面了吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0.3,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Threebeams_purple,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10080100.jpg,1,255
+endwait
+
+
+playse,/download/sound/se/se_28090108_stage_04.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/28070106/adv/image/28070106.png,enemy,2,0,0,0,0,,,,
+imgconf,enemy,enemy1,0,-1000,,,0,2.0,2.0,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28070106_entry_06.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>？？？</outline>,
+msg,0,<outline width=2 color=black>「――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_03.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「可恶，这种程度连一点伤都造不成吗……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「诺恩！我也要……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_04.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「不、不行啊芙拉！战斗是<ruby>恶意|我</ruby>的职责！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_02.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「没关系的。我也被教导了战斗的意义。\n而且，我确实拥有挺身而出的力量……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_05.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「即便如此，你是容器，不是行使被灌注之物的存在！\n如果动用超越原本职责的力量……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_03.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「因为不是自己的职责……我不想用这种话当借口」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_06.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「芙拉……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_04.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「我知道诺恩在担心我。\n其实，我也不想看到诺恩露出那种担忧的表情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_05.mp3
+msg,1,<outline width=2 color=black>「但是……现在，即使会让诺恩难过，我也要保护诺恩」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_06.mp3
+msg,1,<outline width=2 color=black>「因为，不这样做的话――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/28070106/adv/image/28070106.png,enemy,2,0,0,0,0,,,,
+imgconf,enemy,enemy1,0,-1000,,,0,2.0,2.0,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28070106_entry_06.mp3
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「——————————！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_07.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「呃……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_07.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「芙拉、危险！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0.5,,,,
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,-1200,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,norn,-50_-120,0.7,0
+endwait
+spine,download/adv/spine/Slash1_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_049.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,-50,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_08.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「这……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:sad,frau,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_08.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「诺恩！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,-50,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_09.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「没事！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28070106/adv/image/28070106.png,enemy1,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「——————————」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_10.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「真是、荒唐透顶啊……居然又要和这家伙交手」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_11.mp3
+msg,1,<outline width=2 color=black>「那时候也是，说到底，感觉都是靠大家合力才勉强应付过去的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_09.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「但是，我们也和那时候不一样了呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_10.mp3
+msg,1,<outline width=2 color=black>「比起那时候，我们心中已经拥有了更多的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_12.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「……说得对。啊，确实如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_13.mp3
+msg,1,<outline width=2 color=black>「明白了，芙拉。我不会再说‘退下’这种话了。一起战斗吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_11.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_14.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「虽然有点突然，只要一瞬间就好。你能让那家伙的动作停下来吗？\n我知道这要求很困难。但是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:smile,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_12.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「明白了。交给我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103505/adv/atlas/stand_b,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_15.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「嗯，交给你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28070106/adv/image/28070106.png,enemy1,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28070106_entry_06.mp3
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,1,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_13.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「……正因为诺恩相信我、托付给我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Threebeams_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/chaA.mp3
+wait,0.3
+playse,/download/sound/se/chaA.mp3
+wait,0.3
+playse,/download/sound/se/chaA.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10080100.jpg,1,255
+endwait
+
+
+sprite,download/monster/28070106/adv/image/28070106.png,enemy1,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「——————————！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,-200,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em2,default,animation,0,0,-200,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+endwait
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,70,-50,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em2,default,animation,0,70,-50,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+wait,0.5
+endwait
+spine,download/adv/spine/blow_Blue,em1,default,animation,0,0,100,1,1.0,0
+playse,/download/sound/se/se_041.mp3
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em2,default,animation,0,0,100,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_14.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「即使大家不在身边，我也和大家一起变得更强了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_15.mp3
+msg,1,<outline width=2 color=black>「所以，还要……还要！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28070106/adv/image/28070106.png,enemy1,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28070106_entry_06.mp3
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash1_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_049.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,1,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_16.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「呜、咕……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_17.mp3
+msg,1,<outline width=2 color=black>「还……还没完呢！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0.3,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Threebeams_yellow,em1,default,animation,0,0,0,1,1.0,0
+anm,scale,em1,-1_1,0,
+playse,/download/sound/se/chaA.mp3
+wait,0.3
+playse,/download/sound/se/chaA.mp3
+wait,0.3
+playse,/download/sound/se/chaA.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10080100.jpg,1,255
+endwait
+playse,/download/sound/se/se_28090108_stage_04.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28070106/adv/image/28070106.png,enemy1,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28070106_entry_06.mp3
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_b,body:anger,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_18.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「就算无法触及也无妨……我只是要回应相信我的诺恩！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103511/adv/atlas/stand_b,body:normal,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_014_16_08_16.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「谢谢你，芙拉。多亏你争取到了准备时间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,,,
+sprite,download/character/103511/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_014_16_08_17.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「这就是我现在的全力一击」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_014_16_08_18.mp3
+msg,1,<outline width=2 color=black>「要上了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+spriteoff,all,1
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Threebeams_yellow,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Threebeams_yellow,em2,default,animation,0,0,0,1,1.0,0
+anm,scale,em2,-1_1,0,
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_10080100.jpg,1,255
+endwait
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,enemy1,0,0,1280,250,0.5,,,,
+sprite,download/monster/28070106/adv/image/28070106.png,enemy,2,0,0,0,0,,,,
+imgconf,enemy,enemy1,0,-1000,,,0,2.0,2.0,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28070106_entry_06.mp3
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「――――――――――、――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em1,default,animation,0,-300,0,1.2,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em2,default,animation,0,0,0,1.2,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+wait,0.3
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em3,default,animation,0,300,0,1.2,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait
+spineoff,em1,0
+spineoff,em2,0
+spineoff,em3,0
+endwait,,,,,,,,,,,
+
+spine,download/adv/spine/Smoke,em1,default,animation,1,0,0,1,1,0
+spriteatlas,download/character/103710/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103511/adv/atlas/stand_b,body:anger,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_19.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「这样的话……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_19.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「不行，诺恩！快防御！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_b,body:surprise,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_20.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「什——！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0.3,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash3_Red,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+flash,240,20,20,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10080100.jpg,1,255
+endwait
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_21.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「呃……呜……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_20.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「诺恩！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_22.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「啊，该死……开什么玩笑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28070106/adv/image/28070106.png,enemy1,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「————————————」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_23.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「……这样都，打不倒吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103710/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_21.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「诺恩、你的伤……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_24.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「没什么大不了的，我没事。倒是芙拉……说实话，情况相当不妙」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_25.mp3
+msg,1,<outline width=2 color=black>「不愧是《纳克特抄本》力量的展现啊。\n看来，我们得考虑全力逃跑了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_26.mp3
+msg,1,<outline width=2 color=black>「不过……它恐怕不会轻易放我们走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28070106/adv/image/28070106.png,enemy1,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28070106_entry_06.mp3
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「――――――――――――――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/103710/adv/atlas/stand_a,body:sad,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_22.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「诺恩！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_27.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「芙拉，至少你先逃——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,nowa1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:anger,nowa2,0,0,0,0,,,,
+imgconf,nowa2,nowa1,0,-500,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/adv/voice/quest/main_053_16_08_01.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「看来你们被逼到绝境了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Slash2_Blue,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_037.mp3
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10080100.jpg,1,255
+endwait
+flash,255,255,255,1,0.3,1.0
+playse,/download/sound/se/conA.mp3
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/28070106/adv/image/28070106.png,enemy1,0,-50,0.55,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>悠久に揺蕩う夢片</outline>,
+msg,0,<outline width=2 color=black>「――――、――――――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:surprise,norn,-300,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/103710/adv/atlas/stand_a,body:surprise,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_006_16_08_23.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103511/adv/atlas/stand_a,body:surprise,norn,-300,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_014_16_08_28.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「刚才的攻击是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:normal,nowa,300,-130,0.5,0.5,,,,
+anm,tint,nowa,150_150_150,0.0001,0
+spriteatlas,download/character/105204/adv/atlas/stand_a,body:normal,kukuru,-300,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_052_16_08_01.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「你们俩都没事吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105300/adv/atlas/stand_a,body:normal,nowa,300,-130,0.5,0,,,,
+anm,tint,kukuru,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+playvoice,1,download/adv/voice/quest/main_053_16_08_02.mp3
+name,<outline width=2 color=black>诺瓦·瓦拉德</outline>,
+msg,1,<outline width=2 color=black>「你们两个让开」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_032.mp3
+spriteatlas,download/character/105300/adv/atlas/stand_b,body:anger,nowa,300,-130,0.5,0,,,,
+playvoice,1,download/adv/voice/quest/main_053_16_08_03.mp3
+msg,1,<outline width=2 color=black>「这家伙，由我来对付」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
