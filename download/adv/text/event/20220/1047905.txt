@@ -1,0 +1,517 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:sad,catia_s,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「你、想做什么……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,catia_s,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「……居然想在这里保护那家伙，\n真是让人无法理解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我知道你是个老好人。\n但这是梦，那不过是过去的投影罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「现在该在意的不是那种东西……这一点，\n你应该也明白吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「连米露瓦姐姐大人怎么样了都不知道——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我认为这是米露瓦的愿望」,选项2　「我觉得这个梦也有意义」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「还真是说了相当自以为是的话呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「保护梦里的角色，就是姐姐大人的愿望？\n你是认真的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:sad,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_063.mp3
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这种事，不用你一一说明，我也明白的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「……这个梦的意义啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你知道我们为什么会被卷入这样的梦里吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「最渴望这个梦的人是谁……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_063.mp3
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哼……算了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然不知道这会导致怎样的发展，但既然你如此想为这个结局负责，那就随你便吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,300,-120,0.5,0.5,,,,
+anm,tint,alma_s,150_150_150,0.0001,0
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「为什么……不杀我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,300,-120,0.5,0,,,,
+anm,tint,catia_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「谁知道呢，别问我啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「要是还想打的话，我就先溜了。\n以现在的你，就算带着这个<ruby>累赘|老好人</ruby>也能逃掉吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+anm,tint,alma_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「…………为什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:sad,catia_s,-300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么你会知道洁美拉和伊莉娜的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,300,-120,0.5,0,,,,
+anm,tint,catia_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「谁知道呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我啊，可一点都不喜欢你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「要是那么想打听的话，去问那边那个男人好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0.5,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+spriteatlas,download/character/100881/adv/atlas/stand_b,body:anger,holy_s,-300,-160,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,0,<outline width=2 color=black>「……为什么，你会知道布丽姬特大小姐的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+anm,tint,holy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「因为是熟人啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「自从离开芭德薇后，辗转世界各地，\n时而靠赌局赢取盘缠，一边追求力量一边进行武者修行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但实际上，不过是个连如何面对未能被选为家族继承人的自卑感\n都找不到方法的蠢货罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊，算是略知一二吧。毕竟从各种意义上来说都是同类呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100881/adv/atlas/stand_b,body:anger,holy_s,-300,-160,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+anm,tint,holy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「搞什么啊。之前不是还气势汹汹地说什么杀害大小姐的家伙\n格杀勿论、灭其全族吗，怎么突然就蔫了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「说是布丽姬特的熟人可能也只是信口胡诌。\n就这么想听关于大小姐的话题吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100881/adv/atlas/stand_b,body:anger,holy_s,-300,-160,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,0,<outline width=2 color=black>「……像您这样的人，我实在不愿相信\n曾与布丽姬特大小姐相识」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+anm,tint,holy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「意思是说，这种品行不端的人配不上大小姐，是吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽说我也没打算宣称自己和那家伙是挚友什么的，\n但这也轮不到你一个个来指手画脚吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你他妈又知道布丽吉特·芭德薇的什么事？啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100881/adv/atlas/stand_b,body:sad,holy_s,-300,-160,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,0,<outline width=2 color=black>「呃……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+anm,tint,holy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「摆出这副德行，你以为大小姐会高兴吗？\n难道指望她在天国夸你'干得好啊霍莉'不成？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:anger,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「蠢货，你他妈在自作多情什么。\n最侮辱那家伙的人到底是谁啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:anger,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「看到现在的你，她能说出什么话——你想象得出来吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0.3,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100280/adv/atlas/stand_a,body:normal,blizit_s2,0,0,0,0,,,,
+imgconf,blizit_s2,blizit_s1,0,-661,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「——别犯傻了，趁早把我们的事忘干净，\n活得轻松点吧。虽然我也没资格说这话就是了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0.5,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+spriteatlas,download/character/100881/adv/atlas/stand_b,body:sad,holy_s,-300,-160,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,0,<outline width=2 color=black>「——…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+anm,tint,holy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「我觉得自己说得挺在理。最后补上那句'负不起责任就缩了'\n才像她的作风对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100881/adv/atlas/stand_b,body:sad,holy_s,-300,-160,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,0,<outline width=2 color=black>「……她只是厌恶不负责任的行为。\n绝不会像你这样，单方面地强加说辞。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+anm,tint,holy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「哈？责任感爆棚是吧？\n扛不住就逃跑的家伙可没资格说这话啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:anger,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「扛着扛着，以为自己还能行、自己不止这点能耐，\n结果把自己压垮了——这种蠢货谁管你啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「向那种废物效忠有什么意义。\n趁早收手吧，跟那种货色混在一起绝对没好下场」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100881/adv/atlas/stand_b,body:normal,holy_s,-300,-160,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,0,<outline width=2 color=black>「……你说过'不准谈论布丽吉特大小姐的事'对吧。\n我本该让你那张轻薄的嘴永远闭上才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_063.mp3
+spriteatlas,download/character/100881/adv/atlas/stand_a,body:sad,holy_s,-300,-160,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可是为什么……我竟从你的话语背后，\n窥见了那位大人的影子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+anm,tint,holy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「蠢货，要我说多少遍。因为我和那家伙是同类啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:normal,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以？还要继续吗？要我说啊，在这种梦里\n拼死战斗简直蠢到家了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100881/adv/atlas/stand_a,body:normal,holy_s,-300,-160,0.5,0,,,,
+anm,tint,edel_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,0,<outline width=2 color=black>「…………首先，请让我听听你的说法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100881/adv/atlas/stand_a,body:normal,holy_s,-300,-160,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你究竟是何方神圣……还有，关于布丽吉特大小姐的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:sad,edel_s,300,-120,0.5,0,,,,
+anm,tint,holy_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳的影子</outline>,
+msg,0,<outline width=2 color=black>「这同样也是件麻烦事啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:sad,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过嘛，这种展开大概也是那家伙所期望的吧，\n事后被抱怨也很烦人就是了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:sad,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100583/adv/atlas/stand_a,body:sad,edel_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「凭什么非得让我去顾虑那个笨蛋——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>？？？</outline>,
+msg,0,<outline width=2 color=black>「——那么，就由我来处理这份麻烦如何」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm183.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100881/adv/atlas/stand_b,body:anger,holy_s,-300,-160,0.5,0.5,,,,
+anm,tint,holy_s,150_150_150,0.0001,0
+spriteatlas,download/character/100583/adv/atlas/stand_b,body:anger,edel,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾蒂尔加德纳·爱因斯坦</outline>,
+msg,0,<outline width=2 color=black>「喂、你这家伙！当心，要来了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100881/adv/atlas/stand_b,body:anger,holy_s,-300,-160,0.5,0,,,,
+anm,tint,edel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>霍莉・哈谷李维斯</outline>,
+msg,0,<outline width=2 color=black>「……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Threebeams_purple,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+flash,240,20,20,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
