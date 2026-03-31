@@ -1,0 +1,174 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11040300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm184.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_01.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「其实，我有件要紧事想和你商量。\n这是一项只有你才能完成的、非常重要的任务」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　“总觉得有点可疑……”,选项2　“巧克力的话我可不会去找哦”
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_02.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「真是令人意外。正因为我从心底信任你，\n才会这样向你开口的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_03.mp3
+msg,1,<outline width=2 color=black>「你竟然如此轻率地对待我的这份心意，太过分了。\n我深受伤害」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_04.mp3
+msg,1,<outline width=2 color=black>「明明现在是分秒必争的危险状况……这个问题，\n我们必须齐心协力解决才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:surprise,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_05.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「竟然……难道你已经察觉到这和巧克力有关的事件了。\n真不愧是敏锐的洞察力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_06.mp3
+msg,1,<outline width=2 color=black>「但是，比那洞察力更重要的是，有一项只有你才能胜任的职责。\n这项任务离不开你的协助」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_07.mp3
+msg,1,<outline width=2 color=black>「顺便说一句，我并不是想让你去找巧克力。\n事态已经进入了比那更为严峻的阶段」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_08.mp3
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,1,<outline width=2 color=black>「最近，亚纱花提防着我偷吃巧克力，\n每隔一段时间就会把巧克力藏到别的地方去」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_09.mp3
+msg,1,<outline width=2 color=black>「当然，不管她把巧克力藏得多好，每次我都能准确找到藏匿点。\n想瞒着我藏住巧克力根本不可能」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_10.mp3
+msg,1,<outline width=2 color=black>「……话虽这么说，但亚纱花藏巧克力的手法确实日益精进也是事实」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:sad,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_11.mp3
+msg,1,<outline width=2 color=black>「每次藏匿地点变更，寻找巧克力的时间都在增加，\n要是调查耗时太久，亚纱花可能又会在此期间把巧克力转移走」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_12.mp3
+msg,1,<outline width=2 color=black>「这预示着最糟糕的事态……连我都找不到巧克力什么的，\n这种结局就算世界允许我也绝不承认」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_13.mp3
+msg,1,<outline width=2 color=black>「所以，该你出场了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_14.mp3
+msg,1,<outline width=2 color=black>「亚纱花也很忙。你可以以此为理由，提议由你代替亚纱花\n来运送巧克力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_15.mp3
+msg,1,<outline width=2 color=black>「亚纱花不可能拒绝你的提议，\n她肯定会把巧克力托付给你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_16.mp3
+msg,1,<outline width=2 color=black>「你只要立刻把藏匿地点分享给我就行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:anger,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_17.mp3
+msg,1,<outline width=2 color=black>「噢，多么完美的计划……若生逢其时，我说不定会成为\n与名侦探们展开精彩对决的完美犯罪者」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_18.mp3
+msg,1,<outline width=2 color=black>「当然，我也会给你准备相应的好处」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_19.mp3
+msg,1,<outline width=2 color=black>「现在签约的话，就赠送部分战利品巧克力。\n而且，我还可以现场提供特别服务。比如说……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:unique,maruta,0,-90,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,jump,maruta,0_-90_20_2,1,0
+playvoice,1,download/character/102715/adv/sound/fav102715_02_20.mp3
+msg,1,<outline width=2 color=black>「蹦蹦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_21.mp3
+msg,1,<outline width=2 color=black>「像这样跳起来，让你看看胸部摇晃的样子……\n还有，把手伸进乳沟里也可以哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:normal,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_22.mp3
+msg,1,<outline width=2 color=black>「顺便说一句，这个条件仅限现在。\n之后才签约的话，可就没有这些特典了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,jump,maruta,0_-90_20_2,1,0
+playvoice,1,download/character/102715/adv/sound/fav102715_02_23.mp3
+msg,1,<outline width=2 color=black>「我的蹦蹦跳跳，还想多看几眼吧？\n那么，该做的事只有一件」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102715/adv/atlas/stand_a,body:smile,maruta,0,-90,0.5,0,,,,
+playvoice,1,download/character/102715/adv/sound/fav102715_02_24.mp3
+msg,1,<outline width=2 color=black>「和我，签订契约吧，蹦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
