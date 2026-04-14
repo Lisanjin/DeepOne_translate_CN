@@ -1,0 +1,178 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11410300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm163.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:smile,rosalie,0,-150,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_01.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「这里，有各种各样的玩具啦、绘本啦，也有很多……。\n这种地方，小孩子应该会喜欢吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:surprise,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_02.mp3
+msg,1,<outline width=2 color=black>「——咦？我的小时候？\n呃，不是罗莎莉的，而是“我”的……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_03.mp3
+msg,1,<outline width=2 color=black>「有点，意外……你也是知道我的诅咒性质吧？\n罗鲁古多阿斯的厌恶诅咒，即便是血脉相连的对象也不例外」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_04.mp3
+msg,1,<outline width=2 color=black>「至今继承罗鲁古多阿斯的罗莎莉之中，丧命于亲生父母之手的\n也不在少数……那里，不存在不幸以外的故事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_05.mp3
+msg,1,<outline width=2 color=black>「……我以为你会避开这种话题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「想好好了解一下」,选项2　「如果痛苦的话不说也可以」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_06.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「……你啊，真是个，奇怪的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_07.mp3
+msg,1,<outline width=2 color=black>「明明不知道这些事也可以……明明不用一起背负也可以的。\n听别人的不幸故事，对听的人来说也很麻烦吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_08.mp3
+msg,1,<outline width=2 color=black>「我也，并不是想要你背负这种东西——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:shy,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_09.mp3
+msg,1,<outline width=2 color=black>「…………真是的。被这样直直地盯着看，总觉得，没法拒绝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_10.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「要说痛不痛苦的话，当然，是痛苦的。\n不可能坦然接受被自己的父母厌恶这件事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_11.mp3
+msg,1,<outline width=2 color=black>「……但是，大概，没有你想象的那么痛苦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_12.mp3
+msg,1,<outline width=2 color=black>「对于生来就被烙上罗莎莉·芭德薇记忆的我来说，\n把自己的父母当作父母的心情……有点，淡薄」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_13.mp3
+msg,1,<outline width=2 color=black>「既然我这样的孩子出生了……说不定，\n真正痛苦的是他们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_14.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「我的父母，是很好、很好的人……我想。在有着这个诅咒的情况下，\n还是好好地养育了我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_15.mp3
+msg,1,<outline width=2 color=black>「虽然他们说过严厉的话，\n也受过像是扇耳光这样的小小暴力。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_16.mp3
+msg,1,<outline width=2 color=black>「还有就是，被禁止擅自外出走动来着。\n大概，是觉得有我这样的孩子被别人看到很丢脸吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_17.mp3
+msg,1,<outline width=2 color=black>「所以，小时候的记忆几乎都是在房间里度过的时光……\n一个人，练习魔法什么的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:smile,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_18.mp3
+msg,1,<outline width=2 color=black>「但是呢，饭食有人准备，房间也有窗户所以能看到季节的变迁。\n读读家里有的书也是被允许的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:smile,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_19.mp3
+msg,1,<outline width=2 color=black>「我觉得，至少是被当作孩子对待了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:smile,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_20.mp3
+msg,1,<outline width=2 color=black>「或许你会觉得因为是自己的父母才说得夸张，\n但我想，他们原本大概是世界上最爱女儿的父母了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:smile,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_21.mp3
+msg,1,<outline width=2 color=black>「是出色、值得尊敬的人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_22.mp3
+msg,1,<outline width=2 color=black>「……要是我是个能好好被爱的孩子就好了。\n只有这一点，无论道歉多少次都不够。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_23.mp3
+msg,1,<outline width=2 color=black>「但是……如果那个“假如”的日子真的来临……如果这个诅咒能够化解的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_24.mp3
+msg,1,<outline width=2 color=black>「到那时……我是不是就能……哪怕只有一点点，\n以家人的身份和他们说说话了呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105707/adv/atlas/stand_a,body:smile,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105707/adv/sound/fav105707_02_25.mp3
+msg,1,<outline width=2 color=black>「……真希望，那样的日子能够到来啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

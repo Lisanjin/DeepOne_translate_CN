@@ -1,0 +1,182 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11210300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm088.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_01.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「这里看起来，是托管孩子之类的场所吧。\n像是日托中心、托儿所那样的儿童看护设施」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_02.mp3
+msg,1,<outline width=2 color=black>「摆放着各种游乐器材，建筑物上也装饰着可爱的饰品，\n是个充满欢乐氛围的地方呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:surprise,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_03.mp3
+msg,1,<outline width=2 color=black>「但是，为什么会来到这样的领域呢。\n而且，这身打扮也……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:surprise,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_04.mp3
+msg,1,<outline width=2 color=black>「像我这样的存在，和这种地方，总觉得没什么缘分」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_05.mp3
+msg,1,<outline width=2 color=black>「嘛，关于幻梦境的事，或许想太多也没用……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「因为AIKA有点孩子气」,选项2　「总之先试着扮演老师角色？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:sad,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_06.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「诶——？真失礼啊，爸爸。我才没那么孩子气呢——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:sad,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_07.mp3
+msg,1,<outline width=2 color=black>「虽说我作为独立个体觉醒的时间确实不长，\n但因此就把我当小孩子看待，可真让人有点受伤呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_08.mp3
+msg,1,<outline width=2 color=black>「你看。这里也清清楚楚写着“爱香老师”呢。\n我觉得自己并没有被当成小孩子对待哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_09.mp3
+msg,1,<outline width=2 color=black>「而且……这个空间里除了我之外就只有爸爸了对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_10.mp3
+msg,1,<outline width=2 color=black>「既然老师角色是我……那学生角色是谁不就一目了然了吗，爸爸？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:surprise,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_11.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「老师啊……确实，这个徽章上也写着“爱香老师”，\n看来在这个领域里，我被分配了这样的角色呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:surprise,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_12.mp3
+msg,1,<outline width=2 color=black>「啊，不过如果这里是托儿设施的话，\n不仅需要老师角色，还需要被照顾的孩子角色对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_13.mp3
+msg,1,<outline width=2 color=black>「……哼哼，原来如此，原来如此」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_14.mp3
+msg,1,<outline width=2 color=black>「也就是说在这个领域里，是由爱香老师来照顾爸爸的，\n是这样理解没错吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_15.mp3
+msg,1,<outline width=2 color=black>「既然是这样的话，那我就好好照顾你吧♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_16.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「呵呵。来，爸爸。我是爱香老师哦ー♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_17.mp3
+msg,1,<outline width=2 color=black>「今天老师会好好照顾爸爸的，\n有什么需要尽管跟我说哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_18.mp3
+msg,1,<outline width=2 color=black>「虽说只是过家家游戏……不过既然来到这种领域，\n偶尔这样玩闹一下也挺有意思的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_19.mp3
+msg,1,<outline width=2 color=black>「我虽然没照顾过小孩子，但正因如此\n提前演练一下总没坏处」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_20.mp3
+msg,1,<outline width=2 color=black>「你看。说不定哪天\n真的需要照顾孩子呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_21.mp3
+msg,1,<outline width=2 color=black>「啊哈哈，爸爸你慌张得不得了呢……到底\n想到什么去了呀ー？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_22.mp3
+msg,1,<outline width=2 color=black>「好啦，刚才的话就当一半是玩笑吧。我觉得\n像我这样的存在对这类敏感话题说得太直白不太合适」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_23.mp3
+msg,1,<outline width=2 color=black>「不过，我确实认为凡事亲身体验才是最重要的。\n所以……就现在，让我以爱香老师的身份来照顾爸爸吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_24.mp3
+msg,1,<outline width=2 color=black>「平时都是爸爸在疼爱爱花，\n这次就换我来疼爱爸爸啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104186/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104186/adv/sound/fav104186_01_25.mp3
+msg,1,<outline width=2 color=black>「那么今天就和爱香老师一起，\n玩很多开心的事情吧。爸爸♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
