@@ -1,0 +1,614 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,-300,-120,0.5,0.5,,,,
+anm,tint,alma_s,150_150_150,0.0001,0
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:sad,catia_s,300,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「…………为什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:sad,catia_s,300,-100,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为什么，你会知道洁美拉和伊莉娜的事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,-300,-120,0.5,0,,,,
+anm,tint,catia_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「谁知道呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我啊，不喜欢你这个人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那么想听的话，去问那边那个男人啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「现在先想和米露瓦他们会合」,选项2　「就算说了，能信我吗……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:anger,catia_s,300,-100,0.5,0,,,,
+anm,tint,alma_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「别开玩笑了。都说到这份上了，\n还想糊弄过去，你以为我会允许吗——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:anger,catia_s,300,-100,0.5,0,,,,
+anm,tint,alma_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「判断权在我。\n总之，你们把知道的一切都――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,norn1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「――真是的，实在令人揪心得不行啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「真的，如果不是这样的梦……啊，不过，无论以何种形式\n我也没脸好好面对他呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn2,0,0,0,0,,,,
+imgconf,norn2,norn1,0,-420,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「所以……快点，结束这一切吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm183.mp3,0,
+endwait,,,,,,,,,,,
+
+spine,download/adv/spine/Threebeams_purple,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+flash,240,20,40,4,0.3,1.0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,0.2,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,catia_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:sad,catia_s2,0,0,0,0,,,,
+imgconf,catia_s2,catia_s1,0,0,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「――咳、咳」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+flash,240,20,40,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,catia_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:anger,catia_s2,0,0,0,0,,,,
+imgconf,catia_s2,catia_s1,0,0,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「你、做了什么――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Threebeams_purple,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Threebeams_purple,em1,default,animation,0,0,0,1,1.0,0
+anm,scale,em1,-1_1,0,
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.3
+playse,/download/character/103514/se/se_c03514_ef_hit.mp3
+wait,0.4
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+bg,download/bg/bg_11560300.jpg,0.5,255
+endwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,-1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+flash,240,20,40,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+flash,240,20,40,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,catia_s1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100383/adv/atlas/stand_a,body:sad,catia_s2,0,0,0,0,,,,
+imgconf,catia_s2,catia_s1,0,0,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>卡蒂亚·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+spine,download/adv/spine/blood,em1,default,animation,0,0,0,1.2,1.0,0
+playse,/download/sound/se/se_068.mp3
+endwait,,,,,,,,,,,
+flash,240,20,40,4,0.3,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0.3
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:sad,alma_s,300,-120,0.5,0.5,,,,
+anm,tint,alma_s,150_150_150,0.0001,0
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「梦里的角色别太喋喋不休了。就算是个虚假的偶像\n他也有着无法将梦单纯视为梦的温柔啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_a,body:surprise,alma_s,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「什——……什么，这是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_063.mp3
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呃、诺恩，你……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,alma_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「在绝望的世界里，身处绝望的境地，但即便如此，\n也从未被绝望所染指」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「艾尔玛·莉丝菲尔特。能与像你这样值得敬佩的人\n交谈，实在是莫大的荣幸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，像我这样的梦中角色\n没必要占用你们的时间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「害虫所做的梦，根本不需要哥哥和你这样优秀的人\n来陪伴」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「害虫……那是什么意思。\n话说回来，你是绝望魔女吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这个世界的诺恩——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,alma_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「我其实想逐一回答你们的问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我也有自己的理由，也有那种不想被人用那种眼光看待的\n自私想法」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，没有时间了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那个东西在寻求这个梦的结局。\n而没有察觉到这一点的米露瓦她们，却希望改变结局」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我不想让这个原本就是残酷过去的梦，变成更大的悲剧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「无论米露瓦曾经是怎样的存在，\n她都不该再背负更多的悲伤了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「在绝望的世界里，我肆意玩弄了她的命运」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是现在……哥哥。既然知道了有你所在的充满希望的世界存在，\n我这点微不足道的绝望已经无所谓了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「取而代之的，只有轻薄的罪恶感……至少作为梦中的角色被拉出来，\n现在至少想守护她的心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「哥哥一定鄙视我吧。即便只是梦中的角色，\n即便只是从没有灵魂的过去投影出的偶像，我这样轻视她们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是啊，我就是要轻视。卡蒂亚也是……还有，我也是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「无论被哥哥多么鄙视，连灵魂都没有的过去角色\n我这种人怎么样都无所谓」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「优先考虑的，是从绝望深渊中，通过奇迹般的邂逅触碰到希望的她们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:anger,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「绝望之后，不该再有下一个绝望了。\n就连这样的我，也是这么想的啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:anger,alma_s,300,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「别自顾自地喋喋不休啊。\n想说话的话，就选我们能听懂的词说」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-300,-120,0.5,0,,,,
+anm,tint,alma_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「抱歉啊。这不是对话而是忏悔——不，连忏悔都算不上。\n只是独白。自我满足罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但是，是啊。不能一直沉浸其中」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「——在这梦醒来之前，稍微睡一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11560300.jpg,1,255
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-150,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:surprise,alma_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「——呃」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,-150,-120,0.5,0,,,,
+imgconf,norn,,-150,-120,,,-1,0.5,0.5,0
+anm,tint,alma_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「晚安，艾尔玛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:surprise,alma_s,0,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28090112_entry_04.mp3
+flash,0,0,0,4,0.3,1.0
+shake,0.2,4,15,15
+anm,move,alma_s,0_-250,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:sad,alma_s,0,-250,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「咕、啊……你这……在这种地方……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-150,-120,0.5,0,,,,
+imgconf,norn,,-150,-120,,,-1,0.5,0.5,0
+anm,tint,alma_s,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「米露瓦就由我来代替你守护。我向你保证。\n这种脏活就让我这样的人来背负吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,-150,-120,0.5,0,,,,
+imgconf,norn,,-150,-120,,,-1,0.5,0.5,0
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「对不起呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_28090112_entry_04.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103281/adv/atlas/stand_b,body:sad,alma_s,0,-250,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>艾尔玛的影子</outline>,
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,alma_s,0_-1200,1,0
+endwait,,,,,,,,,,,
+
+playse,/download/sound/se/se_020.mp3
+endwait,,,,,,,,,,,
+spriteoff,alma_s,0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「……好了。抱歉，哥哥也请稍微睡一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「啊，别这样。不要用那么悲伤、却又温柔的眼神看着我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我明白自己选择了与哥哥心意相悖的手段。\n可即便如此……请不要这样体谅并顾及我的处境」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「否则，比起让这场梦结束，\n我更想选择向哥哥一一辩解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「身为梦境中的角色，我不能为了自保和满足私欲而虚度光阴，\n让结局沦为那只害虫所期望的模样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以……对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「等你下次醒来时，这场梦就会醒，回到一如往常的每一天」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+playse,/download/sound/se/se_28090112_entry_04.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，我无法消灭那只害虫。\n唯有这一点让我放心不下……——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――哈哈。一个仅仅映照过去的梦境角色，居然说什么“心”，\n真是奇怪的故事啊。真是的，我到底在说些什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+playse,/download/sound/se/se_28090112_entry_04.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那可不是梦境角色该担心的事。\n如果是哥哥你们的话，一定会想办法解决的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……晚安。能见到你真是太好了，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103514/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「拜拜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+sprite,download/adv/image/black.jpg,upber,0,0,0,0
+sprite,download/adv/image/black.jpg,bottomber,0,0,0,0
+imgconf,upber,,0,-720,1280,720,1,1,1,0
+imgconf,bottomber,,0,720,1280,720,1,1,1,0
+endwait,,,,,,,,,,,
+anm,move,upber,0_0,2,0
+anm,move,bottomber,0_0,2,0
+fadeinblack,2,,,,,,,,,,
+endwait,,,,,,,,,,,
+spriteoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
