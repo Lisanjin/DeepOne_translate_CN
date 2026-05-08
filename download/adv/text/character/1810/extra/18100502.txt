@@ -1,0 +1,196 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm126.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_01.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「说起来，这还是第一次穿这种衣服呢……说到第一次，其实和男生约会也是头一回呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_02.mp3
+msg,1,<outline width=2 color=black>「穿着这身打扮，和你一起走在普普通通的街道上。也许不是什么特别的事，但总觉得这样挺不错的呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_03.mp3
+msg,1,<outline width=2 color=black>「呐，牵个手吧，手。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,you,0.6_0.6,0.5,0
+anm,move,you,0_-140,0.5,0
+playse,/download/sound/se/se_045.mp3
+endwait
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:surprise,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_04.mp3
+msg,1,<outline width=2 color=black>「哇，手好大啊。跟我的完全不一样呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_05.mp3
+msg,1,<outline width=2 color=black>「呐……以后也要一直牵着爱花和想花的手哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_06.mp3
+msg,1,<outline width=2 color=black>「那两个孩子，也许和普通孩子有点不一样，但她们渴望家人的爱这一点，和普通孩子没什么两样。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_07.mp3
+msg,1,<outline width=2 color=black>「唔，不对吧……正因为不普通，才比普通孩子更需要爱。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_08.mp3
+msg,1,<outline width=2 color=black>「……不过，就算我不多说，你也一定明白的吧。我啊，好像比想象中还要多管闲事呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:normal,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_09.mp3
+msg,1,<outline width=2 color=black>「啊，倒不是说顺便多管闲事……但能不能再\n拜托你一件事？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_10.mp3
+msg,1,<outline width=2 color=black>「希望你也多关心一下茉莉那孩子。她明明是个爱哭鬼，却\n总爱把事情憋在心里，也不太擅长向别人求助。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:sad,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_11.mp3
+msg,1,<outline width=2 color=black>「哎呀，感觉净在拜托你了呢……抱歉啦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「现在，有更重要的事」,选项2　「你根本不需要道歉」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:surprise,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_12.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「诶？比那两个孩子更重要的事——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,you,0.7_0.7,0.5,0
+anm,move,you,0_-160,0.5,0
+playse,/download/sound/se/se_028.mp3
+endwait
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:surprise,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_13.mp3
+msg,1,<outline width=2 color=black>「——啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:normal,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_14.mp3
+msg,1,<outline width=2 color=black>「这样啊……现在，是在约会呢——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_15.mp3
+msg,1,<outline width=2 color=black>「约会的时候，你会把我放在第一位吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_16.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「……这样啊。\n那我不说抱歉，说声谢谢可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_17.mp3
+msg,1,<outline width=2 color=black>「呵呵……呐。就一会儿，能抱抱我吗？\n我想稍微确认一下……连我自己，都忍不住想直接感受了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_18.mp3
+msg,1,<outline width=2 color=black>「触碰你的那种感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,you,0.7_0.7,0.5,0
+anm,move,you,0_-160,0.5,0
+playse,/download/sound/se/se_028.mp3
+endwait
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_19.mp3
+msg,1,<outline width=2 color=black>「嗯……这就是那两个孩子一直感受到的温暖啊。\n总觉得，让人好安心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_20.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「我好像也明白，那两个孩子为什么会那么喜欢你了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:normal,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_21.mp3
+msg,1,<outline width=2 color=black>「啊啊……如果这不是梦的话——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:sad,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_22.mp3
+msg,1,<outline width=2 color=black>「……开玩笑的啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_23.mp3
+msg,1,<outline width=2 color=black>「刚才的话，忘了吧。说了些说了也没用的话。\n就算听到这种话，你也只会为难吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_24.mp3
+msg,1,<outline width=2 color=black>「现在，不想考虑复杂的事情，只想享受这段时光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-160,0.7,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_02_25.mp3
+msg,1,<outline width=2 color=black>「所以，忘掉它……好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,216 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181005/adv/sound/fav181005_01_01.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「——喂喂？　喂——，能听到吗——？　喂——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+sprite,download/adv/image/black.jpg,eye1,0,360,1,0
+sprite,download/adv/image/black.jpg,eye2,0,-360,1,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10150100.jpg,0,255
+endwait,,,,,,,,,,,
+anm,move,eye1,0_720,1,0
+anm,move,eye2,0_-720,1,0
+endwait,,,,,,,,,,,
+spriteoff,eye1,0.5
+spriteoff,eye2,0.5
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm038.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_02.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「啊，醒了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_03.mp3
+msg,1,<outline width=2 color=black>「……这么说来，也挺奇怪的吧。\n这里明明就是像梦一样模糊的空间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_04.mp3
+msg,1,<outline width=2 color=black>「反而，跟早上好正好相反……？嘛，细节就别在意啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「这里是……？」,选项2　「……初次见面？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_05.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「不是说过了嘛，这是梦啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_06.mp3
+msg,1,<outline width=2 color=black>「因为我现在，是个既不在任何地方，却又在这里的模糊存在。\n这样的我所在的这里，也是个模糊的地方哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_07.mp3
+msg,1,<outline width=2 color=black>「本来呢，我是没法像这样和你说话的。\n因为是梦嘛——所以什么都可能……嗯，或许该说是奇迹吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_08.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「倒没有初次见面的感觉呢。\n通过和我相连的那些人的心，我早就知道你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_09.mp3
+msg,1,<outline width=2 color=black>「而且……这里很模糊，过去、未来，还有“如果”的可能性世界\n都交织在一起呢。连这些也算在内，嗯，确实没有陌生人的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_10.mp3
+msg,1,<outline width=2 color=black>「没想到，竟然能像这样在梦里和你说话。\n虽然从没想过，但我真的非常开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_11.mp3
+name,<outline width=2 color=black>优</outline>,
+msg,1,<outline width=2 color=black>「爱花的事。想花的事。茉莉的事。亚纱花的事。\n还有你自身的事……以及，我的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_12.mp3
+msg,1,<outline width=2 color=black>「啊啊，真让人着急啊。想说的话明明有那么多，\n却不知道这个梦能持续多久呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_13.mp3
+msg,1,<outline width=2 color=black>「所以，先让我问最想问的一件事，可以吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_14.mp3
+msg,1,<outline width=2 color=black>「你现在，幸福吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_15.mp3
+msg,1,<outline width=2 color=black>「你们度过的每一天，是幸福的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_16.mp3
+msg,1,<outline width=2 color=black>「——……呵呵，这样啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_17.mp3
+msg,1,<outline width=2 color=black>「太好了，你们能幸福……能抵达可以明确断言幸福的未来，真是太好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_18.mp3
+msg,1,<outline width=2 color=black>「你的幸福之中，也包含着那些孩子们的幸福。\n所以，那个答案，正是我最期望的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_19.mp3
+msg,1,<outline width=2 color=black>「不过，你的回答里没有丝毫犹豫呢。虽然我一直祈祷着能如此，\n但怎么说呢，真是让人羡慕，甚至有点嫉妒了啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_20.mp3
+msg,1,<outline width=2 color=black>「呐……难得有这样的机会，就一点点……\n现在，在这梦里，只要一点点时间就好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_21.mp3
+msg,1,<outline width=2 color=black>「能不能也让我，融入你的幸福之中呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_22.mp3
+msg,1,<outline width=2 color=black>「其实，不是什么难事啦。不用那么紧张。\n虽然说得有点夸张，但不需要做什么大事的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_23.mp3
+msg,1,<outline width=2 color=black>「只是……想和你一起度过时光」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_24.mp3
+msg,1,<outline width=2 color=black>「就是说，去约会吧——。这样总好懂了吧——？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181005/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181005/adv/sound/fav181005_01_25.mp3
+msg,1,<outline width=2 color=black>「那，走吧——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
