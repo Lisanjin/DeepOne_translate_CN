@@ -1,0 +1,256 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11570300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm107.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,kukuru1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:normal,kukuru2,0,0,0,0,,,,
+imgconf,kukuru2,kukuru1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_01.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「啊——唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/105207/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_03_02.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「嗯……这个肉包子，真好吃呢。\n库库露美食评审，给八分吧。啊，是十分满分哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_03.mp3
+msg,1,<outline width=2 color=black>「不过不过呢，加上和最喜欢的人一起吃的加成，\n大吃一惊，是三十分啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_04.mp3
+msg,1,<outline width=2 color=black>「开玩笑的。呼呼，果然加成加太多了吗？\n这会被评审委员会提出异议吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_05.mp3
+msg,1,<outline width=2 color=black>「……咦，已经吃完了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_06.mp3
+msg,1,<outline width=2 color=black>「不愧是男孩子。嘴巴也真大呢……喂，你\n嘴角边沾了点豆沙馅哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_07.mp3
+msg,1,<outline width=2 color=black>「啊，不是那边……真是的。呼呼，是这里啦，这里。\n我帮你弄掉，别动哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+spriteoff,all,1
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_08.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「——啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/105207/image/main.png,card1,50,-60,1.2,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_03_09.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「嗯，擦掉了……呼呼。现在没带手帕之类的，\n只能这样弄掉啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「想要回礼」,选项2「好吃吗？」
+if,select_===_1,,,,,,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_03_10.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「诶？我、我帮你弄掉了，你居然还要求回礼？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_11.mp3
+msg,1,<outline width=2 color=black>「虽、虽说我也挺高兴的，算是沾了光，\n心里想着多谢款待……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_12.mp3
+msg,1,<outline width=2 color=black>「回、回礼啊……嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_03_13.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「嗯……库库露美食评审给满分一百分」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_14.mp3
+msg,1,<outline width=2 color=black>「开玩笑的……呼呼，是不是有点太贪心了？\n我这不该有的小心思露出来了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_15.mp3
+msg,1,<outline width=2 color=black>「所以呢，作为道歉……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_03_16.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「来，张嘴——啊——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+sprite,download/character/105207/image/main.png,card2,80,-100,1.4,0.5,,,,
+endwait,,,,,,,,,,,
+spriteoff,card1,0
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_03_17.mp3
+msg,1,<outline width=2 color=black>「——呼呼。怎么样？您还满意吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_18.mp3
+msg,1,<outline width=2 color=black>「要是不够的话，我再喂您点哦。来，啊——♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_19.mp3
+msg,1,<outline width=2 color=black>「……那个，咦？您为什么这么盯着我看……我现在\n只是在喂您吃桃子馒头而已，没必要这么盯着看吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_20.mp3
+msg,1,<outline width=2 color=black>「那、那个？是不是有点太近了？\n这样下去，我可能没法好好喂您吃了呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_21.mp3
+msg,1,<outline width=2 color=black>「啊——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,1
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,kukuru1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:shy,kukuru2,0,0,0,0,,,,
+imgconf,kukuru2,kukuru1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_22.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「嗯、啾噗、啾……啾呜……啾、啾……嗯、哈啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+sprite,download/character/105207/image/main.png,card1,80,-100,1.4,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+playvoice,1,download/character/105207/adv/sound/fav105207_03_23.mp3
+msg,1,<outline width=2 color=black>「啊、啊哈哈……是桃子馒头味的吻呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_24.mp3
+msg,1,<outline width=2 color=black>「…………那个，要不要再吃点桃子馒头？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,1
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,kukuru1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:shy,kukuru2,0,0,0,0,,,,
+imgconf,kukuru2,kukuru1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_03_25.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「啊、唔、啾、啾噗……嗯呜、啾、啾……嗯、哈啊、\n啧、啾……啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

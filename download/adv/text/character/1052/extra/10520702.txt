@@ -1,0 +1,204 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11570300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm107.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_01.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「嗯……唔——……嗯——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:surprise,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_02.mp3
+msg,1,<outline width=2 color=black>「啊，抱歉。我有点在意的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_03.mp3
+msg,1,<outline width=2 color=black>「那个，总觉得静不下心来……你看，这件衣服的设计\n是不是有点太性感了，也有这方面的原因」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_04.mp3
+msg,1,<outline width=2 color=black>「……还、还勒得紧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,kukuru,0.6_0.6,0.5,0
+anm,move,kukuru,0_-170,0.5,0
+endwait
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:shy,kukuru,0,-170,0.6,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_05.mp3
+msg,1,<outline width=2 color=black>「啊，不、不是啦！？　不是！\n不是胖了或者什么的啦！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:anger,kukuru,0,-170,0.6,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_06.mp3
+msg,1,<outline width=2 color=black>「就是一般意义上的尺寸偏小！\n绝不是、绝不是！　绝不是！　胖了什么的，还请见谅！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,kukuru,0.5_0.5,0.5,0
+anm,move,kukuru,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_07.mp3
+msg,1,<outline width=2 color=black>「我可是有好好保持身材的。\n特别是最近，那个……为了随时都能被看光……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_08.mp3
+msg,1,<outline width=2 color=black>「——这个先放一边！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_09.mp3
+msg,1,<outline width=2 color=black>「这件衣服，胸口周围、腰周围……还有，那个……下面，也是，\n所有尺寸都紧巴巴的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:sad,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_10.mp3
+msg,1,<outline width=2 color=black>「扣子也小，一不留神，会不会崩开啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「嗯……」,选项2　「失礼一下」
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,kukuru1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:shy,kukuru2,0,0,0,0,,,,
+imgconf,kukuru2,kukuru1,0,260,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_02_11.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「……那、那个……被你这么死死盯着，\n果然还是有点害羞……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_02_12.mp3
+msg,1,<outline width=2 color=black>「不，也不是没有那种你对我着迷了吧嘿嘿，的心情？\n要说完全没有诱惑你的意图，那也是假话？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_02_13.mp3
+msg,1,<outline width=2 color=black>「反过来想，连在想色色的事都完全藏不住这点\n也许还挺可爱的，我也这么觉得……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_02_14.mp3
+msg,1,<outline width=2 color=black>「总、总之先看着我的脸说话吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_028.mp3
+wait,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,kukuru1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:shy,kukuru2,0,0,0,0,,,,
+imgconf,kukuru2,kukuru1,0,-150,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_02_15.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「啊……呀！？　别、别，手指别勾到那儿！\n别拽！　真、真的要掉下来了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_02_16.mp3
+msg,1,<outline width=2 color=black>「要是这个金属扣坏了，我可就胸门大开了！？\n直接变成露胸骚扰女了喂！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_02_17.mp3
+msg,1,<outline width=2 color=black>「等、哇啊！你刚才那表情，好像觉得“那样也行”似的！\n露、露出play……！？等等，等我十秒！我做好觉悟！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105207/adv/sound/fav105207_02_18.mp3
+msg,1,<outline width=2 color=black>「等等，我做什么觉悟啊！再冷静点！嗯，好了！\n露出play还是下次再说吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_19.mp3
+name,<outline width=2 color=black>库库露·Y·特雷塞纳</outline>,
+msg,1,<outline width=2 color=black>「唔……首先我们俩都冷静一下……先冷静下来吧，兄弟。\n那种色色的事，至少等回到拉莱耶安顿下来再……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:surprise,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_20.mp3
+msg,1,<outline width=2 color=black>「——诶，约好了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:surprise,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_21.mp3
+msg,1,<outline width=2 color=black>「啊，嗯，约好了。回到拉莱耶就做色色的事——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105207/adv/atlas/stand_a,body:shy,kukuru,0,-130,0.5,0,,,,
+playvoice,1,download/character/105207/adv/sound/fav105207_02_22.mp3
+msg,1,<outline width=2 color=black>「等等，我这是被逼着约定了什么啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
