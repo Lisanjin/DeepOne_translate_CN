@@ -1,0 +1,570 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11840302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm141.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:shy,norn,-350,-120,0.5,0.5,,,,
+anm,tint,norn,150_150_150,0.0001,0
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:shy,frau,350,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「情况我明白了，为了你我会全力配合。\n不过……这、这身打扮我可没听说过要穿啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:shy,frau,350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「果、果然还是有点害羞……嗯呜、呜……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:shy,norn,-350,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「特尔蒂亚那家伙……到底在想什么才让我穿这种衣服……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:unique,norn,-350,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说哥哥，你从刚才开始就看得太久了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:shy,frau,350,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「我知道你会在意……但、但是，那个啊。\n要是你能忍住不看的话，我会很高兴的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「别强人所难了」,选项2　「忍耐也是有限度的」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:sad,frau,350,-120,0.5,0,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「我、我觉得没那么过分啦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:unique,norn,-350,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「什么限度不限度的，你从一开始就没打算忍耐吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「虽然说是为了连接术式，我们得频繁接触……\n可这所谓的接触，该不会是指……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:sad,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「……肉体上的接触？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:sad,frau,350,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「所以，我才这样，那个……呃，穿得方便你触碰的感觉，大概？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「话是这么说，可这也太……这种稍微偏一点\n就会走光的衣服……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「诺恩和芙拉穿也就算了，我穿成这样，\n只会碍眼吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:normal,frau,350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「没那回事。妈妈，我觉得你穿这身特别合适。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:normal,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「说得也是。妈妈你可能是有点自我评价过低了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「喂、喂，你们这是干什么。\n现在的对话走向可不是这样的吧……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:normal,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「……既然如此，干脆就把这当成个好机会吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:surprise,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:smile,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「怎么样？难得有机会，妈妈你也放开点，\n好好宠一宠哥哥呗。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「别、别闹，怎么就成了这样啊！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:smile,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「听特尔蒂亚那口气，似乎接触得越紧密越好，\n那咱们就一鼓作气上吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「所以说，你倒是听人把话——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:normal,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「我觉得哥哥也会很高兴的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:normal,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「妈妈你也不是不想和哥哥亲近吧？\n倒不如说，有了这个正当理由，反而更方便呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「……诺恩。你是在享受我的反应吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:smile,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「哎呀哎呀，哪能呢哪能呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:normal,norn,-350,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我只是希望一向拘谨的妈妈能和哥哥关系更好一点。\n怀疑我这份真挚的心意，妈妈可真过分啊。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「装模作样。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:smile,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「不过说真的，这确实是为了哥哥好。\n趁这个机会，就用妈妈成熟女性的魅力好好宠一宠哥哥吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「说什么成熟女性的魅力……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,norn,-250_-120,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:normal,norn,-250,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「好啦，就算你这么磨蹭也没用啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,frau,250_-120,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:normal,frau,250,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「妈妈也想和哥哥搞好关系吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「连、连芙拉都……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm150.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+
+sprite,download/adv/image/26052601.jpg,sd1,0,55,1,0.5,,,,
+endwait,,,,,,,,,,,
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「那首先，把那碍事的布料这样，唰地掀开试试看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「诶、诶诶……真的要、要、做吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「要做哦。来，唰地一下掀开？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「就算你这么说……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+sprite,download/adv/image/26052602.jpg,sd1,0,55,1,0,,,,
+endwait,,,,,,,,,,,
+
+msg,0,<outline width=2 color=black>「呃、呃……是、是这样吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,sd1,0.5
+wait,0.5
+endwait,,,,,,,,,,,
+sprite,download/adv/image/26052604.jpg,sd1,0,55,1,0.5,,,,
+endwait,,,,,,,,,,,
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「呵呵，对对。不愧是妈妈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「妈妈……你看，哥哥一直在盯着看呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+sprite,download/adv/image/26052603.jpg,sd1,0,55,1,0,,,,
+endwait,,,,,,,,,,,
+
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「这、这种事……不用特意说出来啦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「再多让哥哥在意你一点嘛……\n为了让哥哥着迷……再多掀一点布料吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「还、还来……这怎么行……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「妈妈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+sprite,download/adv/image/26052604.jpg,sd1,0,55,1,0,,,,
+endwait,,,,,,,,,,,
+
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「唔……这、这样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「呵呵。你看……哥哥，一脸高兴的样子呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「我、我这是在干什么……怎么会变成这样……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「那么，接下来要更大胆点……干脆，脱掉怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「首先，你看。从上面，慢慢滑下去的同时……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「滑、滑下去什么的，那样的话，马上就会——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「——怎么可能行得通啊！\n再、再怎么着，这也不能再继续了吧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm159.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:sad,frau,350,-120,0.5,0.5,,,,
+anm,tint,frau,150_150_150,0.0001,0
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0.5,,,,
+anm,tint,zero,150_150_150,0.0001,0
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:sad,norn,-350,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「诶——？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:sad,frau,350,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「这就结束了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「这不是当然的吗……！话说回来，诺恩也就算了，\n芙拉你又在干什么啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「完全被诺恩带坏了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:surprise,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「诶诶！？怪我！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:sad,frau,350,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「……对不起。我忍不住想学诺恩的样子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:surprise,norn,-350,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「芙拉！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:normal,frau,350,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「不过啊……刚才的妈妈，真的好漂亮。\n这是真的。连我都觉得心跳加速了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:smile,frau,350,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「会忍不住想多看几眼，我觉得这也难怪吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「…………真是的。能说出这种话来，到底是被谁影响的啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:sad,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「才、才不是我呢！这种绝对是受哥哥的影响！\n我反对什么都怪到诺恩酱头上！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「嗯，说得也是……实际上，刚才我也被你盯得发毛呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:sad,zero,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……话说回来，你干嘛摆出那么遗憾的表情啊。\n就算你那样看我，我也不会再做刚才那种事了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那种事，至少得等我们两个人独处的时候——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103524/adv/atlas/stand_a,body:surprise,norn,-350,-120,0.5,0,,,,
+anm,tint,zero,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>诺恩</outline>,
+msg,0,<outline width=2 color=black>「诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103722/adv/atlas/stand_a,body:surprise,frau,350,-120,0.5,0,,,,
+anm,tint,norn,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「妈妈……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:surprise,zero,0,-120,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「——不、不是那样啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:shy,zero,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「总、总之，今天的目的是减轻你的负担，\n像这种接触，也确实是太过分了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……就算要撒娇，也换种方式吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:normal,zero,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那样的话，稍微羞耻一点我也能忍忍」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104383/adv/atlas/stand_a,body:smile,zero,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嗯？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
