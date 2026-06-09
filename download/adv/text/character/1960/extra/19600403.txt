@@ -1,0 +1,217 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010600.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm179.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_01.mp3
+name,<outline width=2 color=black><ruby>蝶舞|ちょうまい</ruby><ruby>翠|すい</ruby></outline>,
+msg,1,<outline width=2 color=black>「拉莱耶的伙食真厉害啊……怎么说呢，\n就像来到了一个超棒的餐厅一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_02.mp3
+msg,1,<outline width=2 color=black>「味道自然不用说，连摆盘都精致得让人舍不得吃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_03.mp3
+msg,1,<outline width=2 color=black>「感觉如果忽略拉莱耶总是与危险相伴这一点，\n生活环境方面似乎没什么可抱怨的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_04.mp3
+msg,1,<outline width=2 color=black>「实际上，这方面到底怎么样呢……你住在这里，\n有没有觉得有什么不方便或者不满意的地方？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「有时会想看看蓝色的大海」,选项2　「本来就不了解外面的世界」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_05.mp3
+name,<outline width=2 color=black><ruby>蝶舞|ちょうまい</ruby><ruby>翠|すい</ruby></outline>,
+msg,1,<outline width=2 color=black>「大海……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_06.mp3
+msg,1,<outline width=2 color=black>「啊，这样啊。因为从拉莱耶看到的海尽是黑暗的海底，\n所以反而会怀念美丽的海面吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_07.mp3
+msg,1,<outline width=2 color=black>「我看着深海的时候，会好奇里面到底有什么，\n但如果一直盯着看，确实可能会有点厌烦呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_08.mp3
+name,<outline width=2 color=black><ruby>蝶舞|ちょうまい</ruby><ruby>翠|すい</ruby></outline>,
+msg,1,<outline width=2 color=black>「欸。不知道……难道说，你一直待在拉莱耶吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:sad,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_09.mp3
+msg,1,<outline width=2 color=black>「是从记事起就这样？还是说，失忆了之类的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:sad,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_10.mp3
+msg,1,<outline width=2 color=black>「……这、这样啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_11.mp3
+msg,1,<outline width=2 color=black>「那个，虽然不知道这么说合不合适，\n……希望有一天，你能看到拉莱耶外面的世界呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_12.mp3
+name,<outline width=2 color=black><ruby>蝶舞|ちょうまい</ruby><ruby>翠|すい</ruby></outline>,
+msg,1,<outline width=2 color=black>「这样聊下来，我再次觉得，人与人之间要相互理解\n真的不是件容易的事呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_13.mp3
+msg,1,<outline width=2 color=black>「别人的烦恼啊、背负的隐情之类的，\n怎么可能光靠聊几句就理解得了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:sad,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_14.mp3
+msg,1,<outline width=2 color=black>「我也得多加小心才行……就算觉得自己已经离得很近了，\n也还是会有疏忽的时候吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_15.mp3
+msg,1,<outline width=2 color=black>「欸？我的烦恼吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_16.mp3
+msg,1,<outline width=2 color=black>「我只是个普通学生，跟你们比起来，\n根本算不上什么大烦恼……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:sad,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_17.mp3
+msg,1,<outline width=2 color=black>「……不过，要说的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_18.mp3
+msg,1,<outline width=2 color=black>「最近，有时候会觉得想待在身边的人，\n好像离自己很远……或者看到他露出我不熟悉的表情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:shy,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_19.mp3
+msg,1,<outline width=2 color=black>「……我大概，想更了解他吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:shy,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_20.mp3
+msg,1,<outline width=2 color=black>「等、等等，我刚才是不是说了很羞人的话……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:unique2,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_21.mp3
+msg,1,<outline width=2 color=black>「聊这种事你也会困扰吧，就到此为止……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-140,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_22.mp3
+msg,1,<outline width=2 color=black>「为、为什么你那么兴致勃勃啊……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:shy,sui,0,-140,0.6,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_23.mp3
+msg,1,<outline width=2 color=black>「――诶，男朋友！？啊，不，他是那个……梦斗君……唔、唔唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:unique2,sui,0,-140,0.6,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_24.mp3
+msg,1,<outline width=2 color=black>「等、等等！这个话题能不能打住？我真的会害羞的……。\n跟刚见面的人聊这个，我该用什么表情面对……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:sad,sui,0,-160,0.7,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_03_25.mp3
+msg,1,<outline width=2 color=black>「呜，真、真的太羞人了……对不起！我先告辞了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_016.mp3
+anm,move,sui,1200_-160,1.0,0
+endwait,,,,,,,,,,,
+spriteoff,sui,0
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

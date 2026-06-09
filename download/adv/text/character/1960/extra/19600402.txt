@@ -1,0 +1,156 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010900.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm159.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:smile,sui,0,-130,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_01.mp3
+name,<outline width=2 color=black><ruby>蝶舞|ちょうまい</ruby><ruby>翠|すい</ruby></outline>,
+msg,1,<outline width=2 color=black>「这……真厉害啊。明明在海底，却有这么大的庭院。\n那片天空是映在天花板上的吗……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:smile,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_02.mp3
+msg,1,<outline width=2 color=black>「偶尔还有风吹过……虽然不能说是和真的一模一样，\n但平时待在这里，感觉非常开阔，能让人放松下来」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_03.mp3
+msg,1,<outline width=2 color=black>「正因为是海底的封闭空间，所以才需要建造这样的地方吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_04.mp3
+msg,1,<outline width=2 color=black>「还有大浴场、大剧院什么的……感觉拉莱耶非常注重居住在这里的魔术师的心理健康」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「设施非常方便」,选项2　「还有各种各样的设施」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_05.mp3
+name,<outline width=2 color=black><ruby>蝶舞|ちょうまい</ruby><ruby>翠|すい</ruby></outline>,
+msg,1,<outline width=2 color=black>「……你说设施，意思是还有其他不满的地方吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_06.mp3
+msg,1,<outline width=2 color=black>「按这个话头来说，比如……组织的问题？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_07.mp3
+msg,1,<outline width=2 color=black>「啊……对不起。我是从外面来的，可能说话有点太直接了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:sad,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_08.mp3
+msg,1,<outline width=2 color=black>「因为刚才你看起来好像很难开口的样子……我想，一定有一些我不了解的复杂情况吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_09.mp3
+msg,1,<outline width=2 color=black>「什么忙都帮不上的我，要是深究这件事，未免太不负责任了，这个话题还是到此为止吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_10.mp3
+name,<outline width=2 color=black><ruby>蝶舞|ちょうまい</ruby><ruby>翠|すい</ruby></outline>,
+msg,1,<outline width=2 color=black>「我们已经看了这么多地方，居然还有那么多没看吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_11.mp3
+msg,1,<outline width=2 color=black>「真厉害啊……要是没听介绍的话，我差点以为拉莱耶是什么主题公园之类的地方了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:sad,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_12.mp3
+msg,1,<outline width=2 color=black>「不过，刚才那句话可能对在这里努力的各位有点失礼……对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:normal,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_13.mp3
+name,<outline width=2 color=black><ruby>蝶舞|ちょうまい</ruby><ruby>翠|すい</ruby></outline>,
+msg,1,<outline width=2 color=black>「如果还有时间的话，我还想再多看看其他地方……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_14.mp3
+msg,1,<outline width=2 color=black>「——诶，还有温水游泳池？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:unique2,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_15.mp3
+msg,1,<outline width=2 color=black>「那个……游泳池，该不会……果然还是要穿泳衣吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:unique2,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_16.mp3
+msg,1,<outline width=2 color=black>「那种事，有点害羞……而且，拉莱耶的人也说，\n要是和你单独在奇怪的地方独处会很危险……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_17.mp3
+msg,1,<outline width=2 color=black>「当、当然，大家多半是半开玩笑啦……！\n我也不是真的在警惕那种事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:sad,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_18.mp3
+msg,1,<outline width=2 color=black>「只是……果然还是算了吧，游泳池」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:shy,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_19.mp3
+msg,1,<outline width=2 color=black>「反正要给人看泳衣的话，果然还是想给他……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:surprise,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_20.mp3
+msg,1,<outline width=2 color=black>「啊……没、没什么。刚才那话不算数。\n是我自言自语……啊，哈哈」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196004/adv/atlas/stand_a,body:unique1,sui,0,-130,0.5,0,,,,
+playvoice,1,download/character/196004/adv/sound/fav196004_02_21.mp3
+msg,1,<outline width=2 color=black>「总之，能带我去看看游泳池以外的地方就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
