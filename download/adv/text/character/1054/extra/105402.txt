@@ -1,0 +1,266 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:normal,sora,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_01.mp3
+name,<outline width=2 color=black>索拉</outline>,
+msg,1,<outline width=2 color=black>「喂，我有件事想问你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm185.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:smile,sora,0,-120,0.5,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_02.mp3
+msg,1,<outline width=2 color=black>「你，想对我做那种事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,10,10
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:surprise,sora,0,-120,0.5,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_03.mp3
+msg,1,<outline width=2 color=black>「怎、怎么了，突然这么激动……呃、那个，\n这种时候，是不是该帮你揉揉背……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,sora,0.6_0.6,0.5,0
+anm,move,sora,0_-150,0.5,0
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_045.mp3
+wait,0.2
+endwait,,,,,,,,,,,
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:sad,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_04.mp3
+msg,1,<outline width=2 color=black>「没事吧……？冷静下来了吗？\n要是身体不舒服的话，要不要回房间休息？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:normal,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_05.mp3
+msg,1,<outline width=2 color=black>「没事就好……真的，没什么大问题吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:normal,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_06.mp3
+msg,1,<outline width=2 color=black>「那就好……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:smile,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_07.mp3
+msg,1,<outline width=2 color=black>「那么，重新问一次，你想对我做那种事吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:normal,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_08.mp3
+msg,1,<outline width=2 color=black>「……？为什么这么问……因为房东在做，所以觉得挺不错的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:smile,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_09.mp3
+msg,1,<outline width=2 color=black>「做那种事，很舒服吧？\n真狡猾。我也……想和你做那种事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:normal,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_10.mp3
+msg,1,<outline width=2 color=black>「而且，做那种事的话，\n不就说明我们关系很好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:normal,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_11.mp3
+msg,1,<outline width=2 color=black>「我，最喜欢你了，所以想和你变得更亲密。\n所以，求你了。和我做那种事吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　亲吻,选项2　抚摸胸部
+if,select_===_1,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sora1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:normal,sora2,0,0,0,0,,,,
+imgconf,sora2,sora1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105404/adv/sound/fav105404_02_12.mp3
+name,<outline width=2 color=black>索拉</outline>,
+msg,1,<outline width=2 color=black>「啊、嗯……啾、っ……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:shy,sora,0,-150,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_13.mp3
+name,<outline width=2 color=black>索拉</outline>,
+msg,1,<outline width=2 color=black>「……刚才那个，就是亲吻……明明只是嘴唇碰了一下，但、但总觉得，\n好厉害啊……为什么，会有这种特别的感觉呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:shy,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_14.mp3
+msg,1,<outline width=2 color=black>「还、还要……更多、更多，想要更多」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sora1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:shy,sora2,0,0,0,0,,,,
+imgconf,sora2,sora1,0,-410,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105404/adv/sound/fav105404_02_15.mp3
+msg,1,<outline width=2 color=black>「啾、啾……嗯、唔唔……呼、唔、啾噗、啾……啾呜」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:shy,sora,0,-150,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_16.mp3
+name,<outline width=2 color=black>索拉</outline>,
+msg,1,<outline width=2 color=black>「哈、啊……嗯，呵呵。好厉害……接吻……这个，好厉害啊。\n不只是心跳加速，还飘飘然的……接吻，我好喜欢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sora1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:normal,sora2,0,0,0,0,,,,
+imgconf,sora2,sora1,0,-200,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_028.mp3
+wait,0.2
+endwait,,,,,,,,,,,
+
+playvoice,1,download/character/105404/adv/sound/fav105404_02_17.mp3
+name,<outline width=2 color=black>索拉</outline>,
+msg,1,<outline width=2 color=black>「唔……啊、嗯嗯……总、总觉得，这个……胸部，\n被摸的感觉，好奇怪啊……嗯、嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:shy,sora,0,-150,0.6,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_18.mp3
+name,<outline width=2 color=black>索拉</outline>,
+msg,1,<outline width=2 color=black>「那个，怎么样……？摸我的胸部，舒服吗？\n男生，都喜欢胸部的吧……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:shy,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_19.mp3
+msg,1,<outline width=2 color=black>「如果你能喜欢上我的胸部，我会很高兴的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:shy,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_20.mp3
+name,<outline width=2 color=black>索拉</outline>,
+msg,1,<outline width=2 color=black>「那个，那么……接下来是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:sad,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_21.mp3
+msg,1,<outline width=2 color=black>「――诶，结束了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:anger,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_22.mp3
+msg,1,<outline width=2 color=black>「…………喂。你是不是觉得我对H的事情不熟悉，\n就想随便说点什么糊弄过去啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:anger,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_23.mp3
+msg,1,<outline width=2 color=black>「你把我当小孩子看呢。哼，是吗，原来如此啊。\n……这种感觉，大概就是所谓的火大吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:anger,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_24.mp3
+msg,1,<outline width=2 color=black>「行啊，我明白了，既然你现在这么说，那就这样吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105401/adv/atlas/stand_a,body:anger,sora,0,-150,0.6,0,,,,
+playvoice,1,download/character/105404/adv/sound/fav105404_02_25.mp3
+msg,1,<outline width=2 color=black>「——哼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,sora,1200_-150,1,0
+playse,/download/sound/se/se_048.mp3
+endwait,,,,,,,,,,,
+
+spriteoff,sora,0
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
