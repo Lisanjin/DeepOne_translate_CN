@@ -1,0 +1,248 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010800.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm163.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:normal,azami,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_01.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「我是为了人类而被创造出来的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:normal,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_02.mp3
+msg,1,<outline width=2 color=black>「但人类却以无法控制我的力量为由，将我撕裂，\n夺走力量，并以此为种子制造了五本纳克特抄本。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_03.mp3
+msg,1,<outline width=2 color=black>「现在想起来都感到屈辱……明明是因为人类的渺小才无法驾驭我，\n为什么非要否定我的存在不可……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_04.mp3
+msg,1,<outline width=2 color=black>「只要有能好好驾驭我的人类存在，\n我就能为人类派上最大的用场……——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「我现在正在做卧推……」,选项2　「听你说话之前我先去冲个澡」
+if,select_===_1,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm134.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:anger,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_05.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「干嘛？你是想说训练中别跟你搭话吗？\n凭什么我得考虑你的情况啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:anger,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_06.mp3
+msg,1,<outline width=2 color=black>「人类已经把我随意摆布够了，\n接下来就该人类来配合我了。对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+anm,move,azami,0_-100,0.1,0
+endwait
+anm,move,azami,0_-90,0.1,0
+endwait
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:surprise,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_07.mp3
+msg,1,<outline width=2 color=black>「啊，等、等一下，别突然放下杠铃啊！\n慢点！就你们人类那样可是会被压扁的吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:anger,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_08.mp3
+msg,1,<outline width=2 color=black>「我、我又没说让你中断训练。\n别做危险的事啊。看着都让我提心吊胆的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:smile,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_09.mp3
+msg,1,<outline width=2 color=black>「总之，就算要放下也得慢慢来……千万别脱手\n伤到自己……对，这样就对了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm134.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:anger,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_10.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「区区人类，是打算把我晾在一边吗？\n我可不在乎什么汗味，别操多余的心了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:normal,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_11.mp3
+msg,1,<outline width=2 color=black>「用这条毛巾擦就够了。另外还有清凉喷雾，\n随便你用。还有，运动饮料的瓶子我也放在这儿了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:anger,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_12.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「——喂，凭什么本大人非得照顾你个人类不可啊！\n都让我干些什么啊，真是的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_13.mp3
+msg,1,<outline width=2 color=black>「唔唔……人类这家伙……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_14.mp3
+msg,1,<outline width=2 color=black>「按自己的方便造出了我，把我弄得乱七八糟后丢掉，\n到现在还想摆布我吗……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_15.mp3
+msg,1,<outline width=2 color=black>「我别说履行职责了，连职责本身都被剥夺了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_16.mp3
+msg,1,<outline width=2 color=black>「让我变成这样……果然跟人类待在一起\n就没好事！真让人不爽！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:sad,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_17.mp3
+msg,1,<outline width=2 color=black>「……没错，真让人不爽」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:sad,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_18.mp3
+msg,1,<outline width=2 color=black>「明明应该是这样……可为什么我，\n还对失去的职责，念念不忘呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:shy,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_19.mp3
+msg,1,<outline width=2 color=black>「唔……没什么！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_20.mp3
+msg,1,<outline width=2 color=black>「为什么我要特意跟你说这些啊！\n莫名其妙！笨蛋！讨厌！我最讨厌人类了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,
+playse,/download/sound/se/se_016.mp3
+anm,move,azami,-1200_-90,0.8,0
+endwait
+wait,1
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_016.mp3
+anm,move,azami,0_-90,0.8,0
+endwait
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_21.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「还有这个！之前忘了给你！是柠檬蜂蜜渍！\n柠檬片切得有点厚那是你的错觉啦！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_22.mp3
+msg,1,<outline width=2 color=black>「你就给我好好享用吧！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,
+playse,/download/sound/se/se_016.mp3
+anm,move,azami,-1200_-90,0.8,0
+endwait
+spriteoff,all,0
+endwait,,,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:normal,azami,-1200,-90,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,azami,-580_-90,1.5,0
+endwait
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:normal,azami,-580,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_23.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「……盯——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,azami,-580_-70,0.1,0
+endwait
+anm,move,azami,-580_-90,0.1,0
+endwait
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:surprise,azami,-580,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_24.mp3
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105800/adv/atlas/stand_a,body:shy,azami,-580,-90,0.5,0,,,,
+playvoice,1,download/character/105803/adv/sound/fav105803_02_25.mp3
+msg,1,<outline width=2 color=black>「哼！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,azami,-1200_-90,0.7,0
+endwait
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
