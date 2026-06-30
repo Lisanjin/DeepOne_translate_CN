@@ -1,0 +1,166 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10130300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm163.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_01.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「虽说我们早就知道纳克特抄本有原型，\n但没想到现在还会冒出那种东西来，真是吓了一跳呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_02.mp3
+msg,1,<outline width=2 color=black>「灰蓟……被夺走全部力量而枯萎的灰色蓟啊。\n怎么说呢，真是个讽刺的名字呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:surprise,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_03.mp3
+msg,1,<outline width=2 color=black>「啊。作为从灰蓟那里夺走力量的<ruby>纳克特抄本|我</ruby>来说这话，\n是不是也太缺德了点？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_04.mp3
+msg,1,<outline width=2 color=black>「不行不行。好歹还是得保持一定程度的敬意才行啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_05.mp3
+msg,1,<outline width=2 color=black>「要是没有灰蓟，我们也不会诞生。\n说我能遇见爱花也多少多亏了灰蓟，也不为过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「什么印象？」,选项2　「总觉得有点见外」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_06.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「嗯——？问我印象……嘛，就是觉得挺可怜的，之类的？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_07.mp3
+msg,1,<outline width=2 color=black>「那东西原本的力量，大概，很厉害吧，我觉得」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_08.mp3
+msg,1,<outline width=2 color=black>「那当然啦。简单想想，那规格就相当于集齐了所有纳克特抄本一样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_09.mp3
+msg,1,<outline width=2 color=black>「但是，人类驾驭不了那份过于庞大的力量。\n所以力量被夺走，最后只剩下如同空壳般的灰蓟」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_10.mp3
+msg,1,<outline width=2 color=black>「真让人郁闷啊。明明被如此期望，拥有远超所需的力量，\n可正因为如此，却无法履行使命，被夺走一切，只能一直暴露着残骸」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_11.mp3
+msg,1,<outline width=2 color=black>「确实觉得它很可怜。\n不过，倒也没有到同情或共鸣那种程度的感情投入」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_12.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「见外啊……嗯，也许吧。\n倒不如说，我其实没什么兴趣」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_13.mp3
+msg,1,<outline width=2 color=black>「灰蓟和我们之间，确实有关联性。\n但至少对我来说，不觉得那是有什么价值的联系」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_14.mp3
+msg,1,<outline width=2 color=black>「我是为爱花绽放的花。爱花对我很重要，爱花珍视的\n东西对我很重要……所以，灰蓟并不在我珍视的事物之中」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_15.mp3
+msg,1,<outline width=2 color=black>「我自身的关系，跟与爱花有关的东西比起来，根本无所谓」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:unique,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_16.mp3
+name,<outline width=2 color=black>AIKA</outline>,
+msg,1,<outline width=2 color=black>「——要是换作以前，刚绽放那会儿的我，\n肯定就这么不了了之了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_17.mp3
+msg,1,<outline width=2 color=black>「就算我觉得自己怎样都无所谓，\n但现在我知道，爸爸和爱花都把我看得比他们自己还重要」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:sad,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_18.mp3
+msg,1,<outline width=2 color=black>「要是连这份联系也敷衍了事，爸爸他们肯定会难过的……\n这么一想，我也没法随便应付了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_19.mp3
+msg,1,<outline width=2 color=black>「所以，嗯……我想，至少稍微考虑一下」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_20.mp3
+msg,1,<outline width=2 color=black>「比如灰蓟对我来说是怎样的存在，\n以及今后想以什么方式相处之类的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_21.mp3
+msg,1,<outline width=2 color=black>「当然，只是按我自己的方式来。\n至于能不能得出让爸爸他们满意的答案，我可不敢保证」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:normal,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_22.mp3
+msg,1,<outline width=2 color=black>「……连我自己都觉得，这想法真不像<ruby>纳克特抄本|我</ruby>的风格」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104187/adv/atlas/stand_a,body:smile,aika_s,0,-120,0.5,0,,,,
+playvoice,1,download/character/104187/adv/sound/fav104187_01_23.mp3
+msg,1,<outline width=2 color=black>「即便如此，一想到自己还是被爱花和爸爸的影子影响成了这样……嗯。嘛，倒也不觉得讨厌」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
