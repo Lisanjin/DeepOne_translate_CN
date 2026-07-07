@@ -1,0 +1,193 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm191.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,rosalie1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie2,0,0,0,0,,,,
+imgconf,rosalie2,rosalie1,0,-440,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105709/adv/sound/fav105709_01_01.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「唔……这、这身打扮……果然还是好难为情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,0,-150,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_02.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「泳衣露这么多皮肤……总觉得不太合适」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「特别适合你」,选项2　「披件外套？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_03.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「……是、是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_04.mp3
+msg,1,<outline width=2 color=black>「这样啊……既然你这么说的话，\n虽然害羞……但我试着忍忍吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_05.mp3
+msg,1,<outline width=2 color=black>「…………不过，那个……刚才的话，能不能……再说一遍……之类的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_06.mp3
+msg,1,<outline width=2 color=black>「——……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:unique,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_07.mp3
+msg,1,<outline width=2 color=black>「嗯，呵呵……谢谢。听你这么说，我很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_08.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「……说实话，我也想那样……但是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_09.mp3
+msg,1,<outline width=2 color=black>「感觉……你的声音听起来有点遗憾。\n你更喜欢我现在这样吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_10.mp3
+msg,1,<outline width=2 color=black>「能看到我的泳装……你很开心吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_11.mp3
+msg,1,<outline width=2 color=black>「——这、这样啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_12.mp3
+msg,1,<outline width=2 color=black>「既然如此……反正只有你看着……我就忍忍害羞吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_13.mp3
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,1,<outline width=2 color=black>「……不过，感觉好奇怪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_14.mp3
+msg,1,<outline width=2 color=black>「像这样穿着泳装在河里玩耍……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_15.mp3
+msg,1,<outline width=2 color=black>「我也是……而且，至今为止继承罗鲁古多阿斯的\n每一个“我”也都没有这种经历」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_16.mp3
+msg,1,<outline width=2 color=black>「啊，不过，最初的……真正的罗莎莉\n好像和姐姐一起在河里玩过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:normal,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_17.mp3
+msg,1,<outline width=2 color=black>「所以，虽然我大致知道那是什么感觉。\n但果然，自己亲身经历还是另一回事……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:smile,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_18.mp3
+msg,1,<outline width=2 color=black>「……能和你一起经历这样的第一次，总觉得很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:smile,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_19.mp3
+msg,1,<outline width=2 color=black>「那个，这种时候……总之，是先互相泼水玩吗？\n根据罗莎莉的记忆，好像还抓过鱼之类的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:surprise,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_20.mp3
+msg,1,<outline width=2 color=black>「诶？怎么抓……空手啊。\n就这样……唰的一下。就像熊从河里拍出鱼那样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:surprise,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_21.mp3
+msg,1,<outline width=2 color=black>「……钓鱼？罗莎莉好像不喜欢钓鱼，觉得太磨叽了……\n你想钓鱼吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_22.mp3
+msg,1,<outline width=2 color=black>「不过，工具的话……线可以用植物纤维搓细来做吧。\n鱼钩也能磨石头来做……鱼竿就用树枝之类的吧……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_063.mp3
+endwait,,,,,,,,,,,
+spriteatlas,download/character/105709/adv/atlas/stand_b,body:smile,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_23.mp3
+msg,1,<outline width=2 color=black>「这根<ruby>罗鲁古多阿斯|这个</ruby>，长度正合适，你不觉得吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_b,body:smile,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_24.mp3
+msg,1,<outline width=2 color=black>「那准备好之后，我们就来试试钓鱼吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_b,body:unique,rosalie,0,-150,0.5,0,,,,
+playvoice,1,download/character/105709/adv/sound/fav105709_01_25.mp3
+msg,1,<outline width=2 color=black>「罗莎莉的记忆里也几乎没怎么钓过鱼，我自己也不太清楚具体怎么弄。\n如果你方便的话，能教教我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
