@@ -1,0 +1,480 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm021.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>看到关系亲密的姐妹时，罗莎莉心中涌起一股情绪：为什么自己就不能那样和姐姐和睦相处呢？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>那股压力让人难受……在被压迫的感觉中，明确感受到了自己以外的存在……在自己体内，清晰地认识到了罗莎莉。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……用他人的心情来压制自己的感受，从而感知到相对事物的轮廓，这就是“共感”吗？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>自己和大家都太不一样了……即使在享受快乐时光时，也总是意识到自己缺少的东西，感到一种奇妙的距离感。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>这就是“优劣”吗？</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11310303.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm191.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:surprise,rosalie,-300,-150,0.5,0.5,,,,
+anm,tint,rosalie,150_150_150,0.0001,0
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「罗莎莉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:surprise,rosalie,-300,-150,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,0,<outline width=2 color=black>「芙拉……还有……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「大家，真严格啊」,选项2　「你注意到了吗？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,rosalie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「没那回事啦，哥哥」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「塔芭莎和玛利亚肯定也觉得，光告诉答案的话\n对罗莎莉没有好处」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「她们是希望罗莎莉自己能意识到」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,-300,-150,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,0,<outline width=2 color=black>「看这情形，你们俩也早就知道了啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,rosalie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「虽然中途才察觉……但隐约觉得，可能就是这样」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:normal,rosalie,-300,-150,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,0,<outline width=2 color=black>「这样啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,-300,-150,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,0,<outline width=2 color=black>「……好难为情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「至今为止，我一直拿各种事情当借口，\n其实只是没注意到大家都理所当然知道的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「完全没察觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「至今为止，我心中的那些情绪……其实，\n根本不是什么夸张的东西」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可我却误以为那是无可救药的严重问题……\n不知道该怎么办才好，一直烦恼着……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这样啊，会被人看扁，被说成滑稽也是理所当然的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,rosalie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「没办法啊。罗莎莉你至今为止，经历了那么多艰难的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,-300,-150,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,0,<outline width=2 color=black>「要说艰难的事，又不是只有我，大家不也都各自有吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,rosalie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「大家和罗莎莉，是不同的人啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「虽然难免会忍不住去比较、分出优劣。\n但即便如此，那也会因人而异，完全不同」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「重要的不是比较优劣或大小。\n而是罗莎莉你如何去面对它」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过……我觉得罗莎莉你已经得出答案了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:surprise,rosalie,-300,-150,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,0,<outline width=2 color=black>「诶，什么意思……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+anm,tint,rosalie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「因为……罗莎莉你不是已经有一次，即使不明白、即使模糊不清，\n也还是希望在未来找到幸福吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以，你才会在这里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「其实你早就已经迈出那一步了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「只是迈出那一步后，能看到的东西稍微变多了，\n让你有些不知所措而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以说……既然连这种小事都能察觉到，\n那应该已经没问题了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:surprise,rosalie,-300,-150,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「——那个，我说啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可以……把大家叫过来吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「刚才……一起玩泼水的时候……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:sad,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「其实，我还想再融入一些……只是，我这样的家伙能不能掺和进去呢，\n自己就拉开了距离……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「所以……这次，我想好好地和大家一起玩」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:shy,rosalie,-300,-150,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……大家，会不会讨厌呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+anm,tint,rosalie,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「没那回事啦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103717/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「一起，多创造些快乐回忆吧，罗莎莉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105709/adv/atlas/stand_a,body:smile,rosalie,-300,-150,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>罗莎莉</outline>,
+msg,0,<outline width=2 color=black>「……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11730300.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm067.mp3,0,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,
+spine,download/adv/spine/Explosion,em1,default,animation,0,-350,-350,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+wait,0.7
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em2,default,animation,0,350,-350,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+wait,0.7
+endwait,,,,,,,,,,,
+spine,download/adv/spine/Explosion,em3,default,animation,0,0,-350,1,1.0,0
+playse,/download/sound/se/se_039.mp3
+endwait,,,,,,,,,,,
+flash,255,255,255,4,0.3,1.0
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+spineoff,em1,0
+spineoff,em2,0
+spineoff,em3,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,1,255
+endwait
+wait,1
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_10010100.jpg,1,255
+endwait
+playbgm,/download/sound/bgm/bgm179.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0.5,,,,
+anm,tint,maria,150_150_150,0.0001,0
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「玛利亚，欢迎回来……咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「怎么感觉，你累趴了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「呜，姐姐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:sad,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「今天的搜索，是遇到什么麻烦事了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「被逼着跟个不得了的怪物交手了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我可再也不想跟那种家伙打交道了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102701/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「能把玛利亚逼到这份上……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104900/adv/atlas/stand_a,body:shy,maria,-300,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,maria,0_-120,0.7,0
+endwait,,,,,,,,,,,
+
+spriteoff,all,1
+endwait
+sprite,download/adv/image/26070701.jpg,sd1,0,55,1,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「哈啊……吸吸、呼——……啊～姐姐的甜味」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「别突然凑过来闻。而且那多半是\n刚才吃的巧克力的味道」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「姐姐，抱抱——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「……真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+msg,0,<outline width=2 color=black>「玛利亚真是个爱撒娇的孩子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「好啦好啦，辛苦了。你做得很好。\n今天咱们一起慢慢泡个澡吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「哈啊♡　姐姐♡　姐——姐♡」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
