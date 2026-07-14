@@ -1,0 +1,200 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010200.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm030.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,julia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia2,0,0,0,0,,,,
+imgconf,julia2,julia1,0,-430,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181515/adv/sound/fav181515_01_01.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「真是的，普奇到底躲哪儿去了……还是老样子，跑得真快呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_02.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「——啊，不好意思。请问你看到普奇了吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_03.mp3
+msg,1,<outline width=2 color=black>「其实，那个……普奇又把内衣拿走了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_04.mp3
+msg,1,<outline width=2 color=black>「而且，如果它拿的是我的东西，事后训它一顿也就罢了，\n但这次可不能这么悠哉了。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_05.mp3
+msg,1,<outline width=2 color=black>「偏偏拿走了塔芭莎大人的内衣……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_06.mp3
+msg,1,<outline width=2 color=black>「塔芭莎大人有时会来我房间过夜，\n所以为了方便，我放了几件换洗衣物在那里。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_07.mp3
+msg,1,<outline width=2 color=black>「平时我都小心锁好的，可打扫房间时，\n被普奇钻了个空子……唉，那孩子真是让人头疼。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_08.mp3
+msg,1,<outline width=2 color=black>「要是被塔芭莎大人知道它拿内衣乱玩弄坏了，\n恐怕普奇的小命就要到头了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_09.mp3
+msg,1,<outline width=2 color=black>「对我来说，虽然普奇有性骚扰和玩内衣的坏毛病，\n但它确实是个非常出色的孩子，我不想看到它被报废的结果……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「一叫它就会出来吧」,选项2　「普奇有麻烦的话，我也来帮忙」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_10.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「不……它干性骚扰和偷内衣的时候，叫它也不会理睬。\n那孩子大概也知道自己会被骂吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_11.mp3
+msg,1,<outline width=2 color=black>「真是的，既然知道自己在做坏事，那就别干了嘛，\n为什么还要继续性骚扰呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_12.mp3
+msg,1,<outline width=2 color=black>「如果你方便的话，能请你帮忙找找吗？\n虽然普奇对我很警惕，但对你或许会放松警惕……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_13.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「谢谢你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:sad,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_14.mp3
+msg,1,<outline width=2 color=black>「……话说回来，我一直觉得，你对普奇是不是特别上心，\n或者说……有点过度共情了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_15.mp3
+msg,1,<outline width=2 color=black>「对我来说，虽然普奇有性骚扰和玩内衣的坏毛病，\n但它确实是个非常出色的孩子，我不想看到它被报废的结果……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:smile,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_16.mp3
+msg,1,<outline width=2 color=black>「选项1　「一叫它就会出来吧」」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:surprise,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_17.mp3
+msg,1,<outline width=2 color=black>「选项2　「普奇有麻烦的话，我也来帮忙」」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_18.mp3
+name,<outline width=2 color=black>朱莉娅・威尔罗斯</outline>,
+msg,1,<outline width=2 color=black>「不……它干性骚扰和偷内衣的时候，叫它也不会理睬。\n那孩子大概也知道自己会被骂吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_19.mp3
+msg,1,<outline width=2 color=black>「真是的，既然知道自己在做坏事，那就别干了嘛，\n为什么还要继续性骚扰呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,julia,0.6_0.6,0.5,0
+anm,move,julia,0_-130,0.5,0
+endwait
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:unique,julia,0,-130,0.6,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_20.mp3
+msg,1,<outline width=2 color=black>「如果你方便的话，能请你帮忙找找吗？\n虽然普奇对我很警惕，但对你或许会放松警惕……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:normal,julia,0,-130,0.6,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_21.mp3
+msg,1,<outline width=2 color=black>「谢谢你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,julia,0.5_0.5,0.5,0
+anm,move,julia,0_-120,0.5,0
+endwait
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:smile,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_22.mp3
+msg,1,<outline width=2 color=black>「……话说回来，我一直觉得，你对普奇是不是特别上心，\n或者说……有点过度共情了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181500/adv/atlas/stand_a,body:normal,julia,0,-120,0.5,0,,,,
+playvoice,1,download/character/181515/adv/sound/fav181515_01_23.mp3
+msg,1,<outline width=2 color=black>「那么，我们快点找到普奇吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
