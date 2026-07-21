@@ -1,0 +1,185 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_10010600.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm179.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,sophia1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:surprise,sophia2,0,0,0,0,,,,
+imgconf,sophia2,sophia1,0,-590,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/196304/adv/sound/fav196304_02_01.mp3
+name,<outline width=2 color=black>索菲娅・ランカスター</outline>,
+msg,1,<outline width=2 color=black>「――这、这个是」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:unique2,sophia,0,-140,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_02.mp3
+name,<outline width=2 color=black>索菲娅・ランカスター</outline>,
+msg,1,<outline width=2 color=black>「厨师！哪位，能帮我叫一下厨师吗！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:surprise,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_03.mp3
+msg,1,<outline width=2 color=black>「……啊，不行……失礼了。\n这道菜，实在是太美味了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:surprise,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_04.mp3
+msg,1,<outline width=2 color=black>「拉莱耶的食堂真是棒啊……就算出现在高级餐厅里\n也毫不逊色呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:normal,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_05.mp3
+msg,1,<outline width=2 color=black>「每天都能吃到这种水平，有点羡慕呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「连索菲娅都认同的味道啊……」,选项2「高级餐厅也想去一次看看呢」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:surprise,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_06.mp3
+name,<outline width=2 color=black>索菲娅・ランカスター</outline>,
+msg,1,<outline width=2 color=black>「……？您是不是误会我是个美食家之类的了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:sad,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_07.mp3
+msg,1,<outline width=2 color=black>「啊……不，那个，我确实是贵族没错。嗯。\n当然了，高级餐厅什么的，只要想去根本不在话下。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:sad,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_08.mp3
+msg,1,<outline width=2 color=black>「不过……呃……对，对了！\n兰开斯特家重视清贫！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:unique1,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_09.mp3
+msg,1,<outline width=2 color=black>「不是盲目地一味品尝高级料理，\n而是心怀感激地度过每一天，力求朴素的生活。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:unique1,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_10.mp3
+name,<outline width=2 color=black>索菲娅・ランカスター</outline>,
+msg,1,<outline width=2 color=black>「我懂……！我非常懂！\n至少想去一次呢，高级餐厅……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:surprise,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_11.mp3
+msg,1,<outline width=2 color=black>「——……啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:sad,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_12.mp3
+msg,1,<outline width=2 color=black>「不、不是的哦？像、像高级餐厅这种，\n以我的身份，当然去过啦。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:sad,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_13.mp3
+msg,1,<outline width=2 color=black>「那个……我是想说，没去过的人会抱有憧憬，\n就是这样的意思！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:sad,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_14.mp3
+name,<outline width=2 color=black>索菲娅・ランカスター</outline>,
+msg,1,<outline width=2 color=black>「……果然，刚才的借口有点勉强了吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:sad,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_15.mp3
+msg,1,<outline width=2 color=black>「嘛，你毕竟是与我们不同世界的人，\n或许也没有必要特别隐瞒呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:normal,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_16.mp3
+msg,1,<outline width=2 color=black>「正如您所料，我兰开斯特家并不富裕。\n……也就是所谓的没落贵族呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:sad,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_17.mp3
+msg,1,<outline width=2 color=black>「不过，这件事能请您保密吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:sad,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_18.mp3
+msg,1,<outline width=2 color=black>「一旦知道情况，大家肯定会很照顾我，这我很清楚。\n那种事，我讨厌呢。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:anger,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_19.mp3
+msg,1,<outline width=2 color=black>「而且最重要的是……我是个爱面子的人。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:normal,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_20.mp3
+msg,1,<outline width=2 color=black>「在你看来，这或许是没有必要硬撑的面子。\n但对我来说，这个面子非常重要。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:normal,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_21.mp3
+msg,1,<outline width=2 color=black>「请不要误会。我并不是在勉强自己。\n而且，在原来的世界里也有好好放松的时间。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:shy,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_22.mp3
+msg,1,<outline width=2 color=black>「……反而，只有在待在他身边时才能展现那样的自己，\n总觉得有种特别的感觉……——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:normal,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_23.mp3
+msg,1,<outline width=2 color=black>「……不。没什么。请忘了刚才的话吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/196304/adv/atlas/stand_a,body:smile,sophia,0,-140,0.5,0,,,,
+playvoice,1,download/character/196304/adv/sound/fav196304_02_24.mp3
+msg,1,<outline width=2 color=black>「呵呵。少女闭口不言了呢。\n那么，再追问下去可就太不识趣了吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
