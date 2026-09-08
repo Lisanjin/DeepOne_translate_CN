@@ -1,0 +1,209 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11340300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm114.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_01.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「学校、体操服……这样待在这里，总觉得会让我想起学生时代呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_02.mp3
+msg,1,<outline width=2 color=black>「说起来，我们学校的体育课是选修制，\n女生可以选择排球或羽毛球来着」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_03.mp3
+msg,1,<outline width=2 color=black>「顺便问一下，你觉得我当时选的是哪一个？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「排球」,选项2　「羽毛球」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_04.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊，答对了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_05.mp3
+msg,1,<outline width=2 color=black>「虽然只是上课，但和朋友们一起打排球真的很开心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_06.mp3
+msg,1,<outline width=2 color=black>「对了。既然你答对了，我怎么也得给你一点奖励才行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,asaka,0.7_0.7,0.5,0
+anm,move,asaka,0_-160,0.5,0
+endwait
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-160,0.7,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_07.mp3
+msg,1,<outline width=2 color=black>「所以……稍微别动哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,asaka1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka2,0,0,0,0,,,,
+imgconf,asaka2,asaka1,0,-450,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100131/adv/sound/fav100131_02_08.mp3
+msg,1,<outline width=2 color=black>「――啾」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_09.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「呵呵。恭喜你答对了。不知怎么，总觉得你就算什么都不问，\n也能了解我的心思，这让我特别开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_10.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「哼——。正确答案是排球」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_11.mp3
+msg,1,<outline width=2 color=black>「羽毛球看起来也挺有意思的，不过排球是团队运动，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:smile,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_12.mp3
+msg,1,<outline width=2 color=black>「因为我没有参加过什么社团活动，所以至少在这种时候，\n就想选一个能和朋友们一起玩的项目」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_13.mp3
+msg,1,<outline width=2 color=black>「一般放学以后，我马上就得去照顾住在同一所设施里的孩子们，\n还要学习魔术之类的，所以基本没什么空闲时间呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_14.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「啊，对了。难得来到这种地方，要不要做点什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_15.mp3
+msg,1,<outline width=2 color=black>「那边好像有体育馆，还有像是仓库的建筑，\n找一找的话，应该至少能找到球之类的东西吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:normal,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_16.mp3
+msg,1,<outline width=2 color=black>「不过，两个人能玩的运动，我一时还真想不到呢。\n……比如篮球？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_17.mp3
+msg,1,<outline width=2 color=black>「虽然是我自己提出来的，但我从来没打过篮球呢。\n连规则什么的也不太清楚……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_18.mp3
+msg,1,<outline width=2 color=black>「要说只需两个人一较高下的话，短跑之类的或许也行。\n不过，那样的话，该怎么说呢……就是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_19.mp3
+msg,1,<outline width=2 color=black>「…………完全没有卿卿我我的感觉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_20.mp3
+msg,1,<outline width=2 color=black>「总、总之，像那样全力较量的比赛，还是有点不太合适吧？\n我想要的好像不是那种……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_21.mp3
+msg,1,<outline width=2 color=black>「……我、我可没有想过要借着运动的名义，中途和你身体紧贴，\n然后抱住你，甚至把你推倒哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_22.mp3
+msg,1,<outline width=2 color=black>「…………真的哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:sad,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_23.mp3
+msg,1,<outline width=2 color=black>「………………人家只想过一点点嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100131/adv/atlas/stand_a,body:shy,asaka,0,-120,0.5,0,,,,
+playvoice,1,download/character/100131/adv/sound/fav100131_02_24.mp3
+msg,1,<outline width=2 color=black>「不、不许笑啦。总觉得好难为情……！\n呜、呜呜呜……既、既然这样……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/100131/adv/sound/fav100131_02_25.mp3
+name,<outline width=2 color=black>赤井亚纱花</outline>,
+msg,1,<outline width=2 color=black>「那我就不管什么运动，直接抱上去啦――！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
