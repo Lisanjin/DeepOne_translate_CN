@@ -1423,7 +1423,7 @@ this.executeSubActionIncreseSkillRate(t, e, i, n, r, s, m, _, g, f, E);
 break;
 
 case o.ActionType.SELF_HARM_DAMAGE:
-this.executeSubActionSelfHarmDamage(t, e, i, n, r, s, m, _);
+this.executeSubActionSelfHarmDamage(t, e, i, n, r, s, m, _, g);
 }
 }
 },
@@ -1652,40 +1652,42 @@ m.skillRate = a.curSkillRate;
 c.addAction(new l(m, a.unitController.playSetSkillRate.bind(a.unitController)));
 t.addQuery(c);
 },
-executeSubActionSelfHarmDamage: function(t, e, i, a, r, l, u, h) {
+executeSubActionSelfHarmDamage: function(t, e, i, a, r, u, h, d, p) {
 if (!a.isDead) {
-var d = 0;
+var m = 0;
 switch (e.getEffectType()) {
 case o.PowerType.CHANGE_TO:
-d = e.getEffectValue();
+m = e.getEffectValue();
 break;
 
 case o.PowerType.PER_BY_MAX_HP:
-d = a.getMaxHp() * e.getEffectValue() / 100;
+m = a.getMaxHp() * e.getEffectValue() / 100;
 break;
 
 case o.PowerType.PER_BY_CUR_HP:
-d = a.curHp * e.getEffectValue() / 100;
+m = a.curHp * e.getEffectValue() / 100;
 break;
 
 default:
-d = e.getEffectValue();
+m = e.getEffectValue();
 }
-d = n.clamp(d, 1, a.getMaxHp());
-d = a.checkImmortal(d);
-var p = {
-query: h = new c(),
-damage: d,
+m = n.clamp(m, 1, a.getMaxHp());
+m = a.checkImmortal(m);
+var _ = {
+query: d = new c(),
+damage: m,
 damageType: o.DamageType.NONE,
 isCritical: !1,
 isRandomPosition: !1
 };
-a.decreaseHp(p);
-p.currentHp = a.curHp;
-a.selfHarmDamage(p);
-var m = new s();
-a.processAfterAttack(m, !1, !1);
-t.addQuery(h);
+a.decreaseHp(_);
+_.currentHp = a.curHp;
+a.selfHarmDamage(_);
+var g = new s();
+a.processAfterAttack(g, !1, !1);
+(p = {}).effectQueue = g;
+d.addAction(new l(p, a.playLocalEffectqueue.bind(a)));
+t.addQuery(d);
 a.checkErosion();
 }
 },
