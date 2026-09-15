@@ -129530,7 +129530,8 @@ SOUND: "/sound/",
 SPINE: "/spine/",
 SE: "/se/",
 ATLAS: "/adv/atlas/",
-EVENT: "/event/"
+EVENT_R: "/event/r/",
+EVENT_W: "/event/w/"
 }),
 SPECIAL_ROOM_FILE_PATH_SUFFIX: cc.Enum({
 STAND: "stand",
@@ -130667,7 +130668,7 @@ getFileNameCharacterFriendshipMaxIcon: function(t) {
 return r.CHARACTER_FILE_PATH_PREFIX + t + r.CHARACTER_FILE_PATH_CONJUNCTION.IMAGE + r.CHARACTER_FILE_PATH_SUFFIX.ICON_FRIENDSHIP_MAX;
 },
 getFileNameSpecialRoomEvent: function(t, e) {
-return r.SPECIAL_ROOM_PATH_PREFIX + t + r.SPECIAL_ROOM_FILE_PATH_CONJUNCTION.EVENT + e;
+return a[n.ENVIRONMENT].getAdultFlg() ? r.SPECIAL_ROOM_PATH_PREFIX + t + r.SPECIAL_ROOM_FILE_PATH_CONJUNCTION.EVENT_R + e : r.SPECIAL_ROOM_PATH_PREFIX + t + r.SPECIAL_ROOM_FILE_PATH_CONJUNCTION.EVENT_W + e;
 },
 getFileNameSpecialRoomSpine: function(t, e) {
 var i = g.getSpecialRoomNowTimeName();
