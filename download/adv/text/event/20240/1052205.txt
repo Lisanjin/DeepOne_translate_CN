@@ -1,0 +1,928 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11690300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm149.mp3,0,
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20120201/adv/image/20120201.png,enemy1,1200,-50,1,0,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+
+
+anm,move,enemy1,0_-50,0.5,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「—————！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,enemy1,-1200_-50,0.5,0
+endwait
+wait,0.5
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:anger,maruta,1200,-90,0.5,0,,,,
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:sad,azi,1800,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_018.mp3
+anm,move,maruta,-300_-90,0.5,0
+anm,move,azi,300_-120,0.5,0
+endwait
+
+
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:sad,azi,300,-120,0.5,0,,,,
+anm,tint,azi,150_150_150,0.0001,0
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:anger,maruta,-300,-90,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「唔……还真是灵活。\n看来，像这样普通地追是抓不到它了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:sad,azi,300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「没想到，连我都追不上……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104552/adv/atlas/stand_a,body:sad,raz,1200,-110,0.5,0,,,,
+spriteatlas,download/character/104913/adv/atlas/stand_a,body:normal,maria,1800,-120,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_018.mp3
+anm,move,raz,-300_-110,0.5,0
+anm,move,maria,300_-120,0.5,0
+endwait
+
+
+spriteatlas,download/character/104913/adv/atlas/stand_a,body:normal,maria,300,-120,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+spriteatlas,download/character/104552/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「哈……哈……大、大家跑得真快呢……不愧是你们」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104913/adv/atlas/stand_a,body:normal,maria,300,-120,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「我觉得拉兹露卡的体力也太差了。菜得要命」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104552/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「是、是这样吗……对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maria,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「玛利亚，不可以这么说话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,raz,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104913/adv/atlas/stand_a,body:sad,maria,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「对不起，姐姐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「你该道歉的人不是我」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「而且，拉兹露卡跟不上来也情有可原」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「一个是由那个日本孕育出的疯狗莉瀬的侍女紫阳花，\n另一个是在异世界位居想索者顶点的玛利亚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「更何况，想跟上我，\n若不是实力非凡的强者，可没那么容易」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104913/adv/atlas/stand_a,body:smile,maria,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「说得没错。姐姐说的话永远都完全正确。\n不愧是姐姐。姐姐真厉害」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:smile,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「哼哼」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:normal,azi,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「虽然埃尔塔小姐的说法有些独特，但每个人都有擅长和不擅长的事，\n所以请不要因为跟不上我们而放在心上」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maria,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104552/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0.5,,,,
+anm,tint,azi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「谢谢您……话说，莉瀬小姐被当成疯狗了，\n这真的可以放着不管吗……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:smile,azi,300,-120,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「因为小莉确实有疯狗的一面。\n她可是离家出走时，会把家里人的关节干脆利落地掰到反方向的人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104552/adv/atlas/stand_a,body:sad,raz,-300,-110,0.5,0,,,,
+anm,tint,azi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「呃、呃……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,azi,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「总之，这样下去不会有结果。\n必须抓住那个虚像，把团子抢――拿过来才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,raz,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104913/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「既然姐姐想要，那我也会帮忙……总之，\n把它轰飞？　不管它有多敏捷，只要大范围烧光就没问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「那样感觉团子也会一起灰飞烟灭，所以只能当作最后的手段」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「既然单纯追赶行不通，那就前后夹击……玛利亚。\n不能把那些团子让给别人。无论如何都要弄到手」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maria,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:surprise,azi,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「哎呀，我们不是一起寻找团子的伙伴吗？\n您这么说，可真让人有些伤心呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0,,,,
+anm,tint,azi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「紫阳花已经吃过那些团子，还好好享受了一番吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:normal,azi,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「呵呵。说什么享受，我和他一起被传送到了连时间流速都不同的空间，\n明明从头到尾都只顾着不知所措……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0,,,,
+anm,tint,azi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「真会说。那你脖子上的吻痕是什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:smile,azi,-300,-120,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「只是看起来像而已，应该是被虫子之类的叮了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+anm,tint,azi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「玛利亚。这种时候不能相信紫阳花。\n真到了关键时刻，她恐怕随时都会背叛我们，抢先下手」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,azi,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104913/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「嗯，知道了。不相信她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maruta,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:surprise,azi,300,-120,0.5,0.5,,,,
+anm,tint,maria,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「哎呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,maria,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104552/adv/atlas/stand_a,body:normal,raz,-300,-110,0.5,0.5,,,,
+anm,tint,azi,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「既然这样，那我……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,azi,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0.5,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「一个时不时突然冒出来自称姐姐的可疑人物，根本没有理由值得信任」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104552/adv/atlas/stand_a,body:surprise,raz,-300,-110,0.5,0,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「咦，您、您怎么会知道……那明明只有我和他独处时才会……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:unique,maruta,300,-90,0.5,0,,,,
+anm,tint,raz,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「没有任何事情能瞒得过我埃尔塔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:normal,maruta,300,-90,0.5,0,,,,
+msg,0,<outline width=2 color=black>「玛利亚。拉兹露卡也不能相信」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,raz,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104913/adv/atlas/stand_a,body:normal,maria,-300,-120,0.5,0.5,,,,
+anm,tint,maruta,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「嗯，知道了。不相信她」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,0.2
+endwait,,,,,,,,,,,
+
+playbgm,/download/sound/bgm/bgm146.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0.5,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:sad,miliam,300,-220,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「唉……追着四处逃窜的虚像到处跑，简直太荒唐了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「事到如今才说这个？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「话说回来，你好像早早就放弃追赶那个虚像了，\n这样真的好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「在无人打扰的地方赏月……和某个人一起，\n你不是很想度过一段这样的时光吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:shy,miliam,300,-220,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「唔，我、我才没有……我只是为了监督房东，\n免得她闹得太过火……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:sad,ulusura,-300,-130,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「这借口未免也太假了。\n我看，你多半只是稍微冷静下来后觉得害臊了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:sad,miliam,300,-220,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:shy,miliam,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「只、只是一时冲动而已……！　而且仔细想想，吃下虚像的\n团子就会被传送到其他空间，谁知道会发生什么啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:anger,miliam,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「更何况，甚至还发生了时间流速不同这种现象……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「呃……应该不会有什么危险吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:normal,frau,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「毕竟，我想这片领域象征着赏月，\n是由享受赏月的心情与思念孕育而成的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「由强烈意念构成的领域，最好不要违背这片领域的本质。\n是这个意思吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这下你的借口又少了一个哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:sad,miliam,300,-220,0.5,0.5,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「事到如今才觉得害臊，也挽回不了你们那副难看的丑态，\n所以没必要再装模作样了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:smile,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你就和那些小丫头一起去追着虚像到处跑，不就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:sad,miliam,300,-220,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「就算你这么说……我的性格也没房东那么坦率啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「区区一个小丫头，就擅自认定自己是什么水平、该是什么样子，\n还真是狂妄呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:normal,miliam,300,-220,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「我是说，像你们这样的小丫头想要故作看破世事，\n还早了四分之一个世纪呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过，你的问题恐怕还没到谈这个的地步就是了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「摆出一副什么都懂的样子……其实只不过是在逃避面对自己的心意吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你真正想怎么做，其实自己心里应该再清楚不过了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我不知道你是在意脸面，还是觉得羞耻……\n但无论是哪一种，都不是什么大不了的事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:smile,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「反正说到底，也不过是乳臭未干的小丫头那点狭隘见识罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:normal,miliam,300,-220,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「你的意思是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:smile,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「我想，乌尔苏拉是在说，米莉亚姆也可以再坦率一点」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:unique,ulusura,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「谁什么时候说过这种话了？别曲解我的意思……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:normal,miliam,300,-220,0.5,0.5,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「……乌尔苏拉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:smile,miliam,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呵呵……倒是你自己呢？\n不想要团子吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「哼。我可没那么闲，会为了和那种稍不留神就去勾搭女人的卑劣禽兽\n共度时光而拼命」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「才没有那种事……」,选项2　「…………」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:anger,ulusura,-300,-130,0.5,0,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「既然如此，那我可以仔细问问你和紫阳花独处的那段时间里，\n究竟都做了些什么吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:anger,miliam,300,-220,0.5,0,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「是啊。这件事，我也想先问个清楚」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:unique,frau,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「……哥哥。事到如今再否认，恐怕有点说不过去了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteoff,miliam,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103713/adv/atlas/stand_a,body:unique,frau,300,-120,0.5,0.5,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>芙拉</outline>,
+msg,0,<outline width=2 color=black>「哥哥……你已经无话可说了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+anm,tint,frau,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「不过……即便是这种家伙，\n也毫无疑问是我不可或缺的存在」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「无论是减轻幻梦境的负荷，还是在我所走的魔术之路上，\n他的存在确实都能派上用场」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:smile,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可是，眼睁睁看着他被那些小丫头抢走，\n也实在让人有些不爽吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:normal,miliam,300,-220,0.5,0.5,,,,
+anm,tint,ulusura,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>米莉亚姆・莉芙拉</outline>,
+msg,0,<outline width=2 color=black>「乌尔苏拉？　你要做什――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_28090112_entry_04.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102806/adv/atlas/stand_a,body:surprise,miliam,300,-220,0.5,0,,,,
+msg,0,<outline width=2 color=black>「唔，这股魔力是……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playbgm,/download/sound/bgm/bgm102.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:smile,ulusura,-300,-130,0.5,0,,,,
+anm,tint,miliam,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「趁着小丫头们追着虚像四处乱跑的时候，\n我可是有大把时间做准备呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:smile,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「要我狼狈地挥汗如雨，追着那只冒牌兔子四处乱跑，\n开什么玩笑」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:smile,ulusura,-300,-130,0.5,0,,,,
+msg,0,<outline width=2 color=black>「当然得用更聪明利落的方式解决才行」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20120201/adv/image/20120201.png,enemy1,1200,-50,1,0,,,,
+endwait,,,,,,,,,,,
+
+
+anm,move,enemy1,0_-50,0.5,0
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「――――――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spine,download/adv/spine/Dark,em1,default,animation,0,0,0,1,0.8,0
+playse,/download/sound/se/se_025.mp3
+endwait,,,,,,,,,,,
+wait,1.0
+endwait,,,,,,,,,,,
+spineoff,em1,0
+endwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+playse,/download/sound/se/se_28090112_entry_04.mp3
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+msg,0,<outline width=2 color=black>「――――、――……、…………！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maruta1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102704/adv/atlas/stand_a,body:surprise,maruta2,0,0,0,0,,,,
+imgconf,maruta2,maruta1,0,-250,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>埃尔塔・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「这是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,azi1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181111/adv/atlas/stand_a,body:surprise,azi2,0,0,0,0,,,,
+imgconf,azi2,azi1,0,-650,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>鬼桥紫阳花</outline>,
+msg,0,<outline width=2 color=black>「魔术束缚……什么时候布下的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_040.mp3
+
+flash,0,0,0,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,raz1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104552/adv/atlas/stand_a,body:surprise,raz2,0,0,0,0,,,,
+imgconf,raz2,raz1,0,-660,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>拉兹露卡·布兰瑟瓦</outline>,
+msg,0,<outline width=2 color=black>「话说，这个……连、连我们也被抓住了……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,maria1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104913/adv/atlas/stand_a,body:anger,maria2,0,0,0,0,,,,
+imgconf,maria2,maria1,0,-650,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>玛利亚・塔拉丝库</outline>,
+msg,0,<outline width=2 color=black>「她预判了虚像和我们的行动，布下了<ruby>条件发动式魔术|延迟咒术</ruby>……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+sprite,download/monster/20120201/adv/image/20120201.png,enemy1,0,-50,1,0.5,,,,
+playse,/download/sound/se/se_023.mp3
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>敌人</outline>,
+msg,0,<outline width=2 color=black>「……、……………………！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+shake,0.2,4,15,15
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:smile,ulusura,800,-130,0.5,0,,,,
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_048.mp3
+anm,move,ulusura,0_-130,1,0
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>乌尔苏拉・阿库哈特</outline>,
+msg,0,<outline width=2 color=black>「能抢在这些小丫头前面得手，感觉还真不赖呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_045.mp3
+anm,move,ulusura,0_-200,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:normal,ulusura,0,-200,0.5,0,,,,
+msg,0,<outline width=2 color=black>「那么，这串团子就由我收下了。\n白费力气追了这么久，辛苦你们了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,ulusura1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/102154/adv/atlas/stand_a,body:smile,ulusura2,0,0,0,0,,,,
+imgconf,ulusura2,ulusura1,0,-400,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_015.mp3
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
