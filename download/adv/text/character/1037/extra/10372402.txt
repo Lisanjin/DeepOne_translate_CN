@@ -1,0 +1,206 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11510300.jpg,0,,,,,,,,
+endwait
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm100.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_01.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「哥哥喜欢兔女郎吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_02.mp3
+msg,1,<outline width=2 color=black>「因为哥哥从刚才开始就好像对我这身打扮特别感兴趣，所以我就在想，是不是这样呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「因为是芙拉穿着」,选项2「兔女郎最棒了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_03.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「真是的，哥哥你呀。你该不会觉得只要说这种话，\n我就会像平时一样高兴，是个很好哄的妹妹吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_04.mp3
+msg,1,<outline width=2 color=black>「…………其实才没有那回事，不过今天就没办法了，\n我就勉为其难、勉为其难地配合哥哥，做个好哄的妹妹吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:smile,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_05.mp3
+msg,1,<outline width=2 color=black>「真是的，哥哥真让人没办法呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:unique,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_06.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「那也就是说，只要是兔女郎，\n就算不是我也可以咯……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_07.mp3
+msg,1,<outline width=2 color=black>「唔……唔————」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_08.mp3
+msg,1,<outline width=2 color=black>「哥哥真是一点都不懂妹妹的心。\n请再多珍惜一下妹妹嘛！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:anger,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_09.mp3
+msg,1,<outline width=2 color=black>「请不要迷恋普通的兔女郎，要迷恋妹妹兔女郎。\n听明白了吗，哥哥？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_10.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「啊，对了……我记得那边好像有……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103724/adv/atlas/stand_a,body:normal,frau,0,-120,0.5,0,,,,
+playvoice,1,download/character/103724/adv/sound/fav103724_02_11.mp3
+msg,1,<outline width=2 color=black>「呃，哥哥稍微等我一下哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,frau,-1200_-120,1.0,0
+endwait
+spriteoff,frau,0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_12.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「——让哥哥久等了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+sprite,download/character/103724/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_13.mp3
+name,<outline width=2 color=black>芙拉</outline>,
+msg,1,<outline width=2 color=black>「您的饮料送来了……开玩笑的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_14.mp3
+msg,1,<outline width=2 color=black>「我本来觉得这样做会更像兔女郎小姐，\n哥哥觉得怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_15.mp3
+msg,1,<outline width=2 color=black>「你看，兔女郎小姐不就是要招待客人的吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_16.mp3
+msg,1,<outline width=2 color=black>「所以我就在想，这样做的话，哥哥会不会\n更加喜欢妹妹兔女郎呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_17.mp3
+msg,1,<outline width=2 color=black>「啊，既然都这样了，是不是连称呼也换一下比较好呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_18.mp3
+msg,1,<outline width=2 color=black>「客人……总觉得好像不太对，\n听起来也太有距离感了……嗯——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_19.mp3
+msg,1,<outline width=2 color=black>「……主人，之类的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_20.mp3
+msg,1,<outline width=2 color=black>「总、总觉得有点奇怪，让人静不下心呢。\n果然还是像平时那样叫哥哥比较好吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_21.mp3
+msg,1,<outline width=2 color=black>「那么，重新来一次……哥哥，要来点饮料吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_22.mp3
+msg,1,<outline width=2 color=black>「不只是饮料哦，妹妹兔女郎可是哥哥的专属，\n所以有什么想让我做的，尽管告诉我吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_23.mp3
+msg,1,<outline width=2 color=black>「不管哥哥有什么要求，我都会满足你的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_24.mp3
+msg,1,<outline width=2 color=black>「怎么样，哥哥？\n是不是更加迷恋妹妹兔女郎了？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/103724/adv/sound/fav103724_02_25.mp3
+msg,1,<outline width=2 color=black>「嘿嘿嘿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

@@ -1,0 +1,161 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11510300.jpg,0,,,,,,,,
+endwait
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm100.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_01.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「人这种生物，是无法不怀有恶意的。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_02.mp3
+msg,1,<outline width=2 color=black>「虽然只有短短几年，但我与哥哥和诺恩不同，曾亲眼见识过外面的世界。\n作为恶意的受体，我目睹了许多人丑陋的一面。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_03.mp3
+msg,1,<outline width=2 color=black>「赌博这种东西，想必是一种能将人类的恶意\n刺激到无以复加的游戏吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_04.mp3
+msg,1,<outline width=2 color=black>「想要取胜获利。想要夺回被抢走的东西。\n想要嘲笑他人的不幸。想要功成名就，惹人艳羡。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_05.mp3
+msg,1,<outline width=2 color=black>「想要满足自己的欲望，以及对他人好运的嫉妒，\n都会让人类的恶意不断滋长。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_06.mp3
+msg,1,<outline width=2 color=black>「——也就是说啊，对于身为恶意化身的我而言，\n赌博游戏这种东西，根本就是小菜一碟。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:anger,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_07.mp3
+msg,1,<outline width=2 color=black>「所以，哥哥！来一决胜负吧！要是我赢了，哥哥就得\n无论我说什么，都乖乖听我的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1「这场比试……我不接受」,选项2「要是你输了，打算怎么办？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:surprise,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_08.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「喂，哪有在这里拒绝的啊！？这样剧情不就进行不下去了吗！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:sad,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_09.mp3
+msg,1,<outline width=2 color=black>「听好了，哥哥。凡事都讲究一种形式美，明白吗？\n被妹妹挑战后却临阵脱逃的哥哥，有谁会想看啊？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_10.mp3
+msg,1,<outline width=2 color=black>「这种时候就该堂堂正正地和妹妹一决胜负。\n这才是做哥哥应有的气度，不是吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_11.mp3
+msg,1,<outline width=2 color=black>「所以，哥哥就别问那么多，乖乖接受挑战吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_12.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「这意思是，你打算赢过我吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_13.mp3
+msg,1,<outline width=2 color=black>「不愧是哥哥。就该这样才对。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_14.mp3
+msg,1,<outline width=2 color=black>「将确信自己能赢的对手彻底击败，挫垮其内心。\n这不是很有恶意吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_15.mp3
+msg,1,<outline width=2 color=black>「当然，要是哥哥输了，作为交换，我也会对哥哥言听计从哦。\n毕竟条件对等，胜负才会更精彩嘛。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_16.mp3
+name,<outline width=2 color=black>诺恩</outline>,
+msg,1,<outline width=2 color=black>「那么，要比什么呢？\n轮盘也好，纸牌也好，就由哥哥来选吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_17.mp3
+msg,1,<outline width=2 color=black>「呵呵。哥哥，你一定觉得我会得意忘形，然后输掉吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_18.mp3
+msg,1,<outline width=2 color=black>「太天真了。简直就像在糖浆里浸得透透的甜甜圈一样甜。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_19.mp3
+msg,1,<outline width=2 color=black>「确实，得意忘形的一方会输，这算是老套路了。\n但现实可没简单到会被这种经典的败北预兆左右。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:normal,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_20.mp3
+msg,1,<outline width=2 color=black>「我会让你见识一下身为恶意化身的我的实力，你就做好觉悟吧。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_21.mp3
+msg,1,<outline width=2 color=black>「好——啦，该命令哥哥做些什么呢？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103526/adv/atlas/stand_a,body:smile,norn,0,-120,0.5,0,,,,
+playvoice,1,download/character/103526/adv/sound/fav103526_02_22.mp3
+msg,1,<outline width=2 color=black>「呵呵呵……来吧，哥哥。游戏开始了。\n愉快的时光要开始喽。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
