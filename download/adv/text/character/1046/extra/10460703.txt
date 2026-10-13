@@ -1,0 +1,258 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm197.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:surprise,perufe,0,-170,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_01.mp3
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,1,<outline width=2 color=black>「――诶？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:surprise,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_02.mp3
+msg,1,<outline width=2 color=black>「这里的温泉，男汤那边的露天浴池……是在夜晚？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_03.mp3
+msg,1,<outline width=2 color=black>「哈？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_04.mp3
+msg,1,<outline width=2 color=black>「女汤那边是白天……糟了，既然是在幻梦境，男汤和女汤的环境会完全\n切换也没什么好奇怪的……是我疏忽了……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:unique,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_05.mp3
+msg,1,<outline width=2 color=black>「夜晚……夜风……一边泡在浴池里，一边仰望月亮……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,perufe,0.6_0.6,0.5,0
+anm,move,perufe,0_-200,0.5,0
+endwait
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_06.mp3
+msg,1,<outline width=2 color=black>「唔……为什么不早点告诉我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1　「这也太不讲理了……」,选项2　「我还以为帕露菲已经发现了……」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_07.mp3
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,1,<outline width=2 color=black>「看你一脸悠哉，没想到竟然独自享受着那般景致。\n看来我果然不该对你掉以轻心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:unique,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_08.mp3
+msg,1,<outline width=2 color=black>「唔……曾经追求完美、终有一日将臻于完美的我，\n竟会满足于只领略了这温泉一半的风情？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_09.mp3
+msg,1,<outline width=2 color=black>「何等愚昧……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_10.mp3
+msg,1,<outline width=2 color=black>「这种为自己的无能而感到羞耻的心情……是自从当初败给你们以来，\n我所蒙受的最大屈辱……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_11.mp3
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,1,<outline width=2 color=black>「这该不会是在挖苦我吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_12.mp3
+msg,1,<outline width=2 color=black>「若是从前尚居梦之座时倒也罢了，如今的我已经沦为与纳克特原书\n分离开来的独立个体」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_13.mp3
+msg,1,<outline width=2 color=black>「即便如此，我与幻梦境亲和并产生感应的能力也不逊于任何人，\n不过就算这样，偶尔也难免会有所疏漏」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_14.mp3
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,1,<outline width=2 color=black>「――马上去男汤」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_15.mp3
+msg,1,<outline width=2 color=black>「调查领域？开什么玩笑。\n我是在说，连那么悠闲地四处查看领域都是浪费时间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:unique,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_16.mp3
+msg,1,<outline width=2 color=black>「啧……算了，像这样说话也是浪费时间」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-200,0.6,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_17.mp3
+msg,1,<outline width=2 color=black>「那么，领域探索这种无聊的事情，\n就赶紧解决掉吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,perufe,0.5_0.5,0.5,0
+anm,move,perufe,0_-170,0.5,0
+endwait
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_18.mp3
+msg,1,<outline width=2 color=black>「还愣着干什么。快点，赶紧走。\n跑起来。反正就算出了汗，待会儿也要洗掉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104607/adv/sound/fav104607_03_19.mp3
+msg,1,<outline width=2 color=black>「跟不上的话，我可要丢下你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,perufe,1500_-170,1,0
+endwait
+spriteoff,perufe,0
+endwait
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11110300.jpg,0,255
+endwait
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm115.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,perufe1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:sad,perufe2,0,0,0,0,,,,
+imgconf,perufe2,perufe1,0,-600,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104607/adv/sound/fav104607_03_20.mp3
+name,<outline width=2 color=black>帕露菲</outline>,
+msg,1,<outline width=2 color=black>「呼……呼……哈、哈啊……唔，糟、糟糕……以现在的我这副、\n渺小的身体，承受这样的、运动量……哈啊……呜，实、实在是、太难看了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,perufe1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/104607/adv/atlas/stand_a,body:anger,perufe2,0,0,0,0,,,,
+imgconf,perufe2,perufe1,0,-860,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/104607/adv/sound/fav104607_03_21.mp3
+msg,1,<outline width=2 color=black>「但是，为了达成目的……我怎么能在这种地方，停下脚步……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
