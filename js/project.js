@@ -1557,6 +1557,7 @@ d = new c();
 d.addAction(new l(p, a.playLocalEffectqueue.bind(a)));
 t.addQuery(d);
 a.checkErosion();
+e.attacker && e.attacker.tryIncrementTrialMissionCount(subAction);
 } else if (!a.hasBuff(o.BuffType.CURSE)) {
 a.beHealed(d, g);
 t.addQuery(d);
@@ -1689,6 +1690,7 @@ a.processAfterAttack(g, !1, !1);
 d.addAction(new l(p, a.playLocalEffectqueue.bind(a)));
 t.addQuery(d);
 a.checkErosion();
+e.attacker && e.attacker.tryIncrementTrialMissionCount();
 }
 },
 createBuffFromSubAction: function(t, e, i, a, n) {
@@ -6325,6 +6327,22 @@ var r = i.getCounterActionQuery(a, t, this, o, "反射");
 e.addQuery(r);
 t.updateBuff(this, n.BuffEndType.ON_INVOKE);
 a.attacker.checkErosion();
+var s = !0, c = !1, l = void 0;
+try {
+for (var u, h = a.target[Symbol.iterator](); !(s = (u = h.next()).done); s = !0) {
+u.value.tryIncrementTrialMissionCount();
+break;
+}
+} catch (t) {
+c = !0;
+l = t;
+} finally {
+try {
+!s && h.return && h.return();
+} finally {
+if (c) throw l;
+}
+}
 };
 e.exports = o;
 cc._RF.pop();
@@ -12567,6 +12585,7 @@ o.playerUseItemCount = 0;
 o.playerSkillCount = 0;
 o.playerNormalAttackCount = 0;
 o.playerAllAttackCount = 0;
+o.playerTotalHitCount = 0;
 o.playerTotalDamageGiven = 0;
 o.playerTotalDamageTaken = 0;
 o.bossData = void 0;
@@ -12935,6 +12954,7 @@ playerUseItemCount: 0,
 playerSkillCount: 0,
 playerNormalAttackCount: 0,
 playerAllAttackCount: 0,
+playerTotalHitCount: 0,
 playerTotalDamageGiven: 0,
 playerTotalDamageTaken: 0,
 playerMaxSingleDamageGiven: 0,
@@ -14077,6 +14097,7 @@ e.playerUseItemCount = a.playerUseItemCount;
 e.playerSkillCount = a.playerSkillCount;
 e.playerNormalAttackCount = a.playerNormalAttackCount;
 e.playerAllAttackCount = a.playerAllAttackCount;
+e.playerTotalHitCount = a.playerTotalHitCount;
 e.playerTotalDamageGiven = a.playerTotalDamageGiven;
 e.playerTotalDamageTaken = a.playerTotalDamageTaken;
 e.isNowPlayerTurn = a.isNowPlayerTurn;
@@ -14144,6 +14165,7 @@ isSkillFinish: T,
 skillCount: a.playerSkillCount,
 attackCount: a.playerNormalAttackCount,
 allAttackCount: a.playerAllAttackCount,
+totalHitCount: a.playerTotalHitCount,
 totalDamageGiven: Math.floor(a.playerTotalDamageGiven),
 totalDamageTaken: Math.floor(a.playerTotalDamageTaken),
 dropSetting: R,
@@ -17084,6 +17106,7 @@ L.currentHp = e[C].curHp;
 e[C].processDamageShow(L);
 u.addAction(new s(m, e[C].unitController.playSpineOnNode.bind(e[C].unitController)));
 }
+this.tryIncrementTrialMissionCount(t);
 a.addQuery(u);
 for (C = 0; C < e.length; C++) e[C].checkErosion();
 u = new r();
@@ -20081,12 +20104,14 @@ var I = new r();
 S.processAfterAttack(I, !0, !0);
 (h = {}).effectQueue = I;
 l.addAction(new c(h, a.playEffectqueue.bind(a)));
+this.tryIncrementTrialMissionCount(t);
 } else if (b) {
 S.checkErosion();
 I = new r();
 S.processAfterAttack(I, !0, !0);
 (h = {}).effectQueue = I;
 l.addAction(new c(h, a.playEffectqueue.bind(a)));
+this.tryIncrementTrialMissionCount(t);
 }
 }
 i.addQuery(l);
@@ -20748,18 +20773,19 @@ R = new s();
 for (var W = 0; W < t.target.length; W++) R.addAction(t.target[W].beAttacked(t));
 e.addQuery(R);
 }
-for (var K = 0; K < t.target.length; K++) t.target[K].checkErosion();
+this.checkErosionAllTarget(t.target);
 this.processAfterSkillAttack(e, t, !0);
 (q = f).push.apply(q, a(t.target));
 E = !0;
 t.attacker.isEnemy || p.getTargetType() !== u.TargetRange.ENEMY_ALL || (o.playerAllAttackCount += 1);
+this.tryIncrementTrialMissionCount(t);
 } else o.GM.skillController.checkEachAction(t, p, l.actionList);
 this.curSkillRate = 0;
 R = new s();
 A = new Map();
-var Q = {};
-Q.skillRate = this.curSkillRate;
-R.addAction(new c(Q, this.unitController.playSetSkillRate.bind(this.unitController)));
+var K = {};
+K.skillRate = this.curSkillRate;
+R.addAction(new c(K, this.unitController.playSetSkillRate.bind(this.unitController)));
 if (this.unitType == n.PLAYER_UNIT && o.now_skill_skip_mode) ; else if (v == u.SkillEffectShowType.SPINE_ANI_SHOW) {
 (A = new Map()).set("groggy", this.checkGroggy());
 R.addAction(new c(A, this.unitController.play_SpineSkillReturnToIdle.bind(this.unitController)));
@@ -20771,16 +20797,16 @@ R.addAction(new c(A, t.unitController.playCardRestore.bind(t.unitController)));
 }, this);
 this.unitType == n.MONSTER && h.checkLastLiveUnit(this) && R.addAction(new c(null, i.subCameraRestore.bind(i)));
 e.addQuery(R);
-if (this.subActionExist(l)) for (var j = l.actionList, X = 1; X < j.length; X++) {
-var J = j[X];
-if (this.isAttackBySkillSubAction(J.getActionType())) {
-if (o.GM.actionController.checkInvoke(J)) {
+if (this.subActionExist(l)) for (var Q = l.actionList, j = 1; j < Q.length; j++) {
+var X = Q[j];
+if (this.isAttackBySkillSubAction(X.getActionType())) {
+if (o.GM.actionController.checkInvoke(X)) {
 C = this.updateCheckTriggerOnAttackCondition(t.target, C);
 T = this.updateCheckTriggerOnAttackGoodCondition(t.target, T);
-this.doSkillAttackBySubAction(e, J, f, !E, t.attacker);
+this.doSkillAttackBySubAction(e, X, f, !E, t.attacker);
 E = !0;
 }
-} else o.GM.skillController.checkEachAction(t, J, j);
+} else o.GM.skillController.checkEachAction(t, X, Q);
 }
 f = [].concat(a(new Set(f)));
 C = this.updateCheckTriggerOnAttackCondition(t.target, C);
@@ -20857,10 +20883,11 @@ C.addAction(new c(_, S.unitController.playSpineOnNode.bind(S.unitController)));
 C.addAction(S.beAttacked(E));
 }
 t.addQuery(C);
-for (var T in E.target) E.target[T].checkErosion();
+this.checkErosionAllTarget(E.target);
 this.processAfterSkillAttack(t, E, n);
 i.push.apply(i, a(E.target));
 o.curActionData.damageArr.length || (o.curActionData.damageArr = E.damageArr);
+this.tryIncrementTrialMissionCount(E);
 }
 },
 doAbilityAttack: function(t) {
@@ -20887,6 +20914,7 @@ a.set("startDelay", p / o.cur_GameSpeed);
 a.set("isWaitAllSpainAnim", !0);
 i.addAction(new c(a, this.unitController.playAttack.bind(this.unitController)));
 e.addQuery(i);
+this.tryIncrementTrialMissionCount(t);
 if (!1 === n) {
 i = new s();
 for (var _ = 0; _ < t.target.length; _++) {
@@ -20896,12 +20924,12 @@ i = new s();
 for (var g = 0; g < t.target.length; g++) i.addAction(t.target[g].beAttacked(t));
 e.addQuery(i);
 }
-for (var f = 0; f < t.target.length; f++) t.target[f].checkErosion();
+this.checkErosionAllTarget(t.target);
 this.processAfterSkillAttack(e, t, !0);
-var E = {
+var f = {
 delayTime: .1
 };
-(i = new s()).addAction(new c(E, o.UI_M.delayTime.bind(o.UI_M)));
+(i = new s()).addAction(new c(f, o.UI_M.delayTime.bind(o.UI_M)));
 e.addQuery(i);
 o.playerNormalAttackCount += 1;
 t.attacker.isEnemy || t.targetType !== u.TargetRange.ENEMY_ALL || (o.playerAllAttackCount += 1);
@@ -20932,7 +20960,9 @@ i.addAction(new c(n, t.target[d].unitController.playSpineOnNode.bind(t.target[d]
 i.addAction(t.target[d].beAttacked(t));
 }
 e.addQuery(i);
+this.checkErosionAllTarget(t.target);
 for (var p = 0; p < t.target.length; p++) t.target[p].checkErosion();
+this.tryIncrementTrialMissionCount(t);
 this.processAfterSkillAttack(e, t, !0);
 var m = {
 delayTime: .1
@@ -21023,13 +21053,69 @@ a.type == u.BuffType.EROSION && e.push(a);
 }
 return e;
 },
+checkErosionAllTarget: function(t) {
+var e = [], i = !0, a = !1, n = void 0;
+try {
+for (var o, r = t[Symbol.iterator](); !(i = (o = r.next()).done); i = !0) {
+var s = o.value.checkErosion(!1);
+null != s && e.push(s);
+}
+} catch (t) {
+a = !0;
+n = t;
+} finally {
+try {
+!i && r.return && r.return();
+} finally {
+if (a) throw n;
+}
+}
+this.playErosion(e);
+},
+playErosion: function(t) {
+if (null != t && !(t.length <= 0)) for (;t.some(function(t) {
+return t.length > 0;
+}); ) {
+var e = new s(), i = !0, a = !1, n = void 0;
+try {
+for (var r, c = t[Symbol.iterator](); !(i = (r = c.next()).done); i = !0) {
+var l = r.value;
+if (0 != l.length) {
+var u = l.shift();
+e.addAction(u);
+}
+}
+} catch (t) {
+a = !0;
+n = t;
+} finally {
+try {
+!i && c.return && c.return();
+} finally {
+if (a) throw n;
+}
+}
+o.GM.effectQueue.addQuery(e);
+}
+},
 checkErosion: function() {
-for (var t = Array.from(this.buffList), e = [], i = 0; i < t.length; i++) {
-t[i].OnCheckErosion(e);
+for (var t = this, e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0], i = Array.from(this.buffList), a = [], n = 0; n < i.length; n++) {
+i[n].OnCheckErosion(a);
 }
-for (var a = 0; a < e.length; a++) if (!this.isDead) {
-e[a].OnExecuteErosion(this);
+return 0 == a.length ? null : a.filter(function(t) {
+return !t.isDead;
+}).map(function(i) {
+var a = i.OnExecuteErosion(t);
+if (e) {
+var n = new s();
+n.addAction(a);
+o.GM.effectQueue.addQuery(n);
+return null;
 }
+return a;
+}).filter(function(t) {
+return null !== t;
+});
 },
 invokeBuffAction: function(t) {
 var e = o.GM.effectQueue, i = o.UI_M, a = new s(), n = new Map();
@@ -21286,6 +21372,7 @@ a.isCriti = i.checkCritical(this);
 N.addAction(v.beAttacked(a));
 N.addAction(new c(d, v.unitController.playSpineOnNode.bind(v.unitController)));
 t.addQuery(N);
+this.tryIncrementTrialMissionCount(e);
 v.checkErosion();
 N = new s();
 var L = new r();
@@ -21354,6 +21441,16 @@ return e;
 },
 checkWUnit: function() {
 return !1;
+},
+tryIncrementTrialMissionCount: function(t) {
+if (!this.isEnemy) {
+if (null !== t) {
+if (t.target.every(function(t) {
+return !t.isEnemy;
+})) return;
+}
+o.playerTotalHitCount++;
+}
 }
 });
 e.exports = E;
@@ -47951,47 +48048,46 @@ l.prototype.OnCheckErosion = function(t) {
 t.push(this);
 };
 l.prototype.OnExecuteErosion = function(t) {
-var e = new r(), i = 0;
+var e = 0;
 switch (this.powerType) {
 case c.PowerType.PER_BY_MAX_HP:
-i = t.getMaxHp() * this.power / 100;
+e = t.getMaxHp() * this.power / 100;
 break;
 
 case c.PowerType.PER_BY_CUR_HP:
-i = t.curHp * this.power / 100;
+e = t.curHp * this.power / 100;
 break;
 
 case c.PowerType.FIX:
 case c.PowerType.CHANGE_TO:
-i = parseInt(this.power);
+e = parseInt(this.power);
 }
-var a = new o(), l = new r();
+var i = new o(), a = new r();
 if (this.power >= 0) {
-var u = n.GM.gameRoot.poolManager, h = n.UI_M, d = {};
-d.targetNode = t.get_EffectShowNode();
-d.parentNode = h.buffEffectNode;
-d.buffType = c.BuffType.EROSION;
-l.addAction(new s(d, u.playBuffInvokeEffect_Instant.bind(u)));
-a.addQuery(l);
-var p = {
-query: l = new r(),
-damage: i = t.checkImmortal(i),
+var l = n.GM.gameRoot.poolManager, u = n.UI_M, h = {};
+h.targetNode = t.get_EffectShowNode();
+h.parentNode = u.buffEffectNode;
+h.buffType = c.BuffType.EROSION;
+a.addAction(new s(h, l.playBuffInvokeEffect_Instant.bind(l)));
+i.addQuery(a);
+var d = {
+query: a = new r(),
+damage: e = t.checkImmortal(e),
 damageType: c.DamageType.NONE,
 isCritical: !1,
 isRandomPosition: !1
 };
-t.decreaseHp(p);
-p.currentHp = t.curHp;
-t.processDamageShow(p);
-a.addQuery(l);
-t.processAfterAttack(a, !1, !1);
+t.decreaseHp(d);
+d.currentHp = t.curHp;
+t.processDamageShow(d);
+i.addQuery(a);
+t.processAfterAttack(i, !1, !1);
 } else {
-t.beHealed(l, Math.abs(i));
-a.addQuery(l);
+t.beHealed(a, Math.abs(e));
+i.addQuery(a);
 }
-(d = {}).effectQueue = a;
-e.addAction(new s(d, t.playLocalEffectqueue.bind(t)));
-n.GM.effectQueue.addQuery(e);
+(h = {}).effectQueue = i;
+return new s(h, t.playLocalEffectqueue.bind(t));
 };
 e.exports = l;
 cc._RF.pop();
@@ -94919,6 +95015,7 @@ u.damageType = m < 1 ? o.DamageType.RESIST : m > 1 ? o.DamageType.WEAK : o.Damag
 var _ = l.calculateBaseDamage(p, m, d);
 _ = d.checkImmortal(_);
 var g = l.getCounterActionQuery(u, t, this, _, "通常攻撃カウンター");
+h.tryIncrementTrialMissionCount(null);
 c.isHit = !1;
 c.afterActionQuery = g;
 e.invoked = !0;
@@ -146325,9 +146422,10 @@ return cc.audioEngine.getState(this.curVoice_id);
 getPlayingBgmState: function() {
 return cc.audioEngine.getState(this.curBGM_id);
 },
-continuePlayBGM: function(t, e, i) {
+continuePlayBGM: function(t, e, i, a) {
 e = e > 0 ? e : 0;
 i = void 0 === i || i;
+a = void 0 !== a && a;
 this._fadeBgmStop();
 this._bgmFadeVolume = 1;
 this._bgmVolumeDeltaCount = e ? this._bgmFadeVolume * this.bgmFadeDelayTime / e : 0;
@@ -146336,8 +146434,8 @@ this._bgmFadeVolume = 0;
 this._bgmFadeStart();
 }
 if (t === this.playingBGM) {
-var a = cc.audioEngine.getState(this.curBGM_id);
-cc.audioEngine.AudioState.PLAYING !== a && this.playBGM(t, i);
+var n = cc.audioEngine.getState(this.curBGM_id);
+(a || cc.audioEngine.AudioState.PLAYING !== n) && this.playBGM(t, i);
 } else {
 cc.audioEngine.stop(this.curBGM_id);
 this.curBGM_id = cc.audioEngine.play(t, i, this.bgmVolume * this._bgmFadeVolume);
@@ -146992,7 +147090,7 @@ if (i) cc.error(i); else {
 this._soundData = a;
 this.playPauseBtn.setTouchEnable(!0);
 this.playPauseBtn.switchBtnImage(!1);
-var o = t.getType() === r.SOUND.BGM && this._currentRepeatBtnIndex === c.REPEAT_ONE, s = n.soundManager.continuePlayBGM(a, e, o), l = 0;
+var o = t.getType() === r.SOUND.BGM && this._currentRepeatBtnIndex === c.REPEAT_ONE, s = n.soundManager.continuePlayBGM(a, e, o, !0), l = 0;
 if (this._soundMaster && this._soundMaster.getSoundId() === t.getSoundId()) {
 this._soundData = a;
 this._playId = s;
@@ -151184,7 +151282,7 @@ ToggleButton: "ToggleButton"
 StoryListViewBase: [ function(t, e, i) {
 "use strict";
 cc._RF.push(e, "0f63fxMWYhMU44Rw0CuO+kx", "StoryListViewBase");
-var a = t("ListViewBase"), n = t("CommonScrollView"), o = t("StoryConst"), r = t("CommonUtils"), s = t("LocalDataConst"), c = t("Singleton");
+var a = t("ListViewBase"), n = t("CommonScrollView"), o = t("StoryConst"), r = t("CommonUtils"), s = t("LocalDataConst"), c = t("Singleton"), l = t("StoryUtils");
 cc.Class({
 extends: a,
 properties: {
@@ -151279,14 +151377,20 @@ _callbackToCreateFilterConditions: function(t, e) {
 cc.error("_callbackToCreateFilterConditions()をオーバーライドしてください");
 },
 sortAndFilter: function() {
-this._visibleDataList = this._filter(this.getDataList(), this._getFilterCheckList(), this._getIsFav());
-var t = _.map(this._visibleDataList, function(t) {
+var t = this.getDataList();
+_.forEach(t, function(t) {
+_.remove(t.getStoryDetailMasterArray(), function(t) {
+return l.isEventFriendshipRewardStory(t.getStoryId()) && !t.getUserData();
+});
+});
+this._visibleDataList = this._filter(t, this._getFilterCheckList(), this._getIsFav());
+var e = _.map(this._visibleDataList, function(t) {
 return t.getStoryGroupId();
 });
-_.forEach(this.thumbnailParentNode._children, function(e) {
-e.getComponent("StoryThumbnailBase") && (e.active = t.includes(e.getComponent("StoryThumbnailBase").storyGroupId));
+_.forEach(this.thumbnailParentNode._children, function(t) {
+t.getComponent("StoryThumbnailBase") && (t.active = e.includes(t.getComponent("StoryThumbnailBase").storyGroupId));
 });
-this._noStoryNode.active = 0 === t.length;
+this._noStoryNode.active = 0 === e.length;
 this._callbackToSortFilter && this._callbackToSortFilter(this._getFilterCheckList());
 },
 setFilterCheckList: function(t) {
@@ -151348,7 +151452,8 @@ CommonUtils: "CommonUtils",
 ListViewBase: "ListViewBase",
 LocalDataConst: "LocalDataConst",
 Singleton: "Singleton",
-StoryConst: "StoryConst"
+StoryConst: "StoryConst",
+StoryUtils: "StoryUtils"
 } ],
 StoryMemorialEventOtherGroupListView: [ function(t, e, i) {
 "use strict";
