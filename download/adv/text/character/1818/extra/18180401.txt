@@ -1,0 +1,201 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm182.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,akiha1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:anger,akiha2,0,0,0,0,,,,
+imgconf,akiha2,akiha1,0,-390,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181804/adv/sound/fav181804_01_01.mp3
+name,<outline width=2 color=black><ruby>秋羽|あきは</ruby><ruby>未咲|みさき</ruby></outline>,
+msg,1,<outline width=2 color=black>「呜、唔唧唧唧、呜唧咕唧唧咕呜呜呜……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:sad,akiha,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_02.mp3
+msg,1,<outline width=2 color=black>「我没听说，我根本没听说啊，没想到那个亚纱姐居然会有\n喜欢的人……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:unique,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_03.mp3
+msg,1,<outline width=2 color=black>「而且偏偏还是这种毫无节操、连魔术都不会用的男人\n啊啊啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:unique,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_04.mp3
+msg,1,<outline width=2 color=black>「不要！　我绝对不承认！　亚纱姐居然要被这种家伙抢走，\n这种事我绝对不会承认的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:anger,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_05.mp3
+msg,1,<outline width=2 color=black>「就算！　虽然根本不可能，但就算我退一万步，允许亚纱姐交男朋友！\n那也必须是比我更厉害的魔术士才行！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:anger,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_06.mp3
+msg,1,<outline width=2 color=black>「想和亚纱姐交往的话，就先打败我再说！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:sad,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_07.mp3
+msg,1,<outline width=2 color=black>「真是的，亚纱姐为什么偏偏会喜欢这种男人……他的脸确实“或许”\n还不算太差，可、可是，连魔术都不会用，根本就是个彻头彻尾的废物嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:unique,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_08.mp3
+msg,1,<outline width=2 color=black>「我好不容易才终于和亚纱姐重逢，结果却要看着她变成这副不分场合\n就和男人卿卿我我的样子，你也替我想想啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:unique,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_09.mp3
+msg,1,<outline width=2 color=black>「而且，就连我们两个人聊天时，不知不觉也会聊到你，\n她还会说起那些我不知道的回忆……你让我该摆出什么表情才好啊啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「亚纱花并不在意对方是不是魔术士」,选项2 「你为什么这么执着于魔术」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:anger,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_10.mp3
+name,<outline width=2 color=black><ruby>秋羽|あきは</ruby><ruby>未咲|みさき</ruby></outline>,
+msg,1,<outline width=2 color=black>「为什么我非得听你这种家伙摆出一副很了解亚纱姐的样子\n说三道四啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:anger,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_11.mp3
+msg,1,<outline width=2 color=black>「既然生活在魔术的世界里，那和拥有魔术力量的人在一起，\n亚纱姐肯定也会更幸福吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:sad,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_12.mp3
+msg,1,<outline width=2 color=black>「可、可是，亚纱姐那么温柔，就算对方不会魔术，她大概也真的不在意……\n而且亚纱姐和这个男人在一起时，看起来真的非常幸福……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:unique,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_13.mp3
+msg,1,<outline width=2 color=black>「不要啊啊，就算这样，我还是不想承认啊啊啊……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:normal,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_14.mp3
+name,<outline width=2 color=black><ruby>秋羽|あきは</ruby><ruby>未咲|みさき</ruby></outline>,
+msg,1,<outline width=2 color=black>「能不能使用魔术，会让人与人之间产生根本无法用同一尺度衡量的\n能力差距。那是无论怎么努力都无法弥补的压倒性差距」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:normal,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_15.mp3
+msg,1,<outline width=2 color=black>「不管你再怎么努力，只要会使用魔术的人认真起来\n想要对付你，你甚至连自己都保护不了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:anger,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_16.mp3
+msg,1,<outline width=2 color=black>「我怎么可能把最重要的亚纱姐托付给这种人啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:unique,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_17.mp3
+msg,1,<outline width=2 color=black>「可是！　亚纱姐偏偏彻底对你动了真心！\n甚至还会露出连我都从没见过的表情！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:unique,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_18.mp3
+msg,1,<outline width=2 color=black>「为什么为什么！　亚纱姐到底是从什么时候开始变成那样的！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:sad,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_19.mp3
+name,<outline width=2 color=black><ruby>秋羽|あきは</ruby><ruby>未咲|みさき</ruby></outline>,
+msg,1,<outline width=2 color=black>「我不想承认一个连魔术都不会用的男人……可是，既然亚纱姐对他\n这么特别，要是我对他太不客气，说不定会被亚纱姐讨厌……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:sad,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_20.mp3
+msg,1,<outline width=2 color=black>「就算不会被她讨厌，以亚纱姐的性格，要是我和这家伙\n关系不好，她也一定会伤心……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:normal,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_21.mp3
+msg,1,<outline width=2 color=black>「——对了。与其让亚纱姐露出伤心的表情，还不如现在就把我的\n这点心情全部丢掉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:smile,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_22.mp3
+msg,1,<outline width=2 color=black>「这样一来，亚纱姐就会露出笑容。我也好，这家伙也好，肯定都会开心。\n那不就好了吗！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:normal,akiha,0,-100,0.5,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_23.mp3
+msg,1,<outline width=2 color=black>「————好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,scale,akiha,0.6_0.6,0.5,0
+anm,move,akiha,0_-130,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:smile,akiha,0,-130,0.6,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_24.mp3
+msg,1,<outline width=2 color=black>「就当哥哥你是个例外，就算不会使用魔术也没关系！\n毕竟你一直以来都在支持亚纱姐，所以是特别待遇哦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:smile,akiha,0,-130,0.6,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_25.mp3
+msg,1,<outline width=2 color=black>「而且哥哥你好像也在魔术以外的方面帮了房东不少忙。\n你不觉得“人尽其才”是个很好的词吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181804/adv/atlas/stand_a,body:smile,akiha,0,-130,0.6,0,,,,
+playvoice,1,download/character/181804/adv/sound/fav181804_01_26.mp3
+msg,1,<outline width=2 color=black>「所以就是这么回事，请你千万不要对亚纱姐说什么奇怪的话哦。\n哥哥？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
