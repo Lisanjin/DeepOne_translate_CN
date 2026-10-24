@@ -18,10 +18,13 @@ app.add_middleware(
 
 @app.get("/{file_path:path}")
 async def download_file(file_path: str):
-    file_path = os.path.join("./", file_path)
-    if not os.path.exists(file_path):
+    base_dir = os.path.abspath("./")
+    full_path = os.path.abspath(os.path.join(base_dir, file_path))
+    if os.path.commonpath([base_dir, full_path]) != base_dir:
         return {"error": "File not found"}
-    with open(file_path, "rb") as file: 
+    if not os.path.exists(full_path):
+        return {"error": "File not found"}
+    with open(full_path, "rb") as file: 
         file_content = file.read()
         
     return Response(content=file_content)
