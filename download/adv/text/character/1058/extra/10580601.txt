@@ -1,0 +1,265 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11090300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm125.mp3,0,
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,azami1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:shy,azami2,0,0,0,0,,,,
+imgconf,azami2,azami1,0,-290,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_01.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「啊、呜……这、这身打扮是怎么回事啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:shy,azami,0,-90,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_02.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「唔、等、等一下！　不是说了别看这边吗！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_03.mp3
+msg,1,<outline width=2 color=black>「请转过头去，那边！　去！　去！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「一不小心就看入迷了」,选项2 「为什么？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:shy,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_04.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「呜……看、看入迷了……？　是、是说我吗……？\n这、这该怎么说呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:surprise,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_05.mp3
+msg,1,<outline width=2 color=black>「——啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_06.mp3
+msg,1,<outline width=2 color=black>「就、就算你这么说，我也不会上当的！　反正你满脑子都是歪心思！\n明明就是想一有机会就做些下流的事！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_07.mp3
+msg,1,<outline width=2 color=black>「我早就知道你是那种人了！\n变态、色鬼、流氓！　请把头转过去！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:shy,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_08.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「为、为什么……因为，我身上缠的可是绷带啊……还、还凉飕飕的……！\n正常想想，被人看见这副打扮，怎么可能不在意啊！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_09.mp3
+msg,1,<outline width=2 color=black>「我会害羞的啊！　我不想被你看见啊！\n连这点都不明白吗，你这个迟钝的人类！　笨蛋人类！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:unique,azami,0,-90,0.5,0,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_10.mp3
+msg,1,<outline width=2 color=black>「就是因为你这么不懂分寸，又不体谅别人，我才讨厌你！　最讨厌了！\n总之，请把头转过去！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,left
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+slideoutblack,0.5,left
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,azami1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:surprise,azami2,0,0,0,0,,,,
+imgconf,azami2,azami1,0,-290,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_11.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:normal,azami2,0,0,0,0,,,,
+imgconf,azami2,azami1,0,-290,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_12.mp3
+msg,1,<outline width=2 color=black>「……没、没想到，你还挺老实听话的嘛。\n作为人类，倒还算懂事。这样就好，这样就好。」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_13.mp3
+msg,1,<outline width=2 color=black>「这样是很好啦……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:sad,azami2,0,0,0,0,,,,
+imgconf,azami2,azami1,0,-290,,,0,1.5,1.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_14.mp3
+msg,1,<outline width=2 color=black>「…………反正，你也不可能一直忍下去吧？\n毕竟是你，其实还是想看的吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_15.mp3
+msg,1,<outline width=2 color=black>「就这么一直不看我，那种事……嗯……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:sad,azami,1200,-90,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,azami,600_-90,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:shy,azami,600,-90,0.5,0,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_16.mp3
+name,<outline width=2 color=black>蓟</outline>,
+msg,1,<outline width=2 color=black>「——……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,azami,1200_-90,0.5,0
+endwait,,,,,,,,,,,
+spriteoff,azami,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_17.mp3
+msg,1,<outline width=2 color=black>「不、不是说了不许看吗！　你这个变态人类！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_18.mp3
+msg,1,<outline width=2 color=black>「……想看吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:shy,azami,1200,-90,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,azami,600_-90,0.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_19.mp3
+msg,1,<outline width=2 color=black>「…………就、就那么……想看、吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,azami,500_-90,0.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_20.mp3
+msg,1,<outline width=2 color=black>「唔……好、好吧，既然你都这么……非看不可的话」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_21.mp3
+msg,1,<outline width=2 color=black>「反正被看看，也不会少块肉吧？\n说到底，就算被人类看见，我也根本不在乎吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+anm,move,azami,300_-90,0.5,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_22.mp3
+msg,1,<outline width=2 color=black>「所以……这、这可是特例哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_23.mp3
+msg,1,<outline width=2 color=black>「嗯、呜……呜呜……你、你的视线……啊、呜、被看着……唔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,azami,1200_-90,0.5,0
+endwait,,,,,,,,,,,
+spriteoff,azami,0
+endwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/105806/adv/sound/fav105806_01_24.mp3
+msg,1,<outline width=2 color=black>「这、这种事果然还是会害羞的啊，你这个笨蛋人类！\n笨蛋笨蛋人类！　笨蛋笨蛋笨蛋笨蛋人类——！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+wait,1
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105806/adv/atlas/stand_a,body:shy,azami,1200,-90,0.5,0,,,,
+endwait,,,,,,,,,,,
+anm,move,azami,600_-90,0.5,0
+endwait,,,,,,,,,,,
+playvoice,1,download/character/105806/adv/sound/fav105806_01_25.mp3
+msg,1,<outline width=2 color=black>「唔、笨蛋！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playse,/download/sound/se/se_016.mp3
+anm,move,azami,1200_-90,0.5,0
+endwait,,,,,,,,,,,
+spriteoff,azami,0
+endwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
