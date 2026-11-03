@@ -8,7 +8,7 @@
 
 本地部署方法已弃用,请以前使用过本地部署补丁的切换到新版本。本地版本的相关代码依旧保留，想要自己替换文本的可以继续使用，但不负责维护了。
 
-安卓客户端汉化实现请参看仓库 [DeepOne-Mod](https://github.com/anosu/DeepOne-Mod)
+安卓客户端汉化实现请参看仓库 [DeepOneR-Mod_CN](https://github.com/Lisanjin/DeepOneR-Mod_CN)
 
 翻译人员：Atrili、mamomo、刚大木 、SK、科斯卡特
 
@@ -18,12 +18,17 @@
 
 汉化文件1周年及以前剧情、角色来自已关服的繁中服  
 主线的第七章及往后，来自上述人员的汉化  
-其余内容使用了GPT4/claude +GPT3.5 +deepseek进行汉化
+其余内容使用LLM进行汉化
 
 该补丁仅供交流学习，不得用于任何盈利行为。请于下载后24小时内删除。
 有问题可以留issue,或者去[QQ交流群](https://qm.qq.com/q/rYyJ493WYo)
 
 ## 更新说明
+
+### 2025.11.3
+
+anosu不再负责project.js的重写和服务器端对剧本文件的重定向，安卓端迁移到新仓库 [DeepOneR-Mod_CN](https://github.com/Lisanjin/DeepOneR-Mod_CN)
+project.js 更新实现，参看update_resource.py
 
 ### 2025.2.4
 
