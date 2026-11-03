@@ -25,10 +25,11 @@
 
 ## 更新说明
 
-### 2025.11.3
+### 2026.11.3
 
 anosu不再负责project.js的重写和服务器端对剧本文件的重定向，安卓端迁移到新仓库 [DeepOneR-Mod_CN](https://github.com/Lisanjin/DeepOneR-Mod_CN)
 project.js 更新实现，参看update_resource.py
+翻译模型主要使用gpt-sol
 
 ### 2025.2.4
 
