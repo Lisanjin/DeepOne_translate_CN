@@ -1,5 +1,5 @@
-// patch_data: 2026-10-27 16-01-07
-// md5:1f86e8b1c26a820cb6aa6a8b870e05aa
+// patch_data: 2026-11-02 16-02-44
+// md5:3a03ec0425d0a6d936787db0ec8e4365
 // [Lisanjin/DeepOne_translate_CN](https://github.com/Lisanjin/DeepOne_translate_CN)
 window.__require = function t(e, i, a) {
 function n(r, s) {
@@ -90549,10 +90549,15 @@ this._activateTab(e);
 },
 _resetTab: function() {
 for (var t in this.tabBtnArray) this.tabBtnArray[t].switchBtnImage(!1);
+this._resetEmptyNode();
+},
+onDisable: function() {
+this._resetEmptyNode();
+},
+_resetEmptyNode: function() {
 if (this._emptyContentNode) {
 this._emptyContentNode.destroy();
 delete this._emptyContentNode;
-this.footerNode.active = !0;
 }
 if (this._cancelEmptyContentWait) {
 this._cancelEmptyContentWait();
@@ -90583,7 +90588,6 @@ this._cancelEmptyContentWait = n.whenReady(function() {
 var o = n.createEmptyContentPanelView(t, e, i);
 a.missionDetailListView.scrollView.node.addChild(o);
 a._emptyContentNode = o;
-a.footerNode.active = !1;
 });
 }
 });
@@ -91328,18 +91332,23 @@ this._root = t;
 this._selectedTab = e;
 this.redraw();
 },
-redraw: function() {
-this._root.deleteUpdateCallbackKey("MissionNormalThumbnail", function() {
-this.content.destroyAllChildren();
+onDisable: function() {
+this._resetEmptyNode();
+},
+_resetEmptyNode: function() {
 if (this._emptyContentNode) {
 this._emptyContentNode.destroy();
 delete this._emptyContentNode;
-this.footerNode.active = !0;
 }
 if (this._cancelEmptyContentWait) {
 this._cancelEmptyContentWait();
 delete this._cancelEmptyContentWait;
 }
+},
+redraw: function() {
+this._root.deleteUpdateCallbackKey("MissionNormalThumbnail", function() {
+this.content.destroyAllChildren();
+this._resetEmptyNode();
 }.bind(this));
 var t = [];
 t.push({
@@ -91369,7 +91378,6 @@ this._cancelEmptyContentWait = i.whenReady(function() {
 var a = i.createEmptyContentPanelView(e);
 t._emptyContentNode = a;
 t.node.addChild(a);
-t.footerNode.active = !1;
 });
 }
 });

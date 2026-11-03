@@ -1,0 +1,248 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11430302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm178.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:surprise,you,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_01.mp3
+msg,1,<outline width=2 color=black>「啊……看来，这场梦也快要醒了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:sad,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_02.mp3
+msg,1,<outline width=2 color=black>「唔……虽说快乐的时光总是转瞬即逝，\n但我还有好多话没说够呢……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_03.mp3
+msg,1,<outline width=2 color=black>「不过，能像这样共度时光本身就如同奇迹，\n或许我也不能奢求太多吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「才没有那回事」,选项2 「你有没有什么想做的事？」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>优</outline>,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_04.mp3
+msg,1,<outline width=2 color=black>「……是啊。说起来，确实如此。\n并没有什么道理规定，只要此刻幸福，就必须心满意足」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_05.mp3
+msg,1,<outline width=2 color=black>「你们一直以来，都是这样不断追求着幸福的明天」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_06.mp3
+msg,1,<outline width=2 color=black>「我也得向这样的你们学习才行……要是向幸福妥协，\n恐怕会被大家笑话的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:surprise,you,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>优</outline>,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_07.mp3
+msg,1,<outline width=2 color=black>「想做的事……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:sad,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_08.mp3
+msg,1,<outline width=2 color=black>「唔。突然这么问我……让我想想」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:surprise,you,0,-120,0.5,0,,,,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_09.mp3
+msg,1,<outline width=2 color=black>「……啊，有了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+
+
+anm,scale,you,0.6_0.6,0.5,0
+anm,move,you,0_-140,0.5,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+name,<outline width=2 color=black>优</outline>,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_10.mp3
+msg,1,<outline width=2 color=black>「呐……能稍微陪我一下吗？\n我有个想找的东西……或者说，有个想找的地方」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_11.mp3
+msg,1,<outline width=2 color=black>「这里是梦境，只要我心中有所期望，应该就能找到吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,0,-140,0.6,0,,,,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_12.mp3
+msg,1,<outline width=2 color=black>「所以……来，我们走吧－？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+slideinblack,0.5,right
+endwait,,,,,,,,,,,
+spineoff,all,0
+endwait,,,,,,,,,,,
+bg,color_0_0_0,0,255
+endwait,,,,,,,,,,,
+slideoutblack,0.5,right
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+stopbgm,0.4,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm141.mp3,0,
+endwait,,,,,,,,,,,
+sprite,download/character/181006/image/main.png,card1,0,0,2,0,,,,
+anm,fade,card1,0,0,0
+anm,scale,card1,1_1,1,0
+anm,fade,card1,255,1,0
+endwait,,,,,,,,,,,
+
+
+
+name,<outline width=2 color=black>优</outline>,
+playvoice,1,download/character/181006/adv/sound/fav181006_03_13.mp3
+msg,1,<outline width=2 color=black>「果然有呢—。一间时尚的酒吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_14.mp3
+msg,1,<outline width=2 color=black>「呵呵……你不觉得这种场景很令人向往吗？\n在时尚的酒吧里，只有我们两个人……就像浪漫电影一样吧—？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_15.mp3
+msg,1,<outline width=2 color=black>「机会难得，就当是一起留下一段回忆吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_16.mp3
+msg,1,<outline width=2 color=black>「诶，喝酒？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_17.mp3
+msg,1,<outline width=2 color=black>「喝一点倒是没问题，不过我的酒量不算太好吧—……因为没怎么\n喝过，所以也没确认过自己实际上能喝多少」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_18.mp3
+msg,1,<outline width=2 color=black>「不过，现在就算我醉倒了，也不用担心吧—？\n因为，我正和你在一起呀」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_19.mp3
+msg,1,<outline width=2 color=black>「啊……还是说，反而会很危险呢—？\n要是我喝醉了，会被你捡回家吗—？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_20.mp3
+msg,1,<outline width=2 color=black>「……不过，那样也可以哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_21.mp3
+msg,1,<outline width=2 color=black>「呵呵—……来吧，梦中的夜晚可是很短暂的。我们干杯吧，干杯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+sprite,download/character/181006/image/main.png,card2,300,180,1.5,0.5,,,,
+endwait,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_22.mp3
+msg,1,<outline width=2 color=black>「干杯—♪」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,card2,0.5
+endwait,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_23.mp3
+msg,1,<outline width=2 color=black>「嗯……呵呵，真好喝。酒有这么好喝吗—？\n这样下去，我说不定真的很快就会醉了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_24.mp3
+msg,1,<outline width=2 color=black>「……嗯。果然，我还是想醉得更深一些呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+playvoice,1,download/character/181006/adv/sound/fav181006_03_25.mp3
+msg,1,<outline width=2 color=black>「呐……在这个与你共度的幸福夜晚，\n能让我更加、更加沉醉吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+spriteoff,all,2
+endwait,,,,,,,,,,,
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,

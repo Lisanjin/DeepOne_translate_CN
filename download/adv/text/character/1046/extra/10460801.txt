@@ -1,0 +1,154 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+bg,download/bg/bg_11560301.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm152.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_01.mp3
+msg,1,<outline width=2 color=black>「我曾经败北，沦落为渺小的存在……但我并没有忘记那份屈辱。\n我承认了，也接受了。可是，这并不代表我向你们妥协了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:unique,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_02.mp3
+msg,1,<outline width=2 color=black>「最近，我时常感觉你们似乎误解了这一点。\n我们既不是可以随意亲近的关系，你们更绝不是我能够敞开心扉的对象」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_03.mp3
+msg,1,<outline width=2 color=black>「这一点，你们千万不要忘记」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「比如你什么时候会有这种感觉？」,选项2 「都怪帕露菲太会照顾人了」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:unique,perufe,0,-170,0.5,0,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_04.mp3
+msg,1,<outline width=2 color=black>「首先想到的，果然还是茉莉。她总是来找我商量那些无聊的事，说什么想和爱花、想花\n变得更加要好……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_05.mp3
+msg,1,<outline width=2 color=black>「除此之外，在吃饭或洗澡的时候主动凑到我身边的人也不在少数」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_06.mp3
+msg,1,<outline width=2 color=black>「而且，你也是……前段时间还毫无缘由地跑到我的房间，\n只喝了点东西就走了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:anger,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_07.mp3
+msg,1,<outline width=2 color=black>「我的房间不是咖啡厅，而且无论如何，我都不是负责端茶倒水、招待你们的\n侍者。你到底在想什么？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:anger,perufe,0,-170,0.5,0,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_08.mp3
+msg,1,<outline width=2 color=black>「……为什么这会变成我的责任？我完全无法理解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_09.mp3
+msg,1,<outline width=2 color=black>「说到底，我根本不记得自己有照顾过你们——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:sad,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_10.mp3
+msg,1,<outline width=2 color=black>「……不记得」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:unique,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_11.mp3
+msg,1,<outline width=2 color=black>「…………还不是因为你们总让我看到没出息的样子」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:anger,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_12.mp3
+msg,1,<outline width=2 color=black>「你们好歹也是战胜过我的人，要是表现得太过难看，也会有损我的\n格调。你们要理解这一点，并努力别再给我添麻烦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:sad,perufe,0,-170,0.5,0,,,,
+name,<outline width=2 color=black>帕露菲</outline>,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_13.mp3
+msg,1,<outline width=2 color=black>「每次都这样，真是的……够了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:sad,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_14.mp3
+msg,1,<outline width=2 color=black>「这些尽是无聊琐事的日子，\n究竟真的能给我带来些什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:unique,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_15.mp3
+msg,1,<outline width=2 color=black>「…………罢了，我就再稍微以这蒙昧之人的视角，\n陪愚蠢的你们度过这些日子吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_16.mp3
+msg,1,<outline width=2 color=black>「反正人类的时光不过短短一瞬……转眼之间便会流逝」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:normal,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_17.mp3
+msg,1,<outline width=2 color=black>「是啊。只是一时兴起罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:sad,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_18.mp3
+msg,1,<outline width=2 color=black>「……可是，明明应该如此，为什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:sad,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_19.mp3
+msg,1,<outline width=2 color=black>「回首望去，像这样与你们共同度过的日子，其记忆\n仿佛已经延续了很久一般，让我产生了这样的错觉……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:unique,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_20.mp3
+msg,1,<outline width=2 color=black>「——啊，真是的。我还真是一时兴起呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104608/adv/atlas/stand_a,body:unique,perufe,0,-170,0.5,0,,,,
+playvoice,1,download/character/104608/adv/sound/fav104608_01_21.mp3
+msg,1,<outline width=2 color=black>「看来，我已经彻底习惯这副渺小的身躯了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
