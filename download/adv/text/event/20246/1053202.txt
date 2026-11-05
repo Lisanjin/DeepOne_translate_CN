@@ -1,0 +1,527 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11730300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11730301.jpg,1,255
+endwait,,,,,,,,,,,
+wait,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11430301.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm096.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:shy,mari,-300,-110,0.5,0.5,,,,
+anm,tint,mari,150_150_150,0.0001,0
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「呵呵，你在爱花和想花面前做了那种事吗？\n茉莉真是个冒失鬼呀—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:shy,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「啊、呜、呜呜呜，明明都说了不许把那件事告诉别人的……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「好啦好啦。这个嘛，你看，就像是姐姐的特权—？\n不可以对姐姐有所隐瞒哦—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:sad,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「真是的，我可从没听说过这种事」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「因为是我刚刚才编出来的嘛—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「还有很多有趣的故事没讲呢」,选项2 「茉莉每天都过得很开心呢」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:shy,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「呀、等……那个？　应该没有那么多吧—，大概」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「那只是你自己这么认为吧—？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「为了确认茉莉有没有正确认识自己，\n看来我还得再多听听他的故事才行吧—？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:surprise,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「哇！　哇！　都说了不可以再讲啦—！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「这样啊—……那就好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「太好了呢—，茉莉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「……嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:sad,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「但果然，姐姐不在其中还是——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「现在禁止说这种话―」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「让这个梦里充满开心的事吧，茉莉。好吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:sad,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「姐姐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:smile,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嗯，说得也是。对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「那么，再多讲些茉莉既羞人又有趣的故事――」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:surprise,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「哇啊啊！　这、这个话题到此为止！\n你也不许再说什么奇怪的事了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「呵呵……我本来还想无论如何都要问出来……不过」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「光是像这样聊着天，\n时间一转眼就过去了呢—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:surprise,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「啊……不知不觉，已经到傍晚了……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「这个梦一定很快就要醒了吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:sad,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「姐姐……我啊，现在真的很幸福哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:surprise,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「茉莉……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「那一天……我和姐姐吵了架，分别的那一天……因为姐姐在背后\n保护了我，我才能逃到自由的世界」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「后来发生了很多事哦。遇到过麻烦，也经历过痛苦。\n我也并不是一直都能保持笑容」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:smile,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「毕竟我还是个爱哭鬼呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可是……我就这样经历了许许多多的事情，\n虽然走得或许很笨拙，但我还是一步一步走到了这里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这一切，才造就了此时此刻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「想花和爱花都很可爱，和他在一起也很开心，帕露菲虽然\n稍微有点严格，但她也很温柔，只要待在她身边，我就会感到安心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「除此之外……只要仔细去找，现在的我之所以幸福的理由，要多少就能找到多少」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:smile,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「当然，也包括像这样与姐姐重逢的此时此刻」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:smile,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「姐姐。我很幸福哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:smile,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「因为那一天，姐姐保护了我，现在的我才能这么幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:surprise,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不是的。那是因为茉莉为了让自己真正获得幸福，\n一直努力到了今天……我所做的，不过是一件微不足道的小事罢了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:normal,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「姐姐口中那件微不足道的小事，对我来说却如同奇迹一般哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「太夸张了啦—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:smile,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「一—点都不夸张嘛」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「你总是在奇怪的地方这么固执—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……太好了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真的，太好了。茉莉能够这么幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,all,0.2
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11430302.jpg,2,255
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,300,-120,0.5,0.5,,,,
+anm,tint,you,150_150_150,0.0001,0
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:sad,mari,-300,-110,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「啊……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「…………看来，真的到了该从梦中醒来的时候」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:sad,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「那、那个，姐姐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「茉莉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我也很幸福。能够像这样和茉莉说话，听茉莉亲口告诉我，你过得很幸福」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「看到你脸上带着笑容，我真的很开心哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:unique,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:shy,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嘿、嘿嘿—」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「呵呵—，笑得真难看」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:unique,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「好过分，我明明已经很努力了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「结果还是哭出来了。你这么快就想让我收回刚才的话―？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:unique,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「可是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+anm,tint,mari,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「茉莉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「下次再见」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:unique,mari,-300,-110,0.5,0,,,,
+anm,tint,you,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:shy,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/105152/adv/atlas/stand_a,body:smile,mari,-300,-110,0.5,0,,,,
+msg,0,<outline width=2 color=black>「下次再见，姐姐」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_015.mp3
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+name,<outline width=2 color=black>栖条茉莉</outline>,
+msg,0,<outline width=2 color=black>「姐姐，我最喜欢你了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+stopbgm,2,,,,,,,,,,
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11430302.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm152.mp3,0,
+endwait,,,,,,,,,,,
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:surprise,you,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「――咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「嗯？」,选项2 「……我还在梦里？」
+endif,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+name,<outline width=2 color=black>优</outline>,
+msg,0,<outline width=2 color=black>「啊，原来如此……你还能在这个梦里多待一会儿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「因为你身处梦境更深的地方，所以这也是理所当然的吧。\n对吧……爱管闲事的好心人？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:normal,you,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「机会难得，我们再聊一会儿吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/181006/adv/atlas/stand_a,body:smile,you,0,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「要对茉莉保密哦？　要是被她知道你偷跑来见我，她可是会闹别扭的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
