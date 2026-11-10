@@ -1,0 +1,699 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11760302.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm126.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0.5,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「虽然在大家被分散的情况下说这种话可能不太合适，\n但能和姐姐在一起，我很开心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「是啊……考虑到其他成员的能力，就算大家被分散了，\n应该也不至于如此悲观」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「也没必要一直这么紧绷着……稍微闲聊几句，应该也没问题吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「嗯」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「我是不是有点碍事……？」,选项2 「要是以前的布丽吉特——」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:surprise,zizel,300,-120,0.5,0,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「啊，不，不是那样的……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不只是姐姐，能和你待在一起，我也很开心哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:smile,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「哎呀。那么，我和他，你更想和谁待在一起呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:surprise,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「姐、姐姐……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:shy,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「请不要说这种捉弄人的话……这根本不是能够拿来比较的事情\n啊」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:smile,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「呵呵，是我不好」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过……你没能立刻回答，还是让我有点嫉妒呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:anger,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「要是以前的我，会怎么样？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……唉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「亚纱花也好，你也好，都别再拿以前的事来说了。\n说实话，被人提起以前那个目光短浅的自己，还是挺让人难为情的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「呵呵。看到你们这样轻松地交谈，我果然还是会觉得，姐姐和你\n关系真的很好呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「明明你们应该是在拉莱耶才第一次见面，关系却已经变得这么亲近了……。\n甚至让我有些着急，担心自己会不会被抛在后面」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「被抛在后面什么的，怎么可能会有那种事。\n无论我和他是什么关系，我和你的关系都不会改变」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「再说了，这话应该由我来说才对」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:surprise,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「……姐姐也会担心妹妹的心会不会被人彻底夺走，\n你多少也该察觉一下我的心情」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:surprise,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「姐姐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「竟然这么快就在吉泽尔心里占据了一席之地。\n我的心情有些复杂。无论是作为姐姐，还是——……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「姐姐，你刚才在想什么？　脸都红了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「吵、吵死了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:unique,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真是的。明明刚才还一个劲地向姐姐示爱，真是个坏妹妹」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「呵呵，对不起」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「不过……我有点开心。\n没想到姐姐竟然会这样为我吃醋」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:unique,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「居然会因为别人吃醋而开心，看来你不只是个坏妹妹，还是个坏女人呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「要这么说的话，真要论起来，更坏的应该是\n这个总能轻易闯入别人心里的人吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:unique,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「有道理」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「对吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「……尤其对吉泽尔来说，他应该是个弥足珍贵的存在吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「对于背负着芭德薇之名的你，\n许多人都会戴着各式各样的有色眼镜看待你」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「就连我和霍莉也不例外……我们都对你\n怀有各自的感情……而那些感情，就像一层薄纱，将我们彼此隔开」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「或许，从一开始就一直注视着最真实的你的，\n只有那个对魔术世界的格局一无所知的他吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:sad,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「是啊……我必须配得上自己肩负的一切。从姐姐手中\n夺来的下任家主之位，绝不能成为一个毫无分量的头衔」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:sad,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「这种念头一直压得我喘不过气来……可是，\n在他面前，我却能暂时忘记一点自己所肩负的重担」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我不是芭德薇家的下任家主，而只是吉泽尔·芭德薇，\n这样的自己也是可以存在的……或许我那时就是这么觉得的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「或许，最先这么做的人本该是我。\n明明全世界只有身为姐姐的我，应该能够这么做」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可我的双眼，却一直被虚荣心与自卑感所蒙蔽」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「可是，现在已经不一样了，不是吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「姐姐所经历的或许与我形式不同，\n但你当时的心情，一定和我是一样的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我还记得，起初我很疑惑……你明明没有力量，没有战斗的能力，为什么还能如此坦率地\n面对他人」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可不知从什么时候开始……都怪某个人，让我意识到了。\n把战斗能力视作强大本身，其实就是一种误解」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「想要面对一个人，需要的并不是紧握手中的剑，\n而是珍视自己的言语，毫不畏惧地触碰对方的内心」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「我们都从他那里得到了一个微不足道……却又无比珍贵的\n契机呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「是啊……你是陪伴在人们善意身旁的存在。正因为你是这样的人——」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……不。那也一定只是微不足道的小事。并不是因为你肩负着那种职责，\n而是因为你就是你，所以我和吉泽尔才会……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「都彻底被他迷得神魂颠倒了呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:unique,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「才没到那种地步」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:surprise,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「咦……？　可是姐姐，你能想象和他分离吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「那、那是……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「你不想和他一直在一起吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「我是想的哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「等我冷静下来，从现实角度考虑，就会想到数不清的\n各种问题」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「可是……即便如此，最先浮现在我心中的，\n依然是想和他在一起的心愿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「……我的妹妹，心不是早就彻底被他夺走了吗」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「一码归一码……姐姐，你是不是想蒙混过去？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「姐姐，你又是怎么想的呢？\n在我这个妹妹看来，姐姐的心也已经被他夺走得差不多了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「我在拉莱耶与他相遇，被卷入了难以想象的事件，\n又与他一同面对重重困难，最终走到了这里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「在这段经历中，他给了我许多支持，我也觉得能遇见他真是太好了。\n所以，我想报答他给我的这份恩情……只要是我能做到的，我都会助他一臂之力」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「在我自己能够接受之前……我都会陪在他身边。\n这样一来，遇到紧要关头时也更方便吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:unique,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「姐姐，事到如今再用这种说法也太牵强了。你也该坦率一点了吧？\n明明我都这么毫不掩饰地说出来了……姐姐这样，可能已经有点难看了哦」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:surprise,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「唔……！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「呜、唔……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……别想从姐姐嘴里套出这种话来。\n你就不会觉得尴尬吗？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「毕竟我们是姐妹，会喜欢上同一个人也是没办法的事吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「正常来说，这时候绝对该有点别的反应吧……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:sad,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「……唉」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「真是的……我们姐妹俩都无可救药了。\n居然一起栽在了这种坏男人手里」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:unique,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「还是一点都不坦率……姐姐……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:shy,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「我已经让步了！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:normal,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「……真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:smile,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「姐姐真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:surprise,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「咦？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:surprise,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「这是……魔力正在汇聚……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:sad,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「这是，转移……！？　姐、姐姐！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:anger,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「快、把手给我……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+playse,/download/sound/se/se_015.mp3
+bg,color_255_255_255,1,255
+endwait,,,,,,,,,,,
+
+
+mask,black1,0,0,1280,250,0.5,,,,
+sprite,download/adv/image/black.jpg,black,0,0,0,0,,,,
+imgconf,black,black1,0,0,,,0,1,1,0.5
+mask,blizit1,0,0,1280,250,0.5,,,,
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:anger,blizit2,0,0,0,0,,,,
+imgconf,blizit2,blizit1,0,-661,,,0,1.5,1.5,0.5
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「唔……！」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+stopbgm,0.5,,,,,,,,,,
+spriteoff,all,0.5
+endwait,,,,,,,,,,,
+bg,color_0_0_0,1,255
+endwait,,,,,,,,,,,
+wait,1
+endwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>……。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>…………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,<outline width=2 color=black>………………。</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+name,
+msg,0,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11880302.jpg,1,255
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm025.mp3,0,
+endwait,,,,,,,,,,,
+
+
+flash,255,255,255,4,0.3,1.0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:surprise,zizel,300,-120,0.5,0.5,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:surprise,blizit,-300,-190,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「咦……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:surprise,zizel,300,-120,0.5,0,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>吉泽尔·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「这里，是……？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100710/adv/atlas/stand_a,body:anger,zizel,300,-120,0.5,0,,,,
+msg,0,<outline width=2 color=black>「姐姐……那个人呢！？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+anm,tint,zizel,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>布丽吉特·芭德薇</outline>,
+msg,0,<outline width=2 color=black>「……看来，被转移到这里的只有我和吉泽尔。\n这究竟是怎么回事呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「还有你为什么会在这里，也请一并告诉我们吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/100223/adv/atlas/stand_a,body:normal,blizit,-300,-190,0.5,0,,,,
+msg,0,<outline width=2 color=black>「你说呢——零」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteoff,zizel,0
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/104384/adv/atlas/stand_a,body:sad,zero,300,-120,0.5,0.5,,,,
+anm,tint,blizit,150_150_150,0.0001,0
+endwait,,,,,,,,,,,
+name,<outline width=2 color=black>零</outline>,
+msg,0,<outline width=2 color=black>「…………」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
