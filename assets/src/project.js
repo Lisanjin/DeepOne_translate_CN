@@ -1,5 +1,5 @@
-// patch_data: 2026-11-02 16-02-44
-// md5:3a03ec0425d0a6d936787db0ec8e4365
+// patch_data: 2026-11-17 20-28-11
+// md5:cd902e2d56ba8da76407d26bd490fa66
 // [Lisanjin/DeepOne_translate_CN](https://github.com/Lisanjin/DeepOne_translate_CN)
 window.__require = function t(e, i, a) {
 function n(r, s) {
@@ -7029,6 +7029,7 @@ SHOP_EXCHANGE: "exchange",
 SHOP_GET_ORDER_PACK: "getOrderPack",
 SHOP_SELECT_ORDER_PACK: "selectOrderPack",
 SHOP_DECIDE_ORDER_PACK: "decideOrderPack",
+SHOP_SET_COUPLING_VOTE_LINEUP: "setCouplingVoteLineup",
 MISSION_RECEIVE: "missionReceive",
 MISSION_HIDDEN_RECEIVE: "missionHiddenReceive",
 MISSION_ADJUST_BY_QUEST_CLEAR: "adjustMissionByQuestClear",
@@ -7064,6 +7065,7 @@ PVP_GET_MASTER_DATA: "getMasterPvPData",
 PVP_GET_USER_DATA: "getUserPvPData",
 PICTURE_BOOK_GET_USER_DATA: "getUserPictureBookData",
 SHOP_GET_USER_DATA: "getUserShopData",
+SHOP_GET_COUPLING_VOTE_LINEUP_USER_DATA: "getCouplingVoteLineupUserData",
 PVP_GET_BATTLE_PLAYERS: "getBattlePlayers",
 PVP_UPDATE_BATTLE_PLAYERS: "updateBattlePlayers",
 PVP_START_BATTLE: "startBattle",
@@ -58852,7 +58854,8 @@ e.exports = {
 EXCHANGE_TYPE: cc.Enum({
 POINT_CONSUME: 1,
 ITEM_CONSUME: 2,
-ITEM_CONSUME_BY_DATE: 3
+ITEM_CONSUME_BY_DATE: 3,
+COUPLING_VOTE: 4
 }),
 EXCHANGE_TAB_TYPE: cc.Enum({
 GOLD: 1,
@@ -58895,10 +58898,345 @@ CONSUME_COLOR: cc.color(111, 233, 255, 255),
 CONSUME_OUT_LINE_COLOR: cc.color(0, 0, 0, 255),
 COST_OVER_COLOR: cc.color(255, 0, 69, 255),
 COST_OVER_OUT_LINE_COLOR: cc.color(255, 255, 255, 255),
-INIT_EXCHANGETAB_INDEX: 0
+INIT_EXCHANGETAB_INDEX: 0,
+EXCHANGE_COUPLING_VOTE_MAX_SELECT: 2
 };
 cc._RF.pop();
 }, {} ],
+ExchangeCouplingVoteGroupModel: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "8930cW/50dChr1KaAudDsj9", "ExchangeCouplingVoteGroupModel");
+var a = t("MasterDatabase"), n = t("Singleton"), o = t("SingletonConst");
+cc.Class({
+extends: a,
+getExchangeId: function() {
+if (this._isKeyFieldAvailable("exchangeId")) return this._data.exchangeId;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: exchangeId");
+},
+getIsRandom: function() {
+if (this._isKeyFieldAvailable("isRandom")) return this._data.isRandom;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: isRandom");
+},
+getCouplingVoteGroupId1: function() {
+if (this._isKeyFieldAvailable("couplingVoteGroupId1")) return this._data.couplingVoteGroupId1;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: couplingVoteGroupId1");
+},
+getCouplingVoteGroupId2: function() {
+if (this._isKeyFieldAvailable("couplingVoteGroupId2")) return this._data.couplingVoteGroupId2;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: couplingVoteGroupId2");
+}
+});
+cc._RF.pop();
+}, {
+MasterDatabase: "MasterDatabase",
+Singleton: "Singleton",
+SingletonConst: "SingletonConst"
+} ],
+ExchangeCouplingVoteLineupModel: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "f54158ZkftOLpfiAllsdEMF", "ExchangeCouplingVoteLineupModel");
+var a = t("MasterDatabase"), n = t("Singleton"), o = t("SingletonConst");
+cc.Class({
+extends: a,
+getCouplingVoteGroupId: function() {
+if (this._isKeyFieldAvailable("couplingVoteGroupId")) return this._data.couplingVoteGroupId;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: couplingVoteGroupId");
+},
+getOrder: function() {
+if (this._isKeyFieldAvailable("order")) return this._data.order;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: order");
+},
+getItemId: function() {
+if (this._isKeyFieldAvailable("itemId")) return this._data.itemId;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: itemId");
+}
+});
+cc._RF.pop();
+}, {
+MasterDatabase: "MasterDatabase",
+Singleton: "Singleton",
+SingletonConst: "SingletonConst"
+} ],
+ExchangeCouplingVoteSelectConfirmPopup: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "8c9e9/A+5RMHI3oia+54rOz", "ExchangeCouplingVoteSelectConfirmPopup");
+var a = t("PopupBase"), n = t("CommonButton"), o = t("MatrixThumbnailUtils"), r = t("ItemConst");
+cc.Class({
+extends: a,
+properties: {
+checkParentNode: cc.Node,
+confirmParentNode: cc.Node,
+thumbnailParentNode: cc.Node,
+confirmBtn: n,
+okBtn: n,
+cancelBtn: n,
+thumbnailPrefab: cc.Prefab
+},
+_userSelectCharacterIdArray: void 0,
+_root: null,
+_listId: 0,
+_callbackToExecute: void 0,
+onLoad: function() {
+this.okBtn.setTapEvent(this._onTapOkBtn.bind(this));
+this.confirmBtn.setTapEvent(this._onTapConfirmBtn.bind(this));
+this.cancelBtn.setTapEvent(this._onTapCancelBtn.bind(this));
+},
+openExchangeCouplingVoteSelectConfirmPopup: function(t, e, i, a) {
+this._root = t;
+this._listId = e;
+this._callbackToExecute = a;
+this.checkParentNode.active = !1;
+this.confirmParentNode.active = !0;
+this._userSelectCharacterIdArray = this._getCharacterIdArrayByMainModelArray(i);
+this.open();
+this._initListContent(i);
+},
+_initListContent: function(t) {
+this.thumbnailParentNode.destroyAllChildren();
+for (var e = 0; e < t.length; e += 1) this._createMatrixThumbnail(t[e]);
+},
+_createMatrixThumbnail: function(t) {
+var e = o.createMatrixThumbnailByItemType(t, r.ITEM_TYPE.VOTE_POINT);
+this.thumbnailParentNode.addChild(e.node);
+},
+_onTapConfirmBtn: function() {
+this._callbackToExecute && this._callbackToExecute(this._listId, this._userSelectCharacterIdArray);
+this.close();
+},
+_onTapOkBtn: function() {
+this.close();
+},
+_onTapCancelBtn: function() {
+this.close();
+},
+_getCharacterIdArrayByMainModelArray: function(t) {
+return t.sort(function(t, e) {
+return t - e;
+}).map(function(t) {
+return t;
+});
+}
+});
+cc._RF.pop();
+}, {
+CommonButton: "CommonButton",
+ItemConst: "ItemConst",
+MatrixThumbnailUtils: "MatrixThumbnailUtils",
+PopupBase: "PopupBase"
+} ],
+ExchangeCouplingVoteSelectPopup: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "3062fX/B/ZEeYqfqywcPolb", "ExchangeCouplingVoteSelectPopup");
+var a = t("PopupBase"), n = t("CommonButton"), o = t("PopupUtils"), r = t("ExchangeCouplingVoteSelectTargetListView"), s = t("ExchangeConst");
+cc.Class({
+extends: a,
+properties: {
+confirmBtn: n,
+cancelBtn: n,
+exchangeCouplingVoteSelectTargetListView: r
+},
+_listId: 0,
+onLoad: function() {
+this.confirmBtn.setTapEvent(this._onTapConfirmBtn.bind(this));
+this.cancelBtn.setTapEvent(this._onTapCancelBtn.bind(this));
+},
+openExchangeCouplingVoteSelectPopup: function(t, e) {
+this._root = t;
+this._listId = e;
+this.open(function() {
+this.exchangeCouplingVoteSelectTargetListView.initExchangeCouplingVoteSelectTargetListView(t, this.switchImageConfirmBtn.bind(this));
+});
+},
+_onTapConfirmBtn: function() {
+if (this.exchangeCouplingVoteSelectTargetListView.getSelectedCount() < s.EXCHANGE_COUPLING_VOTE_MAX_SELECT) o.openSimpleMessageWindow(s.EXCHANGE_COUPLING_VOTE_MAX_SELECT + "体選出してください。"); else {
+var t = this.exchangeCouplingVoteSelectTargetListView.getSelectedItemIdArray();
+this._root.openExchangeCouplingVoteSelectConfirmPopup(this._listId, t.slice());
+}
+},
+_onTapCancelBtn: function() {
+this.close();
+},
+switchImageConfirmBtn: function(t) {
+this.confirmBtn.switchBtnImage(t === s.EXCHANGE_COUPLING_VOTE_MAX_SELECT);
+}
+});
+cc._RF.pop();
+}, {
+CommonButton: "CommonButton",
+ExchangeConst: "ExchangeConst",
+ExchangeCouplingVoteSelectTargetListView: "ExchangeCouplingVoteSelectTargetListView",
+PopupBase: "PopupBase",
+PopupUtils: "PopupUtils"
+} ],
+ExchangeCouplingVoteSelectTargetListView: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "9974eH8eMJDuZ5UruAvz1Yj", "ExchangeCouplingVoteSelectTargetListView");
+var a = t("ListViewBase"), n = t("MatrixThumbnailUtils"), o = t("ExchangeCouplingVoteSelectedListView"), r = t("ExchangeConst"), s = t("ItemConst");
+cc.Class({
+extends: a,
+properties: {
+exchangeCouplingVoteSelectedListView: o
+},
+_targetCharacterMainMasterArray: void 0,
+initExchangeCouplingVoteSelectTargetListView: function(t, e) {
+this.exchangeCouplingVoteSelectedListView.initExchangeCouplingVoteSelectedListView(t, r.EXCHANGE_COUPLING_VOTE_MAX_SELECT, this._callbackToResetTarget.bind(this), e);
+this.initListView(t);
+},
+_redrawListView: function() {
+this.resetListView();
+this.initListView(this._root);
+},
+_setListContent: function() {
+var t = _.compact(this.getSelectedItemIdArray());
+if (0 !== this.exchangeCouplingVoteSelectedListView.getNowIndex()) {
+var e = this._root.getCouplingVoteUserData().filter(function(e) {
+return e.getItemId1() === t[0] || e.getItemId2() === t[0];
+}).map(function(e) {
+return e.getItemId1() === t[0] ? e.getItemId2() : e.getItemId1();
+});
+t = t.concat(e);
+}
+var i, a = this._root.getCouplingVoteGroupData(), n = 0 === this.exchangeCouplingVoteSelectedListView.getNowIndex() ? a.getCouplingVoteGroupId1() : a.getCouplingVoteGroupId2();
+(i = this._root.getCouplingVoteLineupData()[n].map(function(t) {
+return t.getItemId();
+})).sort(function(e, i) {
+var a = -1 !== t.indexOf(e), n = -1 !== t.indexOf(i);
+return a && !n ? -1 : !a && n ? 1 : 0;
+});
+for (var o = 0; o < i.length; o += 1) this._createMatrixThumbnail(i[o], t);
+},
+_createMatrixThumbnail: function(t, e) {
+var i = n.createMatrixThumbnailByItemType(t, s.ITEM_TYPE.VOTE_POINT);
+_.find(e, function(e) {
+return e === t;
+}) ? i.setActive(!1) : i.setCallbackToThumbnailBtn(this._callbackThumbnailBtn.bind(this, i, t));
+i.itemId = t;
+this.thumbnailParentNode.addChild(i.node);
+},
+_callbackThumbnailBtn: function(t, e) {
+this.exchangeCouplingVoteSelectedListView.addPickCharacter(e, t);
+this._redrawListView();
+},
+_callbackToResetTarget: function(t) {
+var e = this.thumbnailParentNode.children.find(function(e) {
+return e.getComponent("CharacterMatrixThumbnail").itemId === t;
+});
+e && e.getComponent("CharacterMatrixThumbnail").setActive(!0);
+this._redrawListView();
+},
+getSelectedItemIdArray: function() {
+return this.exchangeCouplingVoteSelectedListView.getSelectedArray();
+},
+getSelectedCount: function() {
+return this.exchangeCouplingVoteSelectedListView.getSelectedCount();
+}
+});
+cc._RF.pop();
+}, {
+ExchangeConst: "ExchangeConst",
+ExchangeCouplingVoteSelectedListView: "ExchangeCouplingVoteSelectedListView",
+ItemConst: "ItemConst",
+ListViewBase: "ListViewBase",
+MatrixThumbnailUtils: "MatrixThumbnailUtils"
+} ],
+ExchangeCouplingVoteSelectedListView: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "9af40AAmjdATo+EQ0aKNwFF", "ExchangeCouplingVoteSelectedListView");
+var a = t("ListViewBase"), n = t("ItemUtils"), o = t("CharacterUtils");
+cc.Class({
+extends: a,
+properties: {},
+_maxCount: 0,
+_selectedCount: null,
+_selectedItemIdArray: void 0,
+_callbackToResetThumb: void 0,
+_callbackToSelectChanged: void 0,
+initExchangeCouplingVoteSelectedListView: function(t, e, i, a) {
+this._maxCount = e;
+this._selectedCount = 0;
+this._selectedItemIdArray = Array.apply(null, Array(e)).map(function() {
+return null;
+});
+this._callbackToResetThumb = i;
+this._callbackToSelectChanged = a;
+this._initListContent();
+this.initListView(t);
+},
+addPickCharacter: function(t, e) {
+if (t && !(this._selectedCount >= this._maxCount) && !0 !== e.grayImageSpriteNode.active) {
+this._selectedCount++;
+this._selectedItemIdArray[this.getNowIndex()] = t;
+this._redraw();
+}
+},
+resetListView: function() {
+this.node.active = !1;
+this.thumbnailParentNode.active = !1;
+},
+_redraw: function() {
+this._setListContent();
+this._callbackToSelectChanged(this._selectedCount);
+},
+_initListContent: function() {
+this.thumbnailParentNode.destroyAllChildren();
+for (var t = 0; t < this._maxCount; t += 1) this._initThumbnail(t);
+},
+_initThumbnail: function(t) {
+var e = cc.instantiate(this.thumbnailPrefab).getComponent("CharacterMatrixThumbnail");
+e.initEmptyMatrixThumbnail();
+e.setCallbackToThumbnailBtn(this._callbackTargetThumbnailBtn.bind(this, e, t));
+this.thumbnailParentNode.addChild(e.node);
+},
+_setListContent: function() {
+for (var t = 0; t < this.thumbnailParentNode.childrenCount; t += 1) this._setThumbnail(this.thumbnailParentNode.children[t], this._selectedItemIdArray[t]);
+},
+_setThumbnail: function(t, e) {
+if (t && t.getComponent("CharacterMatrixThumbnail")) {
+var i = t.getComponent("CharacterMatrixThumbnail");
+i.resetCharacterMatrixThumbnail();
+var a = null;
+if (e) {
+var r = n.getItemMaster(e);
+a = o.getCharacterMainModelByCharacterId(r.getEffectValue());
+}
+if (a) {
+i.initDisablePlainMatrixThumbnail();
+i.initCharacterMatrixThumbnailByParam(a, a.getCharacterId(), a.getAttribute(), a.getSubAttribute(), 0, 0, -1, -1, void 0, void 0);
+i.itemId = e;
+} else i.initEmptyMatrixThumbnail();
+}
+},
+_callbackTargetThumbnailBtn: function(t, e) {
+if (!0 !== t.emptyNode.active) {
+this._selectedCount--;
+t.resetCharacterMatrixThumbnail();
+t.initEmptyMatrixThumbnail();
+var i = this._selectedItemIdArray[e];
+this._selectedItemIdArray[e] = null;
+this._callbackToResetThumb && this._callbackToResetThumb(i);
+this._redraw();
+}
+},
+getNowIndex: function() {
+for (var t, e = 0; e < this._selectedItemIdArray.length; e += 1) if (null === this._selectedItemIdArray[e]) {
+t = e;
+break;
+}
+return t;
+},
+getSelectedArray: function() {
+return this._selectedItemIdArray;
+},
+getSelectedCount: function() {
+return this._selectedCount;
+}
+});
+cc._RF.pop();
+}, {
+CharacterUtils: "CharacterUtils",
+ItemUtils: "ItemUtils",
+ListViewBase: "ListViewBase"
+} ],
 ExchangeCurrencyShortagePopup: [ function(t, e, i) {
 "use strict";
 cc._RF.push(e, "a9f3dSGwNVFoYpN39JuCrob", "ExchangeCurrencyShortagePopup");
@@ -59324,6 +59662,7 @@ this.holdingNumLabel && (this.holdingNumLabel.string = t);
 }
 switch (this._exchangeMain.getExchangeType()) {
 case d.EXCHANGE_TYPE.POINT_CONSUME:
+case d.EXCHANGE_TYPE.COUPLING_VOTE:
 this.exchangeItemToDateNode.active = !0;
 this._initToDateLabel();
 this._currencyThumbnail = cc.instantiate(this.pointCurrencyThumbnailPrefab).getComponent("PointCurrencyThumbnail");
@@ -59432,6 +59771,7 @@ this.infoBtn.setTapEvent(this._onTapInfoBtn.bind(this), "");
 exchangeBtnEvent: function() {
 if (this._checkExchangePointItemEnough(1)) this._root.openExchangeShortageMessageWindow(); else switch (this._exchangeMain.getExchangeType()) {
 case d.EXCHANGE_TYPE.POINT_CONSUME:
+case d.EXCHANGE_TYPE.COUPLING_VOTE:
 this._root.openExchangeItemSingleConfirmPopup(this._listId);
 break;
 
@@ -59449,6 +59789,7 @@ return;
 }
 switch (this._exchangeMain.getExchangeType()) {
 case d.EXCHANGE_TYPE.POINT_CONSUME:
+case d.EXCHANGE_TYPE.COUPLING_VOTE:
 var e = r.getRoot().getCostProvisionalCurrencyItemIdMap(this._listId)[this._currencyItemCost.itemId], i = Math.floor(e / this._currencyItemCost.count);
 this._root.setSelectedItemsByContinueExchange(this._listId, i);
 break;
@@ -59470,6 +59811,7 @@ this._root.setSelectedItemsByContinueExchange(this._listId, u);
 _checkExchangePointItemEnough: function(t) {
 switch (this._exchangeMain.getExchangeType()) {
 case d.EXCHANGE_TYPE.POINT_CONSUME:
+case d.EXCHANGE_TYPE.COUPLING_VOTE:
 if (r.getRoot().getCostProvisionalCurrencyItemIdMap()[this._currencyItemCost.itemId] < this._currencyItemCost.count * t) return !0;
 break;
 
@@ -60427,6 +60769,7 @@ this.exchangeNeedCurrencyItemHeaderView.node.active = !1;
 this.exchangeSpendCurrencyItemFooterView.node.active = !1;
 switch (this._exchangeMain.getExchangeType()) {
 case h.EXCHANGE_TYPE.POINT_CONSUME:
+case h.EXCHANGE_TYPE.COUPLING_VOTE:
 this.exchangeNeedCurrencyPointHeaderView.node.active = !0;
 this.exchangeSpendCurrencyPointFooterView.node.active = !0;
 this.exchangeNeedCurrencyPointHeaderView.initExchangeNeedCurrencyPointHeaderView(this._exchangeId, this._selectedItemMap);
@@ -60518,6 +60861,7 @@ this.exchangeNeedCurrencyPointHeaderView.node.active = !1;
 this.exchangeNeedCurrencyItemHeaderView.node.active = !1;
 switch (this._exchangeMain.getExchangeType()) {
 case l.EXCHANGE_TYPE.POINT_CONSUME:
+case l.EXCHANGE_TYPE.COUPLING_VOTE:
 this._initPointHeaderVew();
 break;
 
@@ -60628,6 +60972,7 @@ costCurrencyNumLabel: cc.Label,
 userCurrencyNumLabel: cc.Label,
 afterUserCurrencyNumLabel: cc.Label,
 exchangeItemWideThumbnailPrefab: cc.Prefab,
+exchangeItemWideThumbnailByCouplingVotePrefab: cc.Prefab,
 dailyBonusAppealNode: cc.Node,
 exchangeBtn: n,
 exchangeLabel: cc.Label,
@@ -60645,7 +60990,8 @@ _userProvisionalHavePoint: 0,
 _userHaveExchangeItemCount: 0,
 _exchangeItemMaxCount: 0,
 _exchangeSelectItemCount: 0,
-_exchangeItemThumbnail: 0,
+_exchangeItemThumbnail: null,
+_couplingVoteThumbnail: null,
 _executeExchangeCallback: null,
 _continueExchangeCallback: null,
 openExchangeItemSingleConfirmPopup: function(t, e, i, a, o) {
@@ -60657,9 +61003,15 @@ this._continueExchangeCallback = o;
 this._setParameter();
 this._setUseItemInfo();
 this._setButtonEvents();
+if (this._exchangeDetailMaster.getItemType() === E.ITEM_TYPE.CP_VOTE_ITEM) {
+this._couplingVoteThumbnail = cc.instantiate(this.exchangeItemWideThumbnailByCouplingVotePrefab).getComponent("ExchangeItemWideThumbnailByCouplingVote");
+this._couplingVoteThumbnail.initExchangeItemWideThumbnail(this._exchangeId, this._listId);
+this.itemThumbnailParentNode.addChild(this._couplingVoteThumbnail.node);
+} else {
 this._exchangeItemThumbnail = cc.instantiate(this.exchangeItemWideThumbnailPrefab).getComponent("ExchangeItemWideThumbnail");
 this._exchangeItemThumbnail.initExchangeItemWideThumbnail(this._exchangeId, this._listId);
 this.itemThumbnailParentNode.addChild(this._exchangeItemThumbnail.node);
+}
 this.cancelBtn.setTapEvent(this._cancelBtnEvent.bind(this), n.SE_NAME.CANCEL);
 this.countViewSpace.initCommonCountView(this.redraw.bind(this), 1, this._exchangeItemMaxCount);
 if (i[e]) {
@@ -60667,12 +61019,12 @@ this.countViewSpace.setCountNum(i[e]);
 this.countViewSpace.redrawSimply();
 }
 this._exchangeItemSelectCount = this.countViewSpace.getCountNum();
-this._exchangeItemThumbnail.setItemInfo(this._exchangeItemSelectCount, !0);
+this._exchangeItemThumbnail && this._exchangeItemThumbnail.setItemInfo(this._exchangeItemSelectCount, !0);
 this.open();
 },
 redraw: function() {
 var t = this.countViewSpace.getCountNum();
-this._exchangeItemThumbnail.setItemInfo(t, !0);
+this._exchangeItemThumbnail && this._exchangeItemThumbnail.setItemInfo(t, !0);
 var e = this._userProvisionalHavePoint - this._exchangeDetailMaster.getCostCount() * t;
 if (e > 0) {
 this.afterUserCurrencyNumLabel.string = d.convertToCommaDelimited(e);
@@ -60721,6 +61073,16 @@ this.continueBtn.node.active = !1;
 this._switchActiveTweetBtn(!0);
 break;
 
+case E.ITEM_TYPE.CP_VOTE_ITEM:
+this.exchangeLabel && (this.exchangeLabel.string = "投票実行");
+this.continueLabel && (this.continueLabel.string = "投票継続");
+this.countViewSpace && this.countViewSpace.setTextLabel("投票数");
+this.headerNameTextLabel && (this.headerNameTextLabel.string = "投票確認");
+this.mainText3Label && (this.mainText3Label.string = "以下のキャラクターの組み合わせに投票しますか？");
+this.continueBtn.node.active = !1;
+this._switchActiveTweetBtn(!1);
+break;
+
 default:
 this.exchangeLabel.string = "交換実行";
 this.continueLabel.string = "交換継続";
@@ -60754,6 +61116,7 @@ if (!this._exchangeMainMaster) return !1;
 var t;
 switch (this._exchangeMainMaster.getExchangeType()) {
 case u.EXCHANGE_TYPE.POINT_CONSUME:
+case u.EXCHANGE_TYPE.COUPLING_VOTE:
 t = o.dao.ExchangePointDetailMasters;
 break;
 
@@ -60850,6 +61213,7 @@ needCurrencyNumLabel: cc.Label,
 haveCurrencyNumLabel: cc.Label,
 afterHaveCurrencyNumLabel: cc.Label,
 exchangeItemWideThumbnailPrefab: cc.Prefab,
+exchangeItemWideThumbnailByCouplingVotePrefab: cc.Prefab,
 okBtn: n
 },
 _exchangeId: 0,
@@ -60859,7 +61223,8 @@ _exchangeDetailMaster: null,
 _userHaveCurrency: 0,
 _userHaveExchangeItemCount: 0,
 _exchangeSelectItemCount: 0,
-_exchangeItemThumbnail: 0,
+_exchangeItemThumbnail: null,
+_couplingVoteThumbnail: null,
 openExchangeItemSinglePopup: function(t, e, i, a) {
 var n = Object.keys(e);
 this._exchangeId = t;
@@ -60867,10 +61232,16 @@ this._listId = n[0];
 this._count = parseInt(e[n[0]], 10);
 this.setCloseCallBack(a);
 this._setParameter();
+if (this._exchangeDetailMaster.getItemType() === u.ITEM_TYPE.CP_VOTE_ITEM) {
+this._couplingVoteThumbnail = cc.instantiate(this.exchangeItemWideThumbnailByCouplingVotePrefab).getComponent("ExchangeItemWideThumbnailByCouplingVote");
+this._couplingVoteThumbnail.initExchangeItemWideThumbnail(this._exchangeId, this._listId);
+this.itemThumbnailParentNode.addChild(this._couplingVoteThumbnail.node);
+} else {
 this._exchangeItemThumbnail = cc.instantiate(this.exchangeItemWideThumbnailPrefab).getComponent("ExchangeItemWideThumbnail");
 this._exchangeItemThumbnail.initExchangeItemWideThumbnail(this._exchangeId, this._listId, i.itemType, i.itemId, i.count);
 this._exchangeItemThumbnail.setFinishItemInfo(e[n[0]]);
 this.itemThumbnailParentNode.addChild(this._exchangeItemThumbnail.node);
+}
 this.okBtn.setTapEvent(function() {
 this.close();
 }.bind(this));
@@ -60896,6 +61267,11 @@ this.needCurrencyNumLabel.string = c.convertToCommaDelimited(this._exchangeDetai
 switch (this._exchangeDetailMaster.getItemType()) {
 case u.ITEM_TYPE.VOTE_POINT:
 this._setVoteUI();
+break;
+
+case u.ITEM_TYPE.CP_VOTE_ITEM:
+this.headerNameTextLabel && (this.headerNameTextLabel.string = "投票完了");
+this.mainText3Label && (this.mainText3Label.string = "以下のカップリングに投票しました。");
 }
 },
 _setVoteUI: function() {
@@ -60933,6 +61309,124 @@ PopupBase: "PopupBase",
 ResourceUtils: "ResourceUtils",
 Singleton: "Singleton"
 } ],
+ExchangeItemThumbnailByCouplingVote: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "63090JygCJHKY6qeXfvzm8O", "ExchangeItemThumbnailByCouplingVote");
+var a = t("CommonButton"), n = t("CommonUtils"), o = t("ExchangeUtils"), r = t("ItemUtils"), s = t("MatrixThumbnailUtils"), c = t("ExchangeConst"), l = t("ItemConst");
+cc.Class({
+extends: cc.Component,
+properties: {
+thumbnailPrefab: cc.Prefab,
+selectBtn: a,
+thumbnailParentNode: cc.Node,
+itemNameLabel: cc.Label,
+voteCountLabel: cc.Label,
+currencyParentNode: cc.Node,
+pointCurrencyThumbnailPrefab: cc.Prefab,
+voteBtn: a
+},
+_root: null,
+_exchangeId: null,
+_listId: null,
+_userCouplingVoteData: null,
+_exchangeMain: null,
+_exchangeDetail: null,
+_currencyThumbnail: null,
+_currencyItemCost: null,
+init: function(t, e) {
+this._root = t;
+this._exchangeId = this._root.getSelectedExchangeId();
+this._listId = e;
+this.setUserCouplingVoteData();
+this._exchangeMain = o.getExchangeMainMasterMap()[this._exchangeId];
+this._exchangeDetail = o.getExchangeDetailMasterMap()[this._exchangeId][this._listId];
+this._initItemThumbnail();
+},
+_initItemThumbnail: function() {
+this._setButtonEvent();
+this._setThumbnailUpdate();
+this._currencyThumbnail = cc.instantiate(this.pointCurrencyThumbnailPrefab).getComponent("PointCurrencyThumbnail");
+this._currencyItemCost = {
+itemId: this._exchangeMain.getCostId(),
+count: this._exchangeDetail.getCostCount()
+};
+this._currencyThumbnail.initPointCurrencyThumbnail(this._currencyItemCost, this._exchangeDetail);
+this.currencyParentNode.addChild(this._currencyThumbnail.node);
+},
+_setThumbnailUpdate: function() {
+this.selectBtn.node.active = void 0 === this._userCouplingVoteData;
+this.voteBtn.node.active = void 0 !== this._userCouplingVoteData;
+this.itemNameLabel.node.active = void 0 !== this._userCouplingVoteData;
+if (void 0 !== this._userCouplingVoteData) {
+var t = [ this._userCouplingVoteData.getItemId1(), this._userCouplingVoteData.getItemId2() ];
+if (this.thumbnailParentNode.childrenCount < 2) {
+for (var e = "", i = 0; i < t.length; i += 1) {
+this._createMatrixThumbnail(t[i]);
+i > 0 && (e += " × ");
+e += r.getItemMaster(t[i]).getName();
+}
+this.itemNameLabel.string = e;
+}
+}
+this.voteCountLabel.string = (void 0 !== this._userCouplingVoteData ? this._userCouplingVoteData.getCount() : 0).toString();
+},
+_createMatrixThumbnail: function(t) {
+var e = s.createMatrixThumbnailByItemType(t, l.ITEM_TYPE.VOTE_POINT);
+this.thumbnailParentNode.addChild(e.node);
+},
+setUserCouplingVoteData: function() {
+this._userCouplingVoteData = _.find(this._root.getCouplingVoteUserData(), function(t) {
+return t.getListId() === this._listId;
+}.bind(this));
+},
+redraw: function(t) {
+this.setUserCouplingVoteData();
+if (t === this._listId) {
+this.selectBtn.setTouchEnable(!0);
+this.voteBtn.setTouchEnable(!0);
+this._currencyThumbnail.redraw();
+this._setThumbnailUpdate();
+}
+},
+_setButtonEvent: function() {
+this.selectBtn.setTapEvent(this.selectBtnEvent.bind(this));
+this.voteBtn.setTapEvent(this.voteBtnEvent.bind(this));
+},
+selectBtnEvent: function() {
+this._root.openExchangeCouplingVoteSelectPopup(this._listId);
+},
+voteBtnEvent: function() {
+this._checkExchangePointItemEnough(1) ? this._root.openExchangeShortageMessageWindow() : this._root.openExchangeItemSingleConfirmPopup(this._listId);
+},
+_checkExchangePointItemEnough: function(t) {
+switch (this._exchangeMain.getExchangeType()) {
+case c.EXCHANGE_TYPE.POINT_CONSUME:
+case c.EXCHANGE_TYPE.COUPLING_VOTE:
+if (n.getRoot().getCostProvisionalCurrencyItemIdMap()[this._currencyItemCost.itemId] < this._currencyItemCost.count * t) return !0;
+break;
+
+case c.EXCHANGE_TYPE.ITEM_CONSUME:
+case c.EXCHANGE_TYPE.ITEM_CONSUME_BY_DATE:
+if (this._currencyPointCostArray.some(function(e) {
+return n.getRoot().getCostProvisionalCurrencyItemIdMap()[e.itemId] < e.count * t;
+})) return !0;
+}
+return !1;
+},
+getListId: function() {
+return this._listId;
+}
+});
+cc._RF.pop();
+}, {
+CommonButton: "CommonButton",
+CommonUtils: "CommonUtils",
+ExchangeConst: "ExchangeConst",
+ExchangeUtils: "ExchangeUtils",
+ItemConst: "ItemConst",
+ItemUtils: "ItemUtils",
+MatrixThumbnailUtils: "MatrixThumbnailUtils"
+} ],
 ExchangeItemThumbnail: [ function(t, e, i) {
 "use strict";
 cc._RF.push(e, "af7f4RrmRtG/6qUb23/OMek", "ExchangeItemThumbnail");
@@ -60961,6 +61455,57 @@ cc._RF.pop();
 ExchangeItemBaseThumbnail: "ExchangeItemBaseThumbnail",
 ExchangeUtils: "ExchangeUtils",
 ItemConst: "ItemConst"
+} ],
+ExchangeItemWideThumbnailByCouplingVote: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "3ad7ctpClRN0IRuP0S2RiKe", "ExchangeItemWideThumbnailByCouplingVote");
+var a = t("ExchangeUtils"), n = t("CommonUtils"), o = t("ItemUtils"), r = t("MatrixThumbnailUtils"), s = t("ItemConst");
+cc.Class({
+extends: cc.Component,
+properties: {
+itemThumbnailParentNode: cc.Node,
+itemNameLabel: cc.Label,
+thumbnailPrefab: cc.Prefab
+},
+_root: null,
+_exchangeId: 0,
+_listId: 0,
+_userCouplingVoteData: null,
+_exchangeMain: null,
+_exchangeDetail: null,
+initExchangeItemWideThumbnail: function(t, e) {
+this._exchangeId = parseInt(t);
+this._listId = parseInt(e);
+this._exchangeMain = a.getExchangeMainMasterMap()[t];
+this._exchangeDetail = a.getExchangeDetailMasterMap()[t][e];
+this._root = n.getRoot();
+this._userCouplingVoteData = _.find(this._root.getCouplingVoteUserData(), function(t) {
+return t.getListId() === this._listId;
+}.bind(this));
+this._initItemThumbnail();
+},
+_initItemThumbnail: function() {
+if (this.itemThumbnailParentNode.childrenCount < 2) {
+for (var t = [ this._userCouplingVoteData.getItemId1(), this._userCouplingVoteData.getItemId2() ], e = "", i = 0; i < t.length; i += 1) {
+this._createMatrixThumbnail(t[i]);
+i > 0 && (e += " × ");
+e += o.getItemMaster(t[i]).getName();
+}
+this.itemNameLabel.string = e;
+}
+},
+_createMatrixThumbnail: function(t) {
+var e = r.createMatrixThumbnailByItemType(t, s.ITEM_TYPE.VOTE_POINT);
+this.itemThumbnailParentNode.addChild(e.node);
+}
+});
+cc._RF.pop();
+}, {
+CommonUtils: "CommonUtils",
+ExchangeUtils: "ExchangeUtils",
+ItemConst: "ItemConst",
+ItemUtils: "ItemUtils",
+MatrixThumbnailUtils: "MatrixThumbnailUtils"
 } ],
 ExchangeItemWideThumbnail: [ function(t, e, i) {
 "use strict";
@@ -61135,7 +61680,8 @@ cc._RF.push(e, "4e082CdRiZH06+JXysbdM6t", "ExchangeListSwitchView");
 t("CommonButton"), t("QuestUtils"), t("GameConst");
 var a = t("ExchangeUtils"), n = t("ExchangeConst"), o = t("ExchangeListViewBase"), r = cc.Enum({
 NORMAL_LIST_VIEW: 0,
-ITEM_CONSUME_BY_DATE_LIST_VIEW: 1
+ITEM_CONSUME_BY_DATE_LIST_VIEW: 1,
+COUPLING_VOTE: 2
 });
 cc.Class({
 extends: cc.Component,
@@ -61188,6 +61734,9 @@ _getExchangeListView: function() {
 switch (this._exchangeMainMasterMap[this._root.getSelectedExchangeId()].getExchangeType()) {
 case n.EXCHANGE_TYPE.ITEM_CONSUME_BY_DATE:
 return this.ExchangeListViewArray[r.ITEM_CONSUME_BY_DATE_LIST_VIEW];
+
+case n.EXCHANGE_TYPE.COUPLING_VOTE:
+return this.ExchangeListViewArray[r.COUPLING_VOTE];
 
 default:
 return this.ExchangeListViewArray[r.NORMAL_LIST_VIEW];
@@ -61277,6 +61826,79 @@ cc._RF.pop();
 CommonButton: "CommonButton",
 CommonScrollView: "CommonScrollView",
 ListViewBase: "ListViewBase"
+} ],
+ExchangeListViewByCouplingVote: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "82530+IQvtKfK/tsjyzoBzB", "ExchangeListViewByCouplingVote");
+var a = t("TimeUtils"), n = t("ExchangeUtils"), o = t("ExchangeListViewBase");
+cc.Class({
+extends: o,
+_root: null,
+_itemCount: 0,
+_setListContent: function(t, e) {
+this._root = t;
+var i = parseInt(this._root.getSelectedExchangeId(), 10), a = this._getListContentArrayByType(i);
+this._itemCount = a.flat().length;
+this._root.setCouplingVoteData();
+this._root.deleteUpdateCallbackKey("ExchangeListThumbnail", function() {
+this.commonScrollView.content.destroyAllChildren();
+}.bind(this));
+if (e) {
+var n = 0, o = 0;
+this._root.setUpdateCallback(function() {
+if (!a[n]) return !0;
+if (a[n][o]) {
+this._addThumbnail(a[n][o]);
+o += 1;
+return !1;
+}
+n += 1;
+o = 0;
+}.bind(this), "ExchangeListThumbnail");
+} else for (var r = 0; r < a.length; r += 1) for (var s = 0; s < a[r].length; s += 1) this._addThumbnail(a[r][s]);
+},
+_addThumbnail: function(t) {
+var e = cc.instantiate(this.thumbnailPrefab).getComponent("ExchangeItemThumbnailByCouplingVote");
+e.init(this._root, t);
+this.thumbnailParentNode.addChild(e.node);
+},
+_getListContentArrayByType: function() {
+var t = [], e = [], i = [ [], t, e ], o = n.getExchangeDetailMasterMap(), r = _.sortBy(o[this._root.getSelectedExchangeId()], function(t) {
+return t.getOrder();
+});
+_.forEach(r, function(i) {
+var n = i.getListId(), o = !1;
+if ("" !== i.getFromDate() && !o) if (a.isDateInRange(a.getNowDateTime(), i.getFromDate(), i.getToDate())) {
+t.push(n);
+o = !0;
+} else o = !0;
+o || e.push(n);
+});
+return i;
+},
+_callbackToThumbnail: function(t) {},
+redrawListViewBtn: function() {
+this._initListViewBtn();
+var t = parseInt(this._root.getSelectedExchangeId(), 10), e = n.getExchangeMainMasterMap()[t];
+this._setNoticeDateText(e);
+},
+redrawContent: function() {
+for (var t = this._root.getSelectedItemId(), e = 0; e < this.thumbnailParentNode.childrenCount; e += 1) this.thumbnailParentNode.children[e].getComponent("ExchangeItemThumbnailByCouplingVote").redraw(t);
+this._root.setSelectedItemId(void 0);
+},
+_setNoticeDateText: function(t) {
+var e = t.getToDate();
+this.noticeDateLabel.string = "交換期限 " + a.parseTimeToYmdhm(e) + " まで          ※最大" + this._itemCount + "組まで選択可能です。一度選択したカップリングは変更できません。";
+},
+onDisable: function() {
+this._root && this._root.deleteUpdateCallbackKey("ExchangeListThumbnail", null);
+}
+});
+cc._RF.pop();
+}, {
+ExchangeListViewBase: "ExchangeListViewBase",
+ExchangeUtils: "ExchangeUtils",
+TimeUtils: "TimeUtils"
 } ],
 ExchangeListView: [ function(t, e, i) {
 "use strict";
@@ -61780,6 +62402,8 @@ exchangeCurrencyShortagePopupPrefab: cc.Prefab,
 exchangeItemShortagePopupPrefab: cc.Prefab,
 exchangeItemMultipleConfirmPopup: cc.Prefab,
 exchangeItemListDetailPopupPrefab: cc.Prefab,
+exchangeCouplingVoteSelectPopupPrefab: cc.Prefab,
+exchangeCouplingVoteSelectConfirmPopupPrefab: cc.Prefab,
 provisionRatePopupPrefab: cc.Prefab,
 ticketListPrefab: cc.Prefab,
 unitDetailPrefab: cc.Prefab,
@@ -61813,6 +62437,9 @@ _selectedItemMap: null,
 _exchangeMainMasterMap: null,
 _exchangeDetailMasterMap: null,
 _gachaOddsMap: null,
+_userCouplingVoteData: null,
+_exchangeCPGroup: null,
+_exchangeCPLineupMap: null,
 onLoad: function() {
 this._super();
 this._uiHeader.hideUserPointStats();
@@ -61893,6 +62520,7 @@ getCostProvisionalCurrencyItemIdMap: function(t) {
 if (Object.keys(this._selectedItemMap).length < 1) return this._costCurrencyItemIdMap;
 switch (c.getExchangeMainMasterMap()[this.getSelectedExchangeId()].getExchangeType()) {
 case E.EXCHANGE_TYPE.POINT_CONSUME:
+case E.EXCHANGE_TYPE.COUPLING_VOTE:
 return this.getPointCostProvisionalCurrencyItemIdMap(t);
 
 case E.EXCHANGE_TYPE.ITEM_CONSUME:
@@ -62030,6 +62658,7 @@ requestSingleExchange: function(t, e, i) {
 this.setSelectedItem(t, e);
 switch (c.getExchangeMainMasterMap()[this.getSelectedExchangeId()].getExchangeType()) {
 case E.EXCHANGE_TYPE.POINT_CONSUME:
+case E.EXCHANGE_TYPE.COUPLING_VOTE:
 this.requestExchange(i, this.openExchangeItemSinglePopup.bind(this));
 break;
 
@@ -62093,7 +62722,12 @@ break;
 
 default:
 var u = c.getExchangeMainMasterMap()[this.getSelectedExchangeId()].getExchangeGroupId();
-if (n.getCostType() === T.ITEM_TYPE.VOTE_POINT) {
+if (n.getCostType() === T.ITEM_TYPE.VOTE_POINT) if (n.getExchangeType() === E.EXCHANGE_TYPE.COUPLING_VOTE) {
+e = C.SCENE.FILE_NAME.QUEST;
+t = {
+QuestEventSelectSubRoot: {}
+};
+} else {
 var h = this._getTransitionParamsFromVote(n);
 e = h.sendSceneName;
 t = h.sendViewParam;
@@ -62238,6 +62872,7 @@ this._exchangeItemListConfirmPopup = null;
 openExchangeItemListPopup: function(t, e) {
 if (t.length <= 1) switch (c.getExchangeMainMasterMap()[this.getSelectedExchangeId()].getExchangeType()) {
 case E.EXCHANGE_TYPE.POINT_CONSUME:
+case E.EXCHANGE_TYPE.COUPLING_VOTE:
 this.openExchangeItemSinglePopup(t, e);
 break;
 
@@ -62311,6 +62946,54 @@ if (this._exchangeItemListDetailPopup) {
 this._exchangeItemListDetailPopup.close();
 this._exchangeItemListDetailPopup = null;
 }
+},
+openExchangeCouplingVoteSelectPopup: function(t) {
+this.closeExchangeCouplingVoteSelectPopup();
+this._exchangeCouplingVoteSelectPopup = cc.instantiate(this.exchangeCouplingVoteSelectPopupPrefab).getComponent("ExchangeCouplingVoteSelectPopup");
+this._exchangeCouplingVoteSelectPopup.openExchangeCouplingVoteSelectPopup(this, t);
+},
+closeExchangeCouplingVoteSelectPopup: function() {
+if (this._exchangeCouplingVoteSelectPopup) {
+this._exchangeCouplingVoteSelectPopup.close();
+this._exchangeCouplingVoteSelectPopup = null;
+}
+},
+openExchangeCouplingVoteSelectConfirmPopup: function(t, e) {
+this.closeExchangeCouplingVoteSelectConfirmPopup();
+this._exchangeCouplingVoteSelectConfirmPopup = cc.instantiate(this.exchangeCouplingVoteSelectConfirmPopupPrefab).getComponent("ExchangeCouplingVoteSelectConfirmPopup");
+this._exchangeCouplingVoteSelectConfirmPopup.openExchangeCouplingVoteSelectConfirmPopup(this, t, e, this.requestSetCouplingVoteLineup.bind(this));
+},
+closeExchangeCouplingVoteSelectConfirmPopup: function() {
+if (this._exchangeCouplingVoteSelectConfirmPopup) {
+this._exchangeCouplingVoteSelectConfirmPopup.close();
+this._exchangeCouplingVoteSelectConfirmPopup = null;
+}
+},
+requestSetCouplingVoteLineup: function(t, e, i) {
+a.ShopService.setCouplingVoteLineup(this.getSelectedExchangeId(), t, e, function(e) {
+this.closeExchangeCouplingVoteSelectPopup();
+this.setCouplingVoteData();
+this.setSelectedItemId(t);
+this.redraw();
+if (i) return i();
+}.bind(this));
+},
+setCouplingVoteData: function() {
+var t = parseInt(this.getSelectedExchangeId(), 10);
+this._userCouplingVoteData = c.getCouplingVoteUserData(t);
+var e = 0;
+this._exchangeCPGroup && (e = this._exchangeCPGroup.getExchangeId());
+this._exchangeCPGroup = c.getExchangeCPGroupByExchangeId(t);
+e !== this._exchangeCPGroup.exchangeId && (this._exchangeCPLineupMap = c.getCouplingVoteLineupMasterData(this._exchangeCPGroup));
+},
+getCouplingVoteUserData: function() {
+return this._userCouplingVoteData;
+},
+getCouplingVoteGroupData: function() {
+return this._exchangeCPGroup;
+},
+getCouplingVoteLineupData: function() {
+return this._exchangeCPLineupMap;
 },
 getGachaDetailData: function(t, e) {
 if (this._gachaOddsMap[t]) {
@@ -62703,7 +63386,7 @@ var a = t("Singleton"), n = t("TimeUtils"), o = t("ItemUtils"), r = t("HistoryUt
 function h() {
 for (var t = {}, e = a.dao.ExchangeMainMasters, i = 0; i < e.length; i += 1) {
 var n = e[i].getExchangeId();
-e[i].getCostId() === s.EXCHANGE_COST_ID.ARENA ? P(n) && (t[n] = e[i]) : t[n] = e[i];
+e[i].getCostId() === s.EXCHANGE_COST_ID.ARENA ? v(n) && (t[n] = e[i]) : t[n] = e[i];
 }
 return t;
 }
@@ -62726,6 +63409,7 @@ function m(t, e, i) {
 var a = {}, n = {};
 switch (t.getExchangeType()) {
 case s.EXCHANGE_TYPE.POINT_CONSUME:
+case s.EXCHANGE_TYPE.COUPLING_VOTE:
 a = e;
 break;
 
@@ -62740,9 +63424,31 @@ r !== s.DAILY_BONUS_LIST_ID && (n[r] = a[t.getExchangeId()][o]);
 return n;
 }
 function g(t) {
-return o.getUserItemCount(parseInt(t));
+return _.filter(a.dao.ExchangeCouplingVoteLineupMasters, function(e) {
+return e.getCouplingVoteGroupId() === t;
+});
 }
 function f(t) {
+var e = _.uniq(_.map(t, function(t) {
+return t.getOrder();
+}));
+e = _.shuffle(e);
+var i = [];
+_.each(e, function(e) {
+var a = _.filter(t, function(t) {
+return t.getOrder() === e;
+});
+a.sort(function(t, e) {
+return t.itemId - e.itemId;
+});
+i = i.concat(a);
+});
+return i;
+}
+function E(t) {
+return o.getUserItemCount(parseInt(t));
+}
+function C(t) {
 var e = {};
 0 !== parseInt(t.getCostId1()) && (e[t.getCostId1()] = parseInt(t.getCostCount1()));
 0 !== parseInt(t.getCostId2()) && (e[t.getCostId2()] = parseInt(t.getCostCount2()));
@@ -62751,7 +63457,7 @@ var e = {};
 0 !== parseInt(t.getCostId5()) && (e[t.getCostId5()] = parseInt(t.getCostCount5()));
 return e;
 }
-function E(t, e, i, a) {
+function T(t, e, i, a) {
 var n = 0;
 for (var o in i) n += d()[t][o].getCostCount() * i[o];
 if (n <= 0) return !1;
@@ -62760,44 +63466,44 @@ if (e < n + d()[t][a].getCostCount()) return !0;
 } else if (e < n) return !0;
 return !1;
 }
-function C(t, e, i, n) {
+function S(t, e, i, n) {
 var o = {}, r = {}, s = h(), c = p(a.dao.ExchangePointDetailMasters), l = p(a.dao.ExchangeItemDetailMasters);
 for (var u in i) {
-o = f(d(s, c, l)[t][u]);
+o = C(d(s, c, l)[t][u]);
 for (var m in o) r[m] ? r[m] += o[m] : r[m] = o[m];
 }
 if (Object.keys(r).length <= 0) return !1;
 if (n) {
-var _ = f(d()[t][n]), g = 0;
-for (var E in r) {
-_[E] && (g = _[E]);
-if (e[E] < r[E] + g) return !0;
+var _ = C(d()[t][n]), g = 0;
+for (var f in r) {
+_[f] && (g = _[f]);
+if (e[f] < r[f] + g) return !0;
 g = 0;
 }
-} else for (var C in r) if (e[C] < r[C]) return !0;
+} else for (var E in r) if (e[E] < r[E]) return !0;
 return !1;
 }
-function T(t) {
+function R(t) {
 if (t) return _.find(t.coinPresent, function(t) {
 return t.itemType === c.ITEM_TYPE.EXCHANGE_POINT;
 });
 }
-function S(t) {
+function A(t) {
 if (t) return _.filter(t.coinPresent, function(t) {
 return t.itemType === c.ITEM_TYPE.EXCHANGE_POINT;
 });
 }
-function R(t, e, i) {
+function M(t, e, i) {
 return _.find(t, function(t) {
 return t.getItemType() === e && (!i || t.getItemId() === i);
 });
 }
-function A() {
+function b() {
 var t = a.dao.userPvP.getPvPMainMaster();
 if (t && t.getExchangeId()) return t.getExchangeId();
 }
-function M(t) {
-return I(function(e) {
+function I(t) {
+return y(function(e) {
 if (e.getExchangeId() !== t || 0 === e.getListId()) return !1;
 var i;
 switch (e.getMaxCountType()) {
@@ -62815,16 +63521,16 @@ break;
 default:
 i = e.getToDate();
 }
-return b(i);
+return P(i);
 });
 }
-function b(t) {
+function P(t) {
 return !(!t || 0 === t) && (n.getDiffSec(t) > 0 && n.getDiffSec(t) < u);
 }
-function I(t) {
+function y(t) {
 return _.some(a.dao.ExchangeItemDetailMasters, t) || _.some(a.dao.ExchangePointDetailMasters, t);
 }
-function P(t) {
+function v(t) {
 var e = a.dao.userPvP.getPvPMainMaster();
 return e && e.getExchangeId() ? e.getExchangeId() === t : t === s.EXCHANGE_TAB_TYPE.PVP;
 }
@@ -62848,7 +63554,7 @@ case s.EXCHANGE_TAB_TYPE.R_L_YEH:
 case s.EXCHANGE_TAB_TYPE.PNAKOTIC:
 case s.EXCHANGE_TAB_TYPE.DREAM:
 case s.EXCHANGE_TAB_TYPE.MEMORIAL:
-case A():
+case b():
 return s.EXCHANGE_COST_GROUP_TYPE.COIN_GROUP;
 
 default:
@@ -62857,22 +63563,44 @@ return s.EXCHANGE_COST_GROUP_TYPE.ITEM_GROUP;
 },
 getCostItemIdMapByExchangeId: function(t) {
 var e = {}, i = h()[t];
-if (i.getExchangeType() === s.EXCHANGE_TYPE.POINT_CONSUME) {
+if (i.getExchangeType() === s.EXCHANGE_TYPE.POINT_CONSUME || i.getExchangeType() === s.EXCHANGE_TYPE.COUPLING_VOTE) {
 var a = i.getCostId();
-e[a] = g(a);
+e[a] = E(a);
 return e;
 }
 var n = d()[t];
 for (var o in n) {
-var r = f(n[o]);
-for (var c in r) e[c] = g(c);
+var r = C(n[o]);
+for (var c in r) e[c] = E(c);
 }
 return e;
 },
 getCostItemByExchangeId: function(t) {
 return h()[t].getCostId();
 },
-getCostMapByExchangeItemDetailMaster: f,
+getExchangeCPGroupByExchangeId: function(t) {
+return _.find(a.dao.ExchangeCouplingVoteGroupMasters, function(e) {
+return e.getExchangeId() === t;
+});
+},
+getExchangeCPLineupMapByGroupId: g,
+getCouplingVoteUserData: function(t) {
+return _.filter(a.dao.userCouplingVoteSelects, function(e) {
+return e.getExchangeId() === t;
+});
+},
+getCouplingVoteLineupMasterData: function(t) {
+for (var e = [ t.getCouplingVoteGroupId1(), t.getCouplingVoteGroupId2() ], i = [], a = {}, n = 0; n < s.EXCHANGE_COUPLING_VOTE_MAX_SELECT; n++) if (0 !== e[n] && !a[e[n]]) {
+var o, r = g(e[n]);
+o = 1 === t.getIsRandom() ? f(r) : r.sort(function(t, e) {
+return t.getOrder() - e.getOrder() || t.getItemId() - e.getItemId();
+});
+i[e[n]] = o;
+a[e[n]] = !0;
+}
+return i;
+},
+getCostMapByExchangeItemDetailMaster: C,
 checkInOfTerm: function(t) {
 var e = t.getFromDate(), i = t.getToDate();
 return n.isRangeOfDate(e, i);
@@ -62927,22 +63655,24 @@ isCostOver: function(t, e, i) {
 var a = h()[t];
 switch (a.getExchangeType()) {
 case s.EXCHANGE_TYPE.POINT_CONSUME:
-return E(t, e[a.getCostId()], i);
+case s.EXCHANGE_TYPE.COUPLING_VOTE:
+return T(t, e[a.getCostId()], i);
 
 case s.EXCHANGE_TYPE.ITEM_CONSUME:
 case s.EXCHANGE_TYPE.ITEM_CONSUME_BY_DATE:
-return C(t, e, i);
+return S(t, e, i);
 }
 },
 isNextCostOver: function(t, e, i, a) {
 var n = h()[t];
 switch (n.getExchangeType()) {
 case s.EXCHANGE_TYPE.POINT_CONSUME:
-return E(t, i[n.getCostId()], a, e);
+case s.EXCHANGE_TYPE.COUPLING_VOTE:
+return T(t, i[n.getCostId()], a, e);
 
 case s.EXCHANGE_TYPE.ITEM_CONSUME:
 case s.EXCHANGE_TYPE.ITEM_CONSUME_BY_DATE:
-return C(t, i, a, e);
+return S(t, i, a, e);
 }
 },
 getExchangeIdByEventId: function(t) {
@@ -62976,7 +63706,7 @@ itemSetMasterArray: a
 },
 getTotalItemCostMapCountBySelectedItemMap: function(t, e, i, a) {
 for (var n = {}, o = {}, r = a || d(), s = 0; s < i.length; s += 1) {
-n = f(r[e][i[s]]);
+n = C(r[e][i[s]]);
 var c = t[i[s]];
 for (var l in n) o[l] ? o[l] += n[l] * c : o[l] = n[l] * c;
 }
@@ -62989,13 +63719,13 @@ return i.getCostType() === t && i.getCostId() === e;
 return i ? i.getExchangeId() : 0;
 },
 getExchangePointByUserGacha: function(t) {
-for (var e, i = 0; i < t.getButtons().length && !(e = T(t.getButtons()[i])); i += 1) ;
+for (var e, i = 0; i < t.getButtons().length && !(e = R(t.getButtons()[i])); i += 1) ;
 return e;
 },
 getExchangePointArrayByUserGacha: function(t) {
 for (var e, i = [], a = 0; a < t.getButtons().length; a += 1) {
 e = t.getButtons()[a];
-Array.prototype.push.apply(i, S(e));
+Array.prototype.push.apply(i, A(e));
 }
 return _.sortBy(_.uniqBy(_.reverse(_.sortBy(i, function(t) {
 return t.itemCount;
@@ -63013,8 +63743,8 @@ return i.getItemType() === e && (!t || i.getItemId() === t);
 });
 },
 getExchangeIdByItem: function(t, e) {
-var i = R(a.dao.ExchangePointDetailMasters, t, e);
-return i ? i.getExchangeId() : (i = R(a.dao.ExchangeItemDetailMasters, t, e)) ? i.getExchangeId() : s.EXCHANGE_TAB_TYPE.GOLD;
+var i = M(a.dao.ExchangePointDetailMasters, t, e);
+return i ? i.getExchangeId() : (i = M(a.dao.ExchangeItemDetailMasters, t, e)) ? i.getExchangeId() : s.EXCHANGE_TAB_TYPE.GOLD;
 },
 getLastExchangeDateByListId: function(t, e) {
 return r.getLastExchangeDateByListId(parseInt(t, 10), parseInt(e, 10));
@@ -63038,10 +63768,10 @@ itemType: i.getItemType()
 },
 getExchangeNearExpire: function() {
 return _.filter(a.dao.ExchangeMainMasters, function(t) {
-return this.checkInOfTerm(t) && (b(t.getToDate()) || M(t.getExchangeId()));
+return this.checkInOfTerm(t) && (P(t.getToDate()) || I(t.getExchangeId()));
 }.bind(this));
 },
-getNowPvPSeasonExchangeId: A,
+getNowPvPSeasonExchangeId: b,
 isArenaSeasonDateInRange: function() {
 var t = a.dao.userPvP.getPvPMainMaster();
 return !!t && n.isDateInRange(n.getNowDateTime(), t.getFromDate(), t.getToDate());
@@ -77354,6 +78084,7 @@ EXCHANGE_POINT: 801,
 FRIENDSHIP_POINT: 802,
 VOTE_POINT: 811,
 SERIAL_CODE_ITEM: 812,
+CP_VOTE_ITEM: 813,
 RELEASE_SET: 900,
 CHARACTER: 910,
 EQUIPMENT: 911,
@@ -83167,6 +83898,8 @@ EXCHANGE_GROUP: "ExchangeGroup",
 EXCHANGE_POINT_DETAIL: "ExchangePointDetail",
 EXCHANGE_ITEM_DETAIL: "ExchangeItemDetail",
 EXCHANGE_ITEM_DETAIL2: "ExchangeItemDetail2",
+EXCHANGE_COUPLING_VOTE_GROUP: "ExchangeCouplingVoteGroup",
+EXCHANGE_COUPLING_VOTE_LINEUP: "ExchangeCouplingVoteLineup",
 PVP_MAIN: "PvPMain",
 PVP_CLASS: "PvPClass",
 PVP_CLASS_REWARD: "PvPClassReward",
@@ -83403,6 +84136,8 @@ ExchangeGroup: "ExchangeGroupModel",
 ExchangePointDetail: "ExExchangePointDetailModel",
 ExchangeItemDetail: "ExExchangeItemDetailModel",
 ExchangeItemDetail2: "ExExchangeItemDetailModel",
+ExchangeCouplingVoteGroup: "ExchangeCouplingVoteGroupModel",
+ExchangeCouplingVoteLineup: "ExchangeCouplingVoteLineupModel",
 PvPMain: "PvPMainModel",
 PvPClass: "PvPClassModel",
 PvPClassReward: "PvPClassRewardModel",
@@ -83900,6 +84635,10 @@ key: a.DATA_KEY.SHOP_EVENT_ITEM_CONDITION
 key: a.DATA_KEY.GACHA_CHARACTER_CONDITION
 }, {
 key: a.DATA_KEY.EXCHANGE_CHARACTER_CONDITION
+}, {
+key: a.DATA_KEY.EXCHANGE_COUPLING_VOTE_GROUP
+}, {
+key: a.DATA_KEY.EXCHANGE_COUPLING_VOTE_LINEUP
 } ],
 BANNER: [ {
 key: a.DATA_KEY.BANNER
@@ -90326,7 +91065,7 @@ _activateTab: function(t) {
 if (!Array.isArray(this.tabBtnArray) || this.tabBtnArray.length <= 0) {
 this.missionDetailMileageGaugeView.node.active = !1;
 this.missionActiveDateLabel.node.active = !1;
-this.allRewardReceivedTextNode.active = !0;
+this._createEmptyContent(s.MISSION_CATEGORY.MILEAGE, e, !1);
 } else {
 this._resetTab();
 var e = Object.keys(this._availableMissionMainMasterMap)[t], i = this._missionMap[e];
@@ -140941,6 +141680,17 @@ name: n.SHOP_DECIDE_ORDER_PACK,
 path: "shop/decideOrderPack",
 method: "POST"
 });
+a.RESTClient.graft({
+name: n.SHOP_GET_COUPLING_VOTE_LINEUP_USER_DATA,
+path: "shop/getCouplingVoteLineupUserData",
+method: "POST",
+type: "binary"
+});
+a.RESTClient.graft({
+name: n.SHOP_SET_COUPLING_VOTE_LINEUP,
+path: "shop/setCouplingVoteLineup",
+method: "POST"
+});
 cc._RF.pop();
 }, {
 ApiConstants: "ApiConstants",
@@ -144437,6 +145187,16 @@ listId: e
 };
 this._requestCallApi(n.SHOP_DECIDE_ORDER_PACK, a, function(t, e) {
 return i(t ? void 0 : e);
+});
+},
+setCouplingVoteLineup: function(t, e, i, a) {
+var o = {
+exchangeId: t,
+listId: e,
+itemIds: i
+};
+this._requestCallApi(n.SHOP_SET_COUPLING_VOTE_LINEUP, o, function(t, e) {
+return a(t ? void 0 : e);
 });
 }
 });
@@ -162296,6 +163056,39 @@ MasterDatabase: "MasterDatabase",
 Singleton: "Singleton",
 SingletonConst: "SingletonConst"
 } ],
+UserCouplingVoteSelectModel: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "1bf93ryiJVOlIrlAGIiiOzT", "UserCouplingVoteSelectModel");
+var a = t("MasterDatabase"), n = t("Singleton"), o = t("SingletonConst");
+cc.Class({
+extends: a,
+getExchangeId: function() {
+if (this._isKeyFieldAvailable("exchangeId")) return this._data.exchangeId;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: exchangeId");
+},
+getListId: function() {
+if (this._isKeyFieldAvailable("listId")) return this._data.listId;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: listId");
+},
+getItemId1: function() {
+if (this._isKeyFieldAvailable("itemId1")) return this._data.itemId1;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: itemId1");
+},
+getItemId2: function() {
+if (this._isKeyFieldAvailable("itemId2")) return this._data.itemId2;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: itemId2");
+},
+getCount: function() {
+if (this._isKeyFieldAvailable("count")) return this._data.count;
+n[o.ERROR_MANAGER].throwModelPropertyNotFoundError("object field is invalid :: count");
+}
+});
+cc._RF.pop();
+}, {
+MasterDatabase: "MasterDatabase",
+Singleton: "Singleton",
+SingletonConst: "SingletonConst"
+} ],
 UserDataApi: [ function(t, e, i) {
 "use strict";
 cc._RF.push(e, "88a32BK6NdBbqPj4I4c3HuN", "UserDataApi");
@@ -162305,6 +163098,7 @@ CHARACTER: a.CHARACTER_GET_USER_DATA,
 CHARACTER_LINK: a.CHARACTER_LINK,
 MISSION: a.MISSION_GET_USER_DATA,
 SHOP: a.SHOP_GET_USER_DATA,
+COUPLING_VOTE_SELECT: a.SHOP_GET_COUPLING_VOTE_LINEUP_USER_DATA,
 STORY: a.STORY_GET_USER_DATA,
 EQUIPMENT: a.EQUIPMENT_GET_USER_DATA,
 SOLID_EQUIPMENT: a.SOLID_EQUIPMENT_GET_USER_DATA,
@@ -162357,6 +163151,7 @@ LOGIN_PACK: "LOGIN_PACK",
 PVP: "PVP",
 LOTTERY: "LOTTERY",
 SHOP: "SHOP",
+COUPLING_VOTE_SELECT: "COUPLING_VOTE_SELECT",
 SOUND: "SOUND",
 MINIGAME: "minigame",
 RACE: "RACE",
@@ -162402,6 +163197,7 @@ SPECIAL_ROOM: "specialRooms",
 SHOP: "purchaseHistories",
 SHOP_ORDER_PACK: "orderPacks",
 EXCHANGE: "exchangeHistories",
+COUPLING_VOTE_SELECT: "couplingVoteSelect",
 STORY: "stories",
 GACHA: "gacha",
 MINIGAME: "minigame",
@@ -162451,6 +163247,7 @@ ROOM: "RoomModel",
 SHOP: "UserPurchaseHistoryModel",
 SHOP_ORDER_PACK: "OrderPackModel",
 EXCHANGE: "UserExchangeHistoryModel",
+COUPLING_VOTE_SELECT: "UserCouplingVoteSelectModel",
 STORY: "StoryModel",
 PVP: "PvPModel",
 RAID: "RaidModel",
@@ -162494,6 +163291,12 @@ isArray: !0
 key: a.DATA_KEY.EXCHANGE,
 name: "userExchangeHistories",
 model: a.DATA_MODEL.EXCHANGE,
+isArray: !0
+} ],
+COUPLING_VOTE_SELECT: [ {
+key: a.DATA_KEY.COUPLING_VOTE_SELECT,
+name: "userCouplingVoteSelects",
+model: a.DATA_MODEL.COUPLING_VOTE_SELECT,
 isArray: !0
 } ],
 ORDER_PACK: [ {
@@ -170772,4 +171575,4 @@ cc._RF.push(e, "c0e8ds9ygZCqaOuWa1o0K5U", "use_v2.1.x_cc.Action");
 cc.macro.ROTATE_ACTION_CCW = !0;
 cc._RF.pop();
 }, {} ]
-}, {}, [ "Command", "CommandAnimation", "CommandBg", "CommandBgOff", "CommandCharacter", "CommandCharacterOff", "CommandClickWait", "CommandElseIf", "CommandEndIf", "CommandEndWait", "CommandFadeInBlack", "CommandFadeInWhite", "CommandFadeOutBlack", "CommandFadeOutWhite", "CommandFlash", "CommandIf", "CommandImageConfig", "CommandMask", "CommandMessage", "CommandName", "CommandPlayBgm", "CommandPlayMovie", "CommandPlayMovieOff", "CommandPlaySe", "CommandPlayVoice", "CommandSelect", "CommandShake", "CommandSkip", "CommandSlideInBlack", "CommandSlideOutBlack", "CommandSpine", "CommandSpineOff", "CommandSprite", "CommandSpriteAtlas", "CommandSpriteOff", "CommandStopBgm", "CommandStopSe", "CommandStopVoice", "CommandVal", "CommandWait", "CommandWindowUI", "AdvCommandTypeList", "AdvCommandTypeResourceList", "AdvConstants", "AdvData", "AdvRichText", "AdvText", "AdvManager", "AdvRoot", "AdvSubRootBase", "TemplateAdvSubRoot", "AdvSingleton", "AdvSoundManager", "AdvCommonButton", "AdvCommonScrollView", "AdvGameRootBase", "AdvPopupBase", "AdvSoundSettingView", "AdvTimeUtils", "AdvWindowBase", "AdvGameConst", "AdvLocalDataConst", "AdvSceneConst", "AdvSingletonConst", "AdvStaticResourceConst", "AdvUtils", "MessageView", "AdvLogMessageThumbnail", "AdvSelectThumbnail", "AdvConfigPopup", "AdvLogPopup", "use_v2.1.x_cc.Action", "Game", "CommandRoomBg", "CommandTutorial", "AdvCustomConstants", "CustomCommandTypeList", "CustomCommandTypeResourceList", "ExtensionAdvRoot", "AdvSubRoot", "ExtensionAdvUtils", "D1AdvLogMessageThumbnail", "D1AdvSelectThumbnail", "D1AdvConfigPopup", "D1AdvLogPopup", "D1MessageView", "AnimationEventComponent", "AnimationUtils", "BlinkLabelView", "CircleRollView", "CommonCharacterDetailPopup", "CommonCountView", "CommonInnerScrollView", "CommonPageView", "CommonPopup", "CommonRichText", "CommonScrollLabel", "CommonScrollRichText", "CommonScrollTextBase", "CommonScrollView", "CommonSliderView", "CommonTextBase", "CommonUtils", "CommonWholeView", "CommonWindow", "DevelopmentUtils", "ErrorCode", "GameRootBase", "HotUpdate", "ListPageView", "LoopRollView", "NoticeViewBase", "OutGameRootBase", "PageButton", "PageButtonOldView", "PageButtonView", "PageViewBase", "PopupBase", "PopupUtils", "ReleasableStoriesPopup", "ResourceUtils", "RollView", "SelectTicketPopup", "SimpleMessagePopup", "SortButton", "SoundSettingView", "TabViewBase", "TimeUtils", "ToggleButton", "WindowBase", "ApiConstants", "CharacterConst", "DeckConst", "EnvironmentConst", "EquipmentConst", "GachaAnimationConst", "GameConst", "ItemConst", "LocalDataConst", "MemorialConst", "QuestConst", "QuestionnaireConst", "RaceConst", "RaidConst", "ResourceConst", "SceneConst", "SingletonConst", "StaticResourceConst", "StoryConst", "UserPrefConst", "CharacterFilterConst", "CharacterGroupFilterConst", "EquipmentFilterConst", "MemorialFilterConst", "PictureBookDetailFilterConst", "StoryFilterConst", "MasterDataApi", "MasterDataConstants", "MasterDataLoadKeys", "CharacterSortConst", "DeckSortConst", "EquipmentSortConst", "MemorialSortConst", "PictureBookDetailSortConst", "UserDataApi", "UserDataConstants", "UserDataLoadSettings", "UserDataMapConstants", "AtlasNestUtils", "AtlasNestView", "AutoSelectConfirmPopup", "BPProgressView", "BackButton", "CharacterResourceUtils", "CharacterStandView", "LinearMissionProgressView", "LinearMissionRewardSelectPopup", "ListViewBase", "MatrixView", "MileageMisiionProgressView", "MovieController", "NoticeBadgeCheckUtils", "SDCharacterViewBase", "SerifBalloon", "SimpleNoticeWithClearGaugeView", "SimpleNoticeWithClearStampView", "SimpleView", "TabButton", "TapEffectManager", "UIHeader", "UIHomeButton", "UIRankButton", "UISide", "UseCountSelectView", "VariableTabViewBase", "ViewUtils", "LoadProgressView", "LoadSimpleView", "MatrixConfig", "MatrixMultipleSelectCountUpDisplayAlreadySelectPageView", "MatrixMultipleSelectCountUpPageView", "MatrixMultipleSelectCountUpPageViewBase", "MatrixMultipleSelectDisplayAlreadySelectPageView", "MatrixMultipleSelectPageView", "MatrixMultipleSelectPageViewBase", "MatrixPageViewBase", "MatrixSingleSelectPageView", "ApRecoveryPopup", "BpRecoveryPopup", "CharacterBaseSortFilterPopup", "FilterPopup", "HowToPlayPopup", "ItemListPopup", "MemorialBaseSortFilterPopup", "MenuPopup", "ModelDetailPopup", "NewsPopup", "PaymentWaitPopup", "QuestCountRecoveryPopup", "QuestEquipmentDetailpopup", "RecommendedMaterialSelectPopup", "ResultRibbonPopup", "SerialCodeInputPopup", "SerialCodePopup", "SerialCodeShowPopup", "SimplePopup", "SortFilterPopup", "SortFilterTabView", "StoryEventSortFilterPopup", "ThumbnailTextPopup", "ItemSourceConst", "ItemSourceListPopup", "ItemSourceListView", "ItemSourceThumbnail", "ItemSourceUtils", "AllResourceDownloadConfirmPopup", "MenuSettingConfigView", "MenuSettingPopup", "MenuSettingQualityView", "MenuSettingTabView", "MenuSettingViewBase", "ItemNoticeWindow", "SimplePrefabArrowView", "SimplePrefabViewBase", "CharacterMatrixThumbnail", "DeckMatrixThumbnail", "EnemyMatrixThumbnail", "EquipmentMatrixThumbnail", "EventLogoThumbnail", "ItemMatrixThumbnail", "ItemWideThumbnail", "LoginBonusMatrixThumbnail", "MatrixThumbnail", "MatrixThumbnailBase", "MatrixThumbnailUtils", "MemorialMatrixThumbnail", "MemorialSquareMatrixThumbnail", "PresentMemorialMatrixThumbnail", "QuestSkipResultDropItemThumbnail", "ResultMatrixThumbnail", "SimpleTextThumbnail", "SimpleThumbnail", "SpecialRoomMatrixThumbnail", "TwoLineTextThumbnail", "UIHeaderCurrencyThumbnail", "WarehouseMaterialMatrixThumbnail", "UnlockEffectUtils", "AuthApis", "AuthService", "OAuth", "CommonNumber", "ResourceManager", "CommonButton", "MasterDatabase", "CommonNative", "DmmAndroidJsToJava", "Http", "HttpStatus", "NetworkReachability", "NetworkUtils", "RESTClient", "PaymentApis", "PaymentManager", "PaymentService", "BaseService", "ServiceManager", "Async", "Environment", "ErrorManager", "EventManager", "FixedTimeScheduler", "NoticeManager", "TextApis", "TextManager", "BattleData", "BattleConstants", "EnumTypes", "ShaderController", "shaderCode_GaussBlurs", "ActionController", "BaseGameManager", "EquipmentController", "SetTestBattleManager", "SkillController", "ArenaGameManager", "QuestGameManager", "RaidGameManager", "TowerGameManager", "TutorialGameManager", "ArenaPlayerUnit", "BattleAbility", "BattleAction", "BattleBossUnit", "BattleChara", "BattleDeckUnit", "BattleEquipment", "BattleMemorial", "BattleMonsterModel", "BattleMonsterUnit", "BattleNormalAttack", "BattlePlayerDoubleUnit", "BattlePlayerUnit", "BattleQuest", "BattleSkill", "BattleUnit", "Buff", "BuffMapper", "EnemyAbilityConditionModel", "GameLoop", "RaidBattleBossUnit", "TowerBattleBossUnit", "TowerBattleMonsterUnit", "TowerBattlePlayerDoubleUnit", "TowerBattlePlayerUnit", "AdjustHateWeightFromEnemy", "AllCounter", "AtkChange", "AtkChangeByBuffCount", "AtkChangeByElement", "AtkChangeForEquipment", "AtkChangeStockabel", "AutoPlusSkillRate", "Confuse", "CriticalChanceUp", "DamageChangeByElement", "DarknessOnAll", "DarknessOnNormalAttk", "DeadlyPoison", "DeathSentence", "DefChange", "DefChangeByBuffCount", "DefChangeForEquipment", "DefChangeStockable", "Erosion", "HpChange", "HpChangeForEquipment", "HpChangeStockable", "ImmuneBadCondition", "LowHpAtkChange", "LowHpDefChange", "NormalAttackCounter", "NormalAttackEvasion", "NormalAttackHpDrain", "Paralysis", "PlusCastBadConditionChance", "PlusSkillRate", "PlusUnisonAttackChance", "PlusUnisonAttackPower", "Poison", "PreventBadCondition", "RandomAttack", "RecoveryLimitUp", "RecoveryPowerUp", "Regeneration", "SealPlusSkillRate", "SkillDamageUp", "Sleep", "Stun", "BattlePlayerUnitByJson", "ArenaRankUpPopup", "ArenaResultSubRoot", "BattlePausePopup", "BattleResultSubRoot", "PvPStartAnimSubRoot", "RaidResultSubRoot", "ResultRankUpPopup", "TowerResultSubRoot", "GameEffectQueue", "BattleDebugLogManager", "SetTestBattleBtnOBJ", "AbilityController", "BattleBossFunction", "BattleFunction", "BattleResourceFunction", "BattleResult", "CommonFunction", "TriggerConditionCheckController", "TriggerConditionFunction", "BattleDataLoader", "BattleEffectThumbnail", "BattleEventController", "BattleInfoDeckUnit", "BattleLoadRoot", "BattleSkillAbilityThumbnail", "BattleThumbnail", "BuffEffectView", "CameraController", "EffectEnd", "SpineEventInterpreter", "TrialDamageShow", "skillShow", "unisonShow", "PvPStartAnimGameRoot", "PvPStartAnimPlayerInfoView", "buffNumberShow", "damageShow", "healShow", "ArenaPoolManager", "PoolManager", "ArenaResultRankGaugeView", "BossEventPointResultView", "QuestResultExpGaugeView", "RaidResultDamageView", "RaidResultExpGaugeView", "ResultCharacterExpView", "ResultDropItemWindow", "ResultEventPointWindow", "ResultPlayerRankView", "ResultSubMissionDetailPopup", "ResultSubMissionStarView", "SubMissionThumbnailView", "ArenaGameRoot", "GameRoot", "QuestGameRoot", "AbilityCutinMessageView", "AbilityCutinView", "ArenaUIManager", "ArmorBreakAnimation", "ArmoredAnimation", "BattleUIManager", "BeatCountIcon", "RageBorderIcon", "RaidBattleUIManager", "SkillCutinMessageView", "SkillCutinView", "UnisonCutinView", "BattlePauseHelpView", "BattlePauseInfoEnemyView", "BattlePauseInfoPlayerView", "BattlePauseInfoViewBase", "BattlePauseSettingView", "BattlePauseTabView", "BattlePauseViewBase", "BuffHelpThumbnail", "BaseUnitCtrl", "BossUnitCtrl", "MonsterAvatarCtrl", "MonsterUnitCtrl", "PlayerUnitCtrl", "PvPEnemyUnitCtrl", "BattleSessionModel", "BoostModel", "CharacterLinkUnitModel", "CharacterModel", "ComebackModel", "DeckModel", "EquipmentModel", "FurnitureModel", "ItemModel", "LinearMissionModel", "LotteryModel", "MemorialDeckModel", "MemorialModel", "MissionModel", "OrderPackModel", "PictureBookBaseModel", "PictureBookDetailModel", "PrefModel", "PvPModel", "QuestModel", "RaceCharacterModel", "RaceSessionModel", "RaidModel", "RoomFurnitureModel", "RoomModel", "SolidEquipmentModel", "SoundModel", "StoryModel", "TowerSessionModel", "UserCharacterAbilityEffectModel", "UserCharacterAbilityGroupModel", "UserCharacterAbilityMainModel", "UserCharacterSkillEffectModel", "UserCharacterSkillMainModel", "UserModel", "WarehouseCharacterModel", "WarehouseEquipmentModel", "WarehouseMaterialModel", "PvPCharacterModel", "PvPDeckModel", "PvPEquipmentModel", "PvPPictureBookDetailModel", "PvPSolidEquipmentModel", "ExCharacterAbilityEffectModel", "ExCharacterAbilityGroupModel", "ExCharacterAbilityMainModel", "ExCharacterAwakeConditionModel", "ExCharacterAwakeEffectModel", "ExCharacterAwakeGroupModel", "ExCharacterAwakeMainModel", "ExCharacterAwakeMaterialModel", "ExCharacterGroupModel", "ExCharacterMainModel", "ExCharacterSkillMainModel", "ExEquipmentMainModel", "ExEventFriendshipCharacterModel", "ExEventFriendshipModel", "ExEventMainModel", "ExEventMemorialModel", "ExExchangeItemDetailModel", "ExExchangeMainModel", "ExExchangePointDetailModel", "ExItemMainModel", "ExLinearMissionDetailModel", "ExLinearMissionMainModel", "ExLinearMissionRewardModel", "ExMemorialAbilityGroupModel", "ExMemorialAbilityMainModel", "ExMemorialMainModel", "ExMissionMainModel", "ExShopDetailModel", "ExSoundMainModel", "ExUniqueMissionModel", "ExMyPageNewsModel", "ExMyPagePopupModel", "ExCharacterEvolutionEffectModel", "ExCharacterEvolutionMainModel", "ExCharacterEvolutionMaterialModel", "ExQuestAreaModel", "ExQuestScenarioModel", "ExQuestStageConditionModel", "ExQuestStageModel", "ExQuestStageSeasonModel", "ExQuestWorldModel", "ExRaceAbilityEffectGroupModel", "ExRaceAbilityEffectModel", "ExRaceAbilityGroupModel", "ExRaceAbilityMainModel", "ExRaceAreaModel", "ExRaceCharacterMainModel", "ExRaceCommentaryTextModel", "ExRaceMainModel", "ExRaceObstacleModel", "ExRaceRewardModel", "ExRaceStageModel", "ExRaceTextModel", "ExFurnitureMainModel", "ExStoryCabinModel", "ExStoryCategoryModel", "ExStoryDetailModelBase", "ExStoryEventModel", "ExStoryGachaModel", "ExStoryGroupModel", "ExStoryMemorialEventOtherModel", "ExStoryMemorialModel", "ExStoryOtherModel", "ExStoryPictureBookModel", "ExStoryQuestModel", "ExStoryRoomModel", "ExStoryTutorialModel", "ExStoryVoiceModel", "BoostGroupModel", "BossEventPointModel", "BossGaugeColorModel", "BossRageAnimationModel", "BossStageModel", "CabinMissionDetailModel", "CabinMissionMainModel", "CabinMissionModel", "CabinMissionRewardModel", "CampaignModel", "CharacterAbilityConditionModel", "CharacterAbilityEffectModel", "CharacterAbilityGroupModel", "CharacterAbilityMainModel", "CharacterAbilityUpModel", "CharacterAlterModel", "CharacterAwakeConditionModel", "CharacterAwakeEffectModel", "CharacterAwakeGroupModel", "CharacterAwakeMainModel", "CharacterAwakeMaterialModel", "CharacterContentsModel", "CharacterEvolutionEffectModel", "CharacterEvolutionMainModel", "CharacterEvolutionMaterialModel", "CharacterExceedLimitModel", "CharacterFavoriteModel", "CharacterGroupModel", "CharacterGroupSeasonModel", "CharacterLevelModel", "CharacterLinkModel", "CharacterMainModel", "CharacterMaterialModel", "CharacterNormalAttackModel", "CharacterSellBonusModel", "CharacterSkillEffectModel", "CharacterSkillMainModel", "CharacterSkillUpModel", "CharacterSkillUpRateModel", "CharacterStandPositionModel", "CharacterTextModel", "ComebackGachaModel", "ComebackGroupModel", "ComebackLoginBonusModel", "ComebackMainModel", "ComebackNewsModel", "ComebackPopupModel", "ComebackShopModel", "DmmModel", "EquipmentAbilityConditionModel", "EquipmentEffectModel", "EquipmentExceedLimitItemModel", "EquipmentExceedLimitModel", "EquipmentLevelModel", "EquipmentMainModel", "EquipmentMaterialModel", "EquipmentTimeModel", "ErrorModel", "EventBoostCharacterModel", "EventBoostEffectModel", "EventCharacterModel", "EventDamageRewardModel", "EventFriendshipCharacterModel", "EventFriendshipModel", "EventFriendshipRewardModel", "EventHelpModel", "EventItemModel", "EventMainModel", "EventMemorialModel", "EventPointRewardModel", "EventRewardRarityModel", "EventSeasonModel", "EventStoryLinkModel", "EventSubHelpModel", "ExceedLimitAlternateItemModel", "ExchangeCharacterConditionModel", "ExchangeGroupModel", "ExchangeItemDetailModel", "ExchangeMainModel", "ExchangePointDetailModel", "FreeStoryModel", "FurnitureCategoryModel", "FurnitureCollectModel", "FurnitureCostModel", "FurnitureMainModel", "FurnitureStoryModel", "FurnitureTypeModel", "GachaCautionModel", "GachaCharacterConditionModel", "GachaContentsModel", "GachaDiscountModel", "GachaFixGroupModel", "GachaLineupModel", "GachaMainModel", "GachaOddsModel", "GachaPresentGroupModel", "GachaStepModel", "InitCharacterModel", "InitEquipmentModel", "InitItemModel", "ItemApRecoveryGemModel", "ItemCategoryModel", "ItemMainModel", "ItemQuestLockModel", "ItemRecipeModel", "ItemSelectModel", "ItemSellBonusModel", "ItemSetModel", "ItemStoryReleaseModel", "ItemVoteModel", "LinearMissionDetailModel", "LinearMissionMainModel", "LinearMissionRewardModel", "LoadingCharacterModel", "LoadingIllustModel", "LoadingMainModel", "LoadingTipsModel", "LoginBonusModel", "LoginPackMainModel", "LoginPackRewardModel", "LoginRewardModel", "MemorialAbilityConditionModel", "MemorialAbilityEffectModel", "MemorialAbilityGroupModel", "MemorialAbilityMainModel", "MemorialCollaboModel", "MemorialConvertModel", "MemorialExceedLimitModel", "MemorialExchangeDetailModel", "MemorialLevelModel", "MemorialMainModel", "MemorialShopDetailModel", "MemorialStatusModel", "MemorialTextModel", "MinigameCharacterMainModel", "MinigameCharacterTextModel", "MinigameMainModel", "MissionDetailModel", "MissionMainModel", "MissionRewardModel", "MyPageBannerModel", "MyPageEventModel", "MyPageMainModel", "MyPageNewsModel", "MyPagePopupModel", "PanelMissionHelpModel", "PresentMessageModel", "PvPClassModel", "PvPClassRewardModel", "PvPMainModel", "QuestAchieveModel", "QuestAreaModel", "QuestDropModel", "QuestEventPointModel", "QuestIconChangeModel", "QuestIconModel", "QuestRestrictionGroupModel", "QuestRestrictionMainModel", "QuestScenarioModel", "QuestStageConditionModel", "QuestStageModel", "QuestStageSeasonModel", "QuestWorldBgmModel", "QuestWorldModel", "RaceAbilityEffectGroupModel", "RaceAbilityEffectModel", "RaceAbilityGroupModel", "RaceAbilityMainModel", "RaceAreaModel", "RaceCharacterFreeModel", "RaceCharacterMainModel", "RaceCommentaryTextModel", "RaceEffectTargetModel", "RaceEffectTimingModel", "RaceEffectTypeModel", "RaceEffectValueTypeModel", "RaceFortifyModel", "RaceMainModel", "RaceObstacleModel", "RaceRewardModel", "RaceStageModel", "RaceStatusModel", "RaceTextModel", "RaceTopTextModel", "RaidBattleModel", "RaidBattleTypeModel", "RaidRewardGroupModel", "RaidRewardModel", "RoomCharacterFrameModel", "RoomMainModel", "ShopDetailConditionModel", "ShopDetailModel", "ShopEventItemConditionModel", "ShopListGroupModel", "ShopMainModel", "ShopOrderPackModel", "ShopPopupModel", "ShopSideGroupModel", "SoundMainModel", "SpecialRoomActionModel", "SpecialRoomBaseSpineModel", "SpecialRoomConditionalModel", "SpecialRoomMainModel", "SpecialRoomTapPointModel", "SpecialRoomTextModel", "StoryCabinModel", "StoryCategoryModel", "StoryEventModel", "StoryGachaModel", "StoryGroupModel", "StoryMemorialEventOtherModel", "StoryMemorialModel", "StoryOtherModel", "StoryPictureBookModel", "StoryQuestModel", "StoryRoomModel", "StoryTutorialModel", "StoryVoiceModel", "TowerMainModel", "TowerRewardGroupModel", "TowerRewardModel", "TutorialEventModel", "TutorialMainStepModel", "TutorialSkipModel", "TutorialSubStepModel", "UniqueMissionModel", "UserBuffHelpModel", "UserHelpModel", "UserHowToPlayModel", "UserMainModel", "UserProgressModel", "UserBasicInfoModel", "UserBoostModel", "UserCabinMissionModel", "UserCharacterLinkUnitModel", "UserCharacterModel", "UserComebackModel", "UserDeckModel", "UserEquipmentModel", "UserEventFriendshipItemModel", "UserEventItemModel", "UserExchangeHistoryModel", "UserFurnitureModel", "UserGachaModel", "UserGemModel", "UserItemModel", "UserLinearMissionModel", "UserLoginPackModel", "UserLotteryModel", "UserMemorialDeckModel", "UserMemorialModel", "UserMinigameModel", "UserMissionModel", "UserNoticeModel", "UserOrderPackModel", "UserPictureBookBaseModel", "UserPictureBookDetailModel", "UserPrefModel", "UserPurchaseHistoryModel", "UserPvPModel", "UserQuestModel", "UserRaceCharacterModel", "UserRaceSessionModel", "UserRaidModel", "UserRoomLayoutModel", "UserRoomModel", "UserShopHistoryModel", "UserSolidEquipmentModel", "UserSoundModel", "UserStoryModel", "UserTowerSessionModel", "UserWarehouseCharacterModel", "UserWarehouseEquipmentModel", "UserWarehouseMaterialModel", "CabinUtils", "CampaignUtils", "CharacterAbilityUtils", "CharacterAwakeUtils", "CharacterEquipmentUtils", "CharacterParameterUtils", "CharacterSkillUtils", "CharacterUtils", "DeckAutoUtils", "DeckUtils", "EquipmentAbilityUtils", "EquipmentUtils", "EventPointUtils", "EventUtils", "ExchangeUtils", "FilterUtils", "FurnitureUtils", "GachaUtils", "HistoryUtils", "ItemAutoSellUtils", "ItemConsumeUtils", "ItemUtils", "LinearMissionUtils", "LoadingUtils", "LotteryUtils", "MemorialUtils", "MissionUtils", "NewsUtils", "NoticeUtils", "PictureBookUtils", "PresentUtils", "PvPUtils", "QuestConditionUtils", "QuestUtils", "RaidUtils", "RoomUtils", "ShopUtils", "StoryUtils", "TowerUtils", "UserProgressUtils", "UserUtils", "VipMissionUtils", "WarehouseBringUtils", "WarehouseConvertUtils", "WarehouseUtils", "BootRoot", "DummyLogin", "LocalStartRoot", "LoginRoot", "StartRoot", "AttributeQuestViewSetting", "AttributeQuestRoot", "AttributeQuestTopSubRoot", "AttributeQuestRootUtils", "AreaAttributeQuestThumbnailView", "ResourceDownloadRoot", "RestoreBattleRoot", "ChallengeQuestViewSetting", "ChallengeQuestRoot", "ChallengeQuestSubRoot", "ChallengeQuestUtils", "ChallengeRootUtils", "ChallengeQuestListView", "ChallengeQuestNormalExTabView", "ChallengeQuestStageThumbnail", "DeckViewSetting", "DeckRoot", "DeckRootBase", "DeckCharacterSelectSubRoot", "DeckMemorialSelectSubRoot", "DeckSelectSubRoot", "DeckRootUtils", "AutoDeckEditPopup", "DeckBattleParameterView", "DeckCharacterDetailPopup", "DeckCharacterDetailStatusView", "DeckCharacterSelectSideView", "DeckMemorialSelectSideView", "DeckSwapReleaseCharacterPopup", "DeckSwapSelectCharacterPopup", "DeckTypeSwitchView", "EquipmentAllRemoveConfirmPopup", "PasteDeckPopup", "DeckTabSimpleView", "DeckTabView", "DeckTabViewBase", "DeckWithGaugeTabSimpleView", "DeckUnitListSimpleView", "DeckUnitListView", "DeckUnitListViewBase", "DeckUnitListWithGaugeSimpleView", "CharacterEquipmentListView", "DeckUnitEquipmentListView", "DeckUnitMemorialView", "DeckUnitSimpleThumbnail", "DeckUnitSupportThumbnail", "DeckUnitThumbnail", "DeckUnitThumbnailBase", "DeckUnitWithGaugeSimpleThumbnail", "EquipmentViewSetting", "EquipmentRoot", "EquipmentAlertPopup", "EquipmentBulkFullFortifyCompletePopup", "EquipmentBulkFullFortifyConfirmPopup", "EquipmentBulkFullFortifyMaterialSelectPopup", "EquipmentDetailPopup", "EquipmentExceedLimitCompletePopup", "EquipmentExceedLimitConfirmPopup", "EquipmentExceedLimitItemPopup", "EquipmentFortifyCompletePopup", "EquipmentFortifyConfirmPopup", "EquipmentSelectSubRoot", "EquipmentSellCompletePopup", "EquipmentSellConfirmPopup", "SolidConfirmPopup", "EquipmentRootUtils", "EquipmentCharacterTabView", "EquipmentDescriptionTabView", "EquipmentExceedLimitItemThumbnail", "EquipmentFortifyExceedLimitSettingView", "EquipmentSelectTabView", "EquipmentDetailTabView", "EquipmentDetailDescriptionView", "EquipmentDetailExceedLimitListView", "EquipmentDetailExceedLimitThumbnail", "EquipmentDetailStatusView", "EquipmentDetailViewBase", "EquipmentExceedLimitAbilityThumbnail", "EquipmentExceedLimitConfirmMaterialView", "EquipmentExceedLimitDifferenceView", "EquipmentListViewBase", "EquipmentProtectSelectListView", "EquipmentUseCountThumbnail", "EquipmentListWithSideViewBase", "EquipmentSelectSideViewBase", "EquipmentBringSelectSideView", "EquipmentExceedLimitMaterialSelectSideView", "EquipmentFortifyMaterialSelectSideView", "EquipmentMultipleSelectSideViewBase", "EquipmentSellSelectSideView", "EquipmentExceedLimitItemSelectedView", "EquipmentExceedLimitProgressView", "EquipmentFortifyProgressView", "EquipmentProgressSimpleView", "EquipmentExceedLimitTargetSelectSideView", "EquipmentFortifyTargetSelectSideView", "EquipmentSingleSelectSideViewBase", "EquipmentAbilityListView", "EquipmentSelectSideCharacterStatusView", "EquipmentSelectSideEquipmentAbilityThumbnail", "EquipmentSelectSideEquipmentStatusView", "EquipmentBringSelectListView", "EquipmentExceedLimitMaterialSelectListView", "EquipmentFortifyMaterialSelectListView", "EquipmentMultipleSelectListWithSideViewBase", "EquipmentSellSelectListView", "EquipmentExceedLimitTargetSelectListView", "EquipmentFortifyTargetSelectListView", "EquipmentSingleSelectListWithSideViewBase", "EventQuestConst", "EventQuestViewSetting", "EventRegularQuestViewSetting", "EventSpecialAdventWarQuestViewSetting", "EventQuestRoot", "EventQuestRootBase", "EventRegularQuestRoot", "EventSpecialAdventWarQuestRoot", "EventQuestStageSelectSubRoot", "EventQuestTopSubRoot", "EventQuestTopSubRootBase", "EventRegularQuestEquipmentBattleStartConfirmSubRoot", "EventRegularQuestTopSubRoot", "EventSpecialAdventWarQuestStageSelectSubRoot", "EventSpecialAdventWarQuestTopSubRoot", "EventFriendshipRewardListThumbnail", "EventQuestFrameThumbnailBase", "EventQuestItemFrameThumbnail", "EventQuestPointFrameThumbnail", "EventQuestPointRewardListThumbnail", "BossRageInfoThumbnail", "EventRegularQuestAdventWarStageThumbnail", "EventRegularQuestEquipmentThumbnail", "ScoreAttackEventDamageThumbnail", "TrialMissionThumbnail", "EventQuestRootUtils", "EventRegularQuestRootUtils", "EventSpecialAdventWarQuestRootUtils", "EventFriendshipGaugeView", "EventFriendshipRewardListPopup", "EventFriendshipView", "EventQuestAdventWarTabView", "EventQuestDifficultyUnlockPopup", "EventQuestHowToPlayPopup", "EventQuestNormalExTabView", "EventQuestPointRewardListPopup", "EventQuestStackRewardListPopup", "EventSpecialAdventWarQuestFrameInfoView", "TrialMissionPopup", "BossDetailPopup", "BossEventTopView", "TrialBossDetailPopup", "TrialSkillAbilityThumbnail", "EventRegularQuestAdventWarStageListView", "EventRegularQuestEquipmentAutoDetailPopup", "EventRegularQuestEquipmentItemUnlockPopup", "EventRegularQuestEquipmentListView", "ExchangeConst", "ExchangeViewSetting", "ExchangeRoot", "ExchangeCurrencyShortagePopup", "ExchangeItemConfirmPopup", "ExchangeItemEventItemConfirmPopup", "ExchangeItemEventItemPopup", "ExchangeItemListConfirmPopup", "ExchangeItemListDetailPopup", "ExchangeItemListPopup", "ExchangeItemMultipleConfirmPopup", "ExchangeItemShortagePopup", "ExchangeItemSingleConfirmPopup", "ExchangeItemSinglePopup", "ExchangeSubRoot", "CurrencyThumbnail", "ExchangeDetailThumbnailBase", "ExchangeEventDetailThumbnail", "ExchangeGroupTabButton", "ExchangeItemBaseThumbnail", "ExchangeItemDateThumbnail", "ExchangeItemDetailThumbnail", "ExchangeItemThumbnail", "ExchangeItemWideThumbnail", "ExchangeTabButton", "PointCurrencyThumbnail", "ExchangeRootUtils", "ExchangeGroupTabView", "ExchangeListSwitchView", "ExchangeItemConsumeByDateListView", "ExchangeListView", "ExchangeListViewBase", "ExchangeNeedCurrencyItemHeaderView", "ExchangeNeedCurrencyPointHeaderView", "ExchangeSpendCurrencyItemFooterView", "ExchangeSpendCurrencyPointFooterView", "ExchangeTabView", "FirstLoginViewSetting", "TutorialConst", "FirstLoginAfterRoot", "FirstLoginRoot", "FirstLoginSubRoot", "TutorialHowToPlayPopup", "TutorialSkipPopup", "FirstLoginRootUtils", "TutorialUtils", "GachaCharacterDetailPopup", "GachaMemorialDetailPopup", "GachaPresentListDetailPopup", "GachaPresentListTabView", "GachaPresentSetItemListDetailPopup", "GachaTicketPopup", "GachaTicketThumbnail", "GachaConst", "GachaViewSetting", "GachaRoot", "GachaPlayConfirmPopup", "GachaPrecautionsPopup", "GachaProvisionRatePopup", "GachaStepUpProvisionRatePopup", "GachaStoryConfirmPopup", "GachaTopSubRoot", "GachaTicketPlayConfirmPopup", "GachaProvisionRateUtils", "GachaRootUtils", "GachaCharacterDetailPopupStatusView", "GachaCharacterDetailStatusAbilityListView", "GachaCharacterDetailStatusAppendListViewBase", "GachaCharacterDetailStatusSkillListView", "GachaCharacterDetailStatusTabView", "GachaCharacterSummaryView", "GachaCurrencyItemThumbnail", "GachaCurrencyThumbnail", "GachaMemorialDetailBtnView", "GachaMemorialPieceThumbnail", "GachaNormalLogoView", "GachaNormalRollView", "GachaPlayBtnView", "GachaPlayBtnViewBase", "GachaPrecautionsTabView", "GachaProbablityRollView", "GachaProvisionRateMenuThumbnail", "GachaProvisionRateScrollView", "GachaProvisionRateScrollViewCharacterRateThumbnail", "GachaProvisionRateScrollViewMemorialRateThumbnail", "GachaProvisionRateScrollViewRarityThumbnail", "GachaProvisionRateThumbnail", "GachaRollViewBase", "GachaSideBannerThumbnail", "GachaStepUpPlayBtnView", "GachaStepUpProvisionRateMenuThumbnail", "GachaStepUpRollView", "GachaViewBase", "GachaSelectPickConfirmPopup", "GachaSelectPickPopup", "GachaSelectPickRollView", "GachaSelectPickSelectedListView", "GachaSelectPickTargetListView", "GachaNormalStillView", "GachaStepUpStillView", "GachaStillViewBase", "GachaTicketRollView", "GachaAnimationViewSetting", "GachaAnimationRoot", "GachaAnimationCharacterDetailPopup", "GachaAnimationSubRoot", "GachaRewardReceivePopup", "GachaAnimationRootUtils", "GachaAnimationRollView", "GachaAnimationView", "GachaCardLayoutHorizontalView", "GachaCardThumbnail", "GachaCharacterCardThumbnail", "GachaMemorialCardThumbnail", "GachaPresentItemDetailThumbnail", "GachaResultBtnViewBase", "GachaResultCardView", "GachaResultNormalBtnView", "GachaResultSelectPickBtnView", "GachaResultStepUpBtnView", "GachaResultTicketBtnView", "GachaLoadingRoot", "GalleryConst", "GalleryViewSetting", "GalleryRoot", "GalleryTopSubRoot", "GalleryRootUtils", "GalleryUtils", "GalleryBGView", "GalleryCharacterGroupListView", "GalleryCharacterGroupThumbnail", "GalleryContentsSelectTabView", "GalleryEpisodeSelectListView", "GalleryEpisodeThumbnail", "StoryConfirmPopup", "LoginBonusConst", "LoginBonusViewSetting", "LoginBonusRoot", "LoginBonusSubRoot", "LoginBonusUtils", "LoginBonusNormalExtendView", "LoginBonusNormalRibbon", "LoginBonusNormalView", "LoginBonusNormalViewBase", "LoginBonusReceivedPopup", "LoginBonusSdCharacterView", "LoginBonusSerifView", "LoginBonusSpecialTotalThumbnail", "LoginBonusSpecialView", "LoginBonusVariableNormalSDView", "LoginBonusVariableNormalStandView", "LoginBonusVariableViewBase", "LoginBonusViewBase", "MaintenanceViewSetting", "MaintenanceRoot", "MaintenanceSubRoot", "MaintenanceRootUtils", "CabinViewSetting", "MemorialViewSetting", "CabinRoot", "MemorialRoot", "CabinDiarySubRoot", "MemorialDetailSubRoot", "MemorialTopSubRoot", "CabinDiaryConditionThumbnail", "CabinMemorialThumbnail", "CabinMissionItemThumbnail", "CabinMissionStoryThumbnail", "CabinMissionThumbnail", "CabinMissionThumbnailBase", "CurrencyCountThumbnail", "LevelUpCurrencyCountThumbnail", "MemorialWideThumbnail", "CabinRootUtils", "MemorialRootUtils", "CabinDiaryConditionThumbnailListView", "CabinDiaryMissionView", "LevelUpCounterView", "MemorialCharacterDetailView", "MemorialCharacterExceedLimitConfirmPopup", "MemorialMatrixSelectListView", "MemorialStatusDetailView", "BackgroundController", "BackgroundView", "MinigameConstants", "MinigamePlayData", "MinigameObjectView", "MiniCharacterController", "MiniCharacterData", "MiniCharacterView", "MiniExtraCharacterController", "MiniExtraCharacterView", "TrapController", "TrapView", "TrapFireballController", "TrapFireballView", "TrapGakeController", "TrapIkeController", "TrapIwaController", "TrapIwaView", "MinigameManager", "TrapManager", "MinigameRoot", "MinigameCharacterSelectSubRoot", "MinigameCutinSubRoot", "MinigameResultSubRoot", "MinigameRootUtils", "MissionConst", "MissionViewSetting", "MissionRoot", "MissionResultAllPopup", "MissionResultPopup", "MissionSelectRewardPopup", "MissionTabView", "EmptyContentPanelView", "EmptyContentPanelViewFactory", "MissionRootUtils", "MissionBackButton", "MissionEventHeaderThumbnailView", "MissionSelectRewardThumbnail", "MissionThumbnailView", "MissionDetailEventTopView", "MissionDetailMileageTopView", "MissionDetailNormalTopView", "MissionDetailTabButton", "MissionDetailTopViewBase", "MissionDetailEventTabView", "MissionDetailListView", "MissionDetailMileageGaugeView", "MissionDetailMileageTabView", "MissionDetailTabViewBase", "MissionScrollView", "HomeConst", "HomeViewSetting", "HomeRoot", "ExchangeResetNoticePopup", "LoginPackReceivePopup", "LotteryTicketConfirmPopup", "MinigameSelectPopup", "MyPageDeckCharacterGroupListView", "MyPageDeckCharacterSelectPopup", "MyPageDeckMemorialSelectPopup", "MyPageDeckPopup", "MyPageDeckSpecialRoomListView", "MyPageDeckSpecialRoomSelectPopup", "MyPageDeckSpecialRoomView", "MyPageNewsPopup", "MyPagePopup", "SoundMuseumPopup", "SoundMuseumVolumePopup", "SoundPurchaseConfirmPopup", "PanelMissionPopup", "PanelMissionRewardConfirmPopup", "VipMissionPopup", "HomeRootUtils", "BannerBtnView", "BannerRollView", "BannerView", "EventMemorialOtherStoryView", "MyPageCharacterView", "MyPageDeckMemorialScrollView", "MyPageEventQuestBannerView", "MyPageEventQuestThumbnail", "MyPageMainView", "SoundMuseumButton", "SoundMuseumThumbnail", "SoundPlayerView", "MyPageDeckCharacterView", "MyPageDeckMemorialView", "MyPageNewsMainContentView", "MyPageNewsSideBannerBandView", "MyPageNewsSideBannerThumbnail", "PanelMissionListView", "PanelMissionTabView", "PanelMissionAchievementThumbnail", "PanelMissionTabButton", "PanelMissionThumbnail", "PanelMissionThumbnailBase", "VipMissionProgressInfoThumbnail", "VipMissionProgressView", "VipMissionPurchaseBtnThumbnail", "VipMissionShopItemThumbnail", "NormalQuestViewSetting", "NoramlQuestRoot", "NormalQuestRootUtils", "PresentBoxViewSetting", "PresentConst", "PresentBoxRoot", "MemorialConvertCompletePopup", "PresentBoxSubRoot", "PresentConfirmSimplePopup", "PresentFilterPopup", "PresentItemListDetailPopup", "PresentRandomReceiveCompletePopup", "PresentBoxRootUtils", "MemorialConvertLine", "PresentConfirmSimpleListPopup", "PresentItemDetailThumbnail", "PresentReceiveDetailThumbnail", "PresentScrollView", "PresentThumbnailView", "ProfileViewSetting", "ProfileRoot", "ProfileSubRoot", "UserRenamePopup", "ProfileRootUtils", "ProfileCharacterView", "ProfileView", "PromoteCharacterDetailViewSetting", "PromoteCharacterSelectViewSetting", "PromoteCharacterDetailRoot", "PromoteCharacterRootBase", "PromoteCharacterSelectRoot", "PromoteCharacterAwakeInfoPopup", "PromoteCharacterDetailPopup", "PromoteCharacterDetailSubRoot", "PromoteCharacterEquipmentSelectPopup", "PromoteCharacterEquipmentSelectSubRoot", "PromoteCharacterExceedLimitCompletePopup", "PromoteCharacterExceedLimitMaterialSelectSubRoot", "PromoteCharacterFortifyCompletePopup", "PromoteCharacterFortifyMaterialSelectSubRoot", "PromoteCharacterLoadMapInfoPopup", "PromoteCharacterMaterialItemDetailPopup", "PromoteCharacterMaterialSelectSubRoot", "PromoteCharacterSelectSubRoot", "PromoteCharacterSellCompletePopup", "PromoteCharacterSellConfirmPopup", "PromoteCharacterSkillFortifyCompletePopup", "PromoteCharacterSkillFortifyMaterialSelectSubRoot", "PromoteEquipmentSwapPopup", "SkillAbilitySimplePopup", "PromoteCharacterAbilityFortifyConfirmPopup", "PromoteCharacterAwakeConfirmPopup", "PromoteCharacterConfirmPopupBase", "PromoteCharacterExceedLimitConfirmPopup", "PromoteCharacterFortifyConfirmPopup", "PromoteCharacterSkillBulkFortifyConfirmPopup", "PromoteCharacterSkillFortifyConfirmPopup", "PromoteCharacterDetailRootUtils", "PromoteCharacterSelectRootUtils", "AlertPopup", "PromoteCharacterAlertPopup", "PromoteCharacterDetailImageView", "PromoteCharacterDetailTopTabView", "PromoteCharacterMaterialSelectSideView", "PromoteCharacterSelectTabView", "EquipmentAbilitySimpleThumbnail", "PromoteCharacterAwakeDetailThumbnail", "PromoteCharacterAwakeSelectView", "PromoteCharacterAwakeSimpleThumbnail", "PromoteCharacterAwakeConditionViewBase", "PromoteCharacterAwakeMultipleConditionView", "PromoteCharacterAwakeSingleConditionView", "PromoteCharacterAwakePanelMultipleSelectView", "PromoteCharacterAwakePanelSingleSelectView", "PromoteCharacterAwakePanelViewBase", " PromoteCharacterDetailStatusEvolutionView", "PromoteCharacterDiffTargetView", "PromoteCharacterDifferenceView", "PromoteCharacterEvolutionCompletePopup", "PromoteCharacterEvolutionConfirmPopup", "PromoteCharacterLoadMapInfoTabView", "PromoteCharacterLoadMapInfoViewBase", "PromoteCharacterLoadMapInfoAbilityView", "PromoteCharacterLoadMapInfoAwakeView", "PromoteCharacterLoadMapInfoExceedLimitView", "PromoteCharacterLoadMapInfoSkillView", "PromoteCharacterLoadMapInfoAbilityListView", "PromoteCharacterLoadMapInfoAbilityTabView", "PromoteCharacterLoadMapInfoExceedLimitParamView", "PromoteCharacterLoadMapInfoExceedLimitTabView", "PromoteCharacterLoadMapInfoSkillListView", "PromoteCharacterAbilityFortifyThumbnail", "BattleParameterView", "CharacterExceedLimitIconThumbnail", "CharacterExceedLimitProgressView", "CharacterLevelProgressView", "CharacterLevelView", "PromoteCharacterDetailStatusParamViewBase", "PromoteCharacterDetailStatusUpMaterialListView", "PromoteCharacterDetailStatusUpMaterialThumbnail", "PromoteCharacterDetailStatusViewBase", "TotalBattleParameterView", "PromoteCharacterDetailReleaseAppendListView", "PromoteCharacterExceedLimitMaterialThumbnail", "PromoteCharacterDetailFortifyAppendThumbnail", "PromoteCharacterDetailPopupStatusView", "PromoteCharacterDetailStatusAppendListViewBase", "PromoteCharacterDetailStatusAppendThumbnailBase", "PromoteCharacterDetailStatusSkillAbilityScrollThumbnail ", "PromoteCharacterDetailStatusSkillAbilityThumbnail", "PromoteCharacterDetailStatusTabView", "PromoteCharacterDetailStatusAbilityListView", "PromoteCharacterDetailStatusAbilityView", "PromoteCharacterDetailPopupStatusEquipmentListView", "PromoteCharacterDetailStatusEquipmentLargeThumbnail", "PromoteCharacterDetailStatusEquipmentListView", "PromoteCharacterDetailStatusEquipmentThumbnail", "PromoteCharacterDetailStatusView", " PromoteCharacterDetailStatusExceedLimitView", "CharacterExceedLimitCharacterMaterialView", "CharacterExceedLimitItemMaterialView", "CharacterExceedLimitMaterialTabView", "CharacterExceedLimitMaterialViewBase", "PromoteCharacterDetailStatusFortifyLevelView", "PromoteCharacterDetailStatusFortifyMaterialListView", "PromoteCharacterDetailStatusFortifyMaterialTabView", "PromoteCharacterDetailStatusFortifyView", "PromoteCharacterDetailStatusSkillListView", "PromoteCharacterDetailStatusSkillMaterialListView", "PromoteCharacterDetailStatusSkillView", "PromoteCharacterBringSelectListView", "PromoteCharacterEquipmentSelectListView", "PromoteCharacterExceedLimitMaterialSelectListView", "PromoteCharacterFortifyMaterialSelectListView", "PromoteCharacterProtectSelectListView", "PromoteCharacterSelectListViewBase", "PromoteCharacterSellSelectListView", "PromoteCharacterSkillFortifyMaterialSelectListView", "PromoteCharacterTargetSelectListView", "PromoteCharacterBringSelectSideView", "PromoteCharacterEquipmentSelectSideView", "PromoteCharacterExceedLimitMaterialSelectSideView", "PromoteCharacterFortifyMaterialSelectSideView", "PromoteCharacterSellSelectSideView", "PromoteCharacterSkillFortifyMaterialSelectSideView", "PromoteCharacterTargetSelectSideView", "MaterialCharacterInfoView", "PromoteCharacterExceedLimitMaterialSelectSideListView", "PromoteCharacterSimpleAppendListView", "PromoteCharacterSimpleAppendThumbnail", "PromoteCharacterSimpleDetailAppendThumbnail", "SimpleAppendThumbnailBase", "PromoteCharacterSelectPopupTabView", "PvPViewSetting", "PvPRoot", "PvPBattleStartConfirmSubRoot", "PvPDeckSelectSubRoot", "PvPTopSubRoot", "PvPRootUtils", "PvPBattlePlayerDetailView", "PvPPlayerStatusView", "PvPTopTabView", "PvPBattlePlayerListView", "PvPClassListView", "PvPListViewBase", "PvPClassThumbnail", "PvPBattlePlayerThumbnail", "PvPPlayerThumbnail", "PvPPlayerThumbnailBase", "PvPRankingPlayerThumbnail", "QuestViewSetting", "QuestRoot", "QuestRootBase", "BattleStartConfirmSubRoot", "BattleStartConfirmSubRootBase", "QuestAreaStageSelectSubRoot", "QuestDropInfoPopup", "QuestEnemyInfoPopup", "QuestEventSelectSubRoot", "QuestTopSubRoot", "QuestWorldSelectSubRoot", "QuestRootUtils", "AreaThumbnailView", "AutoDetailPopup", "AutoDisplayWindow", "AutoEndPopup", "AutoStopDropItemListView", "AutoStopPopup", "BulkSkipDetailPopup", "QuestBoostEventListView", "QuestBoostUnitPopup", "QuestEventBannerThumbnail", "QuestEventListView", "QuestForceSolidEquipmentCountOverPopup", "QuestListSwitchView", "QuestNormalExTabView", "QuestNormalExTabViewBase", "QuestSkipCharacterAnimationView", "QuestSkipListThumbnail", "QuestSkipResultPopup", "QuestSkipResultRankUpPopup", "QuestStageThumbnail", "QuestSubMissionPopup", "QuestWorldScenarioTabView", "RankUpPopupBase", "SkipDetailPopup", "SpineMinifySettingCautionPopup", "TrialStackDamageResultPopup", "WorldPageScrollView", "WorldThumbnailView", "QuestListViewBase", "QuestAreaAttributeListView", "QuestAreaListViewBase", "QuestAreaNormalListView", "QuestAreaWeekListView", "QuestStageAttributeListView", "QuestStageEventListView", "QuestStageListViewBase", "QuestStageNormalListView", "QuestStageWeekListView", "QuestionnaireViewSetting", "QuestionnaireRoot", "QuestionnaireInputConfirmPopup", "QuestionnaireSubRoot", "QuestionnaireRootUtils", "QuestionnaireAnswerButtonThumbnail", "QuestionnaireInputThumbnail", "QuestionnaireListView", "QuestionnaireRadioButton", "QuestionnaireTabButton", "QuestionnaireTabView", "QuestionnaireTitleThumbnail", "RaceTopViewSetting", "RaceAllTrapControllerBase", "RaceSingleTrapControllerBase", "RaceTrapCliffController", "RaceTrapControllerBase", "RaceTrapFireballController", "RaceTrapLakeController", "RaceTrapRockController", "RaceEventCommentaryEndController", "RaceEventCommentarySpurtController", "RaceEventCommentaryStartController", "RaceEventController", "RaceEventExCharactersAppearController", "RaceEventExCharactersOutController", "RaceEventExCharactersRunController", "RaceEventSpecialCharacterAccelerationController", "RaceEventSpecialCharacterAppearController", "RaceEventSpecialCharacterFallController", "RaceCharacterData", "RaceData", "RaceDataUtils", "RaceStageData", "RaceEventManager", "RaceGameManager", "RaceGameManagerBase", "RaceTrapManager", "TrapManagerBase", "RaceGameRoot", "RaceTopRoot", "RaceCharacterPurchaseConfirmPopup", "RaceCharacterStatusInfoPopup", "RacePromoteCharacterFortifyCompletePopup", "RacePromoteCharacterFortifyConfirmPopup", "RacePromoteCharacterPopup", "RaceRewardListPopup", "RaceSdCharacterPurchasePopup", "RaceStageSelectPopup", "RaceStartConfirmPopup", "RaceTopSubRoot", "RaceCharacterSelectThumbnail", "RaceObstacleThumbnail", "RacePromoteMaterialThumbnail", "RacePurchaseSdCharacterSelectThumbnail", "RaceRewardListThumbnail", "RaceStageThumbnail", "RaceAbilityFunctions", "RaceTopRootUtils", "RaceUtils", "RaceCharacterAbilityView", "RaceCharacterSelectView", "RaceCharacterStatusDetailView", "RaceCharacterStatusView", "RaceCharacterStatusViewBase", "RaceGameCommentaryView", "RaceGameHeaderView", "RaceGameResultView", "RacePromoteCharacterStatusView", "RacePromoteMaterialListView", "RacePromoteMaterialSelectTabView", "RaceStageListView", "RaceStatusView", "RaceTopBGView", "RaidViewSetting", "RaidRoot", "RaidBattleSelectSubRoot", "RaidBattleStartConfirmSubRoot", "RaidQuestSelectSubRoot", "RaidResultPopup", "RaidSendRescueConfirmPopup", "RaidTopSubRoot", "RaidBattleDetailConfirmPopup", "RaidBattleDetailPopupBase", "RaidResultWinPopup", "RaidRootUtils", "RaidBattleAppearView", "RaidBattleSelectTabView", "RaidQuestListView", "RaidQuestStageThumbnail", "RaidQuestStoryThumbnail", "RaidQuestThumbnailBase", "RaidRankingPlayerThumbnail", "EntryRaidBattleListView", "FinishedRaidBattleListView", "PublicRaidBattleListView", "RaidBattleListViewBase", "RaidBattleThumbnail", "RaidGachaResultViewSetting", "RaidGachaViewSetting", "RaidGachaResultRoot", "RaidGachaRoot", "RaidGachaRootBase", "RaidGachaDescriptionPopup", "RaidGachaLineupPopup", "RaidGachaPlayCountConfirmPopup", "RaidGachaResetConfirmPopup", "RaidGachaResultSubRoot", "RaidGachaTopSubRoot", "RaidGachaResultRootUtils", "RaidGachaRootUtils", "BoxPlayWaitView", "RaidGachaLineupRewardHeaderThumbnail", "RaidGachaLineupRewardThumbnail", "RaidGachaLineupTabButton", "RaidGachaLineupTabView", "RaidGachaLineupView", "RaidGachaResultListView", "RoomCharacterUIConst", "RoomCharacterViewSetting", "RoomConst", "RoomViewSetting", "RoomCharacterRoot", "RoomRoot", "RoomRootBase", "PlayAnimationPopup", "RoomCardDetailSubRoot", "RoomCardDetailVoicePlayPopup", "RoomCardEpisodeSubRoot", "RoomCharacterSkinSelectSubRoot", "RoomCharacterSubRoot", "RoomCollectFurnitureListPopup", "RoomFurnitureBuyConfirmPopup", "RoomFurnitureEpisodeSubRoot", "RoomFurnitureReleaseConfirmPopup", "RoomFurnitureSelectConfirmPopup", "RoomFurnitureSelectPopup", "RoomFurnitureSelectSubRoot", "RoomHowToGetFurniturePopup", "RoomPictureBookDetailContentsConfirmPopup", "RoomReleaseFurnitureEpisodePopup", "RoomTopSubRoot", "RoomSlideSubRootBase", "RoomCharacterRootUtils", "RoomRootUtils", "RoomCharacterCardThumbnail", "RoomCharacterContentSimpleThumbnail", "RoomCharacterContentThumbnail", "RoomCharacterGroupThumbnail", "RoomEpisodeContentsThumbnail", "RoomEpisodeThumbnail", "RoomHowToGetFurnitureThumbnail", "RoomCardDetailContentThumbnail", "RoomCardDetailContentsListView", "RoomCardDetailFriendshipPresentThumbnail", "RoomCardDetailFriendshipPresentsListView", "RoomCardDetailFriendshipView", "RoomCardDetailImageView", "RoomCardDetailTopTabView", "RoomCardDetailVoicePlayListView", "RoomCardDetailVoicePlayTabView", "RoomCardDetailVoicePlayThumbnail", "RoomCardDetailWholeView", "RoomAlterCardEpisodeListView", "RoomCardEpisodeListView", "RoomCardEpisodeListViewBase", "RoomCharacterFurnitureObjectView", "RoomCharacterUICollectThumbnail", "RoomCharacterUICollectView", "RoomCharacterUIStandView", "RoomCharacterUIView", "RoomWholeCharacterView", "RoomWholeFurnitureView", "RoomFurnitureEpisodeListView", "RoomFurnitureDetailCharacterListView", "RoomFurnitureDetailSelectWindow", "RoomFurnitureDetailShopWindow", "RoomFurnitureDetailWindowBase", "RoomFurnitureListView", "RoomFurnitureReleaseCharacterListView", "RoomFurnitureTabView", "RoomFurnitureThumbnail", "FriendshipItemThumbnail", "RoomTopCharacterGroupListView", "RoomTopSelectTabView", "RoomCardDetailVoicePlayWindowView", "ShopViewSetting", "ShopRoot", "ShopBoxExpansionConfirmPopup", "ShopBoxExpansionPopup", "ShopBoxExpansionPurchaseConfirmPopup", "ShopDmmPurchaseConfirmPopup", "ShopItemListDetailPopup", "ShopItemListDetailPopupBase", "ShopLoginPackPrecautionsPopup", "ShopOrderPackConfirmPopup", "ShopOrderPackItemListDetailPopup", "ShopOrderPackSelectPopup", "ShopPurchaseCompletePopup", "ShopPurchaseConfirmPopup", "ShopSelectSubRoot", "ShopSpecifiedCommercePopup", "SpotShopAppealPopup", "ShopRootUtils", "ShopDmmItemDetailIconThumbnail", "ShopDmmItemDetailListTab", "ShopDmmItemDetailListView", "ShopItemLargeThumbnail", "ShopItemThumbnail", "ShopItemWideThumbnail", "ShopPurchaseItemThumbnail", "ShopSelectTabView", "ShopSideBannerThumbnail", "ShopCampaignItemListView", "ShopExpansionItemListView", "ShopGemItemListView", "ShopItemListViewBase", "ShopNormalItemListView", "ShopSetItemListView", "ShopSpotArrivalListView", "ShopStepItemListItemGroup", "ShopStepItemListView", "ShopTrialItemListView", "SoundConst", "CommandSpecialRoomEvent", "CommandSpecialRoomEventOff", "CommandSpecialRoomMessage", "SpecialRoomCommandTypeList", "SpecialRoomRoot", "SpecialRoomSubRoot", "SpecialRoomEventUtils", "SpecialRoomUtils", "SpecialRoomTapEvent", "SpecialRoomUIStandView", "SpecialRoomUIView", "SpecialRoomWholeCharacterView", "SpecialRoomWholeFrontView", "SpecialRoomWholeView", "SpecialRoomEventSceneView", "SpecialRoomListPopup", "StoryViewSetting", "StoryRoot", "StoryPlayConfirmPopup", "StoryReleaseConditionPopup", "StoryReleaseEventConditionPopup", "StorySubRoot", "StoryRootUtils", "StoryEventThumbnail", "StoryListSwitchView", "StoryTextImageThumbnail", "StoryTextThumbnail", "StoryThumbnailBase", "StoryAreaListView", "StoryCategoryListView", "StoryEventGroupListView", "StoryGroupListViewBase", "StoryListViewBase", "StoryMemorialEventOtherGroupListView", "StoryOtherGroupListView", "StoryWorldListView", "StoryPlayEventListView", "StoryPlayGachaListView", "StoryPlayListViewBase", "StoryPlayStageListView", "StoryPlayTutorialListView", "TitleAnimation", "TitleRoot", "QualitySettingPopup", "TowerConst", "TowerViewSetting", "TowerRoot", "TowerBattleStartConfirmSubRoot", "TowerDeckSelectSubRoot", "TowerRewardInfoPopup", "TowerRewardReceivePopup", "TowerStageSelectSubRoot", "TowerStartingConfirmPopup", "TowerTopSubRoot", "TowerRootUtils", "TowerAreaSelectView", "TowerAreaThumbnail", "TowerAutoDisplayOutgameWindow", "TowerAutoDisplayWindow", "TowerBGView", "TowerChestWholeView", "TowerDeckThumbnailView", "TowerFloorListView", "TowerItemWideThumbnail", "TowerStageCharacterView", "TowerStageCursorView", "TowerStageFocusView", "TowerStageListView", "TowerStageSimpleView", "TowerStageThumbnail", "TowerStepThumbnail", "TowerStepThumbnailBase", "VoteResultViewSetting", "VoteResultRoot", "VoteResultRootUtils", "VoteUtils", "VoteResultMovieSubRoot", "WarehouseConst", "WarehouseViewSetting", "WarehouseRoot", "FurnitureStoryPopup", "SellAlertPopup", "WarehouseItemSellConfirmPopup", "WarehouseItemSellPopup", "WarehouseMemorialExchangeConfirmPopup", "WarehouseMemorialSelectDetailPopup", "WarehouseQuestSearchPopup", "WarehouseSelectSubRoot", "WarehouseSelectTicketCompletePopup", "WarehouseSelectTicketConfirmPopup", "WarehouseSelectTicketPopup", "WarehouseStorageSellCompletePopup", "WarehouseStorageSellConfirmPopup", "WarehouseUniqueSelectTicketPopup", "WarehouseRootUtils", "WarehouseItemDropStageListView", "WarehouseItemDropStageThumbnail", "WarehouseSelectTabView", "WarehouseCharacterStorageListView", "WarehouseConsumeItemListView", "WarehouseEquipmentListView", "WarehouseEquipmentStorageListView", "WarehouseGiftItemListView", "WarehouseItemListViewBase", "WarehouseListViewBase", "WarehouseMaterialStorageListView", "WarehouseOtherItemListView", "WarehouseSelectCharacterStorageSideView", "WarehouseSelectEquipmentSideView", "WarehouseSelectEquipmentStorageSideView", "WarehouseSelectItemSideView", "WarehouseSelectMaterialStorageSideView", "WarehouseSelectSideViewBase", "WeekViewSetting", "WeekRoot", "WeekTopSubRoot", "WeekRootUtils", "AreaWeekThumbnailView", "QuestFreeUnlockPopup", "QuestItemUnlockPopup", "ApplicationServiceManager", "BoostApis", "BoostService", "CabinApis", "CabinService", "CampaignApis", "CampaignService", "CharacterApis", "CharacterLinkApis", "CharacterService", "ComebackAPIs", "ComebackService", "DebugAPIs", "DebugService", "DeckApis", "DeckService", "EquipmentApis", "EquipmentService", "SolidEquipmentApis", "SolidEquipmentService", "EventApis", "EventService", "GachaApis", "GachaService", "ItemApis", "ItemService", "LinearMissionApis", "LinearMissionService", "LoginBonusApis", "LoginBonusService", "LoginPackApis", "LoginPackService", "LotteryApis", "LotteryService", "MemorialApis", "MemorialService", "MinigameApis", "MinigameService", "MissionApis", "MissionService", "MyPageApis", "MyPageService", "NoticeApis", "NoticeService", "PictureBookService", "PicturebookApis", "PresentApis", "PresentService", "PvPApis", "PvPService", "PracticeService", "QuestApis", "QuestService", "QuestionnaireApis", "QuestionnaireService", "RaceApis", "RaceService", "RaidApis", "RaidService", "RoomApis", "RoomService", "SerialCodeApis", "SerialCodeService", "ShopApis", "ShopService", "SoundApis", "StoryApis", "StoryService", "TowerApis", "TowerService", "TutorialApis", "TutorialService", "UserApis", "UserService", "VersionApis", "VersionService", "WarehouseApis", "WarehouseService", "LoadProgressCharacterView", "LoadProgressIllustrationView", "LoadProgressTipsView", "LoadingCharacterView", "LoadingIllustrationView", "LoadingTipsView", "Singleton", "SoundManager", "AsyncFileLoader", "DownManifestManager", "FileLoader", "FileLoaderConsts", "FileLoaderManager", "GenerateMd5", "MemoryManager", "ResLeakChecker", "ResLoader", "WrapAsyncFileLoad", "DebugRoot", "ResourceCheckRoot", "spineImportTest" ]);
+}, {}, [ "Command", "CommandAnimation", "CommandBg", "CommandBgOff", "CommandCharacter", "CommandCharacterOff", "CommandClickWait", "CommandElseIf", "CommandEndIf", "CommandEndWait", "CommandFadeInBlack", "CommandFadeInWhite", "CommandFadeOutBlack", "CommandFadeOutWhite", "CommandFlash", "CommandIf", "CommandImageConfig", "CommandMask", "CommandMessage", "CommandName", "CommandPlayBgm", "CommandPlayMovie", "CommandPlayMovieOff", "CommandPlaySe", "CommandPlayVoice", "CommandSelect", "CommandShake", "CommandSkip", "CommandSlideInBlack", "CommandSlideOutBlack", "CommandSpine", "CommandSpineOff", "CommandSprite", "CommandSpriteAtlas", "CommandSpriteOff", "CommandStopBgm", "CommandStopSe", "CommandStopVoice", "CommandVal", "CommandWait", "CommandWindowUI", "AdvCommandTypeList", "AdvCommandTypeResourceList", "AdvConstants", "AdvData", "AdvRichText", "AdvText", "AdvManager", "AdvRoot", "AdvSubRootBase", "TemplateAdvSubRoot", "AdvSingleton", "AdvSoundManager", "AdvCommonButton", "AdvCommonScrollView", "AdvGameRootBase", "AdvPopupBase", "AdvSoundSettingView", "AdvTimeUtils", "AdvWindowBase", "AdvGameConst", "AdvLocalDataConst", "AdvSceneConst", "AdvSingletonConst", "AdvStaticResourceConst", "AdvUtils", "MessageView", "AdvLogMessageThumbnail", "AdvSelectThumbnail", "AdvConfigPopup", "AdvLogPopup", "use_v2.1.x_cc.Action", "Game", "CommandRoomBg", "CommandTutorial", "AdvCustomConstants", "CustomCommandTypeList", "CustomCommandTypeResourceList", "ExtensionAdvRoot", "AdvSubRoot", "ExtensionAdvUtils", "D1AdvLogMessageThumbnail", "D1AdvSelectThumbnail", "D1AdvConfigPopup", "D1AdvLogPopup", "D1MessageView", "AnimationEventComponent", "AnimationUtils", "BlinkLabelView", "CircleRollView", "CommonCharacterDetailPopup", "CommonCountView", "CommonInnerScrollView", "CommonPageView", "CommonPopup", "CommonRichText", "CommonScrollLabel", "CommonScrollRichText", "CommonScrollTextBase", "CommonScrollView", "CommonSliderView", "CommonTextBase", "CommonUtils", "CommonWholeView", "CommonWindow", "DevelopmentUtils", "ErrorCode", "GameRootBase", "HotUpdate", "ListPageView", "LoopRollView", "NoticeViewBase", "OutGameRootBase", "PageButton", "PageButtonOldView", "PageButtonView", "PageViewBase", "PopupBase", "PopupUtils", "ReleasableStoriesPopup", "ResourceUtils", "RollView", "SelectTicketPopup", "SimpleMessagePopup", "SortButton", "SoundSettingView", "TabViewBase", "TimeUtils", "ToggleButton", "WindowBase", "ApiConstants", "CharacterConst", "DeckConst", "EnvironmentConst", "EquipmentConst", "GachaAnimationConst", "GameConst", "ItemConst", "LocalDataConst", "MemorialConst", "QuestConst", "QuestionnaireConst", "RaceConst", "RaidConst", "ResourceConst", "SceneConst", "SingletonConst", "StaticResourceConst", "StoryConst", "UserPrefConst", "CharacterFilterConst", "CharacterGroupFilterConst", "EquipmentFilterConst", "MemorialFilterConst", "PictureBookDetailFilterConst", "StoryFilterConst", "MasterDataApi", "MasterDataConstants", "MasterDataLoadKeys", "CharacterSortConst", "DeckSortConst", "EquipmentSortConst", "MemorialSortConst", "PictureBookDetailSortConst", "UserDataApi", "UserDataConstants", "UserDataLoadSettings", "UserDataMapConstants", "AtlasNestUtils", "AtlasNestView", "AutoSelectConfirmPopup", "BPProgressView", "BackButton", "CharacterResourceUtils", "CharacterStandView", "LinearMissionProgressView", "LinearMissionRewardSelectPopup", "ListViewBase", "MatrixView", "MileageMisiionProgressView", "MovieController", "NoticeBadgeCheckUtils", "SDCharacterViewBase", "SerifBalloon", "SimpleNoticeWithClearGaugeView", "SimpleNoticeWithClearStampView", "SimpleView", "TabButton", "TapEffectManager", "UIHeader", "UIHomeButton", "UIRankButton", "UISide", "UseCountSelectView", "VariableTabViewBase", "ViewUtils", "LoadProgressView", "LoadSimpleView", "MatrixConfig", "MatrixMultipleSelectCountUpDisplayAlreadySelectPageView", "MatrixMultipleSelectCountUpPageView", "MatrixMultipleSelectCountUpPageViewBase", "MatrixMultipleSelectDisplayAlreadySelectPageView", "MatrixMultipleSelectPageView", "MatrixMultipleSelectPageViewBase", "MatrixPageViewBase", "MatrixSingleSelectPageView", "ApRecoveryPopup", "BpRecoveryPopup", "CharacterBaseSortFilterPopup", "FilterPopup", "HowToPlayPopup", "ItemListPopup", "MemorialBaseSortFilterPopup", "MenuPopup", "ModelDetailPopup", "NewsPopup", "PaymentWaitPopup", "QuestCountRecoveryPopup", "QuestEquipmentDetailpopup", "RecommendedMaterialSelectPopup", "ResultRibbonPopup", "SerialCodeInputPopup", "SerialCodePopup", "SerialCodeShowPopup", "SimplePopup", "SortFilterPopup", "SortFilterTabView", "StoryEventSortFilterPopup", "ThumbnailTextPopup", "ItemSourceConst", "ItemSourceListPopup", "ItemSourceListView", "ItemSourceThumbnail", "ItemSourceUtils", "AllResourceDownloadConfirmPopup", "MenuSettingConfigView", "MenuSettingPopup", "MenuSettingQualityView", "MenuSettingTabView", "MenuSettingViewBase", "ItemNoticeWindow", "SimplePrefabArrowView", "SimplePrefabViewBase", "CharacterMatrixThumbnail", "DeckMatrixThumbnail", "EnemyMatrixThumbnail", "EquipmentMatrixThumbnail", "EventLogoThumbnail", "ItemMatrixThumbnail", "ItemWideThumbnail", "LoginBonusMatrixThumbnail", "MatrixThumbnail", "MatrixThumbnailBase", "MatrixThumbnailUtils", "MemorialMatrixThumbnail", "MemorialSquareMatrixThumbnail", "PresentMemorialMatrixThumbnail", "QuestSkipResultDropItemThumbnail", "ResultMatrixThumbnail", "SimpleTextThumbnail", "SimpleThumbnail", "SpecialRoomMatrixThumbnail", "TwoLineTextThumbnail", "UIHeaderCurrencyThumbnail", "WarehouseMaterialMatrixThumbnail", "UnlockEffectUtils", "AuthApis", "AuthService", "OAuth", "CommonNumber", "ResourceManager", "CommonButton", "MasterDatabase", "CommonNative", "DmmAndroidJsToJava", "Http", "HttpStatus", "NetworkReachability", "NetworkUtils", "RESTClient", "PaymentApis", "PaymentManager", "PaymentService", "BaseService", "ServiceManager", "Async", "Environment", "ErrorManager", "EventManager", "FixedTimeScheduler", "NoticeManager", "TextApis", "TextManager", "BattleData", "BattleConstants", "EnumTypes", "ShaderController", "shaderCode_GaussBlurs", "ActionController", "BaseGameManager", "EquipmentController", "SetTestBattleManager", "SkillController", "ArenaGameManager", "QuestGameManager", "RaidGameManager", "TowerGameManager", "TutorialGameManager", "ArenaPlayerUnit", "BattleAbility", "BattleAction", "BattleBossUnit", "BattleChara", "BattleDeckUnit", "BattleEquipment", "BattleMemorial", "BattleMonsterModel", "BattleMonsterUnit", "BattleNormalAttack", "BattlePlayerDoubleUnit", "BattlePlayerUnit", "BattleQuest", "BattleSkill", "BattleUnit", "Buff", "BuffMapper", "EnemyAbilityConditionModel", "GameLoop", "RaidBattleBossUnit", "TowerBattleBossUnit", "TowerBattleMonsterUnit", "TowerBattlePlayerDoubleUnit", "TowerBattlePlayerUnit", "AdjustHateWeightFromEnemy", "AllCounter", "AtkChange", "AtkChangeByBuffCount", "AtkChangeByElement", "AtkChangeForEquipment", "AtkChangeStockabel", "AutoPlusSkillRate", "Confuse", "CriticalChanceUp", "DamageChangeByElement", "DarknessOnAll", "DarknessOnNormalAttk", "DeadlyPoison", "DeathSentence", "DefChange", "DefChangeByBuffCount", "DefChangeForEquipment", "DefChangeStockable", "Erosion", "HpChange", "HpChangeForEquipment", "HpChangeStockable", "ImmuneBadCondition", "LowHpAtkChange", "LowHpDefChange", "NormalAttackCounter", "NormalAttackEvasion", "NormalAttackHpDrain", "Paralysis", "PlusCastBadConditionChance", "PlusSkillRate", "PlusUnisonAttackChance", "PlusUnisonAttackPower", "Poison", "PreventBadCondition", "RandomAttack", "RecoveryLimitUp", "RecoveryPowerUp", "Regeneration", "SealPlusSkillRate", "SkillDamageUp", "Sleep", "Stun", "BattlePlayerUnitByJson", "ArenaRankUpPopup", "ArenaResultSubRoot", "BattlePausePopup", "BattleResultSubRoot", "PvPStartAnimSubRoot", "RaidResultSubRoot", "ResultRankUpPopup", "TowerResultSubRoot", "GameEffectQueue", "BattleDebugLogManager", "SetTestBattleBtnOBJ", "AbilityController", "BattleBossFunction", "BattleFunction", "BattleResourceFunction", "BattleResult", "CommonFunction", "TriggerConditionCheckController", "TriggerConditionFunction", "BattleDataLoader", "BattleEffectThumbnail", "BattleEventController", "BattleInfoDeckUnit", "BattleLoadRoot", "BattleSkillAbilityThumbnail", "BattleThumbnail", "BuffEffectView", "CameraController", "EffectEnd", "SpineEventInterpreter", "TrialDamageShow", "skillShow", "unisonShow", "PvPStartAnimGameRoot", "PvPStartAnimPlayerInfoView", "buffNumberShow", "damageShow", "healShow", "ArenaPoolManager", "PoolManager", "ArenaResultRankGaugeView", "BossEventPointResultView", "QuestResultExpGaugeView", "RaidResultDamageView", "RaidResultExpGaugeView", "ResultCharacterExpView", "ResultDropItemWindow", "ResultEventPointWindow", "ResultPlayerRankView", "ResultSubMissionDetailPopup", "ResultSubMissionStarView", "SubMissionThumbnailView", "ArenaGameRoot", "GameRoot", "QuestGameRoot", "AbilityCutinMessageView", "AbilityCutinView", "ArenaUIManager", "ArmorBreakAnimation", "ArmoredAnimation", "BattleUIManager", "BeatCountIcon", "RageBorderIcon", "RaidBattleUIManager", "SkillCutinMessageView", "SkillCutinView", "UnisonCutinView", "BattlePauseHelpView", "BattlePauseInfoEnemyView", "BattlePauseInfoPlayerView", "BattlePauseInfoViewBase", "BattlePauseSettingView", "BattlePauseTabView", "BattlePauseViewBase", "BuffHelpThumbnail", "BaseUnitCtrl", "BossUnitCtrl", "MonsterAvatarCtrl", "MonsterUnitCtrl", "PlayerUnitCtrl", "PvPEnemyUnitCtrl", "BattleSessionModel", "BoostModel", "CharacterLinkUnitModel", "CharacterModel", "ComebackModel", "DeckModel", "EquipmentModel", "FurnitureModel", "ItemModel", "LinearMissionModel", "LotteryModel", "MemorialDeckModel", "MemorialModel", "MissionModel", "OrderPackModel", "PictureBookBaseModel", "PictureBookDetailModel", "PrefModel", "PvPModel", "QuestModel", "RaceCharacterModel", "RaceSessionModel", "RaidModel", "RoomFurnitureModel", "RoomModel", "SolidEquipmentModel", "SoundModel", "StoryModel", "TowerSessionModel", "UserCharacterAbilityEffectModel", "UserCharacterAbilityGroupModel", "UserCharacterAbilityMainModel", "UserCharacterSkillEffectModel", "UserCharacterSkillMainModel", "UserModel", "WarehouseCharacterModel", "WarehouseEquipmentModel", "WarehouseMaterialModel", "PvPCharacterModel", "PvPDeckModel", "PvPEquipmentModel", "PvPPictureBookDetailModel", "PvPSolidEquipmentModel", "ExCharacterAbilityEffectModel", "ExCharacterAbilityGroupModel", "ExCharacterAbilityMainModel", "ExCharacterAwakeConditionModel", "ExCharacterAwakeEffectModel", "ExCharacterAwakeGroupModel", "ExCharacterAwakeMainModel", "ExCharacterAwakeMaterialModel", "ExCharacterGroupModel", "ExCharacterMainModel", "ExCharacterSkillMainModel", "ExEquipmentMainModel", "ExEventFriendshipCharacterModel", "ExEventFriendshipModel", "ExEventMainModel", "ExEventMemorialModel", "ExExchangeItemDetailModel", "ExExchangeMainModel", "ExExchangePointDetailModel", "ExItemMainModel", "ExLinearMissionDetailModel", "ExLinearMissionMainModel", "ExLinearMissionRewardModel", "ExMemorialAbilityGroupModel", "ExMemorialAbilityMainModel", "ExMemorialMainModel", "ExMissionMainModel", "ExShopDetailModel", "ExSoundMainModel", "ExUniqueMissionModel", "ExMyPageNewsModel", "ExMyPagePopupModel", "ExCharacterEvolutionEffectModel", "ExCharacterEvolutionMainModel", "ExCharacterEvolutionMaterialModel", "ExQuestAreaModel", "ExQuestScenarioModel", "ExQuestStageConditionModel", "ExQuestStageModel", "ExQuestStageSeasonModel", "ExQuestWorldModel", "ExRaceAbilityEffectGroupModel", "ExRaceAbilityEffectModel", "ExRaceAbilityGroupModel", "ExRaceAbilityMainModel", "ExRaceAreaModel", "ExRaceCharacterMainModel", "ExRaceCommentaryTextModel", "ExRaceMainModel", "ExRaceObstacleModel", "ExRaceRewardModel", "ExRaceStageModel", "ExRaceTextModel", "ExFurnitureMainModel", "ExStoryCabinModel", "ExStoryCategoryModel", "ExStoryDetailModelBase", "ExStoryEventModel", "ExStoryGachaModel", "ExStoryGroupModel", "ExStoryMemorialEventOtherModel", "ExStoryMemorialModel", "ExStoryOtherModel", "ExStoryPictureBookModel", "ExStoryQuestModel", "ExStoryRoomModel", "ExStoryTutorialModel", "ExStoryVoiceModel", "BoostGroupModel", "BossEventPointModel", "BossGaugeColorModel", "BossRageAnimationModel", "BossStageModel", "CabinMissionDetailModel", "CabinMissionMainModel", "CabinMissionModel", "CabinMissionRewardModel", "CampaignModel", "CharacterAbilityConditionModel", "CharacterAbilityEffectModel", "CharacterAbilityGroupModel", "CharacterAbilityMainModel", "CharacterAbilityUpModel", "CharacterAlterModel", "CharacterAwakeConditionModel", "CharacterAwakeEffectModel", "CharacterAwakeGroupModel", "CharacterAwakeMainModel", "CharacterAwakeMaterialModel", "CharacterContentsModel", "CharacterEvolutionEffectModel", "CharacterEvolutionMainModel", "CharacterEvolutionMaterialModel", "CharacterExceedLimitModel", "CharacterFavoriteModel", "CharacterGroupModel", "CharacterGroupSeasonModel", "CharacterLevelModel", "CharacterLinkModel", "CharacterMainModel", "CharacterMaterialModel", "CharacterNormalAttackModel", "CharacterSellBonusModel", "CharacterSkillEffectModel", "CharacterSkillMainModel", "CharacterSkillUpModel", "CharacterSkillUpRateModel", "CharacterStandPositionModel", "CharacterTextModel", "ComebackGachaModel", "ComebackGroupModel", "ComebackLoginBonusModel", "ComebackMainModel", "ComebackNewsModel", "ComebackPopupModel", "ComebackShopModel", "DmmModel", "EquipmentAbilityConditionModel", "EquipmentEffectModel", "EquipmentExceedLimitItemModel", "EquipmentExceedLimitModel", "EquipmentLevelModel", "EquipmentMainModel", "EquipmentMaterialModel", "EquipmentTimeModel", "ErrorModel", "EventBoostCharacterModel", "EventBoostEffectModel", "EventCharacterModel", "EventDamageRewardModel", "EventFriendshipCharacterModel", "EventFriendshipModel", "EventFriendshipRewardModel", "EventHelpModel", "EventItemModel", "EventMainModel", "EventMemorialModel", "EventPointRewardModel", "EventRewardRarityModel", "EventSeasonModel", "EventStoryLinkModel", "EventSubHelpModel", "ExceedLimitAlternateItemModel", "ExchangeCharacterConditionModel", "ExchangeCouplingVoteGroupModel", "ExchangeCouplingVoteLineupModel", "ExchangeGroupModel", "ExchangeItemDetailModel", "ExchangeMainModel", "ExchangePointDetailModel", "FreeStoryModel", "FurnitureCategoryModel", "FurnitureCollectModel", "FurnitureCostModel", "FurnitureMainModel", "FurnitureStoryModel", "FurnitureTypeModel", "GachaCautionModel", "GachaCharacterConditionModel", "GachaContentsModel", "GachaDiscountModel", "GachaFixGroupModel", "GachaLineupModel", "GachaMainModel", "GachaOddsModel", "GachaPresentGroupModel", "GachaStepModel", "InitCharacterModel", "InitEquipmentModel", "InitItemModel", "ItemApRecoveryGemModel", "ItemCategoryModel", "ItemMainModel", "ItemQuestLockModel", "ItemRecipeModel", "ItemSelectModel", "ItemSellBonusModel", "ItemSetModel", "ItemStoryReleaseModel", "ItemVoteModel", "LinearMissionDetailModel", "LinearMissionMainModel", "LinearMissionRewardModel", "LoadingCharacterModel", "LoadingIllustModel", "LoadingMainModel", "LoadingTipsModel", "LoginBonusModel", "LoginPackMainModel", "LoginPackRewardModel", "LoginRewardModel", "MemorialAbilityConditionModel", "MemorialAbilityEffectModel", "MemorialAbilityGroupModel", "MemorialAbilityMainModel", "MemorialCollaboModel", "MemorialConvertModel", "MemorialExceedLimitModel", "MemorialExchangeDetailModel", "MemorialLevelModel", "MemorialMainModel", "MemorialShopDetailModel", "MemorialStatusModel", "MemorialTextModel", "MinigameCharacterMainModel", "MinigameCharacterTextModel", "MinigameMainModel", "MissionDetailModel", "MissionMainModel", "MissionRewardModel", "MyPageBannerModel", "MyPageEventModel", "MyPageMainModel", "MyPageNewsModel", "MyPagePopupModel", "PanelMissionHelpModel", "PresentMessageModel", "PvPClassModel", "PvPClassRewardModel", "PvPMainModel", "QuestAchieveModel", "QuestAreaModel", "QuestDropModel", "QuestEventPointModel", "QuestIconChangeModel", "QuestIconModel", "QuestRestrictionGroupModel", "QuestRestrictionMainModel", "QuestScenarioModel", "QuestStageConditionModel", "QuestStageModel", "QuestStageSeasonModel", "QuestWorldBgmModel", "QuestWorldModel", "RaceAbilityEffectGroupModel", "RaceAbilityEffectModel", "RaceAbilityGroupModel", "RaceAbilityMainModel", "RaceAreaModel", "RaceCharacterFreeModel", "RaceCharacterMainModel", "RaceCommentaryTextModel", "RaceEffectTargetModel", "RaceEffectTimingModel", "RaceEffectTypeModel", "RaceEffectValueTypeModel", "RaceFortifyModel", "RaceMainModel", "RaceObstacleModel", "RaceRewardModel", "RaceStageModel", "RaceStatusModel", "RaceTextModel", "RaceTopTextModel", "RaidBattleModel", "RaidBattleTypeModel", "RaidRewardGroupModel", "RaidRewardModel", "RoomCharacterFrameModel", "RoomMainModel", "ShopDetailConditionModel", "ShopDetailModel", "ShopEventItemConditionModel", "ShopListGroupModel", "ShopMainModel", "ShopOrderPackModel", "ShopPopupModel", "ShopSideGroupModel", "SoundMainModel", "SpecialRoomActionModel", "SpecialRoomBaseSpineModel", "SpecialRoomConditionalModel", "SpecialRoomMainModel", "SpecialRoomTapPointModel", "SpecialRoomTextModel", "StoryCabinModel", "StoryCategoryModel", "StoryEventModel", "StoryGachaModel", "StoryGroupModel", "StoryMemorialEventOtherModel", "StoryMemorialModel", "StoryOtherModel", "StoryPictureBookModel", "StoryQuestModel", "StoryRoomModel", "StoryTutorialModel", "StoryVoiceModel", "TowerMainModel", "TowerRewardGroupModel", "TowerRewardModel", "TutorialEventModel", "TutorialMainStepModel", "TutorialSkipModel", "TutorialSubStepModel", "UniqueMissionModel", "UserBuffHelpModel", "UserHelpModel", "UserHowToPlayModel", "UserMainModel", "UserProgressModel", "UserBasicInfoModel", "UserBoostModel", "UserCabinMissionModel", "UserCharacterLinkUnitModel", "UserCharacterModel", "UserComebackModel", "UserCouplingVoteSelectModel", "UserDeckModel", "UserEquipmentModel", "UserEventFriendshipItemModel", "UserEventItemModel", "UserExchangeHistoryModel", "UserFurnitureModel", "UserGachaModel", "UserGemModel", "UserItemModel", "UserLinearMissionModel", "UserLoginPackModel", "UserLotteryModel", "UserMemorialDeckModel", "UserMemorialModel", "UserMinigameModel", "UserMissionModel", "UserNoticeModel", "UserOrderPackModel", "UserPictureBookBaseModel", "UserPictureBookDetailModel", "UserPrefModel", "UserPurchaseHistoryModel", "UserPvPModel", "UserQuestModel", "UserRaceCharacterModel", "UserRaceSessionModel", "UserRaidModel", "UserRoomLayoutModel", "UserRoomModel", "UserShopHistoryModel", "UserSolidEquipmentModel", "UserSoundModel", "UserStoryModel", "UserTowerSessionModel", "UserWarehouseCharacterModel", "UserWarehouseEquipmentModel", "UserWarehouseMaterialModel", "CabinUtils", "CampaignUtils", "CharacterAbilityUtils", "CharacterAwakeUtils", "CharacterEquipmentUtils", "CharacterParameterUtils", "CharacterSkillUtils", "CharacterUtils", "DeckAutoUtils", "DeckUtils", "EquipmentAbilityUtils", "EquipmentUtils", "EventPointUtils", "EventUtils", "ExchangeUtils", "FilterUtils", "FurnitureUtils", "GachaUtils", "HistoryUtils", "ItemAutoSellUtils", "ItemConsumeUtils", "ItemUtils", "LinearMissionUtils", "LoadingUtils", "LotteryUtils", "MemorialUtils", "MissionUtils", "NewsUtils", "NoticeUtils", "PictureBookUtils", "PresentUtils", "PvPUtils", "QuestConditionUtils", "QuestUtils", "RaidUtils", "RoomUtils", "ShopUtils", "StoryUtils", "TowerUtils", "UserProgressUtils", "UserUtils", "VipMissionUtils", "WarehouseBringUtils", "WarehouseConvertUtils", "WarehouseUtils", "BootRoot", "DummyLogin", "LocalStartRoot", "LoginRoot", "StartRoot", "AttributeQuestViewSetting", "AttributeQuestRoot", "AttributeQuestTopSubRoot", "AttributeQuestRootUtils", "AreaAttributeQuestThumbnailView", "ResourceDownloadRoot", "RestoreBattleRoot", "ChallengeQuestViewSetting", "ChallengeQuestRoot", "ChallengeQuestSubRoot", "ChallengeQuestUtils", "ChallengeRootUtils", "ChallengeQuestListView", "ChallengeQuestNormalExTabView", "ChallengeQuestStageThumbnail", "DeckViewSetting", "DeckRoot", "DeckRootBase", "DeckCharacterSelectSubRoot", "DeckMemorialSelectSubRoot", "DeckSelectSubRoot", "DeckRootUtils", "AutoDeckEditPopup", "DeckBattleParameterView", "DeckCharacterDetailPopup", "DeckCharacterDetailStatusView", "DeckCharacterSelectSideView", "DeckMemorialSelectSideView", "DeckSwapReleaseCharacterPopup", "DeckSwapSelectCharacterPopup", "DeckTypeSwitchView", "EquipmentAllRemoveConfirmPopup", "PasteDeckPopup", "DeckTabSimpleView", "DeckTabView", "DeckTabViewBase", "DeckWithGaugeTabSimpleView", "DeckUnitListSimpleView", "DeckUnitListView", "DeckUnitListViewBase", "DeckUnitListWithGaugeSimpleView", "CharacterEquipmentListView", "DeckUnitEquipmentListView", "DeckUnitMemorialView", "DeckUnitSimpleThumbnail", "DeckUnitSupportThumbnail", "DeckUnitThumbnail", "DeckUnitThumbnailBase", "DeckUnitWithGaugeSimpleThumbnail", "EquipmentViewSetting", "EquipmentRoot", "EquipmentAlertPopup", "EquipmentBulkFullFortifyCompletePopup", "EquipmentBulkFullFortifyConfirmPopup", "EquipmentBulkFullFortifyMaterialSelectPopup", "EquipmentDetailPopup", "EquipmentExceedLimitCompletePopup", "EquipmentExceedLimitConfirmPopup", "EquipmentExceedLimitItemPopup", "EquipmentFortifyCompletePopup", "EquipmentFortifyConfirmPopup", "EquipmentSelectSubRoot", "EquipmentSellCompletePopup", "EquipmentSellConfirmPopup", "SolidConfirmPopup", "EquipmentRootUtils", "EquipmentCharacterTabView", "EquipmentDescriptionTabView", "EquipmentExceedLimitItemThumbnail", "EquipmentFortifyExceedLimitSettingView", "EquipmentSelectTabView", "EquipmentDetailTabView", "EquipmentDetailDescriptionView", "EquipmentDetailExceedLimitListView", "EquipmentDetailExceedLimitThumbnail", "EquipmentDetailStatusView", "EquipmentDetailViewBase", "EquipmentExceedLimitAbilityThumbnail", "EquipmentExceedLimitConfirmMaterialView", "EquipmentExceedLimitDifferenceView", "EquipmentListViewBase", "EquipmentProtectSelectListView", "EquipmentUseCountThumbnail", "EquipmentListWithSideViewBase", "EquipmentSelectSideViewBase", "EquipmentBringSelectSideView", "EquipmentExceedLimitMaterialSelectSideView", "EquipmentFortifyMaterialSelectSideView", "EquipmentMultipleSelectSideViewBase", "EquipmentSellSelectSideView", "EquipmentExceedLimitItemSelectedView", "EquipmentExceedLimitProgressView", "EquipmentFortifyProgressView", "EquipmentProgressSimpleView", "EquipmentExceedLimitTargetSelectSideView", "EquipmentFortifyTargetSelectSideView", "EquipmentSingleSelectSideViewBase", "EquipmentAbilityListView", "EquipmentSelectSideCharacterStatusView", "EquipmentSelectSideEquipmentAbilityThumbnail", "EquipmentSelectSideEquipmentStatusView", "EquipmentBringSelectListView", "EquipmentExceedLimitMaterialSelectListView", "EquipmentFortifyMaterialSelectListView", "EquipmentMultipleSelectListWithSideViewBase", "EquipmentSellSelectListView", "EquipmentExceedLimitTargetSelectListView", "EquipmentFortifyTargetSelectListView", "EquipmentSingleSelectListWithSideViewBase", "EventQuestConst", "EventQuestViewSetting", "EventRegularQuestViewSetting", "EventSpecialAdventWarQuestViewSetting", "EventQuestRoot", "EventQuestRootBase", "EventRegularQuestRoot", "EventSpecialAdventWarQuestRoot", "EventQuestStageSelectSubRoot", "EventQuestTopSubRoot", "EventQuestTopSubRootBase", "EventRegularQuestEquipmentBattleStartConfirmSubRoot", "EventRegularQuestTopSubRoot", "EventSpecialAdventWarQuestStageSelectSubRoot", "EventSpecialAdventWarQuestTopSubRoot", "EventFriendshipRewardListThumbnail", "EventQuestFrameThumbnailBase", "EventQuestItemFrameThumbnail", "EventQuestPointFrameThumbnail", "EventQuestPointRewardListThumbnail", "BossRageInfoThumbnail", "EventRegularQuestAdventWarStageThumbnail", "EventRegularQuestEquipmentThumbnail", "ScoreAttackEventDamageThumbnail", "TrialMissionThumbnail", "EventQuestRootUtils", "EventRegularQuestRootUtils", "EventSpecialAdventWarQuestRootUtils", "EventFriendshipGaugeView", "EventFriendshipRewardListPopup", "EventFriendshipView", "EventQuestAdventWarTabView", "EventQuestDifficultyUnlockPopup", "EventQuestHowToPlayPopup", "EventQuestNormalExTabView", "EventQuestPointRewardListPopup", "EventQuestStackRewardListPopup", "EventSpecialAdventWarQuestFrameInfoView", "TrialMissionPopup", "BossDetailPopup", "BossEventTopView", "TrialBossDetailPopup", "TrialSkillAbilityThumbnail", "EventRegularQuestAdventWarStageListView", "EventRegularQuestEquipmentAutoDetailPopup", "EventRegularQuestEquipmentItemUnlockPopup", "EventRegularQuestEquipmentListView", "ExchangeConst", "ExchangeViewSetting", "ExchangeRoot", "ExchangeCouplingVoteSelectConfirmPopup", "ExchangeCouplingVoteSelectPopup", "ExchangeCouplingVoteSelectTargetListView", "ExchangeCouplingVoteSelectedListView", "ExchangeCurrencyShortagePopup", "ExchangeItemConfirmPopup", "ExchangeItemEventItemConfirmPopup", "ExchangeItemEventItemPopup", "ExchangeItemListConfirmPopup", "ExchangeItemListDetailPopup", "ExchangeItemListPopup", "ExchangeItemMultipleConfirmPopup", "ExchangeItemShortagePopup", "ExchangeItemSingleConfirmPopup", "ExchangeItemSinglePopup", "ExchangeSubRoot", "CurrencyThumbnail", "ExchangeDetailThumbnailBase", "ExchangeEventDetailThumbnail", "ExchangeGroupTabButton", "ExchangeItemBaseThumbnail", "ExchangeItemDateThumbnail", "ExchangeItemDetailThumbnail", "ExchangeItemThumbnail", "ExchangeItemThumbnailByCouplingVote", "ExchangeItemWideThumbnail", "ExchangeItemWideThumbnailByCouplingVote", "ExchangeTabButton", "PointCurrencyThumbnail", "ExchangeRootUtils", "ExchangeGroupTabView", "ExchangeListSwitchView", "ExchangeItemConsumeByDateListView", "ExchangeListView", "ExchangeListViewBase", "ExchangeListViewByCouplingVote", "ExchangeNeedCurrencyItemHeaderView", "ExchangeNeedCurrencyPointHeaderView", "ExchangeSpendCurrencyItemFooterView", "ExchangeSpendCurrencyPointFooterView", "ExchangeTabView", "FirstLoginViewSetting", "TutorialConst", "FirstLoginAfterRoot", "FirstLoginRoot", "FirstLoginSubRoot", "TutorialHowToPlayPopup", "TutorialSkipPopup", "FirstLoginRootUtils", "TutorialUtils", "GachaCharacterDetailPopup", "GachaMemorialDetailPopup", "GachaPresentListDetailPopup", "GachaPresentListTabView", "GachaPresentSetItemListDetailPopup", "GachaTicketPopup", "GachaTicketThumbnail", "GachaConst", "GachaViewSetting", "GachaRoot", "GachaPlayConfirmPopup", "GachaPrecautionsPopup", "GachaProvisionRatePopup", "GachaStepUpProvisionRatePopup", "GachaStoryConfirmPopup", "GachaTopSubRoot", "GachaTicketPlayConfirmPopup", "GachaProvisionRateUtils", "GachaRootUtils", "GachaCharacterDetailPopupStatusView", "GachaCharacterDetailStatusAbilityListView", "GachaCharacterDetailStatusAppendListViewBase", "GachaCharacterDetailStatusSkillListView", "GachaCharacterDetailStatusTabView", "GachaCharacterSummaryView", "GachaCurrencyItemThumbnail", "GachaCurrencyThumbnail", "GachaMemorialDetailBtnView", "GachaMemorialPieceThumbnail", "GachaNormalLogoView", "GachaNormalRollView", "GachaPlayBtnView", "GachaPlayBtnViewBase", "GachaPrecautionsTabView", "GachaProbablityRollView", "GachaProvisionRateMenuThumbnail", "GachaProvisionRateScrollView", "GachaProvisionRateScrollViewCharacterRateThumbnail", "GachaProvisionRateScrollViewMemorialRateThumbnail", "GachaProvisionRateScrollViewRarityThumbnail", "GachaProvisionRateThumbnail", "GachaRollViewBase", "GachaSideBannerThumbnail", "GachaStepUpPlayBtnView", "GachaStepUpProvisionRateMenuThumbnail", "GachaStepUpRollView", "GachaViewBase", "GachaSelectPickConfirmPopup", "GachaSelectPickPopup", "GachaSelectPickRollView", "GachaSelectPickSelectedListView", "GachaSelectPickTargetListView", "GachaNormalStillView", "GachaStepUpStillView", "GachaStillViewBase", "GachaTicketRollView", "GachaAnimationViewSetting", "GachaAnimationRoot", "GachaAnimationCharacterDetailPopup", "GachaAnimationSubRoot", "GachaRewardReceivePopup", "GachaAnimationRootUtils", "GachaAnimationRollView", "GachaAnimationView", "GachaCardLayoutHorizontalView", "GachaCardThumbnail", "GachaCharacterCardThumbnail", "GachaMemorialCardThumbnail", "GachaPresentItemDetailThumbnail", "GachaResultBtnViewBase", "GachaResultCardView", "GachaResultNormalBtnView", "GachaResultSelectPickBtnView", "GachaResultStepUpBtnView", "GachaResultTicketBtnView", "GachaLoadingRoot", "GalleryConst", "GalleryViewSetting", "GalleryRoot", "GalleryTopSubRoot", "GalleryRootUtils", "GalleryUtils", "GalleryBGView", "GalleryCharacterGroupListView", "GalleryCharacterGroupThumbnail", "GalleryContentsSelectTabView", "GalleryEpisodeSelectListView", "GalleryEpisodeThumbnail", "StoryConfirmPopup", "LoginBonusConst", "LoginBonusViewSetting", "LoginBonusRoot", "LoginBonusSubRoot", "LoginBonusUtils", "LoginBonusNormalExtendView", "LoginBonusNormalRibbon", "LoginBonusNormalView", "LoginBonusNormalViewBase", "LoginBonusReceivedPopup", "LoginBonusSdCharacterView", "LoginBonusSerifView", "LoginBonusSpecialTotalThumbnail", "LoginBonusSpecialView", "LoginBonusVariableNormalSDView", "LoginBonusVariableNormalStandView", "LoginBonusVariableViewBase", "LoginBonusViewBase", "MaintenanceViewSetting", "MaintenanceRoot", "MaintenanceSubRoot", "MaintenanceRootUtils", "CabinViewSetting", "MemorialViewSetting", "CabinRoot", "MemorialRoot", "CabinDiarySubRoot", "MemorialDetailSubRoot", "MemorialTopSubRoot", "CabinDiaryConditionThumbnail", "CabinMemorialThumbnail", "CabinMissionItemThumbnail", "CabinMissionStoryThumbnail", "CabinMissionThumbnail", "CabinMissionThumbnailBase", "CurrencyCountThumbnail", "LevelUpCurrencyCountThumbnail", "MemorialWideThumbnail", "CabinRootUtils", "MemorialRootUtils", "CabinDiaryConditionThumbnailListView", "CabinDiaryMissionView", "LevelUpCounterView", "MemorialCharacterDetailView", "MemorialCharacterExceedLimitConfirmPopup", "MemorialMatrixSelectListView", "MemorialStatusDetailView", "BackgroundController", "BackgroundView", "MinigameConstants", "MinigamePlayData", "MinigameObjectView", "MiniCharacterController", "MiniCharacterData", "MiniCharacterView", "MiniExtraCharacterController", "MiniExtraCharacterView", "TrapController", "TrapView", "TrapFireballController", "TrapFireballView", "TrapGakeController", "TrapIkeController", "TrapIwaController", "TrapIwaView", "MinigameManager", "TrapManager", "MinigameRoot", "MinigameCharacterSelectSubRoot", "MinigameCutinSubRoot", "MinigameResultSubRoot", "MinigameRootUtils", "MissionConst", "MissionViewSetting", "MissionRoot", "MissionResultAllPopup", "MissionResultPopup", "MissionSelectRewardPopup", "MissionTabView", "EmptyContentPanelView", "EmptyContentPanelViewFactory", "MissionRootUtils", "MissionBackButton", "MissionEventHeaderThumbnailView", "MissionSelectRewardThumbnail", "MissionThumbnailView", "MissionDetailEventTopView", "MissionDetailMileageTopView", "MissionDetailNormalTopView", "MissionDetailTabButton", "MissionDetailTopViewBase", "MissionDetailEventTabView", "MissionDetailListView", "MissionDetailMileageGaugeView", "MissionDetailMileageTabView", "MissionDetailTabViewBase", "MissionScrollView", "HomeConst", "HomeViewSetting", "HomeRoot", "ExchangeResetNoticePopup", "LoginPackReceivePopup", "LotteryTicketConfirmPopup", "MinigameSelectPopup", "MyPageDeckCharacterGroupListView", "MyPageDeckCharacterSelectPopup", "MyPageDeckMemorialSelectPopup", "MyPageDeckPopup", "MyPageDeckSpecialRoomListView", "MyPageDeckSpecialRoomSelectPopup", "MyPageDeckSpecialRoomView", "MyPageNewsPopup", "MyPagePopup", "SoundMuseumPopup", "SoundMuseumVolumePopup", "SoundPurchaseConfirmPopup", "PanelMissionPopup", "PanelMissionRewardConfirmPopup", "VipMissionPopup", "HomeRootUtils", "BannerBtnView", "BannerRollView", "BannerView", "EventMemorialOtherStoryView", "MyPageCharacterView", "MyPageDeckMemorialScrollView", "MyPageEventQuestBannerView", "MyPageEventQuestThumbnail", "MyPageMainView", "SoundMuseumButton", "SoundMuseumThumbnail", "SoundPlayerView", "MyPageDeckCharacterView", "MyPageDeckMemorialView", "MyPageNewsMainContentView", "MyPageNewsSideBannerBandView", "MyPageNewsSideBannerThumbnail", "PanelMissionListView", "PanelMissionTabView", "PanelMissionAchievementThumbnail", "PanelMissionTabButton", "PanelMissionThumbnail", "PanelMissionThumbnailBase", "VipMissionProgressInfoThumbnail", "VipMissionProgressView", "VipMissionPurchaseBtnThumbnail", "VipMissionShopItemThumbnail", "NormalQuestViewSetting", "NoramlQuestRoot", "NormalQuestRootUtils", "PresentBoxViewSetting", "PresentConst", "PresentBoxRoot", "MemorialConvertCompletePopup", "PresentBoxSubRoot", "PresentConfirmSimplePopup", "PresentFilterPopup", "PresentItemListDetailPopup", "PresentRandomReceiveCompletePopup", "PresentBoxRootUtils", "MemorialConvertLine", "PresentConfirmSimpleListPopup", "PresentItemDetailThumbnail", "PresentReceiveDetailThumbnail", "PresentScrollView", "PresentThumbnailView", "ProfileViewSetting", "ProfileRoot", "ProfileSubRoot", "UserRenamePopup", "ProfileRootUtils", "ProfileCharacterView", "ProfileView", "PromoteCharacterDetailViewSetting", "PromoteCharacterSelectViewSetting", "PromoteCharacterDetailRoot", "PromoteCharacterRootBase", "PromoteCharacterSelectRoot", "PromoteCharacterAwakeInfoPopup", "PromoteCharacterDetailPopup", "PromoteCharacterDetailSubRoot", "PromoteCharacterEquipmentSelectPopup", "PromoteCharacterEquipmentSelectSubRoot", "PromoteCharacterExceedLimitCompletePopup", "PromoteCharacterExceedLimitMaterialSelectSubRoot", "PromoteCharacterFortifyCompletePopup", "PromoteCharacterFortifyMaterialSelectSubRoot", "PromoteCharacterLoadMapInfoPopup", "PromoteCharacterMaterialItemDetailPopup", "PromoteCharacterMaterialSelectSubRoot", "PromoteCharacterSelectSubRoot", "PromoteCharacterSellCompletePopup", "PromoteCharacterSellConfirmPopup", "PromoteCharacterSkillFortifyCompletePopup", "PromoteCharacterSkillFortifyMaterialSelectSubRoot", "PromoteEquipmentSwapPopup", "SkillAbilitySimplePopup", "PromoteCharacterAbilityFortifyConfirmPopup", "PromoteCharacterAwakeConfirmPopup", "PromoteCharacterConfirmPopupBase", "PromoteCharacterExceedLimitConfirmPopup", "PromoteCharacterFortifyConfirmPopup", "PromoteCharacterSkillBulkFortifyConfirmPopup", "PromoteCharacterSkillFortifyConfirmPopup", "PromoteCharacterDetailRootUtils", "PromoteCharacterSelectRootUtils", "AlertPopup", "PromoteCharacterAlertPopup", "PromoteCharacterDetailImageView", "PromoteCharacterDetailTopTabView", "PromoteCharacterMaterialSelectSideView", "PromoteCharacterSelectTabView", "EquipmentAbilitySimpleThumbnail", "PromoteCharacterAwakeDetailThumbnail", "PromoteCharacterAwakeSelectView", "PromoteCharacterAwakeSimpleThumbnail", "PromoteCharacterAwakeConditionViewBase", "PromoteCharacterAwakeMultipleConditionView", "PromoteCharacterAwakeSingleConditionView", "PromoteCharacterAwakePanelMultipleSelectView", "PromoteCharacterAwakePanelSingleSelectView", "PromoteCharacterAwakePanelViewBase", " PromoteCharacterDetailStatusEvolutionView", "PromoteCharacterDiffTargetView", "PromoteCharacterDifferenceView", "PromoteCharacterEvolutionCompletePopup", "PromoteCharacterEvolutionConfirmPopup", "PromoteCharacterLoadMapInfoTabView", "PromoteCharacterLoadMapInfoViewBase", "PromoteCharacterLoadMapInfoAbilityView", "PromoteCharacterLoadMapInfoAwakeView", "PromoteCharacterLoadMapInfoExceedLimitView", "PromoteCharacterLoadMapInfoSkillView", "PromoteCharacterLoadMapInfoAbilityListView", "PromoteCharacterLoadMapInfoAbilityTabView", "PromoteCharacterLoadMapInfoExceedLimitParamView", "PromoteCharacterLoadMapInfoExceedLimitTabView", "PromoteCharacterLoadMapInfoSkillListView", "PromoteCharacterAbilityFortifyThumbnail", "BattleParameterView", "CharacterExceedLimitIconThumbnail", "CharacterExceedLimitProgressView", "CharacterLevelProgressView", "CharacterLevelView", "PromoteCharacterDetailStatusParamViewBase", "PromoteCharacterDetailStatusUpMaterialListView", "PromoteCharacterDetailStatusUpMaterialThumbnail", "PromoteCharacterDetailStatusViewBase", "TotalBattleParameterView", "PromoteCharacterDetailReleaseAppendListView", "PromoteCharacterExceedLimitMaterialThumbnail", "PromoteCharacterDetailFortifyAppendThumbnail", "PromoteCharacterDetailPopupStatusView", "PromoteCharacterDetailStatusAppendListViewBase", "PromoteCharacterDetailStatusAppendThumbnailBase", "PromoteCharacterDetailStatusSkillAbilityScrollThumbnail ", "PromoteCharacterDetailStatusSkillAbilityThumbnail", "PromoteCharacterDetailStatusTabView", "PromoteCharacterDetailStatusAbilityListView", "PromoteCharacterDetailStatusAbilityView", "PromoteCharacterDetailPopupStatusEquipmentListView", "PromoteCharacterDetailStatusEquipmentLargeThumbnail", "PromoteCharacterDetailStatusEquipmentListView", "PromoteCharacterDetailStatusEquipmentThumbnail", "PromoteCharacterDetailStatusView", " PromoteCharacterDetailStatusExceedLimitView", "CharacterExceedLimitCharacterMaterialView", "CharacterExceedLimitItemMaterialView", "CharacterExceedLimitMaterialTabView", "CharacterExceedLimitMaterialViewBase", "PromoteCharacterDetailStatusFortifyLevelView", "PromoteCharacterDetailStatusFortifyMaterialListView", "PromoteCharacterDetailStatusFortifyMaterialTabView", "PromoteCharacterDetailStatusFortifyView", "PromoteCharacterDetailStatusSkillListView", "PromoteCharacterDetailStatusSkillMaterialListView", "PromoteCharacterDetailStatusSkillView", "PromoteCharacterBringSelectListView", "PromoteCharacterEquipmentSelectListView", "PromoteCharacterExceedLimitMaterialSelectListView", "PromoteCharacterFortifyMaterialSelectListView", "PromoteCharacterProtectSelectListView", "PromoteCharacterSelectListViewBase", "PromoteCharacterSellSelectListView", "PromoteCharacterSkillFortifyMaterialSelectListView", "PromoteCharacterTargetSelectListView", "PromoteCharacterBringSelectSideView", "PromoteCharacterEquipmentSelectSideView", "PromoteCharacterExceedLimitMaterialSelectSideView", "PromoteCharacterFortifyMaterialSelectSideView", "PromoteCharacterSellSelectSideView", "PromoteCharacterSkillFortifyMaterialSelectSideView", "PromoteCharacterTargetSelectSideView", "MaterialCharacterInfoView", "PromoteCharacterExceedLimitMaterialSelectSideListView", "PromoteCharacterSimpleAppendListView", "PromoteCharacterSimpleAppendThumbnail", "PromoteCharacterSimpleDetailAppendThumbnail", "SimpleAppendThumbnailBase", "PromoteCharacterSelectPopupTabView", "PvPViewSetting", "PvPRoot", "PvPBattleStartConfirmSubRoot", "PvPDeckSelectSubRoot", "PvPTopSubRoot", "PvPRootUtils", "PvPBattlePlayerDetailView", "PvPPlayerStatusView", "PvPTopTabView", "PvPBattlePlayerListView", "PvPClassListView", "PvPListViewBase", "PvPClassThumbnail", "PvPBattlePlayerThumbnail", "PvPPlayerThumbnail", "PvPPlayerThumbnailBase", "PvPRankingPlayerThumbnail", "QuestViewSetting", "QuestRoot", "QuestRootBase", "BattleStartConfirmSubRoot", "BattleStartConfirmSubRootBase", "QuestAreaStageSelectSubRoot", "QuestDropInfoPopup", "QuestEnemyInfoPopup", "QuestEventSelectSubRoot", "QuestTopSubRoot", "QuestWorldSelectSubRoot", "QuestRootUtils", "AreaThumbnailView", "AutoDetailPopup", "AutoDisplayWindow", "AutoEndPopup", "AutoStopDropItemListView", "AutoStopPopup", "BulkSkipDetailPopup", "QuestBoostEventListView", "QuestBoostUnitPopup", "QuestEventBannerThumbnail", "QuestEventListView", "QuestForceSolidEquipmentCountOverPopup", "QuestListSwitchView", "QuestNormalExTabView", "QuestNormalExTabViewBase", "QuestSkipCharacterAnimationView", "QuestSkipListThumbnail", "QuestSkipResultPopup", "QuestSkipResultRankUpPopup", "QuestStageThumbnail", "QuestSubMissionPopup", "QuestWorldScenarioTabView", "RankUpPopupBase", "SkipDetailPopup", "SpineMinifySettingCautionPopup", "TrialStackDamageResultPopup", "WorldPageScrollView", "WorldThumbnailView", "QuestListViewBase", "QuestAreaAttributeListView", "QuestAreaListViewBase", "QuestAreaNormalListView", "QuestAreaWeekListView", "QuestStageAttributeListView", "QuestStageEventListView", "QuestStageListViewBase", "QuestStageNormalListView", "QuestStageWeekListView", "QuestionnaireViewSetting", "QuestionnaireRoot", "QuestionnaireInputConfirmPopup", "QuestionnaireSubRoot", "QuestionnaireRootUtils", "QuestionnaireAnswerButtonThumbnail", "QuestionnaireInputThumbnail", "QuestionnaireListView", "QuestionnaireRadioButton", "QuestionnaireTabButton", "QuestionnaireTabView", "QuestionnaireTitleThumbnail", "RaceTopViewSetting", "RaceAllTrapControllerBase", "RaceSingleTrapControllerBase", "RaceTrapCliffController", "RaceTrapControllerBase", "RaceTrapFireballController", "RaceTrapLakeController", "RaceTrapRockController", "RaceEventCommentaryEndController", "RaceEventCommentarySpurtController", "RaceEventCommentaryStartController", "RaceEventController", "RaceEventExCharactersAppearController", "RaceEventExCharactersOutController", "RaceEventExCharactersRunController", "RaceEventSpecialCharacterAccelerationController", "RaceEventSpecialCharacterAppearController", "RaceEventSpecialCharacterFallController", "RaceCharacterData", "RaceData", "RaceDataUtils", "RaceStageData", "RaceEventManager", "RaceGameManager", "RaceGameManagerBase", "RaceTrapManager", "TrapManagerBase", "RaceGameRoot", "RaceTopRoot", "RaceCharacterPurchaseConfirmPopup", "RaceCharacterStatusInfoPopup", "RacePromoteCharacterFortifyCompletePopup", "RacePromoteCharacterFortifyConfirmPopup", "RacePromoteCharacterPopup", "RaceRewardListPopup", "RaceSdCharacterPurchasePopup", "RaceStageSelectPopup", "RaceStartConfirmPopup", "RaceTopSubRoot", "RaceCharacterSelectThumbnail", "RaceObstacleThumbnail", "RacePromoteMaterialThumbnail", "RacePurchaseSdCharacterSelectThumbnail", "RaceRewardListThumbnail", "RaceStageThumbnail", "RaceAbilityFunctions", "RaceTopRootUtils", "RaceUtils", "RaceCharacterAbilityView", "RaceCharacterSelectView", "RaceCharacterStatusDetailView", "RaceCharacterStatusView", "RaceCharacterStatusViewBase", "RaceGameCommentaryView", "RaceGameHeaderView", "RaceGameResultView", "RacePromoteCharacterStatusView", "RacePromoteMaterialListView", "RacePromoteMaterialSelectTabView", "RaceStageListView", "RaceStatusView", "RaceTopBGView", "RaidViewSetting", "RaidRoot", "RaidBattleSelectSubRoot", "RaidBattleStartConfirmSubRoot", "RaidQuestSelectSubRoot", "RaidResultPopup", "RaidSendRescueConfirmPopup", "RaidTopSubRoot", "RaidBattleDetailConfirmPopup", "RaidBattleDetailPopupBase", "RaidResultWinPopup", "RaidRootUtils", "RaidBattleAppearView", "RaidBattleSelectTabView", "RaidQuestListView", "RaidQuestStageThumbnail", "RaidQuestStoryThumbnail", "RaidQuestThumbnailBase", "RaidRankingPlayerThumbnail", "EntryRaidBattleListView", "FinishedRaidBattleListView", "PublicRaidBattleListView", "RaidBattleListViewBase", "RaidBattleThumbnail", "RaidGachaResultViewSetting", "RaidGachaViewSetting", "RaidGachaResultRoot", "RaidGachaRoot", "RaidGachaRootBase", "RaidGachaDescriptionPopup", "RaidGachaLineupPopup", "RaidGachaPlayCountConfirmPopup", "RaidGachaResetConfirmPopup", "RaidGachaResultSubRoot", "RaidGachaTopSubRoot", "RaidGachaResultRootUtils", "RaidGachaRootUtils", "BoxPlayWaitView", "RaidGachaLineupRewardHeaderThumbnail", "RaidGachaLineupRewardThumbnail", "RaidGachaLineupTabButton", "RaidGachaLineupTabView", "RaidGachaLineupView", "RaidGachaResultListView", "RoomCharacterUIConst", "RoomCharacterViewSetting", "RoomConst", "RoomViewSetting", "RoomCharacterRoot", "RoomRoot", "RoomRootBase", "PlayAnimationPopup", "RoomCardDetailSubRoot", "RoomCardDetailVoicePlayPopup", "RoomCardEpisodeSubRoot", "RoomCharacterSkinSelectSubRoot", "RoomCharacterSubRoot", "RoomCollectFurnitureListPopup", "RoomFurnitureBuyConfirmPopup", "RoomFurnitureEpisodeSubRoot", "RoomFurnitureReleaseConfirmPopup", "RoomFurnitureSelectConfirmPopup", "RoomFurnitureSelectPopup", "RoomFurnitureSelectSubRoot", "RoomHowToGetFurniturePopup", "RoomPictureBookDetailContentsConfirmPopup", "RoomReleaseFurnitureEpisodePopup", "RoomTopSubRoot", "RoomSlideSubRootBase", "RoomCharacterRootUtils", "RoomRootUtils", "RoomCharacterCardThumbnail", "RoomCharacterContentSimpleThumbnail", "RoomCharacterContentThumbnail", "RoomCharacterGroupThumbnail", "RoomEpisodeContentsThumbnail", "RoomEpisodeThumbnail", "RoomHowToGetFurnitureThumbnail", "RoomCardDetailContentThumbnail", "RoomCardDetailContentsListView", "RoomCardDetailFriendshipPresentThumbnail", "RoomCardDetailFriendshipPresentsListView", "RoomCardDetailFriendshipView", "RoomCardDetailImageView", "RoomCardDetailTopTabView", "RoomCardDetailVoicePlayListView", "RoomCardDetailVoicePlayTabView", "RoomCardDetailVoicePlayThumbnail", "RoomCardDetailWholeView", "RoomAlterCardEpisodeListView", "RoomCardEpisodeListView", "RoomCardEpisodeListViewBase", "RoomCharacterFurnitureObjectView", "RoomCharacterUICollectThumbnail", "RoomCharacterUICollectView", "RoomCharacterUIStandView", "RoomCharacterUIView", "RoomWholeCharacterView", "RoomWholeFurnitureView", "RoomFurnitureEpisodeListView", "RoomFurnitureDetailCharacterListView", "RoomFurnitureDetailSelectWindow", "RoomFurnitureDetailShopWindow", "RoomFurnitureDetailWindowBase", "RoomFurnitureListView", "RoomFurnitureReleaseCharacterListView", "RoomFurnitureTabView", "RoomFurnitureThumbnail", "FriendshipItemThumbnail", "RoomTopCharacterGroupListView", "RoomTopSelectTabView", "RoomCardDetailVoicePlayWindowView", "ShopViewSetting", "ShopRoot", "ShopBoxExpansionConfirmPopup", "ShopBoxExpansionPopup", "ShopBoxExpansionPurchaseConfirmPopup", "ShopDmmPurchaseConfirmPopup", "ShopItemListDetailPopup", "ShopItemListDetailPopupBase", "ShopLoginPackPrecautionsPopup", "ShopOrderPackConfirmPopup", "ShopOrderPackItemListDetailPopup", "ShopOrderPackSelectPopup", "ShopPurchaseCompletePopup", "ShopPurchaseConfirmPopup", "ShopSelectSubRoot", "ShopSpecifiedCommercePopup", "SpotShopAppealPopup", "ShopRootUtils", "ShopDmmItemDetailIconThumbnail", "ShopDmmItemDetailListTab", "ShopDmmItemDetailListView", "ShopItemLargeThumbnail", "ShopItemThumbnail", "ShopItemWideThumbnail", "ShopPurchaseItemThumbnail", "ShopSelectTabView", "ShopSideBannerThumbnail", "ShopCampaignItemListView", "ShopExpansionItemListView", "ShopGemItemListView", "ShopItemListViewBase", "ShopNormalItemListView", "ShopSetItemListView", "ShopSpotArrivalListView", "ShopStepItemListItemGroup", "ShopStepItemListView", "ShopTrialItemListView", "SoundConst", "CommandSpecialRoomEvent", "CommandSpecialRoomEventOff", "CommandSpecialRoomMessage", "SpecialRoomCommandTypeList", "SpecialRoomRoot", "SpecialRoomSubRoot", "SpecialRoomEventUtils", "SpecialRoomUtils", "SpecialRoomTapEvent", "SpecialRoomUIStandView", "SpecialRoomUIView", "SpecialRoomWholeCharacterView", "SpecialRoomWholeFrontView", "SpecialRoomWholeView", "SpecialRoomEventSceneView", "SpecialRoomListPopup", "StoryViewSetting", "StoryRoot", "StoryPlayConfirmPopup", "StoryReleaseConditionPopup", "StoryReleaseEventConditionPopup", "StorySubRoot", "StoryRootUtils", "StoryEventThumbnail", "StoryListSwitchView", "StoryTextImageThumbnail", "StoryTextThumbnail", "StoryThumbnailBase", "StoryAreaListView", "StoryCategoryListView", "StoryEventGroupListView", "StoryGroupListViewBase", "StoryListViewBase", "StoryMemorialEventOtherGroupListView", "StoryOtherGroupListView", "StoryWorldListView", "StoryPlayEventListView", "StoryPlayGachaListView", "StoryPlayListViewBase", "StoryPlayStageListView", "StoryPlayTutorialListView", "TitleAnimation", "TitleRoot", "QualitySettingPopup", "TowerConst", "TowerViewSetting", "TowerRoot", "TowerBattleStartConfirmSubRoot", "TowerDeckSelectSubRoot", "TowerRewardInfoPopup", "TowerRewardReceivePopup", "TowerStageSelectSubRoot", "TowerStartingConfirmPopup", "TowerTopSubRoot", "TowerRootUtils", "TowerAreaSelectView", "TowerAreaThumbnail", "TowerAutoDisplayOutgameWindow", "TowerAutoDisplayWindow", "TowerBGView", "TowerChestWholeView", "TowerDeckThumbnailView", "TowerFloorListView", "TowerItemWideThumbnail", "TowerStageCharacterView", "TowerStageCursorView", "TowerStageFocusView", "TowerStageListView", "TowerStageSimpleView", "TowerStageThumbnail", "TowerStepThumbnail", "TowerStepThumbnailBase", "VoteResultViewSetting", "VoteResultRoot", "VoteResultRootUtils", "VoteUtils", "VoteResultMovieSubRoot", "WarehouseConst", "WarehouseViewSetting", "WarehouseRoot", "FurnitureStoryPopup", "SellAlertPopup", "WarehouseItemSellConfirmPopup", "WarehouseItemSellPopup", "WarehouseMemorialExchangeConfirmPopup", "WarehouseMemorialSelectDetailPopup", "WarehouseQuestSearchPopup", "WarehouseSelectSubRoot", "WarehouseSelectTicketCompletePopup", "WarehouseSelectTicketConfirmPopup", "WarehouseSelectTicketPopup", "WarehouseStorageSellCompletePopup", "WarehouseStorageSellConfirmPopup", "WarehouseUniqueSelectTicketPopup", "WarehouseRootUtils", "WarehouseItemDropStageListView", "WarehouseItemDropStageThumbnail", "WarehouseSelectTabView", "WarehouseCharacterStorageListView", "WarehouseConsumeItemListView", "WarehouseEquipmentListView", "WarehouseEquipmentStorageListView", "WarehouseGiftItemListView", "WarehouseItemListViewBase", "WarehouseListViewBase", "WarehouseMaterialStorageListView", "WarehouseOtherItemListView", "WarehouseSelectCharacterStorageSideView", "WarehouseSelectEquipmentSideView", "WarehouseSelectEquipmentStorageSideView", "WarehouseSelectItemSideView", "WarehouseSelectMaterialStorageSideView", "WarehouseSelectSideViewBase", "WeekViewSetting", "WeekRoot", "WeekTopSubRoot", "WeekRootUtils", "AreaWeekThumbnailView", "QuestFreeUnlockPopup", "QuestItemUnlockPopup", "ApplicationServiceManager", "BoostApis", "BoostService", "CabinApis", "CabinService", "CampaignApis", "CampaignService", "CharacterApis", "CharacterLinkApis", "CharacterService", "ComebackAPIs", "ComebackService", "DebugAPIs", "DebugService", "DeckApis", "DeckService", "EquipmentApis", "EquipmentService", "SolidEquipmentApis", "SolidEquipmentService", "EventApis", "EventService", "GachaApis", "GachaService", "ItemApis", "ItemService", "LinearMissionApis", "LinearMissionService", "LoginBonusApis", "LoginBonusService", "LoginPackApis", "LoginPackService", "LotteryApis", "LotteryService", "MemorialApis", "MemorialService", "MinigameApis", "MinigameService", "MissionApis", "MissionService", "MyPageApis", "MyPageService", "NoticeApis", "NoticeService", "PictureBookService", "PicturebookApis", "PresentApis", "PresentService", "PvPApis", "PvPService", "PracticeService", "QuestApis", "QuestService", "QuestionnaireApis", "QuestionnaireService", "RaceApis", "RaceService", "RaidApis", "RaidService", "RoomApis", "RoomService", "SerialCodeApis", "SerialCodeService", "ShopApis", "ShopService", "SoundApis", "StoryApis", "StoryService", "TowerApis", "TowerService", "TutorialApis", "TutorialService", "UserApis", "UserService", "VersionApis", "VersionService", "WarehouseApis", "WarehouseService", "LoadProgressCharacterView", "LoadProgressIllustrationView", "LoadProgressTipsView", "LoadingCharacterView", "LoadingIllustrationView", "LoadingTipsView", "Singleton", "SoundManager", "AsyncFileLoader", "DownManifestManager", "FileLoader", "FileLoaderConsts", "FileLoaderManager", "GenerateMd5", "MemoryManager", "ResLeakChecker", "ResLoader", "WrapAsyncFileLoad", "DebugRoot", "ResourceCheckRoot", "spineImportTest" ]);
