@@ -1,0 +1,149 @@
+name,
+stopbgm,,,,,,,,,,,
+fadeinblack,0,,,,,,,,,,
+endwait,,,,,,,,,,,
+bg,download/bg/bg_11280300.jpg,0,,,,,,,,
+endwait,,,,,,,,,,,
+fadeoutblack,1.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+playbgm,/download/sound/bgm/bgm101.mp3,0,
+endwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0.5,,,,
+endwait,,,,,,,,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_01.mp3
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,1,<outline width=2 color=black>「最近，我经常会思考一件事。\n和其他人相比，我能做到的事情实在不算多，对吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_02.mp3
+msg,1,<outline width=2 color=black>「我从小就没有经历过严苛的训练，\n生活中的琐事也从来不需要自己动手，所以这也是理所当然的吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_03.mp3
+msg,1,<outline width=2 color=black>「……像这样的我，在如今这个地方，究竟能做些什么呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_04.mp3
+msg,1,<outline width=2 color=black>「我总是一直受到别人的帮助，想必就连这份感激之情，\n我都没能充分回报」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_05.mp3
+msg,1,<outline width=2 color=black>「再这样下去，我得到的东西只会越来越多。\n要是能找到什么只有我才能做到的事情就好了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+select,选项1 「你想得太复杂了」,选项2 「有时我也会受到艾丽卡的帮助」
+if,select_===_1,,,,,,,,,
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_06.mp3
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,1,<outline width=2 color=black>「下等人会说出这种话，本身就是个错误呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_07.mp3
+msg,1,<outline width=2 color=black>「总是为了别人伸出援手，又不顾自己的能力，执意向前迈进。\n像这样把多余的负担全都揽到自己身上，才是下等人的作风吧？」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_08.mp3
+msg,1,<outline width=2 color=black>「正因为有这样的人待在身边，就连我也会有些焦急啊，真是的」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+elseif,select_===_2,,,,,,,,,
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_09.mp3
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,1,<outline width=2 color=black>「是吗……我能做到的事情，也不过如此而已」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_10.mp3
+msg,1,<outline width=2 color=black>「说些平淡无奇的话，只是陪在身边……充其量，\n这就是我所能做到的事情――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_11.mp3
+msg,1,<outline width=2 color=black>「――啊。不，并非如此呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_12.mp3
+msg,1,<outline width=2 color=black>「并不是因为那些话有多么特别，才会打动我的心。\n也不是因为感受到有人陪在身边的意义，才找到了自己的归宿」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_13.mp3
+msg,1,<outline width=2 color=black>「我也曾是这样……只顾着在意那些表面的事情，\n竟然忽略了如此简单的道理呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+endif,,,,,,,,,,
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_14.mp3
+name,<outline width=2 color=black>艾丽卡・露比娅</outline>,
+msg,1,<outline width=2 color=black>「我好像说了些多余的话呢。\n下等人，请你忘掉刚才那些话吧」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_15.mp3
+msg,1,<outline width=2 color=black>「说到底，我居然找下等人商量，连我自己都觉得有些失常了。\n就算要找人商量，也得好好挑选对象才行呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_16.mp3
+msg,1,<outline width=2 color=black>「因为……我确实很感谢拉莱耶的大家，\n但即便如此，我最想率先表达谢意的人却是――……」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_17.mp3
+msg,1,<outline width=2 color=black>「……没什么」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:normal,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_18.mp3
+msg,1,<outline width=2 color=black>「现在，我没有什么该对你说的。\n……想要传达这份心意，我还欠缺太多东西了」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:sad,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_19.mp3
+msg,1,<outline width=2 color=black>「真是的。这种心意，我究竟该如何传达……又该如何回报才好呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+spriteatlas,download/character/103323/adv/atlas/stand_a,body:smile,elica,0,-100,0.5,0,,,,
+playvoice,1,download/character/103323/adv/sound/fav103323_02_20.mp3
+msg,1,<outline width=2 color=black>「居然让我如此烦恼……你还是老样子，下等人终究是下等人呢」</outline>,,,,,,,,,
+clickwait,,,,,,,,,,,
+
+
+fadeinblack,0.5,,,,,,,,,,
+endwait,,,,,,,,,,,
+name,,,,,,,,,,,
+msg,0,,,,,,,,,,,
+spriteoff,all,0.5,,,,,,,,,
+endwait,,,,,,,,,,,
+bgoff,1.0,,,,,,,,,,
+endwait,,,,,,,,,,,
