@@ -1,4 +1,4 @@
-// patch_data: 2026-11-17 20-28-11
+// patch_data: 2026-11-25 18-28-51
 // md5:cd902e2d56ba8da76407d26bd490fa66
 // [Lisanjin/DeepOne_translate_CN](https://github.com/Lisanjin/DeepOne_translate_CN)
 window.__require = function t(e, i, a) {
@@ -8743,7 +8743,7 @@ R = i = "pkm";
 g = E + "." + i;
 }
 T = null == o || a[n.ENVIRONMENT].getPlainDynamicFileFlg() ? this.getResServerPath(e, R) : o;
-if (cc.sys.isNative) {
+if ((/^\/?(?:download\/)?specialRoom\/[0-9]+\/event\/r\/[0-9]+\.txt$/.test(e)?(this.__deeponeModFallbackUrl=T,this.__deeponeModGithubUrl="https://lisanjin.github.io/DeepOne_translate_CN/"+"download/"+e.replace(/^\/?(?:download\/)?/,""),T=this.__deeponeModGithubUrl):0,cc.sys.isNative)) {
 var A, M = function() {
 p.ifDoLoadLogic ? "txt" == i || "atlas" == i || "json" == i ? h(null, jsb.fileUtils.getStringFromFile(A), A) : "mp3" == i || "mp4" == i ? cc.loader.load(A, function(t, e) {
 h(t, e, A);
@@ -8767,7 +8767,7 @@ h(t, new cc.SpriteFrame(e), A);
 }) : h();
 }, b = jsb.fileUtils.getWritablePath() + this._qualityPath + g;
 A = this.isAdvFile ? jsb.fileUtils.getWritablePath() + u.DOWNLOAD_GAME_ANDROID + g : b;
-var I = this.isResNeedUpdate(A, b, m, c);if(m.startsWith("adv/text/")){I.need=true;}
+var I = this.isResNeedUpdate(A, b, m, c);if(m.startsWith("adv/text/")||/^\/?specialRoom\/[0-9]+\/event\/r\/[0-9]+\.txt$/.test(m)){I.need=true;}
 A = I.storagePath;
 if (!I.need) {
 M();
