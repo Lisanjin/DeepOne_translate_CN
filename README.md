@@ -25,6 +25,10 @@
 
 ## 更新说明
 
+### 2026.11.25
+
+specialRoom和房间语音进行了汉化，目前还在测试阶段，仅在web端实验。需要填写新的规则。
+
 ### 2026.11.3
 
 anosu不再负责project.js的重写和服务器端对剧本文件的重定向，安卓端迁移到新仓库 [DeepOneR-Mod_CN](https://github.com/Lisanjin/DeepOneR-Mod_CN)
@@ -67,4 +71,24 @@ url:https://lisanjin.github.io/DeepOne_translate_CN/js/project.js
 
 ^https:\/\/tonofura-w-cdn-client\.deepone-online\.com\/client\/[0-9]+\.[0-9]+\.[0-9]+\/src\/project\.js,regex,redirect
 url:https://lisanjin.github.io/DeepOne_translate_CN/js/project.js
+
+^https:\/\/prod-web-r\.tc\.deepone-online\.com\/deep-one\/api\/room\/getMasterData,regex,redirect
+url:https://translate.deeponer.online/api/room/getMasterData
+
+^https:\/\/prod-web-r\.tc\.deepone-online\.com\/deep-one\/api\/character\/getMasterTextData,regex,redirect
+url:https://translate.deeponer.online/api/character/getMasterTextData
+
+^https:\/\/prod-web-r\.tc\.deepone-online\.com\/deep-one\/api\/character\/getMasterTextData2,regex,redirect
+url:https://translate.deeponer.online/api/character/getMasterTextData2
+
+^https:\/\/prod-web-r\.tc\.deepone-online\.com\/deep-one\/api\/character\/getMasterTextData3,regex,redirect
+url:https://translate.deeponer.online/api/character/getMasterTextData3
+
+^https:\/\/prod-web-r\.tc\.deepone-online\.com\/deep-one\/api\/character\/getMasterTextData4,regex,redirect
+url:https://translate.deeponer.online/api/character/getMasterTextData4
+
+^https:\/\/prod-web-r\.tc\.deepone-online\.com\/deep-one\/api\/character\/getMasterTextData5,regex,redirect
+url:https://translate.deeponer.online/api/character/getMasterTextData5
 ```
+
+其中前两条分别对应FANZA/DMM 端主程序重定向，第三条为specialRoom 日常语音，剩余5条为房间语音，测试期间有问题可以删除对应的规则来还原。
